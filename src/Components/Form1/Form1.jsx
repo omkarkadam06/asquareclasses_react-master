@@ -117,7 +117,7 @@ function Form1() {
   return (
     <div className="formbold-main-wrapper">
       <div className="formbold-form-wrapper">
-        <form action="https://formbold.com/s/9XZEe" method="POST" id="contactForm" onSubmit={handleSubmit}>
+        <form action="https://formbold.com/s/9XZEe1" method="POST" id="contactForm" onSubmit={handleSubmit}>
           <div
             ref={viewRef}
             className={`section ${
