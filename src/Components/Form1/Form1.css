@@ -1,0 +1,176 @@
+.f_1_title {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
+}
+.formbold-mb-5 label.error {
+  color: red;
+}
+.formbold-mb-5 input.error, .formbold-mb-5 select.error {
+  border: 1px solid red;
+}
+
+.formbold-mb-5 {
+  margin-bottom: 20px;
+}
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background-color: #ffffff;
+  background-image: url('../Assets/6177.png');
+  background-blend-mode: multiply;
+}
+.bottom-form {
+  display: flex;
+  gap: 60px;
+  columns: 3;
+}
+.formbold-mb-5 {
+  width: 100%;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  background: rgb(208, 228, 255);
+  background-image: url(../Assets/leaves.png);
+  padding: 60px 60px;
+  background-blend-mode: multiply;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #ffdd00;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #ffdd00;
+  color: var(--black-color);
+  width: 100%;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1620px){
+  .f_1_title {
+    margin-bottom: 20px;
+  }
+  
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    padding: 48px;
+  }
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 60px 60px;
+  }
+  .formbold-form-label {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .formbold-form-input {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .formbold-btn {
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+  }
+}
+/*@media (max-width: 1620px) and (min-width: 1024px)*/
+/*@media (max-width: 1024px)*/
+@media (max-width: 820px){
+  .formbold-mb-5 {
+    margin-bottom: 12px;
+  }
+  .formbold-pt-3 {
+    padding-top: 6px;
+  }
+  .formbold-form-label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .formbold-form-input {
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    width: 680px;
+    padding: 36px 18px;
+  }
+}

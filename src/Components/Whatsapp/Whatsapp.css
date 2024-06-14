@@ -1,0 +1,41 @@
+.sticky_whatsapp_logo {
+  display: inline;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.sticky_whatsapp_logo:hover {
+  scale: 1.1;
+  transform: rotate(10deg);
+  transition: scale 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 1620px) {
+  .sticky_whatsapp_logo {
+    height: 4.5vw;
+    width: 4.5vw;
+  }
+}
+@media (max-width: 1620px) and (min-width: 1024px) {
+  .sticky_whatsapp_logo {
+    height: 5.4vw;
+    width: 5.4vw;
+  }
+}
+@media (max-width: 1024px) {
+  .sticky_whatsapp_logo {
+    height: 6.4vw;
+    width: 6.4vw;
+  }
+}
+@media (max-width: 820px) {
+  .sticky_whatsapp_logo {
+    height: 60px;
+    width: 60px;
+  }
+}

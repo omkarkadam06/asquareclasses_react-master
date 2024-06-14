@@ -1,0 +1,30 @@
+.poster {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  display: none;
+}
+
+.slider.active {
+  display: flex;
+}
+
+@media (min-width: 1620px) {
+  .poster {
+    height: 36vw;
+  }
+}
+@media (max-width: 1620px) and (min-width: 1024px) {
+  .poster {
+    height: 34vw;
+  }
+}
+@media (max-width: 1024px){
+  .poster {
+    height: 400px;
+  }
+}
+/*@media (max-width: 820px) */

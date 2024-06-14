@@ -1,0 +1,862 @@
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 60px 0px;
+  row-gap: 40px;
+  column-gap: 3vw;
+  width: calc(100vw - 320px);
+}
+
+.courses {
+  padding: 60px 10vw;
+  background-color: rgb(218, 237, 255);
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://www.transparenttextures.com/patterns/foggy-birds.png');
+  background-blend-mode: multiply;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+.courses_upper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.courses_upper p:nth-child(2) {
+  width: 620px;
+  text-align: center;
+}
+
+.subject_list {
+  list-style: none;
+  background-color: white;
+  height: 60px;
+  width: 680px;
+  border-radius: 116px;
+  padding: 0 60px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 30px;
+  background-image: url('../Assets/background-4.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 12px rgba(104, 104, 104, 0.229);
+}
+
+.subject_not_selected {
+  font-size: 16px;
+  font-weight: 500;
+  width: 160px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.subject_selected {
+  padding: 2px 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 96px;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--black-color);
+  background-color: #ffdd00;
+  transition: transform 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: #ffdd0044 0px 10px 10px;
+}
+
+/* course card css code below */
+
+.card {
+  width: 300px;
+  height: 380px;
+  background: none;
+  border-radius: 16px;
+  border: none;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0px 0px 12px rgba(104, 104, 104, 0.229);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  border-radius: 16px;
+}
+
+.card_img {
+  width: 300px;
+  height: 380px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.card_top {
+  display: none;
+}
+
+.card_bottom {
+  display: none;
+}
+
+.heading_no_hover {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card_bottom p:nth-child(2) {
+  display: none;
+}
+
+.course_card_btn {
+  display: none;
+}
+
+/* when card focus */
+
+.card:hover .card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  position: relative;
+  top: -380px;
+  height: 380px;
+  background-color: #3737375a;
+  padding: 24px 0;
+}
+.courses_cards a {
+  text-decoration: none;
+}
+.courses_cards a button {
+  color: var(--black-color) !important;
+}
+
+.card_container {
+  width: 68vw;
+}
+
+.courses_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover .card_top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card:hover .card_top_containers p {
+  display: inline-block;
+  margin: 0;
+}
+
+.card:hover .card_top_containers img {
+  position: relative;
+  top: -1.4px;
+  height: 20px;
+  width: fit-content;
+}
+
+.card:hover .card_top p {
+  margin: 0;
+  width: 200px;
+  padding: 0px 10px;
+}
+
+.card:hover .card_top div:nth-child(1) p {
+  background-color: #fffef1;
+  width: 150px;
+  height: fit-content;
+  padding: 4px 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card:hover .card_top div:nth-child(2) p {
+  background-color: #fffcb2;
+  width: 170px;
+  height: fit-content;
+  padding: 4px 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card:hover .card_top div:nth-child(3) p {
+  background-color: #fff856;
+  width: 190px;
+  height: fit-content;
+  padding: 4px 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card:hover .card_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  top: 0;
+}
+
+.card:hover .card_bottom p {
+  margin-bottom: 0;
+}
+
+.card:hover .card_bottom p:nth-child(1) {
+  text-align: center;
+  color: white;
+}
+
+.card:hover .card_bottom p:nth-child(2) {
+  width: 80%;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.card:hover .course_card_btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  height: 34px;
+  width: 160px;
+  position: relative;
+  border: none;
+  border-radius: 96px;
+  text-align: center;
+  color: white;
+  background-color: #ffdd00;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.card:hover .course_card_btn:hover {
+  text-decoration: none;
+  transform: translate(0, -8px);
+  box-shadow: #ffdd0044 0px 10px 10px;
+}
+
+.card:hover .heading_no_hover {
+  display: none;
+}
+
+@media (min-width: 1620px) {
+  .courses {
+    padding: 120px 10vw 60px;
+  }
+  .courses_upper {
+    gap: 24px;
+  }
+  .courses_upper p:nth-child(2) {
+    width: 620px;
+  }
+  .subject_list {
+    height: fit-content;
+    width: 1240px;
+    border-radius: 116px;
+    padding: 20px 120px;
+    margin-top: 60px;
+  }
+  .subject_not_selected {
+    font-size: 28px;
+    width: 240px;
+  }
+  .subject_selected {
+    padding: 4px 8px;
+    border-radius: 96px;
+    width: 220px;
+    height: fit-content;
+    font-size: 28px;
+    letter-spacing: 0.8px;
+  }
+  .card_container {
+    padding: 60px 0px;
+    row-gap: 80px;
+    column-gap: 120px;
+    width: calc(100vw - 320px);
+  }
+  .card {
+    width: 420px;
+    height: 540px;
+    border-radius: 16px;
+  }
+  .card_img {
+    width: 420px;
+    height: 540px;
+    border-radius: 16px;
+  }
+  .card:hover .card_content {
+    border-radius: 16px;
+    top: -540px;
+    height: 540px;
+    padding: 24px 0;
+  }
+  .card::before {
+    border-radius: 16px;
+  }
+
+  .card_container {
+    width: 80vw;
+  }
+  .card:hover .card_top {
+    margin-top: 40px;
+    gap: 12px;
+  }
+  .card:hover .card_top_containers img {
+    top: -1.4px;
+    height: 20px;
+  }
+
+  .card:hover .card_top p {
+    width: 200px;
+    padding: 0px 10px;
+  }
+
+  .card:hover .card_top div:nth-child(1) p {
+    width: 10vw;
+    padding: 4px 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(2) p {
+    width: 12vw;
+    padding: 4px 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(3) p {
+    width: 14vw;
+    padding: 4px 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_bottom {
+    gap: 8px;
+  }
+
+  .card:hover .card_bottom p:nth-child(1) {
+  }
+
+  .card:hover .card_bottom p:nth-child(2) {
+    width: 80%;
+  }
+
+  .card:hover .course_card_btn {
+    margin-top: 10px;
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 24px;
+    border-radius: 96px;
+  }
+}
+
+@media (max-width: 1980px) and (min-width: 1620px) {
+  .card_container {
+    padding: 60px 0px;
+    row-gap: 80px;
+    column-gap: 120px;
+    width: calc(100vw - 320px);
+  }
+  .card {
+    width: 350px;
+    height: 500px;
+    border-radius: 16px;
+  }
+  .card_img {
+    width: 350px;
+    height: 500px;
+    border-radius: 16px;
+  }
+  .card:hover .card_content {
+    border-radius: 16px;
+    top: -500px;
+    height: 500px;
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 1620px) and (min-width: 1024px) {
+  .courses {
+    padding: 60px 10vw 20px;
+  }
+  .courses_upper {
+    gap: 24px;
+  }
+  .courses_upper p:nth-child(2) {
+    width: 620px;
+  }
+  .subject_list {
+    height: fit-content;
+    width: 840px;
+    border-radius: 116px;
+    padding: 12px 80px;
+    margin-top: 50px;
+  }
+  .subject_not_selected {
+    font-size: 20px;
+    width: 240px;
+  }
+  .subject_selected {
+    padding: 4px 14px;
+    border-radius: 96px;
+    width: 240px;
+    height: fit-content;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+  .card_container {
+    padding: 60px 0px;
+    row-gap: 60px;
+    column-gap: 60px;
+    width: calc(100vw - 320px);
+  }
+  .card {
+    width: 280px;
+    height: 380px;
+    border-radius: 16px;
+  }
+  .card_img {
+    width: 280px;
+    height: 380px;
+    border-radius: 16px;
+  }
+  .card:hover .card_content {
+    border-radius: 16px;
+    top: -380px;
+    height: 380px;
+    padding: 24px 0;
+  }
+  .card::before {
+    border-radius: 16px;
+  }
+
+  .card_container {
+    width: 80vw;
+  }
+  .card:hover .card_top {
+    gap: 6px;
+  }
+  .card:hover .card_top_containers img {
+    top: -1.4px;
+    height: 20px;
+  }
+
+  .card:hover .card_top p {
+    width: 200px;
+    padding: 0px 10px;
+  }
+
+  .card:hover .card_top div:nth-child(1) p {
+    width: 11.5vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(2) p {
+    width: 13vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(3) p {
+    width: 14.5vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_bottom {
+    gap: 8px;
+  }
+
+  .card:hover .card_bottom p:nth-child(1) {
+  }
+
+  .card:hover .card_bottom p:nth-child(2) {
+    width: 80%;
+  }
+
+  .card:hover .course_card_btn {
+    margin-top: 10px;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 24px;
+    border-radius: 96px;
+  }
+}
+@media (max-width: 1024px) {
+  .courses {
+    padding: 60px 10vw 20px;
+  }
+  .courses_upper {
+    gap: 18px;
+  }
+  .courses_upper p:nth-child(2) {
+    width: 440px;
+  }
+  .subject_list {
+    height: fit-content;
+    width: 580px;
+    border-radius: 116px;
+    padding: 12px 60px;
+    margin-top: 30px;
+  }
+  .subject_not_selected {
+    font-size: 14px;
+    width: 160px;
+  }
+  .subject_selected {
+    font-size: 14px;
+    width: 160px;
+    padding: 4px 14px;
+    border-radius: 96px;
+    height: fit-content;
+    letter-spacing: 0.4px;
+  }
+  .card_container {
+    padding: 60px 0px;
+    row-gap: 40px;
+    column-gap: 40px;
+    width: 80vw;
+  }
+  .card {
+    width: 240px;
+    height: 340px;
+    border-radius: 16px;
+  }
+  .card_img {
+    width: 240px;
+    height: 340px;
+    border-radius: 16px;
+  }
+  .card:hover .card_content {
+    border-radius: 16px;
+    top: -340px;
+    height: 340px;
+    padding: 24px 0;
+  }
+  .card::before {
+    border-radius: 16px;
+  }
+
+  .card_container {
+    width: 80vw;
+  }
+  .card:hover .card_top {
+    gap: 4px;
+  }
+  .card:hover .card_top_containers img {
+    top: -1.4px;
+    height: 20px;
+  }
+
+  .card:hover .card_top p {
+    width: 200px;
+    padding: 0px 10px;
+  }
+
+  .card:hover .card_top div:nth-child(1) p {
+    width: 16vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(2) p {
+    width: 18vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(3) p {
+    width: 20vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_bottom {
+    gap: 8px;
+  }
+
+  .card:hover .card_bottom p:nth-child(1) {
+  }
+
+  .card:hover .card_bottom p:nth-child(2) {
+    width: 92%;
+  }
+
+  .card:hover .course_card_btn {
+    margin-top: 10px;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 18px;
+    border-radius: 96px;
+  }
+}
+@media (max-width: 820px) {
+  .courses {
+    padding: 50px 10vw 10px;
+  }
+  .courses_upper {
+    gap: 14px;
+  }
+  .courses_upper p:nth-child(2) {
+    width: 300px;
+  }
+  .subject_list {
+    height: fit-content;
+    width: 420px;
+    border-radius: 116px;
+    padding: 10px 30px;
+    margin-top: 30px;
+  }
+  .subject_not_selected {
+    font-size: 12px;
+    width: 140px;
+  }
+  .subject_selected {
+    font-size: 12px;
+    width: 140px;
+    padding: 4px 12px;
+    border-radius: 96px;
+    height: fit-content;
+    letter-spacing: 0.2px;
+  }
+  .card_container {
+    padding: 40px 0px;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: calc(100vw - 40px);
+  }
+  .card {
+    width: 200px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  .card_img {
+    width: 200px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  .card:hover .card_content {
+    border-radius: 16px;
+    top: -300px;
+    height: 300px;
+    padding: 24px 0;
+  }
+  .card::before {
+    border-radius: 16px;
+  }
+
+  .card_container {
+    width: 100vw;
+  }
+  .card:hover .card_top {
+    gap: 3px;
+  }
+  .card:hover .card_top_containers img {
+    top: -1.4px;
+    height: 20px;
+  }
+
+  .card:hover .card_top p {
+    width: 200px;
+    padding: 0px 10px;
+  }
+
+  .card:hover .card_top div:nth-child(1) p {
+    width: 26vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(2) p {
+    width: 28.5vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(3) p {
+    width: 31.4vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_bottom {
+    gap: 4px;
+  }
+
+  .card:hover .card_bottom p:nth-child(1) {
+  }
+
+  .card:hover .card_bottom p:nth-child(2) {
+    width: 92%;
+  }
+
+  .card:hover .course_card_btn {
+    margin-top: 8px;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 18px;
+    border-radius: 96px;
+  }
+}
+
+@media (max-width: 520px) {
+  .courses {
+    padding: 50px 10vw 10px;
+  }
+  .courses_upper {
+    gap: 8px;
+  }
+  .courses_upper p:nth-child(2) {
+    width: 240px;
+  }
+  .subject_list {
+    flex-wrap: wrap;
+    row-gap: 12px;
+    height: fit-content;
+    width: 260px;
+    border-radius: 16px;
+    padding: 8px 24px;
+    margin-top: 20px;
+  }
+  .subject_not_selected {
+    font-size: 12px;
+    width: 100px;
+  }
+  .subject_selected {
+    font-size: 12px;
+    width: 100px;
+    padding: 4px 12px;
+    border-radius: 96px;
+    height: fit-content;
+    letter-spacing: 0.2px;
+  }
+  .card_container {
+    padding: 40px 0px;
+    row-gap: 30px;
+    column-gap: 20px;
+    width: calc(100vw - 40px);
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 200px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  .card_img {
+    width: 200px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  .card:hover .card_content {
+    border-radius: 16px;
+    top: -300px;
+    height: 300px;
+    padding: 24px 0;
+  }
+  .card::before {
+    border-radius: 16px;
+  }
+
+  .card_container {
+    width: calc(100vw - 20px);
+  }
+  .card:hover .card_top {
+    gap: 3px;
+  }
+  .card:hover .card_top_containers img {
+    top: -1.4px;
+    height: 20px;
+  }
+
+  .card:hover .card_top p {
+    width: 200px;
+    padding: 0px 10px;
+  }
+
+  .card:hover .card_top div:nth-child(1) p {
+    width: 39vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(2) p {
+    width: 42vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_top div:nth-child(3) p {
+    width: 45.4vw;
+    padding: 4px 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card:hover .card_bottom {
+    gap: 4px;
+  }
+
+  .card:hover .card_bottom p:nth-child(1) {
+  }
+
+  .card:hover .card_bottom p:nth-child(2) {
+    width: 92%;
+  }
+
+  .card:hover .course_card_btn {
+    margin-top: 6px;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 18px;
+    border-radius: 96px;
+  }
+}

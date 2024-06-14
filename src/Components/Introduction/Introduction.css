@@ -1,0 +1,92 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 10vw;
+  background-color: rgb(218, 237, 255);
+  height: 500px;
+  margin-bottom: 260px;
+  background-image: url('https://www.transparenttextures.com/patterns/foggy-birds.png');
+  background-blend-mode: multiply;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+.introduction p {
+  text-align: center;
+}
+
+.introduction p:nth-child(2) {
+  width: 560px;
+}
+
+.introduction img {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+  width: 1000px;
+}
+
+@media (min-width: 1620px) {
+  .introduction {
+    gap: 26px;
+    padding: 60px 10vw;
+    height: 18vw;
+    margin-bottom: 22vw;
+  }
+  .introduction p:nth-child(2) {
+    width: 30vw;
+  }
+  .introduction img {
+    top: 20px;
+    width: 58vw;
+  }
+}
+@media (max-width: 1620px) and (min-width: 1024px) {
+  .introduction {
+    gap: 12px;
+    padding: 60px 10vw;
+    height: 25vw;
+    margin-bottom: 15vw;
+  }
+  .introduction p:nth-child(2) {
+    width: 34vw;
+  }
+  .introduction img {
+    top: 12px;
+    width: 56vw;
+  }
+}
+@media (max-width: 1024px) {
+  .introduction {
+    gap: 8px;
+    padding: 60px 10vw;
+    height: 32vw;
+    margin-bottom: 20vw;
+  }
+  .introduction p:nth-child(2) {
+    width: 44vw;
+  }
+  .introduction img {
+    top: 8px;
+    width: 68vw;
+  }
+}
+@media (max-width: 820px) {
+  .introduction {
+    gap: 8px;
+    padding: 40px 20px;
+    max-height: 280px;
+    height: 54vw;
+    margin-bottom: 20vw;
+  }
+  .introduction p:nth-child(2) {
+    width: 300px;
+  }
+  .introduction img {
+    top: 8px;
+    width: 72vw;
+  }
+}

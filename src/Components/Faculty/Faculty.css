@@ -1,0 +1,327 @@
+.faculty_section {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+
+.faculty_section_left {
+  padding: 60px 0px 60px 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  background-color: #8dc8ff;
+  background-image: url('../Assets/leaves.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+}
+
+.faculty_section_left p:nth-child(2) {
+  width: 380px;
+}
+
+.faculty_section_left p:nth-child(3) {
+  width: 380px;
+}
+
+.faculty_section_left ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.not_selected {
+  text-align: center;
+  list-style: none;
+  border-radius: 96px;
+  width: 180px;
+  padding: 2px 18px;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.selected {
+  text-align: center;
+  list-style: none;
+  border-radius: 96px;
+  width: 180px;
+  padding: 2px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  color: var(--black-color);
+  background-color: #ffdd00;
+  border: 2px solid #ffdd00;
+  transition: transform 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: #ffdd0044 0px 10px 10px;
+}
+
+.faculty_section_right {
+  background-color: rgb(218, 237, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px 60px 0px;
+  gap: 16px;
+}
+
+.teacher_img {
+  height: 280px;
+  width: 480px;
+  object-fit: cover;
+}
+
+.faculty_section_right div {
+  display: flex;
+  gap: 16px;
+  width: 480px;
+}
+
+.qualification_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faculty_section_right div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: fit-content;
+}
+
+@media (min-width: 1620px) {
+  .faculty_section_left {
+    padding: 60px 0px 60px 10vw;
+    gap: 26px;
+    width: 80%;
+  }
+  .faculty_section_left p:nth-child(2) {
+    width: 26vw;
+  }
+
+  .faculty_section_left p:nth-child(3) {
+    width: 30vw;
+  }
+  .faculty_section_left ul {
+    gap: 18px;
+  }
+  .not_selected,
+  .selected {
+    width: 14vw;
+    padding: 4px 26px;
+    font-size: 1vw;
+    letter-spacing: 0.6px;
+  }
+
+  .faculty_section_right {
+    width: 100%;
+  }
+
+  .teacher_img {
+    height: 16vw;
+    width: 28vw;
+  }
+  .faculty_section_right div {
+    gap: 18px;
+    width: 480px;
+  }
+  .faculty_section_right div div {
+    gap: 24px;
+  }
+  .faculty_t2 {
+    width: fit-content;
+  }
+}
+@media (max-width: 1620px) and (min-width: 1024px) {
+  .faculty_section_left {
+    padding: 60px 0px 60px 10vw;
+    gap: 20px;
+    width: 90%;
+  }
+  .faculty_section_left p:nth-child(2) {
+    width: 24vw;
+  }
+
+  .faculty_section_left p:nth-child(3) {
+    width: 28vw;
+  }
+  .faculty_section_left ul {
+    gap: 12px;
+  }
+  .not_selected,
+  .selected {
+    width: 14vw;
+    padding: 2px 16px;
+    font-size: 1vw;
+    letter-spacing: 0.6px;
+  }
+
+  .faculty_section_right {
+    width: 100%;
+  }
+
+  .teacher_img {
+    height: 18vw;
+    width: 26vw;
+  }
+  .faculty_section_right div {
+    gap: 8px;
+    width: 24vw;
+  }
+  .faculty_section_right div div {
+    gap: 16px;
+  }
+  .faculty_t2 {
+    width: fit-content;
+  }
+}
+@media (max-width: 1024px) {
+  .faculty_section_left {
+    padding: 60px 0px 60px 10vw;
+    gap: 12px;
+    width: 90%;
+  }
+  .faculty_section_left p:nth-child(2) {
+    width: 24vw;
+  }
+
+  .faculty_section_left p:nth-child(3) {
+    width: 28vw;
+  }
+  .faculty_section_left ul {
+    gap: 8px;
+  }
+  .not_selected,
+  .selected {
+    width: 15vw;
+    padding: 2px 16px;
+    font-size: 1vw;
+    letter-spacing: 0.6px;
+  }
+
+  .faculty_section_right {
+    width: 100%;
+  }
+
+  .teacher_img {
+    height: 18vw;
+    width: 28vw;
+  }
+  .faculty_section_right div {
+    gap: 8px;
+    width: 26vw;
+  }
+  .faculty_section_right div div {
+    gap: 10px;
+  }
+  .faculty_t2 {
+    width: fit-content;
+  }
+}
+@media (max-width: 820px) {
+  .faculty_section_left {
+    padding: 60px 0px 60px 20px;
+    gap: 12px;
+    width: 80%;
+  }
+  .faculty_section_left p:nth-child(2) {
+    width: 24vw;
+  }
+
+  .faculty_section_left p:nth-child(3) {
+    width: 28vw;
+  }
+  .faculty_section_left ul {
+    gap: 8px;
+  }
+  .not_selected,
+  .selected {
+    width: 140px;
+    padding: 2px 16px;
+    font-size: 10px;
+    letter-spacing: 0.6px;
+  }
+
+  .faculty_section_right {
+    width: 100%;
+  }
+
+  .teacher_img {
+    height: 20vw;
+    width: 34vw;
+  }
+  .faculty_section_right div {
+    gap: 6px;
+    width: 32vw;
+  }
+  .faculty_section_right div div {
+    gap: 8px;
+  }
+  .faculty_t2 {
+    width: fit-content;
+  }
+}
+@media (max-width: 520px) {
+  .faculty_section {
+    flex-direction: column;
+  }
+  .faculty_section_left {
+    align-items: center;
+    padding: 40px 0px 40px 20px;
+    gap: 12px;
+    width: 100%;
+  }
+  .faculty_section_left p:nth-child(2) {
+    text-align: center;
+    width: 80%;
+  }
+  
+  .faculty_section_left p:nth-child(3) {
+    text-align: center;
+    width: 88%;
+  }
+  .faculty_section_left ul {
+    gap: 8px;
+  }
+  .not_selected,
+  .selected {
+    width: 140px;
+    padding: 2px 16px;
+    font-size: 10px;
+    letter-spacing: 0.6px;
+  }
+
+  .faculty_section_right {
+    padding: 40px 0 40px 0;
+    width: 100%;
+  }
+
+  .teacher_img {
+    height: 240px;
+    width: 300px;
+  }
+  .faculty_section_right div {
+    gap: 6px;
+    width: 300px;
+  }
+  .faculty_section_right div div {
+    gap: 8px;
+  }
+  .faculty_t2 {
+    width: fit-content;
+  }
+}
