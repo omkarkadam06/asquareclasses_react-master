@@ -19,6 +19,7 @@ const FAQ = React.lazy(() => import('../Components/FAQ/FAQ.jsx'));
 const Updates = React.lazy(() =>
   import('../Components/Live_Updates/Updates.jsx')
 );
+const Reviews = React.lazy(() => import('../Components/Reviews/Reviews.jsx'));
 const Introduction = React.lazy(() =>
   import('../Components/Introduction/Introduction.jsx')
 );
@@ -43,6 +44,7 @@ function Home() {
       <Suspense fallback={<Loading />}>
         <Faculty />
         <Testimonials />
+        <Reviews />
         <Result />
         <FAQ />
         <Updates />

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home_Promo from '../Assets/Home-Promo.png';
 import './Introduction.css';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';
+import VideoPopup from '../Popup/video';
 
 function Introduction() {
-  //
+  const [showModal, setShowModal] = useState(false);
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   const [viewRef, inView] = useInView({
     triggerOnce: true // Trigger only once
   });
@@ -25,12 +29,14 @@ function Introduction() {
       <p className="subtitle">
         Unlock Your Potential with ASQUARE Institute's Inspirational Journey
       </p>
-      <img
+      <img 
+        onClick={handleShow}
         ref={viewRef1}
         src={Home_Promo}
         alt="img"
         className={`${inView1 ? 'i_v_about_us' : 'n_v_about_us'}`}
       />
+      <VideoPopup showModal={showModal} handleClose={handleClose} />
     </div>
   );
 }

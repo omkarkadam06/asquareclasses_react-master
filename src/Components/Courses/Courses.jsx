@@ -27,12 +27,17 @@ function Courses() {
         className={`card {inView1 ? 'i_v_about_us' : 'n_v_about_us'}`}
         key={details_data.id}
       >
-        <img
-          src={details_data.student_img}
-          alt="img"
-          className="card_img"
-          decoding="async"
-        />
+        <div className="imageboxscou">
+          <img
+            src={details_data.student_img}
+            alt="img"
+            className="card_img"
+            decoding="async"
+          />
+          <div className="clickherebtn">
+            <h3>Click Here</h3>
+          </div>
+        </div>
         <div className="card_content">
           <div className="card_top">
             <div className="card_top_containers">
