@@ -12,12 +12,12 @@ function FAQ() {
     triggerOnce: true // Trigger only once
   });
 
-  //
-  let [div_display, set_div_display] = useState([0, 1, 0, 0, 0]);
+  // Initialize the first item as active (1)
+  const [div_display, set_div_display] = useState([1, 0, 0, 0, 0]);
 
   function update_div(id) {
     const updated_div_display = div_display.map((value, index) =>
-      index === id - 1 ? 1 - value : value
+      index === id - 1 ? 1 - value : 0
     );
 
     // Update the state with the new array
@@ -31,7 +31,7 @@ function FAQ() {
         <img src={Arrow} alt="icon" className="icn-1" />
         <p
           className="t2 answer"
-          style={{ display: div_display[data.id - 1] == 1 ? `block` : `none` }}
+          style={{ display: div_display[data.id - 1] === 1 ? 'block' : 'none' }}
         >
           {data.answer}
         </p>

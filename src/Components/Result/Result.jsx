@@ -22,7 +22,7 @@ function Result() {
 
   //
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 5;
+  const totalSlides = 1;
 
   //
   useEffect(() => {

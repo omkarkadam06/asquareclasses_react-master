@@ -93,9 +93,12 @@
     font-size: 22px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px) {    
   .success {
-    display: none;
+    width: 100%;
   }
+  .marquee-item {
+    font-size: 17px;
+  } 
 }
 /* @media (max-width: 820px) */
