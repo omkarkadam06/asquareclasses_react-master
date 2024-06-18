@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import College_Data from './College_Data';
 import './Success.css';
-import Marquee from '../Marquee/Marquees.jsx';
 
 function Success() {
   var [name, setName] = useState(College_Data[0]);
@@ -20,31 +19,11 @@ function Success() {
     };
   }, []);
 
-  const items = [
-    'IIT Gandhinagar',
-    'IIT(ISM) Dhanbad',
-    'IIT Dharwad',
-    'Indian Institute of Space Science and Technology(IIST-Thiruvananthapuram)',
-    'IISER Pune',
-    'IISER Bhopal',
-    'IIIT Banglore',
-    'IIIT Surat',
-    'IIIT Nagpur',
-    'IIIT Allahabad',
-    'IIIT Pune',
-    'NIT Surat',
-    'NIT Nagpur',
-    'NIT Delhi',
-    'COEP Pun',
-    'VJTI Mumbai',
-    'PICT Pune',
-    'VIT Pune',
-    'VIT Valore',
-    'NDA'
-  ];
   return (
     <div className="success">
-        <Marquee items={items}/>
+      <p className='success_text'>Our Students Secure Seats at</p>
+      <p className='success_mob_text'>Seat Secured at</p>
+      <p>{name}</p>
     </div>
   );
 }

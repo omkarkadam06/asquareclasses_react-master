@@ -51,7 +51,7 @@ function Footer() {
           <li className="t1">Asquare Inst.</li>
           <li>
             <Link
-              to={'/iit-jee-neet-classes/'}
+              to={'/'}
               className="f_link"
               onClick={scrollToTop}
             >
@@ -175,6 +175,40 @@ function Footer() {
             </div>
           </div>
         </ul>
+      </div>
+      <div className="middlecontainer">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Pimpri, Branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>ASQUARE Classes Pvt Ltd<br></br> Sai Vrindavan, Office No.501, Near Indian Oil Petrol Pump, Nehru Nagar, Pimpri, Pune Maharashtra - 411018</li>
+                <li><a href="tel:+919579730062">(+91) 9579730062</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Pimple Saudagar, Branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>Asquare Classes Pvt Ltd<br></br> Office No. 206, Prime Square, Kunal Icon Rd, opposite Datt Raj Mandir, Pimple Saudagar, Maharashtra 411027</li>
+                <li><a href="tel:+919673394297">(+91) 9673394297</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Vishrantwadi, Branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>Asquare Classes Pvt Ltd<br></br> 156, Shoppers Orbit Mall, Pune Alandi Road, Near Reliance Smart Bazaar, Vishrantwadi, Pune, Maharashtra 411015</li>
+                <li><a href="tel:+919766118866">(+91) 9766118866</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="bottom_container">
         <p>Copyright 2023 at asquareclasses.com</p>
