@@ -342,3 +342,8 @@
     width: 34px;
   }
 }
+@media (max-width: 767px) {
+  .result_right .btns_div_result {
+    bottom: 8px;
+  }
+}

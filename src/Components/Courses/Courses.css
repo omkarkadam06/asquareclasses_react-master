@@ -761,7 +761,7 @@
 
 @media (max-width: 520px) {
   .courses {
-    padding: 50px 10vw 10px;
+    padding: 50px 3vw 10px;
   }
   .courses_upper {
     gap: 8px;
@@ -792,12 +792,7 @@
     letter-spacing: 0.2px;
   }
   .card_container {
-    padding: 40px 0px;
-    row-gap: 30px;
-    column-gap: 20px;
-    width: calc(100vw - 40px);
-    flex-direction: column;
-    align-items: center;
+    column-gap: 15px;
   }
   .card {
     width: 200px;
@@ -820,7 +815,7 @@
   }
 
   .card_container {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 0px);
   }
   .card:hover .card_top {
     gap: 3px;

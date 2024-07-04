@@ -90,7 +90,6 @@ function Hero() {
               <div className="hero_container_p1 i_fl_cont">
                 <h1 className="hero_heading">
                   Kota <span style={{ color: 'red' }}>अब</span>{' '}
-                  &#160;&#160;&#160;&#160;
                   <span style={{ color: 'red' }}>Pune</span> में !
                 </h1>
                 <p className="hero_container_subtitle">

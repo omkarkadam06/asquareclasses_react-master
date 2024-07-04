@@ -249,8 +249,8 @@
     left: 10px;
   }
   .testi_container_right {
-    height: 92vw;
-    padding: 0px 12px;
+    height: auto;
+    padding: 12px 12px;
   }
   .tcr_img {
     display: block;

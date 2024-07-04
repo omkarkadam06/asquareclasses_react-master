@@ -342,3 +342,8 @@
     gap: 10px;
   }
 }
+@media (max-width: 767px) {
+  .addressfooterbox h2 {
+    font-size: 18px;
+  }
+}

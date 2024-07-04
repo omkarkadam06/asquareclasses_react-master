@@ -174,3 +174,8 @@
     padding: 36px 18px;
   }
 }
+@media (max-width: 767px) {
+  .bottom-form {
+    display: unset;
+  } 
+}

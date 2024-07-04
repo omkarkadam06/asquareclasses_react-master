@@ -9,7 +9,7 @@ const Video = ({ showModal, handleClose }) => {
       <Modal.Body>
         <div className="videomodel">
             <Button variant="close" onClick={handleClose}></Button>
-            <iframe src="https://www.youtube.com/embed/pnpGN4xsG9U?si=S_67JSYrGQ4gXOMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/fM-zZ8jshDM?si=tbyMDmoVRXvPKqW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </Modal.Body>
     </Modal>

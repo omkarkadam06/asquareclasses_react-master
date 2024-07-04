@@ -280,19 +280,16 @@
     flex-direction: column;
   }
   .faculty_section_left {
-    align-items: center;
-    padding: 40px 0px 40px 20px;
-    gap: 12px;
-    width: 100%;
+    padding: 40px 15px 40px 15px;
   }
   .faculty_section_left p:nth-child(2) {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
   
   .faculty_section_left p:nth-child(3) {
     text-align: center;
-    width: 88%;
+    width: 100%;
   }
   .faculty_section_left ul {
     gap: 8px;
@@ -324,4 +321,13 @@
   .faculty_t2 {
     width: fit-content;
   }
+}
+@media (max-width: 767px) {
+  .faculty_section_left ul {
+    flex-direction: unset;
+    width: 100%;
+  }
+  .faculty_section_left {
+    width: 100%;
+  } 
 }

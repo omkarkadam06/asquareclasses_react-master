@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Home_Promo from '../Assets/Home-Promo.png';
+import Home_Promo from '../Assets/promovideo.jpeg';
 import './Introduction.css';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';

@@ -26,7 +26,10 @@
   position: relative;
   top: 10px;
   cursor: pointer;
-  width: 1000px;
+  border-radius: 45px;
+  height: 450px;
+  object-fit: cover;
+  border: 8px solid #364355
 }
 
 @media (min-width: 1620px) {

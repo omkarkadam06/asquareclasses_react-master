@@ -287,7 +287,7 @@
   }
 
   .header_form {
-    display: none;
+    /* display: none; */
   }
 
   .arrow_btn_h {
@@ -351,12 +351,28 @@
   }
 
   .header_form {
-    display: none;
+    /* display: none; */
   }
 
   .arrow_btn_h {
     top: 300px;
     font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .i_fl_cont {
+    width: 100%;
+  }
+  .hero_container_p1 h1 {
+    width: 100%;
+  }
+  .success p:first-child {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .success p:last-child {
+    font-size: 16px;
   }
 }
 
@@ -416,7 +432,7 @@
 
 @media (max-width: 1190px) {
   .header_form {
-    display: none;
+    /* display: none; */
   }
   .poster_2_1_h {
     display: none;

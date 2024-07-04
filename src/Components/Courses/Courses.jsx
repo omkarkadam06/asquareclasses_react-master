@@ -78,7 +78,6 @@ function Courses() {
         </p>
       </div>
       <div className="courses_cards">
-        <div>
           <div className="flex-centre-bet subject_list">
             {subjects_name.map((subject_data) => (
               <li
@@ -103,7 +102,6 @@ function Courses() {
           >
             {Course_Data[index].map(card)}
           </div>
-        </div>
       </div>
     </div>
   );
