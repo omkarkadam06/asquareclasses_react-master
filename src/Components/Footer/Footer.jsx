@@ -184,7 +184,7 @@ function Footer() {
               <div class="heading-under-line "></div>
               <ul>
                 <li>ASQUARE Classes Pvt Ltd<br></br> Sai Vrindavan, Office No.501, Near Indian Oil Petrol Pump, Nehru Nagar, Pimpri, Pune Maharashtra - 411018</li>
-                <li><a href="tel:+919579730062">(+91) 9579730062</a></li>
+                <li><a href="tel:+919766118877">(+91) 9766118877</a></li>
               </ul>
             </div>
           </div>
@@ -194,7 +194,7 @@ function Footer() {
               <div class="heading-under-line "></div>
               <ul>
                 <li>Asquare Classes Pvt Ltd<br></br> Office No. 206, Prime Square, Kunal Icon Rd, opposite Datt Raj Mandir, Pimple Saudagar, Maharashtra 411027</li>
-                <li><a href="tel:+919673394297">(+91) 9673394297</a></li>
+                <li><a href="tel:+919579730062">(+91) 9579730062</a></li>
               </ul>
             </div>
           </div>

@@ -56,16 +56,22 @@ const cardData = [
 ];
 
 const Reviews = () => {
-  //
   const [viewRef, inView] = useInView({
     triggerOnce: true // Trigger only once
   });
-  //
   const [viewRef1, inView1] = useInView({
     triggerOnce: true // Trigger only once
   });
 
-  const [currentIndex, setCurrentIndex] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === cardData.length - 1 ? 0 : prevIndex + 1));
+    }, 2000); // 0.1 second interval
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -79,9 +85,9 @@ const Reviews = () => {
     );
   };
 
-  function setCurrentIndex_click(id) {
+  const setCurrentIndex_click = (id) => {
     setCurrentIndex(id);
-  }
+  };
 
   return (
     <div
@@ -107,7 +113,7 @@ const Reviews = () => {
           <img src={f_star} alt="icon" className="icn-2" />
           <img src={h_star} alt="icon" className="icn-2" />
         </div>
-        <p className="t3 rev_t3">Rating : 4.5 (179+ reviews)</p>
+        <p className="t3 rev_t3">Rating : 4.6 (227+ reviews)</p>
       </div>
       <div className="review_slide">
         {cardData.map((card, index) => (

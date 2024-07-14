@@ -1,7 +1,8 @@
 .poster {
-  height: 420px;
+  height: 410px;
   width: 100%;
   object-fit: cover;
+  object-position: center left;
 }
 
 .slider {
