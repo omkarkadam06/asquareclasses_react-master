@@ -30,9 +30,9 @@ function Home() {
   return (
     <>
     <Helmet>
-      <title>Best IIT Coaching in Pune & Pimpri Chinchwad | Top JEE Coaching Classes</title>
-      <meta name="description" content="Unlock your potential with the top IIT coaching in Pimpri Chinchwad, Pune. Asquare Classes is best JEE coaching pimpri chinchwad offering expert guidance and preparation." />
-      <meta name="keywords" content="top iit coaching in pune, best iit coaching in pune, top iit jee coaching in pune, best iit jee coaching in pune, top iit coaching in pimpri chinchwad, best iit coaching in pimpri chinchwad, top iit jee coaching in pimpri chinchwad, best iit jee coaching in pimpri chinchwad" />
+      <title>Best IIT JEE Coaching in Pune & Pimpri Chinchwad | JEE Coaching Classes</title>
+      <meta name="description" content="Unlock your potential with best IIT coaching in Pimpri Chinchwad, Pune. Asquare Classes is best JEE coaching Institute pimpri chinchwad offering expert preparation." />
+      <meta name="keywords" content="Jee mains coaching centre in pimpri,IIT JEE Coaching Institutes in Pimpri Chinchwad,Best IIT JEE Coaching in Pimpri & Chinchwad,medical and iit academy in pune,Best medical and iit academy in pimpri,NEET and IIT jee coaching classes in pune,IIT/ NEET classes in Pimpri Chinchwad,best iit coaching in pune,best iit classes in pune,best iit coaching classes in pune,iit preparation classes in pune,best coaching institute for iit in pune,jee classes in pune,best jee classes in pune" />
     </Helmet>
       <Navbar />
       <Header />

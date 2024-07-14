@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header/Header';
-import Course_hero from '../../Components/Course_Hero/Course_hero';
 import Course_Details from '../../Components/Course_Details/Course_Details';
 import Whatsapp from '../../Components/Whatsapp/Whatsapp.jsx';
 import Loading from '../Loading.jsx';
@@ -20,9 +19,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Class 11 Jee Mains and Advance Coaching Pimpri Chinchwad, Pune</title>
-      <meta name="description" content="Find top-notch Class 11 JEE Mains and Advance coaching in Pune, Pimpri Chinchwad at A-Square Classes. Expert faculty with personalized attention for class 11 JEE aspirants." />
-      <meta name="keywords" content="Class 11 Jee mains coaching,Class 11 Jee mains coaching pune,Class 11 Jee mains coaching pimpri chinchwad,Class 11 Jee advance coaching,Class 11 Jee advance coaching pune,Class 11 Jee advance coaching pimpri chinchwad" />
+      <title>Best JEE Coaching Institutes in Pune | IIT Foundation Classes</title>
+      <meta name="description" content="Looking for best coaching classes for JEE in Pune? Join A-Square Classes with personalized attention for class 11 JEE aspirants. Join Top JEE classes in Pune!" />
+      <meta name="keywords" content="Best JEE coaching institutes in Pune,best iit foundation classes in pune,jee coaching classes in pune,best jee coaching in pune,best classes for jee in pune,top jee classes in pune,best coaching for jee in pune" />
     </Helmet>
       <Navbar />
       <Header />

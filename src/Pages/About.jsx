@@ -23,9 +23,9 @@ function About() {
   return (
     <>
     <Helmet>
-      <title>A Square Classes - Online Classes for Medical Coaching</title>
-      <meta name="description" content="Looking for Medical Coaching in Pimpri Chinchwad, Pune ? Visit A Square Classes and join upcoming batch of in -person as well as Online Classes for Medical Coaching!" />
-      <meta name="keywords" content="a square classes, online classes for medical, medical coaching" />
+      <title>Best Medical Coaching in Pune, Pimpri | A Square Classes</title>
+      <meta name="description" content="Looking for Medical classess NEET coaching in Pune? Visit A Square Classes - Best institute for medical preparation. Enrol tp Top 10 Medical Coaching in Pimpri upcoming batch." />
+      <meta name="keywords" content="Medical classess NEET coaching in Pune,Top 10 Medical Coaching in Pimpri,medical coaching classes in pune,best institute for medical preparation" />
     </Helmet>
       <Navbar />
       <Header />

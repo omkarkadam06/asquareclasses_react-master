@@ -20,8 +20,8 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Neet Repeater Coaching Pune Pimpri Chinchwad | A-Square Classes</title>
-      <meta name="description" content="Join the intensive Neet Repeater Coaching in Pimpri Chinchwad, Pune at A-Square Classes. Accelerate your preparation with expert guidance for neet repeater. Enrol!" />
+      <title>NEET Repeater Classes in Pune | A-Square Neet Repeater Classes</title>
+      <meta name="description" content="Join Neet repeater classes in Pune under expert's guidance. Achieve success in NEET Repeaters to excel in the exam. Enquire to enroll for class 12th and more!" />
       <meta name="keywords" content="neet repeater coaching pune,neet repeater coaching pimpri chinchwad" />
     </Helmet>
       <Navbar />
