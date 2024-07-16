@@ -1,7 +1,7 @@
 import amit_sir from '../Assets/Complete faculty/amit (2).png';
 import sandeep_sir from '../Assets/Complete faculty/sandeep_sir.png';
 import devaashish_sir from '../Assets/Complete faculty/Devaashish.png';
-import nikita_mam from '../Assets/teamnew.jpg';
+import nikita_mam from '../Assets/nikita.jpeg';
 
 const Faculty_Data = [
   {

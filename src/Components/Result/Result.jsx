@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './Result.css';
 import '../style.css';
 import points_icon_4 from '../Assets/points-icon-4.png';
-import result_poster_1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Result_JEE Adv.jpg';
-import result_poster_2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Result_JEE Main.jpg';
-import result_poster_3 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Result_Neet Result 1.jpg';
-import result_poster_4 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/result.png';
-import result_poster_5 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Result_Neet Result 2.jpg';
+import result_poster_1 from '../Assets/results/result1.jpeg';
+import result_poster_2 from '../Assets/results/result2.jpeg';
+import result_poster_3 from '../Assets/results/result3.jpeg';
+import result_poster_4 from '../Assets/results/result4.jpeg';
+import result_poster_5 from '../Assets/results/result5.jpeg';
+import result_poster_6 from '../Assets/results/result6.jpeg';
 import { useInView } from 'react-intersection-observer';
 import arrowlogo from '../Assets/arrow-logo-2.png';
 
@@ -160,6 +161,20 @@ function Result() {
             className="r_r_img poster_1_1_h"
             style={{ cursor: 'pointer' }}
             onClick={() => handleClick(result_poster_5)}
+          />
+        </div>
+        <div
+          className={
+            currentSlide === 5 ? 'slider active h_c_1' : 'slider h_c_1'
+          }
+        >
+          <img
+            src={result_poster_5}
+            alt="img"
+            decoding="async"
+            className="r_r_img poster_1_1_h"
+            style={{ cursor: 'pointer' }}
+            onClick={() => handleClick(result_poster_6)}
           />
         </div>
         <div className="btns_div_result">
