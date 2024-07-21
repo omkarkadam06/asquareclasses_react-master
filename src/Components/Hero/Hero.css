@@ -3,7 +3,7 @@
 /* 000 */
 
 .h_c_2 {
-  padding: 40px 5vw 80px;
+  padding: 83px 5vw 80px;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: row;
@@ -149,9 +149,6 @@
 /* responsiveness */
 
 @media (min-width: 1620px) {
-  .h_c_2 {
-    height: 32vw;
-  }
   .poster {
     height: 700px;
   }
@@ -355,7 +352,7 @@
   }
 
   .arrow_btn_h {
-    top: 300px;
+    top: 100px;
     font-size: 24px;
   }
 }

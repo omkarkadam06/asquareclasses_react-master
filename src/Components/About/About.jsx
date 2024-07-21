@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import '../style.css';
 import about_1 from '../Assets/teacher-img-2-a.png';
-import about_2 from '../Assets/s-1a.png';
+import about_2 from '../Assets/aboutusse.jpeg';
 import point_icon_3 from '../Assets/point-icon-3.png';
 import points_icon_4 from '../Assets/points-icon-4.png';
 import { useInView } from 'react-intersection-observer';

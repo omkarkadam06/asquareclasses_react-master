@@ -486,7 +486,7 @@ ul {
   .prev-button,
   .next-button {
     position: absolute;
-    top: 13vw;
+    top: 50%;
   }
 
   .prev-button-course,

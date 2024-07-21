@@ -3,15 +3,15 @@ import './Hero.css';
 import '../style.css';
 import Form from '../Form2/Form2';
 import hero_img from '../Assets/home page illustrator_1.png';
-import poster_1_a from '../Assets/Asquare Banner All Size/Laptop_1440x500/Banner 3 - Laptop.png';
-import poster_1_c from '../Assets/Asquare Banner All Size/Tab_1024x520/Tab Banner (3).jpg';
-import poster_1_d from '../Assets/Asquare Banner All Size/Mobile_495x480/1.jpg';
-import poster_2_a from '../Assets/Asquare Banner All Size/Laptop_1440x500/Banner 2 - Laptop.png';
-import poster_2_c from '../Assets/Asquare Banner All Size/Tab_1024x520/Tab Banner (2).png';
-import poster_2_d from '../Assets/Asquare Banner All Size/Mobile_495x480/4.jpg';
-import poster_3_a from '../Assets/Asquare Banner All Size/Laptop_1440x500/Banner 5 - Laptop.png';
-import poster_3_c from '../Assets/Asquare Banner All Size/Tab_1024x520/Tab Banner (2).jpg';
-import poster_3_d from '../Assets/Asquare Banner All Size/Mobile_495x480/2.jpg';
+import poster_1_a from '../Assets/slider/newsldier1.jpeg';
+import poster_1_c from '../Assets/slider/newsldier1.jpeg';
+import poster_1_d from '../Assets/slider/newsldier1.jpeg';
+import poster_2_a from '../Assets/slider/newslider2.jpeg';
+import poster_2_c from '../Assets/slider/newslider2.jpeg';
+import poster_2_d from '../Assets/slider/newslider2.jpeg';
+import poster_3_a from '../Assets/slider/newslider3.jpeg';
+import poster_3_c from '../Assets/slider/newslider3.jpeg';
+import poster_3_d from '../Assets/slider/newslider3.jpeg';
 import Counter from './Counter';
 import Count_Data from './Count_Data';
 import { Link } from 'react-router-dom';
@@ -27,7 +27,7 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-    }, 2000);
+    }, 12000);
     return () => clearInterval(interval);
   }, []);
 
