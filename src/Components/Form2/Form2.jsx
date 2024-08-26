@@ -5,8 +5,26 @@ import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from 'react-google-recaptcha';
 import $ from 'jquery';
 import 'jquery-validation';
+import emailjs from '@emailjs/browser'
 
 function Form2() {
+  const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm('service_rn7kbuy', 'template_m7pls7p', form.current, {
+          publicKey: '2oIY6HvcPeb5RjsHB',
+        })
+        .then(
+          () => {
+            alert('SUCCESS!');
+            //toast.success('Successfully Sent!')
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+  };
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -86,7 +104,7 @@ function Form2() {
         <span className="block_aaa"></span>
         <h3>Contact Form<span></span></h3>
       </div>
-      <form className="form2" action="#" method="POST" id="bannerforms">
+      <form className="form2" id="bannerforms" ref={form} onSubmit={sendEmail}>
         <div className="f2_container">
           <input type="text" placeholder="Full Name" id="name" name="name" className="f2_input form-control no-data" autoComplete="name" />
           <input type="number" placeholder="Mobile Number" id="phone" name="phone" className="f2_input form-control no-data" autoComplete="tel" />

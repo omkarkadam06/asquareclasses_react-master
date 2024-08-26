@@ -5,8 +5,26 @@ import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from 'react-google-recaptcha';
 import $ from 'jquery';
 import 'jquery-validation';
+import emailjs from '@emailjs/browser'
 
 function Form1() {
+  const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm('service_rn7kbuy', 'template_zvz1kgd', form.current, {
+          publicKey: '2oIY6HvcPeb5RjsHB',
+        })
+        .then(
+          () => {
+            alert('SUCCESS!');
+            //toast.success('Successfully Sent!')
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+  };
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -31,6 +49,8 @@ function Form1() {
     if (!recaptchaValue) {
       setCaptchaError(true);
       return;
+    } else {
+      sendEmail();
     }
     if ($('#contactForm').valid()) {
       $('#contactForm').submit();
@@ -117,7 +137,7 @@ function Form1() {
   return (
     <div className="formbold-main-wrapper">
       <div className="formbold-form-wrapper">
-        <form action="https://formbold.com/s/9XZEe1" method="POST" id="contactForm" onSubmit={handleSubmit}>
+        <form  ref={form} onSubmit={handleSubmit} id="contactForm">
           <div
             ref={viewRef}
             className={`section ${
