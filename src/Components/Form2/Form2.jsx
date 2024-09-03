@@ -5,61 +5,59 @@ import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from 'react-google-recaptcha';
 import $ from 'jquery';
 import 'jquery-validation';
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 
 function Form2() {
   const form = useRef();
-    const sendEmail = (e) => {
-      e.preventDefault();
-      emailjs
-        .sendForm('service_rn7kbuy', 'template_m7pls7p', form.current, {
-          publicKey: '2oIY6HvcPeb5RjsHB',
-        })
-        .then(
-          () => {
-            alert('SUCCESS!');
-            //toast.success('Successfully Sent!')
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-  };
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    course: '',
-    class: ''
-  });
-  const [captchaError, setCaptchaError] = useState(false);
   const recaptchaRef = useRef();
-  const [viewRef, inView] = useInView({
-    triggerOnce: true
-  });
-  const handleCaptchaChange = (token) => {
-    setCaptchaError(false);
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const [captchaError, setCaptchaError] = useState(false);
+  const [viewRef, inView] = useInView({ triggerOnce: true });
+
+  // Send email using emailjs
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Check if captcha is solved before sending the email
     const recaptchaValue = recaptchaRef.current.getValue();
     if (!recaptchaValue) {
       setCaptchaError(true);
       return;
     }
-    if ($('#bannerforms').valid()) {
-      $('#bannerforms').submit();
-    }
+
+    emailjs.sendForm('service_rn7kbuy', 'template_m7pls7p', form.current, '2oIY6HvcPeb5RjsHB')
+      .then(
+        () => {
+          alert('Form submitted successfully!');
+          // Reload the page when "Okay" is clicked
+          window.location.reload();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
   };
+
+  // Handle CAPTCHA change
+  const handleCaptchaChange = () => {
+    setCaptchaError(false); // Reset captcha error when solved
+  };
+
   useEffect(() => {
+    // Prevent pasting into input fields with class no-data
     $('.no-data').on('paste', function (e) {
       e.preventDefault();
     });
+
+    // Custom validation methods using jQuery Validation plugin
     $.validator.addMethod("name_regex", function(value, element) {
       return this.optional(element) || /^([a-zA-Z'-.]+(?: [a-zA-Z'-.]+)?){3,30}$/i.test(value);
     }, "Only a-z or A-Z characters.");
+
     $.validator.addMethod("phone_regex", function(value, element) {
       return this.optional(element) || /^[0-9\.\+\a-zA-z\-_]{10,13}$/i.test(value);
-    }, "Phone Number with only 0-9. Minlength: 13");
+    }, "Phone Number with only 0-9. Minlength: 10");
+
+    // Initialize jQuery validation on form
     $('#bannerforms').validate({
       rules: {
         name: {
@@ -98,6 +96,7 @@ function Form2() {
       }
     });
   }, []);
+
   return (
     <div className="headernewform">
       <div ref={viewRef} className={`section title_aaa f_2_h`}>

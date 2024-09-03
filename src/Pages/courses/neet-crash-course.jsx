@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header/Header';
-import Course_hero from '../../Components/Course_Hero/Course_hero';
+// import Course_hero from '../../Components/Course_Hero/Course_hero';
 import Course_Details from '../../Components/Course_Details/Course_Details';
 import Whatsapp from '../../Components/Whatsapp/Whatsapp.jsx';
 import Loading from '../Loading.jsx';

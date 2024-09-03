@@ -13,12 +13,12 @@ import Courses from './Pages/Courses';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Faculty from './Pages/Faculty';
-import Director_msg from './Pages/Director_msg';
-import Chairman_msg from './Pages/Chairman_msg';
-import Home_adword from './Pages/Adword_home';
-import Blog from './Pages/Blog';
-import Blog_content from './Pages/Blog_content';
-import Information_jee_advance from './Pages/information/jee-advance-info';
+import Directormsg from './Pages/Director_msg';
+import Chairmanmsg from './Pages/Chairman_msg';
+// import Home_adword from './Pages/Adword_home';
+// import Blog from './Pages/Blog';
+// import Blog_content from './Pages/Blog_content';
+import Informationjeeadvance from './Pages/information/jee-advance-info';
 import Information_jee_mains from './Pages/information/jee-mains-info';
 import Information_neet_info from './Pages/information/neet-info';
 import Information_mht_cet from './Pages/information/mht-cet-info';
@@ -55,8 +55,8 @@ function App() {
           <Route path="/about-us/" element={<About />} />
           <Route path="/contact-information/" element={<Contact />} />
           <Route path="/faculty" element={<Faculty />} />
-          <Route path="/directors-message/" element={<Director_msg />} />
-          <Route path="/chairmans-message/" element={<Chairman_msg />} />
+          <Route path="/directors-message/" element={<Directormsg />} />
+          <Route path="/chairmans-message/" element={<Chairmanmsg />} />
           {/* <Route path="/iit-jee-neet-classes/" element={<Home_adword />} /> */}
           {/* <Route path="/blog" element={<Blog />} />
           <Route path="/blog/neet-practice-strategy-for-repeaters" element={<Blog_content id="1" />} />
@@ -68,7 +68,7 @@ function App() {
           <Route path="/blog/top-preparation-tips-for-iit-jee-aspirants" element={<Blog_content id="7" />} />
           <Route path="/blog/way-of-preparation-for-the-neet-exam" element={<Blog_content id="8" />} />
           <Route path="/blog/understand-the-way-to-get-into-medical-college-after-qualifying-neet-exam" element={<Blog_content id="9" />} /> */}
-          <Route path="/jee-advance-info" element={<Information_jee_advance id="1" />} />
+          <Route path="/jee-advance-info" element={<Informationjeeadvance id="1" />} />
           <Route path="/jee-mains-info" element={<Information_jee_mains id="2" />} />
           <Route path="/neet-info" element={<Information_neet_info id="3" />} />
           <Route path="/mht-cet-info" element={<Information_mht_cet id="4" />} />
