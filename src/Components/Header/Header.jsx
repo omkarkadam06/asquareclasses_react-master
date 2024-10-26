@@ -159,28 +159,28 @@ const Header = () => {
                         <div className="nested-dropdown-content">
                           <ul>
                             <Link
-                              to={'/course/jee-11th'}
+                              to={'/iit-jee-coaching-classes-institute-for-11th-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 11th</li>
                             </Link>
                             <Link
-                              to={'/course/jee-12th'}
+                              to={'/iit-jee-coaching-classes-institute-for-12th-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 12th</li>
                             </Link>
                             <Link
-                              to={'/course/jee-12th-pass'}
+                              to={'/iit-jee-coaching-classes-institute-for-12th-pass-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>12th-Pass</li>
                             </Link>
                             <Link
-                              to={'/course/jee-crash-course'}
+                              to={'/iit-jee-crash-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
@@ -205,28 +205,28 @@ const Header = () => {
                         <div className="nested-dropdown-content">
                           <ul>
                             <Link
-                              to={'/course/neet-11th'}
+                              to={'/iit-jee-neet-coaching-classes-institute-for-11th-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 11th</li>
                             </Link>
                             <Link
-                              to={'/course/neet-12th'}
+                              to={'/iit-jee-neet-coaching-classes-institute-for-12th-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 12th</li>
                             </Link>
                             <Link
-                              to={'/course/neet-12th-pass'}
+                              to={'/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>12th-Pass</li>
                             </Link>
                             <Link
-                              to={'/course/neet-crash-course'}
+                              to={'/iit-jee-neet-crash-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
@@ -251,28 +251,28 @@ const Header = () => {
                         <div className="nested-dropdown-content">
                           <ul>
                             <Link
-                              to={'/course/cet-11th'}
+                              to={'/mht-cet-course-classes-institute-for-11th-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 11th</li>
                             </Link>
                             <Link
-                              to={'/course/cet-12th'}
+                              to={'/mht-cet-course-classes-institute-for-12th-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 12th</li>
                             </Link>
                             <Link
-                              to={'/course/cet-12th-pass'}
+                              to={'/mht-cet-course-classes-institute-for-12th-pass-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>12th-Pass</li>
                             </Link>
                             <Link
-                              to={'/course/cet-crash-course'}
+                              to={'/mht-cet-crash-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
@@ -297,21 +297,21 @@ const Header = () => {
                         <div className="nested-dropdown-content">
                           <ul>
                             <Link
-                              to={'/course/foundation-course-for-std-8th/'}
+                              to={'/8th-foundation-regular-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 8th</li>
                             </Link>
                             <Link
-                              to={'/course/foundation-course-for-std-9th/'}
+                              to={'/9th-foundation-regular-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
                               <li>Class 9th</li>
                             </Link>
                             <Link
-                              to={'/course/foundation-course-for-std-10th/'}
+                              to={'/9th-foundation-regular-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
@@ -349,7 +349,7 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave2}
                 >
                   <Link
-                    to={'/jee-advance-info'}
+                    to={'/jee-advanced-coaching-classes-institute-in-pune'}
                     className="nav-item nav-item-list"
                     onClick={scrollToTop}
                     onMouseEnter={handleMouseEnter2}
@@ -358,7 +358,7 @@ const Header = () => {
                     <li className="t3">JEE Advance</li>
                   </Link>
                   <Link
-                    to={'/jee-mains-info'}
+                    to={'/jee-mains-coaching-classes-institute-in-pune'}
                     className="nav-item nav-item-list"
                     onClick={scrollToTop}
                     onMouseEnter={handleMouseEnter2}
@@ -366,7 +366,7 @@ const Header = () => {
                     <li className="t3">JEE Mains</li>
                   </Link>
                   <Link
-                    to={'/neet-info'}
+                    to={'/neet-coaching-classes-institute-in-pune'}
                     className="nav-item nav-item-list"
                     onClick={scrollToTop}
                     onMouseEnter={handleMouseEnter2}

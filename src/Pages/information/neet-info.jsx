@@ -10,9 +10,9 @@ function Information_pg({ id }) {
   return (
     <>
     <Helmet>
-      <title>Best Neet Coaching Classes in Pune | A Square for Neet in Pune</title>
-      <meta name="description" content="Looking for best neet classes in pune? Join A Square - Coaching classes for neet in Pune, run by experienced instructors. New Neet coaching class starting soon!" />
-      <meta name="keywords" content="best classes for neet,neet classes in pune,neet coaching classes,best neet classes in pune,best neet coaching in pune,best coaching for neet in pune,best coaching classes for neet in pune,coaching classes for neet in pune" />
+      <title>NEET Coaching Classes in Pune | A Square Classes</title>
+      <meta name="description" content="Join A Square Classes in Pune For Expert NEET Coaching. Our Dedicated Faculty And Tailored Programs will Help You Achieve Your Dream Of a Medical Career!" />
+      <meta name="keywords" content="NEET coaching Pune, NEET preparation Pune, best NEET classes, medical entrance coaching Pune, A Square Classes, NEET training, NEET exam coaching, NEET classes in Pune" />
     </Helmet>
       <Navbar />
       <Header />

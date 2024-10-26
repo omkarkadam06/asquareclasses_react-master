@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Neet Crash Course Pimpri Chinchwad, Pune | A-Square Classes</title>
-      <meta name="description" content="Discover exceptional Neet Crash Course pune, pimpri chinchwad at A-Square Classes. Tailored neet crash programs for students aiming for success. Enquire to Enrol!" />
-      <meta name="keywords" content="neet crash course pune,neet crash course pimpri chinchwad" />
+      <title>NEET Crash Course Institute in Pune | A Square Classes</title>
+      <meta name="description" content="Enroll in A Square Classes For An Intensive NEET Crash Course in Pune. Our Expert Instructors Provide Focused Training To Help You Excel in Your Medical Entrance Exams!" />
+      <meta name="keywords" content="NEET crash course Pune, NEET crash course institute, best NEET coaching Pune, NEET preparation classes, A Square Classes, medical entrance coaching, fast-track NEET training, short-term NEET classes" />
     </Helmet>
       <Navbar />
       <Header />

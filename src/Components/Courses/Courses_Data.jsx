@@ -21,7 +21,7 @@ export const Course_Data = [
       class: 'Two Year Programme',
       heading: '- 11th JEE -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/course/jee-11th`
+      linkto: `/iit-jee-coaching-classes-institute-for-11th-in-pune`
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 12th JEE -',
       sub_heading: 'Students studying in class 11th and moving to class 12th',
-      linkto: `/course/jee-12th`
+      linkto: `/iit-jee-coaching-classes-institute-for-12th-in-pune`
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 12th Pass -',
       sub_heading: '12th passed students',
-      linkto: `/course/jee-12th-pass`
+      linkto: `/iit-jee-coaching-classes-institute-for-12th-pass-in-pune`
     }
   ],
   [
@@ -53,7 +53,7 @@ export const Course_Data = [
       class: 'Two Year Programme',
       heading: '- 11th NEET -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/course/neet-11th`
+      linkto: `/iit-jee-neet-coaching-classes-institute-for-11th-in-pune`
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 12th NEET -',
       sub_heading: 'Students studying in class 11th and moving to class 12th',
-      linkto: `/course/neet-12th`
+      linkto: `/iit-jee-neet-coaching-classes-institute-for-12th-in-pune`
     },
     {
       id: 3,
@@ -73,7 +73,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 12th Pass -',
       sub_heading: '12th passed students',
-      linkto: `/course/neet-12th-pass`
+      linkto: `/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune`
     }
   ],
   [
@@ -85,7 +85,7 @@ export const Course_Data = [
       class: 'Two Year Programme',
       heading: '- 11th CET -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/course/jee-11th`
+      linkto: `/iit-jee-coaching-classes-institute-for-11th-in-pune`
     },
     {
       id: 2,
@@ -95,7 +95,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 12th CET -',
       sub_heading: 'Students studying in class 11th and moving to class 12th',
-      linkto: `/course/jee-12th`
+      linkto: `/iit-jee-coaching-classes-institute-for-12th-in-pune`
     },
     {
       id: 3,
@@ -105,7 +105,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 12th Pass -',
       sub_heading: '12th passed students',
-      linkto: `/course/jee-12th-pass`
+      linkto: `/iit-jee-coaching-classes-institute-for-12th-pass-in-pune`
     }
   ],
   [
@@ -117,7 +117,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 8th Class -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/course/foundation-course-for-std-8th/`
+      linkto: `/8th-foundation-regular-course-institutes-classes-in-pune`
     },
     {
       id: 2,
@@ -127,7 +127,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 9th Class -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/course/foundation-course-for-std-9th/`
+      linkto: `/9th-foundation-regular-course-institutes-classes-in-pune`
     },
     {
       id: 3,
@@ -137,7 +137,7 @@ export const Course_Data = [
       class: 'One Year Programme',
       heading: '- 10th Class -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/course/foundation-course-for-std-10th/`
+      linkto: `/9th-foundation-regular-course-institutes-classes-in-pune`
     }
   ]
 ];

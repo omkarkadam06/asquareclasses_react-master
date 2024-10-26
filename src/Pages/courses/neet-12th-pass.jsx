@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>NEET Repeater Classes in Pune | A-Square Neet Repeater Classes</title>
-      <meta name="description" content="Join Neet repeater classes in Pune under expert's guidance. Achieve success in NEET Repeaters to excel in the exam. Enquire to enroll for class 12th and more!" />
-      <meta name="keywords" content="neet repeater coaching pune,neet repeater coaching pimpri chinchwad" />
+      <title>NEET Coaching Classes for 12th Pass in Pune | A Square Classes</title>
+      <meta name="description" content="Join A Square Classes For Specialized NEET Coaching Designed For 12th Pass Students in Pune. Achieve Your Dream Of Entering Medical College With Expert Guidance!" />
+      <meta name="keywords" content="NEET coaching classes Pune, NEET classes for 12th pass, best NEET prep Pune, NEET training for graduates, A Square Classes, medical entrance coaching, NEET preparation courses, 12th pass NEET coaching" />
     </Helmet>
       <Navbar />
       <Header />

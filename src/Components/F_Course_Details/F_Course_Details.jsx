@@ -133,19 +133,19 @@ function F_Course_Details({ courseName, className }) {
     {
       sub: 'Class 11th',
       id: 1,
-      linkto: `/course/foundation-course-for-std-8th/`,
+      linkto: `/8th-foundation-regular-course-institutes-classes-in-pune`,
       linkName: `th11`
     },
     {
       sub: 'Class 12th',
       id: 2,
-      linkto: `/course/foundation-course-for-std-9th/`,
+      linkto: `/9th-foundation-regular-course-institutes-classes-in-pune`,
       linkName: `th12`
     },
     {
       sub: '12th Pass',
       id: 3,
-      linkto: `/course/foundation-course-for-std-10th/`,
+      linkto: `/9th-foundation-regular-course-institutes-classes-in-pune`,
       linkName: `th12_pass`
     }
   ];

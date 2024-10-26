@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Class 9 Foundation Course Pimpri Chinchwad, Pune | A-Square Classes</title>
-      <meta name="description" content="Comprehensive Class 9 foundation courses in Pune, Pimpri Chinchwad at A Square Classes. Expertly designed Class 9 foundation curriculum to build strong academic fundamentals." />
-      <meta name="keywords" content="class 9 foundation course,class 9 foundation course pune,class 9 foundation course pimpri chinchwad" />
+      <title>Foundation Course for 9th Class in Pune | A Square Classes</title>
+      <meta name="description" content="Enroll in A Square Classes For A Specialized Foundation Course For 9th class in Pune. Strengthen Your Concepts And Prepare Effectively For Future Academic Challenges!" />
+      <meta name="keywords" content="9th class foundation course Pune, foundation coaching for 9th grade, best 9th grade classes Pune, A Square Classes, academic coaching Pune, 9th grade preparation course, foundation program for 9th students" />
     </Helmet>
       <Navbar />
       <Header />

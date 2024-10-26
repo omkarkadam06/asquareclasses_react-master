@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Best NEET Coaching in Pimpri Chinchwad | A Square Neet Classess</title>
-      <meta name="description" content="Looking for NEET Classess in pimpri Chinchwad? A square classes is one of the best NEET Coaching in Pimpri Chinchwad. Expert guidance for Class 12 and more!" />
-      <meta name="keywords" content="Best NEET Coaching in Pimpri Chinchwad,NEET Classess in pimpri chinchwad" />
+      <title>NEET Coaching Classes For 12th in Pune | A Square Classes</title>
+      <meta name="description" content="Join A Square Classes For Expert NEET Coaching Tailored For 12th-grade Students in Pune. Get The Guidance And Support You Need To Succeed In Your Medical Entrance Exams!" />
+      <meta name="keywords" content="NEET coaching classes Pune, NEET classes for 12th, best NEET prep Pune, 12th-grade NEET coaching, A Square Classes, NEET training Pune, medical entrance coaching, NEET preparation courses" />
     </Helmet>
       <Navbar />
       <Header />

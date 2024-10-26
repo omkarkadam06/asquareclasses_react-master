@@ -96,7 +96,7 @@ function Footer() {
           <li className="t1">Courses</li>
           <li>
             <Link
-              to={'/course/cet-11th'}
+              to={'/mht-cet-course-classes-institute-for-11th-in-pune'}
               className="f_link"
               onClick={scrollToTop}
             >
@@ -105,7 +105,7 @@ function Footer() {
           </li>
           <li>
             <Link
-              to={'/course/jee-11th'}
+              to={'/iit-jee-coaching-classes-institute-for-11th-in-pune'}
               className="f_link"
               onClick={scrollToTop}
             >
@@ -114,7 +114,7 @@ function Footer() {
           </li>
           <li>
             <Link
-              to={'/course/neet-11th'}
+              to={'/iit-jee-neet-coaching-classes-institute-for-11th-in-pune'}
               className="f_link"
               onClick={scrollToTop}
             >

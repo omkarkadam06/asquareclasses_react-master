@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Jee Mains and Advance Crash Course Pimpri Chinchwad, Pune</title>
-      <meta name="description" content="Join the intensive JEE Mains and Advanced Crash Courses in Pune, Pimpri Chinchwad at A-Square Classes. Accelerate your preparation with expert guidance in Crash course." />
-      <meta name="keywords" content="jee mains crash course,jee mains crash course pune,jee mains crash course pimpri chinchwad,jee advance crash course,jee advance crash course pune,jee advance crash course pimpri chinchwad" />
+      <title>IIT/JEE Crash Course Institute, Classes in Pune</title>
+      <meta name="description" content="Join A Square Classes For An Intensive IIT/JEE Crash Course in Pune. Our Expert Instructors Provide Tailored Guidance To Help You Excel In Your Exams Quickly And Effectively!" />
+      <meta name="keywords" content="IIT JEE crash course Pune, JEE crash course institute in pune, IIT coaching classes Pune, JEE preparation courses in pune, best JEE crash course Pune, A Square Classes, IIT JEE training in pune, short-term JEE classes in pune, fast-track JEE coaching Pune" />
     </Helmet>
       <Navbar />
       <Header />

@@ -10,9 +10,9 @@ function Information_pg({ id }) {
   return (
     <>
     <Helmet>
-      <title>JEE Main Coaching Classes in Pune | Asquare Jee Preparation Classes</title>
-      <meta name="description" content="Find the best JEE coaching and classes in Pune for 100% success in JEE preparation. Join our JEE main coaching classes in Pune to excel your potential in JEE exams." />
-      <meta name="keywords" content="jee coaching,jee classes in pune,jee preparation,jee main coaching classes,jee coaching classes in pune" />
+      <title>JEE Mains Coaching in Pune | A Square Classes </title>
+      <meta name="description" content="Join A Square Classes in Pune For Expert JEE Mains Coaching. Our Experienced Faculty And Comprehensive Programs Are Designed To Help You Succeed in Your Exam! For More Info +91 9404282283" />
+      <meta name="keywords" content="JEE Mains coaching Pune, JEE Mains preparation Pune, best JEE Mains classes, IIT entrance coaching Pune, A Square Classes, JEE Mains training, JEE Mains exam coaching" />
     </Helmet>
       <Navbar />
       <Header />

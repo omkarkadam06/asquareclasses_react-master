@@ -19,9 +19,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Best JEE Coaching Institutes in Pune | IIT Foundation Classes</title>
-      <meta name="description" content="Looking for best coaching classes for JEE in Pune? Join A-Square Classes with personalized attention for class 11 JEE aspirants. Join Top JEE classes in Pune!" />
-      <meta name="keywords" content="Best JEE coaching institutes in Pune,best iit foundation classes in pune,jee coaching classes in pune,best jee coaching in pune,best classes for jee in pune,top jee classes in pune,best coaching for jee in pune" />
+      <title>IIT JEE Coaching Institute For 11th in Pune | Square Classes</title>
+      <meta name="description" content="Get Expert Coaching For IIT/JEE At A Square Classes in Pune. Join Our 11th-grade Program To Excel In Your Engineering Dreams! Call On +91 9404282283" />
+      <meta name="keywords" content="IIT JEE coaching Pune, JEE coaching for 11th in Pune, best IIT classes Pune, JEE preparation Pune, 11th IIT coaching Pune, top JEE coaching Pune, IIT JEE tutors Pune, engineering entrance coaching Pune, IIT JEE training Pune, JEE mains and advanced coaching Pune, IIT JEE coaching Pune near me" />
     </Helmet>
       <Navbar />
       <Header />

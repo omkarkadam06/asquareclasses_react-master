@@ -19,9 +19,9 @@ import Chairmanmsg from './Pages/Chairman_msg';
 // import Blog from './Pages/Blog';
 // import Blog_content from './Pages/Blog_content';
 import Informationjeeadvance from './Pages/information/jee-advance-info';
-import Information_jee_mains from './Pages/information/jee-mains-info';
-import Information_neet_info from './Pages/information/neet-info';
-import Information_mht_cet from './Pages/information/mht-cet-info';
+import Informationjeemains from './Pages/information/jee-mains-info';
+import Informationneetinfo from './Pages/information/neet-info';
+import Informationmhtcet from './Pages/information/mht-cet-info';
 import CourseCet11 from './Pages/courses/cet-11th';
 import CourseCet12 from './Pages/courses/cet-12th';
 import CourseCet12Pass from './Pages/courses/cet-12th-pass';
@@ -37,21 +37,21 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/course" element={<Courses />} />
-          <Route path="/course/jee-11th" element={<CourseJee11 courseName="1" className="1" />} />
-          <Route path="/course/jee-12th" element={<CourseJee12 courseName="1" className="2" />} />
-          <Route path="/course/jee-12th-pass" element={<CourseJee12Pass courseName="1" className="3" />} />
-          <Route path="/course/jee-crash-course" element={<CourseJeeCrash courseName="1" className="4" />} />
-          <Route path="/course/neet-11th" element={<CourseNeet11 courseName="2" className="1" />} />
-          <Route path="/course/neet-12th" element={<CourseNeet12 courseName="2" className="2" />} />
-          <Route path="/course/neet-12th-pass" element={<CourseNeet12Pass courseName="2" className="3" />} />
-          <Route path="/course/neet-crash-course" element={<CourseNeetCrash courseName="2" className="4" />} />
-          <Route path="/course/cet-11th" element={<CourseCet11 courseName="3" className="1" />} />
-          <Route path="/course/cet-12th" element={<CourseCet12 courseName="3" className="2" />} />
-          <Route path="/course/cet-12th-pass" element={<CourseCet12Pass courseName="3" className="3" />} />
-          <Route path="/course/cet-crash-course" element={<CourseCetCrash courseName="3" className="4" />} />
-          <Route path="/course/foundation-course-for-std-8th/" element={<CourseFoundation8 courseName="4" className="1" />} />
-          <Route path="/course/foundation-course-for-std-9th/" element={<CourseFoundation9 courseName="4" className="2" />} />
-          <Route path="/course/foundation-course-for-std-10th/" element={<CourseFoundation10 courseName="4" className="3" />} />
+          <Route path="/iit-jee-coaching-classes-institute-for-11th-in-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-for-12th-in-pune" element={<CourseJee12 courseName="1" className="2" />} />
+          <Route path="/iit-jee-coaching-classes-institute-for-12th-pass-in-pune" element={<CourseJee12Pass courseName="1" className="3" />} />
+          <Route path="/iit-jee-crash-course-institutes-classes-in-pune" element={<CourseJeeCrash courseName="1" className="4" />} />
+          <Route path="/iit-jee-neet-coaching-classes-institute-for-11th-in-pune" element={<CourseNeet11 courseName="2" className="1" />} />
+          <Route path="/iit-jee-neet-coaching-classes-institute-for-12th-in-pune" element={<CourseNeet12 courseName="2" className="2" />} />
+          <Route path="/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune" element={<CourseNeet12Pass courseName="2" className="3" />} />
+          <Route path="/iit-jee-neet-crash-course-institutes-classes-in-pune" element={<CourseNeetCrash courseName="2" className="4" />} />
+          <Route path="/mht-cet-course-classes-institute-for-11th-in-pune" element={<CourseCet11 courseName="3" className="1" />} />
+          <Route path="/mht-cet-course-classes-institute-for-12th-in-pune" element={<CourseCet12 courseName="3" className="2" />} />
+          <Route path="/mht-cet-course-classes-institute-for-12th-pass-in-pune" element={<CourseCet12Pass courseName="3" className="3" />} />
+          <Route path="/mht-cet-crash-course-institutes-classes-in-pune" element={<CourseCetCrash courseName="3" className="4" />} />
+          <Route path="/8th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
+          <Route path="/9th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation9 courseName="4" className="2" />} />
+          <Route path="/9th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation10 courseName="4" className="3" />} />
           <Route path="/about-us/" element={<About />} />
           <Route path="/contact-information/" element={<Contact />} />
           <Route path="/faculty" element={<Faculty />} />
@@ -68,10 +68,10 @@ function App() {
           <Route path="/blog/top-preparation-tips-for-iit-jee-aspirants" element={<Blog_content id="7" />} />
           <Route path="/blog/way-of-preparation-for-the-neet-exam" element={<Blog_content id="8" />} />
           <Route path="/blog/understand-the-way-to-get-into-medical-college-after-qualifying-neet-exam" element={<Blog_content id="9" />} /> */}
-          <Route path="/jee-advance-info" element={<Informationjeeadvance id="1" />} />
-          <Route path="/jee-mains-info" element={<Information_jee_mains id="2" />} />
-          <Route path="/neet-info" element={<Information_neet_info id="3" />} />
-          <Route path="/mht-cet-info" element={<Information_mht_cet id="4" />} />
+          <Route path="/jee-advanced-coaching-classes-institute-in-pune" element={<Informationjeeadvance id="1" />} />
+          <Route path="/jee-mains-coaching-classes-institute-in-pune" element={<Informationjeemains id="2" />} />
+          <Route path="/neet-coaching-classes-institute-in-pune" element={<Informationneetinfo id="3" />} />
+          <Route path="/mht-cet-info" element={<Informationmhtcet id="4" />} />
           {/* Redirect old linksw */}
           <Route path="/jee-main-coaching-in-pune-pimpri-chinchwad-html/" element={<Home />} />
           <Route path="/neet-coaching-in-pune-html/" element={<Home />} />

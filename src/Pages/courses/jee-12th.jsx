@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Class 12 Jee Mains and Advance Coaching Pimpri Chinchwad, Pune</title>
-      <meta name="description" content="Find top-notch Class 12 JEE Mains and Advance coaching in Pune, Pimpri Chinchwad at A-Square Classes. Expert faculty with personalized attention for class 12 JEE aspirants." />
-      <meta name="keywords" content="Class 12 Jee mains coaching,Class 12 Jee mains coaching pune,Class 12 Jee mains coaching pimpri chinchwad,Class 12 Jee advance coaching,Class 12 Jee advance coaching pune,Class 12 Jee advance coaching pimpri chinchwad" />
+      <title>IIT /JEE Coaching Classes For 12th in Pune | Square Classes</title>
+      <meta name="description" content="Join A Square Classes for expert JEE coaching in Pune. Tailored for 12th-grade students aiming for IIT success! Get Ready To Take Your First Step To Achieve Success" />
+      <meta name="keywords" content="JEE coaching for 12th in Pune, IIT JEE classes Pune, JEE preparation for class 12th, JEE mains coaching Pune, JEE advanced coaching Pune, 12th-grade JEE coaching Pune, best JEE coaching Pune, IIT entrance prep Pune, JEE tutors Pune, A Square Classes, JEE coaching for 12th in Pune near me " />
     </Helmet>
       <Navbar />
       <Header />

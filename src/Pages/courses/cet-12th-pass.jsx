@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>MHT CET Repeater Coaching Pimpri Chinchwad, Pune | A-Square Classes</title>
-      <meta name="description" content="Join MHT CET repeater coaching in Pune, Pimpri Chinchwad with A Square Classes. Expert guidance for MHT CET repeaters to excel in the exam. Enquire to enroll!" />
-      <meta name="keywords" content="mht cet repeater coaching,mht cet repeater coaching pune,mht cet repeater coaching pimpri chinchwad" />
+      <title>MHT-CET Coaching Classes For 12th Pass in Pune</title>
+      <meta name="description" content="Join A Square Classes For Expert MHT-CET Coaching Designed For 12th Pass Students in Pune. Get The Guidance You Need To Excel in Your Entrance Exams And Achieve Success!" />
+      <meta name="keywords" content="MHT-CET coaching classes Pune, MHT-CET classes for 12th pass, best MHT-CET prep Pune, MHT-CET training for graduates, A Square Classes, entrance exam coaching, MHT-CET preparation courses" />
     </Helmet>
       <Navbar />
       <Header />

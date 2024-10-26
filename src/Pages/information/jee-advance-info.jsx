@@ -10,9 +10,9 @@ function Information_pg({ id }) {
   return (
     <>
     <Helmet>
-      <title>Best IIT JEE Coaching Classes in Pune |  Asquare IIT JEE Classes</title>
-      <meta name="description" content="Get the best IIT coaching in Pune at  Asquare Classes. Join our IIT JEE coaching classes to excel in IIT JEE exams. Get ready for comprehensive preparation for IIT JEE." />
-      <meta name="keywords" content="iit coaching,iit coaching classes in pune,iit jee coaching,iit coaching in pune,best iit coaching,iit jee coaching classes" />
+      <title>JEE Advanced Coaching in Pune | Call On +91 9404282283</title>
+      <meta name="description" content="Prepare For JEE Advanced with A Square Classes in Pune. Our Expert Faculty And Tailored Programs Will Help You Achieve Your Dream Of IIT Admission!" />
+      <meta name="keywords" content="JEE Advanced coaching Pune, JEE Advanced preparation Pune, best JEE Advanced classes, IIT entrance coaching Pune, A Square Classes, JEE Advanced training, JEE Advanced exam coaching" />
     </Helmet>
       <Navbar />
       <Header />

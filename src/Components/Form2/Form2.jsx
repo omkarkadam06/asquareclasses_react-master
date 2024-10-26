@@ -11,7 +11,7 @@ function Form2() {
   const form = useRef();
   const recaptchaRef = useRef();
   const [captchaError, setCaptchaError] = useState(false);
-  const [viewRef, inView] = useInView({ triggerOnce: true });
+  const [viewRef] = useInView({ triggerOnce: true });
 
   // Send email using emailjs
   const sendEmail = (e) => {

@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Top IIT JEE Coaching Institutes in Pune | Best 10 IIT JEE Classes</title>
-      <meta name="description" content="A Square Classes is one of the Top 10 IIT Jee Classes in Pune offering best Coaching in Pune. Contact and join IIT JEE in Pune, lead by experts professional!" />
-      <meta name="keywords" content="iit jee classes in pune,top iit jee coaching institutes in pune,Top 10 IIT Jee classes in Pune,best 10 IIT JEE coaching in Pune,best coaching institute for iit jee in pune" />
+      <title>NEET Coaching Classes For 11th in Pune | A Square Classes</title>
+      <meta name="description" content="Join A Square Classes For Specialized NEET Coaching For 11th-grade Students in Pune. Get Expert Guidance And Personalized Support To Excel In Your NEET Exams!" />
+      <meta name="keywords" content="NEET coaching classes Pune, NEET classes for 11th, best NEET prep Pune, 11th-grade NEET coaching, A Square Classes, NEET training Pune, medical entrance coaching, NEET preparation courses" />
     </Helmet>
       <Navbar />
       <Header />

@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>MHT CET Crash Course Pimpri Chinchwad, Pune | A-Square Classes</title>
-      <meta name="description" content="Don't miss to join MHT CET crash course in Pune, Pimpri Chinchwad with A Square Classes. Tailored guidance in MHT CET crash course to get success in the exam." />
-      <meta name="keywords" content="mht cet crash course pune,mht cet crash course pimpri chinchwad" />
+      <title>MHT-CET Crash Course Institute in Pune | A Square Classes</title>
+      <meta name="description" content="Enroll in A Square Classes For An Intensive MHT-CET Crash Course in Pune. Our Expert Instructors Provide Focused Training To Help You Succeed in Your Entrance Exams!" />
+      <meta name="keywords" content="MHT-CET crash course Pune, MHT-CET crash course institute, best MHT-CET coaching Pune, MHT-CET preparation classes, A Square Classes, entrance exam coaching, fast-track MHT-CET training, short-term MHT-CET classes" />
     </Helmet>
       <Navbar />
       <Header />

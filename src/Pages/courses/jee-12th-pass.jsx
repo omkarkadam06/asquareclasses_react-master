@@ -20,9 +20,9 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>Jee Repeaters Mains and Advance Coaching Pimpri Chinchwad, Pune</title>
-      <meta name="description" content="Discover exceptional JEE repeaters coaching for both Main and Advanced levels in Pune and Pimpri Chinchwad at A-Square Classes. Tailored programs for JEE repeaters aiming for success." />
-      <meta name="keywords" content="Jee repeaters mains coaching,Jee repeaters mains coaching pune,Jee repeaters mains coaching pimpri chinchwad,Jee repeaters advance coaching,Jee repeaters advance coaching pune,Jee repeaters advance coaching pimpri chinchwad" />
+      <title>IIT/JEE Coaching Classes Institute For 12th Pass in Pune</title>
+      <meta name="description" content="Join A Square Classes For IIT/JEE Coaching Tailored For 12th Pass Students in Pune. Start Your Journey To Success Today!" />
+      <meta name="keywords" content="IIT JEE coaching for 12th pass Pune, JEE classes for graduates, best IIT coaching Pune, JEE preparation for 12th pass, IIT entrance coaching Pune, 12th pass JEE training Pune, IIT JEE preparation classes, JEE coaching in Pune for graduates, A Square Classes JEE coaching, IIT JEE courses for 12th pass students" />
     </Helmet>
       <Navbar />
       <Header />
