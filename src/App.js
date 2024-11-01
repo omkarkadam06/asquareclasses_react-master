@@ -57,17 +57,6 @@ function App() {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/directors-message/" element={<Directormsg />} />
           <Route path="/chairmans-message/" element={<Chairmanmsg />} />
-          {/* <Route path="/iit-jee-neet-classes/" element={<Home_adword />} /> */}
-          {/* <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/neet-practice-strategy-for-repeaters" element={<Blog_content id="1" />} />
-          <Route path="/blog/neet-repeater-five-reasons-to-take-a-drop-year" element={<Blog_content id="2" />} />
-          <Route path="/blog/the-way-to-improve-your-jee-score" element={<Blog_content id="3" />} />
-          <Route path="/blog/a-way-to-be-inspired-for-the-duration-of-neet-and-jee-practice" element={<Blog_content id="4" />} />
-          <Route path="/blog/neet-ug-preparation-strategy-for-neet-repeaters-droppers" element={<Blog_content id="5" />} />
-          <Route path="/blog/importance-of-foundation-course-for-jee-neet" element={<Blog_content id="6" />} />
-          <Route path="/blog/top-preparation-tips-for-iit-jee-aspirants" element={<Blog_content id="7" />} />
-          <Route path="/blog/way-of-preparation-for-the-neet-exam" element={<Blog_content id="8" />} />
-          <Route path="/blog/understand-the-way-to-get-into-medical-college-after-qualifying-neet-exam" element={<Blog_content id="9" />} /> */}
           <Route path="/jee-advanced-coaching-classes-institute-in-pune" element={<Informationjeeadvance id="1" />} />
           <Route path="/jee-mains-coaching-classes-institute-in-pune" element={<Informationjeemains id="2" />} />
           <Route path="/neet-coaching-classes-institute-in-pune" element={<Informationneetinfo id="3" />} />
@@ -85,6 +74,42 @@ function App() {
           <Route path="/project/" element={<Home />} />
           <Route path="/cet-classes-in-pimpri-chinchwad-pcmc-area-html/" element={<Home />} />
           <Route path="/crash-course-for-neet-in-pune-html/" element={<Home />} />
+
+          {/* Location pages */}
+          <Route path="/iit-jee-coaching-classes-institute-in-vishrantwadi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-yerwada-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-dhanori-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-lohegaon-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-dighi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-alandi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-khadki-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-tingre-nagar-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-shastri-nagar-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-pratik-nagar-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-viman-nagar-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-kalyani-nagar-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-wagholi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-khadki-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-pimpri-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-chinchwad-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-pcmc-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-akudi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-nigdi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-bhosari-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-moshi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-chakan-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-kasarwadi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-dapodi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-ravet-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-vishrantwadi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-kalewadi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-wakad-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-aundh-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-baner-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-hinjewadi-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-pimple-saudagar-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-pimple-gurav-pune" element={<CourseJee11 courseName="1" className="1" />} />
+          <Route path="/iit-jee-coaching-classes-institute-in-pimple-nilakh-pune" element={<CourseJee11 courseName="1" className="1" />} />
         </Routes>
       </BrowserRouter>
     </div>
