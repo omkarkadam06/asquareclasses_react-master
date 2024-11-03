@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import './Components/Hero/Hero2.css';
 import Home from './Pages/Home';
 import CourseJee11 from './Pages/courses/jee-11th';
 import CourseJee12 from './Pages/courses/jee-12th';

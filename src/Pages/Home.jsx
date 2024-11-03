@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Header from '../Components/Header/Header';
-import Hero from '../Components/Hero/Hero';
+import Hero from '../Components/Hero/Hero2.jsx';
+import NewSuccess from './new-succes/new-sucess.jsx';
 import Success from '../Components/Success/Success';
 import About from '../Components/About/About.jsx';
 import Courses from '../Components/Courses/Courses.jsx';
@@ -37,7 +38,8 @@ function Home() {
       <Navbar />
       <Header />
       <Hero />
-      <Success />
+      <NewSuccess />
+      {/* <Success /> */}
       <About />
       <Whatsapp />
       <Courses />

@@ -98,7 +98,7 @@ function Form2() {
   }, []);
 
   return (
-    <div className="headernewform">
+    <div className="headernewform banner-form">
       <div ref={viewRef} className={`section title_aaa f_2_h`}>
         <span className="block_aaa"></span>
         <h3>Contact Form<span></span></h3>
