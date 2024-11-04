@@ -5,6 +5,7 @@ import Hero from '../Components/Hero/Hero2.jsx';
 import NewSuccess from './new-succes/new-sucess.jsx';
 import Success from '../Components/Success/Success';
 import About from '../Components/About/About.jsx';
+import About2 from '../Components/About2/About2.jsx';
 import Courses from '../Components/Courses/Courses.jsx';
 import Whatsapp from '../Components/Whatsapp/Whatsapp.jsx';
 import Loading from './Loading.jsx';
@@ -39,6 +40,7 @@ function Home() {
       <Header />
       <Hero />
       <NewSuccess />
+      <About2/>
       {/* <Success /> */}
       <About />
       <Whatsapp />
