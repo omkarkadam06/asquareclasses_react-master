@@ -9,6 +9,7 @@ import About2 from '../Components/About2/About2.jsx';
 import Courses from '../Components/Courses/Courses.jsx';
 import Whatsapp from '../Components/Whatsapp/Whatsapp.jsx';
 import Loading from './Loading.jsx';
+// import Youtube from '../Components/Youtube_section/Youtube.jsx';
 import './pages.css';
 import { Helmet } from 'react-helmet';
 
@@ -42,7 +43,7 @@ function Home() {
       <NewSuccess />
       <About2/>
       {/* <Success /> */}
-      <About />
+      {/* <About /> */}
       <Whatsapp />
       <Courses />
       <Suspense fallback={<Loading />}>
@@ -53,6 +54,7 @@ function Home() {
         <FAQ />
         <Updates />
         <Introduction />
+        <Youtube/>
         <Form1 />
         <Footer />
       </Suspense>

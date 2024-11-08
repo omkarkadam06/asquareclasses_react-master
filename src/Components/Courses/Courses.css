@@ -18,12 +18,12 @@
   right: 0;
   text-align: center;
 }
-.clickherebtn h3 {
+/* .clickherebtn h3 {
   font-weight: bold;
   color: #000;
   opacity: 0.3;
   font-size: 34px;
-}
+} */
 .courses {
   padding: 60px 10vw;
   background-color: rgb(218, 237, 255);
@@ -55,13 +55,13 @@
   border-radius: 116px;
   padding: 0 60px;
   position: relative;
-  left: 50%;
-  transform: translate(-50%);
+  /* left: 50%;
+  transform: translate(-50%); */
   margin-top: 30px;
-  background-image: url('../Assets/background-4.png');
+  /* background-image: url('../Assets/background-4.png');
   background-blend-mode: multiply;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   box-shadow: 0px 0px 12px rgba(104, 104, 104, 0.229);
 }
 
@@ -74,7 +74,7 @@
 }
 
 .subject_selected {
-  padding: 2px 6px;
+  padding: 10px 10px;
   cursor: pointer;
   border: none;
   border-radius: 96px;
@@ -87,8 +87,8 @@
   color: var(--black-color);
   background-color: #ffdd00;
   transition: transform 0.3s ease;
-  transform: translateY(-2px);
-  box-shadow: #ffdd0044 0px 10px 10px;
+  /* transform: translateY(-2px);
+  box-shadow: #ffdd0044 0px 10px 10px; */
 }
 
 /* course card css code below */
@@ -297,7 +297,7 @@
     height: fit-content;
     width: 1240px;
     border-radius: 116px;
-    padding: 20px 120px;
+    padding: 10px 10px;
     margin-top: 60px;
   }
   .subject_not_selected {

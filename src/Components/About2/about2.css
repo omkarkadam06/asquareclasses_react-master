@@ -17,3 +17,30 @@ img{
     border-radius: 20px;
     box-shadow: 4px 4px 16px -4px #bcb7b7;
 }
+.tick_img {
+    width: 23px;
+    height: 23px;
+    background: #003399;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.exp_content {
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+}
+.exp_content h4{
+    font-size: 25px;
+}
+.exp_content.exp-1 {
+    background: #d6ebff;
+    color: #003399;
+}
+.exp_content.exp-2{
+    background: #003399;
+    color: #ffdd00;
+}

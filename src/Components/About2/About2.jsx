@@ -3,6 +3,7 @@ import './about2.css';
 import about_1 from '../Assets/teacher-img-2-a.png';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
+import tickImg from '../Assets/home_page_images/check-mark.png'
 
 function About2() { // Capitalized component name
     // Setting up viewRef and inView for visibility detection
@@ -36,6 +37,27 @@ function About2() { // Capitalized component name
                         <p>
                             Offering a range of courses across our chain of global learning centres, each having unique features and properties, enabling us to meet our students miscellaneous demands.
                         </p>
+                        <div className="banner_bullets mt-3">
+                            <ul className='p-0'>
+                                <li className="d-flex mb-3">
+                                    <div className="tick_img"><img src={tickImg} alt="" /></div><span>Driven by IIT'ians, NIT'ians and Dr's</span>
+                                </li>
+                                <li className="d-flex mb-3">
+                                    <div className="tick_img"><img src={tickImg} alt="" /></div><span>Driven by IIT'ians, NIT'ians and Dr's</span>
+                                </li>
+                                <li className="d-flex mb-2">
+                                    <div className="tick_img"><img src={tickImg} alt="" /></div><span>Driven by IIT'ians, NIT'ians and Dr's</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="experice_box d-flex mt-4 mb-4">
+                            <div className="exp_content exp-1">
+                                <h5>14 years of excellence</h5>
+                            </div>
+                            <div className="exp_content exp-2">
+                                <h5>Best results in pune</h5>
+                            </div>
+                        </div>
                         <Link to='/about-us/' onClick={scrollToTop}>
                             <button className="button">Know More</button>
                         </Link>
