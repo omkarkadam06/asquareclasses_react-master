@@ -78,6 +78,7 @@
   margin-left: 2vw;
   height: 3vw;
   cursor: pointer;
+  width: auto;
 }
 
 .image-modal {
