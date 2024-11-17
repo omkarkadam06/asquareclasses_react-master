@@ -28,7 +28,7 @@ function Youtube() {
             </p>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="a">
                         <div className="youtube_grid">
                             {/* Repeatable YouTube video grid items */}
                             {[...Array(4)].map((_, index) => (
@@ -44,6 +44,7 @@ function Youtube() {
                                             referrerPolicy="strict-origin-when-cross-origin" 
                                             allowFullScreen
                                         ></iframe>
+                                        
                                     </div>
                                 </div>
                             ))}

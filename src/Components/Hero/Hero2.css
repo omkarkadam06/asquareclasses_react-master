@@ -59,6 +59,7 @@
 
 /* === responsive for mobile start === */
 @media (max-width:676px){
+    
     .bannerSlider {
         padding: 20px 0;
         height: 670px !important;
@@ -107,6 +108,10 @@
     }
     .bannerSlider {
         height: 931px;
+    }
+    .banner-titleSection .banner-title {
+        font-size: 60px;
+        margin-bottom: 20px;
     }
 }
 /* === responsive for tablet end === */
