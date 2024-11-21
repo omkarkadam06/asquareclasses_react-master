@@ -46,6 +46,18 @@ const courses_data_hero = [
       mco: '500',
       rat: '48',
       br: '436'
+    },
+    {
+      // iit-jee-pune
+      desc_h: `iit-jee-coaching-classes-institute-in-vishrantwadi-pune`,
+      fee_p2: `INR 55,000`,
+      sub_1: 'Science',
+      sub_2: 'Mathematics',
+      sub_3: 'English +..',
+      qu: '400',
+      mco: '500',
+      rat: '48',
+      br: '145'
     }
   ],
   [

@@ -233,7 +233,7 @@ function Course_hero({ courseName, className }) {
       transform: `translateX(-${currentSlide * 100}%)`
     };
   };
-
+  const currentURL = window.location.pathname;
   return (
     <>
       <div className="course_hero_container">
@@ -246,7 +246,281 @@ function Course_hero({ courseName, className }) {
         >
           <div className="c_h_container_left">
             <h1 className="c_h_heading">
-              {courses_data_api[courseName - 1][className - 1].desc_h}
+            {currentURL === '/iit-jee-coaching-classes-institute-in-vishrantwadi-pune' ? (
+                'IIT JEE Coaching Classes Institute in Vishrantwadi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-yerwada-pune' ? (
+                'IIT JEE Coaching Classes Institute in Yerwada Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-dhanori-pune' ? (
+                'IIT JEE Coaching Classes Institute in Dhanori Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-lohegaon-pune' ? (
+              'IIT JEE Coaching Classes Institute in Lohegaon Pune'
+            )  : currentURL === '/iit-jee-coaching-classes-institute-in-dighi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Dighi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-alandi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Alandi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-khadki-pune' ? (
+              'IIT JEE Coaching Classes Institute in Khadki Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-tingre-nagar-pune' ? (
+              'IIT JEE Coaching Classes Institute in Tingre Nagar Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-shastri-nagar-pune' ? (
+              'IIT JEE Coaching Classes Institute in Shastri Nagar Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-pratik-nagar-pune' ? (
+              'IIT JEE Coaching Classes Institute in Pratik Nagar Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-viman-nagar-pune' ? (
+              'IIT JEE Coaching Classes Institute in Viman Nagar Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-kalyani-nagar-pune' ? (
+              'IIT JEE Coaching Classes Institute in Kalyani Nagar Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-wagholi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Wagholi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-pimpri-pune' ? (
+              'IIT JEE Coaching Classes Institute in Pimpri Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-chinchwad-pune' ? (
+              'IIT JEE Coaching Classes Institute in Chinchwad Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-pcmc-pune' ? (
+              'IIT JEE Coaching Classes Institute in PCMC Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-akudi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Akudi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-nigdi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Nigdi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-bhosari-pune' ? (
+              'IIT JEE Coaching Classes Institute in Bhosari Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-moshi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Moshi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-chakan-pune' ? (
+              'IIT JEE Coaching Classes Institute in Chakan Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-kasarwadi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Kasarwadi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-dapodi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Kasarwadi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-ravet-pune' ? (
+              'IIT JEE Coaching Classes Institute in Ravet Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-vishrantwadi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Vishrantwadi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-kalewadi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Kalewadi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-wakad-pune' ? (
+              'IIT JEE Coaching Classes Institute in Wakad Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-aundh-pune' ? (
+              'IIT JEE Coaching Classes Institute in Aundh Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-baner-pune' ? (
+              'IIT JEE Coaching Classes Institute in Baner Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-hinjewadi-pune' ? (
+              'IIT JEE Coaching Classes Institute in Hinjewadi Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-pimple-saudagar-pune' ? (
+              'IIT JEE Coaching Classes Institute in Pimple Saudagar Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-pimple-gurav-pune' ? (
+              'IIT JEE Coaching Classes Institute in Pimple Gurav Pune'
+            ) : currentURL === '/iit-jee-coaching-classes-institute-in-pimple-nilakh-pune' ? (
+              <>
+              IIT JEE Coaching Classes Institute in Pimple Nilakh Pune
+
+            {/* NEET */}
+            </>
+            ) : currentURL === '/neet-coaching-classes-institute-in-vishrantwadi-pune' ? (
+              'NEET Coaching Classes Institute in Vishrantwadi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-yerwada-pune' ? (
+              'NEET Coaching Classes Institute in Yerwada Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-dhanori-pune' ? (
+              'NEET Coaching Classes Institute in Dhanori Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-lohegaon-pune' ? (
+              'NEET Coaching Classes Institute in Lohegaon Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-dighi-pune' ? (
+              'NEET Coaching Classes Institute in Dighi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-alandi-pune' ? (
+              'NEET Coaching Classes Institute in Alandi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-khadki-pune' ? (
+              'NEET Coaching Classes Institute in Khadki Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-tingre-nagar-pune' ? (
+              'NEET Coaching Classes Institute in Tingre Nagar Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-shastri-nagar-pune' ? (
+              'NEET Coaching Classes Institute in Shastri Nagar Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-pratik-nagar-pune' ? (
+              'NEET Coaching Classes Institute in Pratik Nagar Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-viman-nagar-pune' ? (
+              'NEET Coaching Classes Institute in Viman Nagar Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-kalyani-nagar-pune' ? (
+              'NEET Coaching Classes Institute in Kalyani Nagar Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-wagholi-pune' ? (
+              'NEET Coaching Classes Institute in Wagholi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-pimpri-pune' ? (
+              'NEET Coaching Classes Institute in Pimpri Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-chinchwad-pune' ? (
+              'NEET Coaching Classes Institute in Chinchwad Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-pcmc-pune' ? (
+              'NEET Coaching Classes Institute in PCMC Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-akudi-pune' ? (
+              'NEET Coaching Classes Institute in Akudi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-nigdi-pune' ? (
+              'NEET Coaching Classes Institute in Nigdi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-bhosari-pune' ? (
+              'NEET Coaching Classes Institute in Bhosari Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-moshi-pune' ? (
+              'NEET Coaching Classes Institute in Moshi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-chakan-pune' ? (
+              'NEET Coaching Classes Institute in Chakan Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-kasarwadi-pune' ? (
+              'NEET Coaching Classes Institute in Kasarwadi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-dapodi-pune' ? (
+              'NEET Coaching Classes Institute in Dapodi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-ravet-pune' ? (
+              'NEET Coaching Classes Institute in Ravet Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-kalewadi-pune' ? (
+              'NEET Coaching Classes Institute in Kalewadi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-wakad-pune' ? (
+              'NEET Coaching Classes Institute in Wakad Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-aundh-pune' ? (
+              'NEET Coaching Classes Institute in Aundh Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-baner-pune' ? (
+              'NEET Coaching Classes Institute in Baner Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-hinjewadi-pune' ? (
+              'NEET Coaching Classes Institute in Hinjewadi Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-pimple-saudagar-pune' ? (
+              'NEET Coaching Classes Institute in Pimple Saudagar Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-pimple-gurav-pune' ? (
+              'NEET Coaching Classes Institute in Pimple Gurav Pune'
+            ) : currentURL === '/neet-coaching-classes-institute-in-pimple-nilakh-pune' ? (
+              <>
+              NEET Coaching Classes Institute in Pimple Nilakh Pune
+
+
+              {/* CET */}
+              </>
+            ) : currentURL === '/mht-cet-course-classes-institute-in-vishrantwadi-pune' ? (
+              'MHT CET Course Classes Institute in Vishrantwadi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-yerwada-pune' ? (
+              'MHT CET Course Classes Institute in Yerwada Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-dhanori-pune' ? (
+              'MHT CET Course Classes Institute in Dhanori Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-lohegaon-pune' ? (
+              'MHT CET Course Classes Institute in Lohegaon Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-dighi-pune' ? (
+              'MHT CET Course Classes Institute in Dighi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-alandi-pune' ? (
+              'MHT CET Course Classes Institute in Alandi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-khadki-pune' ? (
+              'MHT CET Course Classes Institute in Khadki Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-tingre-nagar-pune' ? (
+              'MHT CET Course Classes Institute in Tingre Nagar Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-shastri-nagar-pune' ? (
+              'MHT CET Course Classes Institute in Shastri Nagar Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-pratik-nagar-pune' ? (
+              'MHT CET Course Classes Institute in Pratik Nagar Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-viman-nagar-pune' ? (
+              'MHT CET Course Classes Institute in Viman Nagar Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-kalyani-nagar-pune' ? (
+              'MHT CET Course Classes Institute in Kalyani Nagar Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-wagholi-pune' ? (
+              'MHT CET Course Classes Institute in Wagholi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-pimpri-pune' ? (
+              'MHT CET Course Classes Institute in Pimpri Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-chinchwad-pune' ? (
+              'MHT CET Course Classes Institute in Chinchwad Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-pcmc-pune' ? (
+              'MHT CET Course Classes Institute in PCMC Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-akudi-pune' ? (
+              'MHT CET Course Classes Institute in Akudi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-nigdi-pune' ? (
+              'MHT CET Course Classes Institute in Nigdi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-bhosari-pune' ? (
+              'MHT CET Course Classes Institute in Bhosari Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-moshi-pune' ? (
+              'MHT CET Course Classes Institute in Moshi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-chakan-pune' ? (
+              'MHT CET Course Classes Institute in Chakan Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-kasarwadi-pune' ? (
+              'MHT CET Course Classes Institute in Kasarwadi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-dapodi-pune' ? (
+              'MHT CET Course Classes Institute in Dapodi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-ravet-pune' ? (
+              'MHT CET Course Classes Institute in Ravet Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-kalewadi-pune' ? (
+              'MHT CET Course Classes Institute in Kalewadi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-wakad-pune' ? (
+              'MHT CET Course Classes Institute in Wakad Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-aundh-pune' ? (
+              'MHT CET Course Classes Institute in Aundh Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-baner-pune' ? (
+              'MHT CET Course Classes Institute in Baner Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-hinjewadi-pune' ? (
+              'MHT CET Course Classes Institute in Hinjewadi Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-pimple-saudagar-pune' ? (
+              'MHT CET Course Classes Institute in Pimple Saudagar Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-pimple-gurav-pune' ? (
+              'MHT CET Course Classes Institute in Pimple Gurav Pune'
+            ) : currentURL === '/mht-cet-course-classes-institute-in-pimple-nilakh-pune' ? (
+              <>
+              MHT CET Course Classes Institute in Pimple Nilakh Pune
+
+
+              {/* Foundations */}
+              </>
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-vishrantwadi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Vishrantwadi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-yerwada-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Yerwada Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-dhanori-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Dhanori Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-lohegaon-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Lohegaon Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-dighi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Dighi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-alandi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Alandi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-khadki-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Khadki Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-tingre-nagar-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Tingre Nagar Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-shastri-nagar-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Shastri Nagar Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-pratik-nagar-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Pratik Nagar Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-viman-nagar-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Viman Nagar Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-kalyani-nagar-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Kalyani Nagar Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-wagholi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Wagholi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-pimpri-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Pimpri Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-chinchwad-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Chinchwad Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-pcmc-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in PCMC Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-akudi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Akudi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-nigdi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Nigdi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-bhosari-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Bhosari Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-moshi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Moshi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-chakan-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Chakan Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-kasarwadi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Kasarwadi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-dapodi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Dapodi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-ravet-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Ravet Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-kalewadi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Kalewadi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-wakad-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Wakad Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-aundh-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Aundh Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-baner-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Baner Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-hinjewadi-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Hinjewadi Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-saudagar-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Pimple Saudagar Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-gurav-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Pimple Gurav Pune'
+            ) : currentURL === '/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-nilakh-pune' ? (
+              'Class 8th, 9th, 10th Coaching Institutes-Classes in Pimple Nilakh Pune'
+            ) : (
+                courses_data_api[courseName - 1][className - 1].desc_h
+            )}
             </h1>
             <div className="c_h_counter">{counter_d.map(Course_counter)}</div>
             <div className="c_h_points">
