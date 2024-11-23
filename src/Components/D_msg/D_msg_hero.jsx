@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import Form from '../Form2/Form2';
 import { Link } from 'react-router-dom';
 
-function D_msg_hero() {
+function D_msg_() {
   //
   const [viewRef, inView] = useInView({
     triggerOnce: true // Trigger only once
@@ -43,4 +43,4 @@ function D_msg_hero() {
   );
 }
 
-export default D_msg_hero;
+export default D_msg_;

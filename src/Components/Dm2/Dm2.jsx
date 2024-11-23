@@ -1,6 +1,7 @@
 import React from 'react';
 import './Dm2.css';
 import teacher_2 from '../Assets/teacher-img-2-svg.png';
+import Director1 from '../Assets/Complete faculty/director 1.jpg'
 import { useInView } from 'react-intersection-observer';
 
 
@@ -46,7 +47,7 @@ function Dm2() {
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                             <div className="dm2Img-Box">
-                                <img src="https://placehold.co/530x500" alt="" />
+                                <img src={Director1} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 px-4">

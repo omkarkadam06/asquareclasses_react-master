@@ -3,15 +3,17 @@ import './Staff.css';
 import '../style.css';
 import teacher_1 from '../Assets/teacher-img-1-svg.png';
 import teacher_2 from '../Assets/teacher-img-2-svg.png';
+import Director1 from '../Assets/Complete faculty/director 1.jpg'
+
 
 function Staff() {
   return (
     <div className="staff_container">
       <div className="staff">
-        <div className="s_media_content first_smc">
-          <img src={teacher_2} alt="Learning" className="r_learning_image" />
+        <div className="s_media_content first_smc col-lg-5">
+          <img src={Director1} alt="Learning" className="r_learning_image" />
         </div>
-        <div className="r_text_content">
+        <div className="r_text_content col-lg-7">
           <p className="subtitle r_subtitle">
             Mr. Ajit Anupam: Architect of Success at ASQUARE Medical & IIT-JEE
             Academy
@@ -43,7 +45,7 @@ function Staff() {
       </div>
       <div className="cd_divider" style={{ width: '40%' }} />
       <div className="staff">
-        <div className="r_text_content">
+        <div className="r_text_content col-lg-7">
           <p className="subtitle r_subtitle">
             Mr. Arjun Mehta: Enthusiast of Equations
           </p>
@@ -53,8 +55,7 @@ function Staff() {
             achievement. ASQUARE is not just an institute; it's a dream, a
             synonym for success. Join us on a transformative journey, where
             dreams take flight and success becomes a reality. Enroll today for
-            an extraordinary academic experience. - Mrs. Arpita Bharti
-          </p>
+            an extraordinary academic experience. -           </p>
           <ul className="r_about_features">
             <li className="t2">
               <span style={{ color: 'red' }}>✔</span> Visionary Chairman.
@@ -69,7 +70,7 @@ function Staff() {
             </li>
           </ul>
         </div>
-        <div className="s_media_content">
+        <div className="s_media_content col-lg-5">
           <img src={teacher_1} alt="Learning" className="r_learning_image" />
         </div>
       </div>

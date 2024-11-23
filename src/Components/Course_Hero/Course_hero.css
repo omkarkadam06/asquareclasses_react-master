@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  background-image: url('../Assets/12618.png');
+  /* background-image: url('../Assets/'); */
   background-position: right 0px top -120px;
   background-blend-mode: multiply;
   background-size: cover;

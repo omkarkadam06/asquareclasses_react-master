@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import Header from '../Components/Header/Header';
 import DirectorHero2 from '../Components/DirectorsMsg2Hero/DirectorsMsg2Hero.jsx';
 import Dm2 from '../Components/Dm2/Dm2.jsx';
-// import D_msg from '../Components/D_msg/D_msg';
+import D_msg from '../Components/D_msg/D_msg';
 import Testimonials from '../Components/Testimonials/Testimonials.jsx';
 import Whatsapp from '../Components/Whatsapp/Whatsapp.jsx';
 import Footer from '../Components/Footer/Footer.jsx';
@@ -22,8 +22,8 @@ function D_msg_pg() {
       <Navbar />
       <Header />
       <DirectorHero2 />
-      {/* <D_msg /> */}
-      <Dm2 />
+      <D_msg />
+      {/* <Dm2 /> */}
       <Testimonials />
       <Whatsapp />
       <Footer />

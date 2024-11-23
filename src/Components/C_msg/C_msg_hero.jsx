@@ -2,6 +2,8 @@ import React from 'react';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';
 import Form from '../Form2/Form2';
+import banner1 from '../Assets/slider/asquare-banner.webp'
+
 import { Link } from 'react-router-dom';
 
 function C_msg_hero() {
@@ -16,31 +18,31 @@ function C_msg_hero() {
   };
 
   return (
-    <div className="a_u_conatiner">
-      <div className="a_u_conatiner_left">
-        <div
-          ref={viewRef}
-          className={`section ${inView ? 'title_aaa about_us_title' : ''}`}
-        >
-          <span className="block_aaa"></span>
-          <h3>
-            Mrs. Arpita Bharti<span></span>
-          </h3>
+    <section className="Hero2">
+        <div>
+          <div className="bannerSlider inner-banner" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-8">
+                  <div className="course-title d-flex">
+                    <div className="course-name"><h4>Mrs. Arpita Bharti</h4></div>
+                  </div>
+                  <div className="banner-titleSection">
+                    <h1 className="banner-title">
+                      <span className="clr-title">Dream,</span> Learn, Achieve
+                    </h1>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  {/* <Form /> */}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="subtitle">Dream, Learn, Achieve</p>
-        <p className="t2">
-          Embark on success with ASQUARE Medical & IIT-JEE Academy in Pune. Let
-          your hard work be the jet fuel propelling you towards academic
-          achievement. ASQUARE is not just an institute; it's a dream, a synonym
-          for success. Join us on a transformative journey, where dreams take
-          flight and success becomes a reality. Enroll today for an
-          extraordinary academic experience. - Mrs. Arpita Bharti'
-        </p>
-      </div>
-      <div className="a_u_conatiner_right">
-        <Form />
-      </div>
-    </div>
+        <div>
+        </div>
+    </section>
   );
 }
 

@@ -12,6 +12,7 @@ import icon_4 from '../Assets/icon-4.png';
 import icon_5 from '../Assets/icon-5.png';
 import icon_6 from '../Assets/icon-6.png';
 import icon_7 from '../Assets/icon-7.png';
+import banner1 from '../Assets/slider/asquare-banner.webp'
 
 // JEE 11th
 import p_j_11_w from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Sankalp/Web.jpg';
@@ -241,9 +242,9 @@ function Course_hero({ courseName, className }) {
           className={
             currentSlide === 0
               ? 'slider_c_h active_c_h c_h_c'
-              : 'slider_c_h c_h_c'
-          }
-        >
+              : 'slider_c_h c_h_c'}>
+
+            
           <div className="c_h_container_left">
             <h1 className="c_h_heading">
               {courses_data_api[courseName - 1][className - 1].desc_h}
@@ -324,6 +325,7 @@ function Course_hero({ courseName, className }) {
         </button>
       </div>
     </>
+
   );
 }
 

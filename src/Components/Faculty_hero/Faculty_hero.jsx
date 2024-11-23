@@ -16,18 +16,16 @@ function Faculty_hero() {
   });
 
   return (
-    <div className="a_u_conatiner">
-      <div className="a_u_conatiner_left">
-        <div
-          ref={viewRef}
-          className={`section ${inView ? 'title_aaa about_us_title' : ''}`}
-        >
-          <span className="block_aaa"></span>
-          <h3>
-            Faculty<span></span>
-          </h3>
-        </div>
-        <p className="subtitle">Our Journey, Mission, and Values</p>
+    <div className="a_u_conatiner inner-banner">
+      <div className="a_u_conatiner_left col-lg-8">
+          <div className="course-title d-flex">
+            <div className="course-name"><h4>Faculty</h4></div>
+          </div>
+          <div className="banner-titleSection">
+            <h1 className="banner-title">
+              <span className="clr-title">Our Journey,</span> Mission, and Values
+            </h1>
+          </div>
         <p className="t2">
           Discover our institute's inspiring journey, unwavering mission, and
           the core values that drive our commitment to excellence in education.
@@ -37,7 +35,7 @@ function Faculty_hero() {
         </Link>
       </div>
       <div className="a_u_conatiner_right">
-        <Form />
+        {/* <Form /> */}
       </div>
     </div>
   );

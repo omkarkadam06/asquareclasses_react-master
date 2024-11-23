@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './Youtube.css';
 import { useInView } from 'react-intersection-observer';
+import Slider from "react-slick";
+
 
 function Youtube() {
-    const [showModal, setShowModal] = useState(false);
-    const handleShow = () => setShowModal(true);
-    const handleClose = () => setShowModal(false);
 
     const [viewRef, inView] = useInView({
         triggerOnce: true // Trigger only once
@@ -14,6 +13,13 @@ function Youtube() {
     const [viewRef1, inView1] = useInView({
         triggerOnce: true // Trigger only once
     });
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      };
 
     return (
         <div className="introduction youtube_section">
@@ -29,25 +35,26 @@ function Youtube() {
             <div className="container">
                 <div className="row">
                     <div className="a">
-                        <div className="youtube_grid">
-                            {/* Repeatable YouTube video grid items */}
-                            {[...Array(4)].map((_, index) => (
-                                <div className="youtube_gridItem" key={index}>
-                                    <div className="youtube_link">
-                                        <iframe 
-                                            width="100%" 
-                                            height="315" 
-                                            src="https://www.youtube.com/embed/fM-zZ8jshDM?si=kJ3NegdPeOmUWQQf" 
-                                            title={`YouTube video player ${index + 1}`} 
-                                            frameBorder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            referrerPolicy="strict-origin-when-cross-origin" 
-                                            allowFullScreen
-                                        ></iframe>
-                                        
-                                    </div>
+                        <div className="youtub">
+                        <Slider {...settings}>
+                                <div className='slick-item'>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/fM-zZ8jshDM?si=Ck8abpW40uN5dJL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
-                            ))}
+                                <div className='slick-item'>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/fM-zZ8jshDM?si=Ck8abpW40uN5dJL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div className='slick-item'>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/fM-zZ8jshDM?si=Ck8abpW40uN5dJL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                                <div className='slick-item'>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/fM-zZ8jshDM?si=Ck8abpW40uN5dJL7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                </div>
+                               
+                            </Slider>
+                           
                         </div>
                     </div>
                 </div>

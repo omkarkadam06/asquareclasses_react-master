@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import Header from '../Components/Header/Header';
 import Courses_pg_hero from '../Components/Courses_pg_hero/Courses_pg_hero';
 import Courses from '../Components/Courses/Courses.jsx';
+import CourseHero2 from '../Components/Course_Hero/Course_Hero2.jsx'
 import Testimonials from '../Components/Testimonials/Testimonials.jsx';
 import Result from '../Components/Result/Result.jsx';
 import FAQ from '../Components/FAQ/FAQ.jsx';
@@ -22,7 +23,8 @@ function Courses_pg() {
     </Helmet>
       <Navbar />
       <Header />
-      <Courses_pg_hero />
+      {/* <Courses_pg_hero /> */}
+      <CourseHero2 />
       <Updates />
       <Courses />
       <Result />
