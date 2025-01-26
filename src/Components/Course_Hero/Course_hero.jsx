@@ -234,7 +234,7 @@ function Course_hero({ courseName, className }) {
       transform: `translateX(-${currentSlide * 100}%)`
     };
   };
-
+  const currentURL = window.location.pathname;
   return (
     <React.Fragment>
       <div className="course-hore-section">
