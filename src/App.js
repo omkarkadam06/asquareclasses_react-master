@@ -210,6 +210,17 @@ function App() {
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-saudagar-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-gurav-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-nilakh-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
+          {/* <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/neet-practice-strategy-for-repeaters" element={<Blog_content id="1" />} />
+          <Route path="/blog/neet-repeater-five-reasons-to-take-a-drop-year" element={<Blog_content id="2" />} />
+          <Route path="/blog/the-way-to-improve-your-jee-score" element={<Blog_content id="3" />} />
+          <Route path="/blog/a-way-to-be-inspired-for-the-duration-of-neet-and-jee-practice" element={<Blog_content id="4" />} />
+          <Route path="/blog/neet-ug-preparation-strategy-for-neet-repeaters-droppers" element={<Blog_content id="5" />} />
+          <Route path="/blog/importance-of-foundation-course-for-jee-neet" element={<Blog_content id="6" />} />
+          <Route path="/blog/top-preparation-tips-for-iit-jee-aspirants" element={<Blog_content id="7" />} />
+          <Route path="/blog/way-of-preparation-for-the-neet-exam" element={<Blog_content id="8" />} />
+          <Route path="/blog/understand-the-way-to-get-into-medical-college-after-qualifying-neet-exam" element={<Blog_content id="9" />} /> */}
+          
         </Routes>
       </BrowserRouter>
     </div>
