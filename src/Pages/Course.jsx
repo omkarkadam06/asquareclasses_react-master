@@ -24,11 +24,11 @@ function Course({ courseName, className }) {
       <Course_Details courseName={courseName} className={className} />
       <Whatsapp />
       <Suspense fallback={<Loading />}>
-        <Faculty />
-        <Features />
-        <Testimonials />
-        <Form1 />
-        <Footer />
+      <Faculty />
+      <Features />
+      <Testimonials />
+      <Form1 />
+      <Footer />
       </Suspense>
     </>
   );

@@ -33,7 +33,7 @@ function Course_Counter(props) {
   }, []);
 
   return (
-    <div className="flex-centre-bet" key={props.id}>
+    <div className="flex-centre" key={props.id}>
       <p className="t1">{`${props.data} ${sign}`}</p>
       <p className="t2">{props.text}</p>
     </div>

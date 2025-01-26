@@ -2944,9 +2944,9 @@ const data_info = [
         </p>
         <p className="data_info_p1 t4">
           <span className="data_info_span">
-            Stay updated on all NEET UG exam news and updates by visiting ALLEN.
+            Stay updated on all NEET UG exam news and updates by visiting Asquare.
             For comprehensive preparation, consider joining top NEET UG courses
-            at ALLEN to ensure success.
+            at Asquare to ensure success.
           </span>
         </p>
         <p className="data_info_p1 t4">

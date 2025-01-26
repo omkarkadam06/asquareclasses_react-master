@@ -1,4 +1,8 @@
 /* Some common css design */
+.bg_color{
+  background-color: #002f9d;
+  background-image: none !important;
+}
 .cd_t1 {
   font-size: 22px;
   font-weight: 600;
@@ -54,6 +58,12 @@
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(121, 121, 121, 0.3);
 }
+.stickyContent-bar{
+  background-color: #cdefff !important;
+}
+.stickyContent-bar .cd_p3_tnselect{
+  border: 1px solid #05479b !important;
+}
 
 .cd_p1 {
   display: flex;
@@ -69,7 +79,25 @@
   height: 180px;
   /* display: none; */
 }
-
+h3.course_detailTitle {
+  font-size: 35px;
+  color: white;
+}
+.course-tableBg{
+  background-color: #05479b;
+  padding: 20px !important;
+}
+.course-mainTable{
+  background-color: #f7f7f7 !important;
+}
+.course_contentBG{
+  background-color: white !important;
+  background-image: none !important;
+}
+.course_conten_title{
+  font-size: 23px;
+  color: #05479b;
+}
 .cd_p1 ul {
   display: flex;
   gap: 28px;
@@ -195,7 +223,7 @@
 .cd_p3_tselect {
   border: 2px solid #ffdd00;
   background-color: #ffdd00;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   transform: translateY(-4px);
   box-shadow: 0 4px 6px rgba(94, 94, 94, 0.216);
   transition: transform 0.3s ease-in-out;
@@ -299,12 +327,15 @@
 
 .cd_planner {
   padding: 28px;
-  background-image: linear-gradient(135deg, #86ffef 10%, #3d74f4 100%);
   border-radius: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  background-color: #daedff !important;
+}
+.cd_planner .cd_p_box{
+  padding: 10px !important;
 }
 
 .cd_p_container {
@@ -393,6 +424,7 @@
 
 .cd_t_box .cd_p_box {
   width: 480px;
+  background-color: #ffdd0066;
 }
 
 .cd_benifits {
@@ -450,6 +482,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.programme-list{
+  background: #e8f5fb;
+  padding: 19px 40px !important;
+}
+.methodology-box{
+  position: relative;
+}
+.methodology-box .methodology-img {
+  position: absolute;
+  right: 38px;
+  height: 295px;
+  top: 117px;
+}
+.cd_t1{
+  color: #05479b;
 }
 
 @media (min-width: 1620px) {
@@ -556,7 +604,7 @@
     padding: 1vw;
   }
   .cd_envi div img {
-    height: 8vw;
+    height: 12vw;
     width: 12vw;
   }
   /*  */
@@ -725,7 +773,7 @@
     padding: 1vw;
   }
   .cd_envi div img {
-    height: 8vw;
+    height: 12vw;
     width: 14vw;
   }
   /*  */

@@ -21,17 +21,17 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   gap: 1vw;
 }
 
 .review_card {
-  width: 20vw;
+  width: 33%;
   height: fit-content;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  opacity: 0.3;
+  /* opacity: ; */
   transition: opacity 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -39,24 +39,52 @@
   gap: 1vw;
   cursor: pointer;
 }
-
-.review_card div {
+img.icn-1.review-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffdd00;
+}
+.review_card {
+  padding: 30px;
+  gap: 0.4vw;
+}
+img.quoteicon{
+  width: 57px;
+}
+.review-id {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  gap: 15px;
 }
 
-.review_card.active {
+/* .review_card.active {
   background-color: rgb(222, 255, 222);
   opacity: 1;
-}
+} */
 
 .btns_review {
   display: flex;
   justify-content: center;
   gap: 2vw;
 }
+.review-rating {
+  display: flex;
+  margin-top: 4px;
+  gap: 4px;
+}
+.review-topBox {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.review-content{
+  text-align: left;
+  margin-top: 20px;
+}
+.review_container .slick-slide{
+  padding: 0 10px;
+}
+
 
 @media (min-width: 1620px) {
   .review_container {
@@ -66,10 +94,7 @@
   .r_p1 {
     gap: 0.4vw;
   }
-  .review_card {
-    padding: 20px;
-    gap: 0.8vw;
-  }
+ 
   .btns_review {
     gap: 2vw;
   }
@@ -82,10 +107,7 @@
   .r_p1 {
     gap: 0.3vw;
   }
-  .review_card {
-    padding: 16px;
-    gap: 0.4vw;
-  }
+ 
   .btns_review {
     gap: 2vw;
   }
@@ -98,10 +120,7 @@
   .r_p1 {
     gap: 2px;
   }
-  .review_card {
-    padding: 12px;
-    gap: 0.4vw;
-  }
+  
   .btns_review {
     gap: 24px;
   }

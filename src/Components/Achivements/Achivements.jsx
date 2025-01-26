@@ -54,8 +54,7 @@ function Achievements() {
     },
     {
       id: 4,
-      heading: `The Path to Success
-    `,
+      heading: `The Path to Success`,
       sub_heading: `Rooted in Values, Spiritualism, and Unwavering Hard Work`,
       paragraph: `Rooted in Indian values, spiritualism, and unwavering hard work, ASQUARE stands tall with its efficient faculties, all dedicated to guiding students towards success. Our story is one of continuous triumph, adding new chapters of splendid achievements year after year.`,
       viewRef: viewRef4,

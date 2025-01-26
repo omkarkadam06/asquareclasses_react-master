@@ -6,10 +6,16 @@ import p_c1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner
 import i_p_j from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Tables/JEE-2year.png';
 import i_p_n from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Tables/NEEt-2year.png';
 import i_p_c from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Tables/CET-2year.png';
-import envi_1 from '../Assets/1.jpg';
-import envi_3 from '../Assets/3.jpg';
-import envi_4 from '../Assets/4.jpg';
-import envi_5 from '../Assets/5.jpg';
+import result_slide_1 from '../Assets/results/result1.jpeg';
+import result_slide_2 from '../Assets/results/result2.jpeg';
+import result_slide_3 from '../Assets/results/result3.jpeg';
+import result_slide_4 from '../Assets/results/result4.jpeg';
+import result_slide_5 from '../Assets/results/result5.jpeg';
+import result_slide_6 from '../Assets/results/result6.jpeg';
+import envi_1 from '../Assets/course-detail-img.jpg';
+import envi_3 from '../Assets/courseImg-2.jpg';
+import envi_4 from '../Assets/courseImg-3.jpg';
+import envi_5 from '../Assets/courseImg-4.jpg';
 
 const courses_data = [
   [
@@ -20,7 +26,7 @@ const courses_data = [
       introduction_heading:
         'Your Two Year Journey to JEE(Main & Advance) Success with ASQUARE in (West india) Pune',
       introduction_paragraph:
-        'ASQUARE is one of the renowned academy in the field of education to embrace the journey of Two year programme of IIT-JEE (Main & Advance) is the institution of choice by providing the tremendous knowledge and delivering outstanding results in competitive exams.',
+        'Embark on a journey to JEE (Main & Advance) success with ASQUARE Medical & IIT-JEE Academy, your trusted academy in providing quality education and delivering outstanding results in competitive exams. Tailored for JEE aspirants in Pune, our programs ensure a robust foundation, sharpened conceptual knowledge, and improved academic abilities. Choose excellence, choose ASQUARE for your JEE preparation in Pune.',
       // Course description
       course_description_heading:
         'Course Description for IIT-JEE (Main & Advance)',
@@ -31,11 +37,17 @@ const courses_data = [
       course_description_paragraph_phase2:
         'is dedicated to increasing speed and accuracy, crucial for achieving high marks in competitive exams. By mid-June, we aim to complete 50% of the 12th standard syllabus. Subsequently, we revise the 11th standard topics while simultaneously covering the remainder of the 12th standard syllabus. This approach ensures a comprehensive grasp of the entire syllabus.',
       course_description_paragraph_2: 'Choose excellence, choose us!',
+
       // why join asquare
       why_asquare_heading:
         'Why ASQUARE for JEE(Main & Advance) in (west India) Pune?',
       why_asquare_paragraph:
         'The difficulty of the course, level of examination and our commendable teaching techniques with subject expertise and proven success year by year makes ASQUARE the preferred choice for- the two year classroom programme for JEE (Main & Advance) includes class 11th, 12th board examination, breaking down the IIT-JEE (Main & Advance) pattern for a confident strategy.',
+       // Admission and Exam Preparation
+       Adm_Pre_heading:
+       "Admission and Exam Preparation:",
+     Adm_Pre_paragraph:
+       "Many leading engineering and medical colleges admit students based on grades secured in class XII and rank in the respective entrance exams. The 11th JEE Program is an ideal starting point, designed to cater to different student needs and provide a strong foundation for future academic endeavors.",  
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
@@ -49,17 +61,30 @@ const courses_data = [
       image_4: envi_5,
       // Curriculum Highlights
       curriculum_highlights_heading: 'Curriculum Highlights',
-      curriculum_highlights_point_1: 'Benefit of two teacher per subject.',
+      curriculum_highlights_point_1: 'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
       curriculum_highlights_point_2:
         'JEE (Main & Advance) syllabus with class 11th, class 12th board examination.',
       curriculum_highlights_point_3:
-        'Two year classroom program with scheduled lecture & course planner.',
+        'Two yearclassroom program with scheduled lecture & course planner',
       curriculum_highlights_point_4:
-        'Regular Test series ACT (ASQUARE class test), AMT (ASQUARE monthly test), ART (ASQUARE review test) and MOCK test for JEE (Main & Advance) Examination',
+        'ART (ASQUARE review test) and MOCK test for JEE (Main & Advance) Examination',
       curriculum_highlights_point_5:
         'Accessibility for online recorded lecture for revision, video solutions on ASQUARE application for DLP.',
       curriculum_highlights_point_6:
         'Descriptive modules, study extract including DPP and PYQ as per updated syllabus',
+      curriculum_highlights_point_7:
+        'Library facilities, one to one doubt interactions an academic guidance.', 
+      curriculum_highlights_point_8:
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.', 
+      curriculum_highlights_point_9:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.', 
+      curriculum_highlights_point_10:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',  
+      curriculum_highlights_point_11:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_12:
+        'Benefit of two teacher per subject.',  
+
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -78,8 +103,8 @@ const courses_data = [
       // Course Fee
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
-        'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
-      course_fee_point_2: 'INR 2,25,000/-',
+        'Admission + kit fee INR 15,000/- Which is Non Refundable.',
+      course_fee_point_2: '1,60,000/-',
       // Additional Benifits
       additional_benifits_heading: '',
       additional_benifits_point_1:
@@ -92,8 +117,12 @@ const courses_data = [
         'Frequent parent-teacher meetings and a focus on developing problem-solving skills.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_j1,
-      result_poster_2: p_j2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'The Best Online Program For JEE Preparation',
       online_program_point_1:
@@ -125,6 +154,11 @@ const courses_data = [
       why_asquare_heading: 'Why Choose ASQUARE?',
       why_asquare_paragraph:
         "ASQUARE's strength lies in our Pattern-Proof Mode. We prepare you to shine, regardless of any exam pattern changes. Our students don't just excel in JEE Main & Advanced; they also perform exceptionally well in XII Boards, MHCET, WBJEE, KCET, BITSAT, and more.",
+      // Admission and Exam Preparation
+      Adm_Pre_heading:
+       "Why ASQUARE for JEE in Pune?",
+      Adm_Pre_paragraph:
+       "ASQUARE offers an intensive one-year program that goes beyond JEE. We provide an integrated approach, ensuring you excel in JEE Main & Advanced while achieving top scores in your XII Boards, Engineering Entrance Exams, Olympiads, and scholastic tests.In 2018, JEE Advanced made the shift to online testing, and ASQUARE is right there with you. We support the creation of supernumerary seats for female candidates, promoting gender balance in IITs.",    
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
@@ -138,7 +172,7 @@ const courses_data = [
       image_4: envi_5,
       // Curriculum Highlights
       curriculum_highlights_heading: 'Curriculum Spotlight',
-      curriculum_highlights_point_1: 'Benefit of two teacher per subject.',
+      curriculum_highlights_point_1: 'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
       curriculum_highlights_point_2:
         'JEE (Main & Advance) syllabus with class 11th, class 12th board examination.',
       curriculum_highlights_point_3:
@@ -149,6 +183,18 @@ const courses_data = [
         'Accessibility for online recorded lecture for revision, video solutions on ASQUARE application for DLP.',
       curriculum_highlights_point_6:
         'Descriptive modules, study extract including DPP and PYQ as per updated syllabus',
+      curriculum_highlights_point_7:
+        'Library facilities, one to one doubt interactions an academic guidance.',  
+      curriculum_highlights_point_8:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',  
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',       
+      curriculum_highlights_point_11:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',  
+      curriculum_highlights_point_12:
+        'JEE (Main & Advance) syllabus with class 11th, class 12th board examination.',                
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -179,8 +225,12 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_j1,
-      result_poster_2: p_j2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'Why ASQUARE for JEE in Pune?',
       online_program_point_1:
@@ -214,6 +264,11 @@ const courses_data = [
       why_asquare_heading: 'Why ASQUARE for Repeater and Dropper Program?',
       why_asquare_paragraph:
         "ASQUARE's Repeater and Dropper Program are led by a highly experienced faculty team, ensuring you receive the best guidance and coaching. The course is designed for candidates who are determined to excel and backed by exhaustive classroom coaching, Mock Tests, Practice assignments, and a well-researched study material complemented with a substantial question bank.",
+      // Admission and Exam Preparation
+      Adm_Pre_heading:
+       "Admission and Exam Preparation:",
+      Adm_Pre_paragraph:
+       "Many leading engineering and medical colleges admit students based on grades secured in class XII and rank in the respective entrance exams. The 12th Pass JEE Program is an ideal starting point, designed to cater to different student needs and provide a strong foundation for future academic endeavors.",  
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
@@ -230,7 +285,7 @@ const courses_data = [
       curriculum_highlights_point_1:
         'Well-equipped library with faculty support.',
       curriculum_highlights_point_2:
-        'Comprehensive modules and question banks.',
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
       curriculum_highlights_point_3:
         'Personalized attention to address individual needs.',
       curriculum_highlights_point_4: 'Access to reference books.',
@@ -238,6 +293,18 @@ const courses_data = [
         "Optional hostel facilities with pick and drop services based on candidates' requirements.",
       curriculum_highlights_point_6:
         'Classes conducted 4/5 days a week. Each session lasts for 6 hours, ensuring in-depth coverage.',
+      curriculum_highlights_point_7:
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
+      curriculum_highlights_point_8:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',      
+      curriculum_highlights_point_11:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_12:
+        'Comprehensive modules and question banks.',
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -268,8 +335,12 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_j1,
-      result_poster_2: p_j2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'Concept Classes',
       online_program_point_1:
@@ -317,14 +388,26 @@ const courses_data = [
       curriculum_highlights_point_1:
         'Well-equipped library with faculty support.',
       curriculum_highlights_point_2:
-        'Comprehensive modules and question banks.',
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
       curriculum_highlights_point_3:
-        'Personalized attention to address individual needs.',
+        'Comprehensive modules and question banks.',
       curriculum_highlights_point_4: 'Access to reference books.',
       curriculum_highlights_point_5:
-        "Optional hostel facilities with pick and drop services based on candidates' requirements.",
+        "Experienced teachers providing conceptual clarity and mentorship to guide students effectively.",
       curriculum_highlights_point_6:
         'Classes conducted 4/5 days a week. Each session lasts for 6 hours, ensuring in-depth coverage.',
+      curriculum_highlights_point_7:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_8:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_9:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_10:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',
+      curriculum_highlights_point_11:
+        'Classes conducted 4/5 days a week. Each session lasts for 6 hours, ensuring in-depth coverage.',
+      curriculum_highlights_point_12:
+        'Classes conducted 4/5 days a week. Each session lasts for 6 hours, ensuring in-depth coverage.',  
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1: 'Classes conducted 6/7 days a week.',
@@ -355,9 +438,12 @@ const courses_data = [
       additional_benifits_point_4:
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
-      result_heading: 'Results',
-      result_poster_1: p_j1,
-      result_poster_2: p_j2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'High-Lights',
       online_program_point_1:
@@ -379,12 +465,12 @@ const courses_data = [
       introduction_heading:
         'Embark on Your NEET Journey to Medical Success with ASQUARE in Pune (West India)',
       introduction_paragraph:
-        'ASQUARE stands out as a renowned academy in the educational realm, dedicated to guiding students through a two-year program for NEET preparation. Our institution is the preferred choice, offering extensive knowledge and consistently delivering outstanding results in competitive exams.',
+        'Unlock the doors to NEET success with ASQUARE Medical & IIT-JEE Academy, your trusted partner in providing top-notch education and ensuring outstanding results in competitive exams. Tailored for NEET aspirants in Pune, our programs guarantee a solid foundation, enhanced conceptual knowledge, and improved academic abilities. Choose excellence, choose ASQUARE for your NEET preparation in Pune.',
       // Course description
       course_description_heading:
         'Comprehensive Overview: NEET Preparation Course',
       course_description_paragraph_1:
-        'Join our JEE success journey! We are committed to providing quality education to guarantee success and outstanding results in competitive exams! Our two-year program is designed to support 11th&12th with BOARD exam preparation, ensuring a confident strategy for guaranteed success in JEE exam.',
+        'Join our NEET success journey! We are committed to providing quality education to ensure success and outstanding results in competitive exams. Our two-year program is designed to support 11th & 12th with board exam preparation, ensuring a confident strategy for guaranteed success in the NEET exam. ',
       course_description_paragraph_phase1:
         "emphasizes concept building and extensive practice. During this phase, the 11th standard syllabus is thoroughly covered until October-November. We employ a variety of problem-solving approaches to enhance students' ability to tackle diverse questions. This phase lays a solid foundation, essential for advanced learning.",
       course_description_paragraph_phase2:
@@ -393,7 +479,12 @@ const courses_data = [
       // why join asquare
       why_asquare_heading: 'Why ASQUARE for NEET in Pune?',
       why_asquare_paragraph:
-        'The challenging nature of the course, the level of examination, and our commendable teaching techniques with subject expertise and proven success year after year make ASQUARE the preferred choice for the two-year classroom program for NEET, including class 11th, 12th board examination, breaking down the NEET pattern for a confident strategy. Join our two-year classroom program that supports NEET preparation along with class 11th, 12th, and board exam readiness, breaking down the NEET pattern for a confident strategy.',
+        'The challenging nature of the course, the level of examination, and our commendable teaching techniques with subject expertise and proven success year after year make ASQUARE the preferred choice for the two-year classroom program for NEET, including class 11th, 12th board examination, breaking down the NEET pattern for a confident strategy',
+      // Admission and Exam Preparation
+      Adm_Pre_heading:
+       "Admission and Exam Preparation:",
+      Adm_Pre_paragraph:
+       "Many leading engineering and medical colleges admit students based on grades secured in class XII and rank in the respective entrance exams. The 11th NEET Program is an ideal starting point, designed to cater to different student needs and provide a strong foundation for future academic endeavors.",    
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
@@ -407,17 +498,27 @@ const courses_data = [
       image_4: envi_5,
       // Curriculum Highlights
       curriculum_highlights_heading: 'Curriculum Highlights',
-      curriculum_highlights_point_1: 'Benefit of two teacher per subject.',
-      curriculum_highlights_point_2:
-        'NEET syllabus with class 11th, class 12th board examination.',
-      curriculum_highlights_point_3:
-        'Two year classroom program with scheduled lecture & course planner.',
+      curriculum_highlights_point_1: 'Benefit of two teachers per subject.',
+      curriculum_highlights_point_2:'NEET syllabus with class 11th, class 12th board examination.',
+      curriculum_highlights_point_3:'Two-year classroom program with scheduled lectures & course planner.',
       curriculum_highlights_point_4:
         'Regular Test series (ASQUARE Class Test - ACT, ASQUARE Monthly Test - AMT, ASQUARE Review Test - ART) and MOCK tests for competitive examination.',
       curriculum_highlights_point_5:
-        'Accessibility for online recorded lecture for revision, video solutions on ASQUARE application for DLP.',
+        'Accessibility for online recorded lectures for revision, video solutions on ASQUARE application for DLP.',
       curriculum_highlights_point_6:
-        'Descriptive modules, study extract including DPP and PYQ as per updated syllabus',
+        'Descriptive modules, study extracts including DPP and PYQ as per the updated syllabus.',
+      curriculum_highlights_point_7:
+        ' Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_8:
+        'Two-year classroom program with scheduled lectures & course planner.',
+      curriculum_highlights_point_9:
+        ' Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_10:
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
+      curriculum_highlights_point_11:
+        'Library facilities, one-to-one doubt interactions, and academic guidance.',
+      curriculum_highlights_point_12:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',  
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -435,7 +536,7 @@ const courses_data = [
       // Course Fee
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
-        'Students seeking an offline learning experience can opt for the Classroom Mode at our learning centers.',
+        '(Admission + kit) fee INR 15,000/- Which is Non Refundable.',
       course_fee_point_2: 'INR 2,25,000/-',
       // Additional Benifits
       additional_benifits_heading: '',
@@ -449,10 +550,14 @@ const courses_data = [
         'Frequent parent-teacher meetings and a focus on developing problem-solving skills.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_n1,
-      result_poster_2: p_n2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
-      online_program_heading: 'The Best Online Program For JEE Preparation',
+      online_program_heading: 'The Best Online Program For NEET Preparation',
       online_program_point_1:
         'Quality Video Lessons: Access top-notch recorded Video Lectures anytime, anywhere, carefully created by our expert educators. Review important topics whenever you need.',
       online_program_point_2:
@@ -461,7 +566,7 @@ const courses_data = [
         "Track Your Progress: Check how you're doing with regular mock tests following the NTA pattern. Take chapter-wise quizzes to know your strong and weak areas and improve.",
       // Short Message
       short_message:
-        'Join ASQUARE in Pune for a dynamic JEE preparation experience that goes beyond conventional coaching. With our JEE programs, you have the tools, resources, and guidance needed to excel in your competitive exams. Your journey to success starts here!'
+        'Join ASQUARE in Pune for a dynamic NEET preparation experience that goes beyond conventional coaching. With our NEET programs, you have the tools, resources, and guidance needed to excel in your competitive exams. Your journey to success starts here!'
     },
     {
       // NEET 12th
@@ -506,6 +611,18 @@ const courses_data = [
         'Accessibility for online recorded lecture for revision, video solutions on ASQUARE application for DLP.',
       curriculum_highlights_point_6:
         'Descriptive modules, study extract including DPP and PYQ as per updated syllabus',
+      curriculum_highlights_point_7:
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
+      curriculum_highlights_point_8:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_11:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -536,8 +653,12 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_n1,
-      result_poster_2: p_n2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: '__',
       online_program_point_1: '__',
@@ -552,14 +673,14 @@ const courses_data = [
 
       // Course introduction
       introduction_heading:
-        "Elevate Your NEET Preparation with ASQUARE's Repeater/Dropper Program in Pune (West India)",
+        "Embark on Your NEET Dropper Journey to Medical Success with ASQUARE in Pune",
       introduction_paragraph:
-        'ASQUARE, a beacon of excellence in education, introduces a specialized Repeater/Dropper Program for NEET, AIIMS, and other Pre-Medical Exams. Our highly qualified, young, and talented faculty team is committed to guiding you through an intensive program that combines exhaustive classroom coaching with Mock Tests, Practice assignments, and a well-researched study material backed by a significant question bank.',
+        'Revitalize your NEET aspirations with ASQUARE Medical & IIT-JEE Academy, your trusted companion in providing top-notch education and ensuring outstanding results in competitive exams. Tailored for NEET droppers in Pune, our program guarantees a solid foundation, enhanced conceptual knowledge, and improved academic abilities. Choose excellence, choose ASQUARE for your NEET dropper preparation in Pune.',
       // Course description
       course_description_heading:
-        'Course Description for NEET Repeater/Dropper Program',
+        'Comprehensive Overview: NEET Dropper Preparation Program',
       course_description_paragraph_1:
-        'Join our NEET success journey! Our Repeater or Dropper Program is designed for students aiming to enhance their NEET, AIIMS and other Pre-Medical Exam performance. Led by our experienced faculty team, this program provides targeted coaching, ensuring a confident strategy for your success.',
+        'Join our NEET success journey! We are committed to providing quality education to ensure success and outstanding results in competitive exams. Our dropper program is designed to support NEET preparation, ensuring a confident strategy for guaranteed success in the NEET exam. Choose excellence; choose us!',
       course_description_paragraph_phase1:
         'Building the Foundation --  Comprehensive coverage of XI-XII syllabus with a glimpse of XII syllabus twice. Logical and analytical thinking emphasized from the start. Module-based learning with dedicated query sessions.',
       course_description_paragraph_phase2:
@@ -584,21 +705,33 @@ const courses_data = [
       curriculum_highlights_heading: 'Curriculum Highlights',
       curriculum_highlights_point_1: 'Benefit of two teachers per subject.',
       curriculum_highlights_point_2:
-        'Organized educational scheduler tailored for NEET repeaters/droppers.',
+        'NEET syllabus with dedicated focus on revision and problem-solving.',
       curriculum_highlights_point_3:
-        'Comprehensive curriculum for 11th and 12th-grade studies.',
+        'Specialized dropper program with scheduled lectures & course planner.',
       curriculum_highlights_point_4:
-        'Daily exercise worksheets and physical education resources.',
+        'Regular Test series (ASQUARE Class Test - ACT, ASQUARE Monthly Test - AMT, ASQUARE Review Test - ART) and MOCK tests for competitive examination.',
       curriculum_highlights_point_5:
-        'Complimentary usage of our Learning App for in-depth review of syllabus concepts.',
+        'Accessibility for online recorded lectures for revision, video solutions on ASQUARE application for DLP.',
       curriculum_highlights_point_6:
-        'Descriptive modules, study extract including DPP and PYQ as per updated syllabus',
+        'Separate class for repair mistakes of previous attempt.',
+      curriculum_highlights_point_7:
+        'Descriptive modules, study extracts including DPP and PYQ as per the updated syllabus.',
+      curriculum_highlights_point_8:
+        'Library facilities, one-to-one doubt interactions, and academic guidance.',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_11:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',  
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
-        '800+ Classes (Online & Offline: Physics 240+, Chemistry 240+, Biology 320+), 90 Minutes Each.',
-      course_planner_point_2: '8000+ Questions (Online & Offline).',
-      course_planner_point_3: '35+ Practice Test Papers.',
+        '400+ Classes (Online & Offline: Physics 120+, Chemistry 120+, Biology 160+), 90 Minutes Each.',
+      course_planner_point_2: '4000+ Questions (Online & Offline).',
+      course_planner_point_3: '20+ Practice Test Papers.',
       course_planner_point_4:
         'Free Learning App:  Live Classes ,   Recorded Lectures,  Video Solutions,  PYQs & More.',
       course_planner_point_5:
@@ -609,8 +742,8 @@ const courses_data = [
       // Course Fee
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
-        'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
-      course_fee_point_2: 'INR [1,00,000/-] + 15000',
+        'Admission + kit fee INR 10,000/- (Non-Refundable).',
+      course_fee_point_2: 'INR 75,000/- Tuition fee',
       // Additional Benifits
       additional_benifits_heading: 'Additional Benefits',
       additional_benifits_point_1:
@@ -623,16 +756,20 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_n1,
-      result_poster_2: p_n2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
-      online_program_heading: 'Facilities by ASQUARE',
+      online_program_heading: 'The Best Online Program For NEET Dropper Preparation:',
       online_program_point_1:
-        'Well-equipped library with faculty support. Comprehensive modules and question banks.',
+        'Quality Video Lessons: Access top-notch recorded Video Lectures anytime, anywhere, carefully created by our expert educators. Review important topics whenever you need.',
       online_program_point_2:
-        'Personalized attention for doubt resolution. Access to reference books.',
+        'Quick Doubt Solutions: Ask your questions and get speedy answers during and after classes from our experienced teachers. You can also clarify doubts via Live Chat.',
       online_program_point_3:
-        "Optional hostel facilities with pick-and-drop services based on candidates' requirements.",
+        "Track Your Progress: Check how you're doing with regular mock tests following the NTA pattern. Take chapter-wise quizzes to know your strong and weak areas and improve.",
       // Short Message
       short_message:
         "Enrich your NEET preparation with ASQUARE's dedicated faculty, cutting-edge resources, and personalized attention. Our holistic approach ensures that you are well-prepared to tackle the challenges of NEET."
@@ -642,20 +779,25 @@ const courses_data = [
 
       // Course introduction
       introduction_heading:
-        "Fast-Track Your Success with ASQUARE's Crash Course in Pune.",
+        "Embark on Your Accelerated NEET Journey to Medical Success with ASQUARE in Pune",
       introduction_paragraph:
-        'ASQUARE, a beacon of excellence in education, introduces a specialized Crash Course Program for NEET, AIIMS, and other Pre-Medical Exams. Our highly qualified, young, and talented faculty team is committed to guiding you through an intensive program that combines exhaustive classroom coaching with Mock Tests, Practice assignments, and a well-researched study material backed by a significant question bank.',
+        "Elevate your NEET preparation with ASQUARE Medical & IIT-JEE Academy's Crash Course, a dynamic and intensive program designed for rapid and effective learning. Tailored for NEET aspirants in Pune, our Crash Course ensures a comprehensive review, sharpened skills, and strategic preparation to excel in the NEET exam. Choose excellence, choose ASQUARE for your NEET Crash Course in Pune. ASQUARE stands as a beacon of educational excellence, committed to guiding students through a focused and result-oriented NEET Crash Course. Our academy is the preferred choice, offering accelerated knowledge and consistently delivering outstanding results in competitive exams.",
       // Course description
-      course_description_heading: 'Course Description',
+      course_description_heading: 'Comprehensive Overview: NEET Crash Course',
       course_description_paragraph_1:
-        'This specially designed Crash Course is for students aiming to appear for NEET in the same year. The program includes concept relearning of highly weightage topics from all subjects. Frequent mock test series create an exam-like environment, preparing students for the rigor of NEET.',
+        'Join our NEET success journey! We are committed to providing quality education to ensure success and outstanding results in competitive exams. Our Crash Course is designed to cover the entire NEET syllabus in a concise period, ensuring a confident strategy for guaranteed success in the NEET exam. Choose excellence; choose us!ASQUARE is known for offering the best Crash Courses for NEET, providing top-notch education, and ensuring success through effective training and concepts.',
       course_description_paragraph_phase1: '__',
       course_description_paragraph_phase2: '__',
       course_description_paragraph_2: 'Choose excellence, choose us!',
       // why join asquare
-      why_asquare_heading: 'Why ASQUARE for the Crash Course?',
+      why_asquare_heading: 'Why ASQUARE for NEET Crash Course in Pune?',
       why_asquare_paragraph:
-        "ASQUARE's Crash Course is led by a highly qualified faculty team, ensuring you receive top-notch coaching to tackle the challenges of JEE Main & Advanced and other state-level Engineering Exams. The course is crafted to deliver exhaustive classroom coaching complemented by Mock Tests, Practice assignments, and a well-researched study material supported by a significant question bank.",
+        "ASQUARE Medical & IIT-JEE Academy is dedicated to fast-tracking your success in NEET. Our distinguished learning facility, the advantage of two teachers per subject, and a proven track record make us the preferred choice for NEET aspirants seeking a Crash Course in Pune. Join our Crash Course that condenses NEET preparation into a strategic and time-efficient format. The challenging nature of the NEET exam, our commendable teaching techniques, and subject expertise make ASQUARE the preferred choice for aspirants looking to maximize their preparation in a short span.",
+       // Admission and Exam Preparation
+       Adm_Pre_heading:
+       "Admission and Exam Preparation:",
+      Adm_Pre_paragraph:
+       "Many leading engineering and medical colleges admit students based on grades secured in class XII and rank in the respective entrance exams. The NEET Program is an ideal starting point, designed to cater to different student needs and provide a strong foundation for future academic endeavors.",
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
@@ -670,25 +812,37 @@ const courses_data = [
       // Curriculum Highlights
       curriculum_highlights_heading: 'Facilities Provided by ASQUARE',
       curriculum_highlights_point_1:
-        'Well-equipped library with faculty support.',
+        'Benefit of two teachers per subject.',
       curriculum_highlights_point_2:
-        'Comprehensive modules and question banks.',
+        'Condensed NEET syllabus review with a focus on key concepts and problem-solving.',
       curriculum_highlights_point_3:
-        'Personalized attention to address individual needs.',
-      curriculum_highlights_point_4: 'Access to reference books.',
+        'Specialized Crash Course with scheduled lectures & course planner.',
+      curriculum_highlights_point_4: 'Intensive Test series (ASQUARE Class Test - ACT, ASQUARE Monthly Test - AMT, ASQUARE Review Test - ART) and MOCK tests for competitive examination.',
       curriculum_highlights_point_5:
-        "Optional hostel facilities with pick and drop services based on candidates' requirements.",
+        "Accessibility for online recorded lectures for revision, video solutions on ASQUARE application for DLP.",
       curriculum_highlights_point_6:
+        'Descriptive modules, study extracts including DPP and PYQ as per the updated syllabus.',
+      curriculum_highlights_point_7:
+        'Library facilities, one-to-one doubt interactions, and academic guidance.',
+      curriculum_highlights_point_8:
         'Classes conducted 4/5 days a week. Each session lasts for 6 hours, ensuring in-depth coverage.',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        ' Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_11:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',
       // Course Planner
       course_planner_heading: 'Course Planner',
-      course_planner_point_1: 'Classes conducted 6/7 days a week.',
+      course_planner_point_1: '200+ Classes (Online & Offline: Physics 60+, Chemistry 60+, Biology 80+), 90 Minutes Each.',
       course_planner_point_2:
-        'Each session lasts for 6 hours, ensuring in-depth coverage.',
+        '2000+ Questions (Online & Offline).',
       course_planner_point_3:
-        'Designed to clarify concepts, both fundamentals and at the JEE Main & Advanced level.',
+        '10+ Practice Test Papers.',
       course_planner_point_4:
-        'Students benefit from strong support and proper guidance by highly qualified trainers to crack competitive exams.',
+        'Free Learning App: Live Classes, Recorded Lectures, Video Solutions, PYQs & More.',
       course_planner_point_5:
         'Key tricks and strategies shared by highly qualified, young, and talented faculties during peak exam times.',
       // Table
@@ -697,7 +851,7 @@ const courses_data = [
       // Course Fee
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
-        'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
+        'Students seeking an accelerated learning experience can opt for the Crash Course at our physical learning centers.',
       course_fee_point_2: 'INR [40,000] + 10000',
       // Additional Benifits
       additional_benifits_heading: 'Additional Benefits',
@@ -711,16 +865,20 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_n1,
-      result_poster_2: p_n2,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
-      online_program_heading: 'High-Lights',
+      online_program_heading: 'The Best Online Program For NEET Crash Course:',
       online_program_point_1:
-        'Concept relearning of highly weightage topics from all subjects.',
+        'Quality Video Lessons: Access top-notch recorded Video Lectures anytime, anywhere, carefully created by our expert educators. Review important topics whenever you need.',
       online_program_point_2:
-        'Frequent mock test series replicating the NEET examination environment.',
+        'Quick Doubt Solutions: Ask your questions and get speedy answers during and after classes from our experienced teachers. You can also clarify doubts via Live Chat.',
       online_program_point_3:
-        'Key tricks and strategies shared by highly qualified, young, and talented faculties during peak exam times.',
+        "Track Your Progress: Check how you're doing with regular mock tests following the NTA pattern. Take chapter-wise quizzes to know your strong and weak areas and improve.",
       // Short Message
       short_message:
         "Enrich your NEET preparation with ASQUARE's dedicated faculty, cutting-edge resources, and personalized attention. Our holistic approach ensures that you are well-prepared to tackle the challenges of NEET and other state Engineering Exams. Accelerate your success with ASQUARE!"
@@ -771,9 +929,21 @@ const courses_data = [
       curriculum_highlights_point_4:
         'Complimentary usage of our Learning App for in-depth review of syllabus concepts.',
       curriculum_highlights_point_5:
-        'Benefit of two teacher per subject. JEE (Mains & Advance) syllabus with class 11th & 12th board examination.',
+        'Benefit of two teacher per subject.',
       curriculum_highlights_point_6:
+        'JEE (Mains & Advance) syllabus with class 11th & 12th board examination.',
+        curriculum_highlights_point_7:
+        'Two year classroom program with scheduled lecture & course planner.',
+        curriculum_highlights_point_8:
         'Regular Test series ACT (ASQUARE class test), AMT (ASQUARE monthly test), ART (ASQUARE review test) and MOCK test for competitive examination',
+        curriculum_highlights_point_9:
+        'Accessibility for online recorded lecture for revision, video solutions on ASQUARE application for DLP ( distance learning programme).',
+        curriculum_highlights_point_10:
+        'Descriptive modules, study extract including DPP (Daily practice paper) and PYQ (previous year question) as per updated syllabus.',
+        curriculum_highlights_point_11:
+        'Library facilities, one to one doubt interactions an academic guidance.',
+        curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',  
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -805,8 +975,12 @@ const courses_data = [
         "Optional hostel facilities with convenient pick and drop services tailored to candidates' requirements.",
       // Results
       result_heading: 'Results',
-      result_poster_1: p_c1,
-      result_poster_2: p_j1,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'Schedule for Candidates / Concept Classes',
       online_program_point_1:
@@ -864,6 +1038,19 @@ const courses_data = [
         'Personalized doubt resolution assistance and routine testing capability.',
       curriculum_highlights_point_6:
         'Students benefit from robust support and expert guidance by highly qualified trainers, enhancing their ability to crack competitive exams.',
+      curriculum_highlights_point_7:
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
+      curriculum_highlights_point_8:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_11:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',
+      
       // Course Planner
       course_planner_heading: 'Facilities Provided by ASQUARE',
       course_planner_point_1:
@@ -896,8 +1083,12 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_c1,
-      result_poster_2: p_j1,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: '__',
       online_program_point_1: '__',
@@ -945,7 +1136,7 @@ const courses_data = [
       curriculum_highlights_point_1:
         'Well-equipped library with faculty support.',
       curriculum_highlights_point_2:
-        'Comprehensive modules and question banks.',
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
       curriculum_highlights_point_3:
         'Personalized attention to address individual needs.',
       curriculum_highlights_point_4: 'Access to reference books.',
@@ -953,6 +1144,18 @@ const courses_data = [
         "Optional hostel facilities with pick and drop services based on candidates' requirements.",
       curriculum_highlights_point_6:
         'Access to reference books for thorough preparation.',
+      curriculum_highlights_point_7:
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
+      curriculum_highlights_point_8:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_11:
+        'Comprehensive modules and question banks.',
+      curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',  
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -970,7 +1173,7 @@ const courses_data = [
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
         'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
-      course_fee_point_2: 'INR [1,00,000/-] + 15000',
+      course_fee_point_2: 'INR [1,00,000/-] + 15000 (GST EXCLUDED) .',
       // Additional Benifits
       additional_benifits_heading: 'Schedule for Candidates / Concept Classes',
       additional_benifits_point_1:
@@ -983,8 +1186,12 @@ const courses_data = [
         'Comprehensive modules and an extensive question bank.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_c1,
-      result_poster_2: p_j1,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'Facilities Provided by ASQUARE',
       online_program_point_1:
@@ -1037,11 +1244,23 @@ const courses_data = [
       curriculum_highlights_point_3:
         'Well-researched study material backed by a substantial question bank.',
       curriculum_highlights_point_4:
-        "Optional hostel facilities with pick and drop services based on candidates' requirements.",
+        "Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.",
       curriculum_highlights_point_5:
         'Access to reference books for thorough preparation.',
       curriculum_highlights_point_6:
         'Personalized attention to address individual needs.',
+      curriculum_highlights_point_7:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_8:
+        'Optional hostel facilities with pick and drop services based on candidates',
+      curriculum_highlights_point_9:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_10:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_11:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_12:
+        'Well-researched study material backed by a substantial question bank.',
       // Course Planner
       course_planner_heading: 'Course Planner',
       course_planner_point_1:
@@ -1061,7 +1280,7 @@ const courses_data = [
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
         'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
-      course_fee_point_2: 'INR [30,000] + 10000',
+      course_fee_point_2: 'INR [30,000] + 10000 (GST INCLUDED)',
       // Additional Benifits
       additional_benifits_heading: 'Additional Benefits',
       additional_benifits_point_1:
@@ -1074,8 +1293,12 @@ const courses_data = [
         'Ranker Potential Index (RPI) prediction to track your growth in one year.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_c1,
-      result_poster_2: p_j1,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'High-Lights',
       online_program_point_1:
@@ -1110,8 +1333,14 @@ const courses_data = [
         'Why ASQUARE for JEE(Main & Advance) in (west India) Pune?',
       why_asquare_paragraph:
         "ASQUARE's strength lies in our Pattern-Proof Mode. We prepare you to shine, regardless of any exam pattern changes. Our students don't just excel in JEE Main & Advanced; they also perform exceptionally well in XII Boards, MHCET, WBJEE, KCET, BITSAT, and more.",
-      // Teaching Methodologies
-      teaching_methologies_heading: 'Teaching Methodologies',
+      // Admission and Exam Preparation
+      Adm_Pre_heading:
+        "Admission and Exam Preparation:",
+      Adm_Pre_paragraph:
+        "Many leading engineering and medical colleges admit students based on grades secured in class XII and rank in the respective entrance exams. The 8th Foundation Program is an ideal starting point, designed to cater to different student needs and provide a strong foundation for future academic endeavors.",
+        // Teaching Methodologies
+      teaching_methologies_heading:
+      "Teaching Methodologies",
       teaching_methologies_point_1:
         'Our classroom programs are very interactive and are designed with such proficiency that no extra study material is needed to achieve your desired success in examination.',
       teaching_methologies_point_2:
@@ -1132,6 +1361,19 @@ const courses_data = [
       curriculum_highlights_point_5: 'Provides a competitive advantage.',
       curriculum_highlights_point_6:
         'Fills the gap between school curriculum and entrance exam patterns.',
+      curriculum_highlights_point_7:
+        'Emphasizes application-based learning.',
+      curriculum_highlights_point_8:
+        'Not limited to IIT-JEE; prepares for various entrance exams.',
+      curriculum_highlights_point_9:
+        'Tests application and analytical knowledge.',
+      curriculum_highlights_point_10:
+        'Build on the fundamental concepts which are taught in grade VIII and above.',
+      curriculum_highlights_point_11:
+        'Enhances IQ and EQ through comprehensive preparation.',
+      curriculum_highlights_point_12:
+        'Tests application and analytical knowledge.',
+      
       // Course Planner
       course_planner_heading: 'Subjects Included',
       course_planner_point_1: 'Mathematics',
@@ -1145,22 +1387,26 @@ const courses_data = [
       // Course Fee
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
-        'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
+        'Admission + kit fee INR 5,000/- Which is Non Refundable.',
       course_fee_point_2: 'INR 35,000/-',
       // Additional Benifits
-      additional_benifits_heading: '',
+      additional_benifits_heading: 'Program Schedule',
       additional_benifits_point_1:
-        'Intensive syllabus-wide testing and regularly updated study materials.',
+        'Duration: 2 & half hours per lecture.',
       additional_benifits_point_2:
-        'Two faculties per subject, interactive teaching, and individual student attention.',
+        'Days: 3 to 4 days a week.',
       additional_benifits_point_3:
-        '12-hour daily access to faculties and library facilities.',
+        'Timing: Evening (In between 3:30 pm to 8pm).',
       additional_benifits_point_4:
-        'Frequent parent-teacher meetings and a focus on developing problem-solving skills.',
+        'Adheres to a regular and structured schedule.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_j1,
-      result_poster_2: p_n1,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: '__',
       online_program_point_1: '__',
@@ -1187,9 +1433,14 @@ const courses_data = [
       course_description_paragraph_2: 'Choose excellence, choose us!',
       // why join asquare
       why_asquare_heading:
-        'Why ASQUARE for JEE(Main & Advance) in (west India) Pune?',
+        'Foundation for Future Competitive Exams like IIT-JEE & NEET',
       why_asquare_paragraph:
-        "ASQUARE's strength lies in our Pattern-Proof Mode. We prepare you to shine, regardless of any exam pattern changes. Our students don't just excel in JEE Main & Advanced; they also perform exceptionally well in XII Boards, MHCET, WBJEE, KCET, BITSAT, and more.",
+        "•	Build on the fundamental concepts which are taught in grade IX and above.",
+      // Admission and Exam Preparation
+      Adm_Pre_heading:
+        "Preparation for National Competitive Exams:",
+      Adm_Pre_paragraph:
+        "The 9th Foundation Program at ASQUARE Medical & IIT-JEE Academy goes beyond regular academics by preparing students for national competitive exams such as KVPY, MTSE, SOF, NTSE, and many more. This holistic approach ensures that students are well-equipped to excel in a variety of competitive examinations.",
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
@@ -1205,13 +1456,24 @@ const courses_data = [
       curriculum_highlights_heading: 'Program Advantages',
       curriculum_highlights_point_1: 'Encourages thinking outside the box.',
       curriculum_highlights_point_2: 'In-depth analysis of exercises.',
-      curriculum_highlights_point_3:
-        'Trains students to handle the stress of entrance exams.',
+      curriculum_highlights_point_3: 'Trains students to handle the stress of entrance examinations.',
       curriculum_highlights_point_4:
-        'Launches a candidate’s preparation for entrance exams.',
+        'Launches a candidate’s preparation for entrance examinations.',
       curriculum_highlights_point_5: 'Provides a competitive advantage.',
       curriculum_highlights_point_6:
         'Fills the gap between school curriculum and entrance exam patterns.',
+        curriculum_highlights_point_7:
+        'Emphasizes application-based learning.',
+        curriculum_highlights_point_8:
+        'Not limited to IIT-JEE & NEET; prepares for various entrance examinations.',
+        curriculum_highlights_point_9:
+        'KVPY (Kishore Vaigyanik Protsahan Yojana)',
+        curriculum_highlights_point_10:
+        'MTSE (Maharashtra Talent Search Examination)',
+        curriculum_highlights_point_11:
+        'SOFS (Science Olympiad Foundation Scholarships)',
+        curriculum_highlights_point_12:
+        'NTSE (National Talent Search Examination) and many more.',
       // Course Planner
       course_planner_heading: 'Subjects Included',
       course_planner_point_1: 'Mathematics',
@@ -1225,11 +1487,11 @@ const courses_data = [
       // Course Fee
       course_fee_heading: 'Our Course Fees',
       course_fee_point_1:
-        'Students seeking an offline learning experience can opt for the Classroom Mode at our physical learning centers.',
+        'Admission + kit fee INR 5,000/- Which is Non Refundable.',
       course_fee_point_2: 'INR 45,000/-',
       // Additional Benifits
       additional_benifits_heading: 'Program Schedule',
-      additional_benifits_point_1: 'Duration: 2 & half hours per lecture.',
+      additional_benifits_point_1: 'Duration: 2 to 3 hours per day.',
       additional_benifits_point_2: 'Days: 3 to 4 days a week.',
       additional_benifits_point_3:
         'Timing: Evening (In between 3:30 pm to 8pm).',
@@ -1237,8 +1499,12 @@ const courses_data = [
         'Adheres to a regular and structured schedule.',
       // Results
       result_heading: 'Results',
-      result_poster_1: p_j1,
-      result_poster_2: p_n1,
+      result_poster_1: result_slide_1,
+      result_poster_2: result_slide_2,
+      result_poster_3: result_slide_3,
+      result_poster_4: result_slide_4,
+      result_poster_5: result_slide_5,
+      result_poster_6: result_slide_6,
       // Online Program
       online_program_heading: 'Preparation for Competitive Exams',
       online_program_point_1:
@@ -1288,11 +1554,23 @@ const courses_data = [
       curriculum_highlights_point_3:
         'Initiates early preparation for entrance exams. Provides a competitive advantage.',
       curriculum_highlights_point_4:
-        'Adheres to a regular and structured schedule.',
+        'Thorough focus on Physics, Chemistry, and Mathematics, covering all JEE Main and Advanced topics.',
       curriculum_highlights_point_5:
         'Fills the gap between school curriculum and board exam patterns. Emphasizes application-based learning.',
       curriculum_highlights_point_6:
         'Equips students for both board and competition exams.',
+      curriculum_highlights_point_7:
+        'Experienced teachers providing conceptual clarity and mentorship to guide students effectively.',
+      curriculum_highlights_point_8:
+        'Weekly tests, quizzes, and mock exams to track progress and improve problem-solving skills.',
+      curriculum_highlights_point_9:
+        'Adheres to a regular and structured schedule.',
+      curriculum_highlights_point_10:
+        'Dedicated sessions for resolving student doubts and offering personalized support.',
+      curriculum_highlights_point_11:
+        'Special emphasis on complex problem-solving techniques, especially for JEE Advanced preparation.',
+      curriculum_highlights_point_12:
+        'Access to an online portal and mobile app for resources, lectures, and updates, enhancing learning flexibility.',
       // Course Planner
       course_planner_heading: 'Subjects Included',
       course_planner_point_1: 'Mathematics',
@@ -1310,7 +1588,7 @@ const courses_data = [
       course_fee_point_2: 'INR 55,000/-',
       // Additional Benifits
       additional_benifits_heading: 'Program Schedule',
-      additional_benifits_point_1: 'Duration: 2 & half hours per lecture.',
+      additional_benifits_point_1: '2 to 3 hours per day.',
       additional_benifits_point_2: 'Days: 3 to 4 days a week.',
       additional_benifits_point_3:
         'Timing: Evening (In between 3:30 pm to 8pm).',

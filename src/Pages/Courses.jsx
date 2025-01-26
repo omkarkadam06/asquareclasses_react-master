@@ -12,6 +12,7 @@ import Updates from '../Components/Live_Updates/Updates.jsx';
 import Form1 from '../Components/Form1/Form1.jsx';
 import Whatsapp from '../Components/Whatsapp/Whatsapp.jsx';
 import Footer from '../Components/Footer/Footer.jsx';
+import MobileForm from '../Components/Mobileform/MobileForm.jsx';
 
 function Courses_pg() {
   return (
@@ -25,6 +26,7 @@ function Courses_pg() {
       <Header />
       {/* <Courses_pg_hero /> */}
       <CourseHero2 />
+      <MobileForm />
       <Updates />
       <Courses />
       <Result />

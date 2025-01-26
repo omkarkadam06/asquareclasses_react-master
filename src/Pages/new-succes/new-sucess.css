@@ -1,0 +1,8 @@
+.clg-name{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.uc-batch{
+    background-color: white;
+    padding: 0 10px;
+}

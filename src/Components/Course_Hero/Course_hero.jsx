@@ -236,21 +236,31 @@ function Course_hero({ courseName, className }) {
   };
 
   return (
-    <>
-      <div className="course_hero_container">
-        <div
-          className={
-            currentSlide === 0
-              ? 'slider_c_h active_c_h c_h_c'
-              : 'slider_c_h c_h_c'}>
-
-            
-          <div className="c_h_container_left">
-            <h1 className="c_h_heading">
+    <React.Fragment>
+      <div className="course-hore-section">
+      <div className="course_hero_container container banner-titleSection">
+        <div className="row">
+          <div className="col-md-7">
+            <div className='course-name course-batch'>
+              <h4>
+            {courses_data_api[courseName - 1][className - 1].title}
+              </h4>
+            </div>
+          <h1 className="banner-title courseBanner-title">
               {courses_data_api[courseName - 1][className - 1].desc_h}
             </h1>
+            <div className="duration_box">
+              <p>
+              {courses_data_api[courseName - 1][className - 1].duration}
+              </p>
+            </div>
+            {/* <div className="price-package">
+          <img src={img1} alt="img" />
+            <p>{courses_data_api[courseName - 1][className - 1].fee_p2}</p>
+            <button>Pay Now</button>
+            </div> */}
             <div className="c_h_counter">{counter_d.map(Course_counter)}</div>
-            <div className="c_h_points">
+            <div className="c_h_points points-2">
               <div className="c_h_points_left">
                 <div>
                   <img src={icon_1} alt="icon" className="icn-1" />
@@ -262,7 +272,7 @@ function Course_hero({ courseName, className }) {
                 </div>
                 <div>
                   <img src={icon_4} alt="icon" className="icn-1" />
-                  <p className="t2">Interactive Class</p>
+                  <p className="t2">One to One Interation</p>
                 </div>
                 <div>
                   <img src={icon_3} alt="icon" className="icn-1" />
@@ -292,39 +302,13 @@ function Course_hero({ courseName, className }) {
               </div>
             </div>
           </div>
-          <div className="c_h_container_right">
-            <img src={img1} alt="img" />
-            <p>{courses_data_api[courseName - 1][className - 1].fee_p2}</p>
-            <button>Pay Now</button>
-          </div>
-        </div>
-        <div
-          className={
-            currentSlide === 1 ? 'slider_c_h active_c_h' : 'slider_c_h'
-          }
-        >
-          <img src={poster_2_a} alt="img" className="poster poster_1_1_h" />
-          <img src={poster_2_b} alt="img" className="poster poster_1_2_h" />
-          <img src={poster_2_c} alt="img" className="poster poster_1_3_h" />
-          <img src={poster_2_d} alt="img" className="poster poster_1_4_h" />
-          <div className="header_form">
+          <div className="col-md-5 form-col">
             <Form />
           </div>
         </div>
-        <button
-          className="prev-button-course arrow_btn_ch arrow_btn"
-          onClick={prevSlide}
-        >
-          &#10094;
-        </button>
-        <button
-          className="next-button-course arrow_btn_ch arrow_btn"
-          onClick={nextSlide}
-        >
-          &#10095;
-        </button>
       </div>
-    </>
+      </div>
+    </React.Fragment>
 
   );
 }

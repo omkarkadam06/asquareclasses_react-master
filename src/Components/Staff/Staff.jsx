@@ -3,7 +3,8 @@ import './Staff.css';
 import '../style.css';
 import teacher_1 from '../Assets/teacher-img-1-svg.png';
 import teacher_2 from '../Assets/teacher-img-2-svg.png';
-import Director1 from '../Assets/Complete faculty/director 1.jpg'
+import Director1 from '../Assets/Complete faculty/ajit-anupam.jpg'
+import chairperson1 from '../Assets/Complete faculty/arpita-bharti.jpg'
 
 
 function Staff() {
@@ -47,7 +48,7 @@ function Staff() {
       <div className="staff">
         <div className="r_text_content col-lg-7">
           <p className="subtitle r_subtitle">
-            Mr. Arjun Mehta: Enthusiast of Equations
+            Mrs. Arpita Bharti: Enthusiast of Equations
           </p>
           <p className="paragraph r_about_description">
             Embark on success with ASQUARE Medical & IIT-JEE Academy in Pune.
@@ -71,7 +72,7 @@ function Staff() {
           </ul>
         </div>
         <div className="s_media_content col-lg-5">
-          <img src={teacher_1} alt="Learning" className="r_learning_image" />
+          <img src={chairperson1} alt="Learning" className="r_learning_image" />
         </div>
       </div>
     </div>

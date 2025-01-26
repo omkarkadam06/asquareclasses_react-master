@@ -105,6 +105,24 @@ function Footer() {
           </li>
           <li>
             <Link
+              to={'/mht-cet-course-classes-institute-for-12th-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              MHT-CET 12th
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={'/mht-cet-course-classes-institute-for-12th-pass-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              MHT-CET 12th Pass
+            </Link>
+          </li>
+          <li>
+            <Link
               to={'/iit-jee-coaching-classes-institute-for-11th-in-pune'}
               className="f_link"
               onClick={scrollToTop}
@@ -112,6 +130,35 @@ function Footer() {
               JEE 11th
             </Link>
           </li>
+          <li>
+            <Link
+              to={'/iit-jee-coaching-classes-institute-for-12th-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              JEE 12th
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={'/iit-jee-coaching-classes-institute-for-12th-pass-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              JEE 12th Pass
+            </Link>
+          </li>
+          
+         
+          {/* <li>
+            <Link to={'/course'} className="f_link" onClick={scrollToTop}>
+              Courses
+            </Link>
+          </li> */}
+        </ul>
+
+        <ul>
+        <li className="t1" style={{visibility:'hidden'}}>a</li>
           <li>
             <Link
               to={'/iit-jee-neet-coaching-classes-institute-for-11th-in-pune'}
@@ -122,8 +169,48 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/course'} className="f_link" onClick={scrollToTop}>
-              Courses
+            <Link
+              to={'/iit-jee-neet-coaching-classes-institute-for-12th-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              NEET 12th
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={'/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              NEET 12th Pass
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={'/8th-foundation-regular-course-institutes-classes-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              Foundation 8th
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={'/9th-foundation-regular-course-institutes-classes-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              Foundation 9th
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={'/8th-foundation-regular-course-institutes-classes-in-pune'}
+              className="f_link"
+              onClick={scrollToTop}
+            >
+              Foundation 10th
             </Link>
           </li>
         </ul>
@@ -149,6 +236,7 @@ function Footer() {
             </Link>
           </li>
         </ul>
+        
         <ul>
           <li className="t1">Contact Us</li>
           <div className="top_container_1">
@@ -178,7 +266,7 @@ function Footer() {
       </div>
       <div className="middlecontainer">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="addressfooterbox">
               <h2 className="addressfooterheaing">Pimpri, Branch</h2>
               <div class="heading-under-line "></div>
@@ -188,7 +276,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="addressfooterbox">
               <h2 className="addressfooterheaing">Pimple Saudagar, Branch</h2>
               <div class="heading-under-line "></div>
@@ -198,13 +286,23 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="addressfooterbox">
               <h2 className="addressfooterheaing">Vishrantwadi, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
                 <li>Asquare Classes Pvt Ltd<br></br> 156, Shoppers Orbit Mall, Pune Alandi Road, Near Reliance Smart Bazaar, Vishrantwadi, Pune, Maharashtra 411015</li>
                 <li><a href="tel:+919766118866">(+91) 9766118866</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Rahatani, Branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>ASQUARE Classes Pvt Ltd,<br></br> SNBP College Campus, Survey No. 29 / 2, Pune, Maharashtra 411017</li>
+                <li><a href="tel:+919404282283">(+91) 9404 282 283</a></li>
               </ul>
             </div>
           </div>

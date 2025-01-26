@@ -3,7 +3,12 @@
   justify-content: center;
   padding: 60px 10vw;
 }
-
+.slider.h_c_1 {
+  display: none;
+}
+.slider.h_c_1.active {
+  display: block;
+}
 .result_left {
   display: flex;
   flex-direction: column;
@@ -62,9 +67,9 @@
 }
 
 .r_r_img {
-  height: 476px;
+  /* height: 476px; */
   width: fit-content;
-  object-fit: cover;
+  object-fit: contain;
   display: inline-block;
   position: relative;
   /* left: 50%; */
@@ -198,8 +203,8 @@
   .r_r_img {
     position: relative;
     top: 0%;
-    transform: translate(-50%, 0);
-    height: 24vw;
+    /* transform: translate(-50%, 0); */
+    /* height: 24vw; */
   }
   .arrow_logo_sc {
     height: 3vw;

@@ -88,12 +88,12 @@ function Location() {
               Asquare Classes Pvt Ltd, Office No. 206, Prime Square, Kunal Icon
               Rd, opposite Datt Raj Mandir, Pimple Saudagar, Maharashtra 411027
             </p>
-            <a href="tel:9673394297" className="t2">
+            <a href="tel:9766118877" className="t2">
               Mobile - (+91) 9673394297
             </a>
           </div>
           <div className="l_r_p2">
-            <a href="tel:9673394297" className="t2">
+            <a href="tel:9766118877" className="t2">
               <button className="button">Contact Us </button>
             </a>
             <a href={`mailto:${emailAddress}`}>
@@ -131,12 +131,12 @@ function Location() {
               Road, Near Reliance Smart Bazaar, Vishrantwadi, Pune, Maharashtra
               411015
             </p>
-            <a href="tel:9766118866" className="t2">
+            <a href="tel:9766118877" className="t2">
               Mobile - (+91) 9766118866
             </a>
           </div>
           <div className="l_r_p2">
-            <a href="tel:9766118866" className="t2">
+            <a href="tel:9766118877" className="t2">
               <button className="button">Contact Us </button>
             </a>
             <a href={`mailto:${emailAddress}`}>
@@ -144,6 +144,40 @@ function Location() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="cd_divider" />
+      <div
+        ref={viewRef2}
+        className={`location_1 ${inView2 ? 'i_v_about_us' : 'n_v_about_us'}`}
+      >
+        
+        <div className="l_r">
+          <div className="l_r_p1">
+            <p className="t1">SIP SNBP International School || Rahatani</p>
+            <p className="t2">
+            Survey No. 29 / 2, Off Rahatani- Pimple Saudagar Road Near Akashganga Society, Pune, Maharashtra 411017
+            </p>
+            <a href="tel:9766118877" className="t2">
+              Mobile - (+91) 077700 03823
+            </a>
+          </div>
+          <div className="l_r_p2">
+            <a href="tel:9766118877" className="t2">
+              <button className="button">Contact Us </button>
+            </a>
+            <a href={`mailto:${emailAddress}`}>
+              <button className="button">Mail Us </button>
+            </a>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.3052301245443!2d73.78452957496505!3d18.60079758250831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91bbcc108c3%3A0xda47590223e4a7c6!2sSNBP%20International%20School!5e1!3m2!1sen!2sin!4v1736640974304!5m2!1sen!2sin"
+          className="maps y_maps"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </div>
   );

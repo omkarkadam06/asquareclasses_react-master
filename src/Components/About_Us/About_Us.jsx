@@ -4,6 +4,7 @@ import '../style.css';
 import { useInView } from 'react-intersection-observer';
 import Form from '../Form2/Form2';
 import { Link } from 'react-router-dom';
+import banner1 from '../Assets/slider/asquare-banner.webp'
 
 function About_Us() {
   //
@@ -17,7 +18,7 @@ function About_Us() {
   };
 
   return (
-    <div className="a_u_conatiner inner-banner">
+    <div className="a_u_conatiner inner-banner bannerSlider" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="a_u_conatiner_left col-lg-8">
           <div className="course-title d-flex">
             <div className="course-name"><h4>About Us</h4></div>
@@ -27,7 +28,7 @@ function About_Us() {
               <span className="clr-title">Our Journey,</span> Mission, and Values
             </h1>
           </div>
-        <p className="t2">
+        <p className="t2 text-white">
           Discover our institute's inspiring journey, unwavering mission, and
           the core values that drive our commitment to excellence in education.
         </p>

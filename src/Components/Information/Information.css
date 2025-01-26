@@ -1,0 +1,15 @@
+.cont_pgd2_container.blog-flex{
+    flex-direction: column;
+}
+.info-page-form .banner-form{
+    margin-bottom: 0 !important;
+}
+.infoCol-right{
+    width: 70%;
+}
+.infoCol-left{
+    width: 30%;
+}
+.info-banner{
+    padding: 0 !important;
+}

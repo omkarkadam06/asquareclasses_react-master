@@ -42,7 +42,7 @@ function Testimonials() {
       return (
         <div className="testi_container" key={data.id}>
           <div className="testi_container_left">
-            <img src={data.img} alt="img" decoding="async" />
+            <img className='testi-img' src={data.img} alt="img" decoding="async" />
             <img onClick={decrease_index} src={arrow_logo_2} alt="img" />
             <img onClick={update_index} src={arrow_logo_2} alt="img" />
           </div>

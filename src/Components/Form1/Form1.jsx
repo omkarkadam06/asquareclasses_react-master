@@ -249,6 +249,7 @@ function Form1() {
                 <option value="Pimpri Branch">Pimpri Branch</option>
                 <option value="Visrantwadi Branch">Visrantwadi Branch</option>
                 <option value="Pimple Saudagar">Pimple Saudagar</option>
+                <option value="SNBP Rahatni">SNBP Rahatni</option>
               </select>
             </div>
           </div>
@@ -284,7 +285,29 @@ function Form1() {
                   />
                 </div>
               </div>
+              
             </div>
+          </div>
+          <div className='formbold-mb-5 formbold-pt-3 d-flex justify-content-between'>
+            <div className="form-div d-flex my-3">
+                <div class="form-check" style={{ marginRight: '20px' }}>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                  <label class="form-check-label text-dark" for="flexRadioDefault1">
+                    Online
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                  <label class="form-check-label text-dark" for="flexRadioDefault2">
+                    Offline
+                  </label>
+                </div>
+            </div>
+            <select name="parent/student" id="parent/student" className="f2_input form-select col-md-6">
+            <option value="">Parent/Student</option>
+            <option value="Parent">Parent</option>
+            <option value="Student">Student</option>
+          </select>
           </div>
           <div>
             <div className="reacptchs">

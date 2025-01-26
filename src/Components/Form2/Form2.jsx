@@ -107,19 +107,50 @@ function Form2() {
         <div className="f2_container">
           <input type="text" placeholder="Full Name" id="name" name="name" className="f2_input form-control no-data" autoComplete="name" />
           <input type="number" placeholder="Mobile Number" id="phone" name="phone" className="f2_input form-control no-data" autoComplete="tel" />
-          <select name="class" id="class" className="f2_input form-select">
+          <div className='d-flex align-items-center justify-content-between'>
+          <select name="class" id="class" className="f2_input form-select col-md-6">
             <option value="">Select Class</option>
             <option value="11th">11th</option>
             <option value="12th">12th</option>
             <option value="12th-pass">12th Pass</option>
             <option value="8-9-10th">8th, 9th, 10th</option>
           </select>
-          <select name="course" id="course" className="f2_input form-select">
-            <option value="">Select a Course</option>
-            <option value="JEE">JEE</option>
-            <option value="NEET">NEET</option>
-            <option value="CET">CET</option>
+          <select name="branch" id="branch" className="f2_input form-select col-md-6">
+            <option value="">Select Branch</option>
+            <option value="Pimpri">Pimpri</option>
+            <option value="Vishrantwadi">Vishrantwadi</option>
+            <option value="Pimple saudagar">Pimple Saudagar</option>
+            <option value="SNBP Rahatni">SNBP Rahatni</option>
           </select>
+          </div>
+          <div className='d-flex align-items-center justify-content-between'>
+            <select name="course" id="course" className="f2_input form-select col-md-6">
+              <option value="">Select a Course</option>
+              <option value="JEE">JEE</option>
+              <option value="NEET">NEET</option>
+              <option value="CET">CET</option>
+              <option value="Foundation">Foundation</option>
+            </select>
+            <select name="parent/student" id="parent/student" className="f2_input form-select col-md-6">
+              <option value="">Parent/Student</option>
+              <option value="Parent">Parent</option>
+              <option value="Student">Student</option>
+            </select>
+          </div>
+          <div className="form-div d-flex my-3">
+              <div class="form-check" style={{ marginRight: '20px' }}>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Online
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Offline
+                </label>
+              </div>
+          </div>
           <div className="reacptchs">
             <ReCAPTCHA
               ref={recaptchaRef}

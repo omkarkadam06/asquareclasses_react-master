@@ -1,6 +1,7 @@
 import React from 'react';
+import './Information.css';
 import { useInView } from 'react-intersection-observer';
-import img from '../Assets/juicy-information-board-with-search.gif';
+import img from '../Assets/rb_2148192915.png';
 import { Link } from 'react-router-dom';
 import Form2 from '../Form2/Form2';
 import data_info from './Data_info.jsx';
@@ -133,7 +134,7 @@ function Information({ data }) {
     <div className="content_pg_div">
       <section className="Hero2">
         <div>
-          <div className="bannerSlider inner-banner" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="bannerSlider inner-banner info-banner" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-8">
@@ -174,14 +175,14 @@ function Information({ data }) {
         </div>
       </div> */}
       <div className="cont_pgd_cont2">
-        <div className="content_pgd_p1">
+        <div className="content_pgd_p1 infoCol-right">
           <div className="t2 cont_cont_pg">
             {data_content[data - 1].content}
           </div>
         </div>
-        <div className="content_pgd_p2">
+        <div className="content_pgd_p2 info-page-form infoCol-left">
           <Form2 />
-          <div className="cont_pgd2_container">
+          <div className="cont_pgd2_container blog-flex">
             <Link
               to={data_title[7].link_to}
               style={{ textDecoration: 'none' }}
@@ -203,7 +204,7 @@ function Information({ data }) {
                     {data_title[7].paragraph}
                   </p>
                 </div>
-                <div className="blog_pg_card__footer">
+                {/* <div className="blog_pg_card__footer">
                   <img
                     src={data_title[7].creator_img}
                     alt="image"
@@ -217,7 +218,7 @@ function Information({ data }) {
                       {data_title[7].post_date}
                     </small>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Link>
             <Link
@@ -241,7 +242,7 @@ function Information({ data }) {
                     {data_title[8].paragraph}
                   </p>
                 </div>
-                <div className="blog_pg_card__footer">
+                {/* <div className="blog_pg_card__footer">
                   <img
                     src={data_title[8].creator_img}
                     alt="image"
@@ -255,7 +256,7 @@ function Information({ data }) {
                       {data_title[8].post_date}
                     </small>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Link>
           </div>

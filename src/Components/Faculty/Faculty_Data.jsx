@@ -1,6 +1,6 @@
 import amit_sir from '../Assets/Complete faculty/amit (2).png';
 import sandeep_sir from '../Assets/Complete faculty/sandeep_sir.png';
-import devaashish_sir from '../Assets/Complete faculty/Devaashish.png';
+import devaashish_sir from '../Assets/Complete faculty/ajit-anupam.jpg';
 import nikita_mam from '../Assets/nikita.jpeg';
 
 const Faculty_Data = [
@@ -26,11 +26,11 @@ const Faculty_Data = [
   },
   {
     id: 3,
-    name: 'Devaasish Gaurav',
+    name: 'Ajit Anupam',
     img: devaashish_sir,
     points: [
       'Math Faculty',
-      'Experience of 5+ years',
+      'Experience of 15+ years',
       'Specialized in teaching Mathematics for JEE Main & Advance, NEET & Classes XI, XII & XIII'
     ]
   },

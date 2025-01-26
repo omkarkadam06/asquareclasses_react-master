@@ -322,14 +322,14 @@ const Header = () => {
                       )}
                     </li>
                   </Link>
-                  <Link
+                  {/* <Link
                     to={'/course'}
                     className="nav-item nav-item-list"
                     onClick={scrollToTop}
                     onMouseEnter={handleMouseEnter1}
                   >
                     <li className="t3">Courses</li>
-                  </Link>
+                  </Link> */}
                 </div>
               )}
             </li>

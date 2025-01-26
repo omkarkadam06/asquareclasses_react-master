@@ -23,10 +23,9 @@ function Courses() {
 
   function card(details_data) {
     return (
-      <div
-        className={`card {inView1 ? 'i_v_about_us' : 'n_v_about_us'}`}
-        key={details_data.id}
-      >
+      <div className={`card {inView1 ? 'i_v_about_us' : 'n_v_about_us'}`}
+        key={details_data.id}>
+          <Link to={details_data.linkto}>
         <div className="imageboxscou">
           <img
             src={details_data.student_img}
@@ -34,9 +33,9 @@ function Courses() {
             className="card_img"
             decoding="async"
           />
-          <div className="clickherebtn">
+          {/* <div className="clickherebtn">
             <h3>Click Here</h3>
-          </div>
+          </div> */}
         </div>
         <div className="card_content">
           <div className="card_top">
@@ -51,8 +50,8 @@ function Courses() {
             </div>
           </div>
           <div className="card_bottom">
-            <p className="t1">{details_data.heading}</p>
-            <p className="t2">{details_data.sub_heading}</p>
+            {/* <p className="t1">{details_data.heading}</p>
+            <p className="t2">{details_data.sub_heading}</p> */}
             <Link to={details_data.linkto}>
               <button className="course_card_btn" onClick={scrollToTop}>
                 Know More
@@ -60,6 +59,7 @@ function Courses() {
             </Link>
           </div>
         </div>
+        </Link>
       </div>
     );
   }

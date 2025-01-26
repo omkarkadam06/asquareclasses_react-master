@@ -81,7 +81,8 @@
   .introduction {
     gap: 8px;
     padding: 40px 20px;
-    max-height: 280px;
+    /* max-height: 280px; */
+    max-height: inherit;
     height: 54vw;
     margin-bottom: 20vw;
   }

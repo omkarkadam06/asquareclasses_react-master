@@ -64,10 +64,10 @@ function CourseHero2({ courseName, className }) {
     ],
     [
       // NEET
-      { id: 1, text: 'Qualified', data: 1857 },
-      { id: 2, text: 'Students', data: 2517 },
-      { id: 3, text: 'Selection Rate', data: 74 },
-      { id: 4, text: 'Highest Score', data: 670 }
+      { id: 1, text: 'Qualified', data: 1857},
+      { id: 2, text: 'Students', data: 2517},
+      { id: 3, text: 'Selection Rate', data: 74},
+      { id: 4, text: 'Highest Score', data: 670}
     ],
     [
       // CET
@@ -82,10 +82,10 @@ function CourseHero2({ courseName, className }) {
     ],
     [
       // Foundation
-      { id: 1, text: 'Qualified', data: 430 },
-      { id: 2, text: 'Students', data: 860 },
-      { id: 3, text: 'Selection Rate', data: 50 },
-      { id: 4, text: 'Best Rank', data: 28 }
+      { id: 1, text: 'Qualified', data: 430},
+      { id: 2, text: 'Students', data: 860},
+      { id: 3, text: 'Selection Rate', data: 50},
+      { id: 4, text: 'Best Rank', data: 28}
     ]
   ];
 
@@ -96,7 +96,7 @@ function CourseHero2({ courseName, className }) {
 
 
     return (
-        <section className="CourseHero2">
+        <section className="CourseHero2 count-sign">
             <Slider {...settings}>
                 <div>
                     <div className="courseBanner">
