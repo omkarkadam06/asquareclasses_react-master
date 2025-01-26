@@ -437,9 +437,7 @@ const Header = () => {
             <li className="nav-item-in">
               <Link
                 to={'/blog'}
-                className="nav-item nav-item-list"
-                onClick={scrollToTop}
-              >
+                className="nav-item nav-item-list" target='_blank'>
                 Blog
               </Link>
             </li>
