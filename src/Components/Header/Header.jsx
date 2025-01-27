@@ -311,7 +311,7 @@ const Header = () => {
                               <li>Class 9th</li>
                             </Link>
                             <Link
-                              to={'/9th-foundation-regular-course-institutes-classes-in-pune'}
+                              to={'/10th-foundation-regular-course-institutes-classes-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >

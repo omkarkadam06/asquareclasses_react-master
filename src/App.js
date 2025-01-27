@@ -52,7 +52,7 @@ function App() {
           <Route path="/mht-cet-crash-course-institutes-classes-in-pune" element={<CourseCetCrash courseName="3" className="4" />} />
           <Route path="/8th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/9th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation9 courseName="4" className="2" />} />
-          <Route path="/9th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation10 courseName="4" className="3" />} />
+          <Route path="/10th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation10 courseName="4" className="3" />} />
           <Route path="/about-us/" element={<About />} />
           <Route path="/contact-information/" element={<Contact />} />
           <Route path="/faculty" element={<Faculty />} />

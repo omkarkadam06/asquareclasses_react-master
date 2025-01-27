@@ -289,12 +289,12 @@ margin-bottom: 5px;
   }
   .subject_not_selected {
     font-size: 28px;
-    /* width: 240px; */
+    width: 280px;
   }
   .subject_selected {
     padding: 4px 8px;
     border-radius: 96px;
-    width: 220px;
+    width: 280px;
     height: fit-content;
     font-size: 28px;
     letter-spacing: 0.8px;

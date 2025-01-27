@@ -153,7 +153,7 @@ const courses_data = [
       // why join asquare
       why_asquare_heading: 'Why Choose ASQUARE?',
       why_asquare_paragraph:
-        "ASQUARE's strength lies in our Pattern-Proof Mode. We prepare you to shine, regardless of any exam pattern changes. Our students don't just excel in JEE Main & Advanced; they also perform exceptionally well in XII Boards, MHCET, WBJEE, KCET, BITSAT, and more.",
+        "Foundation for Future Competitive Exams like IIT-JEE & NEET: Builds on fundamental concepts taught in grade X and above. Enhances IQ and EQ through comprehensive preparation.",
       // Admission and Exam Preparation
       Adm_Pre_heading:
        "Why ASQUARE for JEE in Pune?",
@@ -1332,7 +1332,7 @@ const courses_data = [
       why_asquare_heading:
         'Why ASQUARE for JEE(Main & Advance) in (west India) Pune?',
       why_asquare_paragraph:
-        "ASQUARE's strength lies in our Pattern-Proof Mode. We prepare you to shine, regardless of any exam pattern changes. Our students don't just excel in JEE Main & Advanced; they also perform exceptionally well in XII Boards, MHCET, WBJEE, KCET, BITSAT, and more.",
+        "Foundation for Future Competitive Exams like IIT-JEE & NEET: Builds on fundamental concepts taught in grade X and above. Enhances IQ and EQ through comprehensive preparation.",
       // Admission and Exam Preparation
       Adm_Pre_heading:
         "Admission and Exam Preparation:",
@@ -1535,7 +1535,7 @@ const courses_data = [
       why_asquare_heading:
         'Why ASQUARE for JEE(Main & Advance) in (west India) Pune?',
       why_asquare_paragraph:
-        "ASQUARE's strength lies in our Pattern-Proof Mode. We prepare you to shine, regardless of any exam pattern changes. Our students don't just excel in JEE Main & Advanced; they also perform exceptionally well in XII Boards, MHCET, WBJEE, KCET, BITSAT, and more.",
+        "Foundation for Future Competitive Exams like IIT-JEE & NEET: Builds on fundamental concepts taught in grade X and above. Enhances IQ and EQ through comprehensive preparation.",
       // Teaching Methodologies
       teaching_methologies_heading: 'Teaching Methodologies',
       teaching_methologies_point_1:
