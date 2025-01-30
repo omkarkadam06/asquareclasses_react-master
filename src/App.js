@@ -30,6 +30,7 @@ import CourseCetCrash from './Pages/courses/cet-crash-course';
 import CourseFoundation8 from './Pages/courses/foundation-course-for-std-8th';
 import CourseFoundation9 from './Pages/courses/foundation-course-for-std-9th';
 import CourseFoundation10 from './Pages/courses/foundation-course-for-std-10th';
+import ErrorPage from './Pages/Error';
 
 function App() {
   return (
@@ -211,6 +212,7 @@ function App() {
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-saudagar-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-gurav-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-nilakh-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
+          <Route path="/404error" element={<ErrorPage courseName="4" className="1" />} />
           {/* <Route path="/blog" element={<Blog />} />
           <Route path="/blog/neet-practice-strategy-for-repeaters" element={<Blog_content id="1" />} />
           <Route path="/blog/neet-repeater-five-reasons-to-take-a-drop-year" element={<Blog_content id="2" />} />
