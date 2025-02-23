@@ -4,7 +4,8 @@
   margin: 10px 0px;
 }
 .faculty_section .not_selected:hover{
-  background-color: #fff2a0;
+  background-color: #ffdd00;
+  border-color: #ffdd00;
 }
 .faculty_section_left {
   padding: 60px 0px 60px 10vw;

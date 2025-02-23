@@ -88,8 +88,8 @@ function Location() {
               Asquare Classes Pvt Ltd, Office No. 206, Prime Square, Kunal Icon
               Rd, opposite Datt Raj Mandir, Pimple Saudagar, Maharashtra 411027
             </p>
-            <a href="tel:9766118877" className="t2">
-              Mobile - (+91) 9673394297
+            <a href="tel:+919579730062" className="t2">
+              Mobile - (+91) 9579730062
             </a>
           </div>
           <div className="l_r_p2">
@@ -157,8 +157,8 @@ function Location() {
             <p className="t2">
             Survey No. 29 / 2, Off Rahatani- Pimple Saudagar Road Near Akashganga Society, Pune, Maharashtra 411017
             </p>
-            <a href="tel:9766118877" className="t2">
-              Mobile - (+91) 077700 03823
+            <a href="tel:+919579730062" className="t2">
+              Mobile - (+91) 9579730062
             </a>
           </div>
           <div className="l_r_p2">

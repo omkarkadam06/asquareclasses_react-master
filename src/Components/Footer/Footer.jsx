@@ -302,7 +302,7 @@ function Footer() {
               <div class="heading-under-line "></div>
               <ul>
                 <li>ASQUARE Classes Pvt Ltd,<br></br> SNBP College Campus, Survey No. 29 / 2, Pune, Maharashtra 411017</li>
-                <li><a href="tel:+919404282283">(+91) 9404 282 283</a></li>
+                <li><a href="tel:+919579730062">(+91) 9579730062</a></li>
               </ul>
             </div>
           </div>
