@@ -220,7 +220,7 @@
 /* === Additional responsive design for larger devices === */
 @media (min-width: 1512px) {
     .bannerSliders {
-        height: 575px !important;
+        height: 652px !important;
     }
     .container{
         max-width: 1515px;

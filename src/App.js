@@ -53,7 +53,7 @@ function App() {
           <Route path="/mht-cet-crash-course-institutes-classes-in-pune" element={<CourseCetCrash courseName="3" className="4" />} />
           <Route path="/8th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/9th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation9 courseName="4" className="2" />} />
-          <Route path="/9th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation10 courseName="4" className="3" />} />
+          <Route path="/10th-foundation-regular-course-institutes-classes-in-pune" element={<CourseFoundation10 courseName="4" className="3" />} />
           <Route path="/about-us/" element={<About />} />
           <Route path="/contact-information/" element={<Contact />} />
           <Route path="/faculty" element={<Faculty />} />
@@ -63,19 +63,6 @@ function App() {
           <Route path="/jee-mains-coaching-classes-institute-in-pune" element={<Informationjeemains id="2" />} />
           <Route path="/neet-coaching-classes-institute-in-pune" element={<Informationneetinfo id="3" />} />
           <Route path="/mht-cet-info" element={<Informationmhtcet id="4" />} />
-          {/* Redirect old linksw */}
-          <Route path="/jee-main-coaching-in-pune-pimpri-chinchwad-html/" element={<Home />} />
-          <Route path="/neet-coaching-in-pune-html/" element={<Home />} />
-          <Route path="/classes/medical-html/" element={<Home />} />
-          <Route path="/medical-coaching-in-pune-pimpri-chinchwad-html/" element={<Home />} />
-          <Route path="/jee-coaching-classes-in-pune-html/" element={<Home />} />
-          <Route path="/iit-coaching-in-pune-html/" element={<Home />} />
-          <Route path="/jobs/" element={<Home />} />
-          <Route path="/crash-course-for-jee-in-pune-html/" element={<Home />} />
-          <Route path="/classes/iit-jee-html/" element={<Home />} />
-          <Route path="/project/" element={<Home />} />
-          <Route path="/cet-classes-in-pimpri-chinchwad-pcmc-area-html/" element={<Home />} />
-          <Route path="/crash-course-for-neet-in-pune-html/" element={<Home />} />
 
           {/* Location pages */}
           <Route path="/iit-jee-coaching-classes-institute-in-vishrantwadi-pune" element={<CourseJee11 courseName="1" className="1" />} />
@@ -212,7 +199,8 @@ function App() {
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-saudagar-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-gurav-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-nilakh-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
-          <Route path="/404error" element={<ErrorPage courseName="4" className="1" />} />
+          {/* Catch-all route for 404 */}
+          <Route path="*" element={<ErrorPage />} />
           {/* <Route path="/blog" element={<Blog />} />
           <Route path="/blog/neet-practice-strategy-for-repeaters" element={<Blog_content id="1" />} />
           <Route path="/blog/neet-repeater-five-reasons-to-take-a-drop-year" element={<Blog_content id="2" />} />

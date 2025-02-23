@@ -137,7 +137,7 @@ export const Course_Data = [
       class: 'For Class 10th',
       heading: '- 10th Class -',
       sub_heading: 'Students studying in class 10th and moving to class 11th',
-      linkto: `/9th-foundation-regular-course-institutes-classes-in-pune`
+      linkto: `/10th-foundation-regular-course-institutes-classes-in-pune`
     }
   ]
 ];
