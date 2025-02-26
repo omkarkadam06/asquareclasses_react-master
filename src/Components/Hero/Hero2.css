@@ -3,6 +3,15 @@
     --theme-color2--:#05479b;
     --white--:white;
 }
+section.Hero2 {
+    position: relative;
+}
+.sticky-form {
+    position: absolute;
+    top: 50%;
+    right: 78px;
+    transform: translateY(-50%);
+}
 .bannerSliders {
     height: 590px;
     display: flex;
@@ -220,7 +229,7 @@
 /* === Additional responsive design for larger devices === */
 @media (min-width: 1512px) {
     .bannerSliders {
-        height: 652px !important;
+        height: 595px !important;
     }
     .container{
         max-width: 1515px;

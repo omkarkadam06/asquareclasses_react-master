@@ -89,7 +89,7 @@ const Hero2 = () => {
                   </div>
                   <div className="col-md-2"></div>
                   <div className="col-md-4 d-flex justify-content-end">
-                    <Form />
+                    
                   </div>
                 </div>
               </div>
@@ -97,6 +97,9 @@ const Hero2 = () => {
           </div>
         ))}
       </Slider>
+      <div className="sticky-form">
+        <Form />
+      </div>
     </section>
   );
 };
