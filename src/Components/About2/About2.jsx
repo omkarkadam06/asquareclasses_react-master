@@ -8,7 +8,6 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import tickImg from '../Assets/home_page_images/check-mark.png';
 import nextarrow from '../Assets/right-chevron.png'
-import prevarrow from '../Assets/left-chevron.png'
 
 function About2() {
     // Visibility detection using Intersection Observer

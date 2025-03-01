@@ -3,7 +3,6 @@ import './Contact_Us.css';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import Form from '../Form2/Form2';
 
 function Contact_Us() {
   //

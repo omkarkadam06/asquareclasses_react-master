@@ -5,36 +5,80 @@ import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from 'react-google-recaptcha';
 import $ from 'jquery';
 import 'jquery-validation';
-import emailjs from '@emailjs/browser'
-
+// import emailjs from '@emailjs/browser'
+import { LongContactForm } from "../../API/form";
+import { useNavigate } from "react-router-dom";
 function Form1() {
+  const navigate = useNavigate();
   const form = useRef();
-    const sendEmail = (e) => {
-      e.preventDefault();
-      emailjs
-        .sendForm('service_rn7kbuy', 'template_zvz1kgd', form.current, {
-          publicKey: '2oIY6HvcPeb5RjsHB',
-        })
-        .then(
-          () => {
-            alert('SUCCESS!');
-            //toast.success('Successfully Sent!')
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-  };
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: '',
+    email_id: '',
     course: '',
     class: '',
     branch: '',
     city: '',
-    state: ''
+    state: '',
+    course_type: '',
+    parent_student: ''
   });
+  const [errorMessage, setErrorMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+    const handleChange = ({ target: { name, value } }) => {
+      setFormData((prev) => ({
+          ...prev,
+          [name]: value,
+      }));
+  };
+    const sendEmail = async (e) => {
+      e.preventDefault();
+      const recaptchaValue = recaptchaRef.current.getValue();
+    if (!recaptchaValue) {
+      setCaptchaError(true);
+      return;
+    }
+      // emailjs
+      //   .sendForm('service_rn7kbuy', 'template_zvz1kgd', form.current, {
+      //     publicKey: '2oIY6HvcPeb5RjsHB',
+      //   })
+      //   .then(
+      //     () => {
+      //       alert('SUCCESS!');
+      //       //toast.success('Successfully Sent!')
+      //     },
+      //     (error) => {
+      //       console.log('FAILED...', error.text);
+      //     },
+      //   );
+      setLoading(true);
+          setErrorMessage("");
+          try {
+            const data = await LongContactForm(formData);
+            console.log("API Response:", data);
+            if (data?.status === true) {
+              setFormData({
+                name: '',
+                phone: '',
+                email_id: '',
+                course: '',
+                class: '',
+                branch: '',
+                city: '',
+                state: '',
+                course_type: '',
+                parent_student: ''
+              });
+              navigate("/thank-you");
+            }
+          } catch (error) {
+              console.error("API Error:", error);
+              setErrorMessage("Something went wrong. Please try again later.");
+          } finally {
+              setLoading(false);
+          }
+  };
   const [captchaError, setCaptchaError] = useState(false);
   const recaptchaRef = useRef();
   const [viewRef, inView] = useInView({
@@ -42,19 +86,6 @@ function Form1() {
   });
   const handleCaptchaChange = (token) => {
     setCaptchaError(false);
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const recaptchaValue = recaptchaRef.current.getValue();
-    if (!recaptchaValue) {
-      setCaptchaError(true);
-      return;
-    } else {
-      sendEmail();
-    }
-    if ($('#contactForm').valid()) {
-      $('#contactForm').submit();
-    }
   };
   useEffect(() => {
     $('.no-data').on('paste', function (e) {
@@ -137,7 +168,7 @@ function Form1() {
   return (
     <div className="formbold-main-wrapper">
       <div className="formbold-form-wrapper">
-        <form  ref={form} onSubmit={handleSubmit} id="contactForm">
+        <form ref={form} onSubmit={sendEmail} id="contactForm">
           <div
             ref={viewRef}
             className={`section ${
@@ -162,7 +193,7 @@ function Form1() {
                 placeholder="Full Name"
                 className="formbold-form-input no-data"
                 autoComplete="name"
-                required
+                required onChange={handleChange}
               />
             </div>
             <div className="formbold-mb-5">
@@ -177,7 +208,7 @@ function Form1() {
                 placeholder="Enter your phone number"
                 className="formbold-form-input no-data"
                 autoComplete="tel"
-                required
+                required onChange={handleChange}
               />
             </div>
             <div className="formbold-mb-5">
@@ -187,11 +218,11 @@ function Form1() {
               </label>
               <input
                 type="email"
-                name="email"
+                name="email_id"
                 id="email"
                 placeholder="Enter your email"
                 className="formbold-form-input"
-                autoComplete="email"
+                autoComplete="email" onChange={handleChange}
               />
             </div>
           </div>
@@ -205,7 +236,7 @@ function Form1() {
                 id="course"
                 className="formbold-form-input"
                 autoComplete="course"
-                required
+                required onChange={handleChange}
               >
                 <option value="">Select Course</option>
                 <option value="jee">JEE</option>
@@ -223,7 +254,7 @@ function Form1() {
                 id="class"
                 className="formbold-form-input"
                 autoComplete="class"
-                required
+                required onChange={handleChange}
               >
                 <option value="">Select Class</option>
                 <option value="8th">8th</option>
@@ -243,7 +274,7 @@ function Form1() {
                 id="branch"
                 className="formbold-form-input"
                 autoComplete="class"
-                required
+                required onChange={handleChange}
               >
                 <option value="">Select Branch</option>
                 <option value="Pimpri Branch">Pimpri Branch</option>
@@ -268,7 +299,7 @@ function Form1() {
                     placeholder="Enter city"
                     className="formbold-form-input"
                     autoComplete="address-level1"
-                    required
+                    required onChange={handleChange}
                   />
                 </div>
               </div>
@@ -281,7 +312,7 @@ function Form1() {
                     placeholder="Enter state"
                     className="formbold-form-input"
                     autoComplete="address-level2"
-                    required
+                    required onChange={handleChange}
                   />
                 </div>
               </div>
@@ -291,19 +322,19 @@ function Form1() {
           <div className='formbold-mb-5 formbold-pt-3 d-flex justify-content-between'>
             <div className="form-div d-flex my-3">
                 <div class="form-check" style={{ marginRight: '20px' }}>
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                  <input class="form-check-input" type="radio" name="course_type" onChange={handleChange} value="Online" id="flexRadioDefault1"/>
                   <label class="form-check-label text-dark" for="flexRadioDefault1">
                     Online
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                  <input class="form-check-input" type="radio" name="course_type" onChange={handleChange} value="Offline" id="flexRadioDefault2" checked/>
                   <label class="form-check-label text-dark" for="flexRadioDefault2">
                     Offline
                   </label>
                 </div>
             </div>
-            <select name="parent/student" id="parent/student" className="f2_input form-select col-md-6">
+            <select name="parent_student" id="parent/student" onChange={handleChange} className="f2_input form-select col-md-6">
             <option value="">Parent/Student</option>
             <option value="Parent">Parent</option>
             <option value="Student">Student</option>
@@ -318,7 +349,8 @@ function Form1() {
             />
             {captchaError && <p style={{ color: 'red' }}>Please complete the captcha.</p>}
             </div>
-            <button className="formbold-btn">Book Appointment</button>
+            <button className="formbold-btn" disabled={loading} type="submit">{loading ? "Loading..." : "Book Appointment"}</button>
+            {errorMessage && <div className="successmessage"><p className="error">{errorMessage}</p></div>}
           </div>
         </form>
       </div>

@@ -1,8 +1,5 @@
 import React from 'react';
 import '../style.css';
-// import teacher_2 from '../Assets/teacher-img-2-svg.png';
-// import './Dm2.css';
-import teacher_2 from '../Assets/teacher-img-2-svg.png';
 import Director1 from '../Assets/Complete faculty/arpita-bharti.jpg'
 import { useInView } from 'react-intersection-observer';
 

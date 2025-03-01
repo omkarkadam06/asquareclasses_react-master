@@ -1,10 +1,8 @@
 import React from 'react';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';
-import Form from '../Form2/Form2';
 import banner1 from '../Assets/slider/asquare-banner.webp'
 
-import { Link } from 'react-router-dom';
 
 function C_msg_hero() {
   //

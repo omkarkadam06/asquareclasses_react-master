@@ -78,7 +78,7 @@ function Achievements() {
         <div
           className="achivements"
           style={{
-            backgroundColor: data.id % 2 == 1 ? 'rgb(218, 237, 255)' : '#fff'
+            backgroundColor: data.id % 2 === 1 ? 'rgb(218, 237, 255)' : '#fff'
           }}
           key={data.id}
         >
