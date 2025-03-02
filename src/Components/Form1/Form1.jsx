@@ -321,15 +321,15 @@ function Form1() {
           </div>
           <div className='formbold-mb-5 formbold-pt-3 d-flex justify-content-between'>
             <div className="form-div d-flex my-3">
-                <div class="form-check" style={{ marginRight: '20px' }}>
-                  <input class="form-check-input" type="radio" name="course_type" onChange={handleChange} value="Online" id="flexRadioDefault1"/>
-                  <label class="form-check-label text-dark" for="flexRadioDefault1">
+                <div className="form-check" style={{ marginRight: '20px' }}>
+                  <input className="form-check-input" type="radio" name="course_type" onChange={handleChange} value="Online" id="flexRadioDefault1"/>
+                  <label className="form-check-label text-dark" for="flexRadioDefault1">
                     Online
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="course_type" onChange={handleChange} value="Offline" id="flexRadioDefault2" checked/>
-                  <label class="form-check-label text-dark" for="flexRadioDefault2">
+                  <input className="form-check-input" type="radio" name="course_type" onChange={handleChange} value="Offline" id="flexRadioDefault2"/>
+                  <label className="form-check-label text-dark" for="flexRadioDefault2">
                     Offline
                   </label>
                 </div>

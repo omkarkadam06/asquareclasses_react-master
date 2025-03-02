@@ -26,6 +26,7 @@ function Form2() {
         [name]: value,
     }));
 };
+
   // Send email using emailjs
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -176,15 +177,15 @@ function Form2() {
             </div>
           </div>
           <div className="form-div d-flex my-3">
-              <div class="form-check" style={{ marginRight: '20px' }}>
-                <input class="form-check-input" type="radio" name="course_type" id="flexRadioDefault1" value="Online" onChange={handleChange}/>
-                <label class="form-check-label" for="flexRadioDefault1">
+              <div className="form-check" style={{ marginRight: '20px' }}>
+                <input className="form-check-input" type="radio" name="course_type" id="flexRadioDefault1" value="Online" onChange={handleChange}/>
+                <label className="form-check-label" for="flexRadioDefault1">
                   Online
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="course_type" id="flexRadioDefault2" value="Offline" onChange={handleChange} checked/>
-                <label class="form-check-label" for="flexRadioDefault2">
+                <input className="form-check-input" type="radio" name="course_type" id="flexRadioDefault2" value="Offline" onChange={handleChange}/>
+                <label className="form-check-label" for="flexRadioDefault2">
                   Offline
                 </label>
               </div>
