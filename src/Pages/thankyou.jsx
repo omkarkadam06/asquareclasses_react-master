@@ -21,6 +21,7 @@ const ThankYou = () => {
               <div className="about2-title">
                 <h2>Thank You For Submitting The Form</h2>
               </div>
+              <p>We will get back to you shortly.</p>
               <Link className="button" to="/">Go To Home Page</Link>
             </div>
           </div>
