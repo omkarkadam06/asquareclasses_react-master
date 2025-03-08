@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './Result.css';
 import '../style.css';
 import points_icon_4 from '../Assets/points-icon-4.png';
-import result_poster_1 from '../Assets/results/result1.jpeg';
-import result_poster_2 from '../Assets/results/result2.jpeg';
-import result_poster_3 from '../Assets/results/result3.jpeg';
-import result_poster_4 from '../Assets/results/result4.jpeg';
-import result_poster_5 from '../Assets/results/result5.jpeg';
-import result_poster_6 from '../Assets/results/result6.jpeg';
+import result_poster_1 from '../Assets/results/result1.webp';
+import result_poster_2 from '../Assets/results/result2.webp';
+import result_poster_3 from '../Assets/results/result3.webp';
+import result_poster_4 from '../Assets/results/result4.webp';
+import result_poster_5 from '../Assets/results/result5.webp';
+import result_poster_6 from '../Assets/results/result6.webp';
 import { useInView } from 'react-intersection-observer';
 import arrowlogo from '../Assets/arrow-logo-2.png';
 

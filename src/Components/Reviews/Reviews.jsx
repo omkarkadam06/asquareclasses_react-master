@@ -3,14 +3,14 @@ import Slider from 'react-slick';
 import './Reviews.css';
 import f_star from '../Assets/gold-star-icon.png';
 import h_star from '../Assets/gold-half-star-icon.png';
-import reviewimgarvi from '../Assets/reviewImage/Aarvi Shirsat.png';
-import reviewimgjuli from '../Assets/reviewImage/Juli Kumari.png';
-import reviewimgkalyan from '../Assets/reviewImage/Kalyan Chakravarthy.png';
-import reviewimgomkar from '../Assets/reviewImage/Omkar Chaudhari.png';
-import reviewimgrahul from '../Assets/reviewImage/Rahul Sharma.png';
-import reviewimgrakhi from '../Assets/reviewImage/Rakhi Rana.png';
-import reviewimgrohit from '../Assets/reviewImage/Rohit Mishra.png';
-import reviewimgsabir from '../Assets/reviewImage/Sabir Ali.png';
+import reviewimgarvi from '../Assets/reviewImage/Aarvi Shirsat.webp';
+import reviewimgjuli from '../Assets/reviewImage/Juli Kumari.webp';
+import reviewimgkalyan from '../Assets/reviewImage/Kalyan Chakravarthy.webp';
+import reviewimgomkar from '../Assets/reviewImage/Omkar Chaudhari.webp';
+import reviewimgrahul from '../Assets/reviewImage/Rahul Sharma.webp';
+import reviewimgrakhi from '../Assets/reviewImage/Rakhi Rana.webp';
+import reviewimgrohit from '../Assets/reviewImage/Rohit Mishra.webp';
+import reviewimgsabir from '../Assets/reviewImage/Sabir Ali.webp';
 import reviequoteimg from '../Assets/reviewImage/quotes.svg';
 
 const cardData = [

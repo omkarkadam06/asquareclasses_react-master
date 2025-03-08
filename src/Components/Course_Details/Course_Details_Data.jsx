@@ -6,12 +6,12 @@ import p_c1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner
 import i_p_j from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Tables/JEE-2year.png';
 import i_p_n from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Tables/NEEt-2year.png';
 import i_p_c from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Tables/CET-2year.png';
-import result_slide_1 from '../Assets/results/result1.jpeg';
-import result_slide_2 from '../Assets/results/result2.jpeg';
-import result_slide_3 from '../Assets/results/result3.jpeg';
-import result_slide_4 from '../Assets/results/result4.jpeg';
-import result_slide_5 from '../Assets/results/result5.jpeg';
-import result_slide_6 from '../Assets/results/result6.jpeg';
+import result_slide_1 from '../Assets/results/result1.webp';
+import result_slide_2 from '../Assets/results/result2.webp';
+import result_slide_3 from '../Assets/results/result3.webp';
+import result_slide_4 from '../Assets/results/result4.webp';
+import result_slide_5 from '../Assets/results/result5.webp';
+import result_slide_6 from '../Assets/results/result6.webp';
 import envi_1 from '../Assets/course-detail-img.jpg';
 import envi_3 from '../Assets/courseImg-2.jpg';
 import envi_4 from '../Assets/courseImg-3.jpg';

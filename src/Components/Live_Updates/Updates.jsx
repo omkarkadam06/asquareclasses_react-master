@@ -1,5 +1,5 @@
 import React from 'react';
-import student_img_5 from '../Assets/student-img-5.png';
+import student_img_5 from '../Assets/student-img-5.webp';
 import update_logo from '../Assets/update-logo.png';
 import './Updates.css';
 import '../style.css';

@@ -1,15 +1,15 @@
-import imgj1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Sankalp/JEE-SANKALP-BATCH.jpg';
-import imgj2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Srijan/JEE-SRIJAN-BATCH.jpg';
-import imgj2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Pratham/JEE-PRATHAM-BATCH.jpg';
-import imgn1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Sankalp/NEET-SANKALP-BATCH.jpg';
-import imgn2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Srijan/NEET--SRIJAN-BATCH.jpg';
-import imgn2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Pratham/NEET-PRATHAM-BATCH.jpg';
-import imgc1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/Sankalp/MHT-CET-SANKALP-BATCH.jpg';
-import imgc2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/Srijan/MHT-CET-SRIJAN-BATCH.jpg';
-import imgc2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/Pratham/MHT-CET-PRATHAM-BATCH.jpg';
-import imgf1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Foundation/Sankalp/foundation-SANKALP-BATCH.jpg';
-import imgf2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Foundation/Srijan/foundation-SRIJAN-BATCH.jpg';
-import imgf2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Foundation/Pratham/foundation-PRATHAM-BATCH.jpg';
+import imgj1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Sankalp/JEE-SANKALP-BATCH.webp';
+import imgj2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Srijan/JEE-SRIJAN-BATCH.webp';
+import imgj2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/JEE Banners/Pratham/JEE-PRATHAM-BATCH.webp';
+import imgn1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Sankalp/NEET-SANKALP-BATCH.webp';
+import imgn2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Srijan/NEET--SRIJAN-BATCH.webp';
+import imgn2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/NEET Banner/Pratham/NEET-PRATHAM-BATCH.webp';
+import imgc1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/Sankalp/MHT-CET-SANKALP-BATCH.webp';
+import imgc2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/Srijan/MHT-CET-SRIJAN-BATCH.webp';
+import imgc2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/Pratham/MHT-CET-PRATHAM-BATCH.webp';
+import imgf1 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Foundation/Sankalp/foundation-SANKALP-BATCH.webp';
+import imgf2 from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Foundation/Srijan/foundation-SRIJAN-BATCH.webp';
+import imgf2p from '../Assets/Asqare Banner - JEE, NEET, Foundation CET/Foundation/Pratham/foundation-PRATHAM-BATCH.webp';
 
 export const Course_Data = [
   [

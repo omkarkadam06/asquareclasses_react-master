@@ -4,16 +4,16 @@ import '../style.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner1 from '../Assets/slider/web-slider-1.jpg';
-import banner2 from '../Assets/slider/web-slider-2.jpg';
-import banner3 from '../Assets/slider/web-slider-3.jpg';
-import banner4 from '../Assets/slider/Asquar web slider-4-new.jpg';
-import banner5 from '../Assets/slider/web-slider-5.jpg';
-import mobileBanner1 from '../Assets/slider/Asquar mobile-1.jpg';
-import mobileBanner2 from '../Assets/slider/Asquar mobile-2.jpg';
-import mobileBanner3 from '../Assets/slider/Asquar mobile-3.jpg';
-import mobileBanner4 from '../Assets/slider/Asquar mobile-4.jpg';
-import mobileBanner5 from '../Assets/slider/Asquar mobile-5.jpg';
+import banner1 from '../Assets/slider/web-slider-1.webp';
+import banner2 from '../Assets/slider/web-slider-2new.webp'
+import banner3 from '../Assets/slider/web-slider-3.webp';
+import banner4 from '../Assets/slider/web-slider-4.webp';
+import banner5 from '../Assets/slider/web-slider-5.webp';
+import mobileBanner1 from '../Assets/slider/Asquar mobile-1.webp';
+import mobileBanner2 from '../Assets/slider/Asquar mobile-2.webp';
+import mobileBanner3 from '../Assets/slider/Asquar mobile-3.webp';
+import mobileBanner4 from '../Assets/slider/Asquar mobile-4.webp';
+import mobileBanner5 from '../Assets/slider/Asquar mobile-5.webp';
 import Form from '../Form2/Form2';
 import bannernextArrowIcon from '../Assets/banner-arrow2.png';
 
