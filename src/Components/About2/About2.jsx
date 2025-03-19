@@ -41,7 +41,7 @@ function About2() {
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        autoplay: true, 
+        // autoplay: true, 
         autoplaySpeed: 2000,
     };
 

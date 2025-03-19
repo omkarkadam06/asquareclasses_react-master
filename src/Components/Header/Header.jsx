@@ -105,7 +105,7 @@ const Header = () => {
       <div className="nav-wrapper">
         <div className="grad-bar"></div>
         <header className="navbar">
-          <Link to={'/'} className="nav-item" onClick={scrollToTop}>
+          <Link to={'/'} className="nav-item logo_link" onClick={scrollToTop}>
             <img src={institude_logo} alt="Company Logo" />
           </Link>
           <div

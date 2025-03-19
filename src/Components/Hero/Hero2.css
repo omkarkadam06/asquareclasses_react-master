@@ -258,4 +258,36 @@ section.Hero2 {
         height: 354px;
     }
 }
+@media (min-width: 340px){
+    .bannerSliders{
+        height: 432px;
+    }
+}
+@media (min-width: 389px){
+    .bannerSliders{
+        height: 485px;
+    }
+}
+@media (min-width: 402px){
+    .bannerSliders{
+        height: 512px;
+    }
+}
+@media (min-width: 425px) and (max-width:462px){
+    .bannerSliders{
+        height: 574px;
+    }
+} 
+@media (min-width: 462px){
+    .bannerSliders{
+        height: 574px;
+    }
+}
+.headernewform.banner-form .col-md-6{
+    width: 50%;
+}
+.headernewform.banner-form .justify-content-between{
+    gap: 10px;
+}
+
 

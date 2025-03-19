@@ -21,13 +21,8 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0px;
-  z-index: 10;
+  z-index: 1000;
 }
-
-.navbar img {
-  height: 48px;
-}
-
 .nav_ul {
   list-style: none;
   display: flex;
@@ -133,7 +128,9 @@
 }
 
 /* MOBILE MENU & ANIMATION */
-
+.logo_link{
+  width: 20%;
+}
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -213,9 +210,6 @@
 /* Mobile Devices - Phones/Tablets */
 
 @media only screen and (max-width: 1240px) {
-  .navbar img {
-    height: 42px;
-  }
   .nav_ul {
     gap: 1.4vw;
   }
@@ -248,16 +242,14 @@
     text-align: center;
     overflow: hidden;
   }
-
-  .navbar img {
-    height: 32px;
-  }
-
   .nav_ul {
     gap: 1.4vw;
   }
   .nav-item {
     font-size: 14px;
+  }
+  .logo_link{
+    width: 44%;
   }
 
   .navbar li {
