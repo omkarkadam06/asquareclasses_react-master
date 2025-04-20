@@ -84,7 +84,7 @@ function Course_Details({ courseName, className }) {
   const intoductionRef = useRef(null);
   const descriptionRef = useRef(null);
   const feesRef = useRef(null);
-  const benifitsRef = useRef(null);
+  // const benifitsRef = useRef(null);
   const courseplannerRef = useRef(null);
   const resultsRef = useRef(null);
 
@@ -92,7 +92,7 @@ function Course_Details({ courseName, className }) {
     intoductionRef,
     descriptionRef,
     feesRef,
-    benifitsRef,
+    // benifitsRef,
     courseplannerRef,
     resultsRef
   ];
@@ -137,7 +137,7 @@ function Course_Details({ courseName, className }) {
     { sub: 'Description', id: 2 },
     { sub: 'Fees Structure', id: 3 },
     { sub: 'Course Planner', id: 4 },
-    { sub: 'Results', id: 5 }
+    { sub: 'Results', id: 5 },
   ];
 
   function scroll_down(id) {
@@ -649,54 +649,10 @@ function Course_Details({ courseName, className }) {
               <button className="pay_now_btn_cd">Pay Now</button>
             </div>
             <div className="cd_divider" />
-            <div className="cd_benifits" ref={benifitsRef}>
-              <p className="cd_t1">
-                {
-                  courses_data_api[courseName - 1][className - 1]
-                    .additional_benifits_heading
-                }
-              </p>
-              <div className="cd_b_box">
-                <div className="cd_b_container cd_p_box">
-                  <img src={surprise_icon} alt="icon" className="icn-1" />
-                  <p className="cd_t2">
-                    {
-                      courses_data_api[courseName - 1][className - 1]
-                        .additional_benifits_point_1
-                    }
-                  </p>
-                </div>
-                <div className="cd_b_container cd_p_box">
-                  <img src={surprise_icon} alt="icon" className="icn-1" />
-                  <p className="cd_t2">
-                    {
-                      courses_data_api[courseName - 1][className - 1]
-                        .additional_benifits_point_2
-                    }
-                  </p>
-                </div>
-                <div className="cd_b_container cd_p_box">
-                  <img src={surprise_icon} alt="icon" className="icn-1" />
-                  <p className="cd_t2">
-                    {
-                      courses_data_api[courseName - 1][className - 1]
-                        .additional_benifits_point_3
-                    }
-                  </p>
-                </div>
-                <div className="cd_b_container cd_p_box">
-                  <img src={surprise_icon} alt="icon" className="icn-1" />
-                  <p className="cd_t2">
-                    {
-                      courses_data_api[courseName - 1][className - 1]
-                        .additional_benifits_point_4
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="cd_divider" />
-            <div className="cd_result" ref={resultsRef}>
+            
+            <div className="cd_result"
+             ref={resultsRef}
+             >
               <p className="cd_t1">
                 {courses_data_api[courseName - 1][className - 1].result_heading}
               </p>
@@ -841,6 +797,55 @@ function Course_Details({ courseName, className }) {
                     className="arrow_testi_di"
                     onClick={nextSlide}
                   />
+                </div>
+              </div>
+            </div>
+            <div className="cd_divider" />
+            <div className="cd_benifits" 
+            // ref={benifitsRef}
+            >
+              <p className="cd_t1">
+                {
+                  courses_data_api[courseName - 1][className - 1]
+                    .additional_benifits_heading
+                }
+              </p>
+              <div className="cd_b_box">
+                <div className="cd_b_container cd_p_box">
+                  <img src={surprise_icon} alt="icon" className="icn-1" />
+                  <p className="cd_t2">
+                    {
+                      courses_data_api[courseName - 1][className - 1]
+                        .additional_benifits_point_1
+                    }
+                  </p>
+                </div>
+                <div className="cd_b_container cd_p_box">
+                  <img src={surprise_icon} alt="icon" className="icn-1" />
+                  <p className="cd_t2">
+                    {
+                      courses_data_api[courseName - 1][className - 1]
+                        .additional_benifits_point_2
+                    }
+                  </p>
+                </div>
+                <div className="cd_b_container cd_p_box">
+                  <img src={surprise_icon} alt="icon" className="icn-1" />
+                  <p className="cd_t2">
+                    {
+                      courses_data_api[courseName - 1][className - 1]
+                        .additional_benifits_point_3
+                    }
+                  </p>
+                </div>
+                <div className="cd_b_container cd_p_box">
+                  <img src={surprise_icon} alt="icon" className="icn-1" />
+                  <p className="cd_t2">
+                    {
+                      courses_data_api[courseName - 1][className - 1]
+                        .additional_benifits_point_4
+                    }
+                  </p>
                 </div>
               </div>
             </div>
