@@ -82,6 +82,7 @@
   position: absolute;
   top: 20px;
   border-radius: 12px;
+  min-width: 175px;
 }
 
 .flooter_header li {
@@ -288,7 +289,7 @@
     top: 1.5vw;
   }
   .flooter_header li {
-    padding: 1vw 2vw;
+    padding: 1vw 1vw;
   }
   .nested-dropdown-content ul {
     width: 11.8vw;

@@ -73,7 +73,7 @@ section.Hero2 {
 .Hero2 .custom-arrow {
     position: absolute;
     background: #fff;
-    z-index: 100;
+    z-index: 1;
     top: 50%;
     transform: translateY(-50%);
     backdrop-filter: blur(37px);
