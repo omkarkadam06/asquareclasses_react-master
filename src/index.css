@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.customotherpages h2, .customotherpages h3, .customotherpages h4 {
+  margin: 0 0 10px;
+}
+.customotherpages ul {
+  padding: 0 0 0 30px;
+  margin: 7px 0 15px;
+}
+.customotherpages p {
+  margin: 0 0 15px;
+}

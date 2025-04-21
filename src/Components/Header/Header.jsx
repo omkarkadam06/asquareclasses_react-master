@@ -154,7 +154,10 @@ const Header = () => {
                       onMouseEnter={handleNestedMouseEnter1}
                       onMouseLeave={handleNestedMouseLeave1}
                     >
-                      JEE (M & A) &#8594;
+                      <Link
+                              to={'/iit-jee-main-advanced-coaching'}
+                              className="t3 ndc_li" >
+                      JEE (M & A) &#8594;</Link>
                       {isNestedDropdownVisible1 && (
                         <div className="nested-dropdown-content">
                           <ul>
@@ -200,7 +203,10 @@ const Header = () => {
                       onMouseEnter={handleNestedMouseEnter2}
                       onMouseLeave={handleNestedMouseLeave2}
                     >
-                      NEET &#8594;
+                    <Link
+                            to={'/neet-coaching-classes-pune'}
+                            className="t3 ndc_li" >
+                      NEET &#8594;</Link>
                       {isNestedDropdownVisible2 && (
                         <div className="nested-dropdown-content">
                           <ul>
@@ -246,7 +252,10 @@ const Header = () => {
                       onMouseEnter={handleNestedMouseEnter3}
                       onMouseLeave={handleNestedMouseLeave3}
                     >
-                      MHT-CET &#8594;
+                    <Link
+                            to={'/mht-cet-classes-in-pune'}
+                            className="t3 ndc_li" >
+                      MHT-CET &#8594;</Link>
                       {isNestedDropdownVisible3 && (
                         <div className="nested-dropdown-content">
                           <ul>
@@ -292,7 +301,10 @@ const Header = () => {
                       onMouseEnter={handleNestedMouseEnter4}
                       onMouseLeave={handleNestedMouseLeave4}
                     >
-                      Foundation &#8594;
+                    <Link
+                            to={'/foundation-classes-in-pune'}
+                            className="t3 ndc_li" >
+                      Foundation &#8594;</Link>
                       {isNestedDropdownVisible4 && (
                         <div className="nested-dropdown-content">
                           <ul>
