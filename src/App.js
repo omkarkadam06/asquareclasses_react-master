@@ -33,6 +33,9 @@ import CourseFoundation10 from './Pages/courses/foundation-course-for-std-10th';
 import ErrorPage from './Pages/Error';
 import ThankYou from './Pages/thankyou';
 import IITJEE from './Pages/iit-jee';
+import NEETCoaching from './Pages/neet-coaching';
+import MHTCoaching from './Pages/mht-coaching';
+import FoundationCoaching from './Pages/foundation-coaching';
 
 function App() {
   return (
@@ -203,6 +206,9 @@ function App() {
           <Route path="/class-8th-9th-10th-coaching-Institutes-classes-in-pimple-nilakh-pune" element={<CourseFoundation8 courseName="4" className="1" />} />
           <Route path="/thank-you" element={<ThankYou courseName="4" className="1" />} />
           <Route path="/iit-jee-main-advanced-coaching" element={<IITJEE />} />
+          <Route path="/neet-coaching-classes-pune" element={<NEETCoaching />} />
+          <Route path="/mht-cet-classes-in-pune" element={<MHTCoaching />} />
+          <Route path="/foundation-classes-in-pune" element={<FoundationCoaching />} />
           {/* Catch-all route for 404 */}
           <Route path="*" element={<ErrorPage />} />
           {/* <Route path="/blog" element={<Blog />} />

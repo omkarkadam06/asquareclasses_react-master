@@ -25,9 +25,9 @@ function Home() {
     </Helmet>
     <Navbar />
     <Header />
-    <div className="content_pg_div">
+    <div className="content_pg_div iitjes">
         <section className="Hero2">
-            <div>
+            <div className='iitpagenew'>
                 <div className="bannerSlider inner-banner info-banner" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     <div className="container">
                         <div className="row align-items-center">
@@ -86,7 +86,7 @@ function Home() {
                         <li>Hybrid Learning – Access recorded sessions anytime</li>
                         <li>Multiple Centers – Convenient locations across Pune</li>
                     </ul>
-                    <h4>ASQUARE IIT Coaching Centers in Pune</h4>
+                    <h5>ASQUARE IIT Coaching Centers in Pune</h5>
                     <p>Our centers are strategically located to provide easy access to students across the city:</p>
                     <ul>
                         <li>Pimpri</li>

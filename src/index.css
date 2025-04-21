@@ -21,3 +21,25 @@ code {
 .customotherpages p {
   margin: 0 0 15px;
 }
+
+@media (max-width: 600px) {
+  .iitpagenew img {
+    display: none;
+  }
+  .iitjes .bannerSlider {
+    height: 225px !important;
+  } 
+  .customotherpages p, .customotherpages li {
+    font-size: 14px;
+}
+.customotherpages li {
+  margin: 0 0 10px;
+}
+.testi_container_left {
+  position: relative;
+  bottom: -66px;
+}
+.testi_container_right {
+  height: auto !important;
+}
+}
