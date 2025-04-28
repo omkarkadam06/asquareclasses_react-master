@@ -21,6 +21,11 @@ code {
 .customotherpages p {
   margin: 0 0 15px;
 }
+.banner-titleSection h4 {
+  color: #fff;
+  margin: 25px 0 0;
+  font-size: 30px;
+}
 
 @media (max-width: 600px) {
   .iitpagenew img {

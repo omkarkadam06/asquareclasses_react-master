@@ -33,10 +33,11 @@ function Home() {
                         <div className="row align-items-center">
                             <div className="col-md-8">
                                 <div className="course-title d-flex">
-                                    <div className="course-name"><h4>Courses</h4></div>
+                                    <div className="course-name"><h4>CBSE, ICSE, State Board </h4></div>
                                 </div>
                                 <div className="banner-titleSection">
-                                    <h1 className="banner-title mt-3">Foundation Coaching</h1>
+                                    <h1 className="banner-title mt-3">FOUNDATION Coaching Classes in Pune</h1>
+                                    <h4>For Class  8th, 9th & 10th Std.</h4>
                                 </div>
                             </div>
                             <div className="col-md-4">
