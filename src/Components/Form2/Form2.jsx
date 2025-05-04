@@ -154,6 +154,8 @@ function Form2() {
             <option value="Vishrantwadi">Vishrantwadi</option>
             <option value="Pimple saudagar">Pimple Saudagar</option>
             <option value="SNBP Rahatni">SNBP Rahatni</option>
+            <option value="SNBP Rahatni">Hadapsar</option>
+            <option value="SNBP Rahatni">Wanwadi</option>
           </select>
             </div>
           </div>

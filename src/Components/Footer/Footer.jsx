@@ -306,6 +306,26 @@ function Footer() {
               </ul>
             </div>
           </div>
+          <div className="col-md-3">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Hadapsar, Branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>ASQUARE Classes Pvt Ltd,<br></br> Fortune Plaza, Office No 208,209,210 Near Railway crossing, Sasane Nagar, Hadapsar, Pune 411028</li>
+                <li><a href="tel:+919156004396">(+91) 9156004396</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Wanwadi, Branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>ASQUARE Classes Pvt Ltd,<br></br> Arihant Avenue, Above Image Electricals, Near Shivaji Maharaj Statue, Divya Nagar, Wanwadi, Pune 411040</li>
+                <li><a href="tel:+919156004393">(+91) 9156004393</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bottom_container">

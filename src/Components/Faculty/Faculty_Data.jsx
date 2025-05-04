@@ -1,13 +1,13 @@
 import amit_sir from '../Assets/Complete faculty/amit (2).webp';
-import sandeep_sir from '../Assets/Complete faculty/sandeep_sir.webp';
+import saurabh_sir from '../Assets/Complete faculty/Sourabh.jpg';
 import devaashish_sir from '../Assets/Complete faculty/ajit-anupam.webp';
 import nikita_mam from '../Assets/Complete faculty/nikita.webp';
 
 const Faculty_Data = [
   {
     id: 1,
-    name: 'Sandeep Roy',
-    img: sandeep_sir,
+    name: 'Saurabh Ramteke',
+    img: saurabh_sir,
     points: [
       'HOD: Physics',
       'Experience of 5+ years',
@@ -41,7 +41,7 @@ const Faculty_Data = [
     points: [
       'MDS. (Biology)',
       'Experience of 5+ years',
-      'Specialized in teaching Mathematics for JEE Main & Advance, NEET & Classes XI, XII & XIII'
+      'Specialized in teaching Biology for NEET & Classes XI, XII & XIII'
     ]
   }
 ];
