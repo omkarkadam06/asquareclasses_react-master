@@ -281,6 +281,8 @@ function Form1() {
                 <option value="Visrantwadi Branch">Visrantwadi Branch</option>
                 <option value="Pimple Saudagar">Pimple Saudagar</option>
                 <option value="SNBP Rahatni">SNBP Rahatni</option>
+                <option value="SNBP Rahatni">Hadapsar</option>
+                <option value="SNBP Rahatni">Wanwadi</option>
               </select>
             </div>
           </div>

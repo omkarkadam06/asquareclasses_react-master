@@ -114,7 +114,7 @@ function Location() {
       <div
         ref={viewRef3}
         className={`location_1 ${inView3 ? 'i_v_about_us' : 'n_v_about_us'}`}
-      >
+       >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0744499244543!2d73.87571447484255!3d18.570681967642287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7d41567e7fb%3A0x6494d783a53601c!2sASQUARE%20Medical%20%26%20IIT-JEE%20Academy%2C%20Vishrantwadi%2C%20Pune.!5e0!3m2!1sen!2sin!4v1701782132649!5m2!1sen!2sin"
           className="maps"
@@ -159,6 +159,74 @@ function Location() {
             </p>
             <a href="tel:+919579730062" className="t2">
               Mobile - (+91) 9579730062
+            </a>
+          </div>
+          <div className="l_r_p2">
+            <a href="tel:9766118877" className="t2">
+              <button className="button">Contact Us </button>
+            </a>
+            <a href={`mailto:${emailAddress}`}>
+              <button className="button">Mail Us </button>
+            </a>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.3052301245443!2d73.78452957496505!3d18.60079758250831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91bbcc108c3%3A0xda47590223e4a7c6!2sSNBP%20International%20School!5e1!3m2!1sen!2sin!4v1736640974304!5m2!1sen!2sin"
+          className="maps y_maps"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+      <div className="cd_divider" />
+      <div
+        ref={viewRef3}
+        className={`location_1 ${inView3 ? 'i_v_about_us' : 'n_v_about_us'}`}
+       >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.6691531269985!2d73.93063837496202!3d18.488504082598936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb25638de2c5%3A0x22a1c0f87107e3d7!2sASQUARE%20Medical%20%26%20IIT-JEE%20Academy%2C%20Hadapsar%2C%20pune!5e1!3m2!1sen!2sin!4v1746298257754!5m2!1sen!2sin"
+          className="maps"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+        <div className="l_r">
+          <div className="l_r_p1">
+            <p className="t1">Hadapsar, Branch</p>
+            <p className="t2">
+            ASQUARE Classes Pvt Ltd,
+            Fortune Plaza, Office No 208,209,210 Near Railway crossing, Sasane Nagar, Hadapsar, Pune 411028
+            </p>
+            <a href="tel:9156004396" className="t2">
+              Mobile - (+91) 9156004396
+            </a>
+          </div>
+          <div className="l_r_p2">
+            <a href="tel:9766118877" className="t2">
+              <button className="button">Contact Us </button>
+            </a>
+            <a href={`mailto:${emailAddress}`}>
+              <button className="button">Mail Us </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="cd_divider" />
+      <div
+        ref={viewRef2}
+        className={`location_1 ${inView2 ? 'i_v_about_us' : 'n_v_about_us'}`}
+      >
+        
+        <div className="l_r">
+          <div className="l_r_p1">
+            <p className="t1">Wanwadi, Branch</p>
+            <p className="t2">
+            ASQUARE Classes Pvt Ltd, Arihant Avenue, Above Image Electricals, Near Shivaji Maharaj Statue, Divya Nagar, Wanwadi, Pune 411040
+            </p>
+            <a href="tel:+919579730062" className="t2">
+              Mobile - (+91) 9156004393
             </a>
           </div>
           <div className="l_r_p2">
