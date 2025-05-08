@@ -4,7 +4,7 @@ import Header from '../Components/Header/Header';
 import Loading from './Loading.jsx';
 import { Helmet } from 'react-helmet';
 import banner1 from "../Assets/slider/asquare-banner.webp"
-import img from '../Assets/rb_2148192915.png';
+import img from '../Assets/amitsir.png';
 import Form2 from '../Components/Form2/Form2';
 const Form1 = React.lazy(() => import('../Components/Form1/Form1.jsx'));
 const Footer = React.lazy(() => import('../Components/Footer/Footer.jsx'));
@@ -28,7 +28,7 @@ function Home() {
     <div className="content_pg_div iitjes">
         <section className="Hero2">
             <div className='iitpagenew'>
-                <div className="bannerSlider inner-banner info-banner" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                <div className="bannerSlider inner-banner info-banner-new" style={{ backgroundImage: `url('${banner1}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-8">
@@ -41,7 +41,9 @@ function Home() {
                                 </div>
                             </div>
                             <div className="col-md-4">
-                                <img src={img} alt="img" />
+                                <div className="breacrumimg">
+                                    <img src={img} alt="img" />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -26,16 +26,34 @@ code {
   margin: 25px 0 0;
   font-size: 30px;
 }
-
+.breacrumimg img {
+  height: 375px;
+  object-fit: contain;
+}
+.info-banner-new {
+  padding: 0 !important;
+}
 @media (max-width: 600px) {
   .iitpagenew img {
     display: none;
   }
-  .iitjes .bannerSlider {
+  /* .iitjes .bannerSlider {
     height: 225px !important;
-  } 
+  }  */
   .customotherpages p, .customotherpages li {
     font-size: 14px;
+}
+.info-banner-new h1.banner-title.mt-3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.banner-titleSection h4 {
+  font-size: 23px;
+  text-align: center;
+}
+.info-banner-new {
+  height: auto !important;
+  padding: 0 !important;
 }
 .customotherpages li {
   margin: 0 0 10px;
