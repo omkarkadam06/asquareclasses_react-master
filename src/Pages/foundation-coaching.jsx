@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import banner1 from "../Assets/slider/asquare-banner.webp"
 import img from '../Assets/amitsir.png';
 import Form2 from '../Components/Form2/Form2';
+import { Link } from 'react-router-dom';
 const Form1 = React.lazy(() => import('../Components/Form1/Form1.jsx'));
 const Footer = React.lazy(() => import('../Components/Footer/Footer.jsx'));
 const Testimonials = React.lazy(() =>
@@ -121,7 +122,15 @@ function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="content_pgd_p2 info-page-form infoCol-left">
+            <div className="content_pgd_p2 info-page-form infoCol-left customcousersl">
+                <div className="ourcorses">
+                    <div class="section title_aaa about_us_title"><span class="block_aaa"></span><h3>Our Courses<span></span></h3></div>
+                    <ul>
+                        <li><Link to="/8th-foundation-regular-course-institutes-classes-in-pune">Class 8th</Link></li>
+                        <li><Link to="/9th-foundation-regular-course-institutes-classes-in-pune">Class 9th</Link></li>
+                        <li><Link to="/10th-foundation-regular-course-institutes-classes-in-pune">Class 10th</Link></li>
+                    </ul>
+                </div>
                 <Form2 />
             </div>
         </div>

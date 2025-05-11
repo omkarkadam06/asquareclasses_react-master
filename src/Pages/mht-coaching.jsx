@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import banner1 from "../Assets/slider/asquare-banner.webp"
 import img from '../Assets/amitsir.png';
 import Form2 from '../Components/Form2/Form2';
+import { Link } from 'react-router-dom';
 const Form1 = React.lazy(() => import('../Components/Form1/Form1.jsx'));
 const Footer = React.lazy(() => import('../Components/Footer/Footer.jsx'));
 const Testimonials = React.lazy(() =>
@@ -109,7 +110,16 @@ function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="content_pgd_p2 info-page-form infoCol-left">
+            <div className="content_pgd_p2 info-page-form infoCol-left customcousersl">
+                <div className="ourcorses">
+                    <div class="section title_aaa about_us_title"><span class="block_aaa"></span><h3>Our Courses<span></span></h3></div>
+                    <ul>
+                        <li><Link to="/mht-cet-course-classes-institute-for-11th-in-pune">Class 11th</Link></li>
+                        <li><Link to="/mht-cet-course-classes-institute-for-12th-in-pune">Class 12th</Link></li>
+                        <li><Link to="/mht-cet-course-classes-institute-for-12th-pass-in-pune">12th-Pass</Link></li>
+                        <li><Link to="/mht-cet-crash-course-institutes-classes-in-pune">Crash Course</Link></li>
+                    </ul>
+                </div>
                 <Form2 />
             </div>
         </div>

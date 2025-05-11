@@ -33,6 +33,29 @@ code {
 .info-banner-new {
   padding: 0 !important;
 }
+.customcousersl {
+    align-items: flex-start !important;
+}
+.ourcorses ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ourcorses ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 0 10px;
+    transition: all 0.5s ease;
+}
+.ourcorses .title_aaa {
+    margin: 0 0 15px;
+}
+.ourcorses ul li a:hover {
+  color: var(--theme-color1--);
+}
 @media (max-width: 600px) {
   .iitpagenew img {
     display: none;
