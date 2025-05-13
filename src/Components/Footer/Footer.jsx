@@ -141,7 +141,7 @@ function Footer() {
           </li>
           <li>
             <Link
-              to={'/iit-jee-coaching-classes-institute-for-12th-pass-in-pune'}
+              to={'/iit-jee-coaching-classes-for-repeaters-12th-pass-in-pune'}
               className="f_link"
               onClick={scrollToTop}
             >
@@ -179,7 +179,7 @@ function Footer() {
           </li>
           <li>
             <Link
-              to={'/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune'}
+              to={'/neet-coaching-classes-for-repeaters-12th-pass-in-pune'}
               className="f_link"
               onClick={scrollToTop}
             >

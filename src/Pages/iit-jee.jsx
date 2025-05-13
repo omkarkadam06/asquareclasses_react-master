@@ -115,7 +115,7 @@ function Home() {
                     <ul>
                         <li><Link to="/iit-jee-coaching-classes-institute-for-11th-in-pune">Class 11th</Link></li>
                         <li><Link to="/iit-jee-coaching-classes-institute-for-12th-in-pune">Class 12th</Link></li>
-                        <li><Link to="/iit-jee-coaching-classes-institute-for-12th-pass-in-pune">12th-Pass</Link></li>
+                        <li><Link to="/iit-jee-coaching-classes-for-repeaters-12th-pass-in-pune">12th-Pass</Link></li>
                         <li><Link to="/iit-jee-crash-course-institutes-classes-in-pune">Crash Course</Link></li>
                     </ul>
                 </div>

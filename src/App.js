@@ -46,11 +46,11 @@ function App() {
           <Route path="/course" element={<Courses />} />
           <Route path="/iit-jee-coaching-classes-institute-for-11th-in-pune" element={<CourseJee11 courseName="1" className="1" />} />
           <Route path="/iit-jee-coaching-classes-institute-for-12th-in-pune" element={<CourseJee12 courseName="1" className="2" />} />
-          <Route path="/iit-jee-coaching-classes-institute-for-12th-pass-in-pune" element={<CourseJee12Pass courseName="1" className="3" />} />
+          <Route path="/iit-jee-coaching-classes-for-repeaters-12th-pass-in-pune" element={<CourseJee12Pass courseName="1" className="3" />} />
           <Route path="/iit-jee-crash-course-institutes-classes-in-pune" element={<CourseJeeCrash courseName="1" className="4" />} />
           <Route path="/iit-jee-neet-coaching-classes-institute-for-11th-in-pune" element={<CourseNeet11 courseName="2" className="1" />} />
           <Route path="/iit-jee-neet-coaching-classes-institute-for-12th-in-pune" element={<CourseNeet12 courseName="2" className="2" />} />
-          <Route path="/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune" element={<CourseNeet12Pass courseName="2" className="3" />} />
+          <Route path="/neet-coaching-classes-for-repeaters-12th-pass-in-pune" element={<CourseNeet12Pass courseName="2" className="3" />} />
           <Route path="/iit-jee-neet-crash-course-institutes-classes-in-pune" element={<CourseNeetCrash courseName="2" className="4" />} />
           <Route path="/mht-cet-course-classes-institute-for-11th-in-pune" element={<CourseCet11 courseName="3" className="1" />} />
           <Route path="/mht-cet-course-classes-institute-for-12th-in-pune" element={<CourseCet12 courseName="3" className="2" />} />

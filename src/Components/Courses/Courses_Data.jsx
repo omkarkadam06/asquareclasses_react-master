@@ -41,7 +41,7 @@ export const Course_Data = [
       class: 'Target Year 2026',
       heading: '- 12th Pass -',
       sub_heading: '12th passed students',
-      linkto: `/iit-jee-coaching-classes-institute-for-12th-pass-in-pune`
+      linkto: `/iit-jee-coaching-classes-for-repeaters-12th-pass-in-pune`
     }
   ],
   [
@@ -73,7 +73,7 @@ export const Course_Data = [
       class: 'Target Year 2026',
       heading: '- 12th Pass -',
       sub_heading: '12th passed students',
-      linkto: `/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune`
+      linkto: `/neet-coaching-classes-for-repeaters-12th-pass-in-pune`
     }
   ],
   [
@@ -105,7 +105,7 @@ export const Course_Data = [
       class: 'Target Year 2026',
       heading: '- 12th Pass -',
       sub_heading: '12th passed students',
-      linkto: `/iit-jee-coaching-classes-institute-for-12th-pass-in-pune`
+      linkto: `/iit-jee-coaching-classes-for-repeaters-12th-pass-in-pune`
     }
   ],
   [

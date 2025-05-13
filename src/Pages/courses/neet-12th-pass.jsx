@@ -20,8 +20,8 @@ function Course({ courseName, className }) {
   return (
     <>
     <Helmet>
-      <title>NEET Coaching Classes for 12th Pass in Pune | A Square Classes</title>
-      <meta name="description" content="Join A Square Classes For Specialized NEET Coaching Designed For 12th Pass Students in Pune. Achieve Your Dream Of Entering Medical College With Expert Guidance!" />
+      <title>NEET Repeater & Dropper Coaching Classes in Pune | One Year 12th Pass NEET Course</title>
+      <meta name="description" content="Join ASquare Classes for the best NEET coaching in Pune for repeaters and 12th pass students. Enroll in our one-year NEET dropper course to boost your score." />
       <meta name="keywords" content="NEET coaching classes Pune, NEET classes for 12th pass, best NEET prep Pune, NEET training for graduates, A Square Classes, medical entrance coaching, NEET preparation courses, 12th pass NEET coaching" />
     </Helmet>
       <Navbar />

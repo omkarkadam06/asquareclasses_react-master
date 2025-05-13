@@ -176,7 +176,7 @@ const Header = () => {
                               <li>Class 12th</li>
                             </Link>
                             <Link
-                              to={'/iit-jee-coaching-classes-institute-for-12th-pass-in-pune'}
+                              to={'/iit-jee-coaching-classes-for-repeaters-12th-pass-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
@@ -225,7 +225,7 @@ const Header = () => {
                               <li>Class 12th</li>
                             </Link>
                             <Link
-                              to={'/iit-jee-neet-coaching-classes-institute-for-12th-pass-in-pune'}
+                              to={'/neet-coaching-classes-for-repeaters-12th-pass-in-pune'}
                               className="t3 ndc_li"
                               onClick={dropdownClick}
                             >
