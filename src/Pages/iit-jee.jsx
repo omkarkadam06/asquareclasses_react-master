@@ -18,10 +18,10 @@ function Home() {
     <>
       {/* Add Helmet for SEO purposes */}
     <Helmet>
-        <title>Best IIT JEE Mains Coaching in Pune | Top JEE Classes at ASQUARE</title>
+        <title>Best IIT JEE Mains & Advanced Coaching Classes in Pune</title>
         <meta
           name="description"
-          content="Get top IIT JEE Mains coaching in Pune with ASQUARE. Join the best JEE coaching classes and IIT coaching center for focused JEE Mains preparation by expert faculty in Pune."
+          content="Top IIT JEE Mains & Advanced coaching classes in Pune. Get expert faculty, structured preparation, mock tests & proven results for JEE success."
         />
     </Helmet>
     <Navbar />
