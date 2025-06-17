@@ -251,7 +251,7 @@ function Footer() {
             <img src={phone} alt="icon" />
             <div>
               <p>Phone</p>
-              <p>(+91) 97661 18877</p>
+              <p><Link to="tel:+919766118877">(+91) 97661 18877</Link></p>
             </div>
           </div>
           <span className="line_footer" />
@@ -259,7 +259,7 @@ function Footer() {
             <img src={email} alt="icon" />
             <div>
               <p>Email</p>
-              <p>asquareclasses@gmail.com</p>
+              <p><Link to="mailto:asquareclasses@gmail.com">asquareclasses@gmail.com</Link></p>
             </div>
           </div>
         </ul>

@@ -17,12 +17,14 @@ const Form1 = React.lazy(() => import('../../Components/Form1/Form1.jsx'));
 const Footer = React.lazy(() => import('../../Components/Footer/Footer.jsx'));
 
 function Course({ courseName, className }) {
+  const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
     <Helmet>
       <title>MHT-CET Crash Course Institute in Pune | A Square Classes</title>
       <meta name="description" content="Enroll in A Square Classes For An Intensive MHT-CET Crash Course in Pune. Our Expert Instructors Provide Focused Training To Help You Succeed in Your Entrance Exams!" />
       <meta name="keywords" content="MHT-CET crash course Pune, MHT-CET crash course institute, best MHT-CET coaching Pune, MHT-CET preparation classes, A Square Classes, entrance exam coaching, fast-track MHT-CET training, short-term MHT-CET classes" />
+      <link rel="canonical" href={canonicalUrl} />
     </Helmet>
       <Navbar />
       <Header />

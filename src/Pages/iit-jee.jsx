@@ -14,6 +14,7 @@ const Testimonials = React.lazy(() =>
 );
 
 function Home() {
+    const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       {/* Add Helmet for SEO purposes */}
@@ -23,6 +24,7 @@ function Home() {
           name="description"
           content="Top IIT JEE Mains & Advanced coaching classes in Pune. Get expert faculty, structured preparation, mock tests & proven results for JEE success."
         />
+        <link rel="canonical" href={canonicalUrl} />
     </Helmet>
     <Navbar />
     <Header />

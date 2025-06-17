@@ -14,6 +14,7 @@ const Testimonials = React.lazy(() =>
 );
 
 function Home() {
+    const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       {/* Add Helmet for SEO purposes */}
@@ -23,6 +24,7 @@ function Home() {
           name="description"
           content="Join top NEET coaching classes in Pune with ASQUARE. Best NEET institute for NEET preparation classes. Get affordable NEET coaching in Pune with expert guidance and support."
         />
+        <link rel="canonical" href={canonicalUrl} />
     </Helmet>
     <Navbar />
     <Header />

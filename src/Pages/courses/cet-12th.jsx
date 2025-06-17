@@ -17,12 +17,14 @@ const Form1 = React.lazy(() => import('../../Components/Form1/Form1.jsx'));
 const Footer = React.lazy(() => import('../../Components/Footer/Footer.jsx'));
 
 function Course({ courseName, className }) {
+  const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
     <Helmet>
       <title>MHT-CET Coaching Classes For 12th in Pune | A Square Classes</title>
       <meta name="description" content="Join A Square Classes For Specialized MHT-CET Coaching Tailored For 12th-grade Students in Pune. Get Expert Guidance To Excel in Your Entrance Exams And Secure Your Future!" />
       <meta name="keywords" content="MHT-CET coaching classes Pune, MHT-CET classes for 12th, best MHT-CET prep Pune, 12th-grade MHT-CET coaching, A Square Classes, MHT-CET training Pune, entrance exam coaching, MHT-CET preparation courses" />
+      <link rel="canonical" href={canonicalUrl} />
     </Helmet>
       <Navbar />
       <Header />

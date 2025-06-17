@@ -7,12 +7,14 @@ import '../pages.css';
 import { Helmet } from 'react-helmet';
 
 function Information_pg({ id }) {
+  const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
     <Helmet>
       <title>Top NEET Coaching Classes & Institute in Pune</title>
       <meta name="description" content="Join the best NEET coaching classes in Pune. Expert guidance, regular tests, and personalized support to boost your medical exam preparation and success." />
       <meta name="keywords" content="NEET coaching Pune, NEET preparation Pune, best NEET classes, medical entrance coaching Pune, A Square Classes, NEET training, NEET exam coaching, NEET classes in Pune" />
+      <link rel="canonical" href={canonicalUrl} />
     </Helmet>
       <Navbar />
       <Header />

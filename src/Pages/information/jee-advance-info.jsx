@@ -7,12 +7,14 @@ import '../pages.css';
 import { Helmet } from 'react-helmet';
 
 function Information_pg({ id }) {
+  const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
     <Helmet>
       <title>JEE Advanced Coaching in Pune | Call On +91 9404282283</title>
       <meta name="description" content="Prepare For JEE Advanced with A Square Classes in Pune. Our Expert Faculty And Tailored Programs Will Help You Achieve Your Dream Of IIT Admission!" />
       <meta name="keywords" content="JEE Advanced coaching Pune, JEE Advanced preparation Pune, best JEE Advanced classes, IIT entrance coaching Pune, A Square Classes, JEE Advanced training, JEE Advanced exam coaching" />
+      <link rel="canonical" href={canonicalUrl} />
     </Helmet>
       <Navbar />
       <Header />
