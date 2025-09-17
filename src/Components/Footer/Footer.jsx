@@ -87,12 +87,12 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/blog'} className="f_link" onClick={scrollToTop}>
+            <Link to={'/blog'} target='_blank' className="f_link" onClick={scrollToTop}>
               Blog
             </Link>
           </li>
           <li>
-            <Link to={'/career'} className="f_link" onClick={scrollToTop}>
+            <Link to={'/career'} target='_blank' className="f_link" onClick={scrollToTop}>
               Career
             </Link>
           </li>
