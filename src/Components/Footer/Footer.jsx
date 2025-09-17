@@ -91,6 +91,11 @@ function Footer() {
               Blog
             </Link>
           </li>
+          <li>
+            <Link to={'/career'} className="f_link" onClick={scrollToTop}>
+              Career
+            </Link>
+          </li>
         </ul>
         <ul>
           <li className="t1">Courses</li>

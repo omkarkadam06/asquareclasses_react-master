@@ -8,6 +8,7 @@ import banner1 from '../Assets/slider/web-slider-1.webp';
 import banner2 from '../Assets/slider/web-slider-2new.webp'
 import banner3 from '../Assets/slider/web-slider-3.webp';
 import banner4 from '../Assets/slider/web-slider-4.webp';
+import banner6 from '../../Assets/slider/banner-new.jpeg';
 import banner5 from '../Assets/slider/web-slider-5.webp';
 import mobileBanner1 from '../Assets/slider/Asquar mobile-1.webp';
 import mobileBanner2 from '../Assets/slider/Asquar mobile-2.webp';
@@ -59,6 +60,7 @@ const Hero2 = () => {
 
   // Banner data for desktop and mobile
   const banners = [
+    { desktop: banner6, mobile: banner6 },
     { desktop: banner4, mobile: mobileBanner4 },
     { desktop: banner2, mobile: mobileBanner2 },
     { desktop: banner1, mobile: mobileBanner1 },
