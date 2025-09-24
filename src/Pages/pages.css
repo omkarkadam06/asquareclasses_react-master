@@ -68,6 +68,9 @@
   left: 0;
   animation: wobble2 var(--uib-speed) infinite ease-in-out;
 }
+strong{
+  font-weight: 600;
+}
 
 @keyframes spin78236 {
   0% {

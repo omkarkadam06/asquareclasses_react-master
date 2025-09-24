@@ -1,19 +1,23 @@
-import {react} from 'react';
+import React, { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar.jsx';
 import Header from '../../Components/Header/Header.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
+import Loading from '../Loading.jsx';
 import MobileForm from '../../Components/Mobileform/MobileForm.jsx';
 import '../locationspage.css';
-import locationBGImage from '../../Assets/1.jpg'
+import locationBGImage from '../../Assets/locationPageImages/cbscbgbanner.jpg'
 import image1 from '../../Assets/locationPageImages/image1.jpg'
 import image2 from '../../Assets/locationPageImages/image2.jpg'
 import image3 from '../../Assets/locationPageImages/image3.jpg'
 import image4 from '../../Assets/locationPageImages/image4.jpg'
 import image5 from '../../Assets/locationPageImages/image5.jpg'
+import image6 from '../../Assets/locationPageImages/image6.jpg'
 import icon1 from '../../Assets/locationPageImages/student.png'
 
-function cbsetuitionpimpri(){
+const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
+
+function Cbsetuitionpimpri(){
     return(
         <>
         <Helmet>
@@ -30,34 +34,40 @@ function cbsetuitionpimpri(){
             </div>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-8">
-                        <h1 className='location_hero_heading'>
+                    <div className="col-lg-8 col-md-5 col-sm-12">
+                        {/* <h1 className='location_hero_heading'>
                             ASQUARE Academy offers the best CBSE tuition in Pimpri-Chinchwad
-                        </h1>
+                        </h1> */}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-lg-4 col-md-7 col-sm-12">
                         <MobileForm />
                     </div>
                 </div>
             </div>
         </section>
-
+        <section className='Location_MobileForm'>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12"><MobileForm /></div>
+                </div>
+            </div>
+        </section>
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <h2 className="common_title">Best CBSE Coaching Classes in Pimpri-Chinchwad for 8th, 9th & 10th Std.</h2>
                         <p>
                             Finding the right coaching during school years is one of the most important decisions for parents. 
-                            At ASQUARE Academy Pimpri-Chinchwad, we provide the best CBSE tuition for Class 8th, 9th & 10th to help 
+                            At <strong>ASQUARE Academy Pimpri-Chinchwad, we provide the best CBSE tuition for Class 8th, 9th & 10th</strong> to help 
                             students build a strong foundation and achieve excellent results in their academics.
                         </p>
                         <p>
                             Our focus is not only on preparing students for exams but also on making them confident learners who can apply concepts in real life. 
-                            Parents choose ASQUARE Academy as the best 8th, 9th & 10th CBSE coaching in Pimpri-Chinchwad because of our expert faculty, personalized mentoring, and proven results.
+                            Parents choose ASQUARE Academy as the <strong>best 8th, 9th & 10th CBSE coaching in Pimpri-Chinchwad</strong> because of our expert faculty, personalized mentoring, and proven results.
                         </p>
                     </div>
                 </div>
@@ -143,10 +153,11 @@ function cbsetuitionpimpri(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-md-6">
-                        <h3 className="common_title">Best 8th CBSE Classes in Pimpri-Chinchwad</h3>
+                    <div className="col-lg-6 col-md-12 col-sm-12">
+                        <h3 className="common_title">Our CBSE Foundation Courses in Pimpri-Chinchwad</h3>
+                        <h6 className="common_subtitle">Best 8th CBSE Classes in Pimpri-Chinchwad</h6>
                         <p>
-                            Class 8 is the stepping stone towards higher education. Our CBSE tuition for Class 8th in Pimpri-Chinchwad focuses on strengthening 
+                            Class 8 is the stepping stone towards higher education. Our <strong>CBSE tuition for Class 8th in Pimpri-Chinchwad</strong> focuses on strengthening 
                             the basics of Maths, Science, and English. With concept-based learning and interactive methods, we ensure students are ready for the challenges of higher grades.
                         </p>
                         <ul className="common_ul">
@@ -155,7 +166,7 @@ function cbsetuitionpimpri(){
                             <li><span>Regular practice sessions for better retention</span></li>
                         </ul>
                     </div>
-                    <div className="col-md-6 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
                         <img className='common_image' src={image2} alt="" />
                     </div>
                 </div>
@@ -165,13 +176,13 @@ function cbsetuitionpimpri(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-6 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
                         <img className='common_image' src={image3} alt="" />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <h4 className="common_title">Best 9th CBSE Classes in Pimpri-Chinchwad</h4>
                         <p>
-                            Class 9 plays a vital role in preparing students for board exams. At ASQUARE, our CBSE tuition for Class 9th in Pimpri-Chinchwad helps 
+                            Class 9 plays a vital role in preparing students for board exams. At ASQUARE, our <strong>CBSE tuition for Class 9th in Pimpri-Chinchwad</strong> helps 
                             students understand topics in-depth and build problem-solving skills. This gives them the confidence to tackle Class 10 with ease.
                         </p>
                         <ul className="common_ul">
@@ -187,10 +198,10 @@ function cbsetuitionpimpri(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="common_title">Best 10th CBSE Classes in Pimpri-Chinchwad</h5>
                         <p>
-                            Class 10 is the most important stage of school life. Our CBSE tuition for Class 10th in Pimpri-Chinchwad prepares 
+                            Class 10 is the most important stage of school life. Our <strong>CBSE tuition for Class 10th in Pimpri-Chinchwad</strong> prepares 
                             students thoroughly for board exams with complete syllabus coverage, frequent mock tests, and effective revision strategies.
                         </p>
                         <ul className="common_ul">
@@ -199,7 +210,7 @@ function cbsetuitionpimpri(){
                             <li><span>Exam techniques, time management & writing skills</span></li>
                         </ul>
                     </div>
-                    <div className="col-md-6 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
                         <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
@@ -212,12 +223,13 @@ function cbsetuitionpimpri(){
             </div>
             <div className="container padd">
                 <div className="row align-items-center">
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="common_title title-light">Our Teaching Methodology</h5>
                         <p className='para_light'>At ASQUARE Academy, we follow a 4-step learning cycle that ensures complete academic growth:</p>
+                        <p className='para_light'>This systematic method ensures that every student builds confidence and improves performance in school and board exams.</p>
                         <a href="#"><button class="button mt-3">Know More</button></a>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
                             <h6 className="methodology_title">Learn</h6>
                             <span>Concept-based classroom teaching by subject experts.</span>
@@ -242,28 +254,52 @@ function cbsetuitionpimpri(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="common_title">Conveniently Located for Students Across Pimpri-Chinchwad</h5>
                         <p>
-                            Our Pimpri-Chinchwad center is ideally located to serve students from nearby areas. Along with Pimpri and Chinchwad, many students join us from Nigdi, 
-                            Pimple Saudagar, Wakad, Thergaon, Moshi, Ravet, Bhosari, Akurdi, Chikhali, Spine City, Alandi, Charoli, Talegaon, Sahunagar and Dighi. Parents from these areas 
-                            trust ASQUARE Academy as the best CBSE coaching institute in PCMC because of our quality teaching, consistent results, and student-focused approach.
+                            Our Pimpri-Chinchwad center is ideally located to serve students from nearby areas. Along with Pimpri and Chinchwad, many students join us from <strong>Nigdi, 
+                            Pimple Saudagar, Wakad, Thergaon, Moshi, Ravet, Bhosari, Akurdi, Chikhali, Spine City, Alandi, Charoli, Talegaon, Sahunagar and Dighi.</strong> Parents from these areas 
+                            trust ASQUARE Academy as the <strong>best CBSE coaching institute in PCMC</strong> because of our quality teaching, consistent results, and student-focused approach.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-
+        <Suspense fallback={<Loading />}>
+            <Reviews />
+        </Suspense>
+        <section className="leftright_section padd">
+            <div className="container">
+                <div className="row row_reve align-items-center">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
+                        <h5 className="common_title">Join ASQUARE Academy Today</h5>
+                        <p>
+                            If you are searching for the <strong>best CBSE tuition for Class 8th, 9th & 10th in Pimpri-Chinchwad,</strong> ASQUARE Academy is the right choice. 
+                            With highly experienced teachers, small batches, and personalized attention, we ensure that every student achieves academic success and develops the confidence to perform well in board exams.
+                        </p>
+                        <p>
+                            Parents across <strong>Pimpri, Chinchwad, Nigdi, Pimple Saudagar, Wakad, Ravet, Thergaon, Moshi, and Bhosari</strong> trust ASQUARE Academy for consistent results and quality teaching.
+                        </p>
+                        <p>
+                            <strong>Enroll today at ASQUARE Academy Pimpri-Chinchwad – Limited seats available. Book your free demo class now!</strong>
+                        </p>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                        <img className='common_image' src={image6} alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
         <section className="faq_section padd_bottom">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <h5 className="common_title">Frequently Asked Questions (FAQs)</h5>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -319,7 +355,7 @@ function cbsetuitionpimpri(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -383,4 +419,4 @@ function cbsetuitionpimpri(){
     )
 }
 
-export default cbsetuitionpimpri;
+export default Cbsetuitionpimpri;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import '../style.css';
-import institude_logo from '../Assets/Logo-2.png';
+import institude_logo from '../../Assets/asquare-logo-new.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

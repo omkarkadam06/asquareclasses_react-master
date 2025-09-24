@@ -31,14 +31,14 @@ p{
     align-items: center;
     isolation: isolate;
 }
-.location_hero_section::before{
+/* .location_hero_section::before{
     position: absolute;
     content: "";
     height: 100%;
     width: 100%;
     background: #00339991;
     z-index: -1;
-}
+} */
 .location_bgimage {
     position: absolute;
     width: 100%;
@@ -65,6 +65,11 @@ p{
     line-height: 1.2em;
     color: black;
     margin-bottom: 20px;
+}
+.common_subtitle {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 .common_title.title-light{
     color: white;
@@ -158,4 +163,89 @@ h6.methodology_title {
 .faq_section .common_title{
     margin-bottom: 40px;
     text-align: center;
+}
+.Location_MobileForm .banner-form{
+    display: none;
+}
+
+@media (min-width: 767px) and (max-width:992px){
+    .container{
+        max-width: 630px;
+    }
+    .common_title {
+        font-size: 28px;
+    }
+    .common_image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/.75;
+    margin-bottom: 20px;
+   }
+   .row_reve{
+    flex-direction: column-reverse;
+   }
+   .grid_section .grid_item {
+    margin-top: 21px;
+   }
+   .common_subtitle {
+    font-size: 22px;
+    font-weight: 500;
+   }
+   .padd_bottom {
+    padding-bottom: 30px;
+   }
+   .padd_top {
+    padding-top: 40px;
+   }
+   .padd{
+    padding: 40px 0;
+   }
+   .location_hero_section .banner-form{
+    display: none !important;
+   } 
+   .Location_MobileForm .banner-form{
+    display: block;
+   }
+   .location_hero_section {
+    height: 402px;
+   }
+}
+@media (max-width: 767px){
+    .common_title {
+        font-size: 30px;
+    }
+    .common_image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/.75;
+    margin-bottom: 20px;
+   }
+   .row_reve{
+    flex-direction: column-reverse;
+   }
+   .grid_section .grid_item {
+    margin-top: 21px;
+   }
+   .common_subtitle {
+    font-size: 22px;
+    font-weight: 500;
+   }
+   .padd_bottom {
+    padding-bottom: 30px;
+   }
+   .padd_top {
+    padding-top: 30px;
+   }
+   .padd{
+    padding: 30px 0;
+   }
+   .location_hero_section .banner-form{
+    display: none !important;
+   } 
+   .Location_MobileForm .banner-form{
+    display: block;
+   }
+   .location_hero_section {
+    height: 202px;
+   }
 }
