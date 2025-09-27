@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import './Reviews.css';
 import f_star from '../Assets/gold-star-icon.png';
@@ -111,30 +111,30 @@ const cardData = [
     s5: 'https://maps.gstatic.com/consumer/images/icons/2x/ic_star_rate_14.png',
   },
 ];
+
 const Reviews = () => {
-  // Slick slider settings
+  const [expandedCards, setExpandedCards] = useState({}); // Track which cards are expanded
+
+  const toggleExpand = (id) => {
+    setExpandedCards((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Show 3 slides at a time
-    slidesToScroll: 1, // Scroll 1 slide at a time
+    slidesToShow: 3,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Slide every 2 seconds
-    arrows: true, // Show next and previous buttons
+    autoplaySpeed: 2000,
+    arrows: true,
     responsive: [
-      {
-        breakpoint: 768, // For tablets
-        settings: {
-          slidesToShow: 2, // Show 2 slides
-        },
-      },
-      {
-        breakpoint: 480, // For mobile devices
-        settings: {
-          slidesToShow: 1, // Show 1 slide
-        },
-      },
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
 
@@ -151,29 +151,43 @@ const Reviews = () => {
           <img src={f_star} alt="icon" className="icn-2" />
           <img src={h_star} alt="icon" className="icn-2" />
         </div>
-        <p className="t3 rev_t3">Rating : 4.8 (266+ reviews)</p>
+        <p className="t3 rev_t3">Rating : 4.8 (305+ reviews)</p>
       </div>
 
       <Slider {...settings}>
         {cardData.map((card) => (
           <div key={card.id} className="review_card">
             <div className="review-topBox">
-              <div className='review-id'>
-              <img src={card.img} alt="icon" className="icn-1 review-img" />
-              <div className="review-name">
-                <h2 className="t1">{card.title}</h2>
-                <div className="review-rating">
-                  <img src={card.s1} alt="icon" className="icn-2" />
-                  <img src={card.s2} alt="icon" className="icn-2" />
-                  <img src={card.s3} alt="icon" className="icn-2" />
-                  <img src={card.s4} alt="icon" className="icn-2" />
-                  <img src={card.s5} alt="icon" className="icn-2" />
+              <div className="review-id">
+                <img src={card.img} alt="icon" className="icn-1 review-img" />
+                <div className="review-name">
+                  <h2 className="t1">{card.title}</h2>
+                  <div className="review-rating">
+                    <img src={card.s1} alt="icon" className="icn-2" />
+                    <img src={card.s2} alt="icon" className="icn-2" />
+                    <img src={card.s3} alt="icon" className="icn-2" />
+                    <img src={card.s4} alt="icon" className="icn-2" />
+                    <img src={card.s5} alt="icon" className="icn-2" />
+                  </div>
                 </div>
               </div>
-              </div>
-              <img className='quoteicon' src={reviequoteimg} alt="" />
+              <img className="quoteicon" src={reviequoteimg} alt="" />
             </div>
-            <p className="t2 review-content">{card.content}</p>
+            <div className="review_content">
+            <p
+              className={`t2 review-content ${
+                expandedCards[card.id] ? 'expanded' : ''
+              }`}
+            >
+              {card.content}
+            </p>
+            <button
+              className="read-more-btn"
+              onClick={() => toggleExpand(card.id)}
+            >
+              {expandedCards[card.id] ? 'Read less' : 'Read more'}
+            </button>
+            </div>
           </div>
         ))}
       </Slider>

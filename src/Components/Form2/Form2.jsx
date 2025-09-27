@@ -150,12 +150,13 @@ function Form2() {
             <div className="col-md-6">
           <select name="branch" id="branch" className="f2_input form-select" onChange={handleChange}>
             <option value="">Select Branch</option>
-            <option value="Pimpri">Pimpri</option>
+            <option value="Pimpri">Pimpri (PCMC)</option>
             <option value="Vishrantwadi">Vishrantwadi</option>
             <option value="Pimple saudagar">Pimple Saudagar</option>
             <option value="SNBP Rahatni">SNBP Rahatni</option>
-            <option value="SNBP Rahatni">Hadapsar</option>
-            <option value="SNBP Rahatni">Wanwadi</option>
+            <option value="Hadapsar">Hadapsar</option>
+            <option value="Wanwadi">Wanwadi</option>
+            <option value="Pune Camp">Pune Camp</option>
           </select>
             </div>
           </div>

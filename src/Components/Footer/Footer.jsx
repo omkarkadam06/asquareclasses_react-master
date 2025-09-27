@@ -48,7 +48,7 @@ function Footer() {
     <div className="footer">
       <div className="top_container">
         <ul>
-          <li className="t1">Asquare Inst.</li>
+          <li className="t1">ASQUARE Inst.</li>
           <li>
             <Link
               to={'/'}

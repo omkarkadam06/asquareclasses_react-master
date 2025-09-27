@@ -75,8 +75,13 @@ p{
     color: white;
 }
 .common_image {
-    width: 92%;
-    height: 423px;
+    width: 88%;
+    height: 499px;
+    border-radius: 20px;
+}
+.join_img{
+    width: 84%;
+    height: 492px;
     border-radius: 20px;
 }
 .grid_img {
@@ -167,6 +172,28 @@ h6.methodology_title {
 .Location_MobileForm .banner-form{
     display: none;
 }
+section.success_stories {
+    padding: 70px 0;
+    background: #05479b;
+    margin: 70px 0;
+}
+.success_stories .common_title{
+    margin-bottom: 50px;
+}
+.success_stories .stories_content {
+    /* background: white; */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid yellow;
+    margin-bottom: 13px;
+}
+.success_stories .name {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    font-weight: 600;
+}
 
 @media (max-width:992px) {
     .container{
@@ -178,7 +205,7 @@ h6.methodology_title {
     .common_image {
     width: 100%;
     height: auto;
-    aspect-ratio: 1/.75;
+    aspect-ratio: 1/1;
     margin-bottom: 20px;
    }
    .row_reve{
@@ -217,7 +244,7 @@ h6.methodology_title {
     .common_image {
     width: 100%;
     height: auto;
-    aspect-ratio: 1/.75;
+    aspect-ratio: 1/1;
     margin-bottom: 20px;
    }
    .row_reve{
@@ -225,7 +252,15 @@ h6.methodology_title {
    }
    .grid_section .grid_item {
     margin-top: 21px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
    }
+   .grid_img {
+    width: 58px;
+    height: 58px;
+    margin-top: 21px;
+}
    .common_subtitle {
     font-size: 22px;
     font-weight: 500;
@@ -247,5 +282,8 @@ h6.methodology_title {
    }
    .location_hero_section {
     height: 202px;
+   }
+   .methodology .row:first-child .col-lg-6{
+    margin-bottom: 30px;
    }
 }

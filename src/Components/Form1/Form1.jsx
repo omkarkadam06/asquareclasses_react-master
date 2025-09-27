@@ -277,12 +277,13 @@ function Form1() {
                 required onChange={handleChange}
               >
                 <option value="">Select Branch</option>
-                <option value="Pimpri Branch">Pimpri Branch</option>
+                <option value="Pimpri Branch">Pimpri (PCMC)</option>
                 <option value="Visrantwadi Branch">Visrantwadi Branch</option>
                 <option value="Pimple Saudagar">Pimple Saudagar</option>
                 <option value="SNBP Rahatni">SNBP Rahatni</option>
-                <option value="SNBP Rahatni">Hadapsar</option>
-                <option value="SNBP Rahatni">Wanwadi</option>
+                <option value="Hadapsar">Hadapsar</option>
+                <option value="Wanwadi">Wanwadi</option>
+                <option value="Pune Camp">Pune Camp</option>
               </select>
             </div>
           </div>

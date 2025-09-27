@@ -4,12 +4,12 @@ import '../style.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner1 from '../Assets/slider/web-slider-1.webp';
-import banner2 from '../Assets/slider/web-slider-2new.webp'
-import banner3 from '../Assets/slider/web-slider-3.webp';
-import banner4 from '../Assets/slider/web-slider-4.webp';
-import banner6 from '../../Assets/slider/banner-new.jpeg';
-import banner5 from '../Assets/slider/web-slider-5.webp';
+import banner1 from '../Assets/slider/newslider1.webp';
+import banner2 from '../Assets/slider/newslider2.webp'
+import banner3 from '../Assets/slider/newsliders3.webp';
+import banner4 from '../Assets/slider/newslider4.webp';
+import banner5 from '../../Assets/slider/newslider5.webp';
+// import banner5 from '../Assets/slider/web-slider-5.webp';
 import mobileBanner1 from '../Assets/slider/Asquar mobile-1.webp';
 import mobileBanner2 from '../Assets/slider/Asquar mobile-2.webp';
 import mobileBanner3 from '../Assets/slider/Asquar mobile-3.webp';
@@ -60,12 +60,11 @@ const Hero2 = () => {
 
   // Banner data for desktop and mobile
   const banners = [
-    { desktop: banner6, mobile: banner6 },
-    { desktop: banner4, mobile: mobileBanner4 },
-    { desktop: banner2, mobile: mobileBanner2 },
-    { desktop: banner1, mobile: mobileBanner1 },
-    { desktop: banner3, mobile: mobileBanner3 },
-    { desktop: banner5, mobile: mobileBanner5 },
+    { desktop: banner1, mobile: mobileBanner5},
+    { desktop: banner2, mobile: mobileBanner4 },
+    { desktop: banner3, mobile: mobileBanner2 },
+    { desktop: banner4, mobile: mobileBanner1 },
+    { desktop: banner5, mobile: mobileBanner3 },
   ];
 
   return (
