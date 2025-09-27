@@ -85,64 +85,78 @@ function Cbsetuitionpimpri(){
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Expert CBSE Faculty </h6>
                             <p>
                                 Teachers specialized in Maths, Science, English & Social Science.
                             </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Small Batch Size  </h6>
                             <p>
                                 Ensures individual focus and better interaction.
                             </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Comprehensive Study Material </h6>
                             <p>
                                 Updated notes and worksheets aligned with CBSE syllabus.
                             </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Regular Tests & Assessments </h6>
                             <p>
                                 Weekly and monthly exams to track progress.
                             </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Doubt-Solving Sessions </h6>
                             <p>
                                 Extra support for students who need personal guidance.
                             </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Proven Academic Results </h6>
                             <p>
                                 Consistent improvement in scores and confidence.
                             </p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div className="grid_item">
                             <img className="grid_img" src={icon1} alt="" />
+                            <div className="grid_content">
                             <h6 className="grid_item_title">Parent–Teacher Communication  </h6>
                             <p>
                                 Regular updates and feedback sessions.
                             </p>
+                            </div>
                         </div>
                     </div>
 
