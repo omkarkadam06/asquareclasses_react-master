@@ -221,7 +221,7 @@ function Cbsetuitionpimpri(){
             <div className="methodology_BGimage">
                 <img src={locationBGImage} alt="" />
             </div>
-            <div className="container padd">
+            <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="common_title title-light">Our Teaching Methodology</h5>
