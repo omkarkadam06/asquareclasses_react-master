@@ -15,6 +15,8 @@ import mobileBanner2 from '../Assets/slider/Asquar mobile-2.webp';
 import mobileBanner3 from '../Assets/slider/Asquar mobile-3.webp';
 import mobileBanner4 from '../Assets/slider/Asquar mobile-4.webp';
 import mobileBanner5 from '../Assets/slider/Asquar mobile-5.webp';
+import mobileBanner6 from '../Assets/slider/Asquar mobile-4.jpg';
+import mobileBanner7 from '../Assets/slider/Asquar mobile-5.jpg';
 import Form from '../Form2/Form2';
 import bannernextArrowIcon from '../Assets/banner-arrow2.png';
 
@@ -65,6 +67,8 @@ const Hero2 = () => {
     { desktop: banner3, mobile: mobileBanner2 },
     { desktop: banner4, mobile: mobileBanner1 },
     { desktop: banner5, mobile: mobileBanner3 },
+    { monile: mobileBanner6},
+    { monile: mobileBanner7},
   ];
 
   return (

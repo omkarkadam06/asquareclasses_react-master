@@ -36,7 +36,8 @@ import IITJEE from './Pages/iit-jee';
 import NEETCoaching from './Pages/neet-coaching';
 import MHTCoaching from './Pages/mht-coaching';
 import FoundationCoaching from './Pages/foundation-coaching';
-import NeetWanwadi  from './Pages/LocationsPages/cbsetuitionpimpri';
+import CBSEPimpri  from './Pages/LocationsPages/cbsetuitionpimpri';
+import ICSEPune  from './Pages/LocationsPages/ICSEpune';
 
 function App() {
   return (
@@ -223,7 +224,8 @@ function App() {
           <Route path="/blog/way-of-preparation-for-the-neet-exam" element={<Blog_content id="8" />} />
           <Route path="/blog/understand-the-way-to-get-into-medical-college-after-qualifying-neet-exam" element={<Blog_content id="9" />} /> */}
           
-          <Route path='/cbse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<NeetWanwadi/>}/>
+          <Route path='/cbse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<CBSEPimpri/>}/>
+          <Route path='/icse-tuition-classes-pune-8th-9th-10th' element={<ICSEPune/>}/>
         </Routes>
       </BrowserRouter>
     </div>

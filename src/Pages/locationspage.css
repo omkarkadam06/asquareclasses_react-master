@@ -24,6 +24,9 @@ p{
 .row_reve .img-col{
     text-align: right;
 }
+.common_title_span {
+    color: #ffcc00;
+}
 .location_hero_section {
     position: relative;
     height: 550px;
@@ -194,6 +197,33 @@ section.success_stories {
     color: #ffcc00;
     font-weight: 600;
 }
+.mobile_bgimage {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: none;
+}
+.grid_section_bg{
+    background: #daedff;
+}
+.row.doubleBGColor {
+    /* position: absolute; */
+    width: 100%;
+    /* z-index: -1; */
+    margin-bottom: 70px;
+}
+.doubleBGColor .col-left{
+    background:#ffcc00 ;
+    padding: 70px 40px 70px 100px;
+}
+.doubleBGColor .col-right{
+    background:#05479b ;
+    padding: 70px 40px 70px 100px;
+}
+.enroll_contnt_row .col-md-6{
+    padding: 70px 40px;
+}
+.enroll_section{}
 
 @media (max-width:992px) {
     .container{
@@ -236,8 +266,22 @@ section.success_stories {
    .location_hero_section {
     height: 402px;
    }
+   .location_bgimage{
+    display: none;
+   }
 }
 @media (max-width: 767px){
+    .doubleBGColor .col-left{
+    background:#ffcc00 ;
+    padding: 30px 12px 30px 25px;
+}
+.doubleBGColor .col-right{
+    background:#05479b ;
+    padding: 30px 12px 30px 25px;
+}
+    .mobile_bgimage{
+        display: block;
+    }
     .common_title {
         font-size: 30px;
     }
@@ -281,9 +325,13 @@ section.success_stories {
     display: block;
    }
    .location_hero_section {
-    height: 202px;
+    height: auto;
+    aspect-ratio: 1/1;
    }
    .methodology .row:first-child .col-lg-6{
     margin-bottom: 30px;
+   }
+   .location_bgimage{
+    display: none;
    }
 }
