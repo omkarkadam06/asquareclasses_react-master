@@ -37,6 +37,7 @@ import NEETCoaching from './Pages/neet-coaching';
 import MHTCoaching from './Pages/mht-coaching';
 import FoundationCoaching from './Pages/foundation-coaching';
 import CBSEPimpri  from './Pages/LocationsPages/cbsetuitionpimpri';
+import CbsepcmcPune  from './Pages/LocationsPages/CbsepcmsPune';
 import ICSEPune  from './Pages/LocationsPages/ICSEpune';
 
 function App() {
@@ -225,6 +226,7 @@ function App() {
           <Route path="/blog/understand-the-way-to-get-into-medical-college-after-qualifying-neet-exam" element={<Blog_content id="9" />} /> */}
           
           <Route path='/cbse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<CBSEPimpri/>}/>
+          <Route path='/cbse-tuition-pcmc-pune-8th-9th-10th' element={<CbsepcmcPune/>}/>
           <Route path='/icse-tuition-classes-pune-8th-9th-10th' element={<ICSEPune/>}/>
         </Routes>
       </BrowserRouter>
