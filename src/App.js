@@ -39,6 +39,10 @@ import FoundationCoaching from './Pages/foundation-coaching';
 import CBSEPimpri  from './Pages/LocationsPages/cbsetuitionpimpri';
 import CbsepcmcPune  from './Pages/LocationsPages/CbsepcmsPune';
 import ICSEPune  from './Pages/LocationsPages/ICSEpune';
+import CBSEBhosari  from './Pages/LocationsPages/CbseBhosari';
+import CBSESaudagar  from './Pages/LocationsPages/CbseSaudagar';
+import ICSEChinchwad  from './Pages/LocationsPages/ICSEChinchwad';
+import ICSEMoshi  from './Pages/LocationsPages/ICSEMoshi';
 
 function App() {
   return (
@@ -228,6 +232,10 @@ function App() {
           <Route path='/cbse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<CBSEPimpri/>}/>
           <Route path='/cbse-tuition-pcmc-pune-8th-9th-10th' element={<CbsepcmcPune/>}/>
           <Route path='/icse-tuition-classes-pune-8th-9th-10th' element={<ICSEPune/>}/>
+          <Route path='/cbse-tuition-bhosari-pune-8th-9th-10th' element={<CBSEBhosari/>}/>
+          <Route path='/cbse-tuition-pimple-saudagar-pune-8th-9th-10th' element={<CBSESaudagar/>}/>
+          <Route path='/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<ICSEChinchwad/>}/>
+          <Route path='/icse-tuition-classes-moshi-pune-8th-9th-10th' element={<ICSEMoshi/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -67,8 +67,8 @@ const Hero2 = () => {
     { desktop: banner3, mobile: mobileBanner2 },
     { desktop: banner4, mobile: mobileBanner1 },
     { desktop: banner5, mobile: mobileBanner3 },
-    { monile: mobileBanner6},
-    { monile: mobileBanner7},
+    // { monile: mobileBanner6},
+    // { monile: mobileBanner7},
   ];
 
   return (
