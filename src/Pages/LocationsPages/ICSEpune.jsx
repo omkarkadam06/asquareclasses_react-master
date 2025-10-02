@@ -27,6 +27,204 @@ function ICSEPune(){
             <meta name="titel" content="Best ICSE Tuition Classes in Pune for 8th, 9th & 10th Students | ASQUARE Academy" />
             <meta name="description" content="Looking for the best ICSE tuition in Pune for Classes 8th, 9th & 10th? Expert faculty, small batches, structured study material & regular tests. Serving students from Camp, Viman Nagar, Hadapsar, Koregaon Park, Kothrud, Baner, Pimple Saudagar, Pimpri, Nigdi & Chinchwad." />
             <meta name="keywords" content="ICSE tuition classes in Pune, Best ICSE coaching in Pune, ICSE tuition for Class 8 in Pune, ICSE tuition for Class 9 in Pune, ICSE tuition for Class 10 in Pune, ICSE board classes in Pune, Top ICSE coaching institute Pune, Expert ICSE teachers Pune, ICSE board exam preparation Pune, ICSE coaching with regular tests Pune, Affordable ICSE coaching in Pune, ICSE study material Pune, ICSE tuition in Camp Pune, ICSE coaching in Viman Nagar, ICSE classes in Hadapsar, ICSE tuition Koregaon Park Pune, ICSE coaching in Kothrud. ICSE tuition in Baner, ICSE classes in Pimple Saudagar, ICSE coaching in Pimpri, ICSE tuition in Nigdi, ICSE coaching in Chinchwad" />
+            <script type="application/ld+json">{`
+                {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/#webpage",
+                        "url": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/",
+                        "name": "ICSE Tuition Classes in Pune for 8th, 9th & 10th | ASQUARE Academy",
+                        "description": "ASQUARE Academy offers expert ICSE tuition classes in Pune for 8th, 9th, and 10th students with subject-wise guidance, small batches, study material, and board exam preparation.",
+                        "inLanguage": "en",
+                        "isPartOf": {
+                        "@id": "https://www.asquareclasses.com/#website"
+                        },
+                        "breadcrumb": {
+                        "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/#breadcrumbs"
+                        },
+                        "about": {
+                        "@id": "https://www.asquareclasses.com/#organization"
+                        },
+                        "primaryImageOfPage": {
+                        "@type": "ImageObject",
+                        "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+                        },
+                        "mainEntity": {
+                        "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/#faq"
+                        }
+                    },
+                    {
+                        "@type": "EducationalOrganization",
+                        "@id": "https://www.asquareclasses.com/#organization",
+                        "name": "ASQUARE Academy",
+                        "url": "https://www.asquareclasses.com/",
+                        "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+                        "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+                        "description": "ASQUARE Academy offers ICSE tuition classes in Pune for 8th, 9th, and 10th standards with expert faculty and personalized learning.",
+                        "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Your Street Address",
+                        "addressLocality": "Pune",
+                        "addressRegion": "Maharashtra",
+                        "postalCode": "411018",
+                        "addressCountry": "IN"
+                        },
+                        "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+91-9766118877",
+                            "contactType": "customer support"
+                        }
+                        ],
+                        "hasCourse": [
+                        {
+                            "@type": "Course",
+                            "name": "ICSE 8th Tuition in Pune",
+                            "description": "Expert coaching for ICSE Class 8 students in Pune covering all core subjects.",
+                            "provider": {
+                            "@type": "EducationalOrganization",
+                            "name": "ASQUARE Academy"
+                            }
+                        },
+                        {
+                            "@type": "Course",
+                            "name": "ICSE 9th Tuition in Pune",
+                            "description": "Comprehensive tuition classes for ICSE Class 9 in Pune with subject-wise guidance.",
+                            "provider": {
+                            "@type": "EducationalOrganization",
+                            "name": "ASQUARE Academy"
+                            }
+                        },
+                        {
+                            "@type": "Course",
+                            "name": "ICSE 10th Tuition in Pune",
+                            "description": "Board-focused ICSE Class 10 tuition in Pune with exam preparation strategies.",
+                            "provider": {
+                            "@type": "EducationalOrganization",
+                            "name": "ASQUARE Academy"
+                            }
+                        }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/#breadcrumbs",
+                        "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.asquareclasses.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "ICSE Tuition Classes",
+                            "item": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/"
+                        }
+                        ]
+                    },
+                    {
+                        "@type": "FAQPage",
+                        "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-8th-9th-10th/#faq",
+                        "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Do you provide ICSE tuition for Class 8 in Pune?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. We offer specialised coaching for Class 8 covering all subjects including Maths, Science, HCG, English, and Second Languages."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Are Science subjects taught separately?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Absolutely. Physics, Chemistry, and Biology are taught individually with application-based learning."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Which subjects are covered for Class 10?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "We cover all core ICSE subjects: Maths, Physics, Chemistry, Biology, English (Language & Literature), HCG, Second Language, and Computer Applications."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Where are your branches located?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Our ICSE coaching centres are located across Pune & PCMC — Camp, Koregaon Park, Viman Nagar, Hadapsar, Kothrud, Baner, Pimple Saudagar, Pimpri, Nigdi, and Chinchwad."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Do you offer online ICSE tuition classes?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. We provide both online and offline coaching, making it convenient for students across Pune and PCMC."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How large are the batches?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "We maintain small batch sizes so that every student receives personalised attention."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Do you provide study material?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Every student receives structured notes, worksheets, and ICSE-style practice papers."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How do you prepare students for board exams?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Preparation includes complete syllabus coverage, mock exams, regular revisions, answer-writing practice, and time-management strategies."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can students attend demo classes before enrolling?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Free demo classes are available at our branches to help students and parents experience our teaching quality."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How can I enquire about fees and admission?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "You can fill out the enquiry form on our website, call your nearest centre, or visit in person for detailed information."
+                            }
+                        }
+                        ]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://www.asquareclasses.com/#website",
+                        "url": "https://www.asquareclasses.com/",
+                        "name": "ASQUARE Academy",
+                        "publisher": {
+                        "@id": "https://www.asquareclasses.com/#organization"
+                        }
+                    }
+                    ]
+                }
+                `}</script>
+
         </Helmet>
         <Navbar />
         <Header />
