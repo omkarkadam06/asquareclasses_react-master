@@ -23,10 +23,9 @@ function Cbsetuitionpimpri(){
     return(
         <>
         <Helmet>
-            <title>Best CBSE Coaching Classes in Pimpri-Chinchwad for 8th, 9th & 10th Students | ASQUARE Academy</title>
-            <meta name="titel" content="Best CBSE Coaching Classes in Pimpri-Chinchwad for 8th, 9th & 10th Students | ASQUARE Academy" />
-            <meta name="description" content="ASQUARE Academy offers the best CBSE tuition in Pimpri-Chinchwad for Classes 8th, 9th & 10th. Small batches, expert teachers, doubt-solving, and regular tests. Serving students from Nigdi, Pimple Saudagar, Wakad, Thergaon, Ravet, Moshi, Bhosari & Akurdi." />
-            <meta name="keywords" content="CBSE tuition Pimpri Chinchwad, CBSE coaching Pimpri Chinchwad, CBSE classes 8th 9th 10th, Best CBSE tuition in Pune, ASQUARE Academy CBSE coaching, CBSE tuition Nigdi, CBSE coaching Pimple Saudagar, Tuition classes in Wakad, Best tuition in Thergaon, Ravet coaching classes, Moshi CBSE classes, Bhosari CBSE tuition, Akurdi tuition classes, Small batch tuition Pune, Doubt-solving classes CBSE, Regular test series CBSE, Expert CBSE teachers Pune, Personalized coaching CBSE, Best coaching for CBSE 8th 9th 10th in Pimpri Chinchwad, Top CBSE tuition classes near Wakad and Pimple Saudagar, CBSE coaching with regular tests and doubt clearing" />
+            <title>Best CBSE Tuition Classes 8th–10th in Pimpri-Chinchwad | ASQUARE Academy</title>
+            <meta name="description" content="Get the best CBSE tuition in Pimpri-Chinchwad for Classes 8th, 9th & 10th with expert teachers, clear concepts, and guaranteed academic improvement at ASQUARE Academy." />
+            <meta name="keywords" content="Best 8th cbse classes in Pimpri-Chinchwad, Best 10th cbse classes in Pimpri-Chinchwad, Best 9th cbse classes in Pimpri-Chinchwad, CBSE tution for class 10th in Pimpri-Chinchwad, CBSE tution for class 9th in Pimpri-Chinchwad, CBSE tution for class 8th in Pimpri-Chinchwad" />
         </Helmet>
         <Navbar />
         <Header />

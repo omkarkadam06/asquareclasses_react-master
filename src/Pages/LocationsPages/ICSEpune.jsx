@@ -23,10 +23,9 @@ function ICSEPune(){
     return(
         <>
         <Helmet>
-            <title>Best ICSE Tuition Classes in Pune for 8th, 9th & 10th Students | ASQUARE Academy</title>
-            <meta name="titel" content="Best ICSE Tuition Classes in Pune for 8th, 9th & 10th Students | ASQUARE Academy" />
-            <meta name="description" content="Looking for the best ICSE tuition in Pune for Classes 8th, 9th & 10th? Expert faculty, small batches, structured study material & regular tests. Serving students from Camp, Viman Nagar, Hadapsar, Koregaon Park, Kothrud, Baner, Pimple Saudagar, Pimpri, Nigdi & Chinchwad." />
-            <meta name="keywords" content="ICSE tuition classes in Pune, Best ICSE coaching in Pune, ICSE tuition for Class 8 in Pune, ICSE tuition for Class 9 in Pune, ICSE tuition for Class 10 in Pune, ICSE board classes in Pune, Top ICSE coaching institute Pune, Expert ICSE teachers Pune, ICSE board exam preparation Pune, ICSE coaching with regular tests Pune, Affordable ICSE coaching in Pune, ICSE study material Pune, ICSE tuition in Camp Pune, ICSE coaching in Viman Nagar, ICSE classes in Hadapsar, ICSE tuition Koregaon Park Pune, ICSE coaching in Kothrud. ICSE tuition in Baner, ICSE classes in Pimple Saudagar, ICSE coaching in Pimpri, ICSE tuition in Nigdi, ICSE coaching in Chinchwad" />
+            <title>Best ICSE Tuition Classes 8th–10th in Pune | ASQUARE Academy</title>
+            <meta name="description" content="Get the best ICSE tuition in Pune for Classes 8th, 9th & 10th with expert teachers, personalized guidance, and excellent academic results at ASQUARE Academy." />
+            <meta name="keywords" content="Best 8th ICSE classes in pune, Best 10th ICSE classes in pune, Best 9th ICSE classes in pune, ICSE tution for class 10th in pune, ICSE tution for class 9th in pune, ICSE tution for class 8th in pune" />
             <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",
