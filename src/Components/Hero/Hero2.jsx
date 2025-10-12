@@ -4,11 +4,11 @@ import '../style.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner1 from '../Assets/slider/newslider1.webp';
-import banner2 from '../Assets/slider/newslider2.webp'
-import banner3 from '../Assets/slider/newsliders3.webp';
-import banner4 from '../Assets/slider/newslider4.webp';
-import banner5 from '../../Assets/slider/newslider5.webp';
+import banner1 from '../../Assets/slider/slider1.jpeg';
+import banner2 from '../../Assets/slider/slider2.jpeg'
+import banner3 from '../../Assets/slider/slider3.jpeg';
+import banner4 from '../../Assets/slider/slider4.jpeg';
+import banner5 from '../../Assets/slider/slider5.jpeg';
 // import banner5 from '../Assets/slider/web-slider-5.webp';
 import mobileBanner1 from '../Assets/slider/Asquar mobile-1.webp';
 import mobileBanner2 from '../Assets/slider/Asquar mobile-2.webp';
