@@ -29,7 +29,7 @@ p{
 }
 .location_hero_section {
     position: relative;
-    height: 550px;
+    height: 640px;
     display: flex;
     align-items: center;
     isolation: isolate;
@@ -326,7 +326,7 @@ section.success_stories {
    }
    .location_hero_section {
     height: auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1.2;
    }
    .methodology .row:first-child .col-lg-6{
     margin-bottom: 30px;

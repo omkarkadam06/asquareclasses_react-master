@@ -63,7 +63,7 @@ function Cbsetuitionpimpri(){
                         <img className='common_image' src={image1} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>Best CBSE Coaching Classes</span> in Pimpri-Chinchwad for 8th, 9th & 10th Std.</h2>
+                        <h1 className="common_title"><span className='common_title_span'>Best CBSE Coaching Classes</span> in Pimpri-Chinchwad for 8th, 9th & 10th Std.</h1>
                         <p>
                             Finding the right coaching during school years is one of the most important decisions for parents. 
                             At <strong>ASQUARE Academy Pimpri-Chinchwad, we provide the best CBSE tuition for Class 8th, 9th & 10th</strong> to help 
@@ -242,7 +242,7 @@ function Cbsetuitionpimpri(){
             <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
+                        <h6 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h6>
                         <p className='para_light'>At ASQUARE Academy, we follow a 4-step learning cycle that ensures complete academic growth:</p>
                         <p className='para_light'>This systematic method ensures that every student builds confidence and improves performance in school and board exams.</p>
                         <a href="#"><button class="button mt-3">Know More</button></a>
@@ -276,7 +276,7 @@ function Cbsetuitionpimpri(){
                         <img className='common_image' src={image5} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Pimpri-Chinchwad</h5>
+                        <h6 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Pimpri-Chinchwad</h6>
                         <p>
                             Our Pimpri-Chinchwad center is ideally located to serve students from nearby areas. Along with Pimpri and Chinchwad, many students join us from <strong>Nigdi, 
                             Pimple Saudagar, Wakad, Thergaon, Moshi, Ravet, Bhosari, Akurdi, Chikhali, Spine City, Alandi, Charoli, Talegaon, Sahunagar and Dighi.</strong> Parents from these areas 

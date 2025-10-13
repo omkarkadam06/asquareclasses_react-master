@@ -6,8 +6,8 @@ import Footer from '../../Components/Footer/Footer.jsx';
 import Loading from '../Loading.jsx';
 import MobileForm from '../../Components/Mobileform/MobileForm.jsx';
 import '../locationspage.css';
-import locationBGImage from '../../Assets/locationPageImages/cbscbgbanner.jpg';
-import MobileBGImage from '../../Assets/locationPageImages/location-mobileBG.jpg';
+import locationBGImage from '../../Assets/slider/ICSEsliderPC.jpeg';
+import MobileBGImage from '../../Assets/slider/ICSEslidermobile.jpeg';
 import MethodologyBg from '../../Assets/locationPageImages/methodologyBG1.jpg';
 import image1 from '../../Assets/locationPageImages/CISEPuneimage1.jpg';
 import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
@@ -261,7 +261,7 @@ function ICSEPune(){
                         <img className='common_image' src={image1} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Pune & PCMC for 8th, 9th & 10th Students</h2>
+                        <h1 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Pune & PCMC for 8th, 9th & 10th Students</h1>
                         <p>
                             Academic success in ICSE schools requires more than just classroom learning. The ICSE syllabus is vast, detail-oriented, 
                             and often demands a deeper level of understanding across multiple subjects. For students in Classes 8th, 9th, and 10th, this can be challenging without proper guidance.
@@ -278,7 +278,7 @@ function ICSEPune(){
             <div className="container">
                 <div className="row row_reve align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h3 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching?</h3>
+                        <h2 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching?</h2>
                         <p>
                             Our coaching programs are built to align with the ICSE syllabus and exam requirements. We understand that each student has unique learning needs, 
                             so our approach focuses on concept clarity, regular practice, and personalised attention.
@@ -294,7 +294,7 @@ function ICSEPune(){
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="common_title text-center"><span className='common_title_span'>Key Benefits</span> of Joining ASQUARE Academy:</h2>
+                        <h3 className="common_title text-center"><span className='common_title_span'>Key Benefits</span> of Joining ASQUARE Academy:</h3>
                     </div>
                 </div>    
                 <div className="row grid_row">   
@@ -386,7 +386,7 @@ function ICSEPune(){
                         <img className='common_image' src={image3} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Pune – Building the Right Foundation</h2>
+                        <h4 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Pune – Building the Right Foundation</h4>
                         <p>
                             Class 8 is the stage where students transition into more complex subjects. Our <strong>ICSE Class 8 tuition in Pune</strong> ensures that students master their basics while developing problem-solving skills.
                         </p>
@@ -441,7 +441,7 @@ function ICSEPune(){
                         <img className='common_image' src={image5} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Pune – Focused Board Exam Preparation</h2>
+                        <h6 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Pune – Focused Board Exam Preparation</h6>
                         <p>
                             Class 10 is the turning point in a student’s academic journey, where board exam results shape future opportunities. At ASQUARE Academy, our <strong>ICSE Class 10 tuition in Pune</strong> focuses on thorough preparation and result-oriented strategies.
                         </p>
@@ -469,7 +469,7 @@ function ICSEPune(){
             <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
+                        <h6 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h6>
                         <p className='para_light'>At ASQUARE Academy, we believe effective learning is a blend of teaching, practice, and evaluation. Our methodology includes:</p>
                         <p className='para_light'>This structured approach ensures balanced academic growth and exam success.</p>
                         <a href="#"><button class="button mt-3">Know More</button></a>

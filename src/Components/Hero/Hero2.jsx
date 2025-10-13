@@ -10,13 +10,11 @@ import banner3 from '../../Assets/slider/slider3.jpeg';
 import banner4 from '../../Assets/slider/slider4.jpeg';
 import banner5 from '../../Assets/slider/slider5.jpeg';
 // import banner5 from '../Assets/slider/web-slider-5.webp';
-import mobileBanner1 from '../Assets/slider/Asquar mobile-1.webp';
-import mobileBanner2 from '../Assets/slider/Asquar mobile-2.webp';
-import mobileBanner3 from '../Assets/slider/Asquar mobile-3.webp';
-import mobileBanner4 from '../Assets/slider/Asquar mobile-4.webp';
-import mobileBanner5 from '../Assets/slider/Asquar mobile-5.webp';
-import mobileBanner6 from '../Assets/slider/Asquar mobile-4.jpg';
-import mobileBanner7 from '../Assets/slider/Asquar mobile-5.jpg';
+import mobileBanner1 from '../../Assets/slider/mobileslider/slider1.jpeg';
+import mobileBanner2 from '../../Assets/slider/mobileslider/slider2.jpeg';
+import mobileBanner3 from '../../Assets/slider/mobileslider/slider3.jpeg';
+import mobileBanner4 from '../../Assets/slider/mobileslider/slider4.jpeg';
+import mobileBanner5 from '../../Assets/slider/mobileslider/slider5.jpeg';
 import Form from '../Form2/Form2';
 import bannernextArrowIcon from '../Assets/banner-arrow2.png';
 
