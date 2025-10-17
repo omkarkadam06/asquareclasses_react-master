@@ -276,7 +276,7 @@ function Footer() {
               <h2 className="addressfooterheaing">Pimpri, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>ASQUARE Classes Pvt Ltd<br></br> Sai Vrindavan, Office No.501, Near Indian Oil Petrol Pump, Nehru Nagar, Pimpri, Pune Maharashtra - 411018</li>
+                <li>ASQUARE Academy<br></br> Sai Vrindavan, Office No.501, Near Indian Oil Petrol Pump, Nehru Nagar, Pimpri, Pune Maharashtra - 411018</li>
                 <li><a href="tel:+919766118877">(+91) 9766118877</a></li>
               </ul>
             </div>
@@ -286,7 +286,7 @@ function Footer() {
               <h2 className="addressfooterheaing">Pimple Saudagar, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>Asquare Classes Pvt Ltd<br></br> Office No. 206, Prime Square, Kunal Icon Rd, opposite Datt Raj Mandir, Pimple Saudagar, Maharashtra 411027</li>
+                <li>Asquare Academy<br></br> Office No. 206, Prime Square, Kunal Icon Rd, opposite Datt Raj Mandir, Pimple Saudagar, Maharashtra 411027</li>
                 <li><a href="tel:+919579730062">(+91) 9579730062</a></li>
               </ul>
             </div>
@@ -296,7 +296,7 @@ function Footer() {
               <h2 className="addressfooterheaing">Vishrantwadi, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>Asquare Classes Pvt Ltd<br></br> 156, Shoppers Orbit Mall, Pune Alandi Road, Near Reliance Smart Bazaar, Vishrantwadi, Pune, Maharashtra 411015</li>
+                <li>Asquare Academy<br></br> 156, Shoppers Orbit Mall, Pune Alandi Road, Near Reliance Smart Bazaar, Vishrantwadi, Pune, Maharashtra 411015</li>
                 <li><a href="tel:+919766118866">(+91) 9766118866</a></li>
               </ul>
             </div>
@@ -306,7 +306,7 @@ function Footer() {
               <h2 className="addressfooterheaing">Rahatani, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>ASQUARE Classes Pvt Ltd,<br></br> SNBP College Campus, Survey No. 29 / 2, Pune, Maharashtra 411017</li>
+                <li>ASQUARE Academy,<br></br> SNBP College Campus, Survey No. 29 / 2, Pune, Maharashtra 411017</li>
                 <li><a href="tel:+919579730062">(+91) 9579730062</a></li>
               </ul>
             </div>
@@ -316,7 +316,7 @@ function Footer() {
               <h2 className="addressfooterheaing">Hadapsar, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>ASQUARE Classes Pvt Ltd,<br></br> Fortune Plaza, Office No 208,209,210 Near Railway crossing, Sasane Nagar, Hadapsar, Pune 411028</li>
+                <li>ASQUARE Academy,<br></br> Fortune Plaza, Office No 208,209,210 Near Railway crossing, Sasane Nagar, Hadapsar, Pune 411028</li>
                 <li><a href="tel:+919156004396">(+91) 9156004396</a></li>
               </ul>
             </div>
@@ -326,15 +326,25 @@ function Footer() {
               <h2 className="addressfooterheaing">Wanwadi, Branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>ASQUARE Classes Pvt Ltd,<br></br> Arihant Avenue, Above Image Electricals, Near Shivaji Maharaj Statue, Divya Nagar, Wanwadi, Pune 411040</li>
-                <li><a href="tel:+919156004393">(+91) 9156004393</a></li>
+                <li>ASQUARE Academy,<br></br> 1st Floor, Parmar gallery, Jagtap chowk, Wanwadi, Pune 411040</li>
+                <li><a href="tel:+919922351375">(+91) 9922351375</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="addressfooterbox">
+              <h2 className="addressfooterheaing">Camp branch</h2>
+              <div class="heading-under-line "></div>
+              <ul>
+                <li>ASQUARE Academy,<br></br> Ground Floor, office no.11, beside victory theater Camp Pune-411001</li>
+                <li><a href="tel:+919404282283">(+91) 9404282283</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="bottom_container">
-        <p>Copyright 2023 at asquareclasses.com</p>
+        <p>Copyright 2025 at asquareclasses.com</p>
         <div className="social-media-icons">
           <a href="https://www.facebook.com/asquarepune" target="_blank">
             <img src={facebook_logo} alt="logo" className="icn-2 s_m_icon" />
