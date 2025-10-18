@@ -328,6 +328,7 @@ function Footer() {
               <ul>
                 <li>ASQUARE Academy,<br></br> 1st Floor, Parmar gallery, Jagtap chowk, Wanwadi, Pune 411040</li>
                 <li><a href="tel:+919922351375">(+91) 9922351375</a></li>
+                <li><a href="tel:+919156004393">(+91) 9156004393</a></li>
               </ul>
             </div>
           </div>
@@ -336,8 +337,9 @@ function Footer() {
               <h2 className="addressfooterheaing">Camp branch</h2>
               <div class="heading-under-line "></div>
               <ul>
-                <li>ASQUARE Academy,<br></br> Ground Floor, office no.11, beside victory theater Camp Pune-411001</li>
+                <li>ASQUARE Academy,<br></br> Kumar pavillion, Office no.11, ground floor, Beside Victory theater, East street, Camp Pune - 411001</li>
                 <li><a href="tel:+919404282283">(+91) 9404282283</a></li>
+                <li><a href="tel:+919561193277">(+91) 9561193277</a></li>
               </ul>
             </div>
           </div>
