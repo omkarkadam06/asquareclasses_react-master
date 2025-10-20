@@ -161,6 +161,7 @@ h6.methodology_title {
     font-family: "Font Awesome 6 Free";
     background-image: none;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 .faq_section .accordion-button:not(.collapsed)::after{
     transform: none;
@@ -223,7 +224,6 @@ section.success_stories {
 .enroll_contnt_row .col-md-6{
     padding: 70px 40px;
 }
-.enroll_section{}
 
 @media (max-width:992px) {
     .container{
@@ -334,4 +334,35 @@ section.success_stories {
    .location_bgimage{
     display: none;
    }
+}
+/* button styles */
+.cta-button {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background: #05479b;
+  border: none;
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: #05479b;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(5, 71, 155, 0.3);
+  color:#05479b;
+  background: #ffffff;
+}
+
+.text-yellow {
+  color: #ffcc00;
 }
