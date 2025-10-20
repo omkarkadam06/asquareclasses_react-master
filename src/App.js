@@ -43,6 +43,7 @@ import CBSEBhosari  from './Pages/LocationsPages/CbseBhosari';
 import CBSESaudagar  from './Pages/LocationsPages/CbseSaudagar';
 import ICSEChinchwad  from './Pages/LocationsPages/ICSEChinchwad';
 import ICSEMoshi  from './Pages/LocationsPages/ICSEMoshi';
+import MHTPimpri from './Pages/LocationsPages/MHTPimpri';
 
 function App() {
   return (
@@ -236,6 +237,7 @@ function App() {
           <Route path='/cbse-tuition-pimple-saudagar-pune-8th-9th-10th' element={<CBSESaudagar/>}/>
           <Route path='/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<ICSEChinchwad/>}/>
           <Route path='/icse-tuition-classes-moshi-pune-8th-9th-10th' element={<ICSEMoshi/>}/>
+          <Route path='/mht-cet-coaching-classes-institute-in-pimpri-pune' element={<MHTPimpri />} />
         </Routes>
       </BrowserRouter>
     </div>
