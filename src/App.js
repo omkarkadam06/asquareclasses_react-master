@@ -44,6 +44,9 @@ import CBSESaudagar  from './Pages/LocationsPages/CbseSaudagar';
 import ICSEChinchwad  from './Pages/LocationsPages/ICSEChinchwad';
 import ICSEMoshi  from './Pages/LocationsPages/ICSEMoshi';
 import MHTPimpri from './Pages/LocationsPages/MHTPimpri';
+import MHTVishrantwadi from './Pages/LocationsPages/MHTVishrantwadi';
+import MHTDhanori from './Pages/LocationsPages/MHTDhanori';
+import MHTYerawada from './Pages/LocationsPages/MHTYerawada';
 
 function App() {
   return (
@@ -238,6 +241,9 @@ function App() {
           <Route path='/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th' element={<ICSEChinchwad/>}/>
           <Route path='/icse-tuition-classes-moshi-pune-8th-9th-10th' element={<ICSEMoshi/>}/>
           <Route path='/mht-cet-coaching-classes-institute-in-pimpri-pune' element={<MHTPimpri />} />
+          <Route path='/mht-cet-coaching-classes-in-vishrantwadi-pune' element={<MHTVishrantwadi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-dhanori-pune' element={<MHTDhanori />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-yerawada-pune' element={<MHTYerawada />} />
         </Routes>
       </BrowserRouter>
     </div>

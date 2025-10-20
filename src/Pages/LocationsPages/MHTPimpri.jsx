@@ -63,7 +63,7 @@ function MHTPimpri(){
                         <img className='common_image' src={image1} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
-                        <h2 className="common_title">Excel in <span className='common_title_span'>MHT-CET</span> with ASQUARE Academy - Top Coaching Classes in Pimpri, Pune</h2>
+                        <h1 className="common_title">Excel in <span className='common_title_span'>MHT-CET</span> with ASQUARE Academy - Top Coaching Classes in Pimpri, Pune</h1>
                         <p>
                             Looking for the <strong>best MHT-CET coaching classes in Pimpri, Pune? </strong>At <strong>ASQUARE Academy Pimpri,</strong> we specialize in preparing students for <strong>Engineering (PCM) </strong>and <strong>Pharmacy (PCB)</strong>streams with focused conceptual learning, expert guidance, and continuous testing.
                         </p>
@@ -78,7 +78,7 @@ function MHTPimpri(){
             <div className="container">
                 <div className="row row_reve align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
-                        <h3 className="common_title"><span className='common_title_span' style={{color:'#003399'}}>Why Choose</span> ASQUARE Academy for MHT-CET in Pimpri?</h3>
+                        <h2 className="common_title"><span className='common_title_span' style={{color:'#003399'}}>Why Choose</span> ASQUARE Academy for MHT-CET in Pimpri?</h2>
                         <ul className="common_ul">
                             <li><span><strong>Expert Faculty:</strong> Highly qualified mentors for Physics, Chemistry, Maths & Biology.</span></li>
                             <li><span><strong>Complete CET Syllabus Coverage:</strong> Based on the latest MHT-CET exam pattern and difficulty level.</span></li>
@@ -101,7 +101,7 @@ function MHTPimpri(){
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="common_title text-center"><span className='common_title_span'>Key Benefits</span> of Joining ASQUARE Academy, Pimpri:</h2>
+                        <h3 className="common_title text-center"><span className='common_title_span'>Key Benefits</span> of Joining ASQUARE Academy, Pimpri:</h3>
                     </div>
                 </div>    
                 <div className="row grid_row" style={{textAlign:'center', color:'var(--primary-color)'}}>   
@@ -156,7 +156,7 @@ function MHTPimpri(){
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <h2 className="common_title">Proven Results </h2>
+                        <h4 className="common_title">Proven Results </h4>
                             <strong>ASQUARE Academy Pimpri</strong> has a history of producing top-performing students who have secured admission to prestigious colleges like.
                             <strong>COEP Pune, MIT-WPU, VIT Pune, DY Patil College, and Sinhgad Institute of Technology.</strong>
                         <p>
@@ -175,7 +175,7 @@ function MHTPimpri(){
             <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
+                        <h4 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h4>
                         <p className='para_light'>This structured teaching approach builds confidence, speed, and accuracy for competitive exams like MHT-CET</p>
                         <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
@@ -306,9 +306,9 @@ function MHTPimpri(){
                     <p>Students from <strong>Chinchwad, Bhosari, Pimple Saudagar, and Nehrunagar</strong> prefer ASQUARE for its <strong>result-oriented MHT-CET coaching in PCMC Pune.</strong></p>
                     <h5 className="common_title" style={{color:'#05479b'}}><strong>Subjects Covered</strong></h5>
                     <ul className="common_ul">
-                        <li><span><strong>Physics:</strong> Interactive sessions for understanding concepts, solving numericals, and mastering formulas.</span></li>
-                        <li><span><strong>Chemistry:</strong> Comprehensive coverage of Physical, Organic & Inorganic Chemistry with topic-wise practice.</span></li>
-                        <li><span><strong>Mathematics / Biology:</strong> Separate study plans for <strong>PCM (Engineering) and PCB (Pharmacy)</strong> streams with daily assignments and DPPs.</span></li>
+                        <li className='mb-4'><span><strong>Physics:</strong> Interactive sessions for understanding concepts, solving numericals, and mastering formulas.</span></li>
+                        <li className='mb-4'><span><strong>Chemistry:</strong> Comprehensive coverage of Physical, Organic & Inorganic Chemistry with topic-wise practice.</span></li>
+                        <li className='mb-4'><span><strong>Mathematics / Biology:</strong> Separate study plans for <strong>PCM (Engineering) and PCB (Pharmacy)</strong> streams with daily assignments and DPPs.</span></li>
                     </ul>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-right padd" style={{color:'#ffff'}}>

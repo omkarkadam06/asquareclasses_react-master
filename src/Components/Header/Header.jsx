@@ -453,6 +453,12 @@ const Header = () => {
                 Blog
               </Link>
             </li>
+            <li className='nav-item-in'>
+              <Link 
+                to={'/career'} target='_blank' className="nav-item nav-item-list">
+                Career
+              </Link>
+            </li>
             <li className="nav-item-in">
               <Link
                 to={'/contact-information/'}
