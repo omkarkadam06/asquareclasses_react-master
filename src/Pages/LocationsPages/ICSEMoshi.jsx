@@ -14,20 +14,110 @@ import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
 import image3 from '../../Assets/locationPageImages/CISEPuneimage3.jpg';
 import image4 from '../../Assets/locationPageImages/CISEPuneimage4.jpg';
 import image5 from '../../Assets/locationPageImages/CISEPuneimage5.jpg';
-import image7 from '../../Assets/locationPageImages/image7.jpg';
 import icon1 from '../../Assets/locationPageImages/student.png';
 
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function ICSEMoshi(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
-            <title>ICSE Tuition Classes in Moshi, Pune – Class 8, 9 & 10 | Asquare Academy</title>
-            <meta name="titel" content="ICSE Tuition Classes in Moshi, Pune – Class 8, 9 & 10 | Asquare Academy"/>
-            <meta name="description" content="Enroll in ICSE tuition classes for 8th, 9th & 10th in Moshi, Pune at Asquare Academy. Expert faculty, small batches & exam-focused coaching for better results." />
+            <title>ICSE Tuition Classes in Moshi, Pune - 8th | 9th | 10th at Asquare Academy</title>
+            <meta name="title" content="ICSE Tuition Classes in Moshi, Pune - 8th | 9th | 10th at Asquare Academy"/>
+            <meta name="description" content="Join top ICSE tuition in Moshi (Pune) for 8th to 10th grades at Asquare Academy. Expert faculty, small batches, personalised attention &amp; proven board-exam preparations. Enrol today for academic excellence!" />
             {/* <meta name="keywords" content="ICSE tuition classes in Pune, Best ICSE coaching in Pune, ICSE tuition for Class 8 in Pune, ICSE tuition for Class 9 in Pune, ICSE tuition for Class 10 in Pune, ICSE board classes in Pune, Top ICSE coaching institute Pune, Expert ICSE teachers Pune, ICSE board exam preparation Pune, ICSE coaching with regular tests Pune, Affordable ICSE coaching in Pune, ICSE study material Pune, ICSE tuition in Camp Pune, ICSE coaching in Viman Nagar, ICSE classes in Hadapsar, ICSE tuition Koregaon Park Pune, ICSE coaching in Kothrud. ICSE tuition in Baner, ICSE classes in Pimple Saudagar, ICSE coaching in Pimpri, ICSE tuition in Nigdi, ICSE coaching in Chinchwad" /> */}
+            <script type="application/ld+json">{`
+            {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.asquareclasses.com/icse-tuition-classes-moshi-pune-8th-9th-10th",
+  "url": "https://www.asquareclasses.com/icse-tuition-classes-moshi-pune-8th-9th-10th",
+  "name": "ICSE Tuition Classes in Moshi Pune for 8th, 9th & 10th - A-Square Classes",
+  "description": "Join top ICSE tuition in Moshi, Pune for 8th to 10th grades at A-Square Classes. Expert teachers, personalised attention & board exam preparation.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.asquareclasses.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "ICSE Tuition Classes",
+        "item": "https://www.asquareclasses.com/icse-tuition-classes-moshi-pune-8th-9th-10th"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you provide ICSE tuition for Class 8 in Moshi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our ICSE tuition for Class 8th in Moshi covers Maths, Science, HCG, English, and Second Languages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Science subjects taught separately?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We teach Physics, Chemistry & Biology separately for better clarity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide ICSE tuition for Class 9 in Moshi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our ICSE tuition for Class 9th in Moshi includes syllabus completion, tests, and revision."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you prepare Class 10 ICSE students for boards?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide mock exams, past-year paper solving, answer-writing practice & doubt-clearing sessions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which areas do you serve near Moshi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Students come to us from Bhosari, Charholi, Alandi, Chikhali, Talwade, Dighi & Chakan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide online ICSE tuition?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Both online and offline ICSE coaching are available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide demo classes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Free demo classes are available at our Moshi centre."
+        }
+      }
+    ]
+  }
+}
+
+            `}</script>
             <meta name="robots" content="noindex, nofollow" />
+            <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />
@@ -65,7 +155,7 @@ function ICSEMoshi(){
                         <img className='common_image' src={image1} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Moshi for 8th, 9th & 10th Students</h2>
+                        <h1 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Moshi for 8th, 9th & 10th Students</h1>
                         <p>
                             The ICSE syllabus is comprehensive and requires in-depth subject knowledge. For Classes 8th, 9th, and 10th, students often need structured guidance to handle multiple subjects effectively.
                         </p>
@@ -84,7 +174,7 @@ function ICSEMoshi(){
             <div className="container">
                 <div className="row row_reve align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h3 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching in Moshi?</h3>
+                        <h2 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching in Moshi?</h2>
                         <p>
                             We design our coaching programs to suit the ICSE curriculum and exam requirements. Our goal is to provide <strong>concept clarity, consistent practice, and personalised support.</strong>
                         </p>
@@ -99,7 +189,7 @@ function ICSEMoshi(){
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="common_title text-center"><span className='common_title_span'>Key Benefits</span> of Joining ASQUARE Academy Moshi:</h2>
+                        <h3 className="common_title text-center"><span className='common_title_span'>Key Benefits</span> of Joining ASQUARE Academy Moshi:</h3>
                     </div>
                 </div>    
                 <div className="row grid_row">   
@@ -191,7 +281,7 @@ function ICSEMoshi(){
                         <img className='common_image' src={image3} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Moshi – Building Strong Fundamentals</h2>
+                        <h4 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Moshi - Building Strong Fundamentals</h4>
                         <p>
                             Class 8 is the starting point for advanced ICSE preparation. Our <strong>ICSE tuition for Class 8th in Moshi</strong> focuses on developing clarity and confidence in every subject.
                         </p>
@@ -216,7 +306,7 @@ function ICSEMoshi(){
             <div className="container">
                 <div className="row row_reve align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title"><span className='common_title_span'>ICSE Tuition</span> for Class 9 in Moshi – Strengthening Core Knowledge</h5>
+                        <h5 className="common_title"><span className='common_title_span'>ICSE Tuition</span> for Class 9 in Moshi - Strengthening Core Knowledge</h5>
                         <p>
                             Class 9 is crucial for building the base for ICSE boards. Our <strong>ICSE tuition for Class 9th in Moshi</strong> ensures thorough coverage of the syllabus and exam readiness.
                         </p>
@@ -247,7 +337,7 @@ function ICSEMoshi(){
                         <img className='common_image' src={image5} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Moshi – Focused Board Exam Preparation</h2>
+                        <h6 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Moshi - Focused Board Exam Preparation</h6>
                         <p>
                             Class 10 marks the most important academic milestone. At <strong>ASQUARE Academy Moshi,</strong> our ICSE tuition for Class 10th is structured to achieve excellent board exam results.
                         </p>
@@ -275,9 +365,9 @@ function ICSEMoshi(){
             <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
+                        <h6 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h6>
                         <p className='para_light'>At ASQUARE Academy Moshi, we follow a result-oriented teaching style:</p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
@@ -426,7 +516,7 @@ function ICSEMoshi(){
                     <h5 className="common_title title-light">Then <strong>ASQUARE Academy Moshi</strong> is your trusted choice for ICSE academic success.</h5>
                     <p className='para_light'>Visit our Moshi centre, easily accessible from <strong>Bhosari, Charholi, Alandi, Chikhali, Talwade, Dighi & Chakan.</strong></p>
                     <p className='para_light'>Call today to book a free demo class and enquire about admissions & fees</p>
-                    <a href="#"><button class="button mt-3">Know More</button></a>
+                    <a href="/"><button class="button mt-3">Know More</button></a>
                 </div>
             </div>
         </section>

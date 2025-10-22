@@ -20,13 +20,111 @@ import icon1 from '../../Assets/locationPageImages/student.png';
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function CBSESaudagar(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
-            <title>Best CBSE Coaching Classes in Pimple Saudagar for 8th, 9th & 10th Students | ASQUARE Academy</title>
-            <meta name="titel" content="Best CBSE Coaching Classes in Pimple Saudagar for 8th, 9th & 10th Students | ASQUARE Academy" />
-            <meta name="description" content="Looking for CBSE tuition in Pimple Saudagar? ASQUARE Academy provides expert coaching for Classes 8th, 9th & 10th with small batches & regular tests. Serving Wakad, Sangvi, Rahatni, Pimple Gurav, Kasarwadi, Aundh, Baner & nearby PCMC areas." />
+            <title>Best CBSE Coaching Classes in Pimple Saudagar for 8th, 9th &amp; 10th Students | ASQUARE Academy</title>
+            <meta name="title" content="Best CBSE Coaching Classes in Pimple Saudagar for 8th, 9th &amp; 10th Students | ASQUARE Academy" />
+            <meta name="description" content="Looking for CBSE tuition in Pimple Saudagar? ASQUARE Academy provides expert coaching for Classes 8th, 9th &amp; 10th with small batches &amp; regular tests. Serving Wakad, Sangvi, Rahatni, Pimple Gurav, Kasarwadi, Aundh, Baner &amp; nearby PCMC areas." />
             <meta name="keywords" content="cbse tuition classes in pimple saudagar pune, best cbse coaching in pimple saudagar, cbse classes for 8th 9th 10th in pimple saudagar, cbse tuition center pimple saudagar, top cbse institute in pimple saudagar, cbse coaching for class 8 in pimple saudagar, cbse coaching for class 9 in pimple saudagar, cbse coaching for class 10 in pimple saudagar, cbse board tuition in pimple saudagar, tuition for cbse students pimple saudagar, cbse tuition in rahatani, cbse coaching in wakad, cbse classes in kalewadi, cbse tuition in vishal nagar, cbse coaching in sangvi, cbse tuition in hinjewadi, cbse tuition pcmc" />
+            <script type="application/ld+json">{`
+            {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.asquareclasses.com/cbse-tuition-pimple-saudagar-pune-8th-9th-10th/",
+  "url": "https://www.asquareclasses.com/cbse-tuition-pimple-saudagar-pune-8th-9th-10th/",
+  "name": "CBSE Coaching & Tuition Classes in Pimple Saudagar Pune – 8th | 9th | 10th",
+  "description": "Join the best CBSE coaching in Pimple Saudagar, Pune for Class 8, 9 & 10. A-Square Classes offers expert tutors, regular tests, and complete board exam preparation.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.asquareclasses.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "CBSE Coaching & Tuition Classes in Pimple Saudagar Pune",
+        "item": "https://www.asquareclasses.com/cbse-tuition-pimple-saudagar-pune-8th-9th-10th/"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you provide CBSE tuition for Class 8th in Pimple Saudagar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide the best 8th CBSE classes in Pimple Saudagar focusing on fundamentals in all major subjects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why choose ASQUARE Academy for Class 9 tuition in Pimple Saudagar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our CBSE tuition for Class 9th in Pimple Saudagar ensures complete syllabus coverage, assignments, and tests for strong academic growth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you prepare Class 10 students for board exams?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide full syllabus coverage, mock exams, and previous year question paper practice in our Class 10 CBSE tuition in Pimple Saudagar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide study material?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide updated CBSE notes, worksheets, and exam-focused practice material."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you track student progress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We conduct weekly chapter tests, monthly reviews, and share progress reports with parents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide online CBSE classes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide both online and offline coaching for 8th, 9th & 10th students."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which subjects are covered?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We teach Mathematics, Science, English & Social Science for all three classes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which nearby areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve students from Rahatni, Wakad, Sangvi (Old & New), Pimple Gurav, Kasarwadi, Aundh, Baner, Balewadi, Hinjewadi, Thergaon, and other nearby PCMC areas."
+        }
+      }
+    ]
+  }
+}
+            `}</script>
+            <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />
@@ -64,7 +162,7 @@ function CBSESaudagar(){
                         <img className='common_image' src={image1} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>Trusted CBSE Coaching Institute </span>Pimple Saudagar for 8th, 9th & 10th.</h2>
+                        <h1 className="common_title"><span className='common_title_span'>Trusted CBSE Coaching Institute </span>Pimple Saudagar for 8th, 9th & 10th.</h1>
                         <p>
                             At <strong>ASQUARE Academy Pimple Saudagar,</strong> we provide the <strong>best CBSE tuition for Class 8th, 9th & 10th</strong> with a strong focus on concept clarity, exam-oriented preparation, and overall confidence building. 
                             Our expert faculty, small batch sizes, and structured teaching methodology ensure students achieve success in both school and board exams.
@@ -238,10 +336,10 @@ function CBSESaudagar(){
             <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
+                        <h6 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h6>
                         <p className='para_light'>We follow a systematic 4-step process:</p>
                         <p className='para_light'>This ensures students stay confident and perform consistently in their academics.</p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
@@ -272,7 +370,7 @@ function CBSESaudagar(){
                         <img className='common_image' src={image5} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Pimple Saudagar</h5>
+                        <h6 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Pimple Saudagar</h6>
                         <p>
                             Our Pimple Saudagar center is easily accessible to students from <strong>Rahatni, Wakad, Sangvi (Old & New), Pimple Gurav, Kasarwadi, Aundh, Baner, Balewadi, Hinjewadi, Thergaon, and other nearby PCMC areas.</strong> 
                             Parents from these locations trust ASQUARE Academy as the best CBSE coaching in Pimple Saudagar due to our result-oriented approach and expert faculty.

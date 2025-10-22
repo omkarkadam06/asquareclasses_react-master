@@ -20,13 +20,112 @@ import icon1 from '../../Assets/locationPageImages/student.png';
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function CBSEBhosari(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
-            <title>Best CBSE Coaching Classes in Bhosari for 8th, 9th & 10th Students | ASQUARE Academy</title>
-            <meta name="titel" content="Best CBSE Coaching Classes in Bhosari for 8th, 9th & 10th Students | ASQUARE Academy" />
-            <meta name="description" content="Looking for CBSE tuition in Bhosari? ASQUARE Academy provides expert coaching for Classes 8th, 9th & 10th with small batches, doubt-solving & regular tests. Serving Moshi, Spine City, Sahu Nagar, Alandi, Charholi, Chakan & nearby PCMC areas." />
+            <title>CBSE Coaching &amp; Tuition Classes in Bhosari Pune - 8th | 9th | 10th</title>
+            <meta name="title" content="CBSE Coaching &amp; Tuition Classes in Bhosari Pune - 8th | 9th | 10th" />
+            <meta name="description" content="Join top CBSE coaching in Bhosari, Pune for Class 8, 9 &amp; 10. ASQUARE Academy offers expert tutors, small batches &amp; complete board exam preparation." />
             <meta name="keywords" content="cbse tuition classes in bhosari pune, best cbse coaching in bhosari, cbse classes for 8th 9th 10th in bhosari, cbse tuition center bhosari, top cbse institute in bhosari, cbse coaching for class 8 in bhosari, cbse coaching for class 9 in bhosari, cbse coaching for class 10 in bhosari, cbse board tuition in bhosari, tuition for cbse students bhosari, cbse tuition in pimpri, cbse coaching in chinchwad, cbse classes in nigdi, cbse tuition in moshi, cbse coaching in pimple gurav, cbse classes in kaspate wasti, cbse tuition in talwade, cbse coaching in spine city, cbse tuition in pcmc" />
+            <script type="application/ld+json">{`
+            {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.asquareclasses.com/cbse-tuition-bhosari-pune-8th-9th-10th/",
+  "url": "https://www.asquareclasses.com/cbse-tuition-bhosari-pune-8th-9th-10th/",
+  "name": "CBSE Coaching & Tuition Classes in Bhosari Pune – 8th | 9th | 10th",
+  "description": "Join top CBSE coaching in Bhosari, Pune for Class 8, 9 & 10. A-Square Classes offers expert tutors, small batches & complete board exam preparation.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.asquareclasses.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "CBSE Coaching & Tuition Classes in Bhosari Pune",
+        "item": "https://www.asquareclasses.com/cbse-tuition-bhosari-pune-8th-9th-10th/"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you provide CBSE tuition for Class 8th in Bhosari?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide the best 8th CBSE classes in Bhosari with a focus on building subject fundamentals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why choose ASQUARE Academy for Class 9 tuition in Bhosari?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our CBSE tuition for Class 9th in Bhosari ensures complete syllabus coverage with regular tests and assignments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you prepare Class 10 students for board exams?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide NCERT syllabus coverage, mock exams, and past paper practice in our Class 10 CBSE tuition in Bhosari."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide study material?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Students receive updated notes, worksheets, and CBSE-aligned practice material."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you track progress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We conduct weekly tests, monthly assessments, and share feedback with parents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide online CBSE coaching?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer both online and offline CBSE classes for 8th, 9th & 10th in Bhosari."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which subjects do you cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We teach Mathematics, Science, English & Social Science for Classes 8th, 9th & 10th."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which nearby areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve students from Moshi, Spine City, Sahu Nagar, Alandi, Charholi, Chakan, Talwade, Dighi, and PCMC."
+        }
+      }
+    ]
+  }
+}
+
+            `}</script>
+            <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />
@@ -64,7 +163,7 @@ function CBSEBhosari(){
                         <img className='common_image' src={image1} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h2 className="common_title"><span className='common_title_span'>Best CBSE Tuition </span> Classes in Bhosari, Pune for 8th, 9th & 10th Students.</h2>
+                        <h1 className="common_title"><span className='common_title_span'>Best CBSE Tuition </span> Classes in Bhosari, Pune for 8th, 9th & 10th Students.</h1>
                         <p>
                             At <strong>ASQUARE Academy Bhosari,</strong> we focus on shaping a student’s academic journey by offering the <strong>best CBSE tuition for Class 8th, 9th & 10th.</strong> 
                             With dedicated faculty, structured study plans, and regular assessments, we ensure students develop strong subject knowledge and perform confidently in both school and board exams.
@@ -238,10 +337,10 @@ function CBSEBhosari(){
             <div className="container padd_bottom padd_top">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
+                        <h6 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h6>
                         <p className='para_light'>We follow a 4-step system for academic growth:</p>
                         <p className='para_light'>This approach ensures students gain confidence and consistent improvement in their studies.</p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
@@ -272,7 +371,7 @@ function CBSEBhosari(){
                         <img className='common_image' src={image5} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h5 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Bhosari</h5>
+                        <h6 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Bhosari</h6>
                         <p>
                             Our Bhosari center is easily accessible to students from <strong>Moshi, Spine City, Sahu Nagar, Alandi, Charholi, Chakan, Talwade, 
                             Dighi, and Pimpri-Chinchwad (PCMC)</strong>. Parents from these areas trust ASQUARE Academy as the <strong>best CBSE coaching in Bhosari</strong> because of our expert teachers and proven academic system.
