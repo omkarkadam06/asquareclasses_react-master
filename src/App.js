@@ -51,6 +51,10 @@ import MHTTingreNagar from './Pages/LocationsPages/MHTTingreNagar';
 import MHTLohegaon from './Pages/LocationsPages/MHTLohegaon';
 import MHTKalyaniNagar from './Pages/LocationsPages/MHTKalyaniNagar';
 import MHTVimanNagar from './Pages/LocationsPages/MHTVimanNagar';
+import MHTMoshi from './Pages/LocationsPages/MHTMoshi';
+import MHTHadapsar from './Pages/LocationsPages/MHTHadapsar';
+import MHTNigdi from './Pages/LocationsPages/MHTNigdi';
+import MHTBhosari from './Pages/LocationsPages/MHTBhosari';
 
 function App() {
   return (
@@ -252,6 +256,10 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-in-lohegaon-pune' element={<MHTLohegaon />} />
           <Route path='/mht-cet-coaching-classes-institute-in-kalyani-nagar-pune' element={<MHTKalyaniNagar />} />
           <Route path='/mht-cet-coaching-classes-institute-in-viman-nagar-pune' element={<MHTVimanNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-moshi-pune' element={<MHTMoshi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-hadapsar-pune' element={<MHTHadapsar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-nigdi-pune' element={<MHTNigdi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-bhosari-pune' element={<MHTBhosari />} />
         </Routes>
       </BrowserRouter>
     </div>
