@@ -9,8 +9,8 @@ import "../locationspage.css";
 import locationBGImage from "../../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/mh-cet slider.jpeg";
 import MobileBGImage from "../../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/mh-cet slider mob.jpeg";
 import MethodologyBg from "../../Assets/locationPageImages/teaching-methodology.jpeg";
-import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 7.jpeg";
-import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 1.jpeg";
+import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 3.jpeg";
+import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 4.jpeg";
 import location from "../../Assets/locationPageImages/mht-cet/location.png";
 import personalized from "../../Assets/locationPageImages/mht-cet/personalized.png";
 import qualified from "../../Assets/locationPageImages/mht-cet/qualified.png";
@@ -21,25 +21,25 @@ const Reviews = React.lazy(() =>
   import("../../Components/Reviews/Reviews.jsx")
 );
 
-function MHTBhosari() {
+function MHTChakan() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching Classes in Bhosari Pune | Best CET Institute &amp; Classes - ASQUARE Academy
+          MHT-CET Coaching &amp; Classes in Chakan Pune | Best CET - ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching Classes in Bhosari Pune | Best CET Classes &amp; Institute - ASQUARE Academy"
+          content="MHT-CET Coaching &amp; Classes in Chakan Pune | Best CET - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the Best MHT-CET Coaching in Bhosari Pune. Expert faculty, mock tests, and result-driven programs for Engineering &amp; Pharmacy aspirants. Batches near Akurdi, Ravet, and Bhakti Shakti Chowk."
+          content="MHT-CET Coaching &amp; Classes in Chakan Pune by ASQUARE Academy. Expert faculty, mock tests &amp; flexible batches for Engineering &amp; Pharmacy CET preparation."
         />
         <meta
           name="keywords"
-          content="Join MHT-CET coaching classes in Bhosari Pune for Engineering &amp; Pharmacy aspirants. Weekly mock tests, structured programs, and flexible online/offline batches for XI, XII &amp; dropper students - ASQUARE Academy."
+          content="MHT-CET Coaching in Chakan Pune, Best MHT-CET Classes in Chakan, Top CET Coaching Institute Chakan, MHT-CET Preparation in Chakan, ASQUARE Academy Chakan, MHT-CET Coaching near Talegaon, CET Classes near Alandi, Engineering CET Coaching Chakan Pune, Pharmacy CET Coaching Chakan Pune, Top CET Institute in North Pune, MHT-CET Classes in Moshi, Best CET Coaching near Khed, CET Coaching near Mahalunge, MHT-CET Institute near Kurali, CET Classes near Markal"
         />
         <script type="application/ld+json">{`
         {
@@ -47,26 +47,26 @@ function MHTBhosari() {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune",
-      "name": "MHT-CET Coaching Classes in Bhosari Pune | Best CET Institute & Classes – ASQUARE Academy",
-      "description": "Join MHT-CET coaching classes in Bhosari Pune for Engineering & Pharmacy aspirants. Weekly mock tests, structured programs, and flexible online/offline batches for XI, XII & dropper students – ASQUARE Academy.",
-      "inLanguage": "en",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-chakan-pune",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-chakan-pune",
+      "name": "MHT-CET Coaching in Chakan Pune | Best CET Coaching Classes - ASQUARE Academy",
+      "description": "Join the best MHT-CET Coaching Classes in Chakan Pune. Expert faculty, weekly mock tests, and flexible batches for Engineering & Pharmacy CET preparation. ASQUARE Academy.",
       "publisher": {
-        "@type": "Organization",
-        "name": "ASQUARE Academy",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-        }
+        "@id": "#asquareacademy"
       },
       "breadcrumb": {
-        "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune#breadcrumb"
+        "@id": "#breadcrumb"
+      },
+      "about": {
+        "@id": "#localbusiness"
+      },
+      "mainEntity": {
+        "@id": "#faqpage"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune#breadcrumb",
+      "@id": "#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -77,121 +77,113 @@ function MHTBhosari() {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "MHT-CET Coaching Classes Bhosari Pune",
-          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune"
+          "name": "MHT-CET Coaching Classes in Chakan Pune",
+          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-chakan-pune"
         }
       ]
     },
     {
       "@type": "EducationalOrganization",
-      "name": "MHT-CET Coaching Classes Bhosari",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune",
-      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "MHT-CET coaching classes in Bhosari Pune provide mock tests, structured programs, and flexible online/offline batches for Engineering and Pharmacy aspirants.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bhosari",
-        "addressRegion": "Pune",
-        "addressCountry": "IN"
+      "@id": "#asquareacademy",
+      "name": "ASQUARE Academy Chakan",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-chakan-pune",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
       },
+      "description": "ASQUARE Academy Chakan offers expert-led MHT-CET coaching classes with advanced study material, weekly tests, and online/offline learning options.",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+91-9766118877",
-        "contactType": "customer service",
-        "areaServed": "IN",
-        "availableLanguage": "English"
+        "contactType": "Customer Service",
+        "areaServed": "IN"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chakan",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "410501",
+        "addressCountry": "IN"
       }
     },
     {
       "@type": "LocalBusiness",
-      "name": "MHT-CET Coaching Classes in Bhosari Pune",
+      "@id": "#localbusiness",
+      "name": "ASQUARE Academy Chakan",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-bhosari-pune",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-chakan-pune",
       "telephone": "+91-9766118877",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Bhosari, Pune, Maharashtra",
+        "streetAddress": "Chakan",
         "addressLocality": "Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411039",
+        "postalCode": "410501",
         "addressCountry": "IN"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "18.6250",
-        "longitude": "73.8000"
+        "latitude": "18.7603",
+        "longitude": "73.8651"
       },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "20:00"
-        }
-      ],
+      "openingHours": "Mo-Su 08:00-20:00",
       "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
+        "https://www.facebook.com/asquareacademy",
+        "https://www.instagram.com/asquareacademy"
       ]
     },
     {
       "@type": "FAQPage",
+      "@id": "#faqpage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Who can join MHT-CET coaching classes at Bhosari?",
+          "name": "Who can join MHT-CET coaching at ASQUARE Chakan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Students from Class XI, XII, or dropper batches preparing for CET can join MHT-CET coaching classes at Bhosari."
+            "text": "Students from Class XI, XII, and drop-year aspirants preparing for Engineering or Pharmacy can join ASQUARE Chakan."
           }
         },
         {
           "@type": "Question",
-          "name": "What subjects are covered in the CET preparation?",
+          "name": "Which subjects are covered in the MHT-CET course?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Physics, Chemistry, Mathematics (PCM) for engineering and Biology (PCB) for pharmacy aspirants are covered."
+            "text": "The MHT-CET course includes Physics, Chemistry, Mathematics (for PCM) and Biology (for PCB)."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide mock tests and practice papers?",
+          "name": "Are mock tests part of the course?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, weekly mock tests, chapter-wise assignments, and full-length exams are included."
+            "text": "Yes — topic-wise and full-length mock exams are conducted every week to track student performance."
           }
         },
         {
           "@type": "Question",
-          "name": "What batches are available?",
+          "name": "What batch options are available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "2-Year Integrated, 1-Year Course, Crash Course, and Repeater/Dropper Batch are available."
+            "text": "ASQUARE Chakan offers 2-year, 1-year, crash course, and dropper batches for flexible MHT-CET preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "Do parents get updates about student performance?",
+          "name": "Which nearby areas does ASQUARE Chakan serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, progress reports and parent-teacher meetings are conducted regularly."
+            "text": "Students from Talegaon, Moshi, Alandi, Mahalunge, Kurali, Khed, Bhose, Chimbali, and Markal attend regularly."
           }
         },
         {
           "@type": "Question",
-          "name": "Where is the Bhosari centre located?",
+          "name": "Do you provide online CET coaching?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASQUARE Academy Bhosari is easily accessible from Moshi, Chikhali, Talawade, Chakan, Alandi, Dighi, Pimpri, PCMC, and surrounding areas. Other branches include Vishrantwadi, Wakad, Pimple Saudagar, Kasarwadi, Chinchwad, Nigdi, Hadapsar, Alandi, and Pimple Nilakh."
+            "text": "Yes — both offline and online MHT-CET classes are available for flexible learning at ASQUARE Chakan."
           }
         }
       ]
@@ -236,21 +228,25 @@ function MHTBhosari() {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
               <h1 className="common_title">
-                Build Your Future with Expert Guidance at{" "}
+                Build Your CET Success with {" "}
                 <span className="common_title_span">ASQUARE Academy ,</span>{" "}
-                Bhosari.
+                Chakan.
               </h1>
               <p>
-                Looking for the{" "}
-                <strong>best MHT-CET coaching classes in Bhosari, Pune (PCMC)?</strong>{" "}
-                At <strong>ASQUARE Academy </strong>our Bhosari branch offers structured, result-driven MHT-CET training led by expert faculty. With personalized guidance, regular mock tests, and proven strategies.
+                Are you looking for the{" "}
+                <strong>Best MHT-CET coaching classes in Chakan, Pune?</strong>{" "}
+                At <strong>ASQUARE Academy Chakan, </strong> we guide aspirants aiming for
+                <strong> Engineering (PCM)</strong> and{" "}
+                <strong>Pharmacy (PCB)</strong> careers through a structured, result-focused approach that blends{" "}
+                <strong>concept-based learning, regular mock tests, and personal mentoring.</strong>
               </p>
               <p>
-                We prepare students from{" "}
+                Our Chakan centre is conveniently located and easily accessible for students from{" "}
                 <strong>
-                  Bhosari, Moshi, Chakan, Talawade, Alandi, Dighi, Charholi, Pimpri, Chikhali, and entire PCMC region{" "}
+                  Talegaon, Moshi, Alandi, Mahalunge, Kurali, Khed, Bhose, Chimbali, and Markal,{" "}
                 </strong>
-                for admission into top engineering and pharmacy colleges in Maharashtra.
+                making it a preferred destination for{" "}
+                <strong>MHT-CET preparation in North Pune and PCMC.</strong>
               </p>
             </div>
           </div>
@@ -267,38 +263,37 @@ function MHTBhosari() {
                 >
                   Why Choose
                 </span>{" "}
-                ASQUARE Academy for MHT-CET in Bhosari?
+                ASQUARE Academy for MHT-CET in Chakan?
               </h2>
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Expert CET Faculty:</strong> Highly experienced mentors for CET, JEE, and NEET.
+                    <strong>Expert Faculty:</strong> Subject specialists for Physics, Chemistry, Maths, and Biology.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Complete CET Syllabus:</strong> Physics, Chemistry, and Mathematics/Biology taught per the latest MHT-CET exam pattern.
+                    <strong>Complete CET Syllabus Coverage:</strong> Aligned with the latest MHT-CET exam pattern.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Personalized Learning:</strong> Small batches at our Bhosari centre for focused attention.
+                    <strong>Small Batch Size:</strong> Ensures individual attention and interactive learning.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Weekly Mock Tests &amp; Analysis:</strong> Regular assessments with detailed performance reviews.
+                    <strong>Weekly Tests &amp; Performance Analysis:</strong> Identify strengths and areas for improvement.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Motivational &amp; Career Guidance: </strong> Confidence-building workshops and exam strategies.
+                    <strong>Board + CET Integrated Learning:</strong> Helps students excel in both academics and entrance exams.
                   </span>
                 </li>
               </ul>
               <p>
-                At ASQUARE, we combine conceptual learning with regular practice
-                to ensure every student achieves CET success confidently.
+                At ASQUARE, we focus on<strong> concept clarity, consistent practice, and exam-smart preparation,</strong> helping students achieve their target CET scores confidently.
               </p>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
@@ -317,7 +312,7 @@ function MHTBhosari() {
             <div className="col-md-12">
               <h3 className="common_title text-center">
                 <span className="common_title_span">Key Features</span> of
-                ASQUARE Academy, Bhosari:
+                ASQUARE Academy, Chakan:
               </h3>
             </div>
           </div>
@@ -330,7 +325,7 @@ function MHTBhosari() {
                 <img className="grid_img" src={qualified} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Limited batch size for personal mentoring.
+                    Experienced mentors and CET-focused study modules.
                   </h6>
                 </div>
               </div>
@@ -340,7 +335,7 @@ function MHTBhosari() {
                 <img className="grid_img" src={updated} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Updated CET syllabus study material.
+                    Conceptual clarity with step-by-step guidance.
                   </h6>
                 </div>
               </div>
@@ -350,7 +345,7 @@ function MHTBhosari() {
                 <img className="grid_img" src={weekly_chapter} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Parent-teacher meetings for progress tracking.
+                    Regular mock tests and feedback sessions.
                   </h6>
                 </div>
               </div>
@@ -360,7 +355,7 @@ function MHTBhosari() {
                 <img className="grid_img" src={personalized} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Time management &amp; exam strategy workshops.
+                    Compact batch sizes for better focus.
                   </h6>
                 </div>
               </div>
@@ -370,11 +365,11 @@ function MHTBhosari() {
                 <img className="grid_img" src={location} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Convenient for students from
+                    Ideal for students from
                   </h6>
                   <p>
                     <strong>
-                      Bhosari, Moshi, Chikhali, Chakan, Talawade, Dighi, Alandi, Pimpri, and PCMC.
+                      Talegaon, Moshi, Alandi, Mahalunge, Kurali, Khed, Bhose, Chimbali, and Markal.
                     </strong>
                   </p>
                 </div>
@@ -389,14 +384,16 @@ function MHTBhosari() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <h4 className="common_title">Results That Speak </h4>
-              <strong> ASQUARE Academy Bhosari </strong>has a strong track record of success, with students consistently securing seats in
+              <h4 className="common_title">Proven Results </h4>
+              Students of
+              <strong> ASQUARE Academy Chakan </strong> consistently perform among the top scorers in<strong> MHT-CET, </strong>
+              securing admission to leading colleges such as
               <strong>
                 {" "}
-                Top engineering and pharmacy colleges across Maharashtra.{" "}
+                COEP Pune, MIT-WPU, DY Patil Institute, VIT Pune, and Sinhgad College of Engineering.{" "}
               </strong>
               <p className="pt-3">
-                This makes us one of the <strong>best MHT-CET coaching institutes in Bhosari, Moshi, and nearby PCMC areas.</strong>
+                Our teaching approach, mock test strategy, and personal mentorship ensure every student reaches their true potential.
               </p>
             </div>
           </div>
@@ -415,6 +412,9 @@ function MHTBhosari() {
                 <span className="common_title_span">Our</span> Teaching
                 Methodology
               </h4>
+              <p className="para_light">
+                Our structured learning system ensures steady improvement, accuracy, and exam readiness.
+              </p>
               <a href="/">
                 <button class="button mt-3">Know More</button>
               </a>
@@ -422,32 +422,32 @@ function MHTBhosari() {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Concept-Focused Learning:</h6>
-                <span>Daily lectures for strong concept-building.</span>
+                <span>Concept-based lectures with practical applications.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Daily Practice Papers (DPPs):
                 </h6>
                 <span>
-                  Chapter-wise assignments for rigorous practice.
+                  Daily Practice Papers (DPPs) and worksheets for reinforcement.
                 </span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Weekly Mock Tests:</h6>
-                <span>Topic-wise and full-length mock tests.</span>
+                <span>Weekly topic tests and full-length CET mock exams.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Interactive Doubt-Solving:
                 </h6>
-                <span>One-to-one doubt-solving sessions.</span>
+                <span>One-on-one mentoring and regular doubt-clearing sessions.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Parent-Teacher Meetings (PTMs):
                 </h6>
                 <span>
-                  Parent-teacher performance updates.
+                  Parent-Teacher Meetings (PTMs) for progress updates and academic feedback.
                 </span>
               </div>
             </div>
@@ -463,7 +463,7 @@ function MHTBhosari() {
           <div className="row">
             <div className="col-md-12">
               <h5 className="common_title">
-                MHT-CET Coaching Institute in Bhosari{" "}
+                MHT-CET Coaching Institute in Chakan, Pune{" "}
                 <span className="common_title_span">(FAQs)</span>
               </h5>
             </div>
@@ -479,7 +479,7 @@ function MHTBhosari() {
                       aria-expanded="false"
                       aria-controls="collapse1"
                     >
-                      Who can join MHT-CET coaching at ASQUARE Academy Bhosari?
+                      Who can join MHT-CET coaching at ASQUARE Chakan?
                     </button>
                   </h2>
                   <div
@@ -488,7 +488,7 @@ function MHTBhosari() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Students from Class XI, XII, or dropper batches preparing for CET.
+                      Students from Class XI, XII, and drop-year aspirants preparing for Engineering or Pharmacy.
                     </div>
                   </div>
                 </div>
@@ -502,7 +502,7 @@ function MHTBhosari() {
                       aria-expanded="false"
                       aria-controls="collapse2"
                     >
-                      What subjects are covered in the CET preparation?
+                      Which subjects are covered in the MHT-CET course?
                     </button>
                   </h2>
                   <div
@@ -511,7 +511,7 @@ function MHTBhosari() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Physics, Chemistry, Mathematics (PCM) for engineering and Biology (PCB) for pharmacy aspirants.
+                      Physics, Chemistry, Mathematics (for Engineering) and Biology (for Pharmacy).
                     </div>
                   </div>
                 </div>
@@ -525,7 +525,7 @@ function MHTBhosari() {
                       aria-expanded="false"
                       aria-controls="collapse3"
                     >
-                      Do you provide mock tests and practice papers?
+                      Are mock tests part of the course?
                     </button>
                   </h2>
                   <div
@@ -534,7 +534,7 @@ function MHTBhosari() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Yes, weekly mock tests, chapter-wise assignments, and full-length exams are included.
+                      Yes — topic-wise and full-length mock exams are conducted every week.
                     </div>
                   </div>
                 </div>
@@ -562,8 +562,7 @@ function MHTBhosari() {
                   >
                     <div className="accordion-body">
                       We offer <strong>2-year, 1-year, crash course,</strong>{" "}
-                      and
-                      <strong> repeater batches.</strong>
+                      and <strong> dropper batches.</strong> for flexible preparation.
                     </div>
                   </div>
                 </div>
@@ -577,7 +576,7 @@ function MHTBhosari() {
                       aria-expanded="false"
                       aria-controls="collapse4"
                     >
-                      Where is the Bhosari centre located?
+                      Which nearby areas does ASQUARE Chakan serve?
                     </button>
                   </h2>
                   <div
@@ -586,14 +585,11 @@ function MHTBhosari() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      ASQUARE Academy Bhosari, easily accessible from {" "}
+                      Students from{" "}
                       <strong>
-                        Moshi, Chikhali, Talawade, Chakan, Alandi, Dighi, Pimpri, PCMC, and surrounding areas.
+                        Talegaon, Moshi, Alandi, Mahalunge, Kurali, Khed, Bhose, Chimbali, and Markal
                       </strong>{" "}
-                      Other branches include{" "}
-                      <strong>
-                        Vishrantwadi, Wakad, Pimple Saudagar, Kasarwadi, Chinchwad, Nigdi, Hadapsar, Alandi, and Pimple Nilakh.
-                      </strong>
+                      attend regularly.
                     </div>
                   </div>
                 </div>
@@ -607,7 +603,7 @@ function MHTBhosari() {
                       aria-expanded="false"
                       aria-controls="collapse5"
                     >
-                      Do parents get updates about student performance?
+                      Do you provide online CET coaching?
                     </button>
                   </h2>
                   <div
@@ -616,7 +612,7 @@ function MHTBhosari() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      Yes, progress reports and parent-teacher meetings are conducted regularly.
+                      Yes — both <strong>online</strong> and <strong>offline MHT-CET classes</strong> are available .
                     </div>
                   </div>
                 </div>
@@ -635,14 +631,16 @@ function MHTBhosari() {
               <strong>Course Overview </strong>
             </h3>
             <p>
-              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is the gateway to{" "}
-              <strong>Engineering, Pharmacy, and professional courses in Maharashtra.</strong>{" "}
-              With rising competition, joining a trusted
-              <strong> MHT-CET coaching institute in Bhosari</strong> is essential.
+              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is one of the most competitive exams for admission to {" "}
+              <strong>Engineering, Pharmacy, and Allied Science Programs</strong>{" "}
+              across Maharashtra.
             </p>
             <p>
-              At <strong>ASQUARE Academy Bhosari, </strong>
-              our CET program builds strong fundamentals, enhances problem-solving skills, and prepares students through consistent exam-oriented practice.
+              At <strong>ASQUARE Academy Chakan, </strong>
+              we offer well-structured courses, experienced mentors, and frequent mock tests that prepare students to perform efficiently under exam pressure.
+            </p>
+            <p>
+                Our batches attract students from <strong>Talegaon, Alandi, Moshi, and Khed,</strong> making ASQUARE a trusted choice for <strong>CET coaching in North Pune.</strong>
             </p>
             <h4 className="common_title" style={{ color: "#05479b" }}>
               <strong>Subjects Covered</strong>
@@ -650,18 +648,19 @@ function MHTBhosari() {
             <ul className="common_ul">
               <li className="mb-4">
                 <span>
-                  <strong>Physics:</strong> Conceptual clarity with application-based numericals.
+                  <strong>Physics:</strong> Strengthen conceptual understanding through problem-solving and numerical analysis.
                 </span>
               </li>
               <li className="mb-4">
                 <span>
-                  <strong>Chemistry:</strong> Physical, Organic &amp; Inorganic Chemistry with practice-based sessions.
+                  <strong>Chemistry:</strong> Topic-wise coverage of Physical, Organic, and Inorganic chemistry with extensive MCQ practice.
                 </span>
               </li>
               <li className="mb-4">
                 <span>
                   <strong>Mathematics / Biology: </strong>
-                  PCM for engineering aspirants, PCB for pharmacy aspirants.
+                  Stream-specific learning for
+                  <strong> PCM (Engineering) and PCB (Pharmacy)</strong> students, including daily assignments and revisions.
                 </span>
               </li>
             </ul>
@@ -679,7 +678,7 @@ function MHTBhosari() {
                   <strong className="fs-5 text-yellow">
                     2-Year Integrated Program (Class XI + XII + CET):
                   </strong>{" "}
-                  Boards + CET preparation for early starters.
+                  Comprehensive foundation + advanced CET prep.
                 </span>
               </li>
               <li className="mb-4">
@@ -687,7 +686,7 @@ function MHTBhosari() {
                   <strong className="fs-5 text-yellow">
                     1-Year Target Batch (Class XII + CET):
                   </strong>{" "}
-                  Comprehensive CET coaching aligned with Class XII.
+                  Focused and time-efficient MHT-CET preparation.
                 </span>
               </li>
               <li className="mb-4">
@@ -695,7 +694,7 @@ function MHTBhosari() {
                   <strong className="fs-5 text-yellow">
                     Crash Course (2-3 Months):
                   </strong>{" "}
-                  2-3 months of intensive CET revision.
+                  High-intensity short-term program for revision and test strategy.
                 </span>
               </li>
               <li className="mb-4">
@@ -703,10 +702,17 @@ function MHTBhosari() {
                   <strong className="fs-5 text-yellow">
                     Repeater / Dropper Batch:
                   </strong>{" "}
-                  1-year focused CET coaching for repeaters
+                  One-year course for CET repeaters focusing on advanced question practice.
                 </span>
               </li>
             </ul>
+            <p>
+              Each program includes{" "}
+              <strong>
+                weekly chapter tests, performance tracking, and doubt-solving sessions
+              </strong>{" "}
+              for consistent progress.
+            </p>
           </div>
         </div>
       </section>
@@ -718,20 +724,25 @@ function MHTBhosari() {
               <h5 className="common_title">
                 Join{" "}
                 <span className="common_title_span">
-                 ASQUARE Academy Bhosari Today
+                  ASQUARE Academy — Chakan, Pune
                 </span>
               </h5>
               <p>
-                Take the first step towards success with the leading 
-                <strong> MHT-CET coaching classes in Bhosari, Pune (PCMC). </strong> 
-                With expert teachers, structured preparation, and proven results,{" "}
+                Join <strong>ASQUARE Academy, </strong> the{" "}
                 <strong>
-                  ASQUARE Academy{" "}
+                  Best MHT-CET Coaching Institute in Chakan, Pune.{" "}
                 </strong>
-                is your trusted partner in CET success.
+                And start your preparation with expert mentors, personalized batches, and strategic mock tests.
+               Get ready to score high and secure admission into Maharashtra's top Engineering and Pharmacy colleges.
+              <br/>
+                Serving students from
+                <strong>
+                  {" "}
+                  Chakan, Talegaon, Moshi, Alandi, Mahalunge, Kurali, Khed, Bhose, Chimbali, and Markal.
+                </strong>
               </p>
               <h4>
-                Limited seats available - Enrol now!
+                Admissions Open - Enroll Today at ASQUARE Academy for MHT-CET Success!
               </h4>
               <div className="cta-button mt-3">
                 <a href="/" className="btn">
@@ -748,4 +759,4 @@ function MHTBhosari() {
   );
 }
 
-export default MHTBhosari;
+export default MHTChakan;
