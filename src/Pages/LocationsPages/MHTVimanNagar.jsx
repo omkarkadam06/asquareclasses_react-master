@@ -6,11 +6,11 @@ import Footer from "../../Components/Footer/Footer.jsx";
 import Loading from "../Loading.jsx";
 import MobileForm from "../../Components/Mobileform/MobileForm.jsx";
 import "../locationspage.css";
-import locationBGImage from "../../Assets/locationPageImages/mht-cet/desktop-bg-img.jpeg";
-import MobileBGImage from "../../Assets/locationPageImages/mht-cet/mobile-bg-image.jpeg";
+import locationBGImage from '../../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/mh-cet slider.jpeg';
+import MobileBGImage from "../../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/mh-cet slider mob.jpeg";
 import MethodologyBg from "../../Assets/locationPageImages/teaching-methodology.jpeg";
-import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 4.jpeg";
-import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 2.jpeg";
+import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 7.jpeg";
+import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 5.jpeg";
 import location from "../../Assets/locationPageImages/mht-cet/location.png";
 import personalized from "../../Assets/locationPageImages/mht-cet/personalized.png";
 import qualified from "../../Assets/locationPageImages/mht-cet/qualified.png";
@@ -21,25 +21,25 @@ const Reviews = React.lazy(() =>
   import("../../Components/Reviews/Reviews.jsx")
 );
 
-function MHTYerawada() {
+function MHTVimanNagar() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       <Helmet>
         <title>
-          Best MHT-CET Coaching Classes in Yerwada Pune | ASQUARE Academy
+          MHT-CET Coaching and Classes in Viman Nagar Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Tuition Classes in Yerwada, Pune | Asquare Academy"
-        />
+            content="MHT-CET Coaching & Classes in Viman Nagar Pune | ASQUARE Academy"
+            />
         <meta
           name="description"
-          content="Get the best MHT-CET coaching classes in Yerwada, Pune with expert faculty, small batches, and top results for CET preparation at ASQUARE Academy."
+          content="Join the best MHT-CET coaching and classes in Viman Nagar, Pune with expert faculty, personalized guidance, and full syllabus coverage at ASQUARE Academy near Kalyani Nagar."
         />
         <meta
           name="keywords"
-          content="MHT-CET Coaching in Yerwada Pune, Best MHT-CET Classes in Yerwada, Top CET Coaching Institute Yerwada, MHT-CET Preparation in Yerwada, ASQUARE Academy Yerwada, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Yerwada Pune, Pharmacy CET Coaching Yerwada Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Yerwada, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Yerwada Colony"
+          content="MHT-CET Coaching in Viman Nagar Pune,Best MHT-CET Classes in Viman Nagar,Top CET Coaching Institute Viman Nagar,MHT-CET Preparation in Viman Nagar,ASQUARE Academy Viman Nagar,MHT-CET Coaching near Kalyani Nagar,CET Classes near Yerawada,Engineering CET Coaching Viman Nagar Pune,Pharmacy CET Coaching Viman Nagar Pune,Top CET Institute in East Pune"
         />
         <script type="application/ld+json">{`
         {
@@ -47,19 +47,30 @@ function MHTYerawada() {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-yerawada-pune",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-yerawada-pune",
-      "name": "MHT-CET Coaching Classes in Yerawada Pune | ASQUARE Academy",
-      "description": "Join ASQUARE Academy for the best MHT-CET coaching classes in Yerawada, Pune. Expert faculty, small batches, and top results for CET preparation.",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune",
+      "name": "MHT-CET Coaching Classes Institute in Viman Nagar Pune | ASQUARE Academy",
+      "description": "Join MHT-CET Coaching Classes in Viman Nagar Pune for Engineering and Pharmacy aspirants. Expert faculty, small batches, mock tests, and personalized mentoring.",
       "inLanguage": "en",
       "publisher": {
         "@type": "EducationalOrganization",
         "name": "ASQUARE Academy",
-        "url": "https://www.asquareclasses.com"
+        "url": "https://www.asquareclasses.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+        }
+      },
+      "breadcrumb": {
+        "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune#faq"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -70,29 +81,23 @@ function MHTYerawada() {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Courses",
-          "item": "https://www.asquareclasses.com/courses/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "MHT-CET Coaching Classes in Yerawada Pune",
-          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-yerawada-pune"
+          "name": "MHT-CET Coaching Classes in Viman Nagar Pune",
+          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune"
         }
       ]
     },
     {
       "@type": "EducationalOrganization",
+      "@id": "https://www.asquareclasses.com#organization",
       "name": "ASQUARE Academy",
       "url": "https://www.asquareclasses.com",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers professional coaching for MHT-CET, NEET, and JEE in Pune with expert faculty and personalized learning support.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Yerawada, Pune",
+        "streetAddress": "Viman Nagar, Pune, Maharashtra",
         "addressLocality": "Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411006",
+        "postalCode": "411014",
         "addressCountry": "IN"
       },
       "contactPoint": {
@@ -101,33 +106,38 @@ function MHTYerawada() {
         "contactType": "Customer Service",
         "areaServed": "IN",
         "availableLanguage": "English"
-      }
+      },
+      "sameAs": [
+        "https://www.facebook.com/asquareclasses",
+        "https://www.instagram.com/asquareclasses"
+      ]
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-viman-nagar-pune#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Who can join MHT-CET coaching at ASQUARE Yerawada?",
+          "name": "Who can enroll in MHT-CET coaching at ASQUARE Viman Nagar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Students in Class XI, XII, and drop-year aspirants preparing for Engineering or Pharmacy entrance exams."
+            "text": "Students from Class XI, Class XII, and drop-year aspirants targeting Engineering or Pharmacy can enroll in MHT-CET coaching at ASQUARE Viman Nagar."
           }
         },
         {
           "@type": "Question",
-          "name": "What subjects are covered in the course?",
+          "name": "Which subjects are taught in the program?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Physics, Chemistry, Mathematics (for Engineering) and Biology (for Pharmacy)."
+            "text": "The program includes Physics, Chemistry, Mathematics for Engineering aspirants, and Biology for Pharmacy aspirants."
           }
         },
         {
           "@type": "Question",
-          "name": "Are mock tests included in the program?",
+          "name": "Are mock tests included in all courses?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes—weekly topic tests and full-length CET mock exams are part of every course."
+            "text": "Yes, every batch includes topic tests, full-length mock exams, and post-test discussions for performance improvement."
           }
         },
         {
@@ -135,23 +145,31 @@ function MHTYerawada() {
           "name": "What are the available batch options?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We offer 2-year, 1-year, crash course, and repeater batches for flexible learning."
+            "text": "ASQUARE Viman Nagar offers 2-year integrated, 1-year target, crash course, and repeater batches for MHT-CET preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "How many students are there in one batch?",
+          "name": "How large are the batches?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Each batch is kept small to ensure individual attention and personalized mentoring."
+            "text": "Each batch has limited students to ensure personal attention and proper doubt clearance."
           }
         },
         {
           "@type": "Question",
-          "name": "Which nearby areas are covered by the Yerawada centre?",
+          "name": "Do parents receive student progress reports?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We serve students from Kalyani Nagar, Viman Nagar, Shastri Nagar, Koregaon Park, Bund Garden, Sangamwadi, Lohegaon, Airport Road, and Vishrantwadi."
+            "text": "Yes, parents receive monthly performance reviews and can attend Parent-Teacher Meetings (PTMs) to track progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which nearby areas are served by the Viman Nagar branch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students from Kalyani Nagar, Yerawada, Dhanori, Tingre Nagar, Koregaon Park, Lohegaon, and Airport Road attend ASQUARE Viman Nagar."
           }
         }
       ]
@@ -196,26 +214,20 @@ function MHTYerawada() {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
               <h1 className="common_title">
-                Excel in <span className="common_title_span">MHT-CET</span> with
-                ASQUARE Academy - Top Coaching Classes in Yerwada, Pune
+                Crack MHT-CET with Expert Coaching at <span className="common_title_span">ASQUARE Academy,</span> Viman Nagar.
               </h1>
               <p>
-                Looking for the{" "}
-                <strong>best MHT-CET coaching classes in Yerwada, Pune? </strong>
-                At <strong>ASQUARE Academy Yerwada,</strong> we specialize in
-                preparing students for <strong>Engineering (PCM) </strong>and{" "}
-                <strong>Pharmacy (PCB)</strong>streams with focused conceptual
-                learning, expert guidance, and continuous testing.
+                Looking for the most reliable{" "}
+                <strong>MHT-CET coaching classes in Viman Nagar, Pune?</strong>{" "}
+                At <strong>ASQUARE Academy, </strong>we specialize in helping students master both <strong>Engineering (PCM) </strong>and{" "}
+                <strong>Pharmacy (PCB) </strong>streams through focused classroom teaching, daily practice, and personalized mentorship.
               </p>
               <p>
-                Our Yerwada branch is conveniently located and easily accessible
-                for students from{" "}
+                Conveniently located in Viman Nagar, our centre is easily accessible for students from {" "}
                 <strong>
-                  Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, Pimple Saudagar,
-                  Nehrunagar, Sant Tukaram Nagar, and Pimpri Colony{" "}
+                  Kalyani Nagar, Yerawada, Tingre Nagar, Dhanori, Koregaon Park, Lohegaon, and Airport Road, {" "}
                 </strong>
-                — making it one of the most trusted{" "}
-                <strong>CET coaching institutes in PCMC Pune.</strong>
+                making it a preferred destination for <strong>MHT-CET aspirants in East Pune </strong>
               </p>
             </div>
           </div>
@@ -232,46 +244,37 @@ function MHTYerawada() {
                 >
                   Why Choose
                 </span>{" "}
-                ASQUARE Academy for MHT-CET in Yerwada?
+                ASQUARE Academy MHT-CET in Viman Nagar?
               </h2>
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Expert Faculty:</strong> Highly qualified mentors
-                    for Physics, Chemistry, Maths & Biology.
+                    <strong>Experienced Faculty:</strong> Qualified subject experts in Physics, Chemistry, Maths, and Biology.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Complete CET Syllabus Coverage:</strong> Based on
-                    the latest MHT-CET exam pattern and difficulty level.
+                    <strong>Complete Syllabus Coverage:</strong> Mapped with the latest <strong>CET exam pattern </strong>and difficulty level.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Small Batches:</strong> Personalized attention and
-                    one-on-one doubt solving.
+                    <strong>Small Batches:</strong> Personalized learning experience with focused mentoring.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Regular Mock Tests & Assessments:</strong> Improve
-                    speed, accuracy, and time management.
+                    <strong>Regular Testing:</strong> Weekly topic-wise assessments and full-length CET mock tests.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Integrated Learning:</strong> Covers both Board
-                    Exams + MHT-CET preparation seamlessly.
+                    <strong>Board + CET Preparation: </strong> Integrated study plan for Class 11th & 12th along with MHT-CET.
                   </span>
                 </li>
               </ul>
               <p>
-                At ASQUARE, we emphasize{" "}
-                <strong>
-                  concept clarity, strong fundamentals, and strategic practice,
-                </strong>{" "}
-                ensuring students are exam-ready and confident.
+                At ASQUARE, we emphasize <strong>concept clarity, accuracy, and speed —</strong> key factors that lead to top scores in MHT-CET.
               </p>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
@@ -290,7 +293,7 @@ function MHTYerawada() {
             <div className="col-md-12">
               <h3 className="common_title text-center">
                 <span className="common_title_span">Key Benefits</span> of
-                Joining ASQUARE Academy, Yerwada:
+                Joining ASQUARE Academy, Viman Nagar:
               </h3>
             </div>
           </div>
@@ -303,7 +306,7 @@ function MHTYerawada() {
                 <img className="grid_img" src={qualified} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Qualified and approachable faculty team
+                    CET-focused study material and revision modules.
                   </h6>
                 </div>
               </div>
@@ -313,7 +316,7 @@ function MHTYerawada() {
                 <img className="grid_img" src={updated} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Updated CET-based study materials (print & digital)
+                    Experienced and approachable faculty.
                   </h6>
                 </div>
               </div>
@@ -323,7 +326,7 @@ function MHTYerawada() {
                 <img className="grid_img" src={weekly_chapter} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Weekly chapter tests & rank-based analysis
+                    Regular test analysis and rank evaluation.
                   </h6>
                 </div>
               </div>
@@ -333,7 +336,7 @@ function MHTYerawada() {
                 <img className="grid_img" src={personalized} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Personalized mentoring and feedback sessions
+                    Concept-building sessions and mock test discussions.
                   </h6>
                 </div>
               </div>
@@ -343,13 +346,11 @@ function MHTYerawada() {
                 <img className="grid_img" src={location} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Accessible for students from
+                    Convenient for students from
                   </h6>
                   <p>
                     <strong>
-                      Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, Pimple
-                      Saudagar, Nehrunagar, Sant Tukaram Nagar, MIDC Pimpri, and
-                      Pimpri Colony
+                      Kalyani Nagar, Yerawada, Dhanori, Tingre Nagar, Lohegaon, Koregaon Park, and Airport Road.
                     </strong>
                   </p>
                 </div>
@@ -358,22 +359,20 @@ function MHTYerawada() {
           </div>
         </div>
       </section>
-    
+
+      {/* Proven Results */}
       <section className="leftright_section padd_bottom mt-3">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
               <h4 className="common_title">Proven Results </h4>
-              <strong>ASQUARE Academy Yerwada</strong> has a history of producing
-              top-performing students who have secured admission to prestigious
-              colleges like.
+              <strong>ASQUARE Academy Viman Nagar </strong>  has a legacy of producing high-achieving MHT-CET students who have secured admissions into Maharashtra's top colleges such as
+              {" "}
               <strong>
-                COEP Pune, MIT-WPU, VIT Pune, DY Patil College, and Sinhgad
-                Institute of Technology.
+                COEP Pune, MIT-WPU, DY Patil College, VIT Pune, and Sinhgad Institute of Technology.
               </strong>
-              <p>
-                Our success stems from expert guidance, strong test systems, and
-                a structured learning environment that builds CET excellence.
+              <p className="pt-3">
+                Our focus on conceptual mastery, testing consistency, and personal mentorship ensures student success year after year.
               </p>
             </div>
           </div>
@@ -393,8 +392,7 @@ function MHTYerawada() {
                 Methodology
               </h4>
               <p className="para_light">
-                This structured teaching approach builds confidence, speed, and
-                accuracy for competitive exams like MHT-CET
+                Our structured methodology ensures academic excellence and consistent exam performance.
               </p>
               <a href="/">
                 <button class="button mt-3">Know More</button>
@@ -402,30 +400,30 @@ function MHTYerawada() {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="methodoloy_itembox">
-                <h6 className="methodology_title">Concept-driven sessions</h6>
-                <span>with real-world applications.</span>
+                <h6 className="methodology_title">Interactive Lectures</h6>
+                <span>Daily topic-based sessions for conceptual clarity.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Daily Practice Papers (DPPs)
                 </h6>
-                <span>and homework for consistent problem-solving.</span>
+                <span>Reinforce problem-solving and application skills.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly & Full-length CET Mock Tests
+                  Weekly & Monthly Tests:
                 </h6>
-                <span>for exam simulation.</span>
+                <span>Regular analysis and error-based revisions.</span>
               </div>
               <div className="methodoloy_itembox">
-                <h6 className="methodology_title">Doubt-solving sessions</h6>
-                <span>and topic revision classes.</span>
+                <h6 className="methodology_title">Personalized Mentorship</h6>
+                <span>Dedicated doubt-solving and feedback sessions.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Parent-Teacher Meetings (PTMs){" "}
+                  PTMs (Parent-Teacher Meetings)<br />
                 </h6>
-                <span>with performance updates.</span>
+                <span>Regular updates and performance reports.</span>
               </div>
             </div>
           </div>
@@ -440,7 +438,7 @@ function MHTYerawada() {
           <div className="row">
             <div className="col-md-12">
               <h5 className="common_title">
-                MHT-CET Coaching Institute in Yerwada, Pune{" "}
+                MHT-CET Coaching Institute in Viman Nagar, Pune{" "}
                 <span className="common_title_span">(FAQs)</span>
               </h5>
             </div>
@@ -456,7 +454,7 @@ function MHTYerawada() {
                       aria-expanded="false"
                       aria-controls="collapse1"
                     >
-                      Who can join MHT-CET coaching at ASQUARE Yerwada?
+                      Who can enroll in MHT-CET coaching at ASQUARE Viman Nagar?
                     </button>
                   </h2>
                   <div
@@ -465,8 +463,7 @@ function MHTYerawada() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Students in Class XI, XII, and repeaters preparing for
-                      Engineering or Pharmacy entrance exams.
+                      Students from Class XI, Class XII, and drop-year aspirants targeting Engineering or Pharmacy.
                     </div>
                   </div>
                 </div>
@@ -480,7 +477,7 @@ function MHTYerawada() {
                       aria-expanded="false"
                       aria-controls="collapse2"
                     >
-                      Which subjects are taught?
+                      Which subjects are taught in the program?
                     </button>
                   </h2>
                   <div
@@ -489,8 +486,7 @@ function MHTYerawada() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Physics, Chemistry, Mathematics (for PCM) and Biology (for
-                      PCB).
+                      Physics, Chemistry, Mathematics (for Engineering), and Biology (for Pharmacy).
                     </div>
                   </div>
                 </div>
@@ -504,7 +500,7 @@ function MHTYerawada() {
                       aria-expanded="false"
                       aria-controls="collapse3"
                     >
-                      Are mock tests part of the course?
+                      Are mock tests included in all courses?
                     </button>
                   </h2>
                   <div
@@ -513,10 +509,32 @@ function MHTYerawada() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Yes — we conduct{" "}
+                      Yes — every batch includes topic tests, mock exams, and post-test discussions.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse7"
+                      aria-expanded="false"
+                      aria-controls="collapse7"
+                    >
+                      Which nearby areas are served by the Viman Nagar branch?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse7"
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#accordionRight"
+                  >
+                    <div className="accordion-body">
+                      We cater to students from{" "}
                       <strong>
-                        weekly tests, topic-wise quizzes, and full-length CET
-                        mock exams.
+                        Kalyani Nagar, Yerawada, Dhanori, Tingre Nagar, Koregaon Park, Lohegaon, and Airport Road.
                       </strong>
                     </div>
                   </div>
@@ -562,7 +580,7 @@ function MHTYerawada() {
                       aria-expanded="false"
                       aria-controls="collapse5"
                     >
-                      Do you provide progress tracking and reports?
+                      How large are the batches?
                     </button>
                   </h2>
                   <div
@@ -571,7 +589,7 @@ function MHTYerawada() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      Yes — with weekly analysis, feedback sessions, and PTMs
+                     Each batch has limited students to ensure personal attention and doubt clearance.
                     </div>
                   </div>
                 </div>
@@ -585,7 +603,7 @@ function MHTYerawada() {
                       aria-expanded="false"
                       aria-controls="collapse6"
                     >
-                      Which nearby areas are covered by ASQUARE Yerwada?
+                      Do parents receive student progress reports?
                     </button>
                   </h2>
                   <div
@@ -594,13 +612,7 @@ function MHTYerawada() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      Students from{" "}
-                      <strong>
-                        Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, Pimple
-                        Saudagar, Nehrunagar, Sant Tukaram Nagar, MIDC Pimpri,
-                        and Pimpri Colony
-                      </strong>{" "}
-                      attend regularly.
+                      Yes — through monthly performance reviews and PTMs.
                     </div>
                   </div>
                 </div>
@@ -615,53 +627,47 @@ function MHTYerawada() {
             className="col-lg-6 col-md-6 col-sm-12 col-left padd"
             style={{ background: "rgb(255 203 3)1" }}
           >
-            <h5 className="common_title" style={{ color: "#05479b" }}>
+            <h3 className="common_title" style={{ color: "#05479b" }}>
               <strong>Course Overview </strong>
-            </h5>
+            </h3>
             <p>
-              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is
-              the gateway to premier{" "}
+              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is a crucial entrance exam for students aspiring for{" "}
               <strong>
-                Engineering, Pharmacy, and Allied Science colleges
+                Engineering, Pharmacy, and Allied Health Science
               </strong>{" "}
-              in Maharashtra.
+              courses
             </p>
             <p>
-              At <strong>ASQUARE Academy Yerwada,</strong> we focus on conceptual
-              understanding, chapter-wise problem-solving, and exam-focused
-              preparation.
+              At <strong>ASQUARE Academy Viman Nagar,</strong> our structured and exam-focused curriculum includes {" "}
+              <strong>conceptual learning, smart problem-solving techniques, and continuous evaluation,</strong>{" "}
+              to ensure complete readiness for CET.
             </p>
             <p>
-              Students from{" "}
+              We also offer flexible learning options for students from{" "}
               <strong>
-                Chinchwad, Bhosari, Pimple Saudagar, and Nehrunagar
+                Kalyani Nagar, Tingre Nagar, Dhanori, Yerawada, and Koregaon Park.
               </strong>{" "}
-              prefer ASQUARE for its{" "}
-              <strong>result-oriented MHT-CET coaching in PCMC Pune.</strong>
             </p>
-            <h5 className="common_title" style={{ color: "#05479b" }}>
+            <h4 className="common_title" style={{ color: "#05479b" }}>
               <strong>Subjects Covered</strong>
-            </h5>
+            </h4>
             <ul className="common_ul">
               <li className='mb-4'>
                 <span>
-                  <strong>Physics:</strong> Interactive sessions for
-                  understanding concepts, solving numericals, and mastering
-                  formulas.
+                  <strong>Physics:</strong> Strengthen conceptual fundamentals with numerical drills and analysis-based learning.
                 </span>
               </li>
               <li className='mb-4'>
                 <span>
-                  <strong>Chemistry:</strong> Comprehensive coverage of
-                  Physical, Organic & Inorganic Chemistry with topic-wise
-                  practice.
+                  <strong>Chemistry:</strong> Detailed understanding of Physical, Organic, and Inorganic chemistry with CET-style MCQs.
                 </span>
               </li>
               <li className='mb-4'>
                 <span>
-                  <strong>Mathematics / Biology:</strong> Separate study plans
-                  for <strong>PCM (Engineering) and PCB (Pharmacy)</strong>{" "}
-                  streams with daily assignments and DPPs.
+                  <strong>Mathematics / Biology: </strong>
+                  Topic-by-topic guidance for
+                  <strong> PCM (Engineering) and PCB (Pharmacy)</strong>{" "}
+                  students with regular assignments and DPPs.
                 </span>
               </li>
             </ul>
@@ -679,7 +685,7 @@ function MHTYerawada() {
                   <strong className="fs-5 text-yellow">
                     2-Year Integrated Program (Class XI + XII + CET):
                   </strong>{" "}
-                  Foundation to advanced preparation covering both Boards + CET.
+                  Comprehensive program for board and CET readiness.
                 </span>
               </li>
               <li className="mb-4">
@@ -687,8 +693,7 @@ function MHTYerawada() {
                   <strong className="fs-5 text-yellow">
                     1-Year Target Batch (Class XII + CET):
                   </strong>{" "}
-                  Focused MHT-CET course with topic-wise practice and mock
-                  exams.
+                  Focused CET preparation with extensive test practice.
                 </span>
               </li>
               <li className="mb-4">
@@ -696,7 +701,7 @@ function MHTYerawada() {
                   <strong className="fs-5 text-yellow">
                     Crash Course (2-3 Months):
                   </strong>{" "}
-                  Compact revision and test-based program before the CET exam.
+                   Intensive revision batch with past-year questions and mock tests.
                 </span>
               </li>
               <li className="mb-4">
@@ -704,52 +709,42 @@ function MHTYerawada() {
                   <strong className="fs-5 text-yellow">
                     Repeater / Dropper Batch:
                   </strong>{" "}
-                  One-year extensive course designed for CET re-attempt
-                  students.
+                  One-year program designed for CET retakers aiming for top percentile ranks.
                 </span>
               </li>
             </ul>
             <p>
-              Each batch includes{" "}
+              All programs include{" "}
               <strong>
-                weekly mock tests, progress reports, and mentor support{" "}
-              </strong>
-              for performance tracking.
+                weekly tests, performance tracking, and one-on-one mentor discussions.
+              </strong>{" "}
             </p>
           </div>
         </div>
       </section>
       {/* Join ASQUARE Section */}
-      <section className="contact_section padd">
+      <section className="contact_section mb-5">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
               <h5 className="common_title">
                 Join{" "}
                 <span className="common_title_span">
-                  ASQUARE Academy - Yerwada, Pune
+                  ASQUARE Academy - Viman Nagar, Pune
                 </span>
               </h5>
               <p>
-                Join <strong>ASQUARE Academy,</strong> the{" "}
-                <strong>Best MHT-CET Coaching Institute in Yerwada, Pune</strong>
-                , and take your preparation to the next level.
-              </p>
-              <p>
-                With experienced mentors, structured batches, and consistent
-                mock testing, ASQUARE ensures success in both Engineering and
-                Pharmacy CET exams
+                Join <strong>ASQUARE Academy, </strong> the <strong>Best MHT-CET Coaching Institute in Viman Nagar, Pune, </strong> and prepare with expert guidance, mock tests, and result-oriented teaching.Let ASQUARE help you achieve your dream of securing admission to a top engineering or pharmacy college.
               </p>
               <p>
                 Serving students from
                 <strong>
                   {" "}
-                  Yerwada, Vishrantwadi, Pimpri, Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, Pimple
-                  Saudagar, Nehrunagar, Sant Tukaram Nagar, MIDC Pimpri, and
-                  Pimpri Colony.
+                  Viman Nagar, Kalyani Nagar, Yerawada, Dhanori, Tingre Nagar, Lohegaon, Koregaon Park, and Airport Road.
                 </strong>
               </p>
-              <div className="cta-button">
+              <h4>Admissions Open - Enroll Now for Expert MHT-CET Coaching!</h4>
+              <div className="cta-button mt-3">
                 <a href="/" className="btn">
                   {" "}
                   Join ASQUARE Academy
@@ -764,4 +759,4 @@ function MHTYerawada() {
   );
 }
 
-export default MHTYerawada;
+export default MHTVimanNagar;
