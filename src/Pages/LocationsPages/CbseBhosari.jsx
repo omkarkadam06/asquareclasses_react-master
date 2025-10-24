@@ -6,8 +6,8 @@ import Footer from '../../Components/Footer/Footer.jsx';
 import Loading from '../Loading.jsx';
 import MobileForm from '../../Components/Mobileform/MobileForm.jsx';
 import '../locationspage.css';
-import locationBGImage from '../../Assets/locationPageImages/cbscbgbanner.jpg';
-import MobileBGImage from '../../Assets/locationPageImages/location-mobileBG.jpg';
+import locationBGImage from '../../Assets/slider/CBSE-slider-pc.jpeg';
+import MobileBGImage from '../../Assets/slider/CBSE-slider-mobile.jpeg';
 import MethodologyBg from '../../Assets/locationPageImages/methodologyBG1.jpg';
 import image1 from '../../Assets/locationPageImages/CISEPuneimage1.jpg';
 import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
@@ -125,6 +125,7 @@ function CBSEBhosari(){
 }
 
             `}</script>
+            <meta name="robots" content="index, follow" />
             <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
@@ -159,10 +160,10 @@ function CBSEBhosari(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h1 className="common_title"><span className='common_title_span'>Best CBSE Tuition </span> Classes in Bhosari, Pune for 8th, 9th & 10th Students.</h1>
                         <p>
                             At <strong>ASQUARE Academy Bhosari,</strong> we focus on shaping a student’s academic journey by offering the <strong>best CBSE tuition for Class 8th, 9th & 10th.</strong> 
@@ -269,7 +270,7 @@ function CBSEBhosari(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h3 className="common_title"><span className='common_title_span'>Our CBSE</span> Foundation Courses in Bhosari</h3>
                         <h6 className="common_subtitle">Best 8th CBSE Classes in Bhosari</h6>
                         <p>
@@ -281,7 +282,7 @@ function CBSEBhosari(){
                             <li><span>Step-by-step learning approach</span></li>
                         </ul>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image2} alt="" />
                     </div>
                 </div>
@@ -291,10 +292,10 @@ function CBSEBhosari(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image3} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h4 className="common_title"><span className='common_title_span'>Best 9th CBSE</span> Classes in Bhosari</h4>
                         <p>
                             Class 9 is the stepping stone to board exams. At ASQUARE, our <strong>CBSE tuition for Class 9th in Bhosari</strong> ensures syllabus mastery, regular tests, and concept clarity for improved performance.
@@ -312,7 +313,7 @@ function CBSEBhosari(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title"><span className='common_title_span'>Best 10th</span> CBSE Classes in Bhosari</h5>
                         <p>
                             Board exam success requires thorough preparation. <strong>Our CBSE tuition for Class 10th in Bhosari</strong> covers the syllabus completely, conducts frequent mock tests, and provides exam strategies to help students achieve high scores.
@@ -323,7 +324,7 @@ function CBSEBhosari(){
                             <li><span>Exam-focused guidance and time management</span></li>
                         </ul>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
@@ -367,10 +368,10 @@ function CBSEBhosari(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h6 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Bhosari</h6>
                         <p>
                             Our Bhosari center is easily accessible to students from <strong>Moshi, Spine City, Sahu Nagar, Alandi, Charholi, Chakan, Talwade, 
@@ -545,7 +546,7 @@ function CBSEBhosari(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title">Join <span className='common_title_span'>ASQUARE</span> Academy Today</h5>
                         <p>
                             If you’re searching for the best CBSE tuition for Class 8th, 9th & 10th in Bhosari, ASQUARE Academy is your trusted partner for success. 
@@ -558,7 +559,7 @@ function CBSEBhosari(){
                             Enroll today at ASQUARE Academy Bhosari – Limited seats available. Book your free demo class now!
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image join_img' src={image7} alt="" />
                     </div>
                 </div>

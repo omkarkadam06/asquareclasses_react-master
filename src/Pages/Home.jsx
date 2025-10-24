@@ -35,6 +35,7 @@ function Home() {
           name="keywords"
           content="IIT JEE coaching Pune, NEET coaching Pune, MHT CET classes, best coaching classes Pune, A Square Classes, IIT JEE prep"
         />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       {/* Static components */}

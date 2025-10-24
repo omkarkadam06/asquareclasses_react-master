@@ -20,13 +20,16 @@ import icon1 from '../../Assets/locationPageImages/student.png';
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function CbsepcmcPune(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
             <title>Best CBSE Coaching Classes in PCMC for 8th, 9th & 10th Students | ASQUARE Academy</title>
-            <meta name="titel" content="Best CBSE Coaching Classes in PCMC for 8th, 9th & 10th Students | ASQUARE Academy" />
+            <meta name="title" content="Best CBSE Coaching Classes in PCMC for 8th, 9th & 10th Students | ASQUARE Academy" />
             <meta name="description" content="Looking for CBSE tuition in PCMC? ASQUARE Academy offers expert coaching for Classes 8th, 9th & 10th with small batches, study material & tests. Serving Pimpri, Chinchwad, Nigdi, Akurdi, Ravet, Pimple Saudagar, Moshi, Bhosari & nearby areas." />
             <meta name="keywords" content="cbse tuition classes in pcmc pune, best cbse coaching in pcmc, cbse classes for 8th 9th 10th in pcmc, cbse tuition center pcmc, top cbse institute in pcmc, cbse coaching for class 8 in pcmc, cbse coaching for class 9 in pcmc, cbse coaching for class 10 in pcmc, cbse board tuition in pcmc, tuition for cbse students pcmc, cbse tuition in pimpri, cbse coaching in chinchwad, cbse classes in nigdi, cbse tuition in pimple saudagar, cbse coaching in wakad, cbse classes in ravet, cbse tuition in moshi, cbse coaching in bhosari, cbse tuition in akurdi, small batch cbse tuition pcmc, cbse tuition with doubt-solving pcmc, best cbse tutors pcmc, regular test series cbse tuition pcmc, affordable cbse coaching pcmc" />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />
@@ -60,10 +63,10 @@ function CbsepcmcPune(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h2 className="common_title"><span className='common_title_span'>Top CBSE Coaching in PCMC </span>- Expert Tuition for Class 8th, 9th & 10th</h2>
                         <p>
                             At <strong>ASQUARE Academy PCMC,</strong> we offer the <strong>best CBSE tuition for Class 8th, 9th & 10th</strong> to help students build strong academic foundations, perform better in school, 
@@ -170,7 +173,7 @@ function CbsepcmcPune(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h3 className="common_title"><span className='common_title_span'>Our CBSE</span> Foundation Courses in PCMC</h3>
                         <h6 className="common_subtitle">Best 8th CBSE Classes in PCMC</h6>
                         <p>
@@ -182,7 +185,7 @@ function CbsepcmcPune(){
                             <li><span>Interactive and engaging sessions</span></li>
                         </ul>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image2} alt="" />
                     </div>
                 </div>
@@ -192,10 +195,10 @@ function CbsepcmcPune(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image3} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h4 className="common_title"><span className='common_title_span'>Best 9th CBSE</span> Classes in PCMC</h4>
                         <p>
                             Our <strong>CBSE tuition for Class 9th in PCMC</strong> ensures syllabus mastery with complete NCERT coverage, tests, and personal attention.
@@ -213,7 +216,7 @@ function CbsepcmcPune(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title"><span className='common_title_span'>Best 10th</span> CBSE Classes PCMC</h5>
                         <p>
                             Our<strong>CBSE tuition for Class 10th in PCMC </strong>prepares students for CBSE board exams through structured study, mock tests, and strategic preparation.
@@ -224,7 +227,7 @@ function CbsepcmcPune(){
                             <li><span>Exam strategies & time management</span></li>
                         </ul>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
@@ -241,7 +244,7 @@ function CbsepcmcPune(){
                         <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
                         <p className='para_light'>We follow a proven 4-step approach:</p>
                         <p className='para_light'>This approach ensures continuous academic growth and confidence in exams.</p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
@@ -268,10 +271,10 @@ function CbsepcmcPune(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h5 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across PCMC</h5>
                         <p>
                             Our PCMC branches are easily accessible to students from Pimpri, Chinchwad, Nigdi, Akurdi, Ravet, Pimple Saudagar, Pimple Gurav, Sangvi (Old & New), Rahatani, Kasarwadi, Moshi, Bhosari, 
@@ -434,7 +437,7 @@ function CbsepcmcPune(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title">Join <span className='common_title_span'>Join ASQUARE</span> Academy Today</h5>
                         <p>
                             If you’re looking for the <strong>best CBSE tuition for Class 8th, 9th & 10th in PCMC,</strong> ASQUARE Academy is your trusted choice. With expert faculty, small batch sizes, and proven results, we help students succeed in academics and board exams.
@@ -446,7 +449,7 @@ function CbsepcmcPune(){
                             <strong>Enroll today at ASQUARE Academy PCMC – Limited seats available. Book your free demo class now!</strong>
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image join_img' src={image7} alt="" />
                     </div>
                 </div>

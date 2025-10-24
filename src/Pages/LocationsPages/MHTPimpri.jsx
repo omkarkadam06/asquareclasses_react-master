@@ -28,7 +28,7 @@ function MHTPimpri(){
             <meta name="titel" content="MHT-CET Tuition Classes in Pimpri, Pune - Class 8, 9 & 10 | Asquare Academy"/>
             <meta name="description" content="Join ASQUARE Academy, the leading institute for MHT-CET coaching in Pimpri Pune. Expert faculty, small batches, and mock tests for students from Chinchwad, Bhosari, Kasarwadi, Pimple Saudagar." />
             <meta name="keywords" content="MHT-CET Coaching in Pimpri Pune, Best MHT-CET Classes in Pimpri, Top CET Coaching Institute Pimpri, MHT-CET Preparation in Pimpri, ASQUARE Academy Pimpri, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Pimpri Pune, Pharmacy CET Coaching Pimpri Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Pimpri, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Pimpri Colony" />
-            <meta name="robots" content="noindex, nofollow" />
+            <meta name="robots" content="index, follow" />
         </Helmet>
         <Navbar />
         <Header />

@@ -6,28 +6,29 @@ import Footer from '../../Components/Footer/Footer.jsx';
 import Loading from '../Loading.jsx';
 import MobileForm from '../../Components/Mobileform/MobileForm.jsx';
 import '../locationspage.css';
-import locationBGImage from '../../Assets/locationPageImages/cbscbgbanner.jpg';
-import MobileBGImage from '../../Assets/locationPageImages/location-mobileBG.jpg';
+import locationBGImage from '../../Assets/slider/ICSEsliderPC.jpeg';
+import MobileBGImage from '../../Assets/slider/ICSEslidermobile.jpeg';
 import MethodologyBg from '../../Assets/locationPageImages/methodologyBG1.jpg';
 import image1 from '../../Assets/locationPageImages/CISEPuneimage1.jpg';
 import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
 import image3 from '../../Assets/locationPageImages/CISEPuneimage3.jpg';
 import image4 from '../../Assets/locationPageImages/CISEPuneimage4.jpg';
 import image5 from '../../Assets/locationPageImages/CISEPuneimage5.jpg';
-import image7 from '../../Assets/locationPageImages/image7.jpg';
 import icon1 from '../../Assets/locationPageImages/student.png';
 
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function ICSEChinchwad(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
             <title>ICSE Tuition Classes in Pimpri Chinchwad – 8th, 9th & 10th | Asquare Academy</title>
-            <meta name="titel" content="ICSE Tuition Classes in Pimpri Chinchwad – 8th, 9th & 10th | Asquare Academy" />
+            <meta name="title" content="ICSE Tuition Classes in Pimpri Chinchwad – 8th, 9th & 10th | Asquare Academy" />
             <meta name="description" content="ICSE tuition classes for 8th, 9th & 10th in Pimpri Chinchwad at Asquare Academy. Expert teachers, small batches & focused coaching for exam success." />
             {/* <meta name="keywords" content="ICSE tuition classes in Pune, Best ICSE coaching in Pune, ICSE tuition for Class 8 in Pune, ICSE tuition for Class 9 in Pune, ICSE tuition for Class 10 in Pune, ICSE board classes in Pune, Top ICSE coaching institute Pune, Expert ICSE teachers Pune, ICSE board exam preparation Pune, ICSE coaching with regular tests Pune, Affordable ICSE coaching in Pune, ICSE study material Pune, ICSE tuition in Camp Pune, ICSE coaching in Viman Nagar, ICSE classes in Hadapsar, ICSE tuition Koregaon Park Pune, ICSE coaching in Kothrud. ICSE tuition in Baner, ICSE classes in Pimple Saudagar, ICSE coaching in Pimpri, ICSE tuition in Nigdi, ICSE coaching in Chinchwad" /> */}
-            <meta name="robots" content="noindex, nofollow" />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />
@@ -61,10 +62,10 @@ function ICSEChinchwad(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h2 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Chinchwad for 8th, 9th & 10th Students</h2>
                         <p>
                             The ICSE syllabus is detailed, concept-driven, and demands strong subject clarity. For students in Classes 8th, 9th, and 10th, handling the wide range of subjects often becomes difficult without structured guidance.
@@ -83,13 +84,13 @@ function ICSEChinchwad(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h3 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching in Chinchwad?</h3>
                         <p>
                             We design our coaching programs to perfectly align with ICSE board requirements. Our focus remains on <strong>concept clarity, practice-based learning, and consistent performance tracking.</strong>
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image2} alt="" />
                     </div>
                 </div>
@@ -187,10 +188,10 @@ function ICSEChinchwad(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image3} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h2 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Pune Chinchwad – Building the Right Foundation</h2>
                         <p>
                             Class 8 is where students step into more detailed ICSE subjects. Our <strong>ICSE tuition for Class 8th in Chinchwad</strong> ensures strong foundations with concept clarity and regular assignments.
@@ -215,7 +216,7 @@ function ICSEChinchwad(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title"><span className='common_title_span'>ICSE Tuition</span> for Class 9 in Chinchwad – Strengthening Core Knowledge</h5>
                         <p>
                             Class 9 acts as the foundation year for ICSE boards. Our <strong>ICSE tuition for Class 9th in Chinchwad</strong> covers all subjects in detail with a balanced focus on concept-building and exam readiness.
@@ -234,7 +235,7 @@ function ICSEChinchwad(){
                             This structured approach makes ASQUARE the preferred choice for the <strong>Best 9th ICSE classes in Chinchwad, Pimple Saudagar, and Akurdi.</strong>
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
@@ -243,10 +244,10 @@ function ICSEChinchwad(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h2 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Chinchwad – Focused Board Exam Preparation</h2>
                         <p>
                             Class 10 is the most crucial year in school academics. At <strong>ASQUARE Academy Chinchwad, our ICSE tuition for Class 10th</strong> is entirely result-oriented and exam-focused.
@@ -277,7 +278,7 @@ function ICSEChinchwad(){
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h5>
                         <p className='para_light'>At ASQUARE Academy Chinchwad, we use a <strong>student-focused methodology:</strong></p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
@@ -438,7 +439,7 @@ function ICSEChinchwad(){
                     <h5 className="common_title title-light">Then ASQUARE Academy Chinchwad is your trusted partner in ICSE academic success.</h5>
                     <p className='para_light'>Visit our Chinchwad centre today, easily accessible from Pimpri, Nigdi, Pimple Saudagar, Akurdi, Ravet, Moshi, Bhosari, Sahu Nagar, Spine City & Indrayani Nagar.</p>
                     <p className='para_light'>Call now to book your free demo class and enquire about admissions and fees.</p>
-                    <a href="#"><button class="button mt-3">Know More</button></a>
+                    <a href="/"><button class="button mt-3">Know More</button></a>
                 </div>
             </div>
         </section>

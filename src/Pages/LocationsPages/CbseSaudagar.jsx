@@ -6,8 +6,8 @@ import Footer from '../../Components/Footer/Footer.jsx';
 import Loading from '../Loading.jsx';
 import MobileForm from '../../Components/Mobileform/MobileForm.jsx';
 import '../locationspage.css';
-import locationBGImage from '../../Assets/locationPageImages/cbscbgbanner.jpg';
-import MobileBGImage from '../../Assets/locationPageImages/location-mobileBG.jpg';
+import locationBGImage from '../../Assets/slider/CBSE-slider-pc.jpeg';
+import MobileBGImage from '../../Assets/slider/CBSE-slider-mobile.jpeg';
 import MethodologyBg from '../../Assets/locationPageImages/methodologyBG1.jpg';
 import image1 from '../../Assets/locationPageImages/CISEPuneimage1.jpg';
 import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
@@ -124,6 +124,7 @@ function CBSESaudagar(){
   }
 }
             `}</script>
+            <meta name="robots" content="index, follow" />
             <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
@@ -158,10 +159,10 @@ function CBSESaudagar(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h1 className="common_title"><span className='common_title_span'>Trusted CBSE Coaching Institute </span>Pimple Saudagar for 8th, 9th & 10th.</h1>
                         <p>
                             At <strong>ASQUARE Academy Pimple Saudagar,</strong> we provide the <strong>best CBSE tuition for Class 8th, 9th & 10th</strong> with a strong focus on concept clarity, exam-oriented preparation, and overall confidence building. 
@@ -265,35 +266,32 @@ function CBSESaudagar(){
             </div>
         </section>
 
-        <section className="leftright_section padd_bottom">
+        <section className="leftright_section padd">
             <div className="container">
-                <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h3 className="common_title"><span className='common_title_span'>Our CBSE</span> Foundation Courses in Pimple Saudagar</h3>
-                        <h6 className="common_subtitle">Best 8th CBSE Classes in Pimple Saudagar</h6>
-                        <p>
-                            Our <strong>CBSE tuition for Class 8th in Pimple Saudagar </strong> is designed to build strong fundamentals in Maths, Science, and English. With interactive learning and practice-based teaching, students develop the confidence to progress smoothly to higher classes.
-                        </p>
-                        <ul className="common_ul">
-                            <li><span>Focus on core fundamentals</span></li>
-                            <li><span>Worksheets & assignments for extra practice</span></li>
-                            <li><span>Concept-based teaching methods</span></li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
-                        <img className='common_image' src={image2} alt="" />
-                    </div>
+                <div className='row'>
+                <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
+                    <img className='common_image' src={image2} alt="" />
+                </div>
+                <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
+                    <h3 className="common_title"><span className='common_title_span'>Our CBSE</span> Foundation Courses in Pimple Saudagar</h3>
+                    <h6 className="common_subtitle">Best 8th CBSE Classes in Pimple Saudagar</h6>
+                    <p>
+                        Our <strong>CBSE tuition for Class 8th in Pimple Saudagar </strong> is designed to build strong fundamentals in Maths, Science, and English. With interactive learning and practice-based teaching, students develop the confidence to progress smoothly to higher classes.
+                    </p>
+                    <ul className="common_ul">
+                        <li><span>Focus on core fundamentals</span></li>
+                        <li><span>Worksheets & assignments for extra practice</span></li>
+                        <li><span>Concept-based teaching methods</span></li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </section>
 
         <section className="leftright_section padd_bottom">
             <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
-                        <img className='common_image' src={image3} alt="" />
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="row row_reve align-items-center">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h4 className="common_title"><span className='common_title_span'>Best 9th CBSE</span> Classes in Pimple Saudagar</h4>
                         <p>
                             Class 9 is a crucial stage where students transition to advanced learning. Our CBSE tuition for Class 9th in Pimple Saudagar ensures syllabus completion, practice tests, and concept mastery to prepare students for Class 10.
@@ -304,14 +302,20 @@ function CBSESaudagar(){
                             <li><span>Individual support for weak areas</span></li>
                         </ul>
                     </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
+                        <img className='common_image' src={image3} alt="" />
+                    </div>
                 </div>
             </div>
         </section>
 
         <section className="leftright_section padd_bottom">
             <div className="container">
-                <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="row align-items-center">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
+                        <img className='common_image' src={image4} alt="" />
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h5 className="common_title"><span className='common_title_span'>Best 10th</span> CBSE Classes in Pimple Saudagar</h5>
                         <p>
                            Board exams demand discipline and planning. Our CBSE tuition for Class 10th in Pimple Saudagar offers structured syllabus coverage, mock tests, and strategy sessions to maximize board exam performance.
@@ -321,9 +325,6 @@ function CBSESaudagar(){
                             <li><span>Mock tests & past year paper practice</span></li>
                             <li><span>Exam tips & time management guidance</span></li>
                         </ul>
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
-                        <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
             </div>
@@ -366,10 +367,10 @@ function CBSESaudagar(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h6 className="common_title"><span className='common_title_span'>Conveniently Located</span> for Students Across Pimple Saudagar</h6>
                         <p>
                             Our Pimple Saudagar center is easily accessible to students from <strong>Rahatni, Wakad, Sangvi (Old & New), Pimple Gurav, Kasarwadi, Aundh, Baner, Balewadi, Hinjewadi, Thergaon, and other nearby PCMC areas.</strong> 
@@ -544,7 +545,7 @@ function CBSESaudagar(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title">Join <span className='common_title_span'>ASQUARE</span> Academy Today</h5>
                         <p>
                             If you are looking for the best CBSE tuition for Class 8th, 9th & 10th in Pimple Saudagar, ASQUARE Academy is the right choice. 
@@ -557,7 +558,7 @@ function CBSESaudagar(){
                             Enroll today at ASQUARE Academy Pimple Saudagar – Limited seats available. Book your free demo class now!
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-1">
                         <img className='common_image join_img' src={image7} alt="" />
                     </div>
                 </div>

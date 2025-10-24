@@ -40,7 +40,7 @@ function MHTDhanori() {
           name="keywords"
           content="MHT-CET Coaching in Dhanori Pune, Best MHT-CET Classes in Dhanori, Top CET Coaching Institute Dhanori, MHT-CET Preparation in Dhanori, ASQUARE Academy Dhanori, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Dhanori Pune, Pharmacy CET Coaching Dhanori Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Dhanori, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Dhanori Colony"
         />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{`
                 {
   "@context": "https://schema.org",

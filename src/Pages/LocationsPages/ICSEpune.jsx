@@ -14,16 +14,16 @@ import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
 import image3 from '../../Assets/locationPageImages/CISEPuneimage3.jpg';
 import image4 from '../../Assets/locationPageImages/CISEPuneimage4.jpg';
 import image5 from '../../Assets/locationPageImages/CISEPuneimage5.jpg';
-import image7 from '../../Assets/locationPageImages/image7.jpg';
 import icon1 from '../../Assets/locationPageImages/student.png';
 
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function ICSEPune(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
-            <title>Best ICSE Tuition Classes 8th–10th in Pune | ASQUARE Academy</title>
+            <title>Best ICSE Tuition Classes 8th-10th in Pune | ASQUARE Academy</title>
             <meta name="description" content="Get the best ICSE tuition in Pune for Classes 8th, 9th & 10th with expert teachers, personalized guidance, and excellent academic results at ASQUARE Academy." />
             <meta name="keywords" content="Best 8th ICSE classes in pune, Best 10th ICSE classes in pune, Best 9th ICSE classes in pune, ICSE tution for class 10th in pune, ICSE tution for class 9th in pune, ICSE tution for class 8th in pune" />
             <script type="application/ld+json">{`
@@ -223,7 +223,8 @@ function ICSEPune(){
                     ]
                 }
                 `}</script>
-
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />
@@ -257,10 +258,10 @@ function ICSEPune(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h1 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Pune & PCMC for 8th, 9th & 10th Students</h1>
                         <p>
                             Academic success in ICSE schools requires more than just classroom learning. The ICSE syllabus is vast, detail-oriented, 
@@ -277,14 +278,14 @@ function ICSEPune(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h2 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching?</h2>
                         <p>
                             Our coaching programs are built to align with the ICSE syllabus and exam requirements. We understand that each student has unique learning needs, 
                             so our approach focuses on concept clarity, regular practice, and personalised attention.
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image2} alt="" />
                     </div>
                 </div>
@@ -382,10 +383,10 @@ function ICSEPune(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image3} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h4 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Pune – Building the Right Foundation</h4>
                         <p>
                             Class 8 is the stage where students transition into more complex subjects. Our <strong>ICSE Class 8 tuition in Pune</strong> ensures that students master their basics while developing problem-solving skills.
@@ -411,7 +412,7 @@ function ICSEPune(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title"><span className='common_title_span'>ICSE Tuition</span> for Class 9 in Pune – Strengthening Core Knowledge</h5>
                         <p>
                             Class 9 plays a pivotal role in shaping board exam preparation. The syllabus is detailed, and students must learn to approach subjects with depth. 
@@ -428,7 +429,7 @@ function ICSEPune(){
                             With consistent guidance, students gain confidence in tackling complex topics, making Class 10 preparation smoother and more effective.
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
@@ -437,10 +438,10 @@ function ICSEPune(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h6 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Pune – Focused Board Exam Preparation</h6>
                         <p>
                             Class 10 is the turning point in a student’s academic journey, where board exam results shape future opportunities. At ASQUARE Academy, our <strong>ICSE Class 10 tuition in Pune</strong> focuses on thorough preparation and result-oriented strategies.
@@ -472,7 +473,7 @@ function ICSEPune(){
                         <h6 className="common_title title-light"><span className='common_title_span'>Our</span> Teaching Methodology</h6>
                         <p className='para_light'>At ASQUARE Academy, we believe effective learning is a blend of teaching, practice, and evaluation. Our methodology includes:</p>
                         <p className='para_light'>This structured approach ensures balanced academic growth and exam success.</p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="methodoloy_itembox">
@@ -656,7 +657,7 @@ function ICSEPune(){
                     <h5 className="common_title title-light">ASQUARE Academy is your trusted partner in academic success.</h5>
                         <p className='para_light'>Visit us at branches across Camp, Koregaon Park, Viman Nagar, Hadapsar, Kothrud, Baner, Pimple Saudagar, Pimpri, Nigdi, and Chinchwad.</p>
                         <p className='para_light'>Call today to enquire about batch timings and fees.</p>
-                        <a href="#"><button class="button mt-3">Know More</button></a>
+                        <a href="/"><button class="button mt-3">Know More</button></a>
                 </div>
             </div>
         </section>

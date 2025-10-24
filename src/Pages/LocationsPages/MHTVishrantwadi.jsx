@@ -40,7 +40,7 @@ function MHTVishrantwadi() {
           name="keywords"
           content="MHT-CET Coaching in Vishrantwadi Pune, Best MHT-CET Classes in Vishrantwadi, Top CET Coaching Institute Vishrantwadi, MHT-CET Preparation in Vishrantwadi, ASQUARE Academy Vishrantwadi, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Vishrantwadi Pune, Pharmacy CET Coaching Vishrantwadi Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Vishrantwadi, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Vishrantwadi Colony"
         />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",

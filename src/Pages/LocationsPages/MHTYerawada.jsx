@@ -40,7 +40,7 @@ function MHTYerawada() {
           name="keywords"
           content="MHT-CET Coaching in Yerwada Pune, Best MHT-CET Classes in Yerwada, Top CET Coaching Institute Yerwada, MHT-CET Preparation in Yerwada, ASQUARE Academy Yerwada, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Yerwada Pune, Pharmacy CET Coaching Yerwada Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Yerwada, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Yerwada Colony"
         />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{`
         {
   "@context": "https://schema.org",

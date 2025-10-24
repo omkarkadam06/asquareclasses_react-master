@@ -6,8 +6,8 @@ import Footer from '../../Components/Footer/Footer.jsx';
 import Loading from '../Loading.jsx';
 import MobileForm from '../../Components/Mobileform/MobileForm.jsx';
 import '../locationspage.css';
-import locationBGImage from '../../Assets/locationPageImages/cbscbgbanner.jpg';
-import MobileBGImage from '../../Assets/locationPageImages/location-mobileBG.jpg';
+import locationBGImage from '../../Assets/slider/ICSEsliderPC.jpeg';
+import MobileBGImage from '../../Assets/slider/ICSEslidermobile.jpeg';
 import MethodologyBg from '../../Assets/locationPageImages/methodologyBG1.jpg';
 import image1 from '../../Assets/locationPageImages/CISEPuneimage1.jpg';
 import image2 from '../../Assets/locationPageImages/CISEPuneimage2.jpg';
@@ -116,7 +116,7 @@ function ICSEMoshi(){
 }
 
             `}</script>
-            <meta name="robots" content="noindex, nofollow" />
+            <meta name="robots" content="index, follow" />
             <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
@@ -151,10 +151,10 @@ function ICSEMoshi(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image1} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h1 className="common_title"><span className='common_title_span'>Best ICSE Board</span> Tuition Classes in Moshi for 8th, 9th & 10th Students</h1>
                         <p>
                             The ICSE syllabus is comprehensive and requires in-depth subject knowledge. For Classes 8th, 9th, and 10th, students often need structured guidance to handle multiple subjects effectively.
@@ -173,13 +173,13 @@ function ICSEMoshi(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h2 className="common_title"><span className='common_title_span'>Why Choose</span> ASQUARE Academy for ICSE Coaching in Moshi?</h2>
                         <p>
                             We design our coaching programs to suit the ICSE curriculum and exam requirements. Our goal is to provide <strong>concept clarity, consistent practice, and personalised support.</strong>
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image2} alt="" />
                     </div>
                 </div>
@@ -277,10 +277,10 @@ function ICSEMoshi(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image3} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h4 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 8 in Moshi - Building Strong Fundamentals</h4>
                         <p>
                             Class 8 is the starting point for advanced ICSE preparation. Our <strong>ICSE tuition for Class 8th in Moshi</strong> focuses on developing clarity and confidence in every subject.
@@ -305,7 +305,7 @@ function ICSEMoshi(){
         <section className="leftright_section padd_bottom">
             <div className="container">
                 <div className="row row_reve align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                         <h5 className="common_title"><span className='common_title_span'>ICSE Tuition</span> for Class 9 in Moshi - Strengthening Core Knowledge</h5>
                         <p>
                             Class 9 is crucial for building the base for ICSE boards. Our <strong>ICSE tuition for Class 9th in Moshi</strong> ensures thorough coverage of the syllabus and exam readiness.
@@ -324,7 +324,7 @@ function ICSEMoshi(){
                             That’s why we’re known for the <strong>Best 9th ICSE classes in Moshi, Alandi & Chikhali.</strong>
                         </p>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
                         <img className='common_image' src={image4} alt="" />
                     </div>
                 </div>
@@ -333,10 +333,10 @@ function ICSEMoshi(){
         <section className="leftright_section padd">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 img-col">
+                    <div className="col-lg-6 col-md-12 col-sm-12 img-col order-2 order-lg-1">
                         <img className='common_image' src={image5} alt="" />
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                         <h6 className="common_title"><span className='common_title_span'>ICSE Tuition </span> for Class 10 in Moshi - Focused Board Exam Preparation</h6>
                         <p>
                             Class 10 marks the most important academic milestone. At <strong>ASQUARE Academy Moshi,</strong> our ICSE tuition for Class 10th is structured to achieve excellent board exam results.
