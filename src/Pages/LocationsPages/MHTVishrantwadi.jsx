@@ -9,8 +9,8 @@ import "../locationspage.css";
 import locationBGImage from "../../Assets/locationPageImages/mht-cet/desktop-bg-img.jpeg";
 import MobileBGImage from "../../Assets/locationPageImages/mht-cet/mobile-bg-image.jpeg";
 import MethodologyBg from "../../Assets/locationPageImages/teaching-methodology.jpeg";
-import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 3.jpeg";
-import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 4.jpeg";
+import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 5.jpeg";
+import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 1.jpeg";
 import location from "../../Assets/locationPageImages/mht-cet/location.png";
 import personalized from "../../Assets/locationPageImages/mht-cet/personalized.png";
 import qualified from "../../Assets/locationPageImages/mht-cet/qualified.png";
@@ -22,6 +22,7 @@ const Reviews = React.lazy(() =>
 );
 
 function MHTVishrantwadi() {
+  const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       <Helmet>
@@ -29,7 +30,7 @@ function MHTVishrantwadi() {
           Best MHT-CET Coaching Classes in Vishrantwadi Pune | ASQUARE Academy
         </title>
         <meta
-          name="titel"
+          name="title"
           content="MHT-CET Tuition Classes in Vishrantwadi, Pune | Asquare Academy"
         />
         <meta
@@ -40,7 +41,6 @@ function MHTVishrantwadi() {
           name="keywords"
           content="MHT-CET Coaching in Vishrantwadi Pune, Best MHT-CET Classes in Vishrantwadi, Top CET Coaching Institute Vishrantwadi, MHT-CET Preparation in Vishrantwadi, ASQUARE Academy Vishrantwadi, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Vishrantwadi Pune, Pharmacy CET Coaching Vishrantwadi Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Vishrantwadi, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Vishrantwadi Colony"
         />
-        <meta name="robots" content="noindex, nofollow" />
         <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",
@@ -167,6 +167,7 @@ function MHTVishrantwadi() {
                     ]
                     }
                 `}</script>
+        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
       <Navbar />
       <Header />
