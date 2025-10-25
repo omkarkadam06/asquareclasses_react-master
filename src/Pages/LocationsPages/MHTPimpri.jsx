@@ -21,14 +21,174 @@ import weekly_chapter from '../../Assets/locationPageImages/mht-cet/weekly_chapt
 const Reviews = React.lazy(() => import('../../Components/Reviews/Reviews.jsx'));
 
 function MHTPimpri(){
+    const canonicalUrl = window.location.origin + window.location.pathname;
     return(
         <>
         <Helmet>
             <title>Best MHT-CET Coaching Classes in Pimpri, Pune | ASQUARE Academy</title>
-            <meta name="titel" content="MHT-CET Tuition Classes in Pimpri, Pune - Class 8, 9 & 10 | Asquare Academy"/>
+            <meta name="title" content="MHT-CET Tuition Classes in Pimpri, Pune - Class 8, 9 & 10 | Asquare Academy"/>
             <meta name="description" content="Join ASQUARE Academy, the leading institute for MHT-CET coaching in Pimpri Pune. Expert faculty, small batches, and mock tests for students from Chinchwad, Bhosari, Kasarwadi, Pimple Saudagar." />
             <meta name="keywords" content="MHT-CET Coaching in Pimpri Pune, Best MHT-CET Classes in Pimpri, Top CET Coaching Institute Pimpri, MHT-CET Preparation in Pimpri, ASQUARE Academy Pimpri, MHT-CET Coaching near Chinchwad, CET Classes near Bhosari, Engineering CET Coaching Pimpri Pune, Pharmacy CET Coaching Pimpri Pune, Top CET Institute in PCMC Pune, MHT-CET Classes in Nehrunagar Pimpri, MHT-CET Coaching near Sant Tukaram Nagar, Best CET Classes near Pimpri Colony" />
             <meta name="robots" content="index, follow" />
+            <script type="application/ld+json">{`
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune",
+      "name": "MHT-CET Coaching Classes in Pimpri Pune | Best CET Institute & Classes – ASQUARE Academy",
+      "description": "Join MHT-CET coaching classes in Pimpri Pune for Engineering & Pharmacy aspirants. Weekly mock tests, structured programs, and flexible online/offline batches for XI, XII & repeaters – ASQUARE Academy.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ASQUARE Academy",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+        }
+      },
+      "breadcrumb": {
+        "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune#breadcrumb"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "MHT-CET Coaching Classes Pimpri Pune",
+          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune"
+        }
+      ]
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "MHT-CET Coaching Classes Pimpri",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9766118877",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pimpri",
+        "addressRegion": "Pune",
+        "addressCountry": "IN"
+      },
+      "description": "MHT-CET coaching classes in Pimpri Pune provide weekly mock tests, structured programs, and flexible online/offline batches for XI, XII & repeaters preparing for Engineering and Pharmacy."
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "MHT-CET Coaching Classes in Pimpri Pune",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pimpri-pune",
+      "telephone": "+91-9766118877",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pimpri, Pune, Maharashtra",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411018",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.6298",
+        "longitude": "73.7997"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/asquareclasses/",
+        "https://www.instagram.com/asquareclasses/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can join MHT-CET coaching classes at Pimpri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students in Class XI, XII, and repeaters preparing for Engineering or Pharmacy entrance exams can join."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which subjects are taught?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Physics, Chemistry, Mathematics (for PCM) and Biology (for PCB) are taught in the coaching classes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mock tests part of the course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — weekly tests, topic-wise quizzes, and full-length CET mock exams are conducted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the available batch options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2-year integrated, 1-year target, crash course, and repeater batches are available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide progress tracking and reports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — weekly analysis, feedback sessions, and PTMs are conducted to track performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which nearby areas are covered by ASQUARE Pimpri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students from Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, Pimple Saudagar, Nehrunagar, Sant Tukaram Nagar, MIDC Pimpri, and Pimpri Colony attend regularly."
+          }
+        }
+      ]
+    }
+  ]
+}
+            `}</script>
+        <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Navbar />
         <Header />

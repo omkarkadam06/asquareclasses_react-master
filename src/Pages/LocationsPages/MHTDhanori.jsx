@@ -9,8 +9,8 @@ import "../locationspage.css";
 import locationBGImage from '../../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/mh-cet slider.jpeg';
 import MobileBGImage from "../../Assets/Asqare Banner - JEE, NEET, Foundation CET/CET banner/mh-cet slider mob.jpeg";
 import MethodologyBg from "../../Assets/locationPageImages/teaching-methodology.jpeg";
-import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 5.jpeg";
-import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 1.jpeg";
+import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 3.jpeg";
+import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 4.jpeg";
 import location from "../../Assets/locationPageImages/mht-cet/location.png";
 import personalized from "../../Assets/locationPageImages/mht-cet/personalized.png";
 import qualified from "../../Assets/locationPageImages/mht-cet/qualified.png";
@@ -22,6 +22,7 @@ const Reviews = React.lazy(() =>
 );
 
 function MHTDhanori() {
+  const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       <Helmet>
@@ -29,7 +30,7 @@ function MHTDhanori() {
           MHT-CET Coaching Classes in Dhanori Pune | ASQUARE Academy
         </title>
         <meta
-          name="titel"
+          name="title"
           content="MHT-CET Coaching Classes in Dhanori Pune | ASQUARE Academy"
         />
         <meta
@@ -167,6 +168,7 @@ function MHTDhanori() {
   ]
 }
                 `}</script>
+        <link rel="canonical" href={canonicalUrl} />
       </Helmet>
       <Navbar />
       <Header />

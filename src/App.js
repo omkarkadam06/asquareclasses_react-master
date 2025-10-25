@@ -47,6 +47,16 @@ import MHTPimpri from './Pages/LocationsPages/MHTPimpri';
 import MHTVishrantwadi from './Pages/LocationsPages/MHTVishrantwadi';
 import MHTDhanori from './Pages/LocationsPages/MHTDhanori';
 import MHTYerawada from './Pages/LocationsPages/MHTYerawada';
+import MHTTingreNagar from './Pages/LocationsPages/MHTTingreNagar';
+import MHTLohegaon from './Pages/LocationsPages/MHTLohegaon';
+import MHTKalyaniNagar from './Pages/LocationsPages/MHTKalyaniNagar';
+import MHTVimanNagar from './Pages/LocationsPages/MHTVimanNagar';
+import MHTMoshi from './Pages/LocationsPages/MHTMoshi';
+import MHTHadapsar from './Pages/LocationsPages/MHTHadapsar';
+import MHTNigdi from './Pages/LocationsPages/MHTNigdi';
+import MHTBhosari from './Pages/LocationsPages/MHTBhosari';
+import MHTChinchwad from './Pages/LocationsPages/MHTChinchwad';
+import MHTChakan from './Pages/LocationsPages/MHTChakan';
 
 function App() {
   return (
@@ -244,6 +254,16 @@ function App() {
           <Route path='/mht-cet-coaching-classes-in-vishrantwadi-pune' element={<MHTVishrantwadi />} />
           <Route path='/mht-cet-coaching-classes-institute-in-dhanori-pune' element={<MHTDhanori />} />
           <Route path='/mht-cet-coaching-classes-institute-in-yerawada-pune' element={<MHTYerawada />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-tingre-nagar-pune' element={<MHTTingreNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-lohegaon-pune' element={<MHTLohegaon />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-kalyani-nagar-pune' element={<MHTKalyaniNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-viman-nagar-pune' element={<MHTVimanNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-moshi-pune' element={<MHTMoshi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-hadapsar-pune' element={<MHTHadapsar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-nigdi-pune' element={<MHTNigdi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-bhosari-pune' element={<MHTBhosari />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-chinchwad-pune' element={<MHTChinchwad />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-chakan-pune' element={<MHTChakan />} />
         </Routes>
       </BrowserRouter>
     </div>
