@@ -30,6 +30,113 @@ function CbsepcmcPune(){
             <meta name="keywords" content="cbse tuition classes in pcmc pune, best cbse coaching in pcmc, cbse classes for 8th 9th 10th in pcmc, cbse tuition center pcmc, top cbse institute in pcmc, cbse coaching for class 8 in pcmc, cbse coaching for class 9 in pcmc, cbse coaching for class 10 in pcmc, cbse board tuition in pcmc, tuition for cbse students pcmc, cbse tuition in pimpri, cbse coaching in chinchwad, cbse classes in nigdi, cbse tuition in pimple saudagar, cbse coaching in wakad, cbse classes in ravet, cbse tuition in moshi, cbse coaching in bhosari, cbse tuition in akurdi, small batch cbse tuition pcmc, cbse tuition with doubt-solving pcmc, best cbse tutors pcmc, regular test series cbse tuition pcmc, affordable cbse coaching pcmc" />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={canonicalUrl} />
+            <script type="application/ld+json">{`     
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/cbse-tuition-pcmc-pune-8th-9th-10th/",
+      "url": "https://www.asquareclasses.com/cbse-tuition-pcmc-pune-8th-9th-10th/",
+      "name": "CBSE Tuition Classes in PCMC Pune | 8th 9th 10th | ASQUARE Classes",
+      "description": "Join ASQUARE Classes for the best CBSE tuition in PCMC, Pune. Expert coaching for 8th, 9th & 10th with small batches, doubt-solving & regular test series.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ASQUARE Classes",
+        "url": "https://www.asquareclasses.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": " https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CBSE Tuition",
+          "item": "https://www.asquareclasses.com/cbse/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CBSE Tuition in PCMC Pune"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide CBSE tuition for Class 8th in PCMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide the best 8th CBSE classes in PCMC focusing on fundamentals and subject clarity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose ASQUARE Academy for Class 9 tuition in PCMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our CBSE tuition for Class 9th in PCMC ensures complete syllabus coverage, tests, and personal mentoring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you prepare Class 10 students for CBSE board exams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We conduct mock tests, past year paper practice, and revisions in our Class 10 CBSE tuition in PCMC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide study material?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, updated notes and worksheets aligned with the CBSE syllabus are given."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide online coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, both online and offline CBSE classes are available for Classes 8th, 9th & 10th in PCMC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which subjects are taught?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We teach Maths, Science, English & Social Science for all three classes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which nearby areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve students from Pimpri, Chinchwad, Nigdi, Akurdi, Ravet, Pimple Saudagar, Pimple Gurav, Sangvi, Rahatani, Kasarwadi, Moshi, Bhosari, Talwade, Punawale, Hinjewadi, Spine Road, and Dehu Road."
+          }
+        }
+      ]
+    }
+  ]
+}
+           `}</script>
         </Helmet>
         <Navbar />
         <Header />

@@ -29,6 +29,121 @@ function Cbsetuitionpimpri(){
             <meta name="keywords" content="Best 8th cbse classes in Pimpri-Chinchwad, Best 10th cbse classes in Pimpri-Chinchwad, Best 9th cbse classes in Pimpri-Chinchwad, CBSE tution for class 10th in Pimpri-Chinchwad, CBSE tution for class 9th in Pimpri-Chinchwad, CBSE tution for class 8th in Pimpri-Chinchwad" />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={canonicalUrl} />
+            <script type="application/ld+json">{`
+            {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/cbse-tuition-pimpri-chinchwad-pune-8th-9th-10th/",
+      "url": "https://www.asquareclasses.com/cbse-tuition-pimpri-chinchwad-pune-8th-9th-10th/",
+      "name": "CBSE Tuition in Pimpri-Chinchwad for Class 8th, 9th & 10th | ASQUARE Academy",
+      "description": "ASQUARE Academy offers the best CBSE tuition in Pimpri-Chinchwad for Classes 8th, 9th & 10th with expert teachers, study material, and board exam preparation.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ASQUARE Academy",
+        "url": "https://www.asquareclasses.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": " https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+        }
+      },
+      "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide CBSE tuition for Class 8th in Pimpri-Chinchwad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. At ASQUARE Academy, we offer the best 8th CBSE classes in Pimpri-Chinchwad, focusing on building strong fundamentals in Mathematics, Science, and English. Our teaching approach ensures students gain clarity in concepts at an early stage, which prepares them for the challenges of higher classes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes ASQUARE Academy the best choice for Class 9th CBSE tuition in Pimpri-Chinchwad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our Class 9th CBSE tuition in Pimpri-Chinchwad is designed to provide in-depth learning with special emphasis on critical concepts, problem-solving, and logical reasoning. Along with syllabus coverage, we conduct regular assignments, tests, and doubt-solving sessions. This systematic approach helps students gain confidence for Class 10th and beyond."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you prepare Class 10th students in Pimpri-Chinchwad for CBSE board exams?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At ASQUARE Academy, our Class 10th CBSE tuition in Pimpri-Chinchwad ensures complete NCERT coverage, chapter-wise mock tests, and previous years’ paper practice. We also provide guidance on exam writing techniques, time management strategies, and revision plans to help students perform exceptionally in their board exams."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide study material for students?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We provide updated study material, notes, and worksheets for all classes (8th, 9th & 10th). Our study resources are carefully designed by subject experts to make learning easy and effective. They act as a handy tool for quick revisions before school exams and boards."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you track student progress at ASQUARE Pimpri-Chinchwad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We follow a structured evaluation system that includes weekly chapter tests, monthly assessments, and detailed feedback reports. Parents are regularly informed about their child’s progress, and special attention is given to areas that require improvement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer online CBSE tuition in Pimpri-Chinchwad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Along with classroom coaching, we also provide online CBSE tuition for Class 8th, 9th, and 10th in Pimpri-Chinchwad. This ensures flexibility for students who prefer learning from home while maintaining the same quality as offline sessions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What subjects are covered in your CBSE tuition programs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We provide coaching for Mathematics, Science, English, and Social Science across Classes 8th, 9th, and 10th. Each subject is taught by experienced faculty who specialize in CBSE curriculum and board exam preparation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which nearby areas of Pimpri-Chinchwad do you serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our Pimpri-Chinchwad center is easily accessible for students from Nigdi, Pimple Saudagar, Wakad, Thergaon, Ravet, Moshi, Bhosari, Akurdi, Chikhali, and Spine City. Many parents from these areas choose ASQUARE Academy for the best CBSE coaching classes in PCMC due to our results-driven teaching approach."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CBSE Tuition",
+          "item": "https://www.asquareclasses.com/cbse-tuition/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CBSE Tuition in Pimpri-Chinchwad for Class 8th, 9th & 10th"
+        }
+      ]
+    }
+  ]
+}
+        `}</script>
         </Helmet>
         <Navbar />
         <Header />
