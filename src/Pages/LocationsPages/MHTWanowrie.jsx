@@ -6,11 +6,11 @@ import Footer from "../../Components/Footer/Footer.jsx";
 import Loading from "../Loading.jsx";
 import MobileForm from "../../Components/Mobileform/MobileForm.jsx";
 import "../locationspage.css";
-import locationBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-desktop-bg2.0.jpeg";
-import MobileBGImage from "../../Assets/locationPageImages/mht-cet/mhtcet-mobile-bg2.0.jpeg";
+import locationBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-desktop-bg6.0.jpeg";
+import MobileBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-mobile-bg6.0.jpeg";
 import MethodologyBg from "../../Assets/locationPageImages/teaching-methodology.jpeg";
-import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 10.jpeg";
-import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 11.jpeg";
+import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 14.jpeg";
+import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 15.jpeg";
 import location from "../../Assets/locationPageImages/mht-cet/location.png";
 import personalized from "../../Assets/locationPageImages/mht-cet/personalized.png";
 import qualified from "../../Assets/locationPageImages/mht-cet/qualified.png";
@@ -21,53 +21,73 @@ const Reviews = React.lazy(() =>
   import("../../Components/Reviews/Reviews.jsx")
 );
 
-function MHTAlandi() {
+function MHTWanowrie() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching in Alandi Pune | Best CET Coaching Classes - ASQUARE
-          Academy
+          MHT-CET Coaching in Wanowrie Pune | Best CET Classes - ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching in Alandi Pune | Best CET Coaching Classes - ASQUARE Academy"
+          content="MHT-CET Coaching in Wanowrie Pune | Best CET Classes - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the best MHT-CET Coaching Classes in Alandi Pune. Expert faculty, mock tests &amp; flexible batches for Engineering &amp; Pharmacy CET preparation. ASQUARE Academy."
+          content="Join top MHT-CET Coaching Classes in Wanowrie Pune for Engineering &amp; Pharmacy aspirants. Expert faculty, mock tests &amp; online options at ASQUARE Academy."
         />
         <meta
           name="keywords"
-          content="MHT-CET Coaching in Alandi Pune, Best MHT-CET Classes in Alandi, Top CET Coaching Institute Alandi, MHT-CET Preparation in Alandi, ASQUARE Academy Alandi, MHT-CET Coaching near Moshi, CET Classes near Charholi, Engineering CET Coaching Alandi Pune, Pharmacy CET Coaching Alandi Pune, Top CET Institute in North Pune, MHT-CET Classes in Dighi, Best CET Coaching near Markal, CET Coaching near Chimbali, MHT-CET Classes near Dehu Road, CET Institute near Dudulgaon"
+          content="MHT-CET Coaching in Wanowrie Pune, Best MHT-CET Classes in Wanowrie, Top CET Coaching Institute Wanowrie, MHT-CET Preparation in Wanowrie, ASQUARE Academy Wanowrie, MHT-CET Coaching near Kondhwa, CET Classes near Fatima Nagar, Engineering CET Coaching Wanowrie Pune, Pharmacy CET Coaching Wanowrie Pune, Top CET Institute in South Pune, MHT-CET Classes near NIBM, Best CET Coaching near Camp Pune, CET Coaching near Lullanagar, MHT-CET Coaching near Salunke Vihar, CET Institute near Market Yard"
         />
         <script type="application/ld+json">{`
         {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "LocalBusiness",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wanowrie-pune#localbusiness",
+      "name": "ASQUARE Academy Wanowrie",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wanowrie-pune",
+      "telephone": "9922351375",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wanowrie, Pune, Maharashtra",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411040",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.4900",
+        "longitude": "73.9000"
+      },
+      "sameAs": [
+        "https://www.asquareclasses.com/",
+        "https://www.facebook.com/asquareacademy/",
+        "https://www.instagram.com/asquareacademy/"
+      ]
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "ASQUARE Academy",
+      "url": "https://www.asquareclasses.com/",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "description": "ASQUARE Academy provides MHT-CET coaching and classes in Wanowrie Pune for Engineering and Pharmacy aspirants."
+    },
+    {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-alandi-pune",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-alandi-pune",
-      "name": "MHT-CET Coaching in Alandi Pune | Best CET Coaching Classes - ASQUARE Academy",
-      "description": "Join the best MHT-CET Coaching Classes in Alandi Pune. Expert faculty, mock tests & flexible batches for Engineering & Pharmacy CET preparation. ASQUARE Academy.",
-      "publisher": {
-        "@id": "#asquareacademy"
-      },
-      "breadcrumb": {
-        "@id": "#breadcrumb"
-      },
-      "about": {
-        "@id": "#localbusiness"
-      },
-      "mainEntity": {
-        "@id": "#faqpage"
-      }
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wanowrie-pune#webpage",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wanowrie-pune",
+      "name": "MHT-CET Coaching Classes in Wanowrie Pune | ASQUARE Academy",
+      "description": "Best MHT-CET Coaching Classes in Wanowrie Pune for Engineering & Pharmacy students. Expert faculty, mock tests & online learning options at ASQUARE Academy."
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -78,85 +98,33 @@ function MHTAlandi() {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "MHT-CET Coaching Classes in Alandi Pune",
-          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-alandi-pune"
+          "name": "MHT-CET Coaching Classes",
+          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wanowrie Pune"
         }
       ]
     },
     {
-      "@type": "EducationalOrganization",
-      "@id": "#asquareacademy",
-      "name": "ASQUARE Academy Alandi",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-alandi-pune",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-      },
-      "description": "ASQUARE Academy Alandi provides expert MHT-CET coaching classes with personalized learning, mock tests, and flexible programs for Engineering & Pharmacy students.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "9766118877",
-        "contactType": "Customer Service",
-        "areaServed": "IN"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Alandi",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "412105",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://www.facebook.com/asquareacademy",
-        "https://www.instagram.com/asquareacademy"
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "#localbusiness",
-      "name": "ASQUARE Academy Alandi",
-      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-alandi-pune",
-      "telephone": "9766118877",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Alandi",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "412105",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "18.6775",
-        "longitude": "73.8984"
-      },
-      "openingHours": "Mo-Su 08:00-20:00",
-      "sameAs": [
-        "https://www.facebook.com/asquareacademy",
-        "https://www.instagram.com/asquareacademy"
-      ]
-    },
-    {
       "@type": "FAQPage",
-      "@id": "#faqpage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Who can join MHT-CET coaching at ASQUARE Alandi?",
+          "name": "Who can join MHT-CET coaching at ASQUARE Wanowrie?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Students in Class XI, XII, and drop-year aspirants preparing for Engineering or Pharmacy CET can join ASQUARE Academy Alandi."
+            "text": "Students from Class XI, XII, or drop-year aspirants targeting Engineering or Pharmacy can join MHT-CET coaching at ASQUARE Wanowrie."
           }
         },
         {
           "@type": "Question",
-          "name": "What subjects are covered?",
+          "name": "What subjects are covered in the CET course?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The MHT-CET course includes Physics, Chemistry, Mathematics (for Engineering) and Biology (for Pharmacy)."
+            "text": "We cover Physics, Chemistry, Mathematics (for PCM), and Biology (for PCB) in our comprehensive CET course."
           }
         },
         {
@@ -164,7 +132,7 @@ function MHTAlandi() {
           "name": "Are mock tests conducted regularly?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — topic-wise and full-length MHT-CET mock tests are part of every batch at ASQUARE Alandi."
+            "text": "Yes — weekly topic tests and full-length CET mock exams are part of every batch to strengthen exam readiness."
           }
         },
         {
@@ -172,30 +140,30 @@ function MHTAlandi() {
           "name": "What batch options are available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We offer 2-year integrated, 1-year target, crash course, and dropper batches to match different learning goals."
+            "text": "ASQUARE Wanowrie offers 2-year integrated, 1-year target, crash course, and dropper batches for MHT-CET preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "Which nearby areas are served by ASQUARE Alandi?",
+          "name": "Which nearby areas are covered by the Wanowrie branch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Students from Moshi, Charholi, Dighi, Markal, Chimbali, Dudulgaon, Dehu Road, Talwade, and Alandi Devachi attend regularly."
+            "text": "Students from Fatima Nagar, Kondhwa, Camp, NIBM Road, Lullanagar, Salunke Vihar, and Market Yard attend classes regularly."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide online MHT-CET classes?",
+          "name": "Do you offer online MHT-CET coaching?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, ASQUARE Alandi offers both offline and online MHT-CET coaching for convenience and flexibility."
+            "text": "Yes — ASQUARE Academy offers both offline and online MHT-CET coaching for flexible learning."
           }
         }
       ]
     }
   ]
 }
-        `}</script>
+       `}</script>
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
@@ -236,27 +204,23 @@ function MHTAlandi() {
               <h1 className="common_title">
                 Crack MHT-CET with Expert Coaching at{" "}
                 <span className="common_title_span">ASQUARE Academy ,</span>{" "}
-                Alandi.
+                Wanowrie.
               </h1>
               <p>
-                Looking for the{" "}
-                <strong>Best MHT-CET coaching classes in Alandi, Pune?</strong>{" "}
-                At <strong>ASQUARE Academy Alandi, </strong> we help students
-                prepare for
+                Are you searching for the{" "}
+                <strong>Best MHT-CET coaching classes in Wanowrie, Pune?</strong>{" "}
+                At <strong>ASQUARE Academy Wanowrie, </strong> we prepare students for
                 <strong> Engineering (PCM)</strong> and{" "}
-                <strong>Pharmacy (PCB)</strong> streams with in-depth conceptual
-                teaching, focused practice sessions, and regular performance
-                assessments.
+                <strong>Pharmacy (PCB)</strong> streams with a perfect blend of
+                <strong>concept-based learning, regular practice tests, and expert mentoring.</strong>
               </p>
               <p>
-                Our Alandi centre serves as a prime location for students from{" "}
+                Our Wanowrie branch is easily accessible for students from{" "}
                 <strong>
-                  Moshi, Charholi, Dighi, Markal, Chimbali, Dudulgaon, Dehu
-                  Road, and Talwade,{" "}
+                  Fatima Nagar, Kondhwa, Camp, NIBM Road, Lullanagar, Salunke Vihar, and Market Yard,,{" "}
                 </strong>
-                offering top-quality{" "}
-                <strong>MHT-CET coaching in North Pune </strong>under
-                experienced mentors and a results-oriented system.
+                making it one of the top destinations for{" "}
+                <strong>MHT-CET coaching in South Pune. </strong>
               </p>
             </div>
           </div>
@@ -273,45 +237,40 @@ function MHTAlandi() {
                 >
                   Why Choose
                 </span>{" "}
-                ASQUARE Academy for MHT-CET in Alandi?
+                ASQUARE Academy for MHT-CET in Wanowrie?
               </h2>
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Expert Faculty:</strong> Subject specialists in
-                    Physics, Chemistry, Maths, and Biology.
+                    <strong>Experienced Faculty:</strong> Expert mentors for Physics, Chemistry, Maths, and Biology.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Comprehensive Curriculum:</strong> Designed
-                    according to the latest{" "}
-                    <strong>MHT-CET syllabus and exam pattern.</strong>
+                    <strong>Updated Curriculum:</strong> Covers the entire{" "}
+                    <strong>MHT-CET syllabus.</strong> with the latest pattern.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Small Batches:</strong> Personalized guidance and
-                    focused mentoring.
+                    <strong>Small Batches:</strong> Personalized attention and interactive learning sessions.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Mock Tests &amp; Performance Analysis:</strong>{" "}
-                    Weekly topic-wise tests and full-length CET mock exams.
+                    <strong>Regular Mock Tests:</strong>{" "}
+                    Weekly analysis and progress tracking for every student.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Integrated Learning:</strong> Balanced preparation
-                    for <strong>Board + CET exams.</strong>
+                    <strong>Integrated Preparation:</strong> Covers both
+                    <strong> Board Exams + MHT-CET syllabus</strong> effectively.
                   </span>
                 </li>
               </ul>
               <p>
-                At ASQUARE, our goal is to develop conceptual clarity,
-                strengthen problem-solving skills, and improve exam accuracy for
-                every student.
+                ASQUARE Academy’s structured learning and constant evaluation help students perform with confidence in every section of the CET exam.
               </p>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 img-col order-1 order-lg-2">
@@ -330,7 +289,7 @@ function MHTAlandi() {
             <div className="col-md-12">
               <h3 className="common_title text-center">
                 <span className="common_title_span">Key Features</span> of
-                ASQUARE Academy, Alandi:
+                ASQUARE Academy, Wanowrie:
               </h3>
             </div>
           </div>
@@ -343,7 +302,7 @@ function MHTAlandi() {
                 <img className="grid_img" src={qualified} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Experienced faculty with strong academic background.
+                    Subject-wise expert faculty with years of experience.
                   </h6>
                 </div>
               </div>
@@ -353,7 +312,7 @@ function MHTAlandi() {
                 <img className="grid_img" src={updated} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Small, focused batches for personal mentoring.
+                    Customized batch size for individual mentoring.
                   </h6>
                 </div>
               </div>
@@ -363,7 +322,7 @@ function MHTAlandi() {
                 <img className="grid_img" src={weekly_chapter} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    CET-aligned printed and digital study materials.
+                    MHT-CET-focused study material and question banks.
                   </h6>
                 </div>
               </div>
@@ -373,7 +332,7 @@ function MHTAlandi() {
                 <img className="grid_img" src={personalized} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Regular mock exams with detailed analysis.
+                    Regular mock tests and analysis reports.
                   </h6>
                 </div>
               </div>
@@ -383,12 +342,11 @@ function MHTAlandi() {
                 <img className="grid_img" src={location} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Accessible for students from
+                    Convenient for students from
                   </h6>
                   <p>
                     <strong>
-                      Moshi, Charholi, Dighi, Markal, Chimbali, Dudulgaon, Dehu
-                      Road, Talwade, and Alandi Devachi.
+                      Fatima Nagar, Kondhwa, Camp, NIBM Road, Lullanagar, Salunke Vihar, and Market Yard.
                     </strong>
                   </p>
                 </div>
@@ -405,17 +363,15 @@ function MHTAlandi() {
             <div className="col-lg-12 col-md-12 col-sm-12">
               <h4 className="common_title">Proven Results </h4>
               Students from
-              <strong> ASQUARE Academy Alandi </strong> have consistently
-              secured top ranks in<strong> MHT-CET, </strong>
-              earning admissions in reputed institutions such as
+              <strong> ASQUARE Academy Wanowrie </strong> have consistently secured top ranks in <strong> MHT-CET, </strong>
+              gaining admission into leading colleges such as
               <strong>
                 {" "}
-                COEP Pune, MIT-WPU, DY Patil Institute, VIT Pune, and Sinhgad
-                College of Engineering.{" "}
+                COEP Pune, MIT-WPU, DY Patil College, VIT Pune, and Sinhgad Institute of Technology.{" "}
               </strong>
               <p className="pt-3">
-                Our students’ success reflects our dedication to excellence,
-                focused preparation, and expert mentorship.
+                Our success comes from <strong> concept clarity, continuous evaluation, and personalized mentoring </strong>
+                - the ASQUARE advantage.
               </p>
             </div>
           </div>
@@ -435,8 +391,7 @@ function MHTAlandi() {
                 Methodology
               </h4>
               <p className="para_light">
-                This proven approach ensures consistent improvement, confidence,
-                and exam success.
+                Our approach ensures conceptual strength, exam discipline, and consistent improvement.
               </p>
               <a href="/">
                 <button class="button mt-3">Know More</button>
@@ -447,29 +402,29 @@ function MHTAlandi() {
                 <h6 className="methodology_title">
                   Interactive Conceptual Lectures:
                 </h6>
-                <span>Topic-wise in-depth teaching.</span>
+                <span>Concept-oriented classes for complete understanding.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Daily Practice Papers (DPPs):
                 </h6>
-                <span>Reinforce learning and improve accuracy.</span>
+                <span>Daily Practice Papers (DPPs) for revision and accuracy.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Weekly &amp; Monthly CET Tests:
                 </h6>
-                <span>Evaluate and strengthen problem-solving ability.</span>
+                <span>Weekly tests and mock exams to assess progress.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Doubt-Solving Sessions:</h6>
-                <span>Individual attention for challenging topics.</span>
+                <span>Regular doubt-solving sessions and feedback.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
                   Parent-Teacher Meetings (PTMs):
                 </h6>
-                <span>Regular progress tracking and academic feedback.</span>
+                <span>Parent–Teacher Meetings (PTMs) for progress updates.</span>
               </div>
             </div>
           </div>
@@ -484,7 +439,7 @@ function MHTAlandi() {
           <div className="row">
             <div className="col-md-12">
               <h5 className="common_title">
-                MHT-CET Coaching Institute in Alandi, Pune{" "}
+                MHT-CET Coaching Institute in Wanowrie, Pune{" "}
                 <span className="common_title_span">(FAQs)</span>
               </h5>
             </div>
@@ -500,7 +455,7 @@ function MHTAlandi() {
                       aria-expanded="false"
                       aria-controls="collapse1"
                     >
-                      Who can join MHT-CET coaching at ASQUARE Alandi?
+                      Who can join MHT-CET coaching at ASQUARE Wanowrie?
                     </button>
                   </h2>
                   <div
@@ -509,8 +464,7 @@ function MHTAlandi() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Students in Class XI, XII, and drop-year aspirants
-                      preparing for Engineering or Pharmacy CET.
+                      Students from Class XI, XII, or drop-year aspirants targeting Engineering or Pharmacy.
                     </div>
                   </div>
                 </div>
@@ -524,7 +478,7 @@ function MHTAlandi() {
                       aria-expanded="false"
                       aria-controls="collapse2"
                     >
-                      What subjects are covered?
+                      What subjects are covered in the CET course?
                     </button>
                   </h2>
                   <div
@@ -557,8 +511,7 @@ function MHTAlandi() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Yes — topic-wise and full-length MHT-CET mock tests are
-                      part of every batch.
+                      Yes — weekly topic tests and full-length CET mock exams are part of every batch.
                     </div>
                   </div>
                 </div>
@@ -601,7 +554,7 @@ function MHTAlandi() {
                       aria-expanded="false"
                       aria-controls="collapse4"
                     >
-                      Which nearby areas are served by ASQUARE Alandi?
+                      Which nearby areas are covered by the Wanowrie branch?
                     </button>
                   </h2>
                   <div
@@ -612,8 +565,7 @@ function MHTAlandi() {
                     <div className="accordion-body">
                       Students from{" "}
                       <strong>
-                        Moshi, Charholi, Dighi, Markal, Chimbali, Dudulgaon,
-                        Dehu Road, Talwade, and Alandi Devachi
+                        Fatima Nagar, Kondhwa, Camp, NIBM Road, Lullanagar, Salunke Vihar, and Market Yard
                       </strong>{" "}
                       attend regularly.
                     </div>
@@ -640,7 +592,7 @@ function MHTAlandi() {
                     <div className="accordion-body">
                       Yes, we offer both <strong>online</strong> and{" "}
                       <strong>offline CET coaching options</strong> for
-                      flexibility and convenience.
+                      flexible learning.
                     </div>
                   </div>
                 </div>
@@ -659,24 +611,15 @@ function MHTAlandi() {
               <strong>Course Overview </strong>
             </h3>
             <p>
-              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is
-              a state-level exam for admission into{" "}
+              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is a crucial exam for students aspiring to enter top{" "}
               <strong>
-                Engineering, Pharmacy, and Allied Science Programs
+                Engineering, Pharmacy, and Allied Science colleges
               </strong>{" "}
-              programs across Maharashtra.
+              in Maharashtra.
             </p>
             <p>
-              At <strong>ASQUARE Academy Alandi, </strong>
-              we offer structured and well-paced learning programs that help
-              students from
-              <strong>Talegaon, Alandi, Moshi, and Khed,</strong> build
-              confidence through concept-based lessons, rigorous testing, and
-              consistent feedback.
-            </p>
-            <p>
-              Our performance-driven approach makes us a trusted name in{" "}
-              <strong>MHT-CET preparation in North Pune.</strong>
+              At <strong>ASQUARE Academy Wanowrie,</strong> our goal is to simplify complex concepts, strengthen problem-solving skills, and enhance exam strategies.
+               <strong>Fatima Nagar, Kondhwa, and NIBM</strong> trust ASQUARE for its focused, result-oriented <strong>CET coaching in South Pune.</strong>
             </p>
             <h4 className="common_title" style={{ color: "#05479b" }}>
               <strong>Subjects Covered</strong>
@@ -684,22 +627,19 @@ function MHTAlandi() {
             <ul className="common_ul">
               <li className="mb-4">
                 <span>
-                  <strong>Physics:</strong> Conceptual understanding with
-                  numerical applications and daily practice.
+                  <strong>Physics:</strong> Deep understanding of core principles with numerical and application-based questions.
                 </span>
               </li>
               <li className="mb-4">
                 <span>
-                  <strong>Chemistry:</strong> Complete coverage of Physical,
-                  Organic, and Inorganic chemistry with MCQ sessions.
+                  <strong>Chemistry:</strong> Topic-wise coverage of Physical, Organic, and Inorganic Chemistry.
                 </span>
               </li>
               <li className="mb-4">
                 <span>
                   <strong>Mathematics / Biology: </strong>
-                  Stream-specific programs for
-                  <strong> PCM (Engineering) and PCB (Pharmacy)</strong> with
-                  assignments, tests, and revision modules.
+                  Specialized modules for
+                  <strong> PCM (Engineering) and PCB (Pharmacy)</strong> with daily practice sheets and tests.
                 </span>
               </li>
             </ul>
@@ -717,7 +657,7 @@ function MHTAlandi() {
                   <strong className="fs-5 text-yellow">
                     2-Year Integrated Program (Class XI + XII + CET):
                   </strong>{" "}
-                  Foundation and advanced CET prep covering all subjects.
+                  Board + CET preparation for strong foundation.
                 </span>
               </li>
               <li className="mb-4">
@@ -725,7 +665,7 @@ function MHTAlandi() {
                   <strong className="fs-5 text-yellow">
                     1-Year Target Batch (Class XII + CET):
                   </strong>{" "}
-                  Fast-track preparation with weekly mock tests.
+                  Intensive training focused on MHT-CET pattern and practice.
                 </span>
               </li>
               <li className="mb-4">
@@ -733,7 +673,7 @@ function MHTAlandi() {
                   <strong className="fs-5 text-yellow">
                     Crash Course (2-3 Months):
                   </strong>{" "}
-                  Intensive short-term revision program before the exam.
+                  Short-term revision batch before the exam.
                 </span>
               </li>
               <li className="mb-4">
@@ -741,15 +681,14 @@ function MHTAlandi() {
                   <strong className="fs-5 text-yellow">
                     Repeater / Dropper Batch:
                   </strong>{" "}
-                  One-year detailed CET program for reattempt students.
+                  One-year comprehensive program for CET retakers.
                 </span>
               </li>
             </ul>
             <p>
-              Each program includes{" "}
+              Each course includes{" "}
               <strong>
-                weekly mock tests, concept reinforcement, and mentor-led
-                progress analysis.
+                weekly mock tests, performance tracking, and one-on-one mentor guidance.
               </strong>{" "}
             </p>
           </div>
@@ -763,29 +702,26 @@ function MHTAlandi() {
               <h5 className="common_title">
                 Join{" "}
                 <span className="common_title_span">
-                  ASQUARE Academy — Alandi, Pune
+                  ASQUARE Academy — Wanowrie, Pune
                 </span>
               </h5>
               <p>
                 Join <strong>ASQUARE Academy, </strong> the{" "}
                 <strong>
-                  Best MHT-CET Coaching Institute in Alandi, Pune.{" "}
+                  Best MHT-CET Coaching Institute in Wanowrie, Pune,{" "}
                 </strong>
-                and start your journey toward academic excellence.
+                and prepare with top mentors, structured batches, and result-focused strategies.
                 <br />
-                With personalized mentoring, structured teaching, and regular
-                testing, ASQUARE prepares you for CET success with confidence.
+                With consistent practice, guidance, and testing, you can achieve your dream CET rank.
                 <br />
                 Serving students from
                 <strong>
                   {" "}
-                  Alandi, Moshi, Charholi, Dighi, Markal, Chimbali, Dudulgaon,
-                  Talwade, and Dehu Road.
+                  Wanowrie, Fatima Nagar, Kondhwa, Camp, NIBM Road, Lullanagar, Salunke Vihar, and Market Yard.
                 </strong>
               </p>
               <h4>
-                Admissions Open – Enroll Now at ASQUARE Academy for MHT-CET
-                Preparation in North Pune!
+                Admissions Open - Enroll Now at ASQUARE Academy and Start Your MHT-CET Success Journey!
               </h4>
               <div className="cta-button mt-3">
                 <a href="/" className="btn">
@@ -802,4 +738,4 @@ function MHTAlandi() {
   );
 }
 
-export default MHTAlandi;
+export default MHTWanowrie;

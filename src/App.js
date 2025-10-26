@@ -58,6 +58,8 @@ import MHTBhosari from './Pages/LocationsPages/MHTBhosari';
 import MHTChinchwad from './Pages/LocationsPages/MHTChinchwad';
 import MHTChakan from './Pages/LocationsPages/MHTChakan';
 import MHTAlandi from './Pages/LocationsPages/MHTAlandi';
+import MHTWanowrie from './Pages/LocationsPages/MHTWanowrie';
+import MHTKharadi from './Pages/LocationsPages/MHTKharadi';
 
 function App() {
   return (
@@ -266,6 +268,8 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-in-chinchwad-pune' element={<MHTChinchwad />} />
           <Route path='/mht-cet-coaching-classes-institute-in-chakan-pune' element={<MHTChakan />} />
           <Route path='/mht-cet-coaching-classes-institute-in-alandi-pune' element={<MHTAlandi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-wanowrie-pune' element={<MHTWanowrie />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-kharadi-pune' element={<MHTKharadi />} />
         </Routes>
       </BrowserRouter>
     </div>
