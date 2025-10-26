@@ -29,6 +29,158 @@ function ICSEChinchwad(){
             <meta name="keywords" content="ICSE tuition classes in Pune, Best ICSE coaching in Pune, ICSE tuition for Class 8 in Pune, ICSE tuition for Class 9 in Pune, ICSE tuition for Class 10 in Pune, ICSE board classes in Pune, Top ICSE coaching institute Pune, Expert ICSE teachers Pune, ICSE board exam preparation Pune, ICSE coaching with regular tests Pune, Affordable ICSE coaching in Pune, ICSE study material Pune, ICSE tuition in Camp Pune, ICSE coaching in Viman Nagar, ICSE classes in Hadapsar, ICSE tuition Koregaon Park Pune, ICSE coaching in Kothrud. ICSE tuition in Baner, ICSE classes in Pimple Saudagar, ICSE coaching in Pimpri, ICSE tuition in Nigdi, ICSE coaching in Chinchwad" />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={canonicalUrl} />
+            <script type="application/ld+json">{`
+            {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.asquareclasses.com/#localbusiness",
+      "name": "ASQUARE Academy Pimpri-Chinchwad",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "telephone": "9766118877",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pimpri-Chinchwad",
+        "addressRegion": "Pune",
+        "addressCountry": "India"
+      },
+      "url": "https://www.asquareclasses.com/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th",
+      "priceRange": "₹₹",
+      "description": "ASQUARE Academy provides expert ICSE tuition in Pimpri-Chinchwad Pune for Classes 8th, 9th, and 10th. Learn with small batches, study materials, and regular assessments.",
+      "openingHours": "Mo-Su 08:00-20:00"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://www.asquareclasses.com/#educationalorganization",
+      "name": "ASQUARE Academy Pimpri-Chinchwad",
+      "sameAs": "https://www.asquareclasses.com/",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "description": "ASQUARE Academy offers ICSE tuition for Classes 8th, 9th, and 10th in Pimpri-Chinchwad Pune. Focused teaching, personalized mentoring, and complete board preparation."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th#webpage",
+      "url": "https://www.asquareclasses.com/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th",
+      "name": "ICSE Tuition in Pimpri-Chinchwad Pune | ASQUARE Academy",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.asquareclasses.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+      },
+      "datePublished": "2025-10-23",
+      "dateModified": "2025-10-23",
+      "description": "Join ASQUARE Academy’s ICSE tuition in Pimpri-Chinchwad Pune for Classes 8th, 9th, and 10th. Comprehensive subject coverage, expert faculty, and consistent results."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ICSE Tuition Pimpri-Chinchwad",
+          "item": "https://www.asquareclasses.com/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/icse-tuition-pimpri-chinchwad-pune-8th-9th-10th#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which classes are covered under ICSE tuition at ASQUARE Academy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer dedicated ICSE tuition for Classes 8, 9, and 10 with a strong focus on concept clarity, board preparation, and academic excellence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What subjects are taught in the ICSE batches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our ICSE program covers core subjects including Mathematics, Science, English, History, Geography, and Computer Applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who conducts the ICSE tuition classes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All ICSE tuition classes are taught by experienced faculty who specialize in ICSE curriculum and board exam preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are batches structured at ASQUARE Academy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We maintain small batches for personalized attention, with regular mock tests, doubt-solving sessions, and progress tracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide study materials for ICSE students?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, students receive chapter-wise notes, practice papers, and previous year question papers to boost exam readiness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there weekend or flexible batches available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer both weekday and weekend batches with flexible timing to suit school schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does ASQUARE Academy track student progress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Periodic tests and parent-teacher meetings help track student progress and plan improvement strategies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes ASQUARE Academy the best ICSE tuition in Pimpri-Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE Academy stands out with expert mentors, small batches, interactive learning, and top ICSE results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can new students join mid-session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, students can join ongoing batches after a short academic assessment to determine the right placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can parents enroll their child for ICSE tuition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parents can visit our Pimpri-Chinchwad centre or contact ASQUARE Academy to schedule a counselling and demo session."
+          }
+        }
+      ]
+    }
+  ]
+}
+        `}</script>
         </Helmet>
         <Navbar />
         <Header />
