@@ -57,6 +57,14 @@ import MHTNigdi from './Pages/LocationsPages/MHTNigdi';
 import MHTBhosari from './Pages/LocationsPages/MHTBhosari';
 import MHTChinchwad from './Pages/LocationsPages/MHTChinchwad';
 import MHTChakan from './Pages/LocationsPages/MHTChakan';
+import MHTAlandi from './Pages/LocationsPages/MHTAlandi';
+import MHTWanowrie from './Pages/LocationsPages/MHTWanowrie';
+import MHTKharadi from './Pages/LocationsPages/MHTKharadi';
+import MHTDehuRoad from './Pages/LocationsPages/MHTDehuRoad';
+import MHTVidyanagarKalas from './Pages/LocationsPages/MHTVidyanagarKalas';
+import MHTChandanNagar from './Pages/LocationsPages/MHTChandanNagar';
+import MHTCamp from './Pages/LocationsPages/MHTCamp';
+import MHTWakad from './Pages/LocationsPages/MHTWakad';
 
 function App() {
   return (
@@ -264,6 +272,14 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-in-bhosari-pune' element={<MHTBhosari />} />
           <Route path='/mht-cet-coaching-classes-institute-in-chinchwad-pune' element={<MHTChinchwad />} />
           <Route path='/mht-cet-coaching-classes-institute-in-chakan-pune' element={<MHTChakan />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-alandi-pune' element={<MHTAlandi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-wanowrie-pune' element={<MHTWanowrie />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-kharadi-pune' element={<MHTKharadi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-dehu-road-pune' element={<MHTDehuRoad />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-vidyanagar-kalas-pune' element={<MHTVidyanagarKalas />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-chandan-nagar-pune' element={<MHTChandanNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-pune-camp-area' element={<MHTCamp />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-wakad-pune' element={<MHTWakad />} />
         </Routes>
       </BrowserRouter>
     </div>
