@@ -2,10 +2,9 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC.jpeg";
 import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 1.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET Page 2.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 9.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET Page 7.jpeg";
 import {
-  Award,
   BarChart,
   BookOpen,
   Calendar,
@@ -21,6 +20,7 @@ import {
   CalendarSync,
   ChartSpline,
   BadgeQuestionMark,
+  Award,
 } from "lucide-react";
 import "./NEET-pages.css";
 import Slider from "react-slick";
@@ -40,7 +40,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETPimpri() {
+function NEETPimpriChinchwad() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -68,185 +68,185 @@ function NEETPimpri() {
     ],
   };
 
-  const whyCFeatures = [
-    {
-      Icon: Users,
-      title: "Experienced Faculty",
-      description:
-        "Expert mentors specializing in Physics, Chemistry, and Biology.",
-    },
-    {
-      Icon: BookOpen,
-      title: "Structured NEET Curriculum",
-      description:
-        "Comprehensive, NCERT-based syllabus with exam-focused coverage.",
-    },
-    {
-      Icon: Target,
-      title: "Small Batches for Personalized Learning",
-      description:
-        "Each student gets individual attention and doubt-solving sessions.",
-    },
-    {
-      Icon: BarChart,
-      title: "Regular Assessments",
-      description:
-        "Weekly and monthly mock exams simulate NEET-level difficulty.",
-    },
-    {
-      Icon: Calendar,
-      title: "Hybrid Learning",
-      description:
-        "Both classroom and online NEET classes in Pimpri are available.",
-    },
-    {
-      Icon: School,
-      title: "Board + NEET Integration",
-      description:
-        "Designed to balance school curriculum and NEET preparation seamlessly.",
-    },
-  ];
+const whyCFeatures = [
+  {
+    Icon: Users,
+    title: "Expert Faculty",
+    description: "Experienced mentors for Physics, Chemistry, and Biology.",
+  },
+  {
+    Icon: BookOpen,
+    title: "Concept-Based Teaching",
+    description: "Strong NCERT foundation with advanced NEET-level practice.",
+  },
+  {
+    Icon: Target,
+    title: "Small Batch Sizes",
+    description: "Focused learning with individual attention.",
+  },
+  {
+    Icon: BarChart,
+    title: "Regular Assessments",
+    description: "Weekly unit tests, mock exams, and detailed progress reports.",
+  },
+  {
+    Icon: Calendar,
+    title: "Flexible Learning Modes",
+    description: "Classroom & online options with weekday/weekend batches.",
+  },
+  {
+    Icon: School,
+    title: "Mentorship",
+    description: "Academic guidance and motivational support for aspirants.",
+  },
+];
 
-  const subjectsCovered = [
-    {
-      title: "Physics",
-      desc: "Conceptual clarity through derivations, problem-solving, and practical application.",
-    },
-    {
-      title: "Chemistry",
-      desc: "In-depth understanding of Physical, Organic, and Inorganic Chemistry with NCERT focus.",
-    },
-    {
-      title: "Biology",
-      desc: "Detailed coverage of NCERT-based chapters and NEET-level question practice.",
-    },
-  ];
+const subjectsCovered = [
+  {
+    title: "Physics",
+    desc: "Strengthening conceptual clarity and numerical accuracy.",
+  },
+  {
+    title: "Chemistry",
+    desc: "In-depth learning of Physical, Organic, and Inorganic Chemistry.",
+  },
+  {
+    title: "Biology",
+    desc: "NCERT-based preparation with detailed diagrams and topic-wise notes.",
+  },
+];
 
-  const programDurations = [
-    {
-      icon: Clock,
-      title: "1-Year NEET Program (For Class 12 / Droppers)",
-      desc: "Comprehensive revision, full syllabus tests, and crash course integration.",
-    },
-    {
-      icon: Target,
-      title: "2-Year Integrated Program (For Class 11 + 12)",
-      desc: "Balanced board + NEET preparation with continuous assessment and mentoring.",
-    },
-    {
-      icon: CalendarSync,
-      title: "Foundation Course (For Class 9 & 10)",
-      desc: "Strengthens basics in Science & Math to prepare for future NEET/competitive exams.",
-    },
-  ];
+const programDurations = [
+  {
+    icon: Clock,
+    title: "2-Year Integrated Program (Class 11):",
+    desc: "Foundation course for NEET + Boards.",
+  },
+  {
+    icon: Target,
+    title: "1-Year Target Program (Class 12):",
+    desc: "Fast-paced course with focused revisions and tests.",
+  },
+  {
+    icon: CalendarSync,
+    title: "Dropper/Repeater Batch:",
+    desc: "Personalized mentoring and detailed error analysis.",
+  },
+  {
+    icon: School,
+    title: "Crash Course:",
+    desc: "Intensive short-term module with PYQs and mock exams.",
+  },
+];
 
-  const methodologySteps = [
-    {
-      Icon: Lightbulb,
-      title: "Learn",
-      description:
-        "Interactive classroom sessions for clear conceptual understanding.",
-    },
-    {
-      Icon: BookOpen,
-      title: "Practice",
-      description:
-        "Topic-wise DPPs (Daily Practice Papers) and test sheets for continuous improvement.",
-    },
-    {
-      Icon: BarChart,
-      title: "Assess",
-      description:
-        "Regular mock tests to measure progress and enhance exam skills.",
-    },
-    {
-      Icon: MessageCircle,
-      title: "Revise",
-      description:
-        "Dedicated revision classes and personalized improvement plans.",
-    },
-  ];
-  
-  const faqData = [
-    {
-      q: "Does ASQUARE provide advanced NEET coaching in Pimpri?",
-      a: "Yes — ASQUARE offers special batches for advanced NEET preparation with mock tests, test analysis, and strategy sessions.",
-    },
-    {
-      q: "Are small batches available for better guidance?",
-      a: "Yes, every batch is limited in size for personalized mentoring.",
-    },
-    {
-      q: "Can students from nearby areas like Chinchwad or Bhosari join?",
-      a: "Absolutely! Students from Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, and Dapodi join regularly.",
-    },
-    {
-      q: "Do you offer online NEET classes?",
-      a: "Yes — students can choose between classroom and online NEET coaching in Pimpri Pune as per convenience.",
-    },
-    {
-      q: "How do you track student performance?",
-      a: "We track through weekly topic tests, full-length mocks, and detailed performance reports shared with parents.",
-    },
-  ];
+const methodologySteps = [
+  {
+    Icon: Lightbulb,
+    title: "Learn",
+    description: "Interactive lectures for concept clarity.",
+  },
+  {
+    Icon: BookOpen,
+    title: "Practice",
+    description: "Daily practice sessions.",
+  },
+  {
+    Icon: BarChart,
+    title: "Assess",
+    description: "Weekly assessments for evaluation.",
+  },
+  {
+    Icon: MessageCircle,
+    title: "Revise",
+    description: "Focused revision for long-term retention and exam success.",
+  },
+];
 
-  const gridFeatures = [
-    {
-      Icon: Award,
-      title: "Experienced faculty from reputed institutions",
-      colorClass: "bg-gradient-blue",
-    },
-    {
-      Icon: Users,
-      title: "Comprehensive printed & digital study materials",
-      colorClass: "bg-gradient-purple",
-    },
-    {
-      Icon: BookOpen,
-      title: "Doubt-solving and one-on-one mentoring sessions",
-      colorClass: "bg-gradient-green",
-    },
-    {
-      Icon: TrendingUp,
-      title: "Regular parent-teacher meetings and performance tracking",
-      colorClass: "bg-gradient-orange",
-    },
-    {
-      Icon: CalendarSync,
-      title: "Workshops on time management and accuracy",
-      colorClass: "bg-gradient-red",
-    },
-    {
-      Icon: ChartSpline,
-      title: "Online test platform with detailed analytics",
-      colorClass: "bg-gradient-teal",
-    },
-    {
-      Icon: MapPin,
-      subtitle: "Convenient access for students from",
-      extraText:
-        "Sant Tukaram Nagar, Nehrunagar, Kharalwadi, Pimpri Colony, and Morwadi.",
-      colorClass: "bg-gradient-pink",
-    },
-  ];
+const faqData = [
+  {
+    q: "Which is the best NEET coaching in Pimpri Chinchwad Pune?",
+    a: "ASQUARE Academy is among the most reputed institutes offering structured preparation, expert faculty, and consistent results for NEET aspirants.",
+  },
+  {
+    q: "Do you have Dropper or Repeater batches?",
+    a: "Yes, we offer specialized repeater batches with daily tests, mock exams, and personalized mentoring for better performance.",
+  },
+  {
+    q: "Are weekend batches available for NEET coaching?",
+    a: "Yes, we provide both weekday and weekend batches to help students balance school studies with NEET preparation.",
+  },
+  {
+    q: "Do you conduct crash courses for NEET?",
+    a: "Yes, our short-term crash courses cover key concepts, PYQs, and mock tests for quick and effective revision.",
+  },
+  {
+    q: "What subjects are covered in the NEET coaching program?",
+    a: "We cover Physics, Chemistry, and Biology comprehensively with emphasis on NCERT-based concepts and exam-focused problem-solving.",
+  },
+  {
+    q: "Do you provide online coaching options?",
+    a: "Yes, we offer both classroom and live online sessions, ensuring flexible learning for students from all locations.",
+  },
+  {
+    q: "Are scholarships available at ASQUARE Academy?",
+    a: "Yes, we provide scholarships based on merit through the ASQUARE Scholarship Test, helping deserving students pursue NEET coaching affordably.",
+  },
+  {
+    q: "What makes ASQUARE different from other coaching centers?",
+    a: "Our small batch sizes, dedicated faculty, continuous testing, and personal mentorship make ASQUARE a top choice for NEET aspirants in Pimpri Chinchwad.",
+  },
+];
+
+const gridFeatures = [
+  {
+    Icon: BookOpen,
+    title: "Comprehensive printed and digital study materials",
+    colorClass: "bg-gradient-blue",
+  },
+  {
+    Icon: Users,
+    title: "Regular doubt-solving sessions with expert faculty",
+    colorClass: "bg-gradient-purple",
+  },
+  {
+    Icon: ChartSpline,
+    title: "Parent–teacher meetings for progress tracking",
+    colorClass: "bg-gradient-green",
+  },
+  {
+    Icon: BarChart,
+    title: "Online test series with rank, analysis, and reports",
+    colorClass: "bg-gradient-orange",
+  },
+  {
+    Icon: Award,
+    title: "Time management and exam-strategy workshops",
+    colorClass: "bg-gradient-red",
+  },
+  {
+    Icon: TrendingUp,
+    title: "Scholarship opportunities through ASQUARE Test",
+    colorClass: "bg-gradient-teal",
+  },
+];
 
   return (
     <>
       <Helmet>
         <title>
-          Best NEET Coaching in Pimpri Pune | ASQUARE Academy
+          Top NEET Coaching Classes in Pimpri Chinchwad Pune | ASQUARE
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching in Pimpri Pune | ASQUARE Academy"
+          content="Top NEET Coaching Classes in Pimpri Chinchwad Pune | ASQUARE"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the best NEET coaching in Pimpri Pune. Expert faculty, small batches, and advanced preparation with tests and online options."
+          content="Enroll at ASQUARE Academy for top NEET coaching classes in Pimpri Chinchwad Pune. Get expert guidance, advanced preparation, and personalized NEET training."
         />
         <meta
           name="keywords"
-          content="NEET Coaching in Pimpri Pune,Best NEET Classes in Pimpri,Top NEET Coaching Institute Pimpri,NEET Preparation in Pimpri,ASQUARE Academy Pimpri,NEET Coaching near Sant Tukaram Nagar,NEET Classes near Nehrunagar,Best NEET Institute in Kharalwadi Pimpri,Medical Entrance Coaching Pimpri Pune,Top NEET Institute in PCMC"
+          content="NEET coaching classes in pimpri chinchwad pune Best NEET Coaching in pimpri chinchwad Pune Top NEET Coaching Classes pimpri chinchwad Pune NEET Advanced Preparation pimpri chinchwad Pune NEET Classes in pimpri chinchwad Pune Best NEET Classes in pimpri chinchwad Pune Top NEET Classes in pimpri chinchwad Pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
@@ -256,31 +256,31 @@ function NEETPimpri() {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimpri-pune",
-      "name": "ASQUARE Academy - NEET Coaching in Pimpri Pune",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-pimpri-chinchwad-pune",
+      "name": "ASQUARE Academy - NEET Coaching in Pimpri Chinchwad Pune",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
       "telephone": "+91-9766118877",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Pimpri",
+        "addressLocality": "Pimpri Chinchwad",
         "addressRegion": "Pune",
         "addressCountry": "India"
       },
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimpri-pune",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-pimpri-chinchwad-pune",
       "priceRange": "₹₹",
       "openingHours": "Mo-Sa 09:00-20:00",
       "sameAs": [
         "https://www.facebook.com/asquareacademy",
         "https://www.instagram.com/asquareacademy"
       ],
-      "description": "ASQUARE Academy provides the best NEET coaching in Pimpri Pune with expert mentors, advanced preparation modules, and personalized small-batch learning."
+      "description": "ASQUARE Academy offers the best NEET coaching in Pimpri Chinchwad Pune with expert mentors, repeater batches, crash courses, and online options for NEET aspirants."
     },
     {
       "@type": "EducationalOrganization",
       "name": "ASQUARE Academy",
       "url": "https://www.asquareclasses.com/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers NEET coaching in Pimpri Pune with small batches, mock tests, and online learning options for students aiming for medical success.",
+      "description": "ASQUARE Academy provides NEET coaching in Pimpri Chinchwad Pune with comprehensive Physics, Chemistry, and Biology preparation for medical aspirants.",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+91-9766118877",
@@ -309,8 +309,8 @@ function NEETPimpri() {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "NEET Coaching in Pimpri Pune",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimpri-pune"
+          "name": "NEET Coaching in Pimpri Chinchwad Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-pimpri-chinchwad-pune"
         }
       ]
     },
@@ -319,42 +319,66 @@ function NEETPimpri() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Does ASQUARE provide advanced NEET coaching in Pimpri?",
+          "name": "Which is the best NEET coaching in Pimpri Chinchwad Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes—ASQUARE offers special batches for advanced NEET preparation with mock tests, test analysis, and strategy sessions."
+            "text": "ASQUARE Academy is among the most reputed institutes offering structured preparation, expert faculty, and consistent results for NEET aspirants."
           }
         },
         {
           "@type": "Question",
-          "name": "Are small batches available for better guidance?",
+          "name": "Do you have Dropper or Repeater batches?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, every batch is limited in size for personalized mentoring and focused learning."
+            "text": "Yes, we offer specialized repeater batches with daily tests, mock exams, and personalized mentoring for better performance."
           }
         },
         {
           "@type": "Question",
-          "name": "Can students from nearby areas like Chinchwad or Bhosari join?",
+          "name": "Are weekend batches available for NEET coaching?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely! Students from Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, and Dapodi join regularly for NEET preparation at ASQUARE Academy Pimpri."
+            "text": "Yes, we provide both weekday and weekend batches to help students balance school studies with NEET preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer online NEET classes?",
+          "name": "Do you conduct crash courses for NEET?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes—students can choose between classroom and online NEET coaching in Pimpri Pune as per their convenience."
+            "text": "Yes, our short-term crash courses cover key concepts, PYQs, and mock tests for quick and effective revision."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you track student performance?",
+          "name": "What subjects are covered in the NEET coaching program?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We track student progress through weekly topic tests, full-length mocks, and detailed performance reports shared with parents."
+            "text": "We cover Physics, Chemistry, and Biology comprehensively with emphasis on NCERT-based concepts and exam-focused problem-solving."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide online coaching options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer both classroom and live online sessions, ensuring flexible learning for students from all locations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are scholarships available at ASQUARE Academy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide scholarships based on merit through the ASQUARE Scholarship Test, helping deserving students pursue NEET coaching affordably."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes ASQUARE different from other coaching centers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our small batch sizes, dedicated faculty, continuous testing, and personal mentorship make ASQUARE a top choice for NEET aspirants in Pimpri Chinchwad."
           }
         }
       ]
@@ -409,27 +433,19 @@ function NEETPimpri() {
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Crack NEET with Expert Mentorship at{" "}
+                Crack NEET with Expert Guidance {" "}
                 <span className="gradient-text-yellow d-inline-block">
-                  ASQUARE Academy
+                  ASQUARE Pimpri Chinchwad
                 </span>
-                , Pimpri
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                Looking for result-oriented{" "}
-                <strong>NEET coaching classes in Pimpri, Pune? </strong>
-                At ASQUARE Academy, we prepare NEET aspirants to achieve top
-                ranks through conceptual clarity, individual mentorship, and
-                exam-based practice. Recognized as one of the
-                <strong> Best NEET Coaching Institutes in Pimpri, </strong>{" "}
-                ASQUARE blends{" "}
-                <strong>
-                  {" "}
-                  NCERT-focused teaching, strategic test preparation,
-                </strong>{" "}
-                and
-                <strong> personal attention </strong>to help students excel in
-                NEET-UG.
+                Preparing for NEET UG requires structured learning, consistent practice, and expert mentorship. At
+                <strong> ASQUARE Academy, </strong>
+                 our dedicated
+                <strong> NEET coaching classes in Pimpri Chinchwad Pune </strong>
+                help students build strong concepts, improve accuracy, and excel in competitive exams. Recognized among the
+                <strong> Best NEET Coaching in Pimpri Chinchwad Pune,  </strong>
+                ASQUARE offers result-driven programs for every aspirant.
               </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -438,14 +454,7 @@ function NEETPimpri() {
                   className="flex-shrink-0 mt-1"
                 />
                 <span className="text-white">
-                  <strong>Our Pimpri branch serves students from:</strong> Sant
-                  Tukaram Nagar, Nehrunagar, Kharalwadi, Pimpri Colony, Morwadi,
-                  MIDC Pimpri and Fugewadi, as well as nearby areas like{" "}
-                  <strong>
-                    Chinchwad, Bhosari, Kasarwadi, and Pimple Gurav —
-                  </strong>
-                  making it a hub for
-                  <strong>NEET preparation in PCMC Pune.</strong>
+                  <strong>Our Pimpri Chinchwad branch conveniently serves students from:</strong> Pimpri, Chinchwad, Nigdi, Akurdi, Pimple Saudagar, Wakad, Bhosari, Sangvi, Kalewadi, Rahatani, Thergaon, Moshi, Ravet, Dapodi, and nearby areas.
                 </span>
               </div>
             </div>
@@ -463,7 +472,7 @@ function NEETPimpri() {
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                — Best NEET Coaching in Pimpri
+                Best NEET Coaching in  Pimpri Chinchwad
               </h2>
 
               {isDesktop ? (
@@ -489,9 +498,7 @@ function NEETPimpri() {
                     color="#FFCB03"
                     className="flex-shrink-0"
                   />
-                  Our goal is to create strong conceptual understanding and
-                  competitive confidence, helping students crack NEET with high
-                  accuracy and speed.
+                  Our systematic learning approach ensures deep understanding, consistency, and confidence-building — key ingredients for NEET success.
                 </p>
               </div>
             </div>
@@ -525,35 +532,24 @@ function NEETPimpri() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Comprehensive NEET Course Overview{" "}
-            <span>ASQUARE Academy - Pimpri</span>
+            NEET Course Overview at{" "}
+            <span>
+              {" "}
+              ASQUARE Pimpri Chinchwad
+            </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The <strong> NEET course at ASQUARE Academy, Pimpri, </strong> is
-              designed to help students master each subject step by step. We
-              emphasize{" "}
-              <strong>
-                {" "}
-                concept clarity, test consistency, and exam temperament,{" "}
-              </strong>
-              ensuring students perform confidently in the actual NEET exam.
+              <strong> NEET (UG) </strong> India’s national entrance exam for aspiring doctors. With lakhs of students competing every year, a structured and focused approach is essential. At
+              <strong> ASQUARE Academy – Pimpri Chinchwad, </strong> our programs emphasize conceptual understanding, analytical skills, and strategic exam preparation that ensure success in medical entrance exams.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={26} />
               <span>
-                Our curriculum covers{" "}
-                <strong>Physics, Chemistry, and Biology </strong>
-                in detail, with practice modules, test series, and personalized
-                mentoring. Students from{" "}
-                <strong>
-                  Nehrunagar, Sant Tukaram Nagar, and Kharalwadi
-                </strong>{" "}
-                benefit from our experienced faculty and competitive test
-                environment.
+               Easily accessible for students from <strong> Pimpri, Chinchwad, Nigdi, Akurdi, Pimple Saudagar, Wakad, Bhosari, Sangvi, Kalewadi, Rahatani, Thergaon, Moshi, Ravet, Dapodi, and nearby areas. </strong>
               </span>
             </p>
           </div>
@@ -566,29 +562,27 @@ function NEETPimpri() {
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimpri
+              Course Details (NEET UG) - Top NEET Coaching Classes in Pimpri Chinchwad
             </h3>
 
             <p className="fs-5">
-              <strong>NEET UG</strong> is the gateway to top medical colleges
-              across India offering{" "}
-              <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong> programs.
+              <strong>NEET UG</strong> is India’s gateway exam for{" "}
+              <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong>
+              At <strong>At ASQUARE Academy Pimpri Chinchwad,</strong>
+              At ASQUARE Academy Pimpri Chinchwad, our NEET training emphasizes accuracy, concept retention, and speed management through a structured curriculum and consistent testing.
             </p>
             <p className="fs-5">
-              At <strong>ASQUARE Academy Pimpri,</strong> our scientifically
-              structured teaching plan, regular performance evaluations, and
-              one-on-one mentoring ensure complete readiness for the NEET-UG
-              exam.
+              We’re recognized among the <strong> Top NEET Coaching Institutes in Pimpri Chinchwad </strong> serving students from
+              <strong>Chinchwad East, Chinchwad West, Udyognagar, and Pradhikaran.</strong>
             </p>
             <p className="fs-5">
-              We combine conceptual teaching with consistent{" "}
-              <strong>mock test series</strong> and performance reviews —
-              positioning ASQUARE as{" "}
-              <strong>a top NEET coaching institute in PCMC Pune.</strong>
+              We are among the{" "}
+              <strong>Top NEET Coaching Institutes in Pimpri Chinchwad , </strong>
+              known for high student success and experienced faculty.
             </p>
 
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimpri
+              Subjects Covered in NEET Classes at Pimpri Chinchwad
             </h4>
 
             <div className="mt-4">
@@ -598,15 +592,14 @@ function NEETPimpri() {
             </div>
 
             <p className="fs-5">
-              Our balanced subject-wise approach ensures conceptual mastery and
-              time-bound performance improvement.
+              Each batch includes test analysis, feedback, and mentor guidance for continuous improvement.
             </p>
           </div>
 
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation Pimpri
+              Program Duration and Batch Options — NEET Preparation in Pimpri Chinchwad
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -637,7 +630,7 @@ function NEETPimpri() {
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimpri, Pune
+              Best NEET Coaching in Chinchwad, PCMC
             </h3>
           </div>
 
@@ -659,31 +652,31 @@ function NEETPimpri() {
               🏆 Success Stories
             </span>
             <h4 className="section-title-large mb-4">
-              ASQUARE Academy's NEET Success - Proven Track Record{" "}
+              ASQUARE Academy’s NEET Success – Student Achievements
             </h4>
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong className="text-primary">ASQUARE Academy,</strong> we
-              take pride in our consistent NEET results. Our students have
-              secured admissions to India’s premier medical colleges such as
+              Students from {" "}<strong>ASQUARE Academy – Pimpri Chinchwad </strong>
+              have consistently achieved top ranks in 
               <strong className="text-primary">
-                {" "}
-                AIIMS, BJ Medical College, AFMC, and DY Patil Medical College
-                Pune.
+                {" "}NEET, gaining admission to AIIMS, government medical colleges, and leading private institutions. {" "}
               </strong>
+             Our proven results make us one of the
+              <strong> Top NEET Coaching Classes Pimpri Chinchwad Pune </strong>
+              trusted by students and parents alike.
             </p>
-            <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
+            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
               <CheckCircle size={24} />
               <p className="fs-5 fw-semibold mb-0">
                 Our unique combination of mentorship, structured learning, and
                 regular testing makes us one of the
                 <strong>
                   {" "}
-                  Top NEET Coaching Institutes in Pimpri-Chinchwad (PCMC).
+                  Top NEET Coaching Centre in Alandi Pune.
                 </strong>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -701,9 +694,9 @@ function NEETPimpri() {
                 Innovative Teaching Methodology at ASQUARE Academy
               </h4>
               <p className="fs-5 text-white mb-4 lh op">
-                This unique four-step methodology has made ASQUARE{" "}
+                This 4-step system makes ASQUARE the{" "}
                 <strong>
-                  the best NEET training institute in Pimpri and PCMC.
+                  most preferred NEET training institute in Pimpri Chinchwad .
                 </strong>
               </p>
               <a
@@ -736,7 +729,7 @@ function NEETPimpri() {
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimpri-Chinchwad (PCMC).
+              Top NEET Coaching Institutes in Chinchwad.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -766,28 +759,27 @@ function NEETPimpri() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll Now at <span>ASQUARE Academy - Pimpri Pune</span>
+            Enroll Now at{" "}
+            <span>
+              ASQUARE Academy – Pimpri Chinchwad
+            </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              If you’re searching for the{" "}
-              <strong> Top NEET Coaching Classes in Pimpri, Pune,</strong>, the{" "}
-              look no further than
-              <strong>ASQUARE Academy.</strong>
-              With experienced teachers, structured test planning, and
-              consistent student success, we’re the trusted name for
-              <strong> NEET preparation in PCMC Pune.</strong>
+              Looking for reliable {" "}
+              <strong> NEET coaching classes in Pimpri Chinchwad Pune? </strong>Join
+              <strong> ASQUARE Academy </strong>
+              today! With expert guidance, structured programs, and personalized mentoring, we prepare you to crack NEET confidently and achieve your dream of becoming a doctor.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                Convenient from{" "}
+                 Easily accessible for students from {" "}
                 <strong>
-                  Sant Tukaram Nagar, Nehrunagar, Kharalwadi, Morwadi, Fugewadi,
-                  MIDC Pimpri, Pimpri Colony, Chinchwad, and Bhosari.
+                   Pimpri, Chinchwad, Nigdi, Akurdi, Pimple Saudagar, Wakad, Bhosari, Sangvi, Kalewadi, Rahatani, Thergaon, Moshi, Ravet, Dapodi, and nearby areas.
                 </strong>
               </span>
             </p>
@@ -795,7 +787,7 @@ function NEETPimpri() {
 
           {/* Subheading */}
           <h4 className="fw-bold text-primary mb-4">
-            Admissions Open — Limited Seats!
+            Admissions Open! Start your NEET journey with ASQUARE Academy – Pimpri Chinchwad.
           </h4>
 
           {/* CTA Button */}
@@ -813,4 +805,4 @@ function NEETPimpri() {
   );
 }
 
-export default NEETPimpri;
+export default NEETPimpriChinchwad;

@@ -1,11 +1,10 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 1.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET Page 2.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC3.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile3.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 5.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET page 6.jpeg";
 import {
-  Award,
   BarChart,
   BookOpen,
   Calendar,
@@ -40,7 +39,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETPimpri() {
+function NEETHadapsar() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -71,39 +70,36 @@ function NEETPimpri() {
   const whyCFeatures = [
     {
       Icon: Users,
-      title: "Experienced Faculty",
+      title: "Expert Faculty",
       description:
-        "Expert mentors specializing in Physics, Chemistry, and Biology.",
+        "Physics, Chemistry, and Biology specialists with years of experience.",
     },
     {
       Icon: BookOpen,
-      title: "Structured NEET Curriculum",
-      description:
-        "Comprehensive, NCERT-based syllabus with exam-focused coverage.",
+      title: "Structured Learning",
+      description: "From NCERT basics to advanced NEET-level practice.",
     },
     {
       Icon: Target,
-      title: "Small Batches for Personalized Learning",
-      description:
-        "Each student gets individual attention and doubt-solving sessions.",
+      title: "Small Batches",
+      description: "Individual attention and dedicated doubt-solving.",
     },
     {
       Icon: BarChart,
-      title: "Regular Assessments",
+      title: "Regular Testing",
       description:
-        "Weekly and monthly mock exams simulate NEET-level difficulty.",
+        "Weekly part tests, NEET mock exams, and detailed performance analysis.",
     },
     {
       Icon: Calendar,
-      title: "Hybrid Learning",
+      title: "Flexible Batches",
       description:
-        "Both classroom and online NEET classes in Pimpri are available.",
+        "Classroom + online NEET classes in Hadapsar with weekday and weekend options.",
     },
     {
       Icon: School,
-      title: "Board + NEET Integration",
-      description:
-        "Designed to balance school curriculum and NEET preparation seamlessly.",
+      title: "Parent-Student Connect",
+      description: "PTMs and progress updates ensure transparency.",
     },
   ];
 
@@ -144,89 +140,78 @@ function NEETPimpri() {
     {
       Icon: Lightbulb,
       title: "Learn",
-      description:
-        "Interactive classroom sessions for clear conceptual understanding.",
+      description: "Conceptual lectures with NCERT focus.",
     },
     {
       Icon: BookOpen,
       title: "Practice",
-      description:
-        "Topic-wise DPPs (Daily Practice Papers) and test sheets for continuous improvement.",
+      description: "Assignments, DPPs, and doubt-solving.",
     },
     {
       Icon: BarChart,
       title: "Assess",
-      description:
-        "Regular mock tests to measure progress and enhance exam skills.",
+      description: "Weekly tests and full-length NEET mocks.",
     },
     {
       Icon: MessageCircle,
       title: "Revise",
-      description:
-        "Dedicated revision classes and personalized improvement plans.",
+      description: "Crash revision before exams.",
     },
   ];
-  
+
   const faqData = [
     {
-      q: "Does ASQUARE provide advanced NEET coaching in Pimpri?",
-      a: "Yes — ASQUARE offers special batches for advanced NEET preparation with mock tests, test analysis, and strategy sessions.",
+      q: "Which is the Best NEET Coaching in Hadapsar?",
+      a: "ASQUARE Academy is among the Best NEET Classes in Hadapsar due to its expert faculty, structured programs, and consistent results.",
     },
     {
-      q: "Are small batches available for better guidance?",
-      a: "Yes, every batch is limited in size for personalized mentoring.",
+      q: "Do you offer Top NEET Coaching Classes Hadapsar for beginners?",
+      a: "Yes. Our foundation-friendly programs are designed for first-time aspirants with NCERT focus and regular practice.",
     },
     {
-      q: "Can students from nearby areas like Chinchwad or Bhosari join?",
-      a: "Absolutely! Students from Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, and Dapodi join regularly.",
+      q: "How do you provide NEET Advanced Preparation Hadapsar?",
+      a: "We conduct special revision classes, All India Test Series, and intensive problem-solving workshops.",
     },
     {
-      q: "Do you offer online NEET classes?",
-      a: "Yes — students can choose between classroom and online NEET coaching in Pimpri Pune as per convenience.",
+      q: "Are weekend NEET Classes in Hadapsar available?",
+      a: "Yes. We provide both weekday and weekend batch options in classroom & online formats.",
     },
     {
-      q: "How do you track student performance?",
-      a: "We track through weekly topic tests, full-length mocks, and detailed performance reports shared with parents.",
+      q: "Do you provide scholarships?",
+      a: "Yes. Students can apply for merit and need-based scholarships through the ASQUARE Scholarship Test.",
     },
   ];
 
   const gridFeatures = [
     {
-      Icon: Award,
-      title: "Experienced faculty from reputed institutions",
+      Icon: Users,
+      title: "Comprehensive printed + digital study material.",
       colorClass: "bg-gradient-blue",
     },
     {
-      Icon: Users,
-      title: "Comprehensive printed & digital study materials",
+      Icon: BookOpen,
+      title: "Dedicated doubt-clearing sessions.",
       colorClass: "bg-gradient-purple",
     },
     {
-      Icon: BookOpen,
-      title: "Doubt-solving and one-on-one mentoring sessions",
+      Icon: TrendingUp,
+      title: "Regular PTMs and performance tracking.",
       colorClass: "bg-gradient-green",
     },
     {
-      Icon: TrendingUp,
-      title: "Regular parent-teacher meetings and performance tracking",
+      Icon: ChartSpline,
+      title: "Online test series with detailed analytics.",
       colorClass: "bg-gradient-orange",
     },
     {
       Icon: CalendarSync,
-      title: "Workshops on time management and accuracy",
+      title: "Parental feedback and progress reports",
       colorClass: "bg-gradient-red",
     },
     {
       Icon: ChartSpline,
-      title: "Online test platform with detailed analytics",
+      title: "Online & offline practice test series",
       colorClass: "bg-gradient-teal",
-    },
-    {
-      Icon: MapPin,
-      subtitle: "Convenient access for students from",
-      extraText:
-        "Sant Tukaram Nagar, Nehrunagar, Kharalwadi, Pimpri Colony, and Morwadi.",
-      colorClass: "bg-gradient-pink",
     },
   ];
 
@@ -234,19 +219,19 @@ function NEETPimpri() {
     <>
       <Helmet>
         <title>
-          Best NEET Coaching in Pimpri Pune | ASQUARE Academy
+          Best NEET Coaching Classes in Hadapsar | ASQUARE Academy Pune
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching in Pimpri Pune | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Hadapsar | ASQUARE Academy Pune"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the best NEET coaching in Pimpri Pune. Expert faculty, small batches, and advanced preparation with tests and online options."
+          content="oin the Best NEET Coaching in Hadapsar at ASQUARE Academy. Expert faculty, NCERT-based study plans, weekend batches, and scholarship options available."
         />
         <meta
           name="keywords"
-          content="NEET Coaching in Pimpri Pune,Best NEET Classes in Pimpri,Top NEET Coaching Institute Pimpri,NEET Preparation in Pimpri,ASQUARE Academy Pimpri,NEET Coaching near Sant Tukaram Nagar,NEET Classes near Nehrunagar,Best NEET Institute in Kharalwadi Pimpri,Medical Entrance Coaching Pimpri Pune,Top NEET Institute in PCMC"
+          content="NEET Coaching in Hadapsar, Best NEET Classes in Hadapsar, Top NEET Coaching Institute Hadapsar, NEET Preparation in Hadapsar, ASQUARE Academy Hadapsar,"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
@@ -255,63 +240,111 @@ function NEETPimpri() {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimpri-pune",
-      "name": "ASQUARE Academy - NEET Coaching in Pimpri Pune",
-      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "telephone": "+91-9766118877",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pimpri",
-        "addressRegion": "Pune",
-        "addressCountry": "India"
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-hadapsar-pune/",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-hadapsar-pune/",
+      "name": "Best NEET Coaching Classes in Hadapsar | ASQUARE Academy Pune",
+      "description": "Join the Best NEET Coaching in Hadapsar at ASQUARE Academy. Expert faculty, NCERT-based study plans, weekend batches, and scholarship options available.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ASQUARE Academy",
+        "url": "https://www.asquareclasses.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+          "width": 250,
+          "height": 70
+        }
       },
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimpri-pune",
-      "priceRange": "₹₹",
-      "openingHours": "Mo-Sa 09:00-20:00",
-      "sameAs": [
-        "https://www.facebook.com/asquareacademy",
-        "https://www.instagram.com/asquareacademy"
-      ],
-      "description": "ASQUARE Academy provides the best NEET coaching in Pimpri Pune with expert mentors, advanced preparation modules, and personalized small-batch learning."
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.asquareclasses.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Courses",
+            "item": "https://www.asquareclasses.com/courses/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "NEET Coaching Classes in Hadapsar",
+            "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-hadapsar-pune/"
+          }
+        ]
+      }
     },
     {
       "@type": "EducationalOrganization",
       "name": "ASQUARE Academy",
       "url": "https://www.asquareclasses.com/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers NEET coaching in Pimpri Pune with small batches, mock tests, and online learning options for students aiming for medical success.",
+      "description": "ASQUARE Academy offers expert-led NEET, IIT JEE, and MHT-CET coaching in Pune. Learn from experienced faculty with a strong focus on conceptual clarity and results.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hadapsar, Pune, Maharashtra",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411028",
+        "addressCountry": "IN"
+      },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-9766118877",
-        "contactType": "Customer Service"
+        "telephone": "+91-9156004396",
+        "contactType": "Customer Support",
+        "availableLanguage": ["English", "Hindi", "Marathi"]
       },
       "sameAs": [
-        "https://www.facebook.com/asquareacademy",
-        "https://www.instagram.com/asquareacademy"
+        "https://www.facebook.com/asquareclasses/",
+        "https://www.instagram.com/asquareclasses/"
       ]
     },
     {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@type": "LocalBusiness",
+      "name": "ASQUARE Academy - NEET Coaching in Hadapsar",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-hadapsar-pune/",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-hadapsar-pune/",
+      "telephone": "+91-9156004396",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hadapsar, Pune, Maharashtra",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411028",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5006,
+        "longitude": 73.9347
+      },
+      "openingHoursSpecification": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.asquareclasses.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Courses",
-          "item": "https://www.asquareclasses.com/courses/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "NEET Coaching in Pimpri Pune",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimpri-pune"
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
         }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/asquareclasses/",
+        "https://www.instagram.com/asquareclasses/"
       ]
     },
     {
@@ -319,42 +352,42 @@ function NEETPimpri() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Does ASQUARE provide advanced NEET coaching in Pimpri?",
+          "name": "Which is the Best NEET Coaching in Hadapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes—ASQUARE offers special batches for advanced NEET preparation with mock tests, test analysis, and strategy sessions."
+            "text": "ASQUARE Academy is among the Best NEET Classes in Hadapsar due to its expert faculty, structured programs, and consistent results."
           }
         },
         {
           "@type": "Question",
-          "name": "Are small batches available for better guidance?",
+          "name": "Do you offer Top NEET Coaching Classes in Hadapsar for beginners?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, every batch is limited in size for personalized mentoring and focused learning."
+            "text": "Yes. Our foundation-friendly programs are designed for first-time aspirants with NCERT focus and regular practice sessions."
           }
         },
         {
           "@type": "Question",
-          "name": "Can students from nearby areas like Chinchwad or Bhosari join?",
+          "name": "How do you provide NEET Advanced Preparation in Hadapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely! Students from Chinchwad, Bhosari, Kasarwadi, Pimple Gurav, and Dapodi join regularly for NEET preparation at ASQUARE Academy Pimpri."
+            "text": "We conduct special revision classes, All India Test Series, and intensive problem-solving workshops for advanced NEET preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer online NEET classes?",
+          "name": "Are weekend NEET Classes in Hadapsar available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes—students can choose between classroom and online NEET coaching in Pimpri Pune as per their convenience."
+            "text": "Yes. We provide both weekday and weekend batch options in classroom and online modes for flexible learning."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you track student performance?",
+          "name": "Do you provide scholarships at ASQUARE Academy Hadapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We track student progress through weekly topic tests, full-length mocks, and detailed performance reports shared with parents."
+            "text": "Yes. Students can apply for merit and need-based scholarships through the ASQUARE Scholarship Test conducted annually."
           }
         }
       ]
@@ -411,25 +444,21 @@ function NEETPimpri() {
               <h1 className="hero-title-large mb-4">
                 Crack NEET with Expert Mentorship at{" "}
                 <span className="gradient-text-yellow d-inline-block">
-                  ASQUARE Academy
+                  ASQUARE Academy,
                 </span>
-                , Pimpri
+                Hadapsar, Pune
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                Looking for result-oriented{" "}
-                <strong>NEET coaching classes in Pimpri, Pune? </strong>
-                At ASQUARE Academy, we prepare NEET aspirants to achieve top
-                ranks through conceptual clarity, individual mentorship, and
-                exam-based practice. Recognized as one of the
-                <strong> Best NEET Coaching Institutes in Pimpri, </strong>{" "}
-                ASQUARE blends{" "}
-                <strong>
-                  {" "}
-                  NCERT-focused teaching, strategic test preparation,
-                </strong>{" "}
-                and
-                <strong> personal attention </strong>to help students excel in
-                NEET-UG.
+                ASQUARE Academy offers expert-led{" "}
+                <strong>NEET coaching classes in Hadapsar, </strong>
+                with structured learning, small batches, and personalized
+                mentoring. Recognized as one of the
+                <strong> Best NEET Coaching in Hadapsar. </strong> our programs
+                combine NCERT mastery, advanced problem-solving, and intensive
+                test practice to help students secure admission in top medical
+                colleges. Whether you’re starting early or need focused{" "}
+                <strong> NEET Advanced Preparation in Hadapsar.</strong> ASQUARE
+                provides the right guidance.
               </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -438,14 +467,10 @@ function NEETPimpri() {
                   className="flex-shrink-0 mt-1"
                 />
                 <span className="text-white">
-                  <strong>Our Pimpri branch serves students from:</strong> Sant
-                  Tukaram Nagar, Nehrunagar, Kharalwadi, Pimpri Colony, Morwadi,
-                  MIDC Pimpri and Fugewadi, as well as nearby areas like{" "}
-                  <strong>
-                    Chinchwad, Bhosari, Kasarwadi, and Pimple Gurav —
-                  </strong>
-                  making it a hub for
-                  <strong>NEET preparation in PCMC Pune.</strong>
+                  <strong>Our Hadapsar branch serves students from:</strong>{" "}
+                  Magarpatta City, Amanora, Sasane Nagar, Mohammadwadi, Kondhwa,
+                  Wanowrie, Kalepadal, Handewadi, Kharadi, Fatima Nagar,
+                  Mundhwa, and nearby areas.{" "}
                 </span>
               </div>
             </div>
@@ -463,7 +488,7 @@ function NEETPimpri() {
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                — Best NEET Coaching in Pimpri
+                — Best NEET Coaching in Hadapsar, Pune
               </h2>
 
               {isDesktop ? (
@@ -489,9 +514,8 @@ function NEETPimpri() {
                     color="#FFCB03"
                     className="flex-shrink-0"
                   />
-                  Our goal is to create strong conceptual understanding and
-                  competitive confidence, helping students crack NEET with high
-                  accuracy and speed.
+                  ASQUARE is trusted by students across Pune as one of the Top
+                  NEET Coaching Classes Hadapsar.
                 </p>
               </div>
             </div>
@@ -526,14 +550,14 @@ function NEETPimpri() {
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span>ASQUARE Academy - Pimpri</span>
+            <span>ASQUARE Academy - Hadapsar</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The <strong> NEET course at ASQUARE Academy, Pimpri, </strong> is
-              designed to help students master each subject step by step. We
+              The <strong> NEET course at ASQUARE Academy, Hadapsar, </strong>{" "}
+              is designed to help students master each subject step by step. We
               emphasize{" "}
               <strong>
                 {" "}
@@ -550,7 +574,9 @@ function NEETPimpri() {
                 in detail, with practice modules, test series, and personalized
                 mentoring. Students from{" "}
                 <strong>
-                  Nehrunagar, Sant Tukaram Nagar, and Kharalwadi
+                  Magarpatta City, Amanora, Sasane Nagar, Mohammadwadi, Kondhwa,
+                  Wanowrie, Kalepadal, Handewadi, Kharadi, Fatima Nagar,
+                  Mundhwa, and nearby areas.
                 </strong>{" "}
                 benefit from our experienced faculty and competitive test
                 environment.
@@ -566,7 +592,7 @@ function NEETPimpri() {
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimpri
+              Course Details (NEET UG) - Top NEET Coaching Classes in Hadapsar
             </h3>
 
             <p className="fs-5">
@@ -575,7 +601,7 @@ function NEETPimpri() {
               <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong> programs.
             </p>
             <p className="fs-5">
-              At <strong>ASQUARE Academy Pimpri,</strong> our scientifically
+              At <strong>ASQUARE Academy Hadapsar,</strong> our scientifically
               structured teaching plan, regular performance evaluations, and
               one-on-one mentoring ensure complete readiness for the NEET-UG
               exam.
@@ -588,7 +614,7 @@ function NEETPimpri() {
             </p>
 
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimpri
+              Subjects Covered in NEET Classes at Hadapsar, Pune
             </h4>
 
             <div className="mt-4">
@@ -606,7 +632,8 @@ function NEETPimpri() {
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation Pimpri
+              Program Duration and Batch Options — NEET Preparation in Hadapsar,
+              Pune
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -637,7 +664,7 @@ function NEETPimpri() {
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimpri, Pune
+              Best NEET Coaching in Hadapsar, Pune
             </h3>
           </div>
 
@@ -678,10 +705,7 @@ function NEETPimpri() {
               <p className="fs-5 fw-semibold mb-0">
                 Our unique combination of mentorship, structured learning, and
                 regular testing makes us one of the
-                <strong>
-                  {" "}
-                  Top NEET Coaching Institutes in Pimpri-Chinchwad (PCMC).
-                </strong>
+                <strong> Top NEET Coaching Institutes in Hadapsar.</strong>
               </p>
             </div>
           </div>
@@ -703,7 +727,7 @@ function NEETPimpri() {
               <p className="fs-5 text-white mb-4 lh op">
                 This unique four-step methodology has made ASQUARE{" "}
                 <strong>
-                  the best NEET training institute in Pimpri and PCMC.
+                  the best NEET training institute in Hadapsar and PCMC.
                 </strong>
               </p>
               <a
@@ -736,7 +760,7 @@ function NEETPimpri() {
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimpri-Chinchwad (PCMC).
+              Top NEET Coaching Institutes in Hadapsar (PCMC).
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -766,16 +790,16 @@ function NEETPimpri() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll Now at <span>ASQUARE Academy - Pimpri Pune</span>
+            Enroll Now at <span>ASQUARE Academy - Hadapsar, Pune</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
               If you’re searching for the{" "}
-              <strong> Top NEET Coaching Classes in Pimpri, Pune,</strong>, the{" "}
-              look no further than
-              <strong>ASQUARE Academy.</strong>
+              <strong> Top NEET Coaching Classes in Hadapsar, </strong> the look
+              no further than
+              <strong>ASQUARE Academy. </strong>
               With experienced teachers, structured test planning, and
               consistent student success, we’re the trusted name for
               <strong> NEET preparation in PCMC Pune.</strong>
@@ -786,8 +810,9 @@ function NEETPimpri() {
               <span>
                 Convenient from{" "}
                 <strong>
-                  Sant Tukaram Nagar, Nehrunagar, Kharalwadi, Morwadi, Fugewadi,
-                  MIDC Pimpri, Pimpri Colony, Chinchwad, and Bhosari.
+                  Magarpatta City, Amanora, Sasane Nagar, Mohammadwadi, Kondhwa,
+                  Wanowrie, Kalepadal, Handewadi, Kharadi, Fatima Nagar,
+                  Mundhwa, and nearby areas.
                 </strong>
               </span>
             </p>
@@ -813,4 +838,4 @@ function NEETPimpri() {
   );
 }
 
-export default NEETPimpri;
+export default NEETHadapsar;

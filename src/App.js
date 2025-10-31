@@ -58,6 +58,20 @@ import MHTBhosari from './Pages/LocationsPages/MHTBhosari';
 import MHTChinchwad from './Pages/LocationsPages/MHTChinchwad';
 import MHTChakan from './Pages/LocationsPages/MHTChakan';
 import NEETPimpri from './Pages/LocationsPages/neet-pages/NEETPimpri';
+import NEETSaudagar from './Pages/LocationsPages/neet-pages/NEETSaudagar';
+import NEETHadapsar from './Pages/LocationsPages/neet-pages/NEETHadapsar';
+import NEETAkurdi from './Pages/LocationsPages/neet-pages/NEETAkurdi';
+import NEETAlandi from './Pages/LocationsPages/neet-pages/NEETAlandi';
+import NEETVishrantwadi from './Pages/LocationsPages/neet-pages/NEETVishrantwadi';
+import NEETAundh from './Pages/LocationsPages/neet-pages/NEETAundh';
+import NEETYerwada from './Pages/LocationsPages/neet-pages/NEETYerwada';
+import BestNEETPune from './Pages/LocationsPages/neet-pages/BestNEETPune';
+import NEETVimanNagar from './Pages/LocationsPages/neet-pages/NEETVimanNagar';
+import NEETPratikNagar from './Pages/LocationsPages/neet-pages/NEETPratikNagar';
+import NEETTingreNagar from './Pages/LocationsPages/neet-pages/NEETTingreNagar';
+import NEETChinchwad from './Pages/LocationsPages/neet-pages/NEETChinchwad';
+import NEETShastriNagar from './Pages/LocationsPages/neet-pages/NEETShastriNagar';
+import NEETPimpriChinchwad from './Pages/LocationsPages/neet-pages/NEETPimpriChinchwad';
 
 function App() {
   return (
@@ -267,7 +281,21 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-in-chakan-pune' element={<MHTChakan />} />
 
           {/* NEET Pages */}
-          <Route path='/neet-coaching-classes-pimpri-pune' element={<NEETPimpri/>}/>
+          <Route path='/neet-coaching-classes-institute-pimpri-pune' element={<NEETPimpri/>}/>
+          <Route path='/neet-coaching-classes-institute-pimple-saudagar-pune' element={<NEETSaudagar/>}/>
+          <Route path='/neet-coaching-classes-institute-in-hadapsar-pune' element={<NEETHadapsar/>}/>
+          <Route path='/neet-coaching-classes-institute-in-akurdi-pune' element={<NEETAkurdi/>}/>
+          <Route path='/neet-coaching-classes-institute-alandi-pune' element={<NEETAlandi/>}/>
+          <Route path='/neet-coaching-classes-Institute-vishrantwadi-pune' element={<NEETVishrantwadi/>}/>
+          <Route path='/neet-coaching-classes-institute-aundh-pune' element={<NEETAundh/>}/>
+          <Route path='/neet-coaching-classes-institute-yerwada-pune' element={<NEETYerwada/>}/>
+          <Route path='/best-neet-coaching-classes-Institute-in-pune-maharashtra' element={<BestNEETPune />} />
+          <Route path='/neet-coaching-classes-institute-viman-nagar-pune' element={<NEETVimanNagar/>}/>
+          <Route path='/neet-coaching-classes-institute-pratik-nagar-pune' element={<NEETPratikNagar />} />
+          <Route path='/neet-coaching-classes-institute-tingre-nagar-pune' element={<NEETTingreNagar />} />
+          <Route path='/neet-coaching-classes-institute-chinchwad-pune' element={<NEETChinchwad />} />
+          <Route path='/neet-coaching-classes-institute-shastri-nagar-pune' element={<NEETShastriNagar />} />
+          <Route path='/neet-coaching-classes-institute-in-pimpri-chinchwad-pune' element={<NEETPimpriChinchwad />} />
 
         </Routes>
       </BrowserRouter>
