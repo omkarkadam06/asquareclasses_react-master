@@ -468,6 +468,16 @@ const Header = () => {
                 Contact Us
               </Link>
             </li>
+                <li className="nav-item-in">
+              <Link
+                to={'/samplepage/'}
+                className="nav-item nav-item-list"
+                onClick={scrollToTop}
+              >
+               samplepage
+              </Link>
+            </li>
+              {/* <Link to="/samplepage">Sample Page</Link> */}
           </ul>
         </header>
       </div>
