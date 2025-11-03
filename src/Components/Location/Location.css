@@ -1,0 +1,259 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.location_heading {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.location_1 {
+  padding: 60px 10vw 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  background-image: url('../Assets/background-4.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.maps {
+  height: 400px;
+  width: 800px;
+  border-radius: 12px;
+}
+
+.n_maps {
+  display: none;
+}
+
+.l_r {
+  height: fit-content;
+  background-color: #8dc8ff;
+  border-radius: 46px;
+  padding: 34px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l_r_p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  width: 68%;
+}
+
+.l_r_p1 p:nth-child(1) {
+  color: white;
+  letter-spacing: 0.6px;
+  width: 80%;
+}
+
+.l_r_p1 p:nth-child(2) {
+  color: rgba(102, 102, 102, 1);
+  width: 84%;
+}
+
+.l_r_p1 p:nth-child(3) {
+  color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+.l_r_p2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+
+.l_r_p1 a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 1620px) {
+  .location {
+    padding: 80px 0;
+  }
+  .location_1 {
+    padding: 20px 10vw 20px;
+    gap: 30px;
+  }
+  .maps {
+    height: 20vw;
+    width: 40vw;
+    border-radius: 12px;
+  }
+  .l_r {
+    width: 60%;
+    border-radius: 46px;
+    padding: 64px 80px;
+  }
+  .l_r_p1 {
+    gap: 1.4vw;
+    height: 100%;
+    width: 68%;
+  }
+  .l_r_p1 p:nth-child(1) {
+    width: 100%;
+  }
+  .l_r_p1 p:nth-child(2) {
+    width: 26vw;
+  }
+  .l_r_p2 {
+    gap: 1.4vw;
+  }
+}
+@media (max-width: 1620px) and (min-width: 1024px) {
+  .location {
+    padding: 40px 0;
+  }
+  .location_1 {
+    padding: 20px 10vw 20px;
+    gap: 30px;
+  }
+  .maps {
+    height: 20vw;
+    width: 37vw;
+    border-radius: 12px;
+  }
+  .l_r {
+    width: 60%;
+    border-radius: 36px;
+    padding: 34px 30px;
+  }
+  .l_r_p1 {
+    gap: 1.4vw;
+    width: 68%;
+  }
+  .l_r_p1 p:nth-child(1) {
+    width: fit-content;
+  }
+  .l_r_p1 p:nth-child(2) {
+    width: 24vw;
+  }
+  .l_r_p2 {
+    gap: 1.4vw;
+  }
+}
+@media (max-width: 1024px) {
+  .location {
+    padding: 40px 0;
+  }
+  .location_1 {
+    padding: 20px 10vw 20px;
+    gap: 10px;
+  }
+  .maps {
+    height: 26vw;
+    width: 30vw;
+    border-radius: 12px;
+  }
+  .l_r {
+    width: 60%;
+    border-radius: 26px;
+    padding: 14px 20px;
+  }
+  .l_r_p1 {
+    gap: 1.4vw;
+    width: 57%;
+  }
+  .l_r_p1 p:nth-child(1) {
+    width: fit-content;
+  }
+  .l_r_p1 p:nth-child(2) {
+    width: 24vw;
+  }
+  .l_r_p2 {
+    gap: 1.4vw;
+  }
+}
+@media (max-width: 820px) {
+  .location {
+    padding: 40px 0;
+  }
+  .location_1 {
+    padding: 20px 20px 20px;
+    gap: 10px;
+  }
+  .maps {
+    height: 26vw;
+    width: 30vw;
+    border-radius: 12px;
+  }
+  .l_r {
+    width: fit-content;
+    border-radius: 26px;
+    padding: 14px 20px;
+  }
+  .l_r_p1 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+  .l_r_p1 p:nth-child(1) {
+    width: fit-content;
+  }
+  .l_r_p1 p:nth-child(2) {
+    width: 34vw;
+  }
+  .l_r_p2 {
+    display: none;
+    gap: 1.4vw;
+  }
+}
+@media (max-width: 620px) {
+  .location {
+    padding: 30px 0;
+  }
+  .location_1 {
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .maps {
+    height: 200px;
+    width: 80%;
+    border-radius: 12px;
+  }
+  .n_maps {
+    display: block;
+  }
+  .y_maps {
+    display: none;
+  }
+  .l_r {
+    width: 88%;
+    border-radius: 16px;
+    padding: 14px 20px;
+  }
+  .l_r_p1 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+  .l_r_p1 p:nth-child(1) {
+    width: fit-content;
+  }
+  .l_r_p1 p:nth-child(2) {
+    width: 94%;
+  }
+  .l_r_p2 {
+    display: none;
+    gap: 1.4vw;
+  }
+}

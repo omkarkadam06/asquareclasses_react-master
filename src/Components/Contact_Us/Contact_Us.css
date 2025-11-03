@@ -1,0 +1,10 @@
+.contact-container {
+    background-image: url(../Assets/contact-us-banner.webp);
+    color: white;
+    background-color: transparent;
+    background-position: center;
+    height: 450px;
+}
+.contact-container h1{
+    color: white !important;
+}

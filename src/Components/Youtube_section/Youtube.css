@@ -1,0 +1,24 @@
+.introduction.youtube_section {
+    height: auto;
+    margin: 0;
+}
+
+.youtube_link {
+    height: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px -4px grey;
+}
+.youtube_section .slick-track{
+    display: flex;
+    gap: 10px;
+}
+.youtub .slick-item{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 216px;
+}
+.slick-item iframe{
+    height: 100%;
+}
+

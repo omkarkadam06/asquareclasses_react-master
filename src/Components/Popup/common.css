@@ -1,0 +1,14 @@
+.modal-content button {
+    top: 4vh;
+    right: 26vw;
+    height: 60px;
+    width: 60px;
+}
+.modal-content button {
+    background-color: rgb(255 255 255);
+    color: white;
+}
+.modal-content button:hover {
+    background-color: var(--primary-color);
+    transition: background-color 0.4s ease;
+}

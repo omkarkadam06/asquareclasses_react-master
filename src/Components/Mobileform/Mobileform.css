@@ -1,0 +1,11 @@
+.mobile-form .headernewform{
+    display: none;
+}
+@media (max-width:676px){
+    .mobile-form .headernewform{
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}

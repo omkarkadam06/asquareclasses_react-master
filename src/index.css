@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.customotherpages h2, .customotherpages h3, .customotherpages h4 {
+  margin: 0 0 10px;
+}
+.customotherpages ul {
+  padding: 0 0 0 30px;
+  margin: 7px 0 15px;
+}
+.customotherpages p {
+  margin: 0 0 15px;
+}
+.banner-titleSection h4 {
+  color: #fff;
+  margin: 25px 0 0;
+  font-size: 30px;
+}
+.breacrumimg img {
+  height: 375px;
+  object-fit: contain;
+}
+.info-banner-new {
+  padding: 0 !important;
+}
+.customcousersl {
+    align-items: flex-start !important;
+}
+.ourcorses ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ourcorses ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 0 10px;
+    transition: all 0.5s ease;
+}
+.ourcorses .title_aaa {
+    margin: 0 0 15px;
+}
+.ourcorses ul li a:hover {
+  color: var(--theme-color1--);
+}
+@media (max-width: 600px) {
+  .iitpagenew img {
+    display: none;
+  }
+  /* .iitjes .bannerSlider {
+    height: 225px !important;
+  }  */
+  .customotherpages p, .customotherpages li {
+    font-size: 14px;
+}
+.info-banner-new h1.banner-title.mt-3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.banner-titleSection h4 {
+  font-size: 23px;
+  text-align: center;
+}
+.info-banner-new {
+  height: auto !important;
+  padding: 0 !important;
+}
+.customotherpages li {
+  margin: 0 0 10px;
+}
+.testi_container_left {
+  position: relative;
+  bottom: -66px;
+}
+.testi_container_right {
+  height: auto !important;
+}
+}

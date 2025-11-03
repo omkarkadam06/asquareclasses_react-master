@@ -1,0 +1,98 @@
+.jee-hero-section {
+  background: linear-gradient(135deg, #004aad, #ffcb03);
+  min-height: 80vh;
+  background-size: cover;
+}
+
+.highlight-text {
+  color: #ffcb03;
+}
+
+.jee-feature-card {
+  transition: all 0.3s ease;
+  border-top: 5px solid #ffcb03;
+}
+
+.jee-gradient-section {
+  background: linear-gradient(135deg, #004aad, #0066cc, #ffcb03);
+}
+
+.method-card {
+  transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-8px);
+}
+
+.jee-enroll-section {
+  background: linear-gradient(135deg, #004aad, #ffcb03);
+}
+
+.jee-why {
+  background-color: #f8f9fb;
+}
+
+
+
+
+/* Keep your existing CSS as it is and add this below */
+
+.jee-highlights {
+  background-color: #ffffff;
+}
+.jee-highlights ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.jee-results {
+  background: linear-gradient(135deg, #004aad, #00aaff);
+}
+
+.jee-gallery img {
+  transition: all 0.3s ease;
+}
+.jee-gallery img:hover {
+  transform: scale(1.05);
+}
+.gallery-img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.jee-highlights {
+  background: linear-gradient(135deg, #004aad, #007bff, #ffcb03);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.highlight-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

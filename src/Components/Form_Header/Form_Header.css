@@ -1,0 +1,32 @@
+.form_header {
+  background-color: rgb(218, 237, 255);
+  padding: 40px 10vw 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../Assets/12618.png');
+  background-position: right 0 top -100px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.f_h_left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: fit-content;
+}
+
+.f_h_subtitle {
+  width: 28vw;
+}
+
+.f_h_text {
+  width: 34vw;
+}
+
+.f_h_right img {
+  height: 240px;
+}

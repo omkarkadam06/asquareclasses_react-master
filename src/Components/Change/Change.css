@@ -1,0 +1,61 @@
+/* .input_text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.input_text input {
+  background-color: rgb(218, 237, 255);
+  border: 1px #a6d4ff solid;
+  border-radius: 6px;
+  display: inline;
+  position: relative;
+  top: 0;
+  height: 34px;
+  width: 20vw;
+  padding: 12px 24px;
+}
+
+.input_text input:focus-visible {
+  border: 1px #a6d4ff solid;
+  transition: top 0.3s ease;
+  top: -4px;
+  box-shadow: 0 4px 4px rgba(102, 102, 102, 0.168);
+  outline: none;
+}
+
+.it_label_false {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  color: rgba(102, 102, 102, 1);
+  display: inline;
+  position: relative;
+  left: -19vw;
+  top: 0px;
+  transition: 0.6s ease all;
+}
+
+.input_text input:focus-visible ~ .it_label_false {
+  top: -32px;
+  left: -20vw;
+  font-size: 12px;
+  color: #64b4ff;
+}
+
+.it_label_true {
+  position: relative;
+  transition: 0.6s ease all;
+  top: -32px;
+  left: -20vw;
+  font-size: 12px;
+  color: #64b4ff;
+  display: inline;
+}
+
+.input_text input::-webkit-spelling-error {
+  text-decoration: none;
+}
+
+.input_text input::-moz-spelling-error {
+  text-decoration: none;
+} */

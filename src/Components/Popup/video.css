@@ -1,0 +1,9 @@
+.videomodel iframe {
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+}
+.videopopupextra {
+    max-width: 635px !important;
+    top: 50px;
+}
