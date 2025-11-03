@@ -317,7 +317,7 @@ function App() {
 
 
 
-          <Route path="/samplepage" element={<Samplepage />} />
+          <Route path='/samplepage' element={<Samplepage />} />
         </Routes>
       </BrowserRouter>
     </div>
