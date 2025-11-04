@@ -6,11 +6,11 @@ import Footer from "../../Components/Footer/Footer.jsx";
 import Loading from "../Loading.jsx";
 import MobileForm from "../../Components/Mobileform/MobileForm.jsx";
 import "../locationspage.css";
-import locationBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-desktop-bg5.0.jpeg";
-import MobileBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-mobile-bg5.0.jpeg";
+import locationBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-desktop-bg6.0.jpeg";
+import MobileBGImage from "../../Assets/locationPageImages/mht-cet/mhcet-mobile-bg6.0.jpeg";
 import MethodologyBg from "../../Assets/locationPageImages/teaching-methodology.jpeg";
-import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 22.jpeg";
-import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 23.jpeg";
+import image1 from "../../Assets/locationPageImages/mht-cet/MH-CET page 24.jpeg";
+import image2 from "../../Assets/locationPageImages/mht-cet/MH-CET page 25.jpeg";
 import location from "../../Assets/locationPageImages/mht-cet/location.png";
 import personalized from "../../Assets/locationPageImages/mht-cet/personalized.png";
 import qualified from "../../Assets/locationPageImages/mht-cet/qualified.png";
@@ -21,90 +21,130 @@ const Reviews = React.lazy(() =>
   import("../../Components/Reviews/Reviews.jsx")
 );
 
-function MHTWakad() {
+function MHTShastriNagar() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   return (
     <>
       <Helmet>
         <title>
-         MHT-CET Coaching & Classes in Wakad Pune | ASQUARE Academy
+         Best MHT-CET Coaching Classes in Shastri Nagar Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching & Classes in Wakad Pune | ASQUARE Academy"
+          content="Best MHT-CET Coaching Classes in Shastri Nagar Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the best MHT-CET Coaching Classes in Wakad Pune for Engineering & Pharmacy. Small batches, mock tests & expert faculty. Enroll today at ASQUARE Academy."
+          content="Join the Best MHT-CET Coaching Classes in Shastri Nagar Pune at ASQUARE Academy. Expert faculty, small batches, and mock tests for Engineering & Pharmacy CET preparation."
         />
         <meta
           name="keywords"
-          content="MHT-CET Coaching in Wakad Pune, Best MHT-CET Classes in Wakad Pune, Top CET Coaching Institute Wakad Pune, MHT-CET Preparation in Wakad Pune, ASQUARE Academy Wakad Pune, Engineering CET Coaching Wakad Pune, Pharmacy CET Coaching Wakad Pune,"
+          content="MHT-CET Coaching in shastri nagarPune,
+Best MHT-CET Classes in shastri nagar,
+Top CET Coaching Institute shastri nagar,
+MHT-CET Preparation in shastri nagar,
+ASQUARE Academy shastri nagar,
+Engineering CET Coaching shastri nagar Pune,
+Pharmacy CET Coaching shastri nagar Pune,
+"
         />
         <script type="application/ld+json">{`
         {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune#localbusiness",
-      "name": "MHT-CET Coaching & Classes in Wakad Pune | ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune",
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/#localbusiness",
+      "name": "ASQUARE Academy - MHT-CET Coaching Classes in Shastri Nagar Pune",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "telephone": "+91-9766118866",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/",
+      "telephone": "+91-9766118877",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Wakad, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "MH",
-        "postalCode": "411057",
+        "streetAddress": "Shastri Nagar, Pune, Maharashtra",
+        "addressLocality": "Shastri Nagar",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411006",
         "addressCountry": "IN"
       },
-      "priceRange": "₹₹",
-      "openingHours": "Mo-Su 08:00-20:00",
+      "description": "ASQUARE Academy in Shastri Nagar Pune offers top MHT-CET Coaching Classes with expert guidance, small batches, and structured mock tests for Engineering and Pharmacy aspirants.",
       "sameAs": [
-        "https://www.asquareclasses.com/",
-        "https://www.facebook.com/AsquareAcademyPune"
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune/"
       ]
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune#webpage",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune",
-      "name": "MHT-CET Coaching & Classes in Wakad Pune | ASQUARE Academy",
-      "description": "Join the best MHT-CET Coaching Classes in Wakad Pune for Engineering & Pharmacy. Small batches, mock tests & expert faculty. Enroll today at ASQUARE Academy.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "ASQUARE Academy",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-        }
-      }
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/#webpage",
+      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/",
+      "name": "Best MHT-CET Coaching Classes in Shastri Nagar Pune | ASQUARE Academy",
+      "description": "Join the Best MHT-CET Coaching Classes in Shastri Nagar Pune at ASQUARE Academy. Expert faculty, small batches, and regular mock tests for Engineering & Pharmacy CET success."
     },
     {
-      "@type": "EducationalOrganization",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune#organization",
-      "name": "ASQUARE Academy Wakad Pune",
-      "url": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune",
-      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9922351375",
-        "contactType": "Customer Service"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Wakad, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "MH",
-        "postalCode": "411057",
-        "addressCountry": "IN"
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can enroll at ASQUARE Shastri Nagar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students of Class XI, Class XII, and repeat-year aspirants aiming for MHT-CET can enroll at ASQUARE Academy Shastri Nagar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What subjects are covered in the course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Courses include Physics, Chemistry, and Mathematics for Engineering aspirants, and Biology for Pharmacy aspirants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mock tests included in the teaching plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, weekly chapter tests and full-length CET mock exams are conducted with detailed performance feedback."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the available batch types?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer 2-year integrated, 1-year target, crash course, and dropper/repeater batches to suit all CET aspirants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are batches small?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, small batch sizes ensure each student receives focused attention and effective learning support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do parents get performance updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we conduct regular PTMs and share detailed progress reports via email and parent meetings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which nearby areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Shastri Nagar branch serves students from Kalyani Nagar, Ramwadi, Pratik Nagar, and Adarsh Nagar."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune#breadcrumb",
+      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -115,76 +155,8 @@ function MHTWakad() {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "MHT-CET Coaching Pune",
-          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-pune"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Wakad",
-          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-wakad-pune#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who can join MHT-CET coaching at ASQUARE Academy Wakad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Students currently in Class XI, XII, or CET repeaters after Class XII can join MHT-CET coaching at ASQUARE Wakad."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What subjects are covered?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We cover Physics, Chemistry, and Mathematics (PCM) or Physics, Chemistry, and Biology (PCB)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide CET mock tests and practice papers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, regular mock tests, chapter-wise practice, and full-length CET exams are conducted for all students."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the course duration?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer 2-year, 1-year, crash course, and dropper batch programs for MHT-CET preparation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How big are the batches?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Batch sizes are kept small for personalized learning and one-on-one doubt-solving."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do parents get performance updates?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we conduct parent-teacher meetings and share regular progress reports with parents."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where is the institute located?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ASQUARE Academy Wakad is located in Pune and easily accessible from Hinjewadi, Baner, Balewadi, Pimpri, Thergaon, Pimple Saudagar, and nearby PCMC areas."
-          }
+          "name": "MHT-CET Coaching Classes in Shastri Nagar Pune",
+          "item": "https://www.asquareclasses.com/mht-cet-coaching-classes-institute-in-shastri-nagar-pune/"
         }
       ]
     }
@@ -232,28 +204,22 @@ function MHTWakad() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 img-col order-2 order-lg-1">
-              <img className="common_image" src={image1} alt="ASQUARE Wakad" />
+              <img className="common_image" src={image1} alt="ASQUARE Shastri Nagar" />
             </div>
             <div className="col-lg-6 col-md-12 order-1 order-lg-2">
               <h1 className="common_title">
-                Build Your Future with Expert Guidance at{" "}
+                Excel in MHT-CET with{" "}
                 <span className="common_title_span">ASQUARE Academy,</span>{" "}
-                Wakad, Pune
+                Shastri Nagar
               </h1>
               <p>
-                Looking for the{" "}
-                <strong>best MHT-CET coaching classes in Wakad, Pune?</strong> At{" "}
-                <strong>ASQUARE Academy,</strong> we provide structured
-                MHT-CET preparation in Wakad with proven results. As a leading
-                CET institute near{" "}
+                Looking for expert{" "}
+                <strong>MHT-CET coaching in Shastri Nagar, Pune?</strong> At{" "}
+                <strong>ASQUARE Academy — Shastri Nagar,</strong> we offer concept-first training, MHT-CET–aligned tests, and focused mentoring. Strategically located with easy access from{" "}
                 <strong>
-                  Wakad, Hinjewadi, Baner, Balewadi, Pimpri-Chinchwad, and
-                  Thergaon,
+                  Kalyani Nagar, Ramwadi, Pratik Nagar, and Adarsh Nagar, 
                 </strong>{" "}
-                we focus on concept clarity, problem-solving techniques, exam
-                strategies, and consistent practice to help students achieve
-                admission into top engineering and pharmacy colleges in
-                Maharashtra.
+                our center is built to help students from eastern Pune succeed without long commutes.
               </p>
             </div>
           </div>
@@ -269,34 +235,28 @@ function MHTWakad() {
                 <span className="common_title_span" style={{ color: "#003399" }}>
                   Why Choose
                 </span>{" "}
-                ASQUARE Academy for MHT-CET in Wakad?
+                ASQUARE Academy for MHT-CET in Shastri Nagar?
               </h2>
               <ul className="common_ul">
                 <li>
-                  <strong>Expert Faculty:</strong> Highly experienced teachers
-                  specializing in CET, JEE, and NEET coaching.
+                  <strong>Experienced Faculty:</strong> for Physics, Chemistry, Mathematics & Biology.
                 </li>
                 <li>
-                  <strong>Complete Syllabus Coverage:</strong> Physics,
-                  Chemistry, and Mathematics (PCM) or Biology (PCB) taught as
-                  per the latest MHT-CET exam pattern.
+                  <strong>Full MHT-CET Syllabus Coverage:</strong> with the latest exam pattern.
                 </li>
                 <li>
-                  <strong>Personalized Attention:</strong> Small batches with
-                  one-to-one doubt-solving sessions.
+                  <strong>Small Batches:</strong> for personalized mentoring and focused learning.
                 </li>
                 <li>
-                  <strong>Regular Mock Tests:</strong> Weekly CET tests with
-                  detailed performance feedback.
+                  <strong>Regular Mock Tests & Analysis:</strong> for speed, accuracy, and confidence.
                 </li>
                 <li>
-                  <strong>Motivational &amp; Career Guidance:</strong> Personality
-                  development, exam strategy, and confidence-building sessions.
+                  <strong>Holistic Preparation:</strong> for both CET and board exams.
                 </li>
               </ul>
             </div>
             <div className="col-lg-6 col-md-12 img-col order-1 order-lg-2">
-              <img className="common_image" src={image2} alt="Wakad classes" />
+              <img className="common_image" src={image2} alt="Shastri Nagar classes" />
             </div>
           </div>
         </div>
@@ -312,7 +272,7 @@ function MHTWakad() {
             <div className="col-md-12 text-center">
               <h3 className="common_title">
                 <span className="common_title_span">Key Features</span> of
-                ASQUARE Academy Wakad
+                ASQUARE Academy Shastri Nagar
               </h3>
             </div>
           </div>
@@ -324,7 +284,7 @@ function MHTWakad() {
               <div className="grid_item">
                 <img className="grid_img" src={qualified} alt="" />
                 <h6 className="grid_item_title">
-                  Limited batch size for personal guidance.
+                  Limited batch sizes for high attention and quality learning.
                 </h6>
               </div>
             </div>
@@ -332,7 +292,7 @@ function MHTWakad() {
               <div className="grid_item">
                 <img className="grid_img" src={updated} alt="" />
                 <h6 className="grid_item_title">
-                  Updated study material as per latest CET syllabus.
+                  Updated CET-aligned study resources (print & digital).
                 </h6>
               </div>
             </div>
@@ -340,7 +300,7 @@ function MHTWakad() {
               <div className="grid_item">
                 <img className="grid_img" src={weekly_chapter} alt="" />
                 <h6 className="grid_item_title">
-                  Parent-teacher meetings to track progress.
+                  Regular PTMs and progress reports.
                 </h6>
               </div>
             </div>
@@ -348,7 +308,7 @@ function MHTWakad() {
               <div className="grid_item">
                 <img className="grid_img" src={personalized} alt="" />
                 <h6 className="grid_item_title">
-                  Time management &amp; exam strategy workshops.
+                  Time-management & strategy workshops for efficiency.
                 </h6>
               </div>
             </div>
@@ -356,7 +316,7 @@ function MHTWakad() {
               <div className="grid_item">
                 <img className="grid_img" src={location} alt="" />
                 <h6 className="grid_item_title">
-                  Trusted as the <strong>best MHT-CET coaching in Wakad, Hinjewadi, and PCMC</strong>
+                  Convenient access for students from <strong> Shastri Nagar, Kalyani Nagar, Ramwadi, Pratik Nagar, and Adarsh Nagar.</strong>
                 </h6>
               </div>
             </div>
@@ -369,13 +329,13 @@ function MHTWakad() {
         <div className="container">
           <h4 className="common_title">Results That Speak</h4>
           <p>
-            <strong>ASQUARE Academy </strong> has a strong record of students from
-            <strong> Wakad, Hinjewadi, Baner, Balewadi, Pimpri, Thergaon, and Pimple Saudagar </strong>
+            Students trained at <strong> ASQUARE Academy -Shastri Nagar </strong> consistently deliver high MHT-CET scores and secure admissions into top engineering and pharmacy colleges in Maharashtra. Our structured, result-driven approach inspires strong outcomes.
+            <strong> Convenient access for students from Shastri Nagar, Kalyani Nagar, Ramwadi, Pratik Nagar, and Adarsh Nagar. </strong>
             securing top CET ranks and admissions to prestigious<strong> engineering and pharmacy colleges.</strong>
           </p>
           <p>
             Our success stories make us one of the
-            <strong> top MHT-CET coaching institutes in Wakad and PCMC.</strong>
+            <strong> top MHT-CET coaching institutes in Shastri Nagar and PCMC.</strong>
           </p>
         </div>
       </section>
@@ -406,11 +366,11 @@ function MHTWakad() {
             <div className="col-lg-6">
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Concept-Building Lectures:</h6>
-                <span>Daily concept-building lectures by expert faculty.</span>
+                <span>Daily concept-driven lectures with workbook assignments</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Assignments & Practice:</h6>
-                <span>Chapter-wise assignments for self-practice.</span>
+                <span>Weekly chapter tests combined with full-length mocks.</span>
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Mock Tests:</h6>
@@ -418,7 +378,11 @@ function MHTWakad() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">Progress Reports:</h6>
-                <span>Regular updates shared with parents.</span>
+                <span>Parent-student performance reviews (PTMs).</span>
+              </div>
+              <div className="methodoloy_itembox">
+                <h6 className="methodology_title">Extra Activites:</h6>
+                <span>Workshops on speed, accuracy, and exam stress management strategies</span>
               </div>
             </div>
           </div>
@@ -435,7 +399,7 @@ function MHTWakad() {
           <div className="row">
             <div className="col-md-12">
               <h5 className="common_title">
-                MHT-CET Coaching Institute in Wakad {" "}
+                MHT-CET Coaching Institute in Shastri Nagar {" "}
                 <span className="common_title_span">(FAQs)</span>
               </h5>
             </div>
@@ -451,7 +415,7 @@ function MHTWakad() {
                       aria-expanded="false"
                       aria-controls="collapse1"
                     >
-                      Who can join MHT-CET coaching at ASQUARE Wakad ?
+                      Who can enroll at ASQUARE Shastri Nagar?
                     </button>
                   </h2>
                   <div
@@ -474,7 +438,7 @@ function MHTWakad() {
                       aria-expanded="false"
                       aria-controls="collapse2"
                     >
-                      What subjects are covered ?
+                      What subjects are covered in the course?
                     </button>
                   </h2>
                   <div
@@ -483,7 +447,7 @@ function MHTWakad() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Physics, Chemistry, Mathematics (for PCM) and Biology (for PCB).
+                      Physics, Chemistry, Mathematics (for engineering), and Biology (for pharmacy).
                     </div>
                   </div>
                 </div>
@@ -497,7 +461,7 @@ function MHTWakad() {
                       aria-expanded="false"
                       aria-controls="collapse3"
                     >
-                      Do you provide CET mock tests and practice papers?
+                      Are mock tests included in the teaching plan?
                     </button>
                   </h2>
                   <div
@@ -506,7 +470,7 @@ function MHTWakad() {
                     data-bs-parent="#accordionLeft"
                   >
                     <div className="accordion-body">
-                      Yes — topic tests, weekly evaluations, and full-length CET mock exams are conducted regularly.
+                      Absolutely—students receive weekly chapter tests and full-length CET simulations with feedback.
                     </div>
                   </div>
                 </div>
@@ -524,7 +488,7 @@ function MHTWakad() {
                       aria-expanded="false"
                       aria-controls="collapse7"
                     >
-                     What are the available batch options?
+                     What are the available batch types?
                     </button>
                   </h2>
                   <div
@@ -533,9 +497,7 @@ function MHTWakad() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      We offer <strong>2-year, 1-year, crash course,</strong>{" "}
-                      and <strong> dropper batches.</strong> for flexible
-                      preparation.
+                      We offer <strong>2-year integrated, 1-year target, crash course, and dropper/repeater options.</strong>
                     </div>
                   </div>
                 </div>
@@ -558,10 +520,9 @@ function MHTWakad() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      Our{" "}<strong>ASQUARE Academy Wakad branch</strong> is located in Pune and is easily accessible from {" "}
+                      Our{" "}<strong>ASQUARE Academy Shastri Nagar branch</strong> Easily accessible for students commuting from {" "}
                       <strong>
-                        Hinjewadi, Baner, Balewadi, Pimpri, Thergaon, Pimple Saudagar, and nearby PCMC areas.
-
+                         Shastri Nagar, Kalyani Nagar, Ramwadi, Pratik Nagar, and Adarsh Nagar.
                       </strong>
                     </div>
                   </div>
@@ -576,7 +537,7 @@ function MHTWakad() {
                       aria-expanded="false"
                       aria-controls="collapse5"
                     >
-                      Do you offer online MHT-CET coaching?
+                      Are batches small?
                     </button>
                   </h2>
                   <div
@@ -585,8 +546,7 @@ function MHTWakad() {
                     data-bs-parent="#accordionRight"
                   >
                     <div className="accordion-body">
-                      Yes, both <strong>online</strong> and{" "}
-                      <strong>offline CET coaching classes</strong> are available for flexible learning.
+                      Yes — batch sizes are kept limited to ensure concentrated attention and effective instruction.
                     </div>
                   </div>
                 </div>
@@ -607,14 +567,10 @@ function MHTWakad() {
               <strong>Course Overview </strong>
             </h3>
             <p>
-              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> is the gateway to top{" "}
-              <strong>
-                Engineering and Pharmacy colleges in Maharashtra.
-              </strong>{" "}
-              With rising competition, joining the right<strong>MHT-CET classes in Wakad</strong>is essential to stay ahead.
-            </p>
+              The <strong>MHT-CET (Maharashtra Common Entrance Test)</strong> paves the way to engineering, pharmacy, and related courses across Maharashtra. At the Shastri Nagar center, we offer a structured curriculum, driven by focused practice, and backed by performance analytics.
+             </p> 
             <p>
-              At <strong>ASQUARE Academy Wakad, </strong> our program is designed to{" "}
+              At <strong>ASQUARE Academy Shastri Nagar, </strong> our program is designed to{" "}
                <strong>strengthen fundamentals, sharpen problem-solving skills, and provide consistent exam practice</strong> so that students are fully prepared for the CET exam.
             </p>
             <h4 className="common_title" style={{ color: "#05479b" }}>
@@ -623,19 +579,18 @@ function MHTWakad() {
             <ul className="common_ul">
               <li className="mb-4">
                 <span>
-                  <strong>Physics:</strong> Concept clarity, numericals, and application-based problem-solving.
+                  <strong>Physics:</strong> Core concept clarity plus numerical practice.
                 </span>
               </li>
               <li className="mb-4">
                 <span>
-                  <strong>Chemistry:</strong> Physical, Organic, and Inorganic chemistry with extensive practice.
+                  <strong>Chemistry:</strong>  Physical, Organic & Inorganic sections aligned with CET format.
                 </span>
               </li>
               <li className="mb-4">
                 <span>
                   <strong>Mathematics / Biology: </strong>
-                  Separate modules for
-                  <strong> PCM (Engineering) and PCB (Pharmacy)</strong> with daily assignments and chapter tests.
+                  Intensive subject-specific training for PCM (Engineering) or PCB (Pharmacy)
                 </span>
               </li>
             </ul>
@@ -705,22 +660,21 @@ function MHTWakad() {
           <h5 className="common_title">
             Join{" "}
             <span className="common_title_span">
-              ASQUARE Academy – Wakad, Pune
+              ASQUARE Academy – Shastri Nagar, Pune
             </span>
           </h5>
           <p>
-            Enroll now in the{" "}
-            <strong>leading MHT-CET coaching classes in Wakad, Pune.</strong>{" "}
+            Give your MHT-CET preparation the competitive edge it needs! Join{" "}
+            <strong>leading MHT-CET coaching classes in Shastri Nagar, Pune.</strong>{" "}
             With expert teachers, structured learning modules, and consistent
             results, ASQUARE Academy is the most trusted name for{" "}
             <strong>
-              MHT-CET preparation in Wakad, Hinjewadi, Baner, Balewadi, Pimpri,
-              and Thergaon.
+              MHT-CET preparation in  Shastri Nagar, Kalyani Nagar, Ramwadi, Pratik Nagar & Adarsh Nagar.
             </strong>
           </p>
           <h4>
             <strong>
-              📌 Limited seats available – Call today to secure your admission!
+              Enroll Now at ASQUARE Academy — Shastri Nagar
             </strong>
           </h4>
           <div className="cta-button mt-3">
@@ -736,4 +690,4 @@ function MHTWakad() {
   );
 }
 
-export default MHTWakad;
+export default MHTShastriNagar;

@@ -80,6 +80,19 @@ import MHTVidyanagarKalas from './Pages/LocationsPages/MHTVidyanagarKalas';
 import MHTChandanNagar from './Pages/LocationsPages/MHTChandanNagar';
 import MHTCamp from './Pages/LocationsPages/MHTCamp';
 import MHTWakad from './Pages/LocationsPages/MHTWakad';
+import MHTShastriNagar from './Pages/LocationsPages/MHTShastriNagar';
+import MHTSahunagar from './Pages/LocationsPages/MHTSahunagar';
+import MHTRavet from './Pages/LocationsPages/MHTRavet';
+import MHTThergaon from './Pages/LocationsPages/MHTThergaon';
+import MHTShivajiNagar from './Pages/LocationsPages/MHTShivajiNagar';
+import MHTPune from './Pages/LocationsPages/MHTPune';
+import MHTWagholi from './Pages/LocationsPages/MHTWagholi';
+import MHTDholePatil from './Pages/LocationsPages/MHTDholePatil';
+import MHTBundGarden from './Pages/LocationsPages/MHTBundGarden';
+import MHTPimpriChinchwad from './Pages/LocationsPages/MHTPimpriChinchwad';
+import MHTKalewadi from './Pages/LocationsPages/MHTKalewadi';
+import MHTHinjewadi from './Pages/LocationsPages/MHTHinjewadi';
+import MHTFatimaNagar from './Pages/LocationsPages/MHTFatimaNagar';
 
 function App() {
   return (
@@ -313,6 +326,19 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-in-chandan-nagar-pune' element={<MHTChandanNagar />} />
           <Route path='/mht-cet-coaching-classes-institute-in-pune-camp-area' element={<MHTCamp />} />
           <Route path='/mht-cet-coaching-classes-institute-in-wakad-pune' element={<MHTWakad />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-shastri-nagar-pune' element={<MHTShastriNagar />} />
+          <Route path='/mht-cet-course-classes-institute-in-sahunagar-pune' element={<MHTSahunagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-ravet-pune' element={<MHTRavet />} />
+          <Route path='/mht-cet-course-classes-institute-in-thergaon-pune' element={<MHTThergaon />} />
+          <Route path='/mht-cet-course-classes-institute-in-shivaji-nagar-pune' element={<MHTShivajiNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-pune' element={<MHTPune />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-wagholi-pune' element={<MHTWagholi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-dhole-patil-road-pune' element={<MHTDholePatil />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-bund-garden-pune' element={<MHTBundGarden />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-pimpri-chinchwad-pune' element={<MHTPimpriChinchwad />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-kalewadi-pune' element={<MHTKalewadi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-hinjewadi-pune' element={<MHTHinjewadi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-fatima-nagar-pune' element={<MHTFatimaNagar />} />
         </Routes>
       </BrowserRouter>
     </div>
