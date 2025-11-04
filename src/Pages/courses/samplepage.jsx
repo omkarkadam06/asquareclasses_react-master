@@ -132,66 +132,202 @@ const handleEnrollClick = () => {
 
       <Navbar />
       <Header />
-
-{/* Hero Section */} <section className="jee-hero-section text-white d-flex align-items-center"> <div className="container text-center py-5"> <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="fw-bold display-5 mb-3" > Crack JEE Main & Advanced with{" "} <span className="highlight-text">ASQUARE Academy</span> </motion.h1> {/* Full text for desktop */}
-<p className="lead mx-auto w-75 d-none d-md-block">
-  Looking for IIT JEE coaching classes in Pune that deliver real results?
-  ASQUARE Academy offers expert-led programs designed to build strong fundamentals,
-  sharpen problem-solving skills, and prepare students for JEE Main and Advanced success.
-  With structured learning plans, small batches, and personalized mentoring,
-  our Pune center helps aspiring engineers achieve their IIT dreams with confidence.
-</p>
-
-{/* Short text for mobile */}
-<p className="lead mx-auto w-75 d-block d-md-none">
-  Join Pune’s best IIT JEE coaching — ASQUARE Academy.  
-  Expert mentors, small batches & complete JEE preparation for success.
-</p> <a onClick={handleEnrollClick} className="btn btn-warning btn-lg rounded-pill mt-3 shadow-lg"> 🚀 Enroll Now </a> </div> </section>
-
-      {/* Why Choose */} <section className="jee-why py-5 "> <div className="container"> <h2 className="section-title mb-5 text-center"> Why Choose <span className="text-primary">ASQUARE Academy Pune</span> for IIT JEE Preparation </h2> <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => ( <div key={i} className="col-lg-4 col-md-6"> <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p> </motion.div> </div> ))} </div> </div> </section>
-{/* Subjects + Batches Section */} <section className="jee-gradient-section py-5 text-white"> <div className="container"> <h3 className="text-center mb-5 fw-bold">Subjects Covered & Batch Options</h3> <div className="row g-4"> <div className="col-lg-6"> <h4 className="text-warning mb-4">Subjects Covered</h4> {subjects.map((sub, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{sub.title}</h5> <p className="small mb-0">{sub.desc}</p> </div> ))} </div> <div className="col-lg-6"> <h4 className="text-warning mb-4">Course Duration & Batches</h4> {batches.map((b, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{b.title}</h5> <p className="small mb-0">{b.desc}</p> </div> ))} </div> </div> </div> </section>
-
-{/* Methodology */} <section className="jee-method py-5 bg-light"> <div className="container text-center"> <h3 className="fw-bold mb-4">Effective Teaching Methodology for IIT JEE</h3> <p className="lead mb-5 text-secondary"> Our proven four-step learning system ensures conceptual clarity, constant practice, and exam readiness through personalized mentoring. </p> <div className="row g-4 justify-content-center"> {["Learn", "Practice", "Assess", "Revise"].map((step, i) => ( <div key={i} className="col-md-3"> <motion.div whileHover={{ y: -5 }} className="method-card p-4 bg-white rounded-4 shadow-sm h-100"> <Lightbulb size={36} className="text-primary mb-3" /> <h6 className="fw-bold">{step}</h6> <p className="text-muted small mb-0"> {step === "Learn" ? "Interactive daily lectures with conceptual clarity and practice assignments." : step === "Practice" ? "Regular topic tests, weekly reviews, and monthly full-length mock exams." : step === "Assess" ? "Individual mentoring sessions for performance improvement and doubt clearance." : "Parent–teacher meetings for detailed student progress discussions."} </p> </motion.div> </div> ))} </div> </div> </section>
-
-
-{/* New Highlights Section */}
-<section className="jee-highlights py-5 text-white">
-  <div className="container text-center">
-    <motion.h2
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="fw-bold mb-5 text-uppercase tracking-wide"
-    >
-      ✨ Highlights of <span className="text-warning">ASQUARE Academy Pune</span> IIT JEE Coaching
-    </motion.h2>
-
-    <div className="row justify-content-center g-4">
-      {[
-        "Latest JEE notes, study materials & question banks.",
-        "Workshops on shortcuts, accuracy, and time management.",
-        "Regular progress reports and parent communication.",
-        "Among the best IIT JEE coaching in Pune with consistent academic excellence.",
-      ].map((text, i) => (
-        <motion.div
-          key={i}
-          className="col-md-5 col-lg-4"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="highlight-card shadow-lg rounded-4 p-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
-            <div className="icon-circle mx-auto mb-3">
-            <h2>🎓</h2>
-            </div>
-            <p className="fw-semibold text-light">{text}</p>
+{/* Full-width Slider with Overlaid Form */}
+<section className="jee-full-slider-section position-relative">
+{/* Responsive Bootstrap Carousel (renders one carousel based on isDesktop) */}
+{isDesktop ? (
+  /* Desktop carousel */
+  <div
+    id="jeeFullCarouselDesktop"
+    className="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div className="carousel-inner">
+      {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+        (img, i) => (
+          <div
+            key={i}
+            className={`carousel-item ${i === 0 ? "active" : ""}`}
+            style={{
+              height: "600px",
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="carousel-overlay" />
           </div>
-        </motion.div>
-      ))}
+        )
+      )}
+    </div>
+
+    <button
+      className="carousel-control-prev"
+      type="button"
+      data-bs-target="#jeeFullCarouselDesktop"
+      data-bs-slide="prev"
+    >
+      <span className="carousel-control-prev-icon" />
+    </button>
+    <button
+      className="carousel-control-next"
+      type="button"
+      data-bs-target="#jeeFullCarouselDesktop"
+      data-bs-slide="next"
+    >
+      <span className="carousel-control-next-icon" />
+    </button>
+  </div>
+) : (
+  /* Mobile carousel */
+  <div
+    id="jeeFullCarouselMobile"
+    className="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div className="carousel-inner">
+      {[sampleimg1, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map(
+        (img, i) => (
+          <div
+            key={i}
+            className={`carousel-item ${i === 0 ? "active" : ""}`}
+            style={{
+              height: "400px", // slightly shorter on mobile
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="carousel-overlay" />
+          </div>
+        )
+      )}
+    </div>
+
+    <button
+      className="carousel-control-prev"
+      type="button"
+      data-bs-target="#jeeFullCarouselMobile"
+      data-bs-slide="prev"
+    >
+      <span className="carousel-control-prev-icon" />
+    </button>
+    <button
+      className="carousel-control-next"
+      type="button"
+      data-bs-target="#jeeFullCarouselMobile"
+      data-bs-slide="next"
+    >
+      <span className="carousel-control-next-icon" />
+    </button>
+  </div>
+)}
+
+
+  {/* Form Over Slider */}
+  <div className="jee-slider-form-box">
+    <div className="jee-enquiry-form bg-white p-4 rounded-4 shadow-lg">
+      <h4 className="fw-bold text-primary mb-3 text-center">Quick Enquiry Form</h4>
+      <form>
+        <div className="mb-3">
+          <label className="form-label fw-semibold">Full Name</label>
+          <input type="text" className="form-control" placeholder="Enter your name" />
+        </div>
+        <div className="mb-3">
+          <label className="form-label fw-semibold">Phone Number</label>
+          <input type="tel" className="form-control" placeholder="Enter your phone number" />
+        </div>
+        <div className="mb-3">
+          <label className="form-label fw-semibold">Select Course</label>
+          <select className="form-select">
+            <option value="">-- Select Course --</option>
+            <option>JEE 2-Year Program</option>
+            <option>JEE 1-Year Program</option>
+            <option>Crash Course</option>
+            <option>Repeater Batch</option>
+          </select>
+        </div>
+        <div className="text-center mt-4">
+          <button
+            type="button"
+            onClick={handleEnrollClick}
+            className="btn btn-warning rounded-pill fw-bold px-5 py-2 shadow"
+          >
+            🚀 Enroll Now
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
+<hr></hr>
+{/* Hero Section */}
+<section className="jee-hero-section text-white d-flex align-items-center bg-transparent">
+  <div className="container py-5">
+    <div className="row align-items-center">
+      {/* Left Side: Text */}
 
+      <div className="col-12 col-md-6 text-center text-md-start">
+              <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="fw-bold display-6 mb-3"
+        >
+          Crack JEE Main & Advanced with{" "}
+          <span className="highlight-text text-warning">
+            ASQUARE Academy
+          </span>{" "}
+          - Best IIT JEE Coaching in Pune
+        </motion.h1>
+
+        {/* Full text for desktop */}
+        <p className="lead d-none d-md-block">
+          Looking for IIT JEE coaching classes in Pune that deliver real results?
+          ASQUARE Academy offers expert-led programs designed to build strong
+          fundamentals, sharpen problem-solving skills, and prepare students for
+          JEE Main and Advanced success. With structured learning plans, small
+          batches, and personalized mentoring, our Pune center helps aspiring
+          engineers achieve their IIT dreams with confidence.
+        </p>
+
+        {/* Short text for mobile */}
+        <p className="lead d-block d-md-none">
+          Join Pune’s best IIT JEE coaching — ASQUARE Academy. Expert mentors,
+          small batches & complete JEE preparation for success.
+        </p>
+
+        <a
+          onClick={handleEnrollClick}
+          className="btn btn-warning btn-lg rounded-pill mt-3 shadow-lg"
+        >
+          🚀 Enroll Now
+        </a>
+      </div>
+
+      {/* Right Side: Transparent Image */}
+      <div className="col-12 col-md-6 mt-5 mt-md-0 text-center">
+        <img
+          src={sampleimg3} // replace with your transparent PNG
+          alt="ASQUARE Academy"
+          className="img-fluid mx-auto fade-in"
+          style={{
+          
+            objectFit: "contain",
+            opacity: 0.95,
+             borderRadius: "10px",
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr></hr>
+  
+      {/* Why Choose */} <section className="jee-why py-5 "> <div className="container"> <h2 className="section-title mb-5 text-center"> Why Choose <span className="text-primary">ASQUARE Academy Pune</span> for IIT JEE Preparation </h2> <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => ( <div key={i} className="col-lg-4 col-md-6"> <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p> </motion.div> </div> ))} </div> </div> </section>
+<hr></hr>
  {/* Program Description */}
 <section className="jee-programs py-5 bg-light">
   <div className="container">
@@ -219,6 +355,135 @@ const handleEnrollClick = () => {
   </div>
 </section>
 
+{/* Subjects + Batches Section */} <section className="jee-gradient-section py-5 text-white"> <div className="container"> <h3 className="text-center mb-5 fw-bold">Subjects Covered & Batch Options</h3> <div className="row g-4"> <div className="col-lg-6"> <h4 className="text-warning mb-4">Subjects Covered</h4> {subjects.map((sub, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{sub.title}</h5> <p className="small mb-0">{sub.desc}</p> </div> ))} </div> <div className="col-lg-6"> <h4 className="text-warning mb-4">Course Duration & Batches</h4> {batches.map((b, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{b.title}</h5> <p className="small mb-0">{b.desc}</p> </div> ))} </div> </div> </div> </section>
+
+{/* Methodology Section */}
+<section className="jee-method py-5 bg-light">
+  <div className="container">
+    <div className="row align-items-center g-4">
+   
+             {/* Right Side - Image */}
+      <div className="col-lg-5 text-center">
+        <motion.img
+          whileHover={{ scale: 1.03 }}
+          src={sampleimg5} // replace with your image
+          alt="Teaching Methodology"
+          className="img-fluid rounded-4 shadow-lg"
+          style={{
+            // maxHeight: "400px",
+            borderRadius: "10px",
+            objectFit: "cover",
+          }}
+        />
+      </div>
+      {/* Left Side - Text and Cards */}
+      <div className="col-lg-7 text-center text-lg-start">
+           <h3 className="fw-bold mb-4">Effective Teaching Methodology for IIT JEE</h3>
+        <p className="lead mb-5 text-secondary">
+          Our proven four-step learning system ensures conceptual clarity, constant practice, and exam readiness through personalized mentoring.
+        </p>
+
+        <div className="row g-4 justify-content-center">
+          {["Learn", "Practice", "Assess", "Revise"].map((step, i) => (
+            <div key={i} className="col-sm-6">
+              <motion.div
+                whileHover={{ y: -5 }}
+                className="method-card p-4 bg-white rounded-4 shadow-sm h-100 text-center"
+              >
+                <Lightbulb size={36} className="text-primary mb-3" />
+                <h6 className="fw-bold">{step}</h6>
+                <p className="text-muted small mb-0">
+                  {step === "Learn"
+                    ? "Interactive daily lectures with conceptual clarity and practice assignments."
+                    : step === "Practice"
+                    ? "Regular topic tests, weekly reviews, and monthly full-length mock exams."
+                    : step === "Assess"
+                    ? "Individual mentoring sessions for performance improvement and doubt clearance."
+                    : "Parent–teacher meetings for detailed student progress discussions."}
+                </p>
+              </motion.div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+ 
+    </div>
+  </div>
+</section>
+
+
+
+{/* New Highlights Section */}
+<section className="jee-highlights py-5 text-white">
+  <div className="container text-center">
+    <motion.h2
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="fw-bold mb-5 text-uppercase tracking-wide"
+    >
+      ✨ Highlights of <span className="text-warning">ASQUARE Academy Pune</span> IIT JEE Coaching
+    </motion.h2>
+
+    <div className="row align-items-center justify-content-center g-4">
+      
+      {/* Left 2 Points */}
+      <div className="col-md-4">
+        {[
+          "Latest JEE notes, study materials & question banks.",
+          "Workshops on shortcuts, accuracy, and time management.",
+        ].map((text, i) => (
+          <motion.div
+            key={i}
+            className="highlight-card shadow-lg rounded-4 p-4 mb-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <h2>🎓</h2>
+            <p className="fw-semibold text-light mb-0">{text}</p>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Center Image */}
+      <div className="col-md-4 text-center">
+        <img
+          src={sampleimg7} // replace with your image path
+          alt="ASQUARE Academy"
+          className="img-fluid rounded-4 shadow-lg fade-in"
+          style={{
+            maxHeight: "380px",
+            objectFit: "cover",
+            borderRadius: "15px",
+            opacity: 0.95,
+          }}
+        />
+      </div>
+
+      {/* Right 2 Points */}
+      <div className="col-md-4">
+        {[
+          "Regular progress reports and parent communication.",
+          "Among the best IIT JEE coaching in Pune with consistent academic excellence.",
+        ].map((text, i) => (
+          <motion.div
+            key={i}
+            className="highlight-card shadow-lg rounded-4 p-4 mb-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <h2>🎯</h2>
+            <p className="fw-semibold text-light mb-0">{text}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr></hr>
+
 
   {/* Results Section */}
 <section className="jee-results py-5 text-white">
@@ -240,7 +505,7 @@ const handleEnrollClick = () => {
       <div className="col-lg-6 order-1 order-lg-2 text-center">
         <motion.img
           whileHover={{ scale: 1.05 }}
-          src={sampleimg2}
+          src={sampleimg6}
           alt="Success Stories"
           className="img-fluid rounded-4 shadow-lg mx-auto d-block"
           style={{ width: "80%" }}
@@ -252,7 +517,7 @@ const handleEnrollClick = () => {
 
 
     {/* Gallery Section */}
-<section className="jee-gallery py-5 bg-light">
+{/* <section className="jee-gallery py-5 bg-light">
   <div className="container text-center">
     <h3 className="fw-bold mb-4 text-primary">ASQUARE Pune Moments</h3>
     <div className="row g-3">
@@ -275,7 +540,7 @@ const handleEnrollClick = () => {
       ))}
     </div>
   </div>
-</section>
+</section> */}
 
 
       {/* FAQs */}
