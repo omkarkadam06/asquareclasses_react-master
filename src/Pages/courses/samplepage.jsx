@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 import {
   Users,
   BookOpen,
@@ -29,7 +30,7 @@ import sampleimg5 from '../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../Assets/SampleImages/sampleimg7.jpeg';
 import Swal from "sweetalert2";
-
+import Form from '../../Components/Form2/Form2.jsx';
 
 const Reviews = React.lazy(() => import("../../Components/Reviews/Reviews.jsx"));
 
@@ -117,7 +118,7 @@ const handleEnrollClick = () => {
     { title: "Repeater Batch (XII Pass-outs)", desc: "One-year targeted preparation for students reappearing for JEE." },
   ];
 
-    const faqs = [{ q: "Who can join ASQUARE Academy Pune?", a: "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can join. Our programs are tailored for different learning levels to ensure every student gets the right guidance and pace for success." }, { q: "What subjects are covered in the course?", a: "We provide complete coaching for Physics, Chemistry, and Mathematics (PCM) as per the latest JEE syllabus. Each subject is taught by domain experts who emphasize both theory and application." }, { q: "Are mock tests conducted regularly?", a: "Yes. Weekly tests and full-length JEE mock exams are conducted to evaluate progress, improve time management, and identify weak areas." }, { q: "What are the different course options available?", a: "We offer 2-Year Foundation, 1-Year Advanced, Crash Courses, and Repeater Batches." }, { q: "How big are the batches at ASQUARE Academy Pune?", a: "Our batches are intentionally small to ensure personalized attention for every student." }, { q: "Do parents get regular performance updates?", a: "Absolutely. We conduct monthly progress meetings and share performance reports with parents." }, { q: "Which areas does the Pune branch serve?", a: "Our Pune center is easily accessible from Kothrud, Aundh, Wakad, Baner, Hinjewadi, and nearby localities, making it a convenient choice for students across the city." },];
+    const faqs = [{ q: "Q1: Who can join ASQUARE Academy Pune?", a: "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can join. Our programs are tailored for different learning levels to ensure every student gets the right guidance and pace for success." }, { q: "Q2: What subjects are covered in the course?", a: "We provide complete coaching for Physics, Chemistry, and Mathematics (PCM) as per the latest JEE syllabus. Each subject is taught by domain experts who emphasize both theory and application." }, { q: "Q3: Are mock tests conducted regularly?", a: "Yes. Weekly tests and full-length JEE mock exams are conducted to evaluate progress, improve time management, and identify weak areas. Detailed reports help students track their performance over time." }, { q: "Q4: What are the different course options available?", a: "We offer 2-Year Foundation, 1-Year Advanced, Crash Courses, and Repeater Batches. Each program is designed to suit different academic needs and preparation stages." }, { q: "Q5: How big are the batches at ASQUARE Academy Pune?", a: "Our batches are intentionally small to ensure personalized attention for every student. This approach allows teachers to focus on individual learning needs and provide effective doubt-solving support." }, { q: "Q6: Do parents get regular performance updates?", a: "Absolutely. We conduct monthly progress meetings and share performance reports with parents. Regular communication ensures parents stay informed about their child’s academic growth." }, { q: "Q7: Which areas does the Pune branch serve?", a: "Our Pune center is easily accessible from Kothrud, Aundh, Wakad, Baner, Hinjewadi, and nearby localities, making it a convenient choice for students across the city." },];
 
   return (
     <>
@@ -132,6 +133,7 @@ const handleEnrollClick = () => {
 
       <Navbar />
       <Header />
+        
 {/* Full-width Slider with Overlaid Form */}
 <section className="jee-full-slider-section position-relative">
 {/* Responsive Bootstrap Carousel (renders one carousel based on isDesktop) */}
@@ -186,7 +188,7 @@ const handleEnrollClick = () => {
     data-bs-ride="carousel"
   >
     <div className="carousel-inner">
-      {[sampleimg1, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map(
+      {[sampleimg2, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map(
         (img, i) => (
           <div
             key={i}
@@ -226,37 +228,9 @@ const handleEnrollClick = () => {
 
   {/* Form Over Slider */}
   <div className="jee-slider-form-box">
-    <div className="jee-enquiry-form bg-white p-4 rounded-4 shadow-lg">
-      <h4 className="fw-bold text-primary mb-3 text-center">Quick Enquiry Form</h4>
-      <form>
-        <div className="mb-3">
-          <label className="form-label fw-semibold">Full Name</label>
-          <input type="text" className="form-control" placeholder="Enter your name" />
-        </div>
-        <div className="mb-3">
-          <label className="form-label fw-semibold">Phone Number</label>
-          <input type="tel" className="form-control" placeholder="Enter your phone number" />
-        </div>
-        <div className="mb-3">
-          <label className="form-label fw-semibold">Select Course</label>
-          <select className="form-select">
-            <option value="">-- Select Course --</option>
-            <option>JEE 2-Year Program</option>
-            <option>JEE 1-Year Program</option>
-            <option>Crash Course</option>
-            <option>Repeater Batch</option>
-          </select>
-        </div>
-        <div className="text-center mt-4">
-          <button
-            type="button"
-            onClick={handleEnrollClick}
-            className="btn btn-warning rounded-pill fw-bold px-5 py-2 shadow"
-          >
-            🚀 Enroll Now
-          </button>
-        </div>
-      </form>
+    <div className="jee-enquiry-form rounded-4 shadow-lg">
+       <MobileForm />
+        <Form />
     </div>
   </div>
 </section>
@@ -268,7 +242,7 @@ const handleEnrollClick = () => {
     <div className="row align-items-center">
       {/* Left Side: Text */}
 
-      <div className="col-12 col-md-6 text-center text-md-start">
+      <div className="col-12 col-md-9 text-center text-md-start">
               <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -284,34 +258,34 @@ const handleEnrollClick = () => {
 
         {/* Full text for desktop */}
         <p className="lead d-none d-md-block">
-          Looking for IIT JEE coaching classes in Pune that deliver real results?
-          ASQUARE Academy offers expert-led programs designed to build strong
-          fundamentals, sharpen problem-solving skills, and prepare students for
-          JEE Main and Advanced success. With structured learning plans, small
-          batches, and personalized mentoring, our Pune center helps aspiring
-          engineers achieve their IIT dreams with confidence.
+          Looking for <b className="bld">IIT JEE coaching classes in Pune</b> that deliver real results? ASQUARE Academy offers expert-led programs designed to build strong fundamentals, sharpen problem-solving skills, and prepare students for <b className="bld">JEE Main and Advanced</b> success. With structured learning plans, small batches, and personalized mentoring, our Pune center helps aspiring engineers achieve their IIT dreams with confidence.
         </p>
 
         {/* Short text for mobile */}
         <p className="lead d-block d-md-none">
-          Join Pune’s best IIT JEE coaching — ASQUARE Academy. Expert mentors,
-          small batches & complete JEE preparation for success.
+            Looking for <b className="bld">IIT JEE coaching classes in Pune</b> that deliver real results? ASQUARE Academy offers expert-led programs designed to build strong fundamentals, sharpen problem-solving skills, and prepare students for <b className="bld">JEE Main and Advanced</b> success. With structured learning plans, small batches, and personalized mentoring, our Pune center helps aspiring engineers achieve their IIT dreams with confidence.
         </p>
 
         <a
-          onClick={handleEnrollClick}
+        
           className="btn btn-warning btn-lg rounded-pill mt-3 shadow-lg"
-        >
-          🚀 Enroll Now
+        >      <Link
+                        to={'/'}
+                        className="nav-item nav-item-list text-warning"
+                       
+                      >
+                       🚀 Enroll Now
+                      </Link>
+          
         </a>
       </div>
 
       {/* Right Side: Transparent Image */}
-      <div className="col-12 col-md-6 mt-5 mt-md-0 text-center">
+      <div className="col-12 col-md-3 mt-5 mt-md-0 text-center">
         <img
           src={sampleimg3} // replace with your transparent PNG
           alt="ASQUARE Academy"
-          className="img-fluid mx-auto fade-in"
+          className="img-fluid mx-auto fade-in imgsiz"
           style={{
           
             objectFit: "contain",
@@ -326,13 +300,32 @@ const handleEnrollClick = () => {
 
 <hr></hr>
   
-      {/* Why Choose */} <section className="jee-why py-5 "> <div className="container"> <h2 className="section-title mb-5 text-center"> Why Choose <span className="text-primary">ASQUARE Academy Pune</span> for IIT JEE Preparation </h2> <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => ( <div key={i} className="col-lg-4 col-md-6"> <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p> </motion.div> </div> ))} </div> </div> </section>
+      {/* Why Choose */} <section className="jee-why py-5 "> <div className="container">           <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="fw-bold display-6 mb-3 text-center"
+      >Why Choose <span className="text-primary">ASQUARE Academy Pune</span> for IIT JEE Preparation</motion.h1>
+        <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6"> <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p> </motion.div> </div>))} </div> </div> </section>
 <hr></hr>
  {/* Program Description */}
 <section className="jee-programs py-5 bg-light">
   <div className="container">
     <div className="row align-items-center g-5">
-      <div className="col-lg-6 text-center">
+
+      <div className="col-lg-9 text-center text-lg-start">
+        <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="fw-bold display-6 mb-3 text-centerr"
+      >IIT JEE Coaching Programs Offered at  <span className="text-primary">ASQUARE Academy Pune</span> </motion.h1>
+       
+        <p className="lead text-secondary">
+          The <b className="bld">Joint Entrance Examination (JEE)</b> is one of India’s toughest entrance exams for engineering aspirants. At <b className="bld">ASQUARE Academy Pune</b>, our programs focus on conceptual clarity, speed, and accuracy—equipping students with the knowledge and discipline needed to excel in <b className="bld">JEE Main & Advanced</b>.
+        </p>
+      </div>
+            <div className="col-lg-3 text-center">
         <motion.img
           whileHover={{ scale: 1.03 }}
           src={sampleimg4}
@@ -341,29 +334,34 @@ const handleEnrollClick = () => {
           style={{ width: "80%" }}
         />
       </div>
-      <div className="col-lg-6 text-center text-lg-start">
-        <h3 className="fw-bold text-primary mb-3">
-          IIT JEE Coaching Programs Offered at ASQUARE Academy Pune
-        </h3>
-        <p className="lead text-secondary">
-          The Joint Entrance Examination (JEE) is one of India’s toughest entrance exams for engineering aspirants.
-          At ASQUARE Academy Pune, our programs focus on conceptual clarity, speed, and accuracy—equipping students
-          with the knowledge and discipline needed to excel in JEE Main & Advanced.
-        </p>
-      </div>
     </div>
   </div>
 </section>
+<hr></hr>
+{/* Subjects + Batches Section */} <section className="jee-gradient-section py-5 text-white"> <div className="container">
+             <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="fw-bold display-6 mb-3 text-center"
+        >
+          Subjects Covered
+          <span className="highlight-text text-warning">
+            &nbsp;&&nbsp;
+          </span>
+          Batch Options
+        </motion.h1>
+        <br></br>
 
-{/* Subjects + Batches Section */} <section className="jee-gradient-section py-5 text-white"> <div className="container"> <h3 className="text-center mb-5 fw-bold">Subjects Covered & Batch Options</h3> <div className="row g-4"> <div className="col-lg-6"> <h4 className="text-warning mb-4">Subjects Covered</h4> {subjects.map((sub, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{sub.title}</h5> <p className="small mb-0">{sub.desc}</p> </div> ))} </div> <div className="col-lg-6"> <h4 className="text-warning mb-4">Course Duration & Batches</h4> {batches.map((b, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{b.title}</h5> <p className="small mb-0">{b.desc}</p> </div> ))} </div> </div> </div> </section>
-
+    <div className="row g-4"> <div className="col-lg-6"> <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects Covered in ASQUARE Academy’s JEE Coaching Classes</h4> {subjects.map((sub, i) => ( <div key={i} className="jee-subject-box mb-4 p-3 pb-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{sub.title}</h5> <p className="small mb-0">{sub.desc}</p> </div> ))} </div> <div className="col-lg-6"> <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Duration and Batch Options for IIT JEE Students</h4> {batches.map((b, i) => ( <div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-dark bg-opacity-25"> <h5 className="fw-semibold">{b.title}</h5> <p className="small mb-0">{b.desc}</p> </div> ))} </div> </div> </div> </section>
+<hr></hr>
 {/* Methodology Section */}
 <section className="jee-method py-5 bg-light">
   <div className="container">
     <div className="row align-items-center g-4">
    
              {/* Right Side - Image */}
-      <div className="col-lg-5 text-center">
+      {/* <div className="col-lg-5 text-center">
         <motion.img
           whileHover={{ scale: 1.03 }}
           src={sampleimg5} // replace with your image
@@ -375,23 +373,27 @@ const handleEnrollClick = () => {
             objectFit: "cover",
           }}
         />
-      </div>
+      </div> */}
       {/* Left Side - Text and Cards */}
-      <div className="col-lg-7 text-center text-lg-start">
-           <h3 className="fw-bold mb-4">Effective Teaching Methodology for IIT JEE</h3>
-        <p className="lead mb-5 text-secondary">
-          Our proven four-step learning system ensures conceptual clarity, constant practice, and exam readiness through personalized mentoring.
-        </p>
+      <div className="col-lg-12 text-center text-lg-start">
+           <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="fw-bold display-6 mb-3 text-center"
+      >Effective Teaching Methodology for IIT JEE at <span className="text-primary">ASQUARE Academy</span> </motion.h1>
+          
+      
 
         <div className="row g-4 justify-content-center">
           {["Learn", "Practice", "Assess", "Revise"].map((step, i) => (
-            <div key={i} className="col-sm-6">
+            <div key={i} className="col-lg-3 col-6">
               <motion.div
                 whileHover={{ y: -5 }}
                 className="method-card p-4 bg-white rounded-4 shadow-sm h-100 text-center"
               >
-                <Lightbulb size={36} className="text-primary mb-3" />
-                <h6 className="fw-bold">{step}</h6>
+                {/* <Lightbulb size={36} className="text-primary mb-3" /> */}
+                {/* <h6 className="fw-bold">{step}</h6> */}
                 <p className="text-muted small mb-0">
                   {step === "Learn"
                     ? "Interactive daily lectures with conceptual clarity and practice assignments."
@@ -412,97 +414,97 @@ const handleEnrollClick = () => {
   </div>
 </section>
 
-
+<hr></hr>
 
 {/* New Highlights Section */}
 <section className="jee-highlights py-5 text-white">
   <div className="container text-center">
-    <motion.h2
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="fw-bold mb-5 text-uppercase tracking-wide"
-    >
-      ✨ Highlights of <span className="text-warning">ASQUARE Academy Pune</span> IIT JEE Coaching
-    </motion.h2>
+            <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="fw-bold display-6 mb-3"
+        >
+         Key Highlights of 
+          <span className="highlight-text text-warning">
+           &nbsp;ASQUARE Academy Pune &nbsp; 
+          </span>
+          IIT JEE Coaching
+        </motion.h1>
 
-    <div className="row align-items-center justify-content-center g-4">
-      
-      {/* Left 2 Points */}
-      <div className="col-md-4">
-        {[
-          "Latest JEE notes, study materials & question banks.",
-          "Workshops on shortcuts, accuracy, and time management.",
-        ].map((text, i) => (
-          <motion.div
-            key={i}
-            className="highlight-card shadow-lg rounded-4 p-4 mb-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
+<div className="row justify-content-center g-4">
+  {[
+    "Latest JEE notes, study materials & question banks.",
+    "Workshops on shortcuts, accuracy, and time management.",
+    "Regular progress reports and parent communication.",
+    "Among the best IIT JEE coaching in Pune with consistent academic excellence.",
+  ].map((text, i) => {
+    const highlightedText = text.includes("best IIT JEE coaching in Pune")
+      ? text.replace(
+          "best IIT JEE coaching in Pune",
+         '<b className="bld">best IIT JEE coaching in Pune</b>'
+        )
+      : text;
+
+    return (
+      <motion.div
+        key={i}
+        className="col-md-5 col-lg-3 col-6"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+      >
+        <div className="highlight-card shadow-lg rounded-4 p-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
+          <div className="icon-circle mx-auto mb-3">
             <h2>🎓</h2>
-            <p className="fw-semibold text-light mb-0">{text}</p>
-          </motion.div>
-        ))}
-      </div>
+          </div>
+          <p
+            className="fw-semibold text-light "
+            dangerouslySetInnerHTML={{ __html: highlightedText }}
+          ></p>
+        </div>
+      </motion.div>
+    );
+  })}
+</div>
 
-      {/* Center Image */}
-      <div className="col-md-4 text-center">
-        <img
-          src={sampleimg7} // replace with your image path
-          alt="ASQUARE Academy"
-          className="img-fluid rounded-4 shadow-lg fade-in"
-          style={{
-            maxHeight: "380px",
-            objectFit: "cover",
-            borderRadius: "15px",
-            opacity: 0.95,
-          }}
-        />
-      </div>
-
-      {/* Right 2 Points */}
-      <div className="col-md-4">
-        {[
-          "Regular progress reports and parent communication.",
-          "Among the best IIT JEE coaching in Pune with consistent academic excellence.",
-        ].map((text, i) => (
-          <motion.div
-            key={i}
-            className="highlight-card shadow-lg rounded-4 p-4 mb-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <h2>🎯</h2>
-            <p className="fw-semibold text-light mb-0">{text}</p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
   </div>
 </section>
 
-<hr></hr>
 
+<hr></hr>
+   <Suspense fallback={<Loading />}>
+        <Reviews />
+      </Suspense>
+
+
+<hr></hr>
 
   {/* Results Section */}
 <section className="jee-results py-5 text-white">
   <div className="container">
     <div className="row align-items-center g-5">
       {/* Text Section */}
-      <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-        <h3 className="fw-bold text-white mb-3">
-          Consistent JEE Results and Success Stories from ASQUARE Pune
-        </h3>
+      <div className="col-lg-9 text-center text-lg-start">
+     
+                <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="fw-bold display-6 mb-3"
+        >
+          Consistent JEE Results and Success Stories from 
+          <span className="highlight-text text-warning">
+           &nbsp;ASQUARE Pune &nbsp; 
+          </span>
+     
+        </motion.h1>
         <p className="lead text-light">
-          ASQUARE Academy has produced numerous IIT-JEE toppers and high-rank achievers every year.
-          Our proven teaching methods, personal mentoring, and disciplined environment help students
-          maximize their potential and secure admissions into IITs, NITs, and other top engineering colleges.
+          ASQUARE Academy has produced numerous IIT-JEE toppers and high-rank achievers every year. Our proven teaching methods, personal mentoring, and disciplined environment help students maximize their potential and secure admissions into IITs, NITs, and other top engineering colleges.
         </p>
       </div>
 
       {/* Image Section */}
-      <div className="col-lg-6 order-1 order-lg-2 text-center">
+      <div className="col-lg-3 text-center">
         <motion.img
           whileHover={{ scale: 1.05 }}
           src={sampleimg6}
@@ -515,7 +517,7 @@ const handleEnrollClick = () => {
   </div>
 </section>
 
-
+<hr></hr>
     {/* Gallery Section */}
 {/* <section className="jee-gallery py-5 bg-light">
   <div className="container text-center">
@@ -543,40 +545,78 @@ const handleEnrollClick = () => {
 </section> */}
 
 
-      {/* FAQs */}
-      <section className="jee-faq py-5">
-        <div className="container">
-          <div className="text-center mb-5">
-            <div className="d-inline-block bg-primary bg-opacity-10 text-primary fw-bold rounded-pill px-3 py-1 mb-3">
-              <BadgeQuestionMark /> FAQs
-            </div>
-            <h3 className="fw-bold">FAQs About IIT JEE Coaching in Pune</h3>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-md-10">
-              <FAQAccordion faqs={faqs} accordionId="jeeFaq" />
-            </div>
-          </div>
-        </div>
-      </section>
+{/* FAQs */}
+<section className="jee-faq py-5">
+  <div className="container">
+    <div className="text-center mb-5">
+      <div className="d-inline-block bg-primary bg-opacity-10 text-primary fw-bold rounded-pill px-3 py-1 mb-3">
+        <BadgeQuestionMark /> FAQs
+      </div>
+      
+        <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="fw-bold display-6 mb-3 text-center"
+      >FAQs About IIT JEE Coaching Classes at <span className="text-primary">ASQUARE Academy Pune</span> </motion.h1>
+    </div>
+
+    <div className="row justify-content-center">
+      {/* Left Column */}
+      <div className="col-12 col-md-6 mb-4 mb-md-0">
+        <FAQAccordion
+          faqs={faqs.slice(0, Math.ceil(faqs.length / 2))}
+          accordionId="jeeFaqLeft"
+        />
+      </div>
+
+      {/* Right Column */}
+      <div className="col-12 col-md-6">
+        <FAQAccordion
+          faqs={faqs.slice(Math.ceil(faqs.length / 2))}
+          accordionId="jeeFaqRight"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<hr></hr>
 
       {/* Final CTA */}
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
-          <h2 className="fw-bold mb-3">Enroll Today at ASQUARE Academy Pune for IIT JEE Coaching</h2>
+     
+               <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="fw-bold display-6 mb-3"
+        >
+          Enroll Today at ASQUARE Academy Pune for 
+          <span className="highlight-text text-warning">
+           &nbsp;IIT JEE Coaching &nbsp; 
+          </span>
+     
+        </motion.h1>
           <p className="lead mb-4">
-            Start your IIT JEE journey with the best IIT JEE coaching in Pune — ASQUARE Academy.
+           Start your <b className="bld">IIT JEE journey</b> with the  <b className="bld">best IIT JEE coaching in Pune</b> — ASQUARE Academy. With expert mentors, structured programs, and a strong track record of results, we help you achieve your engineering aspirations.
           </p>
-          <p><MapPin className="text-warning" /> Serving students from Kothrud, Aundh, Wakad, Baner, Hinjewadi & nearby areas.</p>
-          <a onClick={handleEnrollClick} className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
+          <p><MapPin className="text-warning" /> Ideal for students from Kothrud, Aundh, Wakad, Baner, Hinjewadi & nearby areas.</p>
+          <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
             ⚡ Admissions Open – Enroll Now!
-          </a>
+        
+          <Link
+                        to={'/'}
+                        className="nav-item nav-item-list text-warning"
+                       
+                      >
+                       &nbsp;Limited Seats Available.
+                      </Link>
+                        </a>
         </div>
       </section>
 
-      <Suspense fallback={<Loading />}>
-        <Reviews />
-      </Suspense>
+   
 
       <Footer />
     </>
