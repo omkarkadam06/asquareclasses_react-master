@@ -317,7 +317,7 @@ function App() {
 
 
 
-          <Route path='/samplepage' element={<Samplepage />} />
+          <Route path='/iit-jee-coaching-classes-institute-in-pune' element={<Samplepage />} />
         </Routes>
       </BrowserRouter>
     </div>

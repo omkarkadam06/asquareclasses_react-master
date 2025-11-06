@@ -1,7 +1,35 @@
 .jee-hero-section {
-background: linear-gradient(135deg, #332B47, #7A5BA3);
+background: linear-gradient(135deg, #000000, #000000a2);
   min-height: 80vh;
   background-size: cover;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height:  auto; /* desktop height */
+  object-fit: contain; /* ✅ prevents cropping or zoom */
+  background-color: #000; /* optional, adds contrast if image has transparent edges */
+}
+
+@media (max-width: 992px) {
+  .carousel-image {
+    height: 450px; /* laptop/tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 350px; /* tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 250px; /* mobile */
+  }
 }
 
 .highlight-text {
@@ -14,7 +42,7 @@ background: linear-gradient(135deg, #332B47, #7A5BA3);
 }
 
 .jee-gradient-section {
-background: linear-gradient(135deg, #332B47, #7A5BA3);
+background: linear-gradient(135deg, #000000, #000000a2);
 }
 .faqbg{  background: linear-gradient(135deg, #004aad, #6799f8);}
 .method-card {
@@ -26,7 +54,7 @@ background: linear-gradient(135deg, #332B47, #7A5BA3);
 }
 
 .jee-enroll-section {
- background: linear-gradient(135deg, #332B47, #7A5BA3);
+background: linear-gradient(135deg, #000000, #000000a2);
 }
 
 .jee-why {
@@ -48,7 +76,7 @@ background: linear-gradient(135deg, #332B47, #7A5BA3);
 }
 
 .jee-results {
- background: linear-gradient(135deg, #332B47, #7A5BA3);
+background: linear-gradient(135deg, #000000, #000000a2);
 }
 
 .jee-gallery img {
@@ -72,7 +100,7 @@ background: linear-gradient(135deg, #332B47, #7A5BA3);
 
 
 .jee-highlights {
-background: linear-gradient(135deg, #332B47, #7A5BA3);
+background: linear-gradient(135deg, #000000, #000000a2);
   background-size: 300% 300%;
   animation: gradientShift 8s ease infinite;
 }
@@ -123,16 +151,29 @@ background: linear-gradient(135deg, #332B47, #7A5BA3);
 /* Form box positioned on slider (desktop only) */
 .jee-slider-form-box {
   position: absolute;
-    top: 48%;
+    top: 42%;
     right: 4%;
   transform: translateY(-50%);
   z-index: 2;
+  height: fit-content;
   /* width: 380px; */
 }
+@media (max-width: 1024px) {
+    .mobile-form .headernewform {
+        display: block !important;
+        width: 85%!important;
+        margin: 0px auto!important;
+    }
 
+    .jee-slider-form-box {
+  position: absolute;
+          top: 46%;
+        right: 0%;
+    }
+}
 /* Form styling */
 .jee-enquiry-form {
-  backdrop-filter: blur(8px);
+  /* backdrop-filter: blur(8px); */
   transition: all 0.3s ease;
 }
 
@@ -178,3 +219,4 @@ background: linear-gradient(135deg, #332B47, #7A5BA3);
   margin: 0 15px;
 }
 
+.bg-dr{  background: linear-gradient(135deg, #004aad, #6799f8)!important;}

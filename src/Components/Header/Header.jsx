@@ -470,7 +470,7 @@ const Header = () => {
             </li>
                 <li className="nav-item-in">
               <Link
-                to={'/samplepage/'}
+                to={'/iit-jee-coaching-classes-institute-in-pune/'}
                 className="nav-item nav-item-list"
                 onClick={scrollToTop}
               >
