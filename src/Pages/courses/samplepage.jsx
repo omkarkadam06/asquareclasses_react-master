@@ -43,59 +43,7 @@ function Samplepage() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-const handleEnrollClick = () => {
-  Swal.fire({
-    title: "🚀 Enroll Now – ASQUARE Academy",
-    html: `
-      <form id="enrollForm" class="text-start">
-        <div class="mb-3">
-          <label class="form-label fw-semibold">Full Name</label>
-          <input type="text" id="swalName" class="form-control" placeholder="Enter your name" required />
-        </div>
-        <div class="mb-3">
-          <label class="form-label fw-semibold">Phone Number</label>
-          <input type="tel" id="swalPhone" class="form-control" placeholder="Enter your phone number" required />
-        </div>
-        <div class="mb-3">
-          <label class="form-label fw-semibold">Select Course</label>
-          <select id="swalCourse" class="form-select">
-            <option value="">-- Select --</option>
-            <option>JEE 2-Year Program</option>
-            <option>JEE 1-Year Program</option>
-            <option>Crash Course</option>
-            <option>Repeater Batch</option>
-          </select>
-        </div>
-      </form>
-    `,
-    showCancelButton: true,
-    confirmButtonText: "Submit",
-    cancelButtonText: "Cancel",
-    confirmButtonColor: "#facc15",
-    focusConfirm: false,
-    preConfirm: () => {
-      const name = document.getElementById("swalName").value;
-      const phone = document.getElementById("swalPhone").value;
-      const course = document.getElementById("swalCourse").value;
 
-      if (!name || !phone || !course) {
-        Swal.showValidationMessage("⚠️ Please fill all fields before submitting.");
-        return false;
-      }
-
-      return { name, phone, course };
-    },
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        title: "✅ Enrolled Successfully!",
-        text: `Thank you, ${result.value.name}! Our team will contact you shortly regarding the ${result.value.course}.`,
-        icon: "success",
-        confirmButtonColor: "#3085d6",
-      });
-    }
-  });
-};
 
   const whyChoose = [
     { Icon: Users, title: "Expert Faculty", desc: "Highly qualified IIT-JEE mentors with years of successful teaching experience." },
@@ -242,7 +190,7 @@ const handleEnrollClick = () => {
     <div className="row align-items-center">
       {/* Left Side: Text */}
 
-      <div className="col-12 col-md-9 text-center text-md-start">
+      <div className="col-12 col-md-8 text-center text-md-start">
               <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -281,7 +229,7 @@ const handleEnrollClick = () => {
       </div>
 
       {/* Right Side: Transparent Image */}
-      <div className="col-12 col-md-3 mt-5 mt-md-0 text-center">
+      <div className="col-12 col-md-4 mt-5 mt-md-0 text-center">
         <img
           src={sampleimg3} // replace with your transparent PNG
           alt="ASQUARE Academy"
@@ -313,7 +261,7 @@ const handleEnrollClick = () => {
   <div className="container">
     <div className="row align-items-center g-5">
 
-      <div className="col-lg-9 text-center text-lg-start">
+      <div className="col-lg-8 text-center text-lg-start">
         <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -325,13 +273,13 @@ const handleEnrollClick = () => {
           The <b className="bld">Joint Entrance Examination (JEE)</b> is one of India’s toughest entrance exams for engineering aspirants. At <b className="bld">ASQUARE Academy Pune</b>, our programs focus on conceptual clarity, speed, and accuracy—equipping students with the knowledge and discipline needed to excel in <b className="bld">JEE Main & Advanced</b>.
         </p>
       </div>
-            <div className="col-lg-3 text-center">
+            <div className="col-lg-4 text-center">
         <motion.img
           whileHover={{ scale: 1.03 }}
           src={sampleimg4}
           alt="JEE Coaching"
           className="img-fluid rounded-4 shadow-lg mx-auto d-block"
-          style={{ width: "80%" }}
+          style={{ width: "85%" }}
         />
       </div>
     </div>
@@ -484,7 +432,7 @@ const handleEnrollClick = () => {
   <div className="container">
     <div className="row align-items-center g-5">
       {/* Text Section */}
-      <div className="col-lg-9 text-center text-lg-start">
+      <div className="col-lg-8 text-center text-lg-start">
      
                 <motion.h1
           initial={{ opacity: 0, y: 40 }}
@@ -504,7 +452,7 @@ const handleEnrollClick = () => {
       </div>
 
       {/* Image Section */}
-      <div className="col-lg-3 text-center">
+      <div className="col-lg-4 text-center">
         <motion.img
           whileHover={{ scale: 1.05 }}
           src={sampleimg6}
@@ -563,7 +511,7 @@ const handleEnrollClick = () => {
 
     <div className="row justify-content-center">
       {/* Left Column */}
-      <div className="col-12 col-md-6 mb-4 mb-md-0">
+      <div className="col-12 col-md-6 mb-4 mb-md-0 ">
         <FAQAccordion
           faqs={faqs.slice(0, Math.ceil(faqs.length / 2))}
           accordionId="jeeFaqLeft"
@@ -603,14 +551,15 @@ const handleEnrollClick = () => {
           </p>
           <p><MapPin className="text-warning" /> Ideal for students from Kothrud, Aundh, Wakad, Baner, Hinjewadi & nearby areas.</p>
           <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
-            ⚡ Admissions Open – Enroll Now!
-        
-          <Link
+                      <Link
                         to={'/'}
-                        className="nav-item nav-item-list text-warning"
+                        className="nav-item nav-item-list text-white"
                        
                       >
-                       &nbsp;Limited Seats Available.
+            ⚡ Admissions Open – Enroll Now!
+        
+
+                       &nbsp;<p className="text-warning">Limited Seats Available.</p>
                       </Link>
                         </a>
         </div>

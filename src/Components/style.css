@@ -943,3 +943,44 @@ img.thankyou_img{
   width: 200px;
   height: 200px;
 }
+
+
+
+
+
+/* FAQ Item Styling */
+.faq-item {
+  background: linear-gradient(135deg, #004aad, #6799f8);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Hover animation */
+.faq-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Accordion Button Reset */
+.accordion-button {
+  background: linear-gradient(135deg, #004aad, #6799f8)!important;
+  border: none;
+  color: #fff;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Remove Bootstrap default arrow */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Answer Area */
+.accordion-body {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 12px 12px;
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
