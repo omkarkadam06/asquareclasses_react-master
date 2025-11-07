@@ -72,6 +72,10 @@ function Samplepage() {
     <>
       <Helmet>
         <title>Best IIT JEE Coaching Classes in Pune | JEE Main & Advanced Preparation</title>
+                <meta
+          name="title"
+          content="Best IIT JEE Coaching Classes in Pune | JEE Main & Advanced Preparation"
+        />
         <meta
           name="description"
           content="Join the best IIT JEE coaching classes in Pune for expert guidance, mock tests, and complete JEE Main & Advanced preparation for Class XI–XII students at ASQUARE Academy."
@@ -86,6 +90,135 @@ IIT JEE Classes in Pune,
 Best IIT JEE Classes in Pune,
 Top IIT JEE Classes in Pune,
 " />
+<script type="application/ld+json">{`
+
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/#localbusiness",
+      "name": "ASQUARE Academy - IIT JEE Coaching Classes in Pune",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "description": "Join the best IIT JEE coaching classes in Pune for expert guidance, mock tests, and complete JEE Main & Advanced preparation for Class XI–XII students at ASQUARE Academy.",
+      "telephone": "+91-9766118877",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pune, Maharashtra",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411001",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/asquarepune",
+        "https://www.instagram.com/asquarepune/"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Pune"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/#webpage",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/",
+      "name": "Best IIT JEE Coaching Classes in Pune | JEE Main & Advanced Preparation",
+      "description": "Join the best IIT JEE coaching classes in Pune for expert guidance, mock tests, and complete JEE Main & Advanced preparation for Class XI–XII students at ASQUARE Academy.",
+      "breadcrumb": {
+        "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "https://www.asquareclasses.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "IIT JEE Coaching Classes in Pune",
+          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can join ASQUARE Academy Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can join. Our programs are tailored for different learning levels to ensure every student gets the right guidance and pace for success."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What subjects are covered in the course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide complete coaching for Physics, Chemistry, and Mathematics (PCM) as per the latest JEE syllabus. Each subject is taught by domain experts who emphasize both theory and application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mock tests conducted regularly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Weekly tests and full-length JEE mock exams are conducted to evaluate progress, improve time management, and identify weak areas. Detailed reports help students track their performance over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the different course options available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer 2-Year Foundation, 1-Year Advanced, Crash Courses, and Repeater Batches. Each program is designed to suit different academic needs and preparation stages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How big are the batches at ASQUARE Academy Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our batches are intentionally small to ensure personalized attention for every student. This approach allows teachers to focus on individual learning needs and provide effective doubt-solving support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do parents get regular performance updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We conduct monthly progress meetings and share performance reports with parents. Regular communication ensures parents stay informed about their child’s academic growth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas does the Pune branch serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Pune center is easily accessible from Kothrud, Aundh, Wakad, Baner, Hinjewadi, and nearby localities, making it a convenient choice for students across the city."
+          }
+        }
+      ]
+    }
+  ]
+}
+`}
+</script>
+
         <link rel="canonical" href={canonicalUrl} />
 
 

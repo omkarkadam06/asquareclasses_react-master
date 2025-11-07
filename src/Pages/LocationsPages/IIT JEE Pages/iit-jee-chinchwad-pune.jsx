@@ -72,6 +72,10 @@ function IITJEEChinchwad() {
     <>
       <Helmet>
         <title>Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute</title>
+             <meta
+          name="title"
+          content="Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute"
+        />
         <meta
           name="description"
           content="Join the Best IIT JEE Coaching Classes in Chinchwad for JEE Main & Advanced preparation with expert mentors, mock tests, and result-driven guidance – ASQUARE Academy."
@@ -87,6 +91,151 @@ Best IIT JEE Classes in chinchwad,
 Top IIT JEE Classes in chinchwad,
 
 " />
+<script type="application/ld+json">{`
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.asquareclasses.com/#localbusiness",
+      "name": "ASQUARE Academy",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune",
+      "telephone": "+919766118877",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chinchwad",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411019",
+        "addressCountry": "IN"
+      },
+      "priceRange": "₹₹",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
+      ],
+      "description": "ASQUARE Academy offers the Best IIT JEE Coaching Classes in Chinchwad, Pune, providing expert faculty, personalized guidance, and proven success in JEE Main & Advanced."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#webpage",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune",
+      "name": "Best IIT JEE Coaching Classes in Chinchwad | ASQUARE Academy Pune",
+      "description": "Top IIT JEE Coaching Classes in Chinchwad offering structured preparation for JEE Main & Advanced with expert mentors and mock tests – ASQUARE Academy.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ASQUARE Academy",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
+        }
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://www.asquareclasses.com/#educationalorganization",
+      "name": "ASQUARE Academy",
+      "url": "https://www.asquareclasses.com/",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
+      ],
+      "description": "ASQUARE Academy provides IIT JEE and NEET coaching across Pune with result-oriented preparation, test practice, and expert mentoring."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which is the Best IIT JEE Coaching in Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE Academy is known as the Best IIT JEE Coaching in Chinchwad, offering expert faculty, structured study plans, and proven success in JEE Main & Advanced exams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What subjects are covered in your IIT JEE Classes in Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our IIT JEE Classes in Chinchwad include Physics, Chemistry, and Mathematics to strengthen analytical and problem-solving skills."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide mock tests and regular assessments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ASQUARE Academy conducts weekly tests, topic-wise quizzes, and full-length mock exams for complete JEE Main & Advanced preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes ASQUARE the Top JEE Mains Coaching Classes in Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Top JEE Mains Coaching Classes in Chinchwad focus on interactive sessions, doubt-solving, and performance-based learning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer special batches for IIT JEE Advanced Preparation in Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ASQUARE Academy offers dedicated IIT JEE Advanced Preparation batches with advanced modules and mentor-led learning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are dropper batches available for JEE aspirants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide Dropper Batches for JEE aspirants in Chinchwad who wish to improve scores through focused reattempt preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the teaching approach at your Best IIT JEE Classes in Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our teaching combines conceptual clarity, rigorous testing, and personalized guidance, making us the Best IIT JEE Classes in Chinchwad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which nearby areas can join your Top IIT JEE Classes in Chinchwad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students from Pimpri, Nigdi, Akurdi, Ravet, and PCMC can easily enroll in our Top IIT JEE Classes in Chinchwad for quality coaching."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "IIT JEE Coaching in Chinchwad",
+          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune"
+        }
+      ]
+    }
+  ]
+}
+`}</script>
+
         <link rel="canonical" href={canonicalUrl} />
 
 
