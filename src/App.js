@@ -80,7 +80,10 @@ import MHTVidyanagarKalas from './Pages/LocationsPages/MHTVidyanagarKalas';
 import MHTChandanNagar from './Pages/LocationsPages/MHTChandanNagar';
 import MHTCamp from './Pages/LocationsPages/MHTCamp';
 import MHTWakad from './Pages/LocationsPages/MHTWakad';
+
+// prismplus Start
 import Samplepage from "./Pages/courses/samplepage";
+import IITJEEChinchwad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chinchwad-pune";
 
 function App() {
   return (
@@ -315,9 +318,10 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-in-pune-camp-area' element={<MHTCamp />} />
           <Route path='/mht-cet-coaching-classes-institute-in-wakad-pune' element={<MHTWakad />} />
 
-
+{/* Prismplus start */}
 
           <Route path='/iit-jee-coaching-classes-institute-in-pune' element={<Samplepage />} />
+           <Route path='/iit-jee-coaching-classes-institute-chinchwad-pune' element={<IITJEEChinchwad />} />
         </Routes>
       </BrowserRouter>
     </div>

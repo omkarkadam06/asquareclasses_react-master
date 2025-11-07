@@ -14,27 +14,27 @@ import {
   Trophy,
   Rocket,
 } from "lucide-react";
-import Navbar from "../../Components/Navbar/Navbar.jsx";
-import Header from "../../Components/Header/Header.jsx";
-import MobileForm from "../../Components/Mobileform/MobileForm.jsx";
-import Footer from "../../Components/Footer/Footer.jsx";
-import FAQAccordion from "../LocationsPages/neet-pages/components/FAQAccordion.jsx";
-import "../../App.css";
-import "./samplecss.css";
-import Loading from "../Loading.jsx";
-import sampleimg1 from '../../Assets/SampleImages/sampleimg1.jpeg';
-import sampleimg2 from '../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../Assets/SampleImages/sampleimg4.jpeg';
-import sampleimg5 from '../../Assets/SampleImages/sampleimg5.jpeg';
-import sampleimg6 from '../../Assets/SampleImages/sampleimg6.jpeg';
-import sampleimg7 from '../../Assets/SampleImages/sampleimg7.jpeg';
+import Navbar from "../../../Components/Navbar/Navbar.jsx";
+import Header from "../../../Components/Header/Header.jsx";
+import MobileForm from "../../../Components/Mobileform/MobileForm.jsx";
+import Footer from "../../../Components/Footer/Footer.jsx";
+import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordion.jsx";
+import "../../../App.css";
+import "./iit-jee.css";
+import Loading from "../../Loading.jsx";
+import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
+import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
+import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
+import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
 import Swal from "sweetalert2";
-import Form from '../../Components/Form2/Form2.jsx';
+import Form from '../../../Components/Form2/Form2.jsx';
 
-const Reviews = React.lazy(() => import("../../Components/Reviews/Reviews.jsx"));
+const Reviews = React.lazy(() => import("../../../Components/Reviews/Reviews.jsx"));
 
-function Samplepage() {
+function IITJEEChinchwad() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -46,45 +46,46 @@ function Samplepage() {
 
 
   const whyChoose = [
-    { Icon: Users, title: "Expert Faculty", desc: "Highly qualified IIT-JEE mentors with years of successful teaching experience." },
-    { Icon: BookOpen, title: "Structured Syllabus", desc: "Complete PCM coverage (Physics, Chemistry & Mathematics) as per the latest JEE guidelines." },
-    { Icon: Target, title: "Small Batches", desc: "Limited students per class for focused learning and better doubt-solving." },
-    { Icon: BarChart, title: "Regular Tests", desc: "Topic-wise quizzes, mock exams, and detailed performance analysis." },
-    { Icon: Lightbulb, title: "Holistic Mentoring", desc: "Motivation, confidence-building, and exam strategy sessions to stay competitive." },
+    { Icon: Users, title: "Expert Teaching Faculty", desc: "Experienced trainers for IIT-JEE, NEET & CET coaching." },
+    { Icon: BookOpen, title: "Complete PCM Coverage", desc: "Physics, Chemistry & Mathematics taught as per updated exam trends." },
+    { Icon: Target, title: "Personalized Guidance", desc: "Small batches for doubt-solving and individual support." },
+    { Icon: BarChart, title: "Exam Simulation Practice", desc: "Weekly quizzes, unit tests & full-length mock exams." },
+    { Icon: Lightbulb, title: "Career Support & Motivation", desc: "Counseling, study planning & confidence-boosting sessions." },
   ];
 
   const subjects = [
-    { title: "Physics", desc: "Learn complex concepts through problem-based learning and real-world applications." },
-    { title: "Chemistry", desc: "Deep understanding of Physical, Organic & Inorganic Chemistry through systematic study." },
-    { title: "Mathematics", desc: "Master Algebra, Geometry, Calculus & Probability with daily practice and test drills." },
+    { title: "Physics", desc: "Strengthening fundamentals with numerical applications." },
+    { title: "Chemistry", desc: "Balanced focus on Physical, Organic & Inorganic Chemistry." },
+    { title: "Mathematics", desc: "Rigorous practice in Algebra, Geometry, Calculus, Probability & Trigonometry." },
   ];
 
   const batches = [
-    { title: "2-Year Integrated Program (Class 10 → 11)", desc: "Strong foundation covering both JEE and school syllabus." },
-    { title: "1-Year Intensive Program (Class 11 → 12)", desc: "Fast-paced JEE preparation with advanced topic mastery." },
-    { title: "Crash Course (2–3 Months)", desc: "Focused revision with mock tests and concept drills before exams." },
-    { title: "Repeater Batch (XII Pass-outs)", desc: "One-year targeted preparation for students reappearing for JEE." },
+    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Covers XI & XII Boards + JEE." },
+    { title: "1-Year Advanced Program (11th → 12th Moving Students)", desc: "Intensive JEE preparation with XII syllabus." },
+    { title: "Crash Course (2–3 Months)", desc: "Short-term high-speed revision & exam practice." },
+    { title: "Dropper/Repeater Batch (XII Pass-outs)", desc: "One-year dedicated JEE training for repeaters." },
   ];
 
-  const faqs = [{ q: "Q1: Who can join ASQUARE Academy Pune?", a: "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can join. Our programs are tailored for different learning levels to ensure every student gets the right guidance and pace for success." }, { q: "Q2: What subjects are covered in the course?", a: "We provide complete coaching for Physics, Chemistry, and Mathematics (PCM) as per the latest JEE syllabus. Each subject is taught by domain experts who emphasize both theory and application." }, { q: "Q3: Are mock tests conducted regularly?", a: "Yes. Weekly tests and full-length JEE mock exams are conducted to evaluate progress, improve time management, and identify weak areas. Detailed reports help students track their performance over time." }, { q: "Q4: What are the different course options available?", a: "We offer 2-Year Foundation, 1-Year Advanced, Crash Courses, and Repeater Batches. Each program is designed to suit different academic needs and preparation stages." }, { q: "Q5: How big are the batches at ASQUARE Academy Pune?", a: "Our batches are intentionally small to ensure personalized attention for every student. This approach allows teachers to focus on individual learning needs and provide effective doubt-solving support." }, { q: "Q6: Do parents get regular performance updates?", a: "Absolutely. We conduct monthly progress meetings and share performance reports with parents. Regular communication ensures parents stay informed about their child’s academic growth." }, { q: "Q7: Which areas does the Pune branch serve?", a: "Our Pune center is easily accessible from Kothrud, Aundh, Wakad, Baner, Hinjewadi, and nearby localities, making it a convenient choice for students across the city." },];
+  const faqs = [{ q: "Q1: Which is the Best IIT JEE Coaching in Chinchwad?", a: "ASQUARE Academy is known as the Best IIT JEE Coaching in Chinchwad, offering expert faculty, structured study plans, and proven success in JEE Main & Advanced exams." }, { q: "Q2: What subjects are covered in your IIT JEE Classes in Chinchwad?", a: "Our IIT JEE Classes in Chinchwad include comprehensive coaching in Physics, Chemistry, and Mathematics to build strong problem-solving skills." }, { q: "Q3: Do you provide mock tests and regular assessments?", a: "Yes, we conduct weekly tests, topic-wise quizzes, and full-length mock exams to strengthen preparation for JEE Main and Advanced." }, { q: "Q4: What makes ASQUARE the Top JEE Mains Coaching Classes in Chinchwad?", a: "Our Top JEE Mains Coaching Classes in Chinchwad feature interactive sessions, doubt-solving, and consistent performance tracking." }, { q: "Q5: Do you offer special batches for IIT JEE Advanced Preparation in Chinchwad?", a: "Yes, ASQUARE Academy provides exclusive IIT JEE Advanced Preparation in Chinchwad through intensive modules and mentor-led guidance." }, { q: "Q6: Are dropper batches available for JEE aspirants?", a: "We offer Dropper Batches at our JEE Advanced Coaching Classes in Chinchwad for students aiming to reattempt and improve their scores." }, { q: "Q7: What is the teaching approach at your Best IIT JEE Classes in Chinchwad?", a: "Our teaching combines concept clarity, test practice, and personalized mentoring, making us the Best IIT JEE Classes in Chinchwad." }, { q: "Q8: Which nearby areas can join your Top IIT JEE Classes in Chinchwad?", a: "Students from Pimpri, Nigdi, Akurdi, Ravet, and PCMC can easily access our Top IIT JEE Classes in Chinchwad for quality JEE coaching." },];
 
   return (
     <>
       <Helmet>
-        <title>Best IIT JEE Coaching Classes in Pune | JEE Main & Advanced Preparation</title>
+        <title>Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute</title>
         <meta
           name="description"
-          content="Join the best IIT JEE coaching classes in Pune for expert guidance, mock tests, and complete JEE Main & Advanced preparation for Class XI–XII students at ASQUARE Academy."
+          content="Join the Best IIT JEE Coaching Classes in Chinchwad for JEE Main & Advanced preparation with expert mentors, mock tests, and result-driven guidance – ASQUARE Academy."
         />
 
-        <meta name="keywords" content="IIT JEE coaching classes in pune, 
-Best IIT JEE Coaching in Pune,
-Top JEE Mains Coaching Classes Pune,
-IIT JEE Advanced Preparation Pune,
-JEE Advanced coaching classes in Pune,
-IIT JEE Classes in Pune,
-Best IIT JEE Classes in Pune,
-Top IIT JEE Classes in Pune,
+        <meta name="keywords" content="IIT JEE coaching classes in chinchwad, 
+Best IIT JEE Coaching in chinchwad,
+Top JEE Mains Coaching Classes chinchwad,
+IIT JEE Advanced Preparation chinchwad,
+JEE Advanced coaching classes in chinchwad,
+IIT JEE Classes in chinchwad,
+Best IIT JEE Classes in chinchwad,
+Top IIT JEE Classes in chinchwad,
+
 " />
         <link rel="canonical" href={canonicalUrl} />
 
@@ -213,21 +214,21 @@ Top IIT JEE Classes in Pune,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Crack JEE Main & Advanced with{" "}
+                Get Ahead in JEE Main & Advanced with {" "}
                 <span className="highlight-text text-warning">
                   ASQUARE Academy
                 </span>{" "}
-                - Best IIT JEE Coaching in Pune
+                Chinchwad
               </motion.h1>
-
+<p>Premier Coaching Institute for Engineering Aspirants in Chinchwad</p>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
-                Looking for <b className="bld">IIT JEE coaching classes in Pune</b> that deliver real results? ASQUARE Academy offers expert-led programs designed to build strong fundamentals, sharpen problem-solving skills, and prepare students for <b className="bld">JEE Main and Advanced</b> success. With structured learning plans, small batches, and personalized mentoring, our Pune center helps aspiring engineers achieve their IIT dreams with confidence.
+                Looking for <b className="bld">IIT-JEE</b>IIT-JEE classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
               </p>
 
               {/* Short text for mobile */}
               <p className="lead d-block d-md-none">
-                Looking for <b className="bld">IIT JEE coaching classes in Pune</b> that deliver real results? ASQUARE Academy offers expert-led programs designed to build strong fundamentals, sharpen problem-solving skills, and prepare students for <b className="bld">JEE Main and Advanced</b> success. With structured learning plans, small batches, and personalized mentoring, our Pune center helps aspiring engineers achieve their IIT dreams with confidence.
+                            Looking for <b className="bld">IIT-JEE</b>IIT-JEE classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
               </p>
 
               <a
@@ -270,8 +271,8 @@ Top IIT JEE Classes in Pune,
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
-        >Why Choose
-          <span className="text-primary">ASQUARE Academy Pune</span> for IIT JEE Preparation</motion.h1>
+        >Why Choose{" "}
+          <span className="text-primary">ASQUARE Academy</span> Chinchwad</motion.h1>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -292,10 +293,10 @@ Top IIT JEE Classes in Pune,
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >IIT JEE Coaching Programs Offered at  <span className="text-primary">ASQUARE Academy Pune</span> </motion.h1>
+              >Our  <span className="text-primary">IIT-JEE</span> Coaching Programs </motion.h1>
 
               <p className="lead text-secondary">
-                The <b className="bld">Joint Entrance Examination (JEE)</b> is one of India’s toughest entrance exams for engineering aspirants. At <b className="bld">ASQUARE Academy Pune</b>, our programs focus on conceptual clarity, speed, and accuracy—equipping students with the knowledge and discipline needed to excel in <b className="bld">JEE Main & Advanced</b>.
+                The <b className="bld">Joint Entrance Examination (JEE)</b> is one of the toughest engineering entrance exams. At ASQUARE Academy Chinchwad, our coaching programs are designed to <b className="bld">build strong subject foundations, improve problem-solving skills, and strengthen exam strategies</b> for both <b className="bld">JEE Main & Advanced</b>.
               </p>
             </div>
             <div className="col-lg-4 text-center  order-1">
@@ -331,13 +332,13 @@ Top IIT JEE Classes in Pune,
 
           <div className="row g-4">
             <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects Covered in ASQUARE Academy’s JEE Coaching Classes</h4>
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects We Teach</h4>
               {subjects.map((sub, i) => (<div key={i} className="jee-subject-box mb-4 p-3 pb-4 pt-4  rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{sub.title}</h5>
                 <p className="small mb-0">{sub.desc}</p> </div>))}
             </div>
             <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Duration and Batch Options for IIT JEE Students</h4>
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Duration & Batches</h4>
               {batches.map((b, i) => (<div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{b.title}</h5>
                 <p className="small mb-0">{b.desc}</p>
@@ -373,7 +374,7 @@ Top IIT JEE Classes in Pune,
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Effective Teaching Methodology for IIT JEE at <span className="text-primary">ASQUARE Academy</span> </motion.h1>
+              >Our Teaching <span className="text-primary">Methodology</span> </motion.h1>
 
 
 
@@ -388,12 +389,12 @@ Top IIT JEE Classes in Pune,
                       {/* <h6 className="fw-bold">{step}</h6> */}
                       <p className="text-muted small mb-0">
                         {step === "Learn"
-                          ? "Interactive daily lectures with conceptual clarity and practice assignments."
+                          ? "Daily lectures with structured assignments."
                           : step === "Practice"
-                            ? "Regular topic tests, weekly reviews, and monthly full-length mock exams."
+                            ? "One-on-one doubt-solving support."
                             : step === "Assess"
-                              ? "Individual mentoring sessions for performance improvement and doubt clearance."
-                              : "Parent–teacher meetings for detailed student progress discussions."}
+                              ? "Weekly practice tests & mock exams."
+                              : "Parent–teacher meetings with performance analysis."}
                       </p>
                     </motion.div>
                   </div>
@@ -419,29 +420,30 @@ Top IIT JEE Classes in Pune,
           >
             Key Highlights of
             <span className="highlight-text text-warning">
-              &nbsp;ASQUARE Academy Pune &nbsp;
+              &nbsp;Chinchwad&nbsp;
             </span>
-            IIT JEE Coaching
+            Branch
           </motion.h1>
 
           <div className="row justify-content-center g-4">
             {[
-              "Latest JEE notes, study materials & question banks.",
-              "Workshops on shortcuts, accuracy, and time management.",
-              "Regular progress reports and parent communication.",
-              "Among the best IIT JEE coaching in Pune with consistent academic excellence.",
+              "Limited batch size for focused mentoring.",
+              "Updated JEE notes, study modules & practice papers.",
+              "Workshops on exam hacks, time management & smart strategies.",
+              "Continuous progress tracking with parent involvement.",
+                "Trusted as a leading JEE coaching institute in Chinchwad, Pune.",
             ].map((text, i) => {
-              const highlightedText = text.includes("best IIT JEE coaching in Pune")
+              const highlightedText = text.includes("leading JEE coaching institute in Chinchwad, Pune")
                 ? text.replace(
-                  "best IIT JEE coaching in Pune",
-                  '<b className="bld">best IIT JEE coaching in Pune</b>'
+                  "leading JEE coaching institute in Chinchwad, Pune",
+                  '<b className="bld">leading JEE coaching institute in Chinchwad, Pune</b>'
                 )
                 : text;
 
               return (
                 <motion.div
                   key={i}
-                  className="col-md-5 col-lg-3 col-6"
+                  className="col-md-5 col-lg-4 col-6"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -484,14 +486,14 @@ Top IIT JEE Classes in Pune,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Consistent JEE Results and Success Stories from
+                Results That
                 <span className="highlight-text text-warning">
-                  &nbsp;ASQUARE Pune &nbsp;
+                  &nbsp;Speak &nbsp;
                 </span>
 
               </motion.h1>
               <p className="lead text-light">
-                ASQUARE Academy has produced numerous IIT-JEE toppers and high-rank achievers every year. Our proven teaching methods, personal mentoring, and disciplined environment help students maximize their potential and secure admissions into IITs, NITs, and other top engineering colleges.
+               ASQUARE Academy has built a reputation for producing <b className="bld">IIT-JEE rankers and engineering toppers</b>. The <b className="bld">Chinchwad branch</b> adds to this legacy by offering <b className="bld">student-focused coaching, expert guidance, and a result-driven environment.</b>
               </p>
             </div>
 
@@ -550,7 +552,7 @@ Top IIT JEE Classes in Pune,
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >FAQs About IIT JEE Coaching Classes at <span className="text-primary">ASQUARE Academy Pune</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
           </div>
 
           <div className="row justify-content-center">
@@ -584,26 +586,26 @@ Top IIT JEE Classes in Pune,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3"
           >
-            Enroll Today at ASQUARE Academy Pune for
+            Join ASQUARE Academy 
             <span className="highlight-text text-warning">
-              &nbsp;IIT JEE Coaching &nbsp;
+              &nbsp;Chinchwad Today &nbsp;
             </span>
 
           </motion.h1>
           <p className="lead mb-4">
-            Start your <b className="bld">IIT JEE journey</b> with the  <b className="bld">best IIT JEE coaching in Pune</b> — ASQUARE Academy. With expert mentors, structured programs, and a strong track record of results, we help you achieve your engineering aspirations.
+            Step closer to your IIT dream with <b className="bld">ASQUARE Academy’s IIT-JEE coaching in Chinchwad, Pune</b>. With <b className="bld">expert faculty, structured resources, and consistent results</b>, we’re your trusted partner for <b className="bld">IIT-JEE, CET & NEET coaching</b>.
           </p>
-          <p><MapPin className="text-warning" /> Ideal for students from Kothrud, Aundh, Wakad, Baner, Hinjewadi & nearby areas.</p>
+          <p><MapPin className="text-warning" /> Ideal for students from <b className="bld">Chinchwad, Pimpri, Akurdi, Nigdi, Ravet, and nearby PCMC areas</b>.</p>
           <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
             <Link
               to={'/'}
               className="nav-item nav-item-list text-white"
 
             >
-              ⚡ Admissions Open – Enroll Now!
+              ⚡ Admissions Open – Limited seats available! 
 
 
-              &nbsp;<p className="text-warning">Limited Seats Available.</p>
+              &nbsp;<p className="text-warning">Enroll today to secure your place.</p>
             </Link>
           </a>
         </div>
@@ -616,4 +618,4 @@ Top IIT JEE Classes in Pune,
   );
 }
 
-export default Samplepage;
+export default IITJEEChinchwad;
