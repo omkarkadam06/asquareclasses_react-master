@@ -80,6 +80,23 @@ import MHTVidyanagarKalas from './Pages/LocationsPages/MHTVidyanagarKalas';
 import MHTChandanNagar from './Pages/LocationsPages/MHTChandanNagar';
 import MHTCamp from './Pages/LocationsPages/MHTCamp';
 import MHTWakad from './Pages/LocationsPages/MHTWakad';
+import NEETWanwadi from './Pages/LocationsPages/neet-pages/NEETWanwadi';
+import NEETRahatani from './Pages/LocationsPages/neet-pages/NEETRahatani';
+import NEETVidyaNagar from './Pages/LocationsPages/neet-pages/NEETVidyaNagar';
+import NEETLohegaon from './Pages/LocationsPages/neet-pages/NEETLohegaon';
+import NEETThergaon from './Pages/LocationsPages/neet-pages/NEETThergaon';
+import NEETDhanori from './Pages/LocationsPages/neet-pages/NEETDhanori';
+import NEETMoshi from './Pages/LocationsPages/neet-pages/NEETMoshi';
+import NEETNigdi from './Pages/LocationsPages/neet-pages/NEETNigdi';
+import NEETDehuroad from './Pages/LocationsPages/neet-pages/NEETDehuroad';
+import NEETBhosari from './Pages/LocationsPages/neet-pages/NEETBhosari';
+import NEETDighi from './Pages/LocationsPages/neet-pages/NEETDighi';
+import NEETChakan from './Pages/LocationsPages/neet-pages/NEETChakan';
+import NEETKasarwadi from './Pages/LocationsPages/neet-pages/NEETKasarwadi';
+import NEETRavet from './Pages/LocationsPages/neet-pages/NEETRavet';
+import NEETDapodi from './Pages/LocationsPages/neet-pages/NEETDapodi';
+import NEETKalewadi from './Pages/LocationsPages/neet-pages/NEETKalewadi';
+import NEETWakad from './Pages/LocationsPages/neet-pages/NEETWakad';
 
 function App() {
   return (
@@ -304,6 +321,23 @@ function App() {
           <Route path='/neet-coaching-classes-institute-chinchwad-pune' element={<NEETChinchwad />} />
           <Route path='/neet-coaching-classes-institute-shastri-nagar-pune' element={<NEETShastriNagar />} />
           <Route path='/neet-coaching-classes-institute-in-pimpri-chinchwad-pune' element={<NEETPimpriChinchwad />} />
+          <Route path='/neet-coaching-classes-institute-in-wanwadi-pune' element={<NEETWanwadi />} />
+          <Route path='/neet-coaching-classes-rahatani-pune' element={<NEETRahatani />} />
+          <Route path='/neet-coaching-classes-Institute-vidyanagar-pune' element={<NEETVidyaNagar />} />
+          <Route path='/neet-coaching-classes-institute-lohegaon-pune' element={<NEETLohegaon />} />
+          <Route path='/neet-coaching-classes-Institute-thergaon-pune' element={<NEETThergaon />} />
+          <Route path='/neet-coaching-classes-institute-dhanori-pune' element={<NEETDhanori />} />
+          <Route path='/neet-coaching-classes-institute-moshi-pune' element={<NEETMoshi />} />
+          <Route path='/neet-coaching-classes-institute-nigdi-pune' element={<NEETNigdi />} />
+          <Route path='/neet-coaching-classes-institute-in-dehu-road-pune' element={<NEETDehuroad />} />
+          <Route path='/neet-coaching-classes-institute-bhosari-pune' element={<NEETBhosari />} />
+          <Route path='/neet-coaching-classes-institute-dighi-pune' element={<NEETDighi />} />
+          <Route path='/neet-coaching-classes-institute-chakan-pune' element={<NEETChakan />} />
+          <Route path='/neet-coaching-classes-institute-kasarwadi-pune' element={<NEETKasarwadi />} />
+          <Route path='/neet-coaching-classes-institute-ravet-pune' element={<NEETRavet />} />
+          <Route path='/neet-coaching-classes-institute-dapodi-pune' element={<NEETDapodi />} />
+          <Route path='/neet-coaching-classes-institute-kalewadi-pune' element={<NEETKalewadi />} />
+          <Route path ='/neet-coaching-classes-institute-wakad-pune' element={<NEETWakad />} />
 
           <Route path='/mht-cet-coaching-classes-institute-in-alandi-pune' element={<MHTAlandi />} />
           <Route path='/mht-cet-coaching-classes-institute-in-wanowrie-pune' element={<MHTWanowrie />} />

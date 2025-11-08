@@ -1,9 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 3.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET page 4.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 17.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET Page 13.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -18,8 +18,8 @@ import {
   Users,
   School,
   CalendarSync,
-  ChartSpline,
   BadgeQuestionMark,
+  Award,
 } from "lucide-react";
 import "./NEET-pages.css";
 import Slider from "react-slick";
@@ -39,7 +39,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETSaudagar() {
+function NEETKalewadi() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -70,151 +70,175 @@ function NEETSaudagar() {
   const whyCFeatures = [
     {
       Icon: Users,
-      title: "Expert Faculty",
-      description: "Specialists in Physics, Chemistry, and Biology.",
+      title: "Dedicated NEET Educators",
+      description:
+        "Skilled faculty in Physics, Chemistry, and Biology, passionate about your NEET journey.",
     },
     {
       Icon: BookOpen,
-      title: "Structured Preparation",
-      description: "From NCERT basics to advanced problem-solving.",
+      title: "NCERT-Centric Teaching with NEET Precision",
+      description:
+        "Deep conceptual grounding paired with exam-ready problem-solving techniques.",
     },
     {
       Icon: Target,
-      title: "Small Batches",
-      description: "Focused guidance and doubt resolution.",
+      title: "Focused Learning Environment",
+      description:
+        "Small batch sizes ensure targeted attention and uncluttered doubt resolution.",
     },
     {
       Icon: BarChart,
-      title: "Regular Assessments",
-      description: "Weekly tests, mock exams, and detailed analytics.",
+      title: "Continuous Progress Evaluation",
+      description:
+        "Rigorous weekly tests, mock exams, and holistic performance analytics.",
     },
     {
       Icon: Calendar,
-      title: "Flexible Learning",
+      title: "Flexible Learning Formats",
       description:
-        "Classroom & online NEET classes in Pimple Saudagar, with weekday and weekend batches.",
+        "Comprehensive classroom-based and online coaching modes to fit modern learning styles.",
     },
     {
-      Icon: School,
-      title: "Mentorship",
-      description: "Balanced support for NEET prep and board exams.",
+      Icon: Users,
+      title: "Balanced Support System",
+      description:
+        "Expert guidance for excelling at NEET without compromising school board commitments.",
     },
   ];
 
   const subjectsCovered = [
     {
       title: "Physics",
-      desc: "Conceptual clarity through derivations, problem-solving, and practical application.",
+      desc: "Clear explanation of core concepts with extensive problem-solving drills.",
     },
     {
       title: "Chemistry",
-      desc: "In-depth understanding of Physical, Organic, and Inorganic Chemistry with NCERT focus.",
+      desc: "Strong coverage across Physical, Organic, and Inorganic disciplines with NEET-smart methods.",
     },
     {
       title: "Biology",
-      desc: "Detailed coverage of NCERT-based chapters and NEET-level question practice.",
+      desc: "Comprehensive NCERT-aligned lessons, diagrammatic emphasis, and topic mastery techniques.",
     },
   ];
 
-    const programDurations = [
+  const programDurations = [
     {
       icon: Clock,
-      title: "2-Year Integrated Program (Class 11 → 12):",
-      desc: "Foundation-to-advanced course integrating school and NEET preparation.",
+      title: "2-Year Integrated (Class 11 → 12)",
+      desc: "Build knowledge and exam readiness over two years with progressive learning.",
     },
     {
       icon: Target,
-      title: "1-Year Target Program (Class 12):",
-      desc: "Fast-paced NEET course with mock tests and regular analysis.",
-    },
-    {
-      icon: CalendarSync,
-      title: "Dropper/Repeater Batch:",
-      desc: "Intensive one-year course for NEET droppers with detailed test series.",
+      title: "1-Year Target (Class 12)",
+      desc: "Fast-paced, focused curriculum with mock-driven preparation.",
     },
     {
       icon: School,
-      title: "Crash Course:",
-      desc: "2–3 months of quick revision, PYQs, and mock test practice.",
+      title: "Crash Course (2–3 Months)",
+      desc: "Condensed, high-impact training with PYQs and mock-based drill practice.",
+    },
+    {
+      icon: CalendarSync,
+      title: "Dropper/Repeater Batch",
+      desc: "Year-long, mentor-led revision and practice for aspirants retaking NEET.",
     },
   ];
 
   const methodologySteps = [
     {
       Icon: Lightbulb,
-      title: "Learn",
-      description: "Conceptual lectures with NCERT alignment.",
+      title: "Conceptual Lecture Sessions",
+      description:
+        "Conceptual lecture sessions designed for immersive learning",
     },
     {
       Icon: BookOpen,
-      title: "Practice",
-      description: "DPPs, problem-solving workshops, and assignments.",
+      title: "Practice & Revision",
+      description:
+        "Daily Practice Papers (DPPs) and well-structured revision material",
     },
     {
       Icon: BarChart,
-      title: "Assess",
-      description: "Weekly chapter tests and monthly full-length mocks.",
+      title: "Assessment & Analytics",
+      description:
+        "Chapter-wise tests, mock exams, and performance-driven analytics",
     },
     {
       Icon: MessageCircle,
-      title: "Revise",
-      description: "Targeted crash revisions with high-yield topics.",
+      title: "Personalized Doubt Sessions",
+      description: "Personalized doubt sessions for targeted problem-solving",
+    },
+    {
+      Icon: Calendar,
+      title: "Performance Tracking",
+      description: "Regular reviews and PTMs to track and accelerate growth",
     },
   ];
 
   const faqData = [
     {
-      q: "Which is the Best NEET Coaching in Pimple Saudagar?",
-      a: "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results.",
+      q: "Who is eligible for NEET coaching here?",
+      a: "Students in Class XI, Class XII, and repeat-year NEET aspirants are welcome.",
     },
     {
-      q: "Do you offer Top NEET Coaching Classes Pimple Saudagar for beginners?",
-      a: "Yes. We provide beginner-friendly programs with NCERT basics and regular practice.",
+      q: "What subjects are taught?",
+      a: "All NEET subjects—Physics, Chemistry, and Biology—are comprehensively covered.",
     },
     {
-      q: "How do you support NEET Advanced Preparation Pimple Saudagar?",
-      a: "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions.",
+      q: "Are mock tests included?",
+      a: "Yes — frequent chapter assessments, weekly tests, and full-length mock exams are part of our offering.",
     },
     {
-      q: "Are weekend NEET Classes in Pimple Saudagar available?",
-      a: "Yes. We offer both weekday and weekend batch options in classroom and online modes.",
+      q: "What course options are available?",
+      a: "2-year integrated, 1-year target, 2–3 month crash courses, and dropper/repeater batches.",
     },
     {
-      q: "Do you provide scholarships?",
-      a: "Yes. Students can apply through the ASQUARE Scholarship Test.",
+      q: "How large are the coaching groups?",
+      a: "Batches remain small to ensure personalized mentorship and quick doubt resolution.",
+    },
+    {
+      q: "How are parents kept updated?",
+      a: "Through periodic progress reports and parent–teacher meetings.",
+    },
+    {
+      q: "Is online instruction available?",
+      a: "Yes, both classroom and online classes are offered to fit your preferences.",
     },
   ];
 
   const gridFeatures = [
     {
       Icon: Users,
-      title: "Comprehensive printed + digital study material.",
+      title: "Small batch sizes for attention-rich learning",
       colorClass: "bg-gradient-blue",
     },
     {
       Icon: BookOpen,
-      title: "Dedicated doubt-clearing sessions.",
+      title:
+        "Dual-mode study materials, both printed and digital, updated for NEET relevance",
       colorClass: "bg-gradient-purple",
     },
     {
-      Icon: TrendingUp,
-      title: "Performance tracking with parent-teacher meetings.",
+      Icon: Calendar,
+      title: "Parent–teacher collaboration via regular performance sessions",
       colorClass: "bg-gradient-green",
     },
     {
-      Icon: ChartSpline,
-      title: "Online test series with national-level benchmarking.",
+      Icon: Award,
+      title:
+        "Workshops focusing on accuracy, speed, and an optimal test-taking mindset",
       colorClass: "bg-gradient-orange",
     },
     {
-      Icon: CalendarSync,
-      title: "Parental feedback and progress reports",
-      colorClass: "bg-gradient-red",
+      Icon: BarChart,
+      title: "Advanced performance analytics and digital progress tracking",
+      colorClass: "bg-gradient-teal",
     },
     {
-      Icon: ChartSpline,
-      title: "Online & offline practice test series",
-      colorClass: "bg-gradient-teal",
+      Icon: TrendingUp,
+      title:
+        "Renowned across Kalewadi, Wakad, Sangvi, Aundh, and PCMC areas for consistent NEET outcomes",
+      colorClass: "bg-gradient-red",
     },
   ];
 
@@ -222,19 +246,19 @@ function NEETSaudagar() {
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy
+          Best NEET Coaching Classes in Kalewadi Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Kalewadi Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships."
+          content="Join ASQUARE Academy for the best NEET coaching classes in Kalewadi, Pune. Expert faculty, small batches, online & offline learning, regular mock tests, and focused preparation for Physics, Chemistry, and Biology."
         />
         <meta
           name="keywords"
-          content="NEET Coaching in Pimple Saudagar, Best NEET Classes in Pimple Saudagar, Top NEET Coaching Institute Pimple Saudagar, NEET Preparation in Pimple Saudagar, ASQUARE Academy Pimple Saudagar,"
+          content="NEET coaching classes in kalewadi pune Best NEET Coaching in kalewadi Pune Top NEET Coaching Classes kalewadi pune NEET Advanced Preparation kalewadi pune NEET Classes in kalewadi pune Best NEET Classes in kalewadi pune Top NEET Classes in kalewadi pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
@@ -243,111 +267,72 @@ function NEETSaudagar() {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "LocalBusiness",
+      "name": "ASQUARE Academy",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-kalewadi-pune",
+      "telephone": "9766118877",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kalewadi",
+        "addressRegion": "Pune",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
+      ],
+      "description": "ASQUARE Academy offers the best NEET coaching classes in Kalewadi, Pune, with expert faculty, personalized mentoring, and both classroom and online learning options."
+    },
+    {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "name": "Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy",
-      "description": "Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships.",
-      "inLanguage": "en",
+      "name": "NEET Coaching Classes in Kalewadi Pune | ASQUARE Academy",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-kalewadi-pune",
+      "description": "Enroll at ASQUARE Academy for top NEET coaching in Kalewadi Pune with expert faculty and mock tests for comprehensive NEET preparation.",
       "publisher": {
         "@type": "Organization",
         "name": "ASQUARE Academy",
-        "url": "https://www.asquareclasses.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-          "width": 250,
-          "height": 70
+          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
         }
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.asquareclasses.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Courses",
-            "item": "https://www.asquareclasses.com/courses/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "NEET Coaching Classes in Pimple Saudagar",
-            "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/"
-          }
-        ]
       }
     },
     {
       "@type": "EducationalOrganization",
       "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-kalewadi-pune",
+      "description": "ASQUARE Academy provides NEET coaching in Kalewadi Pune for Class XI, XII, and repeaters. Courses include Physics, Chemistry, and Biology with test series and doubt-solving.",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers top NEET, IIT JEE, and MHT-CET coaching in Pune with expert faculty, advanced study material, and strong success results.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
-      },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-9579730062",
+        "telephone": "9766118877",
         "contactType": "Customer Support",
-        "availableLanguage": ["English", "Hindi", "Marathi"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
-      ]
+        "areaServed": "IN"
+      }
     },
     {
-      "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching in Pimple Saudagar",
-      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "telephone": "+91-9579730062",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 18.5987,
-        "longitude": 73.7811
-      },
-      "openingHoursSpecification": [
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "20:00"
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "NEET Coaching Classes",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kalewadi Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-kalewadi-pune"
         }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
       ]
     },
     {
@@ -355,48 +340,65 @@ function NEETSaudagar() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which is the Best NEET Coaching in Pimple Saudagar?",
+          "name": "Who is eligible for NEET coaching here?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results."
+            "text": "Students in Class XI, Class XII, and repeat-year NEET aspirants are eligible to join ASQUARE Academy in Kalewadi Pune."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer Top NEET Coaching Classes in Pimple Saudagar for beginners?",
+          "name": "What subjects are taught?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We provide beginner-friendly programs with NCERT basics and regular practice."
+            "text": "ASQUARE Academy covers all NEET subjects — Physics, Chemistry, and Biology."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you support NEET Advanced Preparation in Pimple Saudagar?",
+          "name": "Are mock tests included?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions."
+            "text": "Yes, the course includes chapter-wise tests, weekly assessments, and full-length NEET mock exams."
           }
         },
         {
           "@type": "Question",
-          "name": "Are weekend NEET Classes in Pimple Saudagar available?",
+          "name": "What course options are available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer both weekday and weekend batch options in classroom and online modes."
+            "text": "ASQUARE Academy offers 2-year integrated, 1-year target, crash, and dropper batches for NEET aspirants."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide scholarships?",
+          "name": "How large are the coaching groups?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Students can apply through the ASQUARE Scholarship Test for merit and need-based scholarships."
+            "text": "Small batch sizes ensure personalized attention and faster doubt resolution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are parents kept updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parents receive regular performance updates and are invited to periodic parent–teacher meetings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is online instruction available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ASQUARE Academy provides both online and classroom NEET coaching in Kalewadi Pune."
           }
         }
       ]
     }
   ]
 }
+
         `}</script>
       </Helmet>
       <Navbar />
@@ -445,22 +447,23 @@ function NEETSaudagar() {
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Crack NEET with Expert Mentorship at{" "}
+                Achieve NEET Excellence with{" "}
                 <span className="gradient-text-yellow d-inline-block">
-                  ASQUARE Academy,
+                  ASQUARE Academy – Kalewadi Branch
                 </span>
-                Pimple Saudagar, Pune
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                ASQUARE Academy offers expert-led{" "}
-                <strong>NEET coaching classes in Pimple Saudagar, </strong>
-                designed to help students achieve top scores in NEET UG. With
-                personalized mentoring, small batch sizes, and intensive test
-                practice, ASQUARE Academy is recognized as one of the
-                <strong> Best NEET Coaching in Pimple Saudagar. </strong> Our
-                structured approach ensures students are ready for both NCERT
-                fundamentals and{" "}
-                <strong> NEET Advanced Preparation in Pimple Saudagar.</strong>{" "}
+                Looking for top-tier{" "}
+                <strong> NEET coaching in Kalewadi, Pune? </strong> At
+                <strong> ASQUARE Academy, </strong>
+                we deliver a perfect blend of expertise, strategy, and
+                personalized learning.
+                <strong> NEET coaching classes Kalewadi and PCMC </strong> are
+                tailored to build your strengths, sharpen your strategy, and
+                ensure top-tier performance. Recognized as one of the{" "}
+                <strong> best NEET coaching institutes in Pune, </strong>we
+                offer structured programs, personalized mentorship, and proven
+                results.
               </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -469,12 +472,14 @@ function NEETSaudagar() {
                   className="flex-shrink-0 mt-1"
                 />
                 <span className="text-white">
+                  Students from
                   <strong>
-                    Our Pimple Saudagar branch serves students from:
-                  </strong>{" "}
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.{" "}
+                    {" "}
+                    Kalewadi, Wakad, Sangvi, Pimple Saudagar, Aundh, Pimpri, and
+                    surrounding PCMC neighborhoods{" "}
+                  </strong>
+                  rely on our proven structure and track record to turn their
+                  medical ambitions into success stories.
                 </span>
               </div>
             </div>
@@ -492,7 +497,7 @@ function NEETSaudagar() {
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                — Best NEET Coaching in Pimple Saudagar, Pune
+                Best NEET Coaching in Kalewadi?
               </h2>
 
               {isDesktop ? (
@@ -518,9 +523,8 @@ function NEETSaudagar() {
                     color="#FFCB03"
                     className="flex-shrink-0"
                   />
-                  ASQUARE Academy is consistently rated among the Top NEET
-                  Coaching Classes Pimple Saudagar due to proven results and
-                  student success stories.
+                  Our holistic approach ensures that students gain strong
+                  subject mastery, accuracy, and exam confidence.
                 </p>
               </div>
             </div>
@@ -555,40 +559,30 @@ function NEETSaudagar() {
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span>ASQUARE Academy - Pimple Saudagar</span>
+            <span> ASQUARE Academy Kalewadi</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The{" "}
-              <strong>
-                {" "}
-                NEET course at ASQUARE Academy, Pimple Saudagar,{" "}
-              </strong>{" "}
-              is designed to help students master each subject step by step. We
-              emphasize{" "}
-              <strong>
-                {" "}
-                concept clarity, test consistency, and exam temperament,{" "}
-              </strong>
-              ensuring students perform confidently in the actual NEET exam.
+              The<strong> NEET course at ASQUARE Academy, Kalewadi, </strong>
+              provides a step-by-step approach to mastering NEET concepts. Our
+              expert faculty ensures that every student understands the theory,
+              practices problem-solving, and applies knowledge effectively under
+              exam conditions.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={26} />
               <span>
-                Our curriculum covers{" "}
-                <strong>Physics, Chemistry, and Biology </strong>
-                in detail, with practice modules, test series, and personalized
-                mentoring. Students from{" "}
+                Students from
                 <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
-                </strong>{" "}
-                benefit from our experienced faculty and competitive test
-                environment.
+                  {" "}
+                  Kalewadi, Wakad, Sangvi, Pimple Saudagar, Aundh, Pimpri, and
+                  surrounding PCMC neighborhoods{" "}
+                </strong>
+                benefit from our consistent test schedule, personalized
+                mentoring, and comprehensive NEET syllabus coverage.{" "}
               </span>
             </p>
           </div>
@@ -601,30 +595,25 @@ function NEETSaudagar() {
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple
-              Saudagar
+              Course Details (NEET UG) - Top NEET Coaching Classes in Kalewadi
             </h3>
 
             <p className="fs-5">
-              <strong>NEET UG</strong> is the gateway to top medical colleges
-              across India offering{" "}
-              <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong> programs.
+              <strong>NEET UG</strong> is India’s national entrance test for{" "}
+              <strong>
+                MBBS, BDS, BAMS, BHMS, and allied medical courses.
+              </strong>
+              At <strong> ASQUARE Academy Kalewadi,</strong>
+              our curriculum focuses on building a solid conceptual base while
+              ensuring complete exam readiness through mock tests and
+              performance tracking.
             </p>
             <p className="fs-5">
-              At <strong>ASQUARE Academy Pimple Saudagar,</strong> our
-              scientifically structured teaching plan, regular performance
-              evaluations, and one-on-one mentoring ensure complete readiness
-              for the NEET-UG exam.
+              Our consistent results make ASQUARE one of the{" "}
+              <strong> NEET coaching classes in Kalewadi </strong>
             </p>
-            <p className="fs-5">
-              We combine conceptual teaching with consistent{" "}
-              <strong>mock test series</strong> and performance reviews —
-              positioning ASQUARE as{" "}
-              <strong>a top NEET coaching institute in PCMC Pune.</strong>
-            </p>
-
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Saudagar
+              Subjects Covered in NEET Classes at Kalewadi
             </h4>
 
             <div className="mt-4">
@@ -634,16 +623,15 @@ function NEETSaudagar() {
             </div>
 
             <p className="fs-5">
-              Our balanced subject-wise approach ensures conceptual mastery and
-              time-bound performance improvement.
+              Our <strong> NEET Coaching in Kalewadi Pune </strong>ensures
+              holistic preparation and exam-oriented accuracy.
             </p>
           </div>
 
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple
-              Saudagar
+              Program Duration and Batch Options — NEET Preparation in Kalewadi
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -654,11 +642,8 @@ function NEETSaudagar() {
 
             <div className="mt-5 p-4 rounded-4 border border-warning border-opacity-50 bg-brown">
               <p className="fs-5 mb-0">
-                All batches are designed for{" "}
-                <strong className="text-warning">
-                  focused learning, consistent testing, and steady
-                </strong>{" "}
-                improvement.
+                All batches are tailored to help students achieve the highest
+                level of preparedness before NEET-UG.
               </p>
             </div>
           </div>
@@ -674,7 +659,7 @@ function NEETSaudagar() {
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Saudagar, Pune
+              Best NEET Coaching in Kalewadi,
             </h3>
           </div>
 
@@ -696,31 +681,37 @@ function NEETSaudagar() {
               🏆 Success Stories
             </span>
             <h4 className="section-title-large mb-4">
-              ASQUARE Academy's NEET Success - Proven Track Record{" "}
+              ASQUARE Academy’s NEET Results – Student Success
             </h4>
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong className="text-primary">ASQUARE Academy,</strong> we
-              take pride in our consistent NEET results. Our students have
-              secured admissions to India’s premier medical colleges such as
+              At <strong> ASQUARE Academy – Kalewadi </strong>
+              our students have consistently achieved top ranks in NEET, earning
+              admission to premier colleges such as{" "}
               <strong className="text-primary">
+                {" "}AIIMS, state medical colleges, and prestigious private
+                institutions.{" "}
+              </strong>
+              Our disciplined approach, expert teaching, and consistent mock
+              testing make us the
+              <strong>
                 {" "}
-                AIIMS, BJ Medical College, AFMC, and DY Patil Medical College
-                Pune.
+                most trusted NEET coaching centers in Kalewadi and the broader
+                PCMC region.{" "}
               </strong>
             </p>
-            <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
+            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
               <CheckCircle size={24} />
               <p className="fs-5 fw-semibold mb-0">
                 Our unique combination of mentorship, structured learning, and
                 regular testing makes us one of the
                 <strong>
                   {" "}
-                  Top NEET Coaching Institutes in Pimple Saudagar .
+                  Top NEET Coaching Centre in Alandi Pune.
                 </strong>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -738,10 +729,9 @@ function NEETSaudagar() {
                 Innovative Teaching Methodology at ASQUARE Academy
               </h4>
               <p className="fs-5 text-white mb-4 lh op">
-                This unique four-step methodology has made ASQUARE{" "}
-                <strong>
-                  the best NEET training institute in Pimple Saudagar and PCMC.
-                </strong>
+                This unique four-step methodology has helped ASQUARE become one
+                of the{" "}
+                <strong>Best NEET Training Institutes in Kalewadi PCMC.</strong>
               </p>
               <a
                 href="/"
@@ -773,7 +763,7 @@ function NEETSaudagar() {
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Saudagar (PCMC).
+              Top NEET Coaching Institutes in Kalewadi.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -803,29 +793,26 @@ function NEETSaudagar() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll Now at <span>ASQUARE Academy - Pimple Saudagar</span>
+            Enroll at <span> ASQUARE Academy – Kalewadi Pune</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              If you’re searching for the{" "}
-              <strong> Top NEET Coaching Classes in Pimple Saudagar, </strong>{" "}
-              the look no further than
-              <strong>ASQUARE Academy. </strong>
-              With experienced teachers, structured test planning, and
-              consistent student success, we’re the trusted name for
-              <strong> NEET preparation in PCMC Pune.</strong>
+              If you’re looking for the{" "}
+              <strong> Best NEET Coaching Classes in Kalewadi, Pune, </strong>
+              join ASQUARE Academy today. With expert mentors, regular testing,
+              and structured NEET training, success is within your reach.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                Convenient from{" "}
+                Conveniently accessible for students from{" "}
                 <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
+                  {" "}
+                  Kalewadi, Rahatan, Pavana Nagar, Sai Chowk, Tapkir Nagar,
+                  Dange Chowk, Pimpri, Wakad, and Thergaon.
                 </strong>
               </span>
             </p>
@@ -851,4 +838,4 @@ function NEETSaudagar() {
   );
 }
 
-export default NEETSaudagar;
+export default NEETKalewadi;

@@ -35,7 +35,7 @@ function MHTDehuRoad() {
         />
         <meta
           name="description"
-          content="Join the best MHT-CET Coaching Classes in Dehu Road Pune for Engineering &amp; Pharmacy aspirants. Expert faculty, mock tests &amp; flexible batches at ASQUARE Academy."
+          content="Join the best MHT-CET Coaching Classes in Dehu Road Pune for Engineering & Pharmacy aspirants. Expert faculty, mock tests & flexible batches at ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -257,7 +257,7 @@ function MHTDehuRoad() {
                 </li>
                 <li>
                   <span>
-                    <strong>Regular Tests &amp; Feedback:</strong>{" "}
+                    <strong>Regular Tests & Feedback:</strong>{" "}
                     Weekly mock tests with detailed performance reports.
                   </span>
                 </li>
@@ -411,7 +411,7 @@ function MHTDehuRoad() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly &amp; Monthly CET Tests:
+                  Weekly & Monthly CET Tests:
                 </h6>
                 <span>Weekly topic tests and mock CETs for exam familiarity.</span>
               </div>

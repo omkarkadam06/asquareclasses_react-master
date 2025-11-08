@@ -35,7 +35,7 @@ function MHTHadapsar() {
         />
         <meta
           name="description"
-          content="Join the Best MHT-CET Coaching in Hadapsar Pune at ASQUARE Academy. Expert faculty, mock tests, and flexible batches for Engineering &amp; Pharmacy aspirants."
+          content="Join the Best MHT-CET Coaching in Hadapsar Pune at ASQUARE Academy. Expert faculty, mock tests, and flexible batches for Engineering & Pharmacy aspirants."
         />
         <meta
           name="keywords"
@@ -282,7 +282,7 @@ function MHTHadapsar() {
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Expert Faculty:</strong> Experienced teachers specializing in Physics, Chemistry, Maths &amp; Biology.
+                    <strong>Expert Faculty:</strong> Experienced teachers specializing in Physics, Chemistry, Maths & Biology.
                   </span>
                 </li>
                 <li>

@@ -27,15 +27,15 @@ function MHTChakan() {
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching &amp; Classes in Chakan Pune | Best CET - ASQUARE Academy
+          MHT-CET Coaching & Classes in Chakan Pune | Best CET - ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching &amp; Classes in Chakan Pune | Best CET - ASQUARE Academy"
+          content="MHT-CET Coaching & Classes in Chakan Pune | Best CET - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="MHT-CET Coaching &amp; Classes in Chakan Pune by ASQUARE Academy. Expert faculty, mock tests &amp; flexible batches for Engineering &amp; Pharmacy CET preparation."
+          content="MHT-CET Coaching & Classes in Chakan Pune by ASQUARE Academy. Expert faculty, mock tests & flexible batches for Engineering & Pharmacy CET preparation."
         />
         <meta
           name="keywords"
@@ -283,7 +283,7 @@ function MHTChakan() {
                 </li>
                 <li>
                   <span>
-                    <strong>Weekly Tests &amp; Performance Analysis:</strong> Identify strengths and areas for improvement.
+                    <strong>Weekly Tests & Performance Analysis:</strong> Identify strengths and areas for improvement.
                   </span>
                 </li>
                 <li>

@@ -35,7 +35,7 @@ function MHTKharadi() {
         />
         <meta
           name="description"
-          content="Join top MHT-CET Coaching Classes in Kharadi Pune for Engineering &amp; Pharmacy aspirants. Expert teachers, mock tests &amp; online CET options at ASQUARE Academy."
+          content="Join top MHT-CET Coaching Classes in Kharadi Pune for Engineering & Pharmacy aspirants. Expert teachers, mock tests & online CET options at ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -257,7 +257,7 @@ function MHTKharadi() {
                 </li>
                 <li>
                   <span>
-                    <strong>Regular Tests &amp; Feedback:</strong>{" "}
+                    <strong>Regular Tests & Feedback:</strong>{" "}
                     Weekly tests and mock CETs with performance analysis.
                   </span>
                 </li>
@@ -410,7 +410,7 @@ function MHTKharadi() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly &amp; Monthly CET Tests:
+                  Weekly & Monthly CET Tests:
                 </h6>
                 <span>Weekly tests and full-length CET mock exams for practice.</span>
               </div>

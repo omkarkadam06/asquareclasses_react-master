@@ -35,7 +35,7 @@ function MHTWanowrie() {
         />
         <meta
           name="description"
-          content="Join top MHT-CET Coaching Classes in Wanowrie Pune for Engineering &amp; Pharmacy aspirants. Expert faculty, mock tests &amp; online options at ASQUARE Academy."
+          content="Join top MHT-CET Coaching Classes in Wanowrie Pune for Engineering & Pharmacy aspirants. Expert faculty, mock tests & online options at ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -412,7 +412,7 @@ function MHTWanowrie() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly &amp; Monthly CET Tests:
+                  Weekly & Monthly CET Tests:
                 </h6>
                 <span>Weekly tests and mock exams to assess progress.</span>
               </div>

@@ -36,7 +36,7 @@ function MHTAlandi() {
         />
         <meta
           name="description"
-          content="Join the best MHT-CET Coaching Classes in Alandi Pune. Expert faculty, mock tests &amp; flexible batches for Engineering &amp; Pharmacy CET preparation. ASQUARE Academy."
+          content="Join the best MHT-CET Coaching Classes in Alandi Pune. Expert faculty, mock tests flexible batches for Engineering Pharmacy CET preparation. ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -297,7 +297,7 @@ function MHTAlandi() {
                 </li>
                 <li>
                   <span>
-                    <strong>Mock Tests &amp; Performance Analysis:</strong>{" "}
+                    <strong>Mock Tests Performance Analysis:</strong>{" "}
                     Weekly topic-wise tests and full-length CET mock exams.
                   </span>
                 </li>
@@ -457,7 +457,7 @@ function MHTAlandi() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly &amp; Monthly CET Tests:
+                  Weekly Monthly CET Tests:
                 </h6>
                 <span>Evaluate and strengthen problem-solving ability.</span>
               </div>

@@ -122,21 +122,26 @@ function NEETPimpri() {
     },
   ];
 
-  const programDurations = [
+    const programDurations = [
     {
       icon: Clock,
-      title: "1-Year NEET Program (For Class 12 / Droppers)",
-      desc: "Comprehensive revision, full syllabus tests, and crash course integration.",
+      title: "2-Year Integrated Program (Class 11 → 12):",
+      desc: "Foundation-to-advanced course integrating school and NEET preparation.",
     },
     {
       icon: Target,
-      title: "2-Year Integrated Program (For Class 11 + 12)",
-      desc: "Balanced board + NEET preparation with continuous assessment and mentoring.",
+      title: "1-Year Target Program (Class 12):",
+      desc: "Fast-paced NEET course with mock tests and regular analysis.",
     },
     {
       icon: CalendarSync,
-      title: "Foundation Course (For Class 9 & 10)",
-      desc: "Strengthens basics in Science & Math to prepare for future NEET/competitive exams.",
+      title: "Dropper/Repeater Batch:",
+      desc: "Intensive one-year course for NEET droppers with detailed test series.",
+    },
+    {
+      icon: School,
+      title: "Crash Course:",
+      desc: "2–3 months of quick revision, PYQs, and mock test practice.",
     },
   ];
 

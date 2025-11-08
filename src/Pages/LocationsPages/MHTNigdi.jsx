@@ -27,15 +27,15 @@ function MHTNigdi() {
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching in Nigdi Pune | Best CET Classes &amp; Institute - ASQUARE Academy
+          MHT-CET Coaching in Nigdi Pune | Best CET Classes & Institute - ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching in Nigdi Pune | Best CET Classes &amp; Institute - ASQUARE Academy"
+          content="MHT-CET Coaching in Nigdi Pune | Best CET Classes & Institute - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the Best MHT-CET Coaching in Nigdi Pune. Expert faculty, mock tests, and result-driven programs for Engineering &amp; Pharmacy aspirants. Batches near Akurdi, Ravet, and Bhakti Shakti Chowk."
+          content="Join ASQUARE Academy for the Best MHT-CET Coaching in Nigdi Pune. Expert faculty, mock tests, and result-driven programs for Engineering & Pharmacy aspirants. Batches near Akurdi, Ravet, and Bhakti Shakti Chowk."
         />
         <meta
           name="keywords"
@@ -300,7 +300,7 @@ function MHTNigdi() {
                 <img className="grid_img" src={qualified} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Experienced &amp; result-driven faculty team.
+                    Experienced & result-driven faculty team.
                   </h6>
                 </div>
               </div>
@@ -639,7 +639,7 @@ function MHTNigdi() {
               <li className="mb-4">
                 <span>
                   <strong>Chemistry:</strong> In-depth coverage of Physical,
-                  Organic &amp; Inorganic chemistry with CET-based problem sets.
+                  Organic & Inorganic chemistry with CET-based problem sets.
                 </span>
               </li>
               <li className="mb-4">

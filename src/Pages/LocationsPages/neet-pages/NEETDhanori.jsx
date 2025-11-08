@@ -1,9 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 3.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET page 4.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC4.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile4.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 21.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET Page 3.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -20,6 +20,7 @@ import {
   CalendarSync,
   ChartSpline,
   BadgeQuestionMark,
+  Award,
 } from "lucide-react";
 import "./NEET-pages.css";
 import Slider from "react-slick";
@@ -39,7 +40,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETSaudagar() {
+function NEETDhanori() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -70,151 +71,166 @@ function NEETSaudagar() {
   const whyCFeatures = [
     {
       Icon: Users,
-      title: "Expert Faculty",
-      description: "Specialists in Physics, Chemistry, and Biology.",
+      title: "Expert Faculty for NEET in Dhanori",
+      description:
+        "Experienced teachers for Physics, Chemistry, and Biology with strong mentoring backgrounds.",
     },
     {
       Icon: BookOpen,
-      title: "Structured Preparation",
-      description: "From NCERT basics to advanced problem-solving.",
+      title: "Comprehensive Syllabus Coverage",
+      description:
+        "NCERT-first approach with advanced NEET-level problem solving.",
     },
     {
       Icon: Target,
-      title: "Small Batches",
-      description: "Focused guidance and doubt resolution.",
+      title: "Personalized Attention",
+      description: "Small batch sizes with dedicated doubt-solving sessions.",
     },
     {
       Icon: BarChart,
-      title: "Regular Assessments",
-      description: "Weekly tests, mock exams, and detailed analytics.",
+      title: "Regular Tests & Analysis",
+      description:
+        "Weekly/fortnightly part tests, full-length mocks, and performance tracking.",
     },
     {
       Icon: Calendar,
-      title: "Flexible Learning",
-      description:
-        "Classroom & online NEET classes in Pimple Saudagar, with weekday and weekend batches.",
-    },
-    {
-      Icon: School,
-      title: "Mentorship",
-      description: "Balanced support for NEET prep and board exams.",
+      title: "Motivational & Career Guidance",
+      description: "Counselling, strategy sessions, and exam mindset coaching.",
     },
   ];
 
   const subjectsCovered = [
     {
       title: "Physics",
-      desc: "Conceptual clarity through derivations, problem-solving, and practical application.",
+      desc: "Conceptual clarity with numerical problem-solving and error-reduction drills.",
     },
     {
       title: "Chemistry",
-      desc: "In-depth understanding of Physical, Organic, and Inorganic Chemistry with NCERT focus.",
+      desc: "Physical, Organic, and Inorganic with NCERT emphasis and application-based learning.",
     },
     {
       title: "Biology",
-      desc: "Detailed coverage of NCERT-based chapters and NEET-level question practice.",
+      desc: "Line-by-line NCERT coverage, high-weightage topic focus, and diagram-based learning.",
     },
   ];
 
-    const programDurations = [
+  const programDurations = [
     {
       icon: Clock,
-      title: "2-Year Integrated Program (Class 11 → 12):",
-      desc: "Foundation-to-advanced course integrating school and NEET preparation.",
+      title: "2-Year Course (10th → 12th Moving Students):",
+      desc: "Foundation + NEET-focused preparation for Class 11 & 12 with concept-building, DPPs, and regular tests.",
     },
     {
       icon: Target,
-      title: "1-Year Target Program (Class 12):",
-      desc: "Fast-paced NEET course with mock tests and regular analysis.",
-    },
-    {
-      icon: CalendarSync,
-      title: "Dropper/Repeater Batch:",
-      desc: "Intensive one-year course for NEET droppers with detailed test series.",
+      title: "1-Year Course (11th → 12th Moving Students):",
+      desc: "Structured Class 12 coverage with targeted revision of Class 11 and dedicated NEET test series.",
     },
     {
       icon: School,
       title: "Crash Course:",
-      desc: "2–3 months of quick revision, PYQs, and mock test practice.",
+      desc: "2–3 months of intensive revision with PYQs, summary notes, and daily mock practice.",
+    },
+    {
+      icon: CalendarSync,
+      title: "Repeater/Dropper Batch:",
+      desc: "1-year focused program with concept reinforcement, error analysis, and full-length NEET test series.",
     },
   ];
 
   const methodologySteps = [
     {
       Icon: Lightbulb,
-      title: "Learn",
-      description: "Conceptual lectures with NCERT alignment.",
+      title: "Daily Lectures",
+      description: "Daily lectures for concept-building.",
     },
     {
       Icon: BookOpen,
-      title: "Practice",
-      description: "DPPs, problem-solving workshops, and assignments.",
-    },
-    {
-      Icon: BarChart,
-      title: "Assess",
-      description: "Weekly chapter tests and monthly full-length mocks.",
+      title: "Chapter-wise Practice",
+      description: "Chapter-wise assignments for self-practice.",
     },
     {
       Icon: MessageCircle,
-      title: "Revise",
-      description: "Targeted crash revisions with high-yield topics.",
+      title: "Doubt-Solving",
+      description: "One-to-one doubt-solving sessions.",
+    },
+    {
+      Icon: BarChart,
+      title: "Mock Tests",
+      description: "Topic-wise and full-length mock tests.",
+    },
+    {
+      Icon: Calendar,
+      title: "Performance Reviews",
+      description: "Parent–student performance reviews.",
     },
   ];
 
   const faqData = [
     {
-      q: "Which is the Best NEET Coaching in Pimple Saudagar?",
-      a: "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results.",
+      q: "Who can join NEET coaching at ASQUARE Academy Dhanori Pune?",
+      a: "Students of Class XI, XII, and XII pass-outs preparing for NEET-UG can join. ASQUARE Academy offers structured programs to help students build strong fundamentals in Physics, Chemistry, and Biology.",
     },
     {
-      q: "Do you offer Top NEET Coaching Classes Pimple Saudagar for beginners?",
-      a: "Yes. We provide beginner-friendly programs with NCERT basics and regular practice.",
+      q: "What subjects are covered in NEET coaching classes in Dhanori Pune?",
+      a: "We cover Physics, Chemistry, and Biology as per the NEET-UG syllabus, ensuring complete preparation under expert guidance from top faculty at ASQUARE Academy.",
     },
     {
-      q: "How do you support NEET Advanced Preparation Pimple Saudagar?",
-      a: "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions.",
+      q: "Why is ASQUARE Academy known as the Best NEET Coaching in Dhanori Pune?",
+      a: "Our personalized attention, regular mock tests, expert mentors, and excellent past results make ASQUARE Academy one of the best NEET coaching institutes in Dhanori Pune.",
     },
     {
-      q: "Are weekend NEET Classes in Pimple Saudagar available?",
-      a: "Yes. We offer both weekday and weekend batch options in classroom and online modes.",
+      q: "Do you provide mock tests and practice papers?",
+      a: "Yes, we conduct weekly chapter-wise tests, part tests, and full-length NEET mock exams to help students analyze performance and strengthen weak areas.",
     },
     {
-      q: "Do you provide scholarships?",
-      a: "Yes. Students can apply through the ASQUARE Scholarship Test.",
+      q: "What is the course duration for NEET classes in Dhanori Pune?",
+      a: "ASQUARE Academy offers flexible course options – 2-year, 1-year, crash, and dropper batches – designed for effective NEET advanced preparation in Dhanori Pune.",
+    },
+    {
+      q: "How big are the batches at ASQUARE Academy Dhanori?",
+      a: "We maintain small, focused batches to ensure every student gets personal attention, better concept clarity, and quick doubt resolution.",
+    },
+    {
+      q: "Do you provide progress reports to parents?",
+      a: "Yes, detailed performance tracking and periodic parent-teacher meetings (PTMs) help monitor student progress throughout the NEET preparation journey.",
+    },
+    {
+      q: "Where is ASQUARE Academy located in Dhanori Pune?",
+      a: "ASQUARE Academy – Top NEET Classes in Dhanori Pune. Exact address, batch timings, and counselling details are shared during student registration.",
     },
   ];
 
   const gridFeatures = [
     {
       Icon: Users,
-      title: "Comprehensive printed + digital study material.",
+      title: "Limited batch size for personal attention",
       colorClass: "bg-gradient-blue",
     },
     {
       Icon: BookOpen,
-      title: "Dedicated doubt-clearing sessions.",
+      title: "Updated NEET study material (printed + digital)",
       colorClass: "bg-gradient-purple",
     },
     {
-      Icon: TrendingUp,
-      title: "Performance tracking with parent-teacher meetings.",
+      Icon: Award,
+      title: "Regular parent-teacher meetings",
       colorClass: "bg-gradient-green",
     },
     {
       Icon: ChartSpline,
-      title: "Online test series with national-level benchmarking.",
+      title: "Workshops on time management & exam strategies",
       colorClass: "bg-gradient-orange",
     },
     {
-      Icon: CalendarSync,
-      title: "Parental feedback and progress reports",
-      colorClass: "bg-gradient-red",
+      Icon: BarChart,
+      title: "Online mock tests with analytics.",
+      colorClass: "bg-gradient-pink",
     },
     {
-      Icon: ChartSpline,
-      title: "Online & offline practice test series",
-      colorClass: "bg-gradient-teal",
+      Icon: TrendingUp,
+      title:
+        "Trusted medical entrance coaching in Dhanori & Pune with consistent results",
+      colorClass: "bg-gradient-red",
     },
   ];
 
@@ -222,19 +238,19 @@ function NEETSaudagar() {
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy
+          Best NEET Coaching Classes in Dhanori Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Dhanori Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships."
+          content="Join the best NEET coaching classes in Dhanori Pune at ASQUARE Academy. Expert faculty, mock tests, small batches & advanced NEET preparation programs."
         />
         <meta
           name="keywords"
-          content="NEET Coaching in Pimple Saudagar, Best NEET Classes in Pimple Saudagar, Top NEET Coaching Institute Pimple Saudagar, NEET Preparation in Pimple Saudagar, ASQUARE Academy Pimple Saudagar,"
+          content="NEET coaching classes in dhanori pune Best NEET Coaching in dhanori Pune Top NEET Coaching Classes dhanori pune NEET Advanced Preparation dhanori pune NEET Classes in dhanori pune Best NEET Classes in dhanori pune Top NEET Classes in dhanori pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
@@ -243,154 +259,127 @@ function NEETSaudagar() {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "name": "Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy",
-      "description": "Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships.",
-      "inLanguage": "en",
-      "publisher": {
-        "@type": "Organization",
-        "name": "ASQUARE Academy",
-        "url": "https://www.asquareclasses.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-          "width": 250,
-          "height": 70
-        }
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.asquareclasses.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Courses",
-            "item": "https://www.asquareclasses.com/courses/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "NEET Coaching Classes in Pimple Saudagar",
-            "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/"
-          }
-        ]
-      }
-    },
-    {
-      "@type": "EducationalOrganization",
-      "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/#organization",
+      "name": "ASQUARE Academy - NEET Coaching Classes in Dhanori Pune",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers top NEET, IIT JEE, and MHT-CET coaching in Pune with expert faculty, advanced study material, and strong success results.",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "description": "ASQUARE Academy offers the best NEET coaching classes in Dhanori Pune with expert faculty, mock tests, and personalized mentorship for Class XI, XII, and droppers.",
+      "telephone": "+91-9766118877",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
+      ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
+        "addressLocality": "Dhanori",
+        "addressRegion": "Pune",
+        "addressCountry": "India"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9579730062",
-        "contactType": "Customer Support",
-        "availableLanguage": ["English", "Hindi", "Marathi"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
-      ]
+      "openingHours": "Mo-Su 08:00-20:00"
     },
     {
-      "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching in Pimple Saudagar",
-      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "telephone": "+91-9579730062",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/#webpage",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/",
+      "name": "Best NEET Coaching Classes in Dhanori Pune | ASQUARE Academy",
+      "description": "Join ASQUARE Academy for top NEET coaching classes in Dhanori Pune. We provide expert mentorship, regular mock tests, and advanced preparation programs for NEET aspirants.",
+      "publisher": {
+        "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/#organization"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 18.5987,
-        "longitude": 73.7811
-      },
-      "openingHoursSpecification": [
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/#breadcrumbs",
+      "itemListElement": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "20:00"
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "NEET Coaching",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-pune"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NEET Coaching Classes in Dhanori Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/"
         }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
       ]
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-dhanori-pune/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which is the Best NEET Coaching in Pimple Saudagar?",
+          "name": "Who can join NEET coaching at ASQUARE Academy Dhanori Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results."
+            "text": "Students of Class XI, XII, and XII pass-outs preparing for NEET-UG can join. ASQUARE Academy offers structured programs to build strong fundamentals in Physics, Chemistry, and Biology."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer Top NEET Coaching Classes in Pimple Saudagar for beginners?",
+          "name": "What subjects are covered in NEET coaching classes in Dhanori Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We provide beginner-friendly programs with NCERT basics and regular practice."
+            "text": "We cover Physics, Chemistry, and Biology as per the NEET-UG syllabus, ensuring complete preparation under expert guidance from top faculty at ASQUARE Academy."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you support NEET Advanced Preparation in Pimple Saudagar?",
+          "name": "Why is ASQUARE Academy known as the Best NEET Coaching in Dhanori Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions."
+            "text": "Our personalized attention, mock tests, expert mentors, and proven results make ASQUARE Academy one of the best NEET coaching institutes in Dhanori Pune."
           }
         },
         {
           "@type": "Question",
-          "name": "Are weekend NEET Classes in Pimple Saudagar available?",
+          "name": "Do you provide mock tests and practice papers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer both weekday and weekend batch options in classroom and online modes."
+            "text": "Yes, we conduct weekly chapter-wise tests, part tests, and full-length NEET mock exams to help students analyze performance and strengthen weak areas."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide scholarships?",
+          "name": "What is the course duration for NEET classes in Dhanori Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Students can apply through the ASQUARE Scholarship Test for merit and need-based scholarships."
+            "text": "ASQUARE Academy offers flexible course options – 2-year, 1-year, crash, and dropper batches – designed for effective NEET advanced preparation in Dhanori Pune."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How big are the batches at ASQUARE Academy Dhanori?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We maintain small, focused batches to ensure every student gets personal attention, better concept clarity, and quick doubt resolution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide progress reports to parents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, detailed performance tracking and periodic parent-teacher meetings (PTMs) help monitor student progress throughout the NEET preparation journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is ASQUARE Academy located in Dhanori Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE Academy – Top NEET Classes in Dhanori Pune. Exact address, batch timings, and counselling details are shared during student registration."
           }
         }
       ]
@@ -445,22 +434,21 @@ function NEETSaudagar() {
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Crack NEET with Expert Mentorship at{" "}
+                Crack NEET with Expert Guidance –{" "}
                 <span className="gradient-text-yellow d-inline-block">
-                  ASQUARE Academy,
+                  Best NEET Coaching Classes in Dhanori Pune at ASQUARE Academy
                 </span>
-                Pimple Saudagar, Pune
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                ASQUARE Academy offers expert-led{" "}
-                <strong>NEET coaching classes in Pimple Saudagar, </strong>
-                designed to help students achieve top scores in NEET UG. With
-                personalized mentoring, small batch sizes, and intensive test
-                practice, ASQUARE Academy is recognized as one of the
-                <strong> Best NEET Coaching in Pimple Saudagar. </strong> Our
-                structured approach ensures students are ready for both NCERT
-                fundamentals and{" "}
-                <strong> NEET Advanced Preparation in Pimple Saudagar.</strong>{" "}
+                Looking for the best
+                <strong> NEET coaching classes in Dhanori, Pune? </strong>
+                At <strong> ASQUARE Academy, </strong>
+                we specialize in structured NEET preparation with a proven track
+                record. As a trusted{" "}
+                <strong> Best NEET Coaching Institutes in Dhanori, </strong> we
+                focus on concept clarity, exam strategies, regular test
+                practice, and personal mentorship to help students secure
+                admission in top medical colleges.
               </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -469,12 +457,15 @@ function NEETSaudagar() {
                   className="flex-shrink-0 mt-1"
                 />
                 <span className="text-white">
+                  Our Dhanori centre is easily accessible to students from
                   <strong>
-                    Our Pimple Saudagar branch serves students from:
-                  </strong>{" "}
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.{" "}
+                    {" "}
+                    Dhanori, Lohegaon, Tingre Nagar, Viman Nagar, Vishrantwadi,
+                    Yerwada, Kalyani Nagar, Kharadi, Wagholi, Alandi Road,
+                    Kalas, and Khadki.{" "}
+                  </strong>
+                  making ASQUARE a trusted choice for{" "}
+                  <strong> NEET preparation in Pune. </strong>
                 </span>
               </div>
             </div>
@@ -492,7 +483,7 @@ function NEETSaudagar() {
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                — Best NEET Coaching in Pimple Saudagar, Pune
+                Best NEET Coaching in Dhanori?
               </h2>
 
               {isDesktop ? (
@@ -518,9 +509,8 @@ function NEETSaudagar() {
                     color="#FFCB03"
                     className="flex-shrink-0"
                   />
-                  ASQUARE Academy is consistently rated among the Top NEET
-                  Coaching Classes Pimple Saudagar due to proven results and
-                  student success stories.
+                  Our method focuses on clarity, consistency, and confidence —
+                  key pillars to crack NEET successfully.
                 </p>
               </div>
             </div>
@@ -555,40 +545,31 @@ function NEETSaudagar() {
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span>ASQUARE Academy - Pimple Saudagar</span>
+            <span> ASQUARE Academy Dhanori</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The{" "}
-              <strong>
-                {" "}
-                NEET course at ASQUARE Academy, Pimple Saudagar,{" "}
-              </strong>{" "}
-              is designed to help students master each subject step by step. We
-              emphasize{" "}
-              <strong>
-                {" "}
-                concept clarity, test consistency, and exam temperament,{" "}
-              </strong>
-              ensuring students perform confidently in the actual NEET exam.
+              The<strong> NEET course at ASQUARE Academy, Dhanori, </strong>
+              offers complete academic support for NEET aspirants. It includes
+              interactive classroom sessions, doubt-solving discussions, and
+              rigorous mock test practice.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={26} />
               <span>
-                Our curriculum covers{" "}
-                <strong>Physics, Chemistry, and Biology </strong>
-                in detail, with practice modules, test series, and personalized
-                mentoring. Students from{" "}
+                Students from
                 <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
-                </strong>{" "}
-                benefit from our experienced faculty and competitive test
-                environment.
+                  {" "}
+                  Dhanori, Lohegaon, Tingre Nagar, Viman Nagar, Vishrantwadi,
+                  Yerwada, Kalyani Nagar, Kharadi, Wagholi, Alandi Road, Kalas,
+                  and Khadki.{" "}
+                </strong>
+                prefer our institute for its convenient location, expert
+                faculty, and structured test series — making it the most trusted{" "}
+                <strong> NEET Coaching in Pune. </strong>
               </span>
             </p>
           </div>
@@ -601,30 +582,32 @@ function NEETSaudagar() {
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple
-              Saudagar
+              Course Details (NEET UG) - Top NEET Coaching Classes in Dhanori
             </h3>
 
             <p className="fs-5">
-              <strong>NEET UG</strong> is the gateway to top medical colleges
-              across India offering{" "}
-              <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong> programs.
+              <strong>NEET UG</strong> is the national-level exam for medical
+              courses like{" "}
+              <strong>
+                MBBS, BDS, BAMS, BHMS, and other medical programs.
+              </strong>
+              At <strong> ASQUARE Academy Dhanori,</strong>
+              we provide focused training with conceptual depth, problem-solving
+              practice, and strategy-based mock tests.
             </p>
             <p className="fs-5">
-              At <strong>ASQUARE Academy Pimple Saudagar,</strong> our
-              scientifically structured teaching plan, regular performance
-              evaluations, and one-on-one mentoring ensure complete readiness
-              for the NEET-UG exam.
+              Our faculty’s experience and student success record make ASQUARE
+              one of the{" "}
+              <strong> Top NEET Coaching Institutes in Dhanori Pune. </strong>
             </p>
             <p className="fs-5">
-              We combine conceptual teaching with consistent{" "}
-              <strong>mock test series</strong> and performance reviews —
-              positioning ASQUARE as{" "}
-              <strong>a top NEET coaching institute in PCMC Pune.</strong>
+              We are among the{" "}
+              <strong>Top NEET Coaching Institutes in Dhanori, </strong>
+              known for high student success and experienced faculty.
             </p>
 
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Saudagar
+              Subjects Covered in NEET Classes at Dhanori
             </h4>
 
             <div className="mt-4">
@@ -634,16 +617,15 @@ function NEETSaudagar() {
             </div>
 
             <p className="fs-5">
-              Our balanced subject-wise approach ensures conceptual mastery and
-              time-bound performance improvement.
+              Each subject is taught with conceptual depth, interactive
+              teaching, and consistent testing to ensure excellence.
             </p>
           </div>
 
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple
-              Saudagar
+              Program Duration and Batch Options — NEET Preparation in Dhanori
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -654,9 +636,9 @@ function NEETSaudagar() {
 
             <div className="mt-5 p-4 rounded-4 border border-warning border-opacity-50 bg-brown">
               <p className="fs-5 mb-0">
-                All batches are designed for{" "}
+                Each course is designed to provide{" "}
                 <strong className="text-warning">
-                  focused learning, consistent testing, and steady
+                  structured learning and continuous performance .
                 </strong>{" "}
                 improvement.
               </p>
@@ -674,7 +656,7 @@ function NEETSaudagar() {
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Saudagar, Pune
+              Best NEET Coaching in Dhanori,
             </h3>
           </div>
 
@@ -696,31 +678,32 @@ function NEETSaudagar() {
               🏆 Success Stories
             </span>
             <h4 className="section-title-large mb-4">
-              ASQUARE Academy's NEET Success - Proven Track Record{" "}
+              ASQUARE Academy’s NEET Results – Student Success
             </h4>
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong className="text-primary">ASQUARE Academy,</strong> we
-              take pride in our consistent NEET results. Our students have
-              secured admissions to India’s premier medical colleges such as
+              At <strong> ASQUARE Academy Dhanori </strong>
+              has consistently delivered strong <strong> NEET results, </strong>
+              with selections in{" "}
               <strong className="text-primary">
-                {" "}
-                AIIMS, BJ Medical College, AFMC, and DY Patil Medical College
-                Pune.
+                AIIMS, Government Medical Colleges, and top private institutes.{" "}
               </strong>
+              Our student-first approach, expert mentors, and structured test
+              strategy have made ASQUARE one of the
+              <strong> Best NEET Coaching Centres in Dhanori Pune. </strong>
             </p>
-            <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
+            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
               <CheckCircle size={24} />
               <p className="fs-5 fw-semibold mb-0">
                 Our unique combination of mentorship, structured learning, and
                 regular testing makes us one of the
                 <strong>
                   {" "}
-                  Top NEET Coaching Institutes in Pimple Saudagar .
+                  Top NEET Coaching Centre in Alandi Pune.
                 </strong>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -738,9 +721,9 @@ function NEETSaudagar() {
                 Innovative Teaching Methodology at ASQUARE Academy
               </h4>
               <p className="fs-5 text-white mb-4 lh op">
-                This unique four-step methodology has made ASQUARE{" "}
+                This tried-and-tested teaching model has helped ASQUARE become a{" "}
                 <strong>
-                  the best NEET training institute in Pimple Saudagar and PCMC.
+                  Top NEET Training Institute in Dhanori and Pune.
                 </strong>
               </p>
               <a
@@ -773,7 +756,7 @@ function NEETSaudagar() {
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Saudagar (PCMC).
+              Top NEET Coaching Institutes in Dhanori.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -803,29 +786,27 @@ function NEETSaudagar() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll Now at <span>ASQUARE Academy - Pimple Saudagar</span>
+            Join <span>ASQUARE Academy Today</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              If you’re searching for the{" "}
-              <strong> Top NEET Coaching Classes in Pimple Saudagar, </strong>{" "}
-              the look no further than
-              <strong>ASQUARE Academy. </strong>
-              With experienced teachers, structured test planning, and
-              consistent student success, we’re the trusted name for
-              <strong> NEET preparation in PCMC Pune.</strong>
+              Get started with the{" "}
+              <strong> Top NEET Coaching Classes in Dhanori, Pune, </strong>
+              With expert faculty, structured study plans, and a strong success
+              record, <strong> ASQUARE Academy </strong>
+              is your trusted choice for NEET preparation.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                Convenient from{" "}
+                Convenient for students from{" "}
                 <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
+                  {" "}Dhanori, Lohegaon, Tingre Nagar, Viman Nagar, Vishrantwadi,
+                  Yerwada, Kalyani Nagar, Kharadi, Wagholi, Alandi Road, Kalas,
+                  and Khadki.
                 </strong>
               </span>
             </p>
@@ -833,7 +814,7 @@ function NEETSaudagar() {
 
           {/* Subheading */}
           <h4 className="fw-bold text-primary mb-4">
-            Admissions Open — Limited Seats!
+            Limited seats available – Enroll today!
           </h4>
 
           {/* CTA Button */}
@@ -851,4 +832,4 @@ function NEETSaudagar() {
   );
 }
 
-export default NEETSaudagar;
+export default NEETDhanori;

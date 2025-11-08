@@ -27,15 +27,15 @@ function MHTChandanNagar() {
     <>
       <Helmet>
         <title>
-          Best MHT-CET Coaching &amp; Classes in Chandan Nagar Pune | ASQUARE Academy
+          Best MHT-CET Coaching & Classes in Chandan Nagar Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best MHT-CET Coaching &amp; Classes in Chandan Nagar Pune | ASQUARE Academy"
+          content="Best MHT-CET Coaching & Classes in Chandan Nagar Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join top MHT-CET Coaching Classes in Chandan Nagar Pune for Engineering &amp; Pharmacy. Expert faculty, mock tests &amp; flexible batches. Enroll now at ASQUARE Academy."
+          content="Join top MHT-CET Coaching Classes in Chandan Nagar Pune for Engineering & Pharmacy. Expert faculty, mock tests & flexible batches. Enroll now at ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -268,7 +268,7 @@ function MHTChandanNagar() {
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Experienced Faculty:</strong> Subject experts for Physics, Chemistry, Maths &amp; Biology.
+                    <strong>Experienced Faculty:</strong> Subject experts for Physics, Chemistry, Maths & Biology.
                   </span>
                 </li>
                 <li>
@@ -438,7 +438,7 @@ function MHTChandanNagar() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly &amp; Monthly CET Tests:
+                  Weekly & Monthly CET Tests:
                 </h6>
                 <span>Weekly topic tests and mock CETs for exam familiarity.</span>
               </div>

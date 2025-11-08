@@ -272,7 +272,7 @@ function MHTCamp() {
                 <li>
                   <span>
                     <strong>Expert Faculty:</strong> Specializing in Physics,
-                    Chemistry, Mathematics &amp; Biology.
+                    Chemistry, Mathematics & Biology.
                   </span>
                 </li>
                 <li>
@@ -297,7 +297,7 @@ function MHTCamp() {
                   <span>
                     <strong>Convenient Location:</strong> Serving students from{" "}
                     <strong>
-                      Camp, Swargate, Fatima Nagar, Koregaon Park &amp;
+                      Camp, Swargate, Fatima Nagar, Koregaon Park &
                       Mangalwar Peth.
                     </strong>
                   </span>
@@ -379,7 +379,7 @@ function MHTCamp() {
                 <div className="grid_content">
                   <h6 className="grid_item_title">
                     Ideal for students from Camp, Swargate, Fatima Nagar,
-                    Koregaon Park &amp; Mangalwar Peth.
+                    Koregaon Park & Mangalwar Peth.
                   </h6>
                 </div>
               </div>
@@ -647,7 +647,7 @@ function MHTCamp() {
                 to success!<br />
                 <strong>
                   Ideal for students from Camp, Swargate, Fatima Nagar, Koregaon
-                  Park &amp; Mangalwar Peth.
+                  Park & Mangalwar Peth.
                 </strong>
               </p>
               <h4>

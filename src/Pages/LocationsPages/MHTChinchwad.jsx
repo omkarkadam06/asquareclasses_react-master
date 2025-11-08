@@ -31,11 +31,11 @@ function MHTChinchwad() {
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching in Chinchwad Pune | Best CET Classes &amp; Institute - ASQUARE Academy"
+          content="MHT-CET Coaching in Chinchwad Pune | Best CET Classes & Institute - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the Best MHT-CET Coaching Classes in Chinchwad Pune for Engineering &amp; Pharmacy aspirants. Expert faculty, mock tests, structured study plans, and flexible batches for XI, XII &amp; repeaters at ASQUARE Academy."
+          content="Join the Best MHT-CET Coaching Classes in Chinchwad Pune for Engineering & Pharmacy aspirants. Expert faculty, mock tests, structured study plans, and flexible batches for XI, XII & repeaters at ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -275,7 +275,7 @@ function MHTChinchwad() {
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Experienced Faculty:</strong> Subject experts for Physics, Chemistry, Maths &amp; Biology.
+                    <strong>Experienced Faculty:</strong> Subject experts for Physics, Chemistry, Maths & Biology.
                   </span>
                 </li>
                 <li>

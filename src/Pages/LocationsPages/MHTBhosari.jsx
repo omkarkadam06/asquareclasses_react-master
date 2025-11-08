@@ -27,19 +27,19 @@ function MHTBhosari() {
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching Classes in Bhosari Pune | Best CET Institute &amp; Classes - ASQUARE Academy
+          MHT-CET Coaching Classes in Bhosari Pune | Best CET Institute & Classes - ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching Classes in Bhosari Pune | Best CET Classes &amp; Institute - ASQUARE Academy"
+          content="MHT-CET Coaching Classes in Bhosari Pune | Best CET Classes & Institute - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the Best MHT-CET Coaching in Bhosari Pune. Expert faculty, mock tests, and result-driven programs for Engineering &amp; Pharmacy aspirants. Batches near Akurdi, Ravet, and Bhakti Shakti Chowk."
+          content="Join ASQUARE Academy for the Best MHT-CET Coaching in Bhosari Pune. Expert faculty, mock tests, and result-driven programs for Engineering & Pharmacy aspirants. Batches near Akurdi, Ravet, and Bhakti Shakti Chowk."
         />
         <meta
           name="keywords"
-          content="Join MHT-CET coaching classes in Bhosari Pune for Engineering &amp; Pharmacy aspirants. Weekly mock tests, structured programs, and flexible online/offline batches for XI, XII &amp; dropper students - ASQUARE Academy."
+          content="Join MHT-CET coaching classes in Bhosari Pune for Engineering & Pharmacy aspirants. Weekly mock tests, structured programs, and flexible online/offline batches for XI, XII & dropper students - ASQUARE Academy."
         />
         <script type="application/ld+json">{`
         {
@@ -287,12 +287,12 @@ function MHTBhosari() {
                 </li>
                 <li>
                   <span>
-                    <strong>Weekly Mock Tests &amp; Analysis:</strong> Regular assessments with detailed performance reviews.
+                    <strong>Weekly Mock Tests & Analysis:</strong> Regular assessments with detailed performance reviews.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <strong>Motivational &amp; Career Guidance: </strong> Confidence-building workshops and exam strategies.
+                    <strong>Motivational & Career Guidance: </strong> Confidence-building workshops and exam strategies.
                   </span>
                 </li>
               </ul>
@@ -360,7 +360,7 @@ function MHTBhosari() {
                 <img className="grid_img" src={personalized} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Time management &amp; exam strategy workshops.
+                    Time management & exam strategy workshops.
                   </h6>
                 </div>
               </div>
@@ -655,7 +655,7 @@ function MHTBhosari() {
               </li>
               <li className="mb-4">
                 <span>
-                  <strong>Chemistry:</strong> Physical, Organic &amp; Inorganic Chemistry with practice-based sessions.
+                  <strong>Chemistry:</strong> Physical, Organic & Inorganic Chemistry with practice-based sessions.
                 </span>
               </li>
               <li className="mb-4">

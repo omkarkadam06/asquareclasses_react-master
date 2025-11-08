@@ -290,7 +290,7 @@ function MHTWakad() {
                   detailed performance feedback.
                 </li>
                 <li>
-                  <strong>Motivational &amp; Career Guidance:</strong> Personality
+                  <strong>Motivational & Career Guidance:</strong> Personality
                   development, exam strategy, and confidence-building sessions.
                 </li>
               </ul>
@@ -348,7 +348,7 @@ function MHTWakad() {
               <div className="grid_item">
                 <img className="grid_img" src={personalized} alt="" />
                 <h6 className="grid_item_title">
-                  Time management &amp; exam strategy workshops.
+                  Time management & exam strategy workshops.
                 </h6>
               </div>
             </div>

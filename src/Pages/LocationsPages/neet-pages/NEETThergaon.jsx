@@ -1,9 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 3.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET page 4.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC3.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile3.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 1.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET Page 22.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -20,6 +20,7 @@ import {
   CalendarSync,
   ChartSpline,
   BadgeQuestionMark,
+  Award,
 } from "lucide-react";
 import "./NEET-pages.css";
 import Slider from "react-slick";
@@ -39,7 +40,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETSaudagar() {
+function NEETThergaon() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -67,174 +68,185 @@ function NEETSaudagar() {
     ],
   };
 
-  const whyCFeatures = [
-    {
-      Icon: Users,
-      title: "Expert Faculty",
-      description: "Specialists in Physics, Chemistry, and Biology.",
-    },
-    {
-      Icon: BookOpen,
-      title: "Structured Preparation",
-      description: "From NCERT basics to advanced problem-solving.",
-    },
-    {
-      Icon: Target,
-      title: "Small Batches",
-      description: "Focused guidance and doubt resolution.",
-    },
-    {
-      Icon: BarChart,
-      title: "Regular Assessments",
-      description: "Weekly tests, mock exams, and detailed analytics.",
-    },
-    {
-      Icon: Calendar,
-      title: "Flexible Learning",
-      description:
-        "Classroom & online NEET classes in Pimple Saudagar, with weekday and weekend batches.",
-    },
-    {
-      Icon: School,
-      title: "Mentorship",
-      description: "Balanced support for NEET prep and board exams.",
-    },
-  ];
+const whyCFeatures = [
+  {
+    Icon: Users,
+    title: "Expert Faculty",
+    description:
+      "Experienced teachers specializing in NEET Physics, Chemistry, and Biology.",
+  },
+  {
+    Icon: BookOpen,
+    title: "Structured Curriculum",
+    description:
+      "NCERT-aligned syllabus with comprehensive NEET-level practice.",
+  },
+  {
+    Icon: Target,
+    title: "Small Batch Size",
+    description:
+      "Ensures individual attention and personal mentoring.",
+  },
+  {
+    Icon: BarChart,
+    title: "Regular Testing",
+    description:
+      "Weekly topic-wise tests and full-syllabus mock exams.",
+  },
+  {
+    Icon: Calendar,
+    title: "Flexible Learning Options",
+    description:
+      "Both offline and Online NEET Classes in Thergaon Pune.",
+  },
+  {
+    Icon: School,
+    title: "Integrated Study Approach",
+    description:
+      "Combined preparation for board exams and NEET syllabus.",
+  },
+];
 
-  const subjectsCovered = [
-    {
-      title: "Physics",
-      desc: "Conceptual clarity through derivations, problem-solving, and practical application.",
-    },
-    {
-      title: "Chemistry",
-      desc: "In-depth understanding of Physical, Organic, and Inorganic Chemistry with NCERT focus.",
-    },
-    {
-      title: "Biology",
-      desc: "Detailed coverage of NCERT-based chapters and NEET-level question practice.",
-    },
-  ];
+const subjectsCovered = [
+  {
+    title: "Physics",
+    desc: "Concept-driven teaching with numerical and application-based exercises.",
+  },
+  {
+    title: "Chemistry",
+    desc: "Systematic coverage of Physical, Organic, and Inorganic chemistry with NEET focus.",
+  },
+  {
+    title: "Biology",
+    desc: "In-depth NCERT-based lessons with diagrams, tests, and previous-year question practice.",
+  },
+];
 
-    const programDurations = [
-    {
-      icon: Clock,
-      title: "2-Year Integrated Program (Class 11 → 12):",
-      desc: "Foundation-to-advanced course integrating school and NEET preparation.",
-    },
-    {
-      icon: Target,
-      title: "1-Year Target Program (Class 12):",
-      desc: "Fast-paced NEET course with mock tests and regular analysis.",
-    },
-    {
-      icon: CalendarSync,
-      title: "Dropper/Repeater Batch:",
-      desc: "Intensive one-year course for NEET droppers with detailed test series.",
-    },
-    {
-      icon: School,
-      title: "Crash Course:",
-      desc: "2–3 months of quick revision, PYQs, and mock test practice.",
-    },
-  ];
+const programDurations = [
+  {
+    icon: Clock,
+    title: "2-Year Integrated (Class 11 → 12):",
+    desc: "Comprehensive program covering board + NEET syllabus.",
+  },
+  {
+    icon: Target,
+    title: "1-Year Target Program (Class 12):",
+    desc: "Fast-track course with complete syllabus coverage and testing.",
+  },
+  {
+    icon: CalendarSync,
+    title: "Dropper/Repeater Batch:",
+    desc: "One-year batch focused on NEET revision and test improvement.",
+  },
+  {
+    icon: School,
+    title: "Crash Course:",
+    desc: "2–3 month short-term program including NEET mock exams and concept revisions.",
+  },
+];
 
-  const methodologySteps = [
-    {
-      Icon: Lightbulb,
-      title: "Learn",
-      description: "Conceptual lectures with NCERT alignment.",
-    },
-    {
-      Icon: BookOpen,
-      title: "Practice",
-      description: "DPPs, problem-solving workshops, and assignments.",
-    },
-    {
-      Icon: BarChart,
-      title: "Assess",
-      description: "Weekly chapter tests and monthly full-length mocks.",
-    },
-    {
-      Icon: MessageCircle,
-      title: "Revise",
-      description: "Targeted crash revisions with high-yield topics.",
-    },
-  ];
+const methodologySteps = [
+  {
+    Icon: Lightbulb,
+    title: "Learn",
+    description: "Interactive and concept-based learning for better understanding.",
+  },
+  {
+    Icon: BookOpen,
+    title: "Practice",
+    description: "Daily practice sheets, assignments, and DPPs to build consistency.",
+  },
+  {
+    Icon: BarChart,
+    title: "Assess",
+    description: "Weekly mock tests with detailed performance analysis.",
+  },
+  {
+    Icon: MessageCircle,
+    title: "Revise",
+    description: "Topic-based revision sessions and doubt-solving workshops.",
+  },
+];
 
-  const faqData = [
-    {
-      q: "Which is the Best NEET Coaching in Pimple Saudagar?",
-      a: "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results.",
-    },
-    {
-      q: "Do you offer Top NEET Coaching Classes Pimple Saudagar for beginners?",
-      a: "Yes. We provide beginner-friendly programs with NCERT basics and regular practice.",
-    },
-    {
-      q: "How do you support NEET Advanced Preparation Pimple Saudagar?",
-      a: "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions.",
-    },
-    {
-      q: "Are weekend NEET Classes in Pimple Saudagar available?",
-      a: "Yes. We offer both weekday and weekend batch options in classroom and online modes.",
-    },
-    {
-      q: "Do you provide scholarships?",
-      a: "Yes. Students can apply through the ASQUARE Scholarship Test.",
-    },
-  ];
+const faqData = [
+  {
+    q: "Do you provide advanced NEET coaching in Thergaon?",
+    a: "Yes, we have advanced-level batches with mock tests and concept revision for high performers.",
+  },
+  {
+    q: "Are small batches available for better focus?",
+    a: "Yes, every batch is limited in size to ensure individual attention.",
+  },
+  {
+    q: "Can students from nearby areas like Wakad or Kalewadi join?",
+    a: "Absolutely! Students from Wakad, Dange Chowk, Kalewadi, Pimple Saudagar, Tathawade, and Chinchwad attend regularly.",
+  },
+  {
+    q: "Is online NEET coaching available?",
+    a: "Yes—ASQUARE offers both offline and Online NEET Classes in Thergaon Pune.",
+  },
+  {
+    q: "How do you track student progress?",
+    a: "Through weekly tests, performance reports, and one-on-one mentor reviews.",
+  },
+];
 
-  const gridFeatures = [
-    {
-      Icon: Users,
-      title: "Comprehensive printed + digital study material.",
-      colorClass: "bg-gradient-blue",
-    },
-    {
-      Icon: BookOpen,
-      title: "Dedicated doubt-clearing sessions.",
-      colorClass: "bg-gradient-purple",
-    },
-    {
-      Icon: TrendingUp,
-      title: "Performance tracking with parent-teacher meetings.",
-      colorClass: "bg-gradient-green",
-    },
-    {
-      Icon: ChartSpline,
-      title: "Online test series with national-level benchmarking.",
-      colorClass: "bg-gradient-orange",
-    },
-    {
-      Icon: CalendarSync,
-      title: "Parental feedback and progress reports",
-      colorClass: "bg-gradient-red",
-    },
-    {
-      Icon: ChartSpline,
-      title: "Online & offline practice test series",
-      colorClass: "bg-gradient-teal",
-    },
-  ];
+const gridFeatures = [
+  {
+    Icon: Users,
+    title: "Highly experienced NEET faculty.",
+    colorClass: "bg-gradient-blue",
+  },
+  {
+    Icon: BookOpen,
+    title: "Comprehensive printed & digital material.",
+    colorClass: "bg-gradient-purple",
+  },
+  {
+    Icon: Award,
+    title: "Regular parent-teacher meetings for progress review.",
+    colorClass: "bg-gradient-green",
+  },
+  {
+    Icon: MessageCircle,
+    title: "Doubt-solving and personalized mentoring.",
+    colorClass: "bg-gradient-orange",
+  },
+  {
+    Icon: BarChart,
+    title: "Performance tracking and rank analysis.",
+    colorClass: "bg-gradient-red",
+  },
+//   {
+//     Icon: ChartSpline,
+//     title: "Online & offline test platform.",
+//     colorClass: "bg-gradient-teal",
+//   },
+  {
+    Icon: MapPin,
+    title:
+      "Easily accessible from Dange Chowk, Kalewadi, Wakad, Pimple Saudagar, Kate Wasti, and Tathawade.",
+    colorClass: "bg-gradient-pink",
+  },
+];
 
   return (
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy
+          Best NEET Coaching Classes in Thergaon Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Thergaon Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships."
+          content="Join the Best NEET Coaching Classes in Thergaon Pune at ASQUARE Academy. Learn from expert faculty with personalized mentoring, small batches, and full NEET syllabus coverage to achieve top medical entrance results."
         />
         <meta
           name="keywords"
-          content="NEET Coaching in Pimple Saudagar, Best NEET Classes in Pimple Saudagar, Top NEET Coaching Institute Pimple Saudagar, NEET Preparation in Pimple Saudagar, ASQUARE Academy Pimple Saudagar,"
+          content="NEET coaching classes in thergaon pune Best NEET Coaching in thergaon Pune Top NEET Coaching Classes thergaon pune NEET Advanced Preparation thergaon pune NEET Classes in thergaon pune Best NEET Classes in thergaon pune Top NEET Classes in thergaon pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
@@ -243,154 +255,96 @@ function NEETSaudagar() {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "name": "Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy",
-      "description": "Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships.",
-      "inLanguage": "en",
-      "publisher": {
-        "@type": "Organization",
-        "name": "ASQUARE Academy",
-        "url": "https://www.asquareclasses.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-          "width": 250,
-          "height": 70
-        }
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.asquareclasses.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Courses",
-            "item": "https://www.asquareclasses.com/courses/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "NEET Coaching Classes in Pimple Saudagar",
-            "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/"
-          }
-        ]
-      }
-    },
-    {
-      "@type": "EducationalOrganization",
-      "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
-      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers top NEET, IIT JEE, and MHT-CET coaching in Pune with expert faculty, advanced study material, and strong success results.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9579730062",
-        "contactType": "Customer Support",
-        "availableLanguage": ["English", "Hindi", "Marathi"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching in Pimple Saudagar",
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/#localbusiness",
+      "name": "ASQUARE Academy - NEET Coaching Classes in Thergaon Pune",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "telephone": "+91-9579730062",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
+        "addressLocality": "Thergaon, Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
+        "addressCountry": "India"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 18.5987,
-        "longitude": 73.7811
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "20:00"
-        }
-      ],
       "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/#webpage",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/",
+      "name": "NEET Coaching Classes in Thergaon Pune | ASQUARE Academy",
+      "description": "Best NEET Coaching Classes in Thergaon Pune by ASQUARE Academy with expert faculty, small batches, and personalized NEET preparation for top results."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "NEET Coaching",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-pune"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NEET Coaching Classes in Thergaon Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-Institute-thergaon-pune/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which is the Best NEET Coaching in Pimple Saudagar?",
+          "name": "Who can join NEET coaching at ASQUARE Academy Thergaon Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results."
+            "text": "Students of Class XI, XII, and drop year aspirants preparing for NEET UG can join ASQUARE Academy for expert guidance and structured study programs in Thergaon Pune."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer Top NEET Coaching Classes in Pimple Saudagar for beginners?",
+          "name": "What subjects are covered in NEET classes at Thergaon Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We provide beginner-friendly programs with NCERT basics and regular practice."
+            "text": "ASQUARE Academy covers Physics, Chemistry, and Biology based on the NEET syllabus with conceptual learning and problem-solving sessions."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you support NEET Advanced Preparation in Pimple Saudagar?",
+          "name": "Do you provide mock tests for NEET aspirants?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions."
+            "text": "Yes, regular topic-wise tests, part tests, and full-length NEET mock exams are conducted to assess progress and boost preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "Are weekend NEET Classes in Pimple Saudagar available?",
+          "name": "Are online NEET classes available in Thergaon Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer both weekday and weekend batch options in classroom and online modes."
+            "text": "Yes, ASQUARE Academy offers both classroom and online NEET coaching options for flexible learning and better performance."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide scholarships?",
+          "name": "Why choose ASQUARE Academy for NEET Coaching in Thergaon Pune?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Students can apply through the ASQUARE Scholarship Test for merit and need-based scholarships."
+            "text": "With expert mentors, small batches, personalized attention, and proven results, ASQUARE Academy stands among the top NEET Coaching Classes in Thergaon Pune."
           }
         }
       ]
@@ -447,20 +401,13 @@ function NEETSaudagar() {
               <h1 className="hero-title-large mb-4">
                 Crack NEET with Expert Mentorship at{" "}
                 <span className="gradient-text-yellow d-inline-block">
-                  ASQUARE Academy,
+                  ASQUARE Academy, Thergaon
                 </span>
-                Pimple Saudagar, Pune
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                ASQUARE Academy offers expert-led{" "}
-                <strong>NEET coaching classes in Pimple Saudagar, </strong>
-                designed to help students achieve top scores in NEET UG. With
-                personalized mentoring, small batch sizes, and intensive test
-                practice, ASQUARE Academy is recognized as one of the
-                <strong> Best NEET Coaching in Pimple Saudagar. </strong> Our
-                structured approach ensures students are ready for both NCERT
-                fundamentals and{" "}
-                <strong> NEET Advanced Preparation in Pimple Saudagar.</strong>{" "}
+                Searching for the most reliable
+                <strong> NEET coaching classes in Thergaon, Pune? </strong>
+                At <strong> ASQUARE Academy, </strong>we focus on result-oriented NEET preparation through expert teaching, strong conceptual learning, and consistent test practice. As one of the <strong> Best NEET Coaching Institutes in Thergaon, </strong> we prepare students to excel in NEET-UG with confidence and accuracy.
               </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -469,12 +416,10 @@ function NEETSaudagar() {
                   className="flex-shrink-0 mt-1"
                 />
                 <span className="text-white">
-                  <strong>
-                    Our Pimple Saudagar branch serves students from:
-                  </strong>{" "}
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.{" "}
+                   Our Thergaon centre is easily accessible to students from
+                  <strong> Dange Chowk, Wakad, Kalewadi, Pimple Saudagar, Kate Wasti, Tathawade, and Chinchwad, </strong>
+                  making ASQUARE a trusted choice for <strong> NEET preparation in PCMC Pune. </strong>
+
                 </span>
               </div>
             </div>
@@ -492,7 +437,7 @@ function NEETSaudagar() {
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                — Best NEET Coaching in Pimple Saudagar, Pune
+                Best NEET Coaching in Thergaon?
               </h2>
 
               {isDesktop ? (
@@ -518,9 +463,7 @@ function NEETSaudagar() {
                     color="#FFCB03"
                     className="flex-shrink-0"
                   />
-                  ASQUARE Academy is consistently rated among the Top NEET
-                  Coaching Classes Pimple Saudagar due to proven results and
-                  student success stories.
+                  Our method focuses on clarity, consistency, and confidence — key pillars to crack NEET successfully.
                 </p>
               </div>
             </div>
@@ -555,40 +498,24 @@ function NEETSaudagar() {
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span>ASQUARE Academy - Pimple Saudagar</span>
+            <span>
+              {" "}
+              ASQUARE Academy Thergaon
+            </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The{" "}
-              <strong>
-                {" "}
-                NEET course at ASQUARE Academy, Pimple Saudagar,{" "}
-              </strong>{" "}
-              is designed to help students master each subject step by step. We
-              emphasize{" "}
-              <strong>
-                {" "}
-                concept clarity, test consistency, and exam temperament,{" "}
-              </strong>
-              ensuring students perform confidently in the actual NEET exam.
+              The<strong> NEET course at ASQUARE Academy, Thergaon, </strong> 
+              offers complete academic support for NEET aspirants. It includes interactive classroom sessions, doubt-solving discussions, and rigorous mock test practice.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={26} />
               <span>
-                Our curriculum covers{" "}
-                <strong>Physics, Chemistry, and Biology </strong>
-                in detail, with practice modules, test series, and personalized
-                mentoring. Students from{" "}
-                <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
-                </strong>{" "}
-                benefit from our experienced faculty and competitive test
-                environment.
+                Students from<strong>  Dange Chowk, Kalewadi, Wakad, and Pimple Saudagar  </strong>
+               prefer our institute for its convenient location, expert faculty, and structured test series — making it the most trusted <strong> NEET Coaching in PCMC Pune. </strong>
               </span>
             </p>
           </div>
@@ -601,30 +528,26 @@ function NEETSaudagar() {
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple
-              Saudagar
+              Course Details (NEET UG) - Top NEET Coaching Classes in Thergaon
             </h3>
 
             <p className="fs-5">
-              <strong>NEET UG</strong> is the gateway to top medical colleges
-              across India offering{" "}
-              <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong> programs.
+              <strong>NEET UG</strong> is the national-level exam for medical courses like {" "}
+              <strong>MBBS, BDS, BAMS, BHMS, and other health science programs.</strong>
+              At <strong> ASQUARE Academy Thergaon,</strong>
+              we provide focused training with conceptual depth, problem-solving practice, and strategy-based mock tests.
             </p>
             <p className="fs-5">
-              At <strong>ASQUARE Academy Pimple Saudagar,</strong> our
-              scientifically structured teaching plan, regular performance
-              evaluations, and one-on-one mentoring ensure complete readiness
-              for the NEET-UG exam.
+              Our faculty’s experience and student success record make ASQUARE one of the <strong> Top NEET Coaching Institutes in Thergaon Pune. </strong>
             </p>
             <p className="fs-5">
-              We combine conceptual teaching with consistent{" "}
-              <strong>mock test series</strong> and performance reviews —
-              positioning ASQUARE as{" "}
-              <strong>a top NEET coaching institute in PCMC Pune.</strong>
+              We are among the{" "}
+              <strong>Top NEET Coaching Institutes in Thergaon, </strong>
+              known for high student success and experienced faculty.
             </p>
 
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Saudagar
+              Subjects Covered in NEET Classes at Thergaon
             </h4>
 
             <div className="mt-4">
@@ -634,16 +557,14 @@ function NEETSaudagar() {
             </div>
 
             <p className="fs-5">
-              Our balanced subject-wise approach ensures conceptual mastery and
-              time-bound performance improvement.
+              Each subject is taught with conceptual depth, interactive teaching, and consistent testing to ensure excellence.
             </p>
           </div>
 
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple
-              Saudagar
+              Program Duration and Batch Options — NEET Preparation in Thergaon
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -654,9 +575,9 @@ function NEETSaudagar() {
 
             <div className="mt-5 p-4 rounded-4 border border-warning border-opacity-50 bg-brown">
               <p className="fs-5 mb-0">
-                All batches are designed for{" "}
+                Each course is designed to provide{" "}
                 <strong className="text-warning">
-                  focused learning, consistent testing, and steady
+                structured learning and continuous performance .
                 </strong>{" "}
                 improvement.
               </p>
@@ -674,7 +595,7 @@ function NEETSaudagar() {
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Saudagar, Pune
+              Best NEET Coaching in Thergaon,
             </h3>
           </div>
 
@@ -696,31 +617,30 @@ function NEETSaudagar() {
               🏆 Success Stories
             </span>
             <h4 className="section-title-large mb-4">
-              ASQUARE Academy's NEET Success - Proven Track Record{" "}
+              ASQUARE Academy’s NEET Results – Student Success
             </h4>
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong className="text-primary">ASQUARE Academy,</strong> we
-              take pride in our consistent NEET results. Our students have
-              secured admissions to India’s premier medical colleges such as
+                At <strong> ASQUARE Academy, </strong>
+              our students consistently achieve top NEET ranks and secure admissions in leading colleges like{" "}
               <strong className="text-primary">
-                {" "}
-                AIIMS, BJ Medical College, AFMC, and DY Patil Medical College
-                Pune.
+                 AIIMS, BJMC, AFMC, and DY Patil Medical College Pune.{" "}
               </strong>
+             Our student-first approach, expert mentors, and structured test strategy have made ASQUARE one of the 
+              <strong> Best NEET Coaching Centres in Thergaon Pune. </strong>
             </p>
-            <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
+            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
               <CheckCircle size={24} />
               <p className="fs-5 fw-semibold mb-0">
                 Our unique combination of mentorship, structured learning, and
                 regular testing makes us one of the
                 <strong>
                   {" "}
-                  Top NEET Coaching Institutes in Pimple Saudagar .
+                  Top NEET Coaching Centre in Alandi Pune.
                 </strong>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -738,9 +658,9 @@ function NEETSaudagar() {
                 Innovative Teaching Methodology at ASQUARE Academy
               </h4>
               <p className="fs-5 text-white mb-4 lh op">
-                This unique four-step methodology has made ASQUARE{" "}
+                This tried-and-tested teaching model has helped ASQUARE become a{" "}
                 <strong>
-                  the best NEET training institute in Pimple Saudagar and PCMC.
+                  Top NEET Training Institute in Thergaon and PCMC Pune.
                 </strong>
               </p>
               <a
@@ -773,7 +693,7 @@ function NEETSaudagar() {
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Saudagar (PCMC).
+              Top NEET Coaching Institutes in Thergaon.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -803,29 +723,27 @@ function NEETSaudagar() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll Now at <span>ASQUARE Academy - Pimple Saudagar</span>
+            Enroll Now at{" "}
+            <span>
+              ASQUARE Academy – Thergaon Pune
+            </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              If you’re searching for the{" "}
-              <strong> Top NEET Coaching Classes in Pimple Saudagar, </strong>{" "}
-              the look no further than
-              <strong>ASQUARE Academy. </strong>
-              With experienced teachers, structured test planning, and
-              consistent student success, we’re the trusted name for
-              <strong> NEET preparation in PCMC Pune.</strong>
+              If you’re looking for the {" "}
+              <strong> Top NEET Coaching Classes in Thergaon, Pune, </strong>
+              Join <strong> ASQUARE Academy </strong>
+              today. With expert guidance, advanced test planning, and personalized learning, we help you achieve your NEET success dream.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                Convenient from{" "}
+               Convenient for students from {" "}
                 <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
+                  Thergaon, Dange Chowk, Kalewadi, Wakad, Pimple Saudagar, Kate Wasti, Tathawade, and Chinchwad.
                 </strong>
               </span>
             </p>
@@ -851,4 +769,4 @@ function NEETSaudagar() {
   );
 }
 
-export default NEETSaudagar;
+export default NEETThergaon;

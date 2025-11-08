@@ -27,15 +27,15 @@ function MHTVidyanagarKalas() {
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching Classes in Vidyanagar &amp; Kalas Pune | ASQUARE Academy
+          MHT-CET Coaching Classes in Vidyanagar & Kalas Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching Classes in Vidyanagar &amp; Kalas Pune | ASQUARE Academy"
+          content="MHT-CET Coaching Classes in Vidyanagar & Kalas Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the best MHT-CET Coaching Classes in Vidyanagar &amp; Kalas Pune for Engineering &amp; Pharmacy. Expert faculty, mock tests, and flexible batches at ASQUARE Academy."
+          content="Join the best MHT-CET Coaching Classes in Vidyanagar & Kalas Pune for Engineering & Pharmacy. Expert faculty, mock tests, and flexible batches at ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -217,12 +217,12 @@ function MHTVidyanagarKalas() {
               <h1 className="common_title">
                 Crack MHT-CET with Expert Coaching at{" "}
                 <span className="common_title_span">ASQUARE Academy ,</span>{" "}
-                Vidyanagar &amp; Kalas.
+                Vidyanagar & Kalas.
               </h1>
               <p>
                 Searching for the{" "}
-                <strong>Best MHT-CET coaching classes in Vidyanagar &amp; Kalas, Pune?</strong>{" "}
-                At <strong>ASQUARE Academy Vidyanagar &amp; Kalas, </strong> Looking for the
+                <strong>Best MHT-CET coaching classes in Vidyanagar & Kalas, Pune?</strong>{" "}
+                At <strong>ASQUARE Academy Vidyanagar & Kalas, </strong> Looking for the
                 <strong> Engineering (PCM)</strong> and{" "}
                 <strong>Pharmacy (PCB)</strong> streams with a perfect balance of concept-based teaching, personalized attention, and performance-driven training.
               </p>
@@ -249,12 +249,12 @@ function MHTVidyanagarKalas() {
                 >
                   Why Choose
                 </span>{" "}
-                ASQUARE Academy for MHT-CET in Vidyanagar &amp; Kalas?
+                ASQUARE Academy for MHT-CET in Vidyanagar & Kalas?
               </h2>
               <ul className="common_ul">
                 <li>
                   <span>
-                    <strong>Expert Faculty:</strong> Experienced teachers for Physics, Chemistry, Maths &amp; Biology.
+                    <strong>Expert Faculty:</strong> Experienced teachers for Physics, Chemistry, Maths & Biology.
                   </span>
                 </li>
                 <li>
@@ -270,7 +270,7 @@ function MHTVidyanagarKalas() {
                 </li>
                 <li>
                   <span>
-                    <strong>Regular Tests &amp; Feedback:</strong>{" "}
+                    <strong>Regular Tests & Feedback:</strong>{" "}
                     Weekly tests and CET pattern exams for consistent performance tracking.
                   </span>
                 </li>
@@ -301,7 +301,7 @@ function MHTVidyanagarKalas() {
             <div className="col-md-12">
               <h3 className="common_title text-center">
                 <span className="common_title_span">Key Features</span> of
-                ASQUARE Academy, Vidyanagar &amp; Kalas:
+                ASQUARE Academy, Vidyanagar & Kalas:
               </h3>
             </div>
           </div>
@@ -375,7 +375,7 @@ function MHTVidyanagarKalas() {
             <div className="col-lg-12 col-md-12 col-sm-12">
               <h4 className="common_title">Proven Results </h4>
               Students of
-              <strong> ASQUARE Academy, Vidyanagar &amp; Kalas </strong> have consistently achieved top MHT-CET ranks and secured admissions to leading colleges like 
+              <strong> ASQUARE Academy, Vidyanagar & Kalas </strong> have consistently achieved top MHT-CET ranks and secured admissions to leading colleges like 
               <strong>
                 {" "}
                 COEP Pune, MIT-WPU, DY Patil College, VIT Pune, and Sinhgad Institute of Technology.{" "}
@@ -422,7 +422,7 @@ function MHTVidyanagarKalas() {
               </div>
               <div className="methodoloy_itembox">
                 <h6 className="methodology_title">
-                  Weekly &amp; Monthly CET Tests:
+                  Weekly & Monthly CET Tests:
                 </h6>
                 <span>Weekly topic tests and mock CET exams for real-time assessment.</span>
               </div>
@@ -449,7 +449,7 @@ function MHTVidyanagarKalas() {
           <div className="row">
             <div className="col-md-12">
               <h5 className="common_title">
-                MHT-CET Coaching Institute in Vidyanagar &amp; Kalas, Pune{" "}
+                MHT-CET Coaching Institute in Vidyanagar & Kalas, Pune{" "}
                 <span className="common_title_span">(FAQs)</span>
               </h5>
             </div>
@@ -465,7 +465,7 @@ function MHTVidyanagarKalas() {
                       aria-expanded="false"
                       aria-controls="collapse1"
                     >
-                      Who can join MHT-CET coaching at ASQUARE Vidyanagar &amp; Kalas?
+                      Who can join MHT-CET coaching at ASQUARE Vidyanagar & Kalas?
                     </button>
                   </h2>
                   <div
@@ -563,7 +563,7 @@ function MHTVidyanagarKalas() {
                       aria-expanded="false"
                       aria-controls="collapse4"
                     >
-                      Which nearby areas are covered by the Vidyanagar &amp; Kalas branch?
+                      Which nearby areas are covered by the Vidyanagar & Kalas branch?
                     </button>
                   </h2>
                   <div
@@ -626,7 +626,7 @@ function MHTVidyanagarKalas() {
               courses across Maharashtra.
             </p>
             <p>
-              At <strong>ASQUARE Academy Vidyanagar &amp; Kalas,</strong> our curriculum is designed to help students from{" "}
+              At <strong>ASQUARE Academy Vidyanagar & Kalas,</strong> our curriculum is designed to help students from{" "}
                <strong>Vishrantwadi, Dighi, and Lohegaon</strong> rely on ASQUARE for structured and result-driven CET coaching near Kalas.
             </p>
             <h4 className="common_title" style={{ color: "#05479b" }}>
@@ -710,13 +710,13 @@ function MHTVidyanagarKalas() {
               <h5 className="common_title">
                 Join{" "}
                 <span className="common_title_span">
-                  ASQUARE Academy — Vidyanagar &amp; Kalas, Pune
+                  ASQUARE Academy — Vidyanagar & Kalas, Pune
                 </span>
               </h5>
               <p>
                 Join <strong>ASQUARE Academy, </strong> the{" "}
                 <strong>
-                  Best MHT-CET Coaching Institute in Vidyanagar &amp; Kalas, Pune,{" "}
+                  Best MHT-CET Coaching Institute in Vidyanagar & Kalas, Pune,{" "}
                 </strong>
                 and start your CET journey with expert mentors, strategic study plans, and consistent guidance.
                 <br />

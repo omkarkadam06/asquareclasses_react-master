@@ -1,9 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 3.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET page 4.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC1.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile1.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 18.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET page 6.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -20,6 +20,7 @@ import {
   CalendarSync,
   ChartSpline,
   BadgeQuestionMark,
+  Award,
 } from "lucide-react";
 import "./NEET-pages.css";
 import Slider from "react-slick";
@@ -39,7 +40,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETSaudagar() {
+function NEETDehuroad() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -70,151 +71,167 @@ function NEETSaudagar() {
   const whyCFeatures = [
     {
       Icon: Users,
-      title: "Expert Faculty",
-      description: "Specialists in Physics, Chemistry, and Biology.",
+      title: "Expert Mentors",
+      description:
+        "Highly experienced teachers for Physics, Chemistry, and Biology.",
     },
     {
       Icon: BookOpen,
-      title: "Structured Preparation",
-      description: "From NCERT basics to advanced problem-solving.",
+      title: "NCERT-Focused with NEET Depth",
+      description:
+        "Strong foundational clarity backed with advanced exam-level practice.",
     },
     {
       Icon: Target,
-      title: "Small Batches",
-      description: "Focused guidance and doubt resolution.",
+      title: "Personalized Learning",
+      description:
+        "Small batch sizes ensuring attention and interactive sessions.",
     },
     {
       Icon: BarChart,
-      title: "Regular Assessments",
-      description: "Weekly tests, mock exams, and detailed analytics.",
+      title: "Performance Tracking",
+      description: "Weekly tests, monthly mocks, and performance analytics.",
     },
     {
       Icon: Calendar,
-      title: "Flexible Learning",
-      description:
-        "Classroom & online NEET classes in Pimple Saudagar, with weekday and weekend batches.",
+      title: "Learning Options",
+      description: "Both classroom and online batches available.",
     },
     {
-      Icon: School,
-      title: "Mentorship",
-      description: "Balanced support for NEET prep and board exams.",
+      Icon: Users,
+      title: "Balanced Support",
+      description: "Helping students excel in NEET while managing board exams.",
     },
   ];
 
   const subjectsCovered = [
     {
       title: "Physics",
-      desc: "Conceptual clarity through derivations, problem-solving, and practical application.",
+      desc: "In-depth concepts with problem-solving focus.",
     },
     {
       title: "Chemistry",
-      desc: "In-depth understanding of Physical, Organic, and Inorganic Chemistry with NCERT focus.",
+      desc: "Complete coverage of Physical, Organic, and Inorganic Chemistry.",
     },
     {
       title: "Biology",
-      desc: "Detailed coverage of NCERT-based chapters and NEET-level question practice.",
+      desc: "NCERT line-by-line learning with diagrams, scoring chapters, and applied knowledge.",
     },
   ];
 
-    const programDurations = [
+  const programDurations = [
     {
       icon: Clock,
-      title: "2-Year Integrated Program (Class 11 → 12):",
-      desc: "Foundation-to-advanced course integrating school and NEET preparation.",
+      title: "2-Year Integrated Course (Class 11 → 12)",
+      desc: "Foundation building with advanced preparation for Class XI–XII.",
     },
     {
       icon: Target,
-      title: "1-Year Target Program (Class 12):",
-      desc: "Fast-paced NEET course with mock tests and regular analysis.",
-    },
-    {
-      icon: CalendarSync,
-      title: "Dropper/Repeater Batch:",
-      desc: "Intensive one-year course for NEET droppers with detailed test series.",
+      title: "1-Year Target Course (Class 12)",
+      desc: "Accelerated prep with rapid syllabus coverage and test-based learning.",
     },
     {
       icon: School,
-      title: "Crash Course:",
-      desc: "2–3 months of quick revision, PYQs, and mock test practice.",
+      title: "Crash Course (2–3 Months)",
+      desc: "Intensive final-phase training with PYQs and strategy drills.",
+    },
+    {
+      icon: CalendarSync,
+      title: "Dropper/Repeater Batch",
+      desc: "Year-long program for repeat aspirants with customized guidance and full test series.",
     },
   ];
 
   const methodologySteps = [
     {
       Icon: Lightbulb,
-      title: "Learn",
-      description: "Conceptual lectures with NCERT alignment.",
+      title: "Interactive Lectures",
+      description: "Interactive classroom lectures for conceptual clarity.",
     },
     {
       Icon: BookOpen,
       title: "Practice",
-      description: "DPPs, problem-solving workshops, and assignments.",
+      description: "Daily Practice Papers (DPPs) and structured assignments.",
     },
     {
       Icon: BarChart,
       title: "Assess",
-      description: "Weekly chapter tests and monthly full-length mocks.",
+      description: "Regular chapter-wise tests and mock exams.",
     },
     {
       Icon: MessageCircle,
-      title: "Revise",
-      description: "Targeted crash revisions with high-yield topics.",
+      title: "Doubt-Solving",
+      description: "Dedicated doubt-clearing sessions.",
+    },
+    {
+      Icon: Calendar,
+      title: "Performance Reviews",
+      description: "Parent–student review meetings for progress analysis.",
     },
   ];
 
   const faqData = [
     {
-      q: "Which is the Best NEET Coaching in Pimple Saudagar?",
-      a: "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results.",
+      q: "Who can join NEET coaching at ASQUARE Dehu Road?",
+      a: "Students in Class XI, Class XII, and drop-year aspirants.",
     },
     {
-      q: "Do you offer Top NEET Coaching Classes Pimple Saudagar for beginners?",
-      a: "Yes. We provide beginner-friendly programs with NCERT basics and regular practice.",
+      q: "What subjects are covered?",
+      a: "Full NEET syllabus: Physics, Chemistry, and Biology.",
     },
     {
-      q: "How do you support NEET Advanced Preparation Pimple Saudagar?",
-      a: "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions.",
+      q: "Are mock tests included?",
+      a: "Yes, weekly quizzes, chapter tests, and full-length mock exams.",
     },
     {
-      q: "Are weekend NEET Classes in Pimple Saudagar available?",
-      a: "Yes. We offer both weekday and weekend batch options in classroom and online modes.",
+      q: "What batches are offered?",
+      a: "2-year, 1-year, crash, and dropper/repeater batches.",
     },
     {
-      q: "Do you provide scholarships?",
-      a: "Yes. Students can apply through the ASQUARE Scholarship Test.",
+      q: "How large are the batches?",
+      a: "Batches are kept small for better focus and attention.",
+    },
+    {
+      q: "Do parents receive progress reports?",
+      a: "Yes, via PTMs and structured performance updates.",
+    },
+    {
+      q: "Is online coaching available?",
+      a: "Yes, both classroom and online modes are offered.",
     },
   ];
 
   const gridFeatures = [
     {
       Icon: Users,
-      title: "Comprehensive printed + digital study material.",
+      title: "Small batch sizes for individualized learning",
       colorClass: "bg-gradient-blue",
     },
     {
       Icon: BookOpen,
-      title: "Dedicated doubt-clearing sessions.",
+      title: "NEET-focused updated study material (printed + digital)",
       colorClass: "bg-gradient-purple",
     },
     {
-      Icon: TrendingUp,
-      title: "Performance tracking with parent-teacher meetings.",
+      Icon: Target,
+      title: "Printed and digital study material",
       colorClass: "bg-gradient-green",
     },
     {
+      Icon: Award,
+      title: "Regular PTMs and detailed progress reports",
+      colorClass: "bg-gradient-pink",
+    },
+    {
       Icon: ChartSpline,
-      title: "Online test series with national-level benchmarking.",
+      title: "Special workshops on exam strategy, accuracy, and mindset",
       colorClass: "bg-gradient-orange",
     },
     {
-      Icon: CalendarSync,
-      title: "Parental feedback and progress reports",
+      Icon: TrendingUp,
+      title:
+        "Trusted as one of the leading NEET coaching centres in Dehu Road, Alandi, and PCMC region",
       colorClass: "bg-gradient-red",
-    },
-    {
-      Icon: ChartSpline,
-      title: "Online & offline practice test series",
-      colorClass: "bg-gradient-teal",
     },
   ];
 
@@ -222,19 +239,20 @@ function NEETSaudagar() {
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy
+          Best NEET Coaching Classes in Dehu Road Pune | ASQUARE Academy NEET
+          Preparation
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Dehu Road Pune | ASQUARE Academy NEET Preparation"
         />
         <meta
           name="description"
-          content="Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships."
+          content="Join ASQUARE Academy for top NEET coaching classes in Dehu Road Pune. Expert mentors, small batches, mock tests & online learning for XI, XII & droppers."
         />
         <meta
           name="keywords"
-          content="NEET Coaching in Pimple Saudagar, Best NEET Classes in Pimple Saudagar, Top NEET Coaching Institute Pimple Saudagar, NEET Preparation in Pimple Saudagar, ASQUARE Academy Pimple Saudagar,"
+          content="NEET coaching classes in dehu road Best NEET Coaching in dehu road Top NEET Coaching Classes dehu road NEET Advanced Preparation dehu road NEET Classes in dehu road Best NEET Classes in dehu road Top NEET Classes in dehu road"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
@@ -243,45 +261,40 @@ function NEETSaudagar() {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "LocalBusiness",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-dehu-road-pune#localbusiness",
+      "name": "ASQUARE Academy - NEET Coaching Classes in Dehu Road Pune",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-dehu-road-pune",
+      "telephone": "+919766118877",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dehu Road",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "412101",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
+      ],
+      "description": "ASQUARE Academy offers the best NEET coaching classes in Dehu Road Pune. Expert faculty, small batches, mock tests & online/offline learning for XI, XII & droppers."
+    },
+    {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "name": "Best NEET Coaching Classes in Pimple Saudagar | ASQUARE Academy",
-      "description": "Join the Best NEET Coaching in Pimple Saudagar at ASQUARE Academy. Expert faculty, beginner to advanced NEET programs, weekend batches, and scholarships.",
-      "inLanguage": "en",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-dehu-road-pune#webpage",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-in-dehu-road-pune",
+      "name": "Best NEET Coaching Classes in Dehu Road Pune | ASQUARE Academy",
+      "description": "Enroll at ASQUARE Academy for NEET coaching in Dehu Road Pune. Small batches, experienced faculty & complete syllabus coverage for Physics, Chemistry, and Biology.",
       "publisher": {
         "@type": "Organization",
         "name": "ASQUARE Academy",
-        "url": "https://www.asquareclasses.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-          "width": 250,
-          "height": 70
+          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
         }
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.asquareclasses.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Courses",
-            "item": "https://www.asquareclasses.com/courses/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "NEET Coaching Classes in Pimple Saudagar",
-            "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/"
-          }
-        ]
       }
     },
     {
@@ -289,109 +302,114 @@ function NEETSaudagar() {
       "name": "ASQUARE Academy",
       "url": "https://www.asquareclasses.com/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "description": "ASQUARE Academy offers top NEET, IIT JEE, and MHT-CET coaching in Pune with expert faculty, advanced study material, and strong success results.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9579730062",
-        "contactType": "Customer Support",
-        "availableLanguage": ["English", "Hindi", "Marathi"]
-      },
       "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching in Pimple Saudagar",
-      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-saudagar-pune/",
-      "telephone": "+91-9579730062",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pimple Saudagar, Pune, Maharashtra",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411027",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 18.5987,
-        "longitude": 73.7811
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "20:00"
-        }
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
       ],
-      "sameAs": [
-        "https://www.facebook.com/asquareclasses/",
-        "https://www.instagram.com/asquareclasses/"
-      ]
+      "department": {
+        "@type": "EducationalOccupationalProgram",
+        "name": "NEET Coaching Program in Dehu Road Pune",
+        "educationalCredentialAwarded": "NEET Entrance Preparation",
+        "programPrerequisites": "For students of Class XI, XII & droppers",
+        "hasCourse": [
+          {
+            "@type": "Course",
+            "name": "NEET Physics Coaching",
+            "description": "Comprehensive NEET Physics classes with conceptual clarity and numerical problem-solving."
+          },
+          {
+            "@type": "Course",
+            "name": "NEET Chemistry Coaching",
+            "description": "Complete NEET Chemistry course covering Organic, Inorganic, and Physical Chemistry with tests."
+          },
+          {
+            "@type": "Course",
+            "name": "NEET Biology Coaching",
+            "description": "Detailed Biology preparation focusing on NCERT concepts and advanced-level MCQs."
+          }
+        ]
+      }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which is the Best NEET Coaching in Pimple Saudagar?",
+          "name": "Who can join NEET coaching at ASQUARE Dehu Road?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASQUARE Academy is regarded as one of the Best NEET Classes in Pimple Saudagar, thanks to our expert faculty and results."
+            "text": "Students in Class XI, Class XII, and drop-year NEET aspirants can join the program."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer Top NEET Coaching Classes in Pimple Saudagar for beginners?",
+          "name": "What subjects are covered?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We provide beginner-friendly programs with NCERT basics and regular practice."
+            "text": "Full NEET syllabus: Physics, Chemistry, and Biology."
           }
         },
         {
           "@type": "Question",
-          "name": "How do you support NEET Advanced Preparation in Pimple Saudagar?",
+          "name": "Are mock tests included?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We conduct All India Test Series, problem-solving workshops, and advanced practice sessions."
+            "text": "Yes, weekly quizzes, chapter-wise tests, and full-length mock exams are conducted."
           }
         },
         {
           "@type": "Question",
-          "name": "Are weekend NEET Classes in Pimple Saudagar available?",
+          "name": "What batches are offered?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer both weekday and weekend batch options in classroom and online modes."
+            "text": "We offer 2-year, 1-year, crash, and dropper/repeater batches for NEET preparation."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide scholarships?",
+          "name": "How large are the batches?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Students can apply through the ASQUARE Scholarship Test for merit and need-based scholarships."
+            "text": "Batch sizes are small to ensure individual focus and better teacher–student interaction."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Do parents receive progress reports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, parents receive structured progress reports and updates through regular PTMs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is online coaching available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, students can choose from classroom or online learning modes as per convenience."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Courses",
+          "item": "https://www.asquareclasses.com/courses/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NEET Coaching Classes in Dehu Road Pune"
         }
       ]
     }
@@ -445,22 +463,23 @@ function NEETSaudagar() {
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Crack NEET with Expert Mentorship at{" "}
+                Excel in NEET with{" "}
                 <span className="gradient-text-yellow d-inline-block">
-                  ASQUARE Academy,
+                  ASQUARE Academy, Dehu Road
                 </span>
-                Pimple Saudagar, Pune
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                ASQUARE Academy offers expert-led{" "}
-                <strong>NEET coaching classes in Pimple Saudagar, </strong>
-                designed to help students achieve top scores in NEET UG. With
-                personalized mentoring, small batch sizes, and intensive test
-                practice, ASQUARE Academy is recognized as one of the
-                <strong> Best NEET Coaching in Pimple Saudagar. </strong> Our
-                structured approach ensures students are ready for both NCERT
-                fundamentals and{" "}
-                <strong> NEET Advanced Preparation in Pimple Saudagar.</strong>{" "}
+                Looking for the best
+                <strong> NEET coaching classes in Dehu Road, Pune? </strong>
+                At <strong> ASQUARE Academy, </strong>
+                we provide structured NEET UG preparation designed to strengthen
+                concepts, sharpen exam strategies, and deliver results.{" "}
+                <strong>
+                  {" "}
+                  Best NEET Coaching Institutes in Dehu Road,{" "}
+                </strong>{" "}
+                ASQUARE combines NCERT-focused learning, conceptual clarity, and
+                exam-based practice to help students achieve top NEET ranks.
               </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -469,12 +488,10 @@ function NEETSaudagar() {
                   className="flex-shrink-0 mt-1"
                 />
                 <span className="text-white">
-                  <strong>
-                    Our Pimple Saudagar branch serves students from:
-                  </strong>{" "}
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.{" "}
+                  Students from
+                  <strong> Dehu Road, Alandi, Moshi, Bhosari, Nigdi </strong>
+                  and nearby areas choose us for our expert faculty, proven
+                  success, and personalized mentoring.
                 </span>
               </div>
             </div>
@@ -492,7 +509,7 @@ function NEETSaudagar() {
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                — Best NEET Coaching in Pimple Saudagar, Pune
+                Best NEET Coaching in Dehu Road?
               </h2>
 
               {isDesktop ? (
@@ -518,9 +535,8 @@ function NEETSaudagar() {
                     color="#FFCB03"
                     className="flex-shrink-0"
                   />
-                  ASQUARE Academy is consistently rated among the Top NEET
-                  Coaching Classes Pimple Saudagar due to proven results and
-                  student success stories.
+                  Our holistic approach ensures that students gain strong
+                  subject mastery, accuracy, and exam confidence.
                 </p>
               </div>
             </div>
@@ -555,40 +571,26 @@ function NEETSaudagar() {
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span>ASQUARE Academy - Pimple Saudagar</span>
+            <span> ASQUARE Academy Dehu Road</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The{" "}
-              <strong>
-                {" "}
-                NEET course at ASQUARE Academy, Pimple Saudagar,{" "}
-              </strong>{" "}
-              is designed to help students master each subject step by step. We
-              emphasize{" "}
-              <strong>
-                {" "}
-                concept clarity, test consistency, and exam temperament,{" "}
-              </strong>
-              ensuring students perform confidently in the actual NEET exam.
+              The<strong> NEET course at ASQUARE Academy, Dehu Road, </strong>
+              provides a step-by-step approach to mastering NEET concepts. Our
+              expert faculty ensures that every student understands the theory,
+              practices problem-solving, and applies knowledge effectively under
+              exam conditions.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={26} />
               <span>
-                Our curriculum covers{" "}
-                <strong>Physics, Chemistry, and Biology </strong>
-                in detail, with practice modules, test series, and personalized
-                mentoring. Students from{" "}
-                <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
-                </strong>{" "}
-                benefit from our experienced faculty and competitive test
-                environment.
+                Students from
+                <strong> Dehu Road, Alandi, Moshi, Bhosari, Nigdi </strong>
+                benefit from our consistent test schedule, personalized
+                mentoring, and comprehensive NEET syllabus coverage.{" "}
               </span>
             </p>
           </div>
@@ -601,30 +603,28 @@ function NEETSaudagar() {
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple
-              Saudagar
+              Course Details (NEET UG) - Top NEET Coaching Classes in Dehu Road
             </h3>
 
             <p className="fs-5">
-              <strong>NEET UG</strong> is the gateway to top medical colleges
-              across India offering{" "}
-              <strong>MBBS, BDS, BAMS, BHMS, and BPT</strong> programs.
+              <strong>NEET UG</strong> is India’s national entrance test for{" "}
+              <strong>
+                MBBS, BDS, BAMS, BHMS, and allied medical programs.
+              </strong>
+              At <strong> ASQUARE Academy Dehu Road,</strong>
+              our curriculum focuses on building a solid conceptual base while
+              ensuring complete exam readiness through mock tests and
+              performance tracking.
             </p>
             <p className="fs-5">
-              At <strong>ASQUARE Academy Pimple Saudagar,</strong> our
-              scientifically structured teaching plan, regular performance
-              evaluations, and one-on-one mentoring ensure complete readiness
-              for the NEET-UG exam.
+              Our consistent results make ASQUARE one of the{" "}
+              <strong>
+                {" "}
+                Top NEET Coaching Institutes in Dehu Road Pune and PCMC.{" "}
+              </strong>
             </p>
-            <p className="fs-5">
-              We combine conceptual teaching with consistent{" "}
-              <strong>mock test series</strong> and performance reviews —
-              positioning ASQUARE as{" "}
-              <strong>a top NEET coaching institute in PCMC Pune.</strong>
-            </p>
-
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Saudagar
+              Subjects Covered in NEET Classes at Dehu Road
             </h4>
 
             <div className="mt-4">
@@ -634,16 +634,15 @@ function NEETSaudagar() {
             </div>
 
             <p className="fs-5">
-              Our balanced subject-wise approach ensures conceptual mastery and
-              time-bound performance improvement.
+              Our <strong> NEET Coaching in Dehu Road Pune </strong>ensures
+              holistic preparation and exam-oriented accuracy.
             </p>
           </div>
 
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple
-              Saudagar
+              Program Duration and Batch Options — NEET Preparation in Dehu Road
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -654,11 +653,8 @@ function NEETSaudagar() {
 
             <div className="mt-5 p-4 rounded-4 border border-warning border-opacity-50 bg-brown">
               <p className="fs-5 mb-0">
-                All batches are designed for{" "}
-                <strong className="text-warning">
-                  focused learning, consistent testing, and steady
-                </strong>{" "}
-                improvement.
+                All batches are tailored to help students achieve the highest
+                level of preparedness before NEET-UG.
               </p>
             </div>
           </div>
@@ -674,7 +670,7 @@ function NEETSaudagar() {
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Saudagar, Pune
+              Best NEET Coaching in Dehu Road,
             </h3>
           </div>
 
@@ -696,31 +692,35 @@ function NEETSaudagar() {
               🏆 Success Stories
             </span>
             <h4 className="section-title-large mb-4">
-              ASQUARE Academy's NEET Success - Proven Track Record{" "}
+              ASQUARE Academy’s NEET Results – Student Success
             </h4>
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong className="text-primary">ASQUARE Academy,</strong> we
-              take pride in our consistent NEET results. Our students have
-              secured admissions to India’s premier medical colleges such as
+              At <strong> ASQUARE Academy </strong>
+              our students have consistently achieved top ranks in NEET, earning
+              admission to premier colleges such as{" "}
               <strong className="text-primary">
+                {" "}AIIMS, BJMC, AFMC, and DY Patil Medical College Pune.{" "}
+              </strong>
+              Our disciplined approach, expert teaching, and consistent mock
+              testing make us the
+              <strong>
                 {" "}
-                AIIMS, BJ Medical College, AFMC, and DY Patil Medical College
-                Pune.
+                Top NEET Coaching Centre in Dehu Road Pune and PCMC.{" "}
               </strong>
             </p>
-            <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
+            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
               <CheckCircle size={24} />
               <p className="fs-5 fw-semibold mb-0">
                 Our unique combination of mentorship, structured learning, and
                 regular testing makes us one of the
                 <strong>
                   {" "}
-                  Top NEET Coaching Institutes in Pimple Saudagar .
+                  Top NEET Coaching Centre in Alandi Pune.
                 </strong>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -738,9 +738,10 @@ function NEETSaudagar() {
                 Innovative Teaching Methodology at ASQUARE Academy
               </h4>
               <p className="fs-5 text-white mb-4 lh op">
-                This unique four-step methodology has made ASQUARE{" "}
+                This unique four-step methodology has helped ASQUARE become one
+                of the{" "}
                 <strong>
-                  the best NEET training institute in Pimple Saudagar and PCMC.
+                  Best NEET Training Institutes in Dehu Road PCMC.
                 </strong>
               </p>
               <a
@@ -773,7 +774,7 @@ function NEETSaudagar() {
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Saudagar (PCMC).
+              Top NEET Coaching Institutes in Dehu Road.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -803,29 +804,25 @@ function NEETSaudagar() {
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll Now at <span>ASQUARE Academy - Pimple Saudagar</span>
+            Enroll Now at <span> ASQUARE Academy – Dehu Road Today </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              If you’re searching for the{" "}
-              <strong> Top NEET Coaching Classes in Pimple Saudagar, </strong>{" "}
-              the look no further than
-              <strong>ASQUARE Academy. </strong>
-              With experienced teachers, structured test planning, and
-              consistent student success, we’re the trusted name for
-              <strong> NEET preparation in PCMC Pune.</strong>
+              Begin your journey with the{" "}
+              <strong> Best NEET Coaching Classes in Dehu Road, Pune, </strong>
+              With expert faculty, structured programs, and consistent results,
+              ASQUARE Academy is your trusted companion to medical success.
             </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                Convenient from{" "}
+                Accessible from{" "}
                 <strong>
-                  Pimple Gurav, Rahatani, Wakad, Thergaon, Kalewadi, Sangvi,
-                  Hinjewadi, Aundh, Baner, Dange Chowk, Tathawade, Pimpri,
-                  Chinchwad, Bhosari, Nigdi, Ravet, and nearby areas.
+                  {" "}
+                  Dehu Road, Alandi, Moshi, Bhosari, Nigdi, and nearby areas.
                 </strong>
               </span>
             </p>
@@ -833,7 +830,7 @@ function NEETSaudagar() {
 
           {/* Subheading */}
           <h4 className="fw-bold text-primary mb-4">
-            Admissions Open — Limited Seats!
+            Admissions Open – Limited Seats Available!
           </h4>
 
           {/* CTA Button */}
@@ -851,4 +848,4 @@ function NEETSaudagar() {
   );
 }
 
-export default NEETSaudagar;
+export default NEETDehuroad;

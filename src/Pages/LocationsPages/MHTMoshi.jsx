@@ -27,15 +27,15 @@ function MHTMoshi() {
     <>
       <Helmet>
         <title>
-          MHT-CET Coaching Classes in Moshi Pune | Best CET Institute &amp; Classes - ASQUARE Academy
+          MHT-CET Coaching Classes in Moshi Pune | Best CET Institute & Classes - ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="MHT-CET Coaching Classes in Moshi Pune | Best CET Institute &amp; Classes - ASQUARE Academy"
+          content="MHT-CET Coaching Classes in Moshi Pune | Best CET Institute & Classes - ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join MHT-CET coaching classes in Moshi Pune for Engineering &amp; Pharmacy aspirants. Expert faculty, weekly mock tests, structured programs, and flexible online/offline batches for XI, XII &amp; droppers - ASQUARE Academy."
+          content="Join MHT-CET coaching classes in Moshi Pune for Engineering & Pharmacy aspirants. Expert faculty, weekly mock tests, structured programs, and flexible online/offline batches for XI, XII & droppers - ASQUARE Academy."
         />
         <meta
           name="keywords"
@@ -358,7 +358,7 @@ function MHTMoshi() {
                 <img className="grid_img" src={personalized} alt="" />
                 <div className="grid_content">
                   <h6 className="grid_item_title">
-                    Printed &amp; digital CET study materials.
+                    Printed & digital CET study materials.
                   </h6>
                 </div>
               </div>
@@ -660,7 +660,7 @@ function MHTMoshi() {
               </li>
               <li className='mb-4'>
                 <span>
-                  <strong>Chemistry:</strong> Complete coverage of Physical, Organic &amp; Inorganic chemistry with CET-focused MCQs.
+                  <strong>Chemistry:</strong> Complete coverage of Physical, Organic & Inorganic chemistry with CET-focused MCQs.
                 </span>
               </li>
               <li className='mb-4'>
