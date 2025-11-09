@@ -34,7 +34,7 @@ import Form from '../../../Components/Form2/Form2.jsx';
 
 const Reviews = React.lazy(() => import("../../../Components/Reviews/Reviews.jsx"));
 
-function IITJEEChinchwad() {
+function IITJEEVishrantwadi() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -46,49 +46,56 @@ function IITJEEChinchwad() {
 
 
   const whyChoose = [
-    { Icon: Users, title: "Expert Teaching Faculty", desc: "Experienced trainers for IIT-JEE, NEET & CET coaching." },
-    { Icon: BookOpen, title: "Complete PCM Coverage", desc: "Physics, Chemistry & Mathematics taught as per updated exam trends." },
-    { Icon: Target, title: "Personalized Guidance", desc: "Small batches for doubt-solving and individual support." },
-    { Icon: BarChart, title: "Exam Simulation Practice", desc: "Weekly quizzes, unit tests & full-length mock exams." },
-    { Icon: Lightbulb, title: "Career Support & Motivation", desc: "Counseling, study planning & confidence-boosting sessions." },
+    { Icon: Users, title: "Expert Teachers", desc: "Experienced faculty in IIT-JEE, CET & NEET coaching." },
+    { Icon: BookOpen, title: "Comprehensive PCM Syllabus", desc: "Physics, Chemistry & Mathematics covered as per latest exam guidelines." },
+    { Icon: Target, title: "Focused Mentorship", desc: "Small batch sizes for one-on-one attention and guidance." },
+    { Icon: BarChart, title: "Regular Practice Tests", desc: "Weekly assignments, chapter tests & mock exams." },
+    { Icon: Lightbulb, title: "Motivation & Career Guidance", desc: "Counseling sessions, time management tips & exam strategies." },
   ];
 
   const subjects = [
-    { title: "Physics", desc: "Strengthening fundamentals with numerical applications." },
-    { title: "Chemistry", desc: "Balanced focus on Physical, Organic & Inorganic Chemistry." },
-    { title: "Mathematics", desc: "Rigorous practice in Algebra, Geometry, Calculus, Probability & Trigonometry." },
+    { title: "Physics", desc: "Strong fundamentals with practical applications & numerical problem-solving." },
+    { title: "Chemistry", desc: "Detailed coverage of Physical, Organic & Inorganic Chemistry." },
+    { title: "Mathematics", desc: "Advanced practice in Algebra, Trigonometry, Geometry, Calculus & Probability." },
   ];
 
   const batches = [
-    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Covers XI & XII Boards + JEE." },
-    { title: "1-Year Advanced Program (11th → 12th Moving Students)", desc: "Intensive JEE preparation with XII syllabus." },
-    { title: "Crash Course (2–3 Months)", desc: "Short-term high-speed revision & exam practice." },
-    { title: "Dropper/Repeater Batch (XII Pass-outs)", desc: "One-year dedicated JEE training for repeaters." },
+    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Boards + JEE integrated coaching." },
+    { title: "1-Year Intensive Course (11th → 12th Moving Students)", desc: "Fast-paced XII + JEE preparation." },
+    { title: "Crash Course (2–3 Months)", desc: "Quick revision & exam-oriented test practice." },
+    { title: "Dropper/Repeater Batch (XII Pass-outs)", desc: "One-year focused JEE program for repeaters." },
   ];
 
-  const faqs = [{ q: "Q1: Which is the Best IIT JEE Coaching in Chinchwad?", a: "ASQUARE Academy is known as the Best IIT JEE Coaching in Chinchwad, offering expert faculty, structured study plans, and proven success in JEE Main & Advanced exams." }, { q: "Q2: What subjects are covered in your IIT JEE Classes in Chinchwad?", a: "Our IIT JEE Classes in Chinchwad include comprehensive coaching in Physics, Chemistry, and Mathematics to build strong problem-solving skills." }, { q: "Q3: Do you provide mock tests and regular assessments?", a: "Yes, we conduct weekly tests, topic-wise quizzes, and full-length mock exams to strengthen preparation for JEE Main and Advanced." }, { q: "Q4: What makes ASQUARE the Top JEE Mains Coaching Classes in Chinchwad?", a: "Our Top JEE Mains Coaching Classes in Chinchwad feature interactive sessions, doubt-solving, and consistent performance tracking." }, { q: "Q5: Do you offer special batches for IIT JEE Advanced Preparation in Chinchwad?", a: "Yes, ASQUARE Academy provides exclusive IIT JEE Advanced Preparation in Chinchwad through intensive modules and mentor-led guidance." }, { q: "Q6: Are dropper batches available for JEE aspirants?", a: "We offer Dropper Batches at our JEE Advanced Coaching Classes in Chinchwad for students aiming to reattempt and improve their scores." }, { q: "Q7: What is the teaching approach at your Best IIT JEE Classes in Chinchwad?", a: "Our teaching combines concept clarity, test practice, and personalized mentoring, making us the Best IIT JEE Classes in Chinchwad." }, { q: "Q8: Which nearby areas can join your Top IIT JEE Classes in Chinchwad?", a: "Students from Pimpri, Nigdi, Akurdi, Ravet, and PCMC can easily access our Top IIT JEE Classes in Chinchwad for quality JEE coaching." },];
+  const faqs = [{ q: "Q1: Who can join ASQUARE Academy Vishrantwadi?", a: "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced." },
+     { q: "Q2: Which subjects are taught?", a: "Physics, Chemistry, and Mathematics (PCM)." },
+      { q: "Q3: Are mock tests included?", a: "Yes, weekly practice tests and full-length JEE mocks are part of the program." },
+       { q: "Q4: What courses are available?", a: "2-Year, 1-Year, Crash Courses & Dropper Batches." },
+        { q: "Q5: How many students per batch?", a: "We maintain small batches for personal mentoring." },
+         { q: "Q6: Do parents receive progress updates?", a: "Yes, through performance reports and PTMs." },
+          { q: "Q7: Which areas does the Vishrantwadi branch serve?", a: "Conveniently accessible from Vishrantwadi, Tingre Nagar, Lohegaon, Dighi, Yerwada, and nearby Pune localities." },
+     ];
 
   return (
     <>
       <Helmet>
-        <title>Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute</title>
+        <title>Best IIT JEE Coaching Classes in Vishrantwadi Pune | ASQUARE Academy</title>
              <meta
           name="title"
-          content="Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute"
+          content="Best IIT JEE Coaching Classes in Vishrantwadi Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the Best IIT JEE Coaching Classes in Chinchwad for JEE Main & Advanced preparation with expert mentors, mock tests, and result-driven guidance – ASQUARE Academy."
+          content="Join the Best IIT JEE Coaching Classes in Vishrantwadi Pune with expert faculty, mock tests & personal guidance for JEE Main & Advanced success at ASQUARE Academy."
         />
 
-        <meta name="keywords" content="IIT JEE coaching classes in chinchwad, 
-Best IIT JEE Coaching in chinchwad,
-Top JEE Mains Coaching Classes chinchwad,
-IIT JEE Advanced Preparation chinchwad,
-JEE Advanced coaching classes in chinchwad,
-IIT JEE Classes in chinchwad,
-Best IIT JEE Classes in chinchwad,
-Top IIT JEE Classes in chinchwad,
+        <meta name="keywords" content="IIT JEE coaching classes in vishrantwadi,
+Best IIT JEE Coaching in vishrantwadi,
+Top JEE Mains Coaching Classes vishrantwadi,
+IIT JEE Advanced Preparation vishrantwadi,
+JEE Advanced coaching classes in vishrantwadi,
+IIT JEE Classes in vishrantwadi,
+Best IIT JEE Classes in vishrantwadi,
+Top IIT JEE Classes in vishrantwadi,
 
 " />
 <script type="application/ld+json">{`
@@ -97,126 +104,51 @@ Top IIT JEE Classes in chinchwad,
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.asquareclasses.com/#localbusiness",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-vishrantwadi-pune#localbusiness",
       "name": "ASQUARE Academy",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-vishrantwadi-pune",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune",
-      "telephone": "+919766118877",
+      "telephone": "9766118877",
+      "priceRange": "₹₹",
+      "description": "ASQUARE Academy offers the Best IIT JEE Coaching Classes in Vishrantwadi Pune for JEE Main and Advanced aspirants with expert guidance and mock tests.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Chinchwad",
+        "streetAddress": "Vishrantwadi, Pune, Maharashtra",
         "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411019",
+        "addressRegion": "MH",
+        "postalCode": "411015",
         "addressCountry": "IN"
       },
-      "priceRange": "₹₹",
       "sameAs": [
         "https://www.instagram.com/asquarepune",
-        "https://www.facebook.com/asquarepune"
-      ],
-      "description": "ASQUARE Academy offers the Best IIT JEE Coaching Classes in Chinchwad, Pune, providing expert faculty, personalized guidance, and proven success in JEE Main & Advanced."
+        "https://www.facebook.com/asquarepune/"
+      ]
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#webpage",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune",
-      "name": "Best IIT JEE Coaching Classes in Chinchwad | ASQUARE Academy Pune",
-      "description": "Top IIT JEE Coaching Classes in Chinchwad offering structured preparation for JEE Main & Advanced with expert mentors and mock tests – ASQUARE Academy.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "ASQUARE Academy",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-        }
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-vishrantwadi-pune#webpage",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-vishrantwadi-pune",
+      "name": "IIT JEE Coaching Classes in Vishrantwadi Pune | ASQUARE Academy",
+      "description": "Enroll in the Best IIT JEE Coaching Classes in Vishrantwadi Pune with structured courses, mock tests, and expert guidance for JEE Mains & Advanced.",
+      "inLanguage": "en-IN",
+      "isPartOf": {
+        "@id": "https://www.asquareclasses.com/#website"
       }
     },
     {
       "@type": "EducationalOrganization",
-      "@id": "https://www.asquareclasses.com/#educationalorganization",
       "name": "ASQUARE Academy",
       "url": "https://www.asquareclasses.com/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
       "sameAs": [
         "https://www.instagram.com/asquarepune",
-        "https://www.facebook.com/asquarepune"
+        "https://www.facebook.com/asquarepune/"
       ],
-      "description": "ASQUARE Academy provides IIT JEE and NEET coaching across Pune with result-oriented preparation, test practice, and expert mentoring."
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#faqpage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Which is the Best IIT JEE Coaching in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ASQUARE Academy is known as the Best IIT JEE Coaching in Chinchwad, offering expert faculty, structured study plans, and proven success in JEE Main & Advanced exams."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What subjects are covered in your IIT JEE Classes in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our IIT JEE Classes in Chinchwad include Physics, Chemistry, and Mathematics to strengthen analytical and problem-solving skills."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide mock tests and regular assessments?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, ASQUARE Academy conducts weekly tests, topic-wise quizzes, and full-length mock exams for complete JEE Main & Advanced preparation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes ASQUARE the Top JEE Mains Coaching Classes in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our Top JEE Mains Coaching Classes in Chinchwad focus on interactive sessions, doubt-solving, and performance-based learning."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer special batches for IIT JEE Advanced Preparation in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, ASQUARE Academy offers dedicated IIT JEE Advanced Preparation batches with advanced modules and mentor-led learning."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are dropper batches available for JEE aspirants?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We provide Dropper Batches for JEE aspirants in Chinchwad who wish to improve scores through focused reattempt preparation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the teaching approach at your Best IIT JEE Classes in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our teaching combines conceptual clarity, rigorous testing, and personalized guidance, making us the Best IIT JEE Classes in Chinchwad."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which nearby areas can join your Top IIT JEE Classes in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Students from Pimpri, Nigdi, Akurdi, Ravet, and PCMC can easily enroll in our Top IIT JEE Classes in Chinchwad for quality coaching."
-          }
-        }
-      ]
+      "description": "ASQUARE Academy in Vishrantwadi Pune offers IIT JEE Classes with expert faculty, small batches, and consistent performance tracking."
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -227,13 +159,76 @@ Top IIT JEE Classes in chinchwad,
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "IIT JEE Coaching in Chinchwad",
-          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune"
+          "name": "IIT JEE Coaching",
+          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-vishrantwadi-pune"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can join ASQUARE Academy Vishrantwadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can join our IIT JEE Classes in Vishrantwadi Pune."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which subjects are taught?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE Academy Vishrantwadi covers Physics, Chemistry, and Mathematics (PCM) for JEE aspirants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mock tests included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, weekly practice tests and full-length JEE mock exams are conducted regularly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What courses are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer 2-Year, 1-Year, Crash Courses, and Dropper Batches for IIT JEE preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many students per batch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We maintain small batch sizes to ensure personalized mentoring and guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do parents receive progress updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, parents receive detailed performance reports and can attend PTMs regularly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas does the Vishrantwadi branch serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Vishrantwadi branch serves students from Tingre Nagar, Lohegaon, Dighi, Yerwada, and nearby Pune areas."
+          }
         }
       ]
     }
   ]
 }
+
+
 `}</script>
 
         <link rel="canonical" href={canonicalUrl} />
@@ -363,21 +358,21 @@ Top IIT JEE Classes in chinchwad,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Get Ahead in JEE Main & Advanced with {" "}
+                Crack JEE Main & Advanced with {" "}
                 <span className="highlight-text text-warning">
                   ASQUARE Academy
                 </span>{" "}
-                Chinchwad
+                Vishrantwadi
               </motion.h1>
-<p>Premier Coaching Institute for Engineering Aspirants in Chinchwad</p>
+<p>Dedicated Coaching for Future Engineers in Vishrantwadi</p>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
-                Looking for <b className="bld">IIT-JEE</b> classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
+               Looking for <b className="bld">IIT-JEE coaching classes in Vishrantwadi, Pune?</b> At  <b className="bld">ASQUARE Academy, </b> we provide  <b className="bld">concept-focused teaching, systematic study plans, and exam-oriented practice sessions</b> to help students achieve their engineering dreams. Our Vishrantwadi branch is a trusted destination for aspirants targeting <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges. </b>With  <b className="bld">personalized mentoring, doubt-solving support, and advanced learning resources, </b>we ensure students are well-prepared for <b className="bld">JEE Main & Advanced.</b> 
               </p>
 
               {/* Short text for mobile */}
               <p className="lead d-block d-md-none">
-                            Looking for <b className="bld">IIT-JEE</b>IIT-JEE classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
+                                     Looking for <b className="bld">IIT-JEE coaching classes in Vishrantwadi, Pune?</b> At  <b className="bld">ASQUARE Academy, </b> we provide  <b className="bld">concept-focused teaching, systematic study plans, and exam-oriented practice sessions</b> to help students achieve their engineering dreams. Our Vishrantwadi branch is a trusted destination for aspirants targeting <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges. </b>With  <b className="bld">personalized mentoring, doubt-solving support, and advanced learning resources, </b>we ensure students are well-prepared for <b className="bld">JEE Main & Advanced.</b> 
               </p>
 
               <a
@@ -421,7 +416,7 @@ Top IIT JEE Classes in chinchwad,
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> Chinchwad</motion.h1>
+          <span className="text-primary">ASQUARE Academy in</span>  Vishrantwadi</motion.h1>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -442,10 +437,10 @@ Top IIT JEE Classes in chinchwad,
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">IIT-JEE</span> Coaching Programs </motion.h1>
+              >Our  <span className="text-primary">JEE</span> Coaching Programs </motion.h1>
 
               <p className="lead text-secondary">
-                The <b className="bld">Joint Entrance Examination (JEE)</b> is one of the toughest engineering entrance exams. At ASQUARE Academy Chinchwad, our coaching programs are designed to <b className="bld">build strong subject foundations, improve problem-solving skills, and strengthen exam strategies</b> for both <b className="bld">JEE Main & Advanced</b>.
+                The <b className="bld">Joint Entrance Examination (JEE)</b> is a challenging exam that demands <b className="bld">clarity, speed, and consistent practice.</b> At ASQUARE Academy Vishrantwadi, our courses focus on  <b className="bld">strengthening basics, improving accuracy, and boosting exam confidence,</b> covering both <b className="bld">JEE Main & Advanced.</b>
               </p>
             </div>
             <div className="col-lg-4 text-center  order-1">
@@ -471,7 +466,7 @@ Top IIT JEE Classes in chinchwad,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3 text-center"
           >
-            Subjects Covered
+            Subjects We Teach
             <span className="highlight-text text-warning">
               &nbsp;&&nbsp;
             </span>
@@ -481,13 +476,13 @@ Top IIT JEE Classes in chinchwad,
 
           <div className="row g-4">
             <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects We Teach</h4>
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">We Teach</h4>
               {subjects.map((sub, i) => (<div key={i} className="jee-subject-box mb-4 p-3 pb-4 pt-4  rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{sub.title}</h5>
                 <p className="small mb-0">{sub.desc}</p> </div>))}
             </div>
             <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Duration & Batches</h4>
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Options & Duration</h4>
               {batches.map((b, i) => (<div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{b.title}</h5>
                 <p className="small mb-0">{b.desc}</p>
@@ -538,12 +533,12 @@ Top IIT JEE Classes in chinchwad,
                       {/* <h6 className="fw-bold">{step}</h6> */}
                       <p className="text-muted small mb-0">
                         {step === "Learn"
-                          ? "Daily lectures with structured assignments."
+                          ? "Daily lectures with topic-wise assignments"
                           : step === "Practice"
-                            ? "One-on-one doubt-solving support."
+                            ? "One-to-one doubt-solving sessions"
                             : step === "Assess"
-                              ? "Weekly practice tests & mock exams."
-                              : "Parent–teacher meetings with performance analysis."}
+                              ? "Weekly unit tests & full-length mock exams"
+                              : "Parent–teacher meetings for performance analysis"}
                       </p>
                     </motion.div>
                   </div>
@@ -569,23 +564,23 @@ Top IIT JEE Classes in chinchwad,
           >
             Key Highlights of
             <span className="highlight-text text-warning">
-              &nbsp;Chinchwad&nbsp;
+              &nbsp;Vishrantwadi&nbsp;
             </span>
             Branch
           </motion.h1>
 
           <div className="row justify-content-center g-4">
             {[
-              "Limited batch size for focused mentoring.",
-              "Updated JEE notes, study modules & practice papers.",
-              "Workshops on exam hacks, time management & smart strategies.",
-              "Continuous progress tracking with parent involvement.",
-                "Trusted as a leading JEE coaching institute in Chinchwad, Pune.",
+              "Limited batch strength for individual focus",
+              "Updated IIT-JEE study notes, question banks & practice modules",
+              "Workshops on exam hacks, shortcut techniques & time-saving strategies",
+              "Continuous feedback system with parent updates",
+                "Recognized as a trusted IIT-JEE coaching institute in Vishrantwadi, Pune",
             ].map((text, i) => {
-              const highlightedText = text.includes("leading JEE coaching institute in Chinchwad, Pune")
+              const highlightedText = text.includes("trusted IIT-JEE coaching institute in Vishrantwadi, Pune")
                 ? text.replace(
-                  "leading JEE coaching institute in Chinchwad, Pune",
-                  '<b className="bld">leading JEE coaching institute in Chinchwad, Pune</b>'
+                  "trusted IIT-JEE coaching institute in Vishrantwadi, Pune",
+                  '<b className="bld">trusted IIT-JEE coaching institute in Vishrantwadi, Pune</b>'
                 )
                 : text;
 
@@ -635,14 +630,14 @@ Top IIT JEE Classes in chinchwad,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Results That
+                Results That 
                 <span className="highlight-text text-warning">
-                  &nbsp;Speak &nbsp;
+                  &nbsp;Prove Our Success &nbsp;
                 </span>
 
               </motion.h1>
               <p className="lead text-light">
-               ASQUARE Academy has built a reputation for producing <b className="bld">IIT-JEE rankers and engineering toppers</b>. The <b className="bld">Chinchwad branch</b> adds to this legacy by offering <b className="bld">student-focused coaching, expert guidance, and a result-driven environment.</b>
+              ASQUARE Academy has a strong record of producing  <b className="bld">JEE toppers and high scorers.</b> The <b className="bld">Vishrantwadi branch</b> adds to this legacy with <b className="bld">result-oriented coaching, student-centric learning, and consistent success stories.</b>
               </p>
             </div>
 
@@ -737,24 +732,24 @@ Top IIT JEE Classes in chinchwad,
           >
             Join ASQUARE Academy 
             <span className="highlight-text text-warning">
-              &nbsp;Chinchwad Today &nbsp;
+              &nbsp;Vishrantwadi Today &nbsp;
             </span>
 
           </motion.h1>
           <p className="lead mb-4">
-            Step closer to your IIT dream with <b className="bld">ASQUARE Academy’s IIT-JEE coaching in Chinchwad, Pune</b>. With <b className="bld">expert faculty, structured resources, and consistent results</b>, we’re your trusted partner for <b className="bld">IIT-JEE, CET & NEET coaching</b>.
+            Start your IIT-JEE preparation with <b className="bld">ASQUARE Academy’s expert coaching in Vishrantwadi, Pune.</b> With <b className="bld">experienced faculty, updated study material, and proven results</b>, we are your trusted partner for <b className="bld">JEE, CET & NEET coaching.</b>
           </p>
-          <p><MapPin className="text-warning" /> Ideal for students from <b className="bld">Chinchwad, Pimpri, Akurdi, Nigdi, Ravet, and nearby PCMC areas</b>.</p>
+          <p><MapPin className="text-warning" /> Serving students from<b className="bld">Vishrantwadi, Tingre Nagar, Lohegaon, Dighi, Yerwada, and nearby areas in Pune.</b>.</p>
           <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
             <Link
               to={'/'}
               className="nav-item nav-item-list text-white"
 
             >
-              ⚡ Admissions Open – Limited seats available! 
+              ⚡ Admissions Open – Limited seats available!  
 
 
-              &nbsp;<p className="text-warning">Enroll today to secure your place.</p>
+              &nbsp;<p className="text-warning">Contact us today to secure your spot.</p>
             </Link>
           </a>
         </div>
@@ -767,4 +762,4 @@ Top IIT JEE Classes in chinchwad,
   );
 }
 
-export default IITJEEChinchwad;
+export default IITJEEVishrantwadi;

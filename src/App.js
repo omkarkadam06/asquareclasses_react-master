@@ -84,7 +84,11 @@ import MHTWakad from './Pages/LocationsPages/MHTWakad';
 // prismplus Start
 import Samplepage from "./Pages/courses/samplepage";
 import IITJEEChinchwad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chinchwad-pune";
-
+import IITJEEPimpri from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pimpri-pune";
+import IITJEEHadapsar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-hadapsar-pune";
+import IITJEEPCMC from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pcmc-pune";
+import IITJEEVishrantwadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-vishrantwadi-pune";
+import IITJEEMoshi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-moshi-pune";
 function App() {
   return (
     <div>
@@ -322,6 +326,11 @@ function App() {
 
           <Route path='/iit-jee-coaching-classes-institute-in-pune' element={<Samplepage />} />
            <Route path='/iit-jee-coaching-classes-institute-chinchwad-pune' element={<IITJEEChinchwad />} />
+             <Route path='/iit-jee-coaching-classes-institute-pimpri-pune' element={<IITJEEPimpri />} />
+              <Route path='/IIT-JEE-coaching-classes-institute-hadapsar-pune' element={<IITJEEHadapsar />} />
+               <Route path='/iit-jee-coaching-classes-institute-pimpri-chinchwad-pune' element={<IITJEEPCMC />} />
+               <Route path='/iit-jee-coaching-classes-institute-vishrantwadi-pune' element={<IITJEEVishrantwadi />} />
+                <Route path='/iit-jee-coaching-classes-institute-moshi-pune' element={<IITJEEMoshi />} />
         </Routes>
       </BrowserRouter>
     </div>

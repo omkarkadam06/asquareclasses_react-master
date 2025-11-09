@@ -34,7 +34,7 @@ import Form from '../../../Components/Form2/Form2.jsx';
 
 const Reviews = React.lazy(() => import("../../../Components/Reviews/Reviews.jsx"));
 
-function IITJEEChinchwad() {
+function IITJEEHadapsar() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -46,49 +46,52 @@ function IITJEEChinchwad() {
 
 
   const whyChoose = [
-    { Icon: Users, title: "Expert Teaching Faculty", desc: "Experienced trainers for IIT-JEE, NEET & CET coaching." },
-    { Icon: BookOpen, title: "Complete PCM Coverage", desc: "Physics, Chemistry & Mathematics taught as per updated exam trends." },
-    { Icon: Target, title: "Personalized Guidance", desc: "Small batches for doubt-solving and individual support." },
-    { Icon: BarChart, title: "Exam Simulation Practice", desc: "Weekly quizzes, unit tests & full-length mock exams." },
-    { Icon: Lightbulb, title: "Career Support & Motivation", desc: "Counseling, study planning & confidence-boosting sessions." },
+    { Icon: Users, title: "Expert Faculty", desc: "Experienced mentors for Physics, Chemistry, and Mathematics" },
+    { Icon: BookOpen, title: "Concept-Oriented Learning", desc: "From NCERT basics to advanced problem-solving." },
+    { Icon: Target, title: "Small Batches", desc: "Personal attention and dedicated doubt-solving." },
+    { Icon: BarChart, title: "Regular Testing", desc: "Weekly tests, mock exams, and detailed performance analytics." },
+    { Icon: Lightbulb, title: "Flexible Learning", desc: "Classroom + online IIT JEE Classes in Hadapsar with weekday and weekend batches." },
+     { Icon: Lightbulb, title: "Advanced Focus", desc: "Special sessions for JEE Advanced coaching classes in Hadapsar." },
   ];
 
   const subjects = [
-    { title: "Physics", desc: "Strengthening fundamentals with numerical applications." },
-    { title: "Chemistry", desc: "Balanced focus on Physical, Organic & Inorganic Chemistry." },
-    { title: "Mathematics", desc: "Rigorous practice in Algebra, Geometry, Calculus, Probability & Trigonometry." },
+    { title: "Physics", desc: "In-depth conceptual learning, numericals & applications." },
+    { title: "Chemistry", desc: "Thorough study of Physical, Organic & Inorganic Chemistry." },
+    { title: "Mathematics", desc: "Rigorous practice in Algebra, Geometry, Calculus, Trigonometry & Probability." },
   ];
 
   const batches = [
-    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Covers XI & XII Boards + JEE." },
-    { title: "1-Year Advanced Program (11th → 12th Moving Students)", desc: "Intensive JEE preparation with XII syllabus." },
-    { title: "Crash Course (2–3 Months)", desc: "Short-term high-speed revision & exam practice." },
-    { title: "Dropper/Repeater Batch (XII Pass-outs)", desc: "One-year dedicated JEE training for repeaters." },
+    { title: "2-Year Integrated Program (Class 11th)", desc: "•	Builds a strong foundation for JEE, •	Covers school syllabus along with JEE Main & Advanced, •	Concept lectures, DPPs, and regular weekly tests" },
+    { title: "1-Year Target Program (Class 12th)", desc: "•	Fast-track program with Class 11th revision, •	Intensive problem-solving and JEE-style mocks, •	High-weightage chapter coverage for JEE Main & Advanced." },
+    { title: "Dropper / Repeater Program", desc: "•	Dedicated IIT JEE coaching classes in Hadapsar for repeaters, •	Comprehensive test series with error analysis, •	Mentorship and exam strategy sessions." },
+    { title: "Crash Courses", desc: "•	Short-term exam-focused program, •	Formula sheets, revision notes, and PYQs, •	Time-management and strategy drills." },
   ];
 
-  const faqs = [{ q: "Q1: Which is the Best IIT JEE Coaching in Chinchwad?", a: "ASQUARE Academy is known as the Best IIT JEE Coaching in Chinchwad, offering expert faculty, structured study plans, and proven success in JEE Main & Advanced exams." }, { q: "Q2: What subjects are covered in your IIT JEE Classes in Chinchwad?", a: "Our IIT JEE Classes in Chinchwad include comprehensive coaching in Physics, Chemistry, and Mathematics to build strong problem-solving skills." }, { q: "Q3: Do you provide mock tests and regular assessments?", a: "Yes, we conduct weekly tests, topic-wise quizzes, and full-length mock exams to strengthen preparation for JEE Main and Advanced." }, { q: "Q4: What makes ASQUARE the Top JEE Mains Coaching Classes in Chinchwad?", a: "Our Top JEE Mains Coaching Classes in Chinchwad feature interactive sessions, doubt-solving, and consistent performance tracking." }, { q: "Q5: Do you offer special batches for IIT JEE Advanced Preparation in Chinchwad?", a: "Yes, ASQUARE Academy provides exclusive IIT JEE Advanced Preparation in Chinchwad through intensive modules and mentor-led guidance." }, { q: "Q6: Are dropper batches available for JEE aspirants?", a: "We offer Dropper Batches at our JEE Advanced Coaching Classes in Chinchwad for students aiming to reattempt and improve their scores." }, { q: "Q7: What is the teaching approach at your Best IIT JEE Classes in Chinchwad?", a: "Our teaching combines concept clarity, test practice, and personalized mentoring, making us the Best IIT JEE Classes in Chinchwad." }, { q: "Q8: Which nearby areas can join your Top IIT JEE Classes in Chinchwad?", a: "Students from Pimpri, Nigdi, Akurdi, Ravet, and PCMC can easily access our Top IIT JEE Classes in Chinchwad for quality JEE coaching." },];
+  const faqs = [{ q: "1) Which is the Best IIT JEE Coaching in Hadapsar?", a: "ASQUARE Academy is among the Best IIT JEE Classes in Hadapsar due to our expert faculty, structured study plans, and strong results." }, { q: "2) Do you offer Top JEE Mains Coaching Classes Hadapsar?", a: "Yes. Our programs are designed to cover NCERT fundamentals with advanced JEE Main problem practice." }, { q: "3) How do you support IIT JEE Advanced Preparation in Hadapsar?", a: "We conduct specialized JEE Advanced coaching classes in Hadapsar with advanced problem sets, AITS, and error-analysis workshops." }, { q: "4) Are weekend IIT JEE Classes in Hadapsar available?", a: "Yes. We offer both weekday and weekend batches in classroom & online mode." }, { q: "5) Do you provide scholarships?", a: "Yes. Students can apply through the ASQUARE Scholarship Test for merit-based financial aid." },];
 
   return (
     <>
       <Helmet>
-        <title>Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute</title>
+        <title>Best IIT JEE Coaching Classes in Hadapsar Pune | ASQUARE Academy</title>
              <meta
           name="title"
-          content="Best IIT JEE Coaching Classes in Chinchwad | Top JEE Main & Advanced Institute"
+          content="Best IIT JEE Coaching Classes in Hadapsar Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join the Best IIT JEE Coaching Classes in Chinchwad for JEE Main & Advanced preparation with expert mentors, mock tests, and result-driven guidance – ASQUARE Academy."
+          content="Join ASQUARE Academy – Best IIT JEE Coaching Classes in Hadapsar Pune offering expert faculty, JEE Mains & Advanced preparation, tests & scholarships."
         />
 
-        <meta name="keywords" content="IIT JEE coaching classes in chinchwad, 
-Best IIT JEE Coaching in chinchwad,
-Top JEE Mains Coaching Classes chinchwad,
-IIT JEE Advanced Preparation chinchwad,
-JEE Advanced coaching classes in chinchwad,
-IIT JEE Classes in chinchwad,
-Best IIT JEE Classes in chinchwad,
-Top IIT JEE Classes in chinchwad,
+        <meta name="keywords" content="IIT JEE coaching classes in hadapsar pune,
+Best IIT JEE Coaching in hadapsar pune,
+Top JEE Mains Coaching Classes hadapsar pune,
+IIT JEE Advanced Preparation hadapsar pune,
+JEE Advanced coaching classes in hadapsar pune,
+IIT JEE Classes in hadapsar pune,
+Best IIT JEE Classes in hadapsar pune,
+Top IIT JEE Classes in hadapsar pune,
+
+
 
 " />
 <script type="application/ld+json">{`
@@ -97,126 +100,95 @@ Top IIT JEE Classes in chinchwad,
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.asquareclasses.com/#localbusiness",
-      "name": "ASQUARE Academy",
+      "@id": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/#localbusiness",
+      "name": "ASQUARE Academy Hadapsar",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune",
-      "telephone": "+919766118877",
+      "url": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/",
+      "telephone": "9766118877",
+      "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Chinchwad",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411019",
-        "addressCountry": "IN"
+        "addressLocality": "Hadapsar",
+        "addressRegion": "Pune",
+        "addressCountry": "India"
       },
-      "priceRange": "₹₹",
       "sameAs": [
         "https://www.instagram.com/asquarepune",
-        "https://www.facebook.com/asquarepune"
+        "https://www.facebook.com/asquarepune/"
       ],
-      "description": "ASQUARE Academy offers the Best IIT JEE Coaching Classes in Chinchwad, Pune, providing expert faculty, personalized guidance, and proven success in JEE Main & Advanced."
+      "description": "ASQUARE Academy Hadapsar offers the Best IIT JEE Coaching in Pune with expert faculty, JEE Mains & Advanced preparation, weekly tests, and scholarship programs."
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#webpage",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune",
-      "name": "Best IIT JEE Coaching Classes in Chinchwad | ASQUARE Academy Pune",
-      "description": "Top IIT JEE Coaching Classes in Chinchwad offering structured preparation for JEE Main & Advanced with expert mentors and mock tests – ASQUARE Academy.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "ASQUARE Academy",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-        }
-      }
+      "@id": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/#webpage",
+      "url": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/",
+      "name": "Best IIT JEE Coaching Classes in Hadapsar Pune | ASQUARE Academy",
+      "description": "Join ASQUARE Academy – the Best IIT JEE Coaching in Hadapsar Pune with structured study plans, expert mentors & scholarship opportunities."
     },
     {
       "@type": "EducationalOrganization",
-      "@id": "https://www.asquareclasses.com/#educationalorganization",
       "name": "ASQUARE Academy",
       "url": "https://www.asquareclasses.com/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "9766118877",
+        "contactType": "Customer Support",
+        "areaServed": "IN"
+      },
       "sameAs": [
         "https://www.instagram.com/asquarepune",
-        "https://www.facebook.com/asquarepune"
-      ],
-      "description": "ASQUARE Academy provides IIT JEE and NEET coaching across Pune with result-oriented preparation, test practice, and expert mentoring."
+        "https://www.facebook.com/asquarepune/"
+      ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#faqpage",
+      "@id": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Which is the Best IIT JEE Coaching in Chinchwad?",
+          "name": "Which is the Best IIT JEE Coaching in Hadapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ASQUARE Academy is known as the Best IIT JEE Coaching in Chinchwad, offering expert faculty, structured study plans, and proven success in JEE Main & Advanced exams."
+            "text": "ASQUARE Academy is among the Best IIT JEE Classes in Hadapsar due to our expert faculty, structured study plans, and strong results."
           }
         },
         {
           "@type": "Question",
-          "name": "What subjects are covered in your IIT JEE Classes in Chinchwad?",
+          "name": "Do you offer Top JEE Mains Coaching Classes Hadapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our IIT JEE Classes in Chinchwad include Physics, Chemistry, and Mathematics to strengthen analytical and problem-solving skills."
+            "text": "Yes. Our programs are designed to cover NCERT fundamentals with advanced JEE Main problem practice."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide mock tests and regular assessments?",
+          "name": "How do you support IIT JEE Advanced Preparation in Hadapsar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, ASQUARE Academy conducts weekly tests, topic-wise quizzes, and full-length mock exams for complete JEE Main & Advanced preparation."
+            "text": "We conduct specialized JEE Advanced coaching classes in Hadapsar with advanced problem sets, AITS, and error-analysis workshops."
           }
         },
         {
           "@type": "Question",
-          "name": "What makes ASQUARE the Top JEE Mains Coaching Classes in Chinchwad?",
+          "name": "Are weekend IIT JEE Classes in Hadapsar available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our Top JEE Mains Coaching Classes in Chinchwad focus on interactive sessions, doubt-solving, and performance-based learning."
+            "text": "Yes. We offer both weekday and weekend batches in classroom & online mode."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer special batches for IIT JEE Advanced Preparation in Chinchwad?",
+          "name": "Do you provide scholarships?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, ASQUARE Academy offers dedicated IIT JEE Advanced Preparation batches with advanced modules and mentor-led learning."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are dropper batches available for JEE aspirants?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We provide Dropper Batches for JEE aspirants in Chinchwad who wish to improve scores through focused reattempt preparation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the teaching approach at your Best IIT JEE Classes in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our teaching combines conceptual clarity, rigorous testing, and personalized guidance, making us the Best IIT JEE Classes in Chinchwad."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which nearby areas can join your Top IIT JEE Classes in Chinchwad?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Students from Pimpri, Nigdi, Akurdi, Ravet, and PCMC can easily enroll in our Top IIT JEE Classes in Chinchwad for quality coaching."
+            "text": "Yes. Students can apply through the ASQUARE Scholarship Test for merit-based financial aid."
           }
         }
       ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -227,13 +199,21 @@ Top IIT JEE Classes in chinchwad,
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "IIT JEE Coaching in Chinchwad",
-          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-chinchwad-pune"
+          "name": "IIT JEE Coaching Classes",
+          "item": "https://www.asquareclasses.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hadapsar Pune",
+          "item": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/"
         }
       ]
     }
   ]
 }
+
+
 `}</script>
 
         <link rel="canonical" href={canonicalUrl} />
@@ -363,21 +343,21 @@ Top IIT JEE Classes in chinchwad,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Get Ahead in JEE Main & Advanced with {" "}
+                IIT JEE Preparation in Hadapsar Pune for {" "}
                 <span className="highlight-text text-warning">
-                  ASQUARE Academy
+                  JEE Main and Advanced
                 </span>{" "}
-                Chinchwad
+                Exam
               </motion.h1>
-<p>Premier Coaching Institute for Engineering Aspirants in Chinchwad</p>
+{/* <p>Premier Coaching Institute for Engineering Aspirants in Pimpri</p> */}
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
-                Looking for <b className="bld">IIT-JEE</b> classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
+               ASQUARE Academy offers expert-led <b className="bld">IIT JEE coaching classes in Hadapsar</b> , providing structured programs, personalized mentoring, and advanced test preparation. Recognized as one of the   <b className="bld">Best IIT JEE Coaching in Hadapsar</b> , we focus on strong conceptual learning, small batches, and rigorous testing to help students excel in both JEE Main and Advanced. Whether you are beginning your preparation or need specialized   <b className="bld">IIT JEE Advanced Preparation in Hadapsar</b> , ASQUARE is your trusted institute.
               </p>
 
               {/* Short text for mobile */}
               <p className="lead d-block d-md-none">
-                            Looking for <b className="bld">IIT-JEE</b>IIT-JEE classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
+                                   ASQUARE Academy offers expert-led <b className="bld">IIT JEE coaching classes in Hadapsar</b> , providing structured programs, personalized mentoring, and advanced test preparation. Recognized as one of the   <b className="bld">Best IIT JEE Coaching in Hadapsar</b> , we focus on strong conceptual learning, small batches, and rigorous testing to help students excel in both JEE Main and Advanced. Whether you are beginning your preparation or need specialized   <b className="bld">IIT JEE Advanced Preparation in Hadapsar</b> , ASQUARE is your trusted institute.
               </p>
 
               <a
@@ -421,11 +401,11 @@ Top IIT JEE Classes in chinchwad,
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> Chinchwad</motion.h1>
+          <span className="text-primary">ASQUARE Academy for </span>  IIT JEE Coaching in Hadapsar?</motion.h1>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
-            </motion.div> </div>))}
+            </motion.div> </div>))}<p className="">ASQUARE Academy is consistently rated among the <b className="bld text-warning">Top JEE Mains Coaching Classes Hadapsar</b> for quality teaching and results.</p>
           </div>
         </div>
       </section>
@@ -442,10 +422,10 @@ Top IIT JEE Classes in chinchwad,
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">IIT-JEE</span> Coaching Programs </motion.h1>
+              >Our  <span className="text-primary">JEE</span> Preparation Programs </motion.h1>
 
               <p className="lead text-secondary">
-                The <b className="bld">Joint Entrance Examination (JEE)</b> is one of the toughest engineering entrance exams. At ASQUARE Academy Chinchwad, our coaching programs are designed to <b className="bld">build strong subject foundations, improve problem-solving skills, and strengthen exam strategies</b> for both <b className="bld">JEE Main & Advanced</b>.
+                The <b className="bld">Joint Entrance Examination (JEE)</b> is one of the toughest engineering entrance tests. At ASQUARE Academy Hadapsar, our coaching programs are designed to <b className="bld">strengthen fundamentals, improve speed & accuracy, and develop exam strategies</b> so students can succeed in both <b className="bld">JEE Main & Advanced</b>.
               </p>
             </div>
             <div className="col-lg-4 text-center  order-1">
@@ -471,23 +451,23 @@ Top IIT JEE Classes in chinchwad,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3 text-center"
           >
-            Subjects Covered
+            Programs 
             <span className="highlight-text text-warning">
-              &nbsp;&&nbsp;
+              &nbsp;We Offer&nbsp;
             </span>
-            Batch Options
+            
           </motion.h1>
           <br></br>
 
           <div className="row g-4">
-            <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects We Teach</h4>
+            {/* <div className="col-lg-6">
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects Covered</h4>
               {subjects.map((sub, i) => (<div key={i} className="jee-subject-box mb-4 p-3 pb-4 pt-4  rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{sub.title}</h5>
                 <p className="small mb-0">{sub.desc}</p> </div>))}
-            </div>
-            <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Duration & Batches</h4>
+            </div> */}
+            <div className="col-lg-12">
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Options & Duration</h4>
               {batches.map((b, i) => (<div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{b.title}</h5>
                 <p className="small mb-0">{b.desc}</p>
@@ -535,15 +515,15 @@ Top IIT JEE Classes in chinchwad,
                       className="method-card p-4 bg-white rounded-4 shadow-sm h-100 text-center"
                     >
                       {/* <Lightbulb size={36} className="text-primary mb-3" /> */}
-                      {/* <h6 className="fw-bold">{step}</h6> */}
+                      <h6 className="fw-bold">{step}</h6>
                       <p className="text-muted small mb-0">
                         {step === "Learn"
-                          ? "Daily lectures with structured assignments."
+                          ? "Interactive lectures for strong fundamentals."
                           : step === "Practice"
-                            ? "One-on-one doubt-solving support."
+                            ? "DPPs, assignments, and advanced problem sets."
                             : step === "Assess"
-                              ? "Weekly practice tests & mock exams."
-                              : "Parent–teacher meetings with performance analysis."}
+                              ? "Weekly tests and full-length mock exams."
+                              : "Regular crash revision before exams."}
                       </p>
                     </motion.div>
                   </div>
@@ -567,25 +547,25 @@ Top IIT JEE Classes in chinchwad,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3"
           >
-            Key Highlights of
+            Key Benefits of
             <span className="highlight-text text-warning">
-              &nbsp;Chinchwad&nbsp;
+              &nbsp;Hadapsar &nbsp;
             </span>
-            Branch
+            Branch 
           </motion.h1>
 
           <div className="row justify-content-center g-4">
             {[
-              "Limited batch size for focused mentoring.",
-              "Updated JEE notes, study modules & practice papers.",
-              "Workshops on exam hacks, time management & smart strategies.",
-              "Continuous progress tracking with parent involvement.",
-                "Trusted as a leading JEE coaching institute in Chinchwad, Pune.",
+              "Printed & digital study material.",
+              "Dedicated doubt-clearing counters.",
+              "Regular PTMs & performance updates.",
+              "Online test series with All-India benchmarking.",
+               
             ].map((text, i) => {
-              const highlightedText = text.includes("leading JEE coaching institute in Chinchwad, Pune")
+              const highlightedText = text.includes("trusted JEE coaching institute in Pimpri, Pune")
                 ? text.replace(
-                  "leading JEE coaching institute in Chinchwad, Pune",
-                  '<b className="bld">leading JEE coaching institute in Chinchwad, Pune</b>'
+                  "trusted JEE coaching institute in Pimpri, Pune",
+                  '<b className="bld">trusted JEE coaching institute in Pimpri, Pune</b>'
                 )
                 : text;
 
@@ -635,14 +615,14 @@ Top IIT JEE Classes in chinchwad,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Results That
+               Student Success & 
                 <span className="highlight-text text-warning">
-                  &nbsp;Speak &nbsp;
+                  &nbsp;Results &nbsp;
                 </span>
 
               </motion.h1>
               <p className="lead text-light">
-               ASQUARE Academy has built a reputation for producing <b className="bld">IIT-JEE rankers and engineering toppers</b>. The <b className="bld">Chinchwad branch</b> adds to this legacy by offering <b className="bld">student-focused coaching, expert guidance, and a result-driven environment.</b>
+               ASQUARE Academy students consistently achieve top ranks in  <b className="bld">IITs, NITs, IIITs, and other premier engineering colleges</b>. Our proven methodology makes us one of the  <b className="bld">Best IIT JEE Classes in Hadapsar.</b> 
               </p>
             </div>
 
@@ -735,26 +715,26 @@ Top IIT JEE Classes in chinchwad,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3"
           >
-            Join ASQUARE Academy 
+            Looking for the Best IIT JEE Classes in  
             <span className="highlight-text text-warning">
-              &nbsp;Chinchwad Today &nbsp;
+              &nbsp;Hadapsar? &nbsp;
             </span>
 
           </motion.h1>
           <p className="lead mb-4">
-            Step closer to your IIT dream with <b className="bld">ASQUARE Academy’s IIT-JEE coaching in Chinchwad, Pune</b>. With <b className="bld">expert faculty, structured resources, and consistent results</b>, we’re your trusted partner for <b className="bld">IIT-JEE, CET & NEET coaching</b>.
+            Join  <b className="bld">ASQUARE Academy</b>. a trusted name in engineering coaching. Book a free counselling session or demo class today and prepare with one of the <b className="bld">Top IIT JEE Coaching Classes in Hadapsar.</b>
           </p>
-          <p><MapPin className="text-warning" /> Ideal for students from <b className="bld">Chinchwad, Pimpri, Akurdi, Nigdi, Ravet, and nearby PCMC areas</b>.</p>
+          {/* <p><MapPin className="text-warning" /> Best for students from <b className="bld">Pimpri, Chinchwad, Nigdi, Akurdi, Kasarwadi, and PCMC areas</b>.</p> */}
           <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
             <Link
               to={'/'}
               className="nav-item nav-item-list text-white"
 
             >
-              ⚡ Admissions Open – Limited seats available! 
+              ⚡ Admissions Open – Book your seat today! 
 
 
-              &nbsp;<p className="text-warning">Enroll today to secure your place.</p>
+              &nbsp;<p className="text-warning">Limited slots available.</p>
             </Link>
           </a>
         </div>
@@ -767,4 +747,4 @@ Top IIT JEE Classes in chinchwad,
   );
 }
 
-export default IITJEEChinchwad;
+export default IITJEEHadapsar;
