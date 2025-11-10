@@ -474,7 +474,7 @@ function MHTHadapsar() {
               </h5>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="accordion custom-accordion" id="accordionLeft">
+              <div className="accordion accordion-flush" id="accordionFlushLeft">
                 <div className="accordion-item">
                   <h2 className="accordion-header">
                     <button
@@ -547,7 +547,7 @@ function MHTHadapsar() {
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="accordion custom-accordion" id="accordionRight">
+              <div className="accordion accordion-flush" id="accordionFlushRight">
                 <div className="accordion-item">
                   <h2 className="accordion-header">
                     <button
