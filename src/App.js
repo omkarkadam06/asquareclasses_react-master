@@ -92,6 +92,8 @@ import IITJEEMoshi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-moshi-pune
 import IITJEEDehuroad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bhosari-pune";
 import IITJEEBhosari from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bhosari-pune";
 import IITJEECharholi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-charholi-pune";
+import IITJEECamp from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-camp-pune";
+import IITJEESasaneNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-sasane-nagar-pune";
 
 function App() {
   return (
@@ -338,6 +340,8 @@ function App() {
                  <Route path='/iit-jee-coaching-institute-dehu-road-pune' element={<IITJEEDehuroad />} />
                   <Route path='/iit-jee-coaching-classes-institute-bhosari-pune' element={<IITJEEBhosari />} />
                    <Route path='/iit-jee-coaching-institute-charholi-pune' element={<IITJEECharholi />} />
+                   <Route path='/iit-jee-coaching-classes-institute-camp-pune' element={<IITJEECamp />} />
+                   <Route path='/iit-jee-coaching-classes-institute-sasane-nagar-pune' element={<IITJEESasaneNagar />} />
         </Routes>
       </BrowserRouter>
     </div>
