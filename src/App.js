@@ -110,6 +110,7 @@ import MHTPimpriChinchwad from './Pages/LocationsPages/MHTPimpriChinchwad';
 import MHTKalewadi from './Pages/LocationsPages/MHTKalewadi';
 import MHTHinjewadi from './Pages/LocationsPages/MHTHinjewadi';
 import MHTFatimaNagar from './Pages/LocationsPages/MHTFatimaNagar';
+import NEETPimpleGurav from './Pages/LocationsPages/neet-pages/NEETPimpleGurav';
 
 function App() {
   return (
@@ -350,7 +351,8 @@ function App() {
           <Route path='/neet-coaching-classes-institute-ravet-pune' element={<NEETRavet />} />
           <Route path='/neet-coaching-classes-institute-dapodi-pune' element={<NEETDapodi />} />
           <Route path='/neet-coaching-classes-institute-kalewadi-pune' element={<NEETKalewadi />} />
-          <Route path ='/neet-coaching-classes-institute-wakad-pune' element={<NEETWakad />} />
+          <Route path='/neet-coaching-classes-institute-wakad-pune' element={<NEETWakad />} />
+          <Route path='/neet-coaching-classes-institute-pimple-gurav-pune' element={<NEETPimpleGurav />} />
 
           <Route path='/mht-cet-coaching-classes-institute-in-alandi-pune' element={<MHTAlandi />} />
           <Route path='/mht-cet-coaching-classes-institute-in-wanowrie-pune' element={<MHTWanowrie />} />
