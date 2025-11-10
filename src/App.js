@@ -89,6 +89,10 @@ import IITJEEHadapsar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-hadapsa
 import IITJEEPCMC from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pcmc-pune";
 import IITJEEVishrantwadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-vishrantwadi-pune";
 import IITJEEMoshi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-moshi-pune";
+import IITJEEDehuroad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bhosari-pune";
+import IITJEEBhosari from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bhosari-pune";
+import IITJEECharholi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-charholi-pune";
+
 function App() {
   return (
     <div>
@@ -331,6 +335,9 @@ function App() {
                <Route path='/iit-jee-coaching-classes-institute-pimpri-chinchwad-pune' element={<IITJEEPCMC />} />
                <Route path='/iit-jee-coaching-classes-institute-vishrantwadi-pune' element={<IITJEEVishrantwadi />} />
                 <Route path='/iit-jee-coaching-classes-institute-moshi-pune' element={<IITJEEMoshi />} />
+                 <Route path='/iit-jee-coaching-institute-dehu-road-pune' element={<IITJEEDehuroad />} />
+                  <Route path='/iit-jee-coaching-classes-institute-bhosari-pune' element={<IITJEEBhosari />} />
+                   <Route path='/iit-jee-coaching-institute-charholi-pune' element={<IITJEECharholi />} />
         </Routes>
       </BrowserRouter>
     </div>
