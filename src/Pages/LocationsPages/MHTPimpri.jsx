@@ -375,7 +375,7 @@ function MHTPimpri(){
                         <h5 className="common_title">MHT-CET Coaching Institute in Pimpri, Pune <span className='common_title_span'>(FAQs)</span></h5>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="accordion custom-accordion" id="accordionLeft">
+                        <div className="accordion accordion-flush" id="accordionLeft">
                             <div className="accordion-item">
                                 <h2 className="accordion-header">
                                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
@@ -415,7 +415,7 @@ function MHTPimpri(){
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="accordion custom-accordion" id="accordionRight">
+                        <div className="accordion accordion-flush" id="accordionRight">
                             <div className="accordion-item">
                                 <h2 className="accordion-header">
                                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
