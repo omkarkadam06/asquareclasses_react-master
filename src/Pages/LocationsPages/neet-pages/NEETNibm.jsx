@@ -2,8 +2,8 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
 import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 19.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET Page 13.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET page 4.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET page 6.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -40,7 +40,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETPimpleGurav() {
+function NEETNibm() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -71,54 +71,48 @@ function NEETPimpleGurav() {
   const whyCFeatures = [
   {
     Icon: Users,
-    title: "Specialist NEET Faculty",
-    description:
-      "Experienced instructors in Physics, Chemistry, and Biology committed to your success.",
+    title: "Experienced Faculty",
+    description: "Subject experts in Physics, Chemistry, and Biology.",
   },
   {
     Icon: BookOpen,
-    title: "Strong NCERT Foundation + NEET Strategy",
-    description:
-      "Clarify fundamentals and master competitive-level problem-solving.",
+    title: "NCERT-Centric Curriculum",
+    description: "Strong foundation with NEET-level problem-solving skills.",
   },
   {
     Icon: Target,
-    title: "Focused Learning with Small Batches",
-    description:
-      "Ensures personal attention, fast doubt resolution, and collaborative learning.",
+    title: "Small Batch Sizes",
+    description: "More personalized attention and effective doubt-solving.",
   },
   {
     Icon: BarChart,
-    title: "Consistent Progress Tracking",
-    description:
-      "Weekly tests, mock series, and performance analytics to chart your improvement.",
+    title: "Rigorous Testing",
+    description: "Weekly quizzes, chapter tests, and full-length mock exams.",
   },
   {
     Icon: Calendar,
-    title: "Flexible Coaching Modes",
-    description:
-      "Classroom and online batches to suit your preference and convenience.",
+    title: "Flexible Learning",
+    description: "Options for classroom-based or online NEET coaching.",
   },
   {
     Icon: Users,
-    title: "Holistic Academic Support",
-    description:
-      "Balancing NEET prep with board exams and exam mindset development.",
+    title: "Holistic Mentorship",
+    description: "Supporting both NEET prep and board exam readiness.",
   },
 ];
 
   const subjectsCovered = [
   {
     title: "Physics",
-    desc: "Strong theoretical grounding complemented by rigorous numerical practice.",
+    desc: "Concept clarity with regular numerical problem-solving.",
   },
   {
     title: "Chemistry",
-    desc: "Extensive preparation across Physical, Organic, and Inorganic branches with NEET layers.",
+    desc: "Detailed coverage of Physical, Organic, and Inorganic Chemistry.",
   },
   {
     title: "Biology",
-    desc: "NCERT-aligned content with emphasis on diagrammatic clarity, topic relevance, and scoring strategies.",
+    desc: "NCERT-based preparation with diagrams and scoring tips.",
   },
 ];
 
@@ -126,210 +120,242 @@ function NEETPimpleGurav() {
   {
     icon: Clock,
     title: "2-Year Integrated Course (Class 11 → 12)",
-    desc: "Lay a strong foundation and scale up through steady progress.",
+    desc: "Comprehensive foundation building and advanced NEET readiness.",
   },
   {
     icon: Target,
     title: "1-Year Target Course (Class 12)",
-    desc: "Fast-tracked preparation featuring structured mocks and review sessions.",
+    desc: "Rapid syllabus coverage and mock-based learning.",
   },
   {
     icon: School,
     title: "Crash Course (2–3 Months)",
-    desc: "Focused, high-yield sessions with past year questions and concise revision.",
+    desc: "Final-phase revision with PYQs and exam strategy sessions.",
   },
   {
     icon: CalendarSync,
     title: "Repeater/Dropper Batch",
-    desc: "Customized year-long preparation with full mock exposure and analytics support.",
+    desc: "Customized one-year program for repeat aspirants with mock tests and personal mentoring.",
   },
 ];
 
   const methodologySteps = [
   {
     Icon: Lightbulb,
-    title: "Concept-Based Learning",
-    description: "Compelling, concept-based classroom instruction.",
+    title: "Interactive, concept-focused classroom lectures",
+    description: "Engaging sessions aimed at conceptual clarity and understanding.",
   },
   {
     Icon: BookOpen,
-    title: "Practice & Assignments",
-    description: "Daily Practice Problems (DPPs) and actionable assignments.",
+    title: "Daily Practice Papers (DPPs) and structured assignments",
+    description: "Consistent practice to reinforce problem-solving and retention.",
   },
   {
     Icon: BarChart,
-    title: "Testing & Analytics",
-    description: "Chapter-wise tests, full-length mocks with detailed analytics.",
+    title: "Regular assessments with full mock exams and analytics",
+    description: "Frequent tests and performance analysis to track improvement.",
   },
   {
     Icon: MessageCircle,
-    title: "Doubt Resolution",
-    description: "One-on-one doubt sessions with faculty mentors.",
+    title: "Dedicated doubt-solving sessions with expert mentors",
+    description: "Personalized faculty guidance to resolve academic queries effectively.",
   },
   {
     Icon: Calendar,
-    title: "Progress Tracking",
-    description: "Performance tracking through regular parent-student reviews.",
+    title: "Parent–teacher reviews for performance updates",
+    description: "Regular meetings to monitor progress and ensure accountability.",
   },
 ];
 
   const faqData = [
   {
-    q: "Who can enroll in NEET coaching at ASQUARE Pimple Gurav?",
-    a: "Open to students in Class XI, Class XII, and repeat-year aspirants.",
+    q: "Who can enroll in NEET coaching at ASQUARE NIBM?",
+    a: "Students in Class XI, XII, and repeat aspirants.",
   },
   {
-    q: "What subjects are covered?",
-    a: "All NEET syllabus subjects—Physics, Chemistry, and Biology.",
+    q: "Which subjects are taught?",
+    a: "Physics, Chemistry, and Biology as per NEET syllabus.",
   },
   {
-    q: "Is mock testing included?",
-    a: "Absolutely—weekly tests, chapter quizzes, and full-length NEET mocks with performance insights.",
+    q: "Are mock tests part of the program?",
+    a: "Yes—weekly, monthly, and full-length mock exams with detailed feedback.",
   },
   {
-    q: "What types of batches are available?",
-    a: "We offer 2-year integrated, 1-year target, crash, and dropper/repeater programs.",
+    q: "What batches are available?",
+    a: "2-year, 1-year, crash, and dropper/repeater programs.",
   },
   {
-    q: "Are batches small?",
-    a: "Yes—designed for personalized learning and prompt doubt resolution.",
+    q: "How big are the batches?",
+    a: "Batches are kept small for better attention.",
   },
   {
     q: "Do parents get performance updates?",
-    a: "Yes—via regular performance reports and parent–teacher interactions.",
+    a: "Yes, through regular reports and PTMs.",
   },
   {
-    q: "Is online coaching an option?",
-    a: "Certainly—students can choose between classroom or online modes.",
+    q: "Is online NEET coaching available?",
+    a: "Yes—students can choose classroom or online mode.",
   },
 ];
 
 const gridFeatures = [
   {
     Icon: Users,
-    title: "Small class size to ensure attention-rich learning",
+    title: "Small batch sizes for focused learning",
     colorClass: "bg-gradient-blue",
   },
   {
     Icon: BookOpen,
-    title: "Updated and NEET-aligned study materials (printed + digital)",
+    title: "Updated NEET study materials in print + digital formats",
     colorClass: "bg-gradient-purple",
   },
   {
     Icon: Calendar,
-    title: "Structured PTMs and progress feedback for parents",
+    title: "Regular PTMs and performance updates for parents",
     colorClass: "bg-gradient-green",
   },
   {
     Icon: Award,
-    title: "Workshops on time efficiency, accuracy, and exam mindset",
+    title: "Workshops on time management, exam mindset, and accuracy",
     colorClass: "bg-gradient-orange",
   },
   {
     Icon: TrendingUp,
-    title: "Recognized for NEET coaching excellence across Pimple Gurav, Aundh, Baner, and PCMC regions",
+    title: "Recognized as one of the leading NEET coaching centres in NIBM, Kondhwa, Undri, Mohammedwadi, and South Pune",
     colorClass: "bg-gradient-red",
   },
   {
     Icon: Star,
-    title: "Expert NEET faculty guiding students through concept mastery and exam strategy",
+    title: "Expert NEET faculty with proven student success",
     colorClass: "bg-gradient-teal",
   },
 ];
-
 
   return (
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy
+          Best NEET Coaching Classes in NIBM Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy"
+          content="Best NEET Coaching Classes in NIBM Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the best NEET Coaching Classes in Pimple Gurav Pune. Expert mentors, mock tests, small batches, and online or classroom courses."
+          content="Join ASQUARE Academy for the best NEET coaching classes in NIBM Pune. Expert faculty, small batches, mock tests & personalized preparation for NEET success."
         />
         <meta
           name="keywords"
-          content="NEET coaching classes in pimple gurav pune Best NEET Coaching in pimple gurav pune Top NEET Coaching Classes pimple gurav puneNEET Advanced Preparation pimple gurav pune NEET Classes in pimple gurav pune Best NEET Classes in pimple gurav pune Top NEET Classes in pimple gurav pune"
+          content="NEET coaching classes in nibm pune Best NEET Coaching in nibm pune Top NEET Coaching Classes nibm pune NEET Advanced Preparation nibm pune NEET Classes in nibm pune Best NEET Classes in nibm pune Top NEET Classes in nibm pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{`
         {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune",
-  "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune",
-  "name": "NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy",
-  "description": "ASQUARE Academy offers the best NEET Coaching Classes in Pimple Gurav Pune with expert faculty, small batches, mock tests, and online/offline learning options.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "ASQUARE Academy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-    },
-    "sameAs": [
-      "https://www.instagram.com/asquarepune",
-      "https://www.facebook.com/asquarepune/"
-    ]
-  },
-  "mainEntity": [
+  "@graph": [
     {
       "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching Classes in Pimple Gurav Pune",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-nibm-pune#localbusiness",
+      "name": "ASQUARE Academy - NEET Coaching Classes in NIBM Pune",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "telephone": "+919766118877",
+      "telephone": "9766118877",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-nibm-pune",
+      "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Pimple Gurav",
-        "addressLocality": "Pune",
+        "addressLocality": "NIBM, Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411061",
-        "addressCountry": "IN"
+        "addressCountry": "India"
       },
-      "priceRange": "₹₹",
-      "openingHours": "Mo-Su 09:00-20:00",
       "sameAs": [
         "https://www.instagram.com/asquarepune",
         "https://www.facebook.com/asquarepune/"
       ]
     },
     {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-nibm-pune#webpage",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-nibm-pune",
+      "name": "NEET Coaching Classes in NIBM Pune | ASQUARE Academy",
+      "description": "ASQUARE Academy offers top NEET coaching classes in NIBM Pune with expert faculty, mock tests, and personalized attention for NEET aspirants."
+    },
+    {
       "@type": "EducationalOrganization",
       "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
-      "department": {
-        "@type": "EducationalOccupationalProgram",
-        "name": "NEET Coaching Program",
-        "educationalCredentialAwarded": "NEET Preparation Certificate",
-        "hasCourse": [
-          {
-            "@type": "Course",
-            "name": "NEET 2-Year Integrated Course",
-            "description": "A comprehensive 2-year integrated NEET course covering Physics, Chemistry, and Biology for Class XI–XII students."
-          },
-          {
-            "@type": "Course",
-            "name": "1-Year Target Batch",
-            "description": "Focused NEET preparation for Class XII students and repeaters aiming for top ranks."
-          },
-          {
-            "@type": "Course",
-            "name": "Crash Course",
-            "description": "Short-term crash course designed for NEET revision and rapid test practice."
-          },
-          {
-            "@type": "Course",
-            "name": "Dropper/Reaper Program",
-            "description": "Full-year NEET preparation batch designed for repeat-year aspirants."
-          }
-        ]
+      "url": "https://www.asquareclasses.com",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "9766118877",
+        "contactType": "Customer Service"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can enroll in NEET coaching at ASQUARE NIBM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students in Class XI, XII, and repeat aspirants can enroll in NEET coaching at ASQUARE NIBM Pune."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which subjects are taught?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Physics, Chemistry, and Biology are taught as per the NEET syllabus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mock tests part of the program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—weekly, monthly, and full-length mock exams are conducted with detailed feedback."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What batches are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE NIBM offers 2-year, 1-year, crash, and dropper/repeater programs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How big are the batches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Batches are kept small for better individual attention and effective learning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do parents get performance updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, parents receive regular performance reports and updates through PTMs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is online NEET coaching available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—students can choose between classroom and online NEET coaching at ASQUARE NIBM Pune."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -343,75 +369,14 @@ const gridFeatures = [
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "NEET Coaching",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes/"
+          "name": "NEET Coaching Classes in Pune",
+          "item": "https://www.asquareclasses.com/best-neet-coaching-classes-Institute-in-pune-maharashtra/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "NEET Coaching Classes in Pimple Gurav Pune",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who can enroll in NEET coaching at ASQUARE Pimple Gurav?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open to students in Class XI, Class XII, and repeat-year aspirants aiming for NEET success."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What subjects are covered?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The NEET syllabus includes Physics, Chemistry, and Biology with in-depth conceptual coverage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is mock testing included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, weekly tests, chapter quizzes, and full-length NEET mocks with performance analytics are provided."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What types of batches are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer 2-year integrated, 1-year target, crash, and dropper/repeater programs at ASQUARE Pimple Gurav."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are batches small?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, small batches ensure personalized attention and efficient doubt-solving."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do parents get performance updates?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parents receive regular reports and are invited for parent–teacher meetings for progress review."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is online coaching an option?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Certainly, students can choose between flexible classroom or online NEET coaching modes."
-          }
+          "name": "NEET Coaching Classes in NIBM Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-nibm-pune"
         }
       ]
     }
@@ -465,16 +430,16 @@ const gridFeatures = [
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Achieve NEET Excellence with {" "}
+                Achieve Your NEET Dream with {" "}
                 <span className="gradient-text-yellow d-inline-block">
-                ASQUARE Academy – Pimple Gurav Center
+                  ASQUARE Academy – NIBM Branch
                 </span>
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                Searching for the <strong> best NEET coaching in Pimple Gurav, Pune? </strong> At
+                Searching for the <strong> best NEET coaching in NIBM, Pune? </strong> At
                  <strong> ASQUARE Academy, </strong>
-                we offer structured NEET UG preparation that blends expert educators, strategic practice, and personalized mentoring.
-                 <strong> Best NEET Coaching Institutes in Pimple Gurav, </strong> our courses are designed to help students master NCERT concepts, practice systematically, and achieve top ranks in NEET-UG.
+                 provides focused NEET UG preparation designed for clarity, practice, and results. With our expert faculty, personalized mentoring, and proven track record
+                <strong> Best NEET Coaching Institutes in NIBM, </strong> our courses are designed to help students master NCERT concepts, practice systematically, and achieve top ranks in NEET-UG.
              </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -486,9 +451,9 @@ const gridFeatures = [
                  Students from
                   <strong>
                     {" "}
-                    Pimple Gurav, Aundh, Baner, Balewadi, Wakad, Pimpri, and the PCMC region {" "}
+                    NIBM Road, Kondhwa, Undri, Mohammedwadi, Wanowrie, Salunke Vihar, Fatima Nagar, and Camp {" "}
                   </strong>
-                   trust us to transform their medical aspirations into reality.
+                    trust ASQUARE Academy to achieve their medical aspirations.
                 </span>
               </div>
             </div>
@@ -506,7 +471,7 @@ const gridFeatures = [
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                Best NEET Coaching in Pimple Gurav?
+                Best NEET Coaching in NIBM?
               </h2>
 
               {isDesktop ? (
@@ -567,13 +532,13 @@ const gridFeatures = [
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span> ASQUARE Academy Pimple Gurav</span>
+            <span> ASQUARE Academy NIBM</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The<strong> NEET course at ASQUARE Academy, Pimple Gurav, </strong>
+              The<strong> NEET course at ASQUARE Academy, NIBM, </strong>
               offers complete preparation through concept-based teaching, regular testing, and doubt-clearing sessions.<br/>
               Our approach ensures every student strengthens their basics, practices consistently, and gains confidence for NEET.
             </p>
@@ -584,10 +549,10 @@ const gridFeatures = [
                 Students from
                 <strong>
                   {" "}
-                   Pimple Gurav, Aundh, Baner, Balewadi, Wakad, Pimpri, {" "}
+                    NIBM Road, Kondhwa, Undri, Mohammedwadi, Wanowrie, Salunke Vihar, Fatima Nagar, and Camp {" "}
                 </strong>
                 attend our classes for their proximity and the academy’s proven academic record in{" "}
-                <strong> NEET coaching across PCMC Pune. </strong>
+                <strong> NEET coaching across PCMC & Pune. </strong>
               </span>
             </p>
           </div>
@@ -600,23 +565,23 @@ const gridFeatures = [
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple Gurav
+              Course Details (NEET UG) - Top NEET Coaching Classes in NIBM
             </h3>
 
             <p className="fs-5">
               <strong>NEET UG</strong> is India’s national entrance test for{" "}
               <strong>
-                MBBS, BDS, BAMS, BHMS, and other allied medical courses.
+                MBBS, BDS, BAMS, and BHMS.
               </strong>
-              At <strong> ASQUARE Academy Pimple Gurav,</strong>
-             we follow a result-oriented teaching plan focusing on concept mastery, speed, and precision through consistent assessments and expert mentorship.
+              At <strong> NEET coaching centre in NIBM,</strong>
+            our structured program combines clarity of concepts, extensive practice, and smart strategy to help students secure top ranks.
             </p>
             <p className="fs-5">
               Our structured programs and experienced faculty make ASQUARE one of the{" "}
-              <strong> Top NEET Coaching Institutes in Pimple Gurav Pune. </strong>
+              <strong> NEET coaching institute in NIBM </strong>
             </p>
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Gurav
+              Subjects Covered in NEET Classes at NIBM
             </h4>
 
             <div className="mt-4">
@@ -633,7 +598,7 @@ const gridFeatures = [
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple Gurav
+              Program Duration and Batch Options — NEET Preparation in NIBM
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -660,7 +625,7 @@ const gridFeatures = [
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Gurav,
+              Best NEET Coaching in NIBM,
             </h3>
           </div>
 
@@ -687,25 +652,14 @@ const gridFeatures = [
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong> ASQUARE Academy – Pimple Gurav  </strong>
-              has consistently produced NEET toppers who secured admission into leading institutions such as {" "}
+              At <strong> ASQUARE Academy – NIBM  </strong>
+              has consistently delivered excellent NEET results, with students earning admission to {" "}
               <strong className="text-primary">
-                AIIMS, BJMC, AFMC, and DY Patil Medical College Pune.{" "}
+                AIIMS, prestigious government colleges, and renowned private institutions.{" "}
               </strong>
               Our structured test system, performance reviews, and goal-oriented mentoring make ASQUARE the
-              <strong> trusted NEET institutes in Pune’s western neighborhoods. </strong>
+              <strong> most trusted NEET coaching institutes in South Pune. </strong>
             </p>
-            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
-              <CheckCircle size={24} />
-              <p className="fs-5 fw-semibold mb-0">
-                Our unique combination of mentorship, structured learning, and
-                regular testing makes us one of the
-                <strong>
-                  {" "}
-                  Top NEET Coaching Centre in Alandi Pune.
-                </strong>
-              </p>
-            </div> */}
           </div>
         </div>
       </section>
@@ -725,7 +679,7 @@ const gridFeatures = [
               <p className="fs-5 text-white mb-4 lh op">
                 This 4-step methodology ensures that ASQUARE remains the {" "}
                 <strong>
-                  Top NEET Coaching Institute in Pimple Gurav and PCMC Pune.
+                  Top NEET Coaching Institute in NIBM and PCMC Pune.
                 </strong>
               </p>
               <a
@@ -758,7 +712,7 @@ const gridFeatures = [
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Gurav.
+              Top NEET Coaching Institutes in NIBM.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -788,23 +742,23 @@ const gridFeatures = [
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll <span> ASQUARE Academy – Pimple Gurav Today </span>
+            Join <span> ASQUARE Academy – NIBM Today </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              Take the first step toward your medical career with the{" "}
-              <strong> best NEET coaching in Pimple Gurav, Pune.  </strong>
-             With expert teaching, strategic planning, and a supportive environment, ASQUARE Academy stands by your side for NEET success.
+              Start your journey with the {" "}
+              <strong> best NEET coaching in NIBM, Pune  </strong>
+             With expert teaching, structured study plans, and proven outcomes, ASQUARE Academy is your partner in success.
              </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                 Easily accessible for students from {" "}
+                 Accessible from {" "}
                 <strong>
-                  {" "}Pimple Gurav, Aundh, Baner, Balewadi, Wakad, and PCMC locations.
+                  {" "} NIBM Road, Kondhwa, Undri, Mohammedwadi, Wanowrie, Salunke Vihar, Fatima Nagar, and Camp.
                 </strong>
               </span>
             </p>
@@ -812,7 +766,7 @@ const gridFeatures = [
 
           {/* Subheading */}
           <h4 className="fw-bold text-primary mb-4">
-            Secure Your Seat Now — Limited Availability!
+            Admissions Open – Limited Seats Available!
           </h4>
 
           {/* CTA Button */}
@@ -830,4 +784,4 @@ const gridFeatures = [
   );
 }
 
-export default NEETPimpleGurav;
+export default NEETNibm;

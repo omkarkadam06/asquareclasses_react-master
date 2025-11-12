@@ -1,9 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 19.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET Page 13.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC4.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile4.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 21.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET Page 2.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -12,7 +12,6 @@ import {
   Clock,
   Lightbulb,
   MapPin,
-  MessageCircle,
   Target,
   Users,
   School,
@@ -40,7 +39,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETPimpleGurav() {
+function NEETFatima() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -71,265 +70,273 @@ function NEETPimpleGurav() {
   const whyCFeatures = [
   {
     Icon: Users,
-    title: "Specialist NEET Faculty",
+    title: "Subject Specialists",
     description:
-      "Experienced instructors in Physics, Chemistry, and Biology committed to your success.",
+      "Separate, highly experienced faculty for Physics, Chemistry, and Biology.",
   },
   {
     Icon: BookOpen,
-    title: "Strong NCERT Foundation + NEET Strategy",
+    title: "Smart Study Plans",
     description:
-      "Clarify fundamentals and master competitive-level problem-solving.",
+      "Curriculum designed around NCERT and NEET exam trends.",
   },
   {
     Icon: Target,
-    title: "Focused Learning with Small Batches",
+    title: "Individual Attention",
     description:
-      "Ensures personal attention, fast doubt resolution, and collaborative learning.",
+      "Small batch sizes with focused doubt-solving sessions.",
   },
   {
     Icon: BarChart,
-    title: "Consistent Progress Tracking",
+    title: "Regular Testing System",
     description:
-      "Weekly tests, mock series, and performance analytics to chart your improvement.",
+      "Weekly quizzes, monthly mocks, and performance reviews.",
   },
   {
     Icon: Calendar,
-    title: "Flexible Coaching Modes",
+    title: "Updated Learning Resources",
     description:
-      "Classroom and online batches to suit your preference and convenience.",
+      "Comprehensive study material in both print and digital format.",
   },
   {
-    Icon: Users,
-    title: "Holistic Academic Support",
+    Icon: MapPin,
+    title: "Convenient Location",
     description:
-      "Balancing NEET prep with board exams and exam mindset development.",
+      "Easily accessible from Wanowrie, Camp, and NIBM for South Pune students.",
   },
 ];
 
   const subjectsCovered = [
   {
     title: "Physics",
-    desc: "Strong theoretical grounding complemented by rigorous numerical practice.",
+    desc: "Core conceptual clarity with problem-solving drills.",
   },
   {
     title: "Chemistry",
-    desc: "Extensive preparation across Physical, Organic, and Inorganic branches with NEET layers.",
+    desc: "Detailed coverage of Physical, Organic, and Inorganic Chemistry.",
   },
   {
     title: "Biology",
-    desc: "NCERT-aligned content with emphasis on diagrammatic clarity, topic relevance, and scoring strategies.",
+    desc: "NCERT-based syllabus with diagrams, scoring chapters, and applied examples.",
   },
 ];
 
   const programDurations = [
   {
     icon: Clock,
-    title: "2-Year Integrated Course (Class 11 → 12)",
-    desc: "Lay a strong foundation and scale up through steady progress.",
+    title: "2-Year Foundation & NEET Prep (Class 11 → 12)",
+    desc: "Build a strong base and grow into exam-level preparation.",
   },
   {
     icon: Target,
-    title: "1-Year Target Course (Class 12)",
-    desc: "Fast-tracked preparation featuring structured mocks and review sessions.",
+    title: "1-Year NEET Target Program (Class 12)",
+    desc: "Focused curriculum to cover the syllabus with tests and revisions.",
+  },
+  {
+    icon: CalendarSync,
+    title: "Dropper/Repeater Batch",
+    desc: "One-year intensive program with continuous testing and one-on-one mentoring.",
   },
   {
     icon: School,
     title: "Crash Course (2–3 Months)",
-    desc: "Focused, high-yield sessions with past year questions and concise revision.",
-  },
-  {
-    icon: CalendarSync,
-    title: "Repeater/Dropper Batch",
-    desc: "Customized year-long preparation with full mock exposure and analytics support.",
+    desc: "Rapid-fire revision with PYQs, mock drills, and last-minute strategies.",
   },
 ];
 
   const methodologySteps = [
   {
     Icon: Lightbulb,
-    title: "Concept-Based Learning",
-    description: "Compelling, concept-based classroom instruction.",
+    title: "Conceptual Learning",
+    description: "Interactive classroom sessions to simplify complex topics.",
   },
   {
     Icon: BookOpen,
-    title: "Practice & Assignments",
-    description: "Daily Practice Problems (DPPs) and actionable assignments.",
+    title: "Practice-Driven Training",
+    description: "Daily Practice Papers (DPPs) and structured assignments.",
   },
   {
     Icon: BarChart,
-    title: "Testing & Analytics",
-    description: "Chapter-wise tests, full-length mocks with detailed analytics.",
+    title: "Performance Monitoring",
+    description: "Frequent assessments with detailed feedback.",
   },
   {
-    Icon: MessageCircle,
-    title: "Doubt Resolution",
-    description: "One-on-one doubt sessions with faculty mentors.",
+    Icon: Award,
+    title: "Exam Techniques",
+    description: "Workshops on time management, speed building, and accuracy.",
   },
   {
-    Icon: Calendar,
-    title: "Progress Tracking",
-    description: "Performance tracking through regular parent-student reviews.",
+    Icon: Users,
+    title: "Mentorship Support",
+    description: "Continuous motivation and guidance from faculty and mentors.",
   },
 ];
 
   const faqData = [
   {
-    q: "Who can enroll in NEET coaching at ASQUARE Pimple Gurav?",
-    a: "Open to students in Class XI, Class XII, and repeat-year aspirants.",
+    q: "Is ASQUARE Academy in Fatima Nagar suitable for beginners?",
+    a: "Yes, we offer foundation-level and integrated courses starting from Class 11 to build strong fundamentals.",
   },
   {
-    q: "What subjects are covered?",
-    a: "All NEET syllabus subjects—Physics, Chemistry, and Biology.",
+    q: "How do you ensure students stay consistent?",
+    a: "We conduct weekly tests, monthly reviews, and parent meetings to ensure accountability and steady progress.",
   },
   {
-    q: "Is mock testing included?",
-    a: "Absolutely—weekly tests, chapter quizzes, and full-length NEET mocks with performance insights.",
+    q: "Are crash courses helpful for NEET preparation?",
+    a: "Yes, crash courses are designed for last-minute revision and practice with mock exams and past-year questions.",
   },
   {
-    q: "What types of batches are available?",
-    a: "We offer 2-year integrated, 1-year target, crash, and dropper/repeater programs.",
+    q: "What makes the Fatima Nagar branch unique?",
+    a: "Its location is convenient for students from Wanowrie, Camp, Hadapsar, and NIBM and the branch is known for small, focused batches.",
   },
   {
-    q: "Are batches small?",
-    a: "Yes—designed for personalized learning and prompt doubt resolution.",
-  },
-  {
-    q: "Do parents get performance updates?",
-    a: "Yes—via regular performance reports and parent–teacher interactions.",
-  },
-  {
-    q: "Is online coaching an option?",
-    a: "Certainly—students can choose between classroom or online modes.",
+    q: "Does ASQUARE provide study material?",
+    a: "Yes, updated NEET-focused study material is provided in both printed and digital formats.",
   },
 ];
 
 const gridFeatures = [
   {
     Icon: Users,
-    title: "Small class size to ensure attention-rich learning",
+    title: "Small batch sizes for personal focus",
     colorClass: "bg-gradient-blue",
   },
   {
     Icon: BookOpen,
-    title: "Updated and NEET-aligned study materials (printed + digital)",
+    title: "Updated syllabus coverage with NEET pattern emphasis",
     colorClass: "bg-gradient-purple",
   },
   {
     Icon: Calendar,
-    title: "Structured PTMs and progress feedback for parents",
+    title: "Detailed progress reports for parents through PTMs",
     colorClass: "bg-gradient-green",
   },
   {
     Icon: Award,
-    title: "Workshops on time efficiency, accuracy, and exam mindset",
+    title: "Availability of both offline and online batches",
     colorClass: "bg-gradient-orange",
   },
   {
     Icon: TrendingUp,
-    title: "Recognized for NEET coaching excellence across Pimple Gurav, Aundh, Baner, and PCMC regions",
+    title: "A proven record of students securing admissions in AIIMS, government, and private medical colleges",
     colorClass: "bg-gradient-red",
   },
   {
     Icon: Star,
-    title: "Expert NEET faculty guiding students through concept mastery and exam strategy",
+    title: "Expert faculty with years of NEET coaching experience",
     colorClass: "bg-gradient-teal",
   },
 ];
-
 
   return (
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy
+          Best NEET Coaching Classes in Fatima Nagar Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Fatima Nagar Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the best NEET Coaching Classes in Pimple Gurav Pune. Expert mentors, mock tests, small batches, and online or classroom courses."
+          content="Join ASQUARE Academy for top NEET coaching classes in Fatima Nagar Pune. Expert faculty, small batches & crash courses for strong NEET preparation."
         />
         <meta
           name="keywords"
-          content="NEET coaching classes in pimple gurav pune Best NEET Coaching in pimple gurav pune Top NEET Coaching Classes pimple gurav puneNEET Advanced Preparation pimple gurav pune NEET Classes in pimple gurav pune Best NEET Classes in pimple gurav pune Top NEET Classes in pimple gurav pune"
+          content="NEET coaching classes in Fatima Nagar pune Best NEET Coaching in Fatima Nagar pune Top NEET Coaching Classes Fatima Nagar pune NEET Advanced Preparation Fatima Nagar pune NEET Classes in Fatima Nagar pune Best NEET Classes in Fatima Nagar pune Top NEET Classes in Fatima Nagar pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{`
         {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune",
-  "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune",
-  "name": "NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy",
-  "description": "ASQUARE Academy offers the best NEET Coaching Classes in Pimple Gurav Pune with expert faculty, small batches, mock tests, and online/offline learning options.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "ASQUARE Academy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-    },
-    "sameAs": [
-      "https://www.instagram.com/asquarepune",
-      "https://www.facebook.com/asquarepune/"
-    ]
-  },
-  "mainEntity": [
+  "@graph": [
     {
       "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching Classes in Pimple Gurav Pune",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-fatima-nagar-pune#localbusiness",
+      "name": "ASQUARE Academy - NEET Coaching Classes in Fatima Nagar Pune",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "telephone": "+919766118877",
+      "telephone": "9766118877",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-fatima-nagar-pune",
+      "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Pimple Gurav",
-        "addressLocality": "Pune",
+        "addressLocality": "Fatima Nagar, Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411061",
-        "addressCountry": "IN"
+        "addressCountry": "India"
       },
-      "priceRange": "₹₹",
-      "openingHours": "Mo-Su 09:00-20:00",
       "sameAs": [
         "https://www.instagram.com/asquarepune",
         "https://www.facebook.com/asquarepune/"
       ]
     },
     {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-fatima-nagar-pune#webpage",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-fatima-nagar-pune",
+      "name": "NEET Coaching Classes in Fatima Nagar Pune | ASQUARE Academy",
+      "description": "ASQUARE Academy offers the best NEET coaching classes in Fatima Nagar Pune with small batches, expert faculty, and customized learning programs."
+    },
+    {
       "@type": "EducationalOrganization",
       "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
-      "department": {
-        "@type": "EducationalOccupationalProgram",
-        "name": "NEET Coaching Program",
-        "educationalCredentialAwarded": "NEET Preparation Certificate",
-        "hasCourse": [
-          {
-            "@type": "Course",
-            "name": "NEET 2-Year Integrated Course",
-            "description": "A comprehensive 2-year integrated NEET course covering Physics, Chemistry, and Biology for Class XI–XII students."
-          },
-          {
-            "@type": "Course",
-            "name": "1-Year Target Batch",
-            "description": "Focused NEET preparation for Class XII students and repeaters aiming for top ranks."
-          },
-          {
-            "@type": "Course",
-            "name": "Crash Course",
-            "description": "Short-term crash course designed for NEET revision and rapid test practice."
-          },
-          {
-            "@type": "Course",
-            "name": "Dropper/Reaper Program",
-            "description": "Full-year NEET preparation batch designed for repeat-year aspirants."
-          }
-        ]
+      "url": "https://www.asquareclasses.com",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "9766118877",
+        "contactType": "Customer Service"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is ASQUARE Academy in Fatima Nagar suitable for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ASQUARE Academy offers foundation-level and integrated NEET courses starting from Class 11 to build strong subject fundamentals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure students stay consistent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We conduct weekly tests, monthly performance reviews, and parent–teacher meetings to ensure steady student progress and accountability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are crash courses helpful for NEET preparation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our crash courses are ideal for last-minute revision and include full-length mock exams and practice with past-year questions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes the Fatima Nagar branch unique?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The branch’s convenient location and small, focused batches make it a top choice for students from Wanowrie, Camp, Hadapsar, and NIBM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ASQUARE provide study material?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, updated NEET-specific study material is provided in both printed and digital formats for comprehensive preparation."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -343,80 +350,20 @@ const gridFeatures = [
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "NEET Coaching",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes/"
+          "name": "NEET Coaching Classes in Pune",
+          "item": "https://www.asquareclasses.com/best-neet-coaching-classes-Institute-in-pune-maharashtra/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "NEET Coaching Classes in Pimple Gurav Pune",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who can enroll in NEET coaching at ASQUARE Pimple Gurav?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open to students in Class XI, Class XII, and repeat-year aspirants aiming for NEET success."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What subjects are covered?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The NEET syllabus includes Physics, Chemistry, and Biology with in-depth conceptual coverage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is mock testing included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, weekly tests, chapter quizzes, and full-length NEET mocks with performance analytics are provided."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What types of batches are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer 2-year integrated, 1-year target, crash, and dropper/repeater programs at ASQUARE Pimple Gurav."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are batches small?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, small batches ensure personalized attention and efficient doubt-solving."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do parents get performance updates?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parents receive regular reports and are invited for parent–teacher meetings for progress review."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is online coaching an option?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Certainly, students can choose between flexible classroom or online NEET coaching modes."
-          }
+          "name": "NEET Coaching Classes in Fatima Nagar Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-fatima-nagar-pune"
         }
       ]
     }
   ]
 }
+
         `}</script>
       </Helmet>
       <Navbar />
@@ -465,16 +412,16 @@ const gridFeatures = [
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Achieve NEET Excellence with {" "}
+                Turn Your NEET Ambition into Success with {" "}
                 <span className="gradient-text-yellow d-inline-block">
-                ASQUARE Academy – Pimple Gurav Center
+                  ASQUARE Academy
                 </span>
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                Searching for the <strong> best NEET coaching in Pimple Gurav, Pune? </strong> At
+                If you are looking for the  <strong> best NEET coaching in Fatima Nagar, Pune? </strong> At
                  <strong> ASQUARE Academy, </strong>
-                we offer structured NEET UG preparation that blends expert educators, strategic practice, and personalized mentoring.
-                 <strong> Best NEET Coaching Institutes in Pimple Gurav, </strong> our courses are designed to help students master NCERT concepts, practice systematically, and achieve top ranks in NEET-UG.
+                 s your trusted partner. With years of experience in medical entrance coaching, we bring together expert faculty, proven strategies, and personalized attention. 
+                <strong> Best NEET Coaching Institutes in Fatima Nagar, </strong> We don’t just teach; we mentor, motivate, and prepare you to clear NEET with confidence.
              </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -486,9 +433,9 @@ const gridFeatures = [
                  Students from
                   <strong>
                     {" "}
-                    Pimple Gurav, Aundh, Baner, Balewadi, Wakad, Pimpri, and the PCMC region {" "}
+                    Fatima Nagar, Wanowrie, Camp, Hadapsar, NIBM Road, Kondhwa, Lullanagar, Salunke Vihar, and BT Kawade Roadh {" "}
                   </strong>
-                   trust us to transform their medical aspirations into reality.
+                    have already benefited from our structured programs.
                 </span>
               </div>
             </div>
@@ -506,7 +453,7 @@ const gridFeatures = [
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                Best NEET Coaching in Pimple Gurav?
+                Best NEET Coaching in Fatima Nagar?
               </h2>
 
               {isDesktop ? (
@@ -567,13 +514,13 @@ const gridFeatures = [
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span> ASQUARE Academy Pimple Gurav</span>
+            <span> ASQUARE Academy Fatima Nagar</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The<strong> NEET course at ASQUARE Academy, Pimple Gurav, </strong>
+              The<strong> NEET course at ASQUARE Academy, Fatima Nagar, </strong>
               offers complete preparation through concept-based teaching, regular testing, and doubt-clearing sessions.<br/>
               Our approach ensures every student strengthens their basics, practices consistently, and gains confidence for NEET.
             </p>
@@ -584,10 +531,10 @@ const gridFeatures = [
                 Students from
                 <strong>
                   {" "}
-                   Pimple Gurav, Aundh, Baner, Balewadi, Wakad, Pimpri, {" "}
+                    Fatima Nagar, Wanowrie, Camp, Hadapsar, NIBM Road, Kondhwa, Lullanagar, Salunke Vihar, and BT Kawade Road {" "}
                 </strong>
                 attend our classes for their proximity and the academy’s proven academic record in{" "}
-                <strong> NEET coaching across PCMC Pune. </strong>
+                <strong> NEET coaching across PCMC & Pune. </strong>
               </span>
             </p>
           </div>
@@ -600,23 +547,23 @@ const gridFeatures = [
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple Gurav
+              Course Details (NEET UG) - Top NEET Coaching Classes in Fatima Nagar
             </h3>
 
             <p className="fs-5">
               <strong>NEET UG</strong> is India’s national entrance test for{" "}
               <strong>
-                MBBS, BDS, BAMS, BHMS, and other allied medical courses.
+               MBBS, BDS, BAMS, BHMS, and allied fields.
               </strong>
-              At <strong> ASQUARE Academy Pimple Gurav,</strong>
-             we follow a result-oriented teaching plan focusing on concept mastery, speed, and precision through consistent assessments and expert mentorship.
+              At <strong> NEET coaching centre in Fatima Nagar,</strong>
+            our structured program combines clarity of concepts, extensive practice, and smart strategy to help students secure top ranks.
             </p>
             <p className="fs-5">
               Our structured programs and experienced faculty make ASQUARE one of the{" "}
-              <strong> Top NEET Coaching Institutes in Pimple Gurav Pune. </strong>
+              <strong> NEET coaching institute in Fatima Nagar </strong>
             </p>
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Gurav
+              Subjects Covered in NEET Classes at Fatima Nagar
             </h4>
 
             <div className="mt-4">
@@ -633,7 +580,7 @@ const gridFeatures = [
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple Gurav
+              Program Duration and Batch Options — NEET Preparation in Fatima Nagar
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -660,7 +607,7 @@ const gridFeatures = [
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Gurav,
+              Best NEET Coaching in Fatima Nagar,
             </h3>
           </div>
 
@@ -687,25 +634,14 @@ const gridFeatures = [
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong> ASQUARE Academy – Pimple Gurav  </strong>
-              has consistently produced NEET toppers who secured admission into leading institutions such as {" "}
+              At <strong> ASQUARE Academy – Fatima Nagar  </strong>
+              has consistently delivered excellent NEET results, with students earning admission to {" "}
               <strong className="text-primary">
-                AIIMS, BJMC, AFMC, and DY Patil Medical College Pune.{" "}
+                AIIMS, state-run government medical colleges, and reputed private institutions. {" "}
               </strong>
               Our structured test system, performance reviews, and goal-oriented mentoring make ASQUARE the
-              <strong> trusted NEET institutes in Pune’s western neighborhoods. </strong>
+              <strong> leading NEET institutes in Pune. </strong>
             </p>
-            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
-              <CheckCircle size={24} />
-              <p className="fs-5 fw-semibold mb-0">
-                Our unique combination of mentorship, structured learning, and
-                regular testing makes us one of the
-                <strong>
-                  {" "}
-                  Top NEET Coaching Centre in Alandi Pune.
-                </strong>
-              </p>
-            </div> */}
           </div>
         </div>
       </section>
@@ -725,7 +661,7 @@ const gridFeatures = [
               <p className="fs-5 text-white mb-4 lh op">
                 This 4-step methodology ensures that ASQUARE remains the {" "}
                 <strong>
-                  Top NEET Coaching Institute in Pimple Gurav and PCMC Pune.
+                  Top NEET Coaching Institute in Fatima Nagar and PCMC Pune.
                 </strong>
               </p>
               <a
@@ -758,7 +694,7 @@ const gridFeatures = [
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Gurav.
+              Top NEET Coaching Institutes in Fatima Nagar.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -788,23 +724,23 @@ const gridFeatures = [
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll <span> ASQUARE Academy – Pimple Gurav Today </span>
+            Enroll Today at <span> ASQUARE Academy – Fatima Nagar </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              Take the first step toward your medical career with the{" "}
-              <strong> best NEET coaching in Pimple Gurav, Pune.  </strong>
-             With expert teaching, strategic planning, and a supportive environment, ASQUARE Academy stands by your side for NEET success.
+              Your dream of becoming a doctor begins with the right coaching. Join the {" "}
+              <strong> top NEET coaching in Fatima Nagar, Pune  </strong>
+             at ASQUARE Academy and prepare with expert mentors, structured programs, and a supportive learning environment.
              </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                 Easily accessible for students from {" "}
+                 Convenient for students from {" "}
                 <strong>
-                  {" "}Pimple Gurav, Aundh, Baner, Balewadi, Wakad, and PCMC locations.
+                  {" "} Fatima Nagar, Wanowrie, Camp, Hadapsar, NIBM Road, Kondhwa, Lullanagar, Salunke Vihar and BT Kawade Road.
                 </strong>
               </span>
             </p>
@@ -812,7 +748,7 @@ const gridFeatures = [
 
           {/* Subheading */}
           <h4 className="fw-bold text-primary mb-4">
-            Secure Your Seat Now — Limited Availability!
+            Admissions Open – Limited Seats Available!
           </h4>
 
           {/* CTA Button */}
@@ -830,4 +766,4 @@ const gridFeatures = [
   );
 }
 
-export default NEETPimpleGurav;
+export default NEETFatima;

@@ -1,9 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC2.jpeg";
-import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile2.jpeg";
-import image1 from "../../../Assets/locationPageImages/neet/NEET Page 19.jpeg";
-import image2 from "../../../Assets/locationPageImages/neet/NEET Page 13.jpeg";
+import locationBGImage from "../../../Assets/locationPageImages/neet/NEET slider PC.jpeg";
+import MobileBGImage from "../../../Assets/locationPageImages/neet/NEET slider mobile.jpeg";
+import image1 from "../../../Assets/locationPageImages/neet/NEET Page 2.jpeg";
+import image2 from "../../../Assets/locationPageImages/neet/NEET Page 8.jpeg";
 import {
   BarChart,
   BookOpen,
@@ -40,7 +40,7 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
-function NEETPimpleGurav() {
+function NEETKharadi() {
   const canonicalUrl = window.location.origin + window.location.pathname;
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
@@ -71,265 +71,309 @@ function NEETPimpleGurav() {
   const whyCFeatures = [
   {
     Icon: Users,
-    title: "Specialist NEET Faculty",
+    title: "Expert Mentors",
     description:
-      "Experienced instructors in Physics, Chemistry, and Biology committed to your success.",
+      "Highly experienced faculty for Physics, Chemistry, and Biology.",
   },
   {
     Icon: BookOpen,
-    title: "Strong NCERT Foundation + NEET Strategy",
+    title: "Structured NEET Curriculum",
     description:
-      "Clarify fundamentals and master competitive-level problem-solving.",
+      "NCERT-based coverage with advanced exam-oriented training.",
   },
   {
     Icon: Target,
-    title: "Focused Learning with Small Batches",
+    title: "Personalized Attention",
     description:
-      "Ensures personal attention, fast doubt resolution, and collaborative learning.",
+      "Small batch sizes with one-on-one doubt resolution.",
   },
   {
     Icon: BarChart,
-    title: "Consistent Progress Tracking",
+    title: "Performance Tracking",
     description:
-      "Weekly tests, mock series, and performance analytics to chart your improvement.",
+      "Weekly tests, monthly mocks, and detailed performance reviews.",
   },
   {
     Icon: Calendar,
-    title: "Flexible Coaching Modes",
+    title: "Flexible Learning",
     description:
-      "Classroom and online batches to suit your preference and convenience.",
+      "Classroom and online programs available.",
   },
   {
     Icon: Users,
-    title: "Holistic Academic Support",
+    title: "Balanced Guidance",
     description:
-      "Balancing NEET prep with board exams and exam mindset development.",
+      "Preparation strategies that support both NEET and board exams.",
   },
 ];
 
   const subjectsCovered = [
   {
     title: "Physics",
-    desc: "Strong theoretical grounding complemented by rigorous numerical practice.",
+    desc: "Concept-driven instruction paired with structured numerical practice.",
   },
   {
     title: "Chemistry",
-    desc: "Extensive preparation across Physical, Organic, and Inorganic branches with NEET layers.",
+    desc: "Complete coverage of Physical, Organic, and Inorganic Chemistry with NEET-level depth.",
   },
   {
     title: "Biology",
-    desc: "NCERT-aligned content with emphasis on diagrammatic clarity, topic relevance, and scoring strategies.",
+    desc: "NCERT-aligned content with emphasis on diagrams, scoring strategies, and high-yield areas.",
   },
 ];
 
   const programDurations = [
   {
     icon: Clock,
-    title: "2-Year Integrated Course (Class 11 → 12)",
-    desc: "Lay a strong foundation and scale up through steady progress.",
+    title: "2-Year Integrated Program (Class 11 → 12)",
+    desc: "Build a solid foundation and advanced exam readiness.",
   },
   {
     icon: Target,
-    title: "1-Year Target Course (Class 12)",
-    desc: "Fast-tracked preparation featuring structured mocks and review sessions.",
+    title: "1-Year NEET Target Program (Class 12)",
+    desc: "Fast-track syllabus coverage with test-based learning.",
+  },
+  {
+    icon: CalendarSync,
+    title: "Dropper/Repeater Course",
+    desc: "One-year intensive program with rigorous revision and test analysis.",
   },
   {
     icon: School,
     title: "Crash Course (2–3 Months)",
-    desc: "Focused, high-yield sessions with past year questions and concise revision.",
-  },
-  {
-    icon: CalendarSync,
-    title: "Repeater/Dropper Batch",
-    desc: "Customized year-long preparation with full mock exposure and analytics support.",
+    desc: "High-impact revision, PYQs, and exam strategies.",
   },
 ];
 
   const methodologySteps = [
   {
     Icon: Lightbulb,
-    title: "Concept-Based Learning",
-    description: "Compelling, concept-based classroom instruction.",
+    title: "Interactive, concept-based classroom lectures",
+    description: "Engaging sessions focused on conceptual clarity and understanding.",
   },
   {
     Icon: BookOpen,
-    title: "Practice & Assignments",
-    description: "Daily Practice Problems (DPPs) and actionable assignments.",
+    title: "Daily Practice Papers (DPPs) and structured assignments",
+    description: "Consistent practice to strengthen problem-solving and retention.",
   },
   {
     Icon: BarChart,
-    title: "Testing & Analytics",
-    description: "Chapter-wise tests, full-length mocks with detailed analytics.",
+    title: "Regular assessments with analytics for improvement",
+    description: "Chapter-wise tests and full-length mocks to track progress effectively.",
   },
   {
     Icon: MessageCircle,
-    title: "Doubt Resolution",
-    description: "One-on-one doubt sessions with faculty mentors.",
+    title: "Faculty-led doubt-clearing sessions",
+    description: "Personalized sessions to address and resolve academic doubts promptly.",
   },
   {
     Icon: Calendar,
-    title: "Progress Tracking",
-    description: "Performance tracking through regular parent-student reviews.",
+    title: "Parent–teacher progress meetings for accountability",
+    description: "Frequent meetings to ensure students stay on track and achieve growth.",
   },
 ];
 
   const faqData = [
   {
-    q: "Who can enroll in NEET coaching at ASQUARE Pimple Gurav?",
-    a: "Open to students in Class XI, Class XII, and repeat-year aspirants.",
+    q: "Is ASQUARE Kharadi suitable for beginners in Class 11?",
+    a: "Yes, our 2-year integrated program is ideal for Class 11 students starting early with NEET coaching classes in Kharadi Pune. It builds strong fundamentals for NEET Advanced Preparation in Kharadi Pune.",
   },
   {
-    q: "What subjects are covered?",
-    a: "All NEET syllabus subjects—Physics, Chemistry, and Biology.",
+    q: "Do you provide evening or weekend batches?",
+    a: "Yes, ASQUARE Academy offers flexible batch timings, including evening and weekend options, making us one of the best NEET coaching in Kharadi Pune for students managing school or college.",
   },
   {
-    q: "Is mock testing included?",
-    a: "Absolutely—weekly tests, chapter quizzes, and full-length NEET mocks with performance insights.",
+    q: "Are crash courses offered at the Kharadi branch?",
+    a: "Yes, we conduct intensive crash courses before exams for revision and test drills. These short-term programs are part of our top NEET coaching classes in Kharadi Pune.",
   },
   {
-    q: "What types of batches are available?",
-    a: "We offer 2-year integrated, 1-year target, crash, and dropper/repeater programs.",
+    q: "How do you support repeater students?",
+    a: "Our dropper batch covers the complete NEET syllabus with frequent tests and personalized guidance, ensuring effective NEET Advanced Preparation in Kharadi Pune.",
   },
   {
-    q: "Are batches small?",
-    a: "Yes—designed for personalized learning and prompt doubt resolution.",
+    q: "Can students from Viman Nagar or Wagholi join the Kharadi branch?",
+    a: "Absolutely. Many students from Viman Nagar, Wagholi, and nearby East Pune areas attend our best NEET classes in Kharadi Pune for expert mentoring and proven results.",
   },
   {
-    q: "Do parents get performance updates?",
-    a: "Yes—via regular performance reports and parent–teacher interactions.",
+    q: "What subjects are taught in NEET classes at Kharadi?",
+    a: "Our NEET classes in Kharadi Pune cover Physics, Chemistry, and Biology in-depth, helping students strengthen conceptual understanding and exam-solving accuracy.",
   },
   {
-    q: "Is online coaching an option?",
-    a: "Certainly—students can choose between classroom or online modes.",
+    q: "Do you offer online NEET coaching options?",
+    a: "Yes, students can choose between classroom and online learning modes at ASQUARE, making us one of the top NEET classes in Kharadi Pune for flexible preparation.",
+  },
+  {
+    q: "Why is ASQUARE considered the best NEET coaching in Kharadi Pune?",
+    a: "With experienced faculty, small batches, regular testing, and consistent results, ASQUARE Academy is recognized among the best NEET coaching classes in Kharadi Pune.",
   },
 ];
 
 const gridFeatures = [
   {
     Icon: Users,
-    title: "Small class size to ensure attention-rich learning",
+    title: "Small batches for focused mentoring",
     colorClass: "bg-gradient-blue",
   },
   {
     Icon: BookOpen,
-    title: "Updated and NEET-aligned study materials (printed + digital)",
+    title: "Comprehensive NEET study material (digital + print)",
     colorClass: "bg-gradient-purple",
   },
   {
     Icon: Calendar,
-    title: "Structured PTMs and progress feedback for parents",
+    title: "Regular updates to parents on student progress",
     colorClass: "bg-gradient-green",
   },
   {
     Icon: Award,
-    title: "Workshops on time efficiency, accuracy, and exam mindset",
+    title: "Workshops on accuracy, exam temperament, and time management",
     colorClass: "bg-gradient-orange",
   },
   {
     Icon: TrendingUp,
-    title: "Recognized for NEET coaching excellence across Pimple Gurav, Aundh, Baner, and PCMC regions",
+    title: "Recognized as one of the top NEET coaching institutes in Kharadi, Viman Nagar, Wagholi, and East Pune",
     colorClass: "bg-gradient-red",
   },
   {
     Icon: Star,
-    title: "Expert NEET faculty guiding students through concept mastery and exam strategy",
+    title: "Expert NEET faculty with proven student success",
     colorClass: "bg-gradient-teal",
   },
 ];
-
 
   return (
     <>
       <Helmet>
         <title>
-          Best NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy
+          Best NEET Coaching Classes in Kharadi Pune | ASQUARE Academy
         </title>
         <meta
           name="title"
-          content="Best NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy"
+          content="Best NEET Coaching Classes in Kharadi Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy for the best NEET Coaching Classes in Pimple Gurav Pune. Expert mentors, mock tests, small batches, and online or classroom courses."
+          content="Join ASQUARE Academy for top NEET coaching classes in Kharadi Pune. Expert faculty, small batches & online/offline programs for NEET Advanced Preparation."
         />
         <meta
           name="keywords"
-          content="NEET coaching classes in pimple gurav pune Best NEET Coaching in pimple gurav pune Top NEET Coaching Classes pimple gurav puneNEET Advanced Preparation pimple gurav pune NEET Classes in pimple gurav pune Best NEET Classes in pimple gurav pune Top NEET Classes in pimple gurav pune"
+          content="NEET coaching classes in kharadi pune Best NEET Coaching in kharadi pune Top NEET Coaching Classes kharadi pune NEET Advanced Preparation kharadi pune NEET Classes in kharadi pune Best NEET Classes in kharadi Pune Top NEET Classes in kharadi pune"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
         <script type="application/ld+json">{`
         {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune",
-  "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune",
-  "name": "NEET Coaching Classes in Pimple Gurav Pune | ASQUARE Academy",
-  "description": "ASQUARE Academy offers the best NEET Coaching Classes in Pimple Gurav Pune with expert faculty, small batches, mock tests, and online/offline learning options.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "ASQUARE Academy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png"
-    },
-    "sameAs": [
-      "https://www.instagram.com/asquarepune",
-      "https://www.facebook.com/asquarepune/"
-    ]
-  },
-  "mainEntity": [
+  "@graph": [
     {
       "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - NEET Coaching Classes in Pimple Gurav Pune",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-kharadi-pune#localbusiness",
+      "name": "ASQUARE Academy - NEET Coaching Classes in Kharadi Pune",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "telephone": "+919766118877",
+      "telephone": "9766118877",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-kharadi-pune",
+      "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Pimple Gurav",
-        "addressLocality": "Pune",
+        "addressLocality": "Kharadi, Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411061",
-        "addressCountry": "IN"
+        "addressCountry": "India"
       },
-      "priceRange": "₹₹",
-      "openingHours": "Mo-Su 09:00-20:00",
       "sameAs": [
         "https://www.instagram.com/asquarepune",
         "https://www.facebook.com/asquarepune/"
       ]
     },
     {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/neet-coaching-classes-institute-kharadi-pune#webpage",
+      "url": "https://www.asquareclasses.com/neet-coaching-classes-institute-kharadi-pune",
+      "name": "NEET Coaching Classes in Kharadi Pune | ASQUARE Academy",
+      "description": "ASQUARE Academy offers the best NEET coaching classes in Kharadi Pune with expert faculty, flexible batches, and proven NEET preparation programs."
+    },
+    {
       "@type": "EducationalOrganization",
       "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
-      "department": {
-        "@type": "EducationalOccupationalProgram",
-        "name": "NEET Coaching Program",
-        "educationalCredentialAwarded": "NEET Preparation Certificate",
-        "hasCourse": [
-          {
-            "@type": "Course",
-            "name": "NEET 2-Year Integrated Course",
-            "description": "A comprehensive 2-year integrated NEET course covering Physics, Chemistry, and Biology for Class XI–XII students."
-          },
-          {
-            "@type": "Course",
-            "name": "1-Year Target Batch",
-            "description": "Focused NEET preparation for Class XII students and repeaters aiming for top ranks."
-          },
-          {
-            "@type": "Course",
-            "name": "Crash Course",
-            "description": "Short-term crash course designed for NEET revision and rapid test practice."
-          },
-          {
-            "@type": "Course",
-            "name": "Dropper/Reaper Program",
-            "description": "Full-year NEET preparation batch designed for repeat-year aspirants."
-          }
-        ]
+      "url": "https://www.asquareclasses.com",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "9766118877",
+        "contactType": "Customer Service"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is ASQUARE Kharadi suitable for beginners in Class 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the 2-year integrated program is ideal for Class 11 students beginning NEET preparation at ASQUARE Kharadi, building strong fundamentals for success."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide evening or weekend batches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ASQUARE Academy offers flexible batch timings, including evening and weekend classes for students managing school or college schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are crash courses offered at the Kharadi branch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, intensive crash courses are available before exams for revision and mock test practice as part of our top NEET coaching classes in Kharadi Pune."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you support repeater students?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE’s dropper batches cover the entire NEET syllabus with frequent tests and personalized guidance for effective NEET Advanced Preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can students from Viman Nagar or Wagholi join the Kharadi branch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, many students from Viman Nagar, Wagholi, and nearby areas choose our NEET classes in Kharadi Pune for expert mentoring and quality results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What subjects are taught in NEET classes at Kharadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our NEET coaching in Kharadi Pune covers Physics, Chemistry, and Biology thoroughly to strengthen conceptual understanding and exam performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer online NEET coaching options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, both online and classroom coaching options are available, providing flexibility for students to prepare effectively from anywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is ASQUARE considered the best NEET coaching in Kharadi Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With experienced faculty, small batches, regular mock tests, and proven results, ASQUARE Academy stands among the best NEET coaching institutes in Kharadi Pune."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -343,80 +387,20 @@ const gridFeatures = [
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "NEET Coaching",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes/"
+          "name": "NEET Coaching Classes in Pune",
+          "item": "https://www.asquareclasses.com/best-neet-coaching-classes-Institute-in-pune-maharashtra/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "NEET Coaching Classes in Pimple Gurav Pune",
-          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-pimple-gurav-pune"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who can enroll in NEET coaching at ASQUARE Pimple Gurav?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open to students in Class XI, Class XII, and repeat-year aspirants aiming for NEET success."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What subjects are covered?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The NEET syllabus includes Physics, Chemistry, and Biology with in-depth conceptual coverage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is mock testing included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, weekly tests, chapter quizzes, and full-length NEET mocks with performance analytics are provided."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What types of batches are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer 2-year integrated, 1-year target, crash, and dropper/repeater programs at ASQUARE Pimple Gurav."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are batches small?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, small batches ensure personalized attention and efficient doubt-solving."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do parents get performance updates?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parents receive regular reports and are invited for parent–teacher meetings for progress review."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is online coaching an option?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Certainly, students can choose between flexible classroom or online NEET coaching modes."
-          }
+          "name": "NEET Coaching Classes in Kharadi Pune",
+          "item": "https://www.asquareclasses.com/neet-coaching-classes-institute-kharadi-pune"
         }
       ]
     }
   ]
 }
+
         `}</script>
       </Helmet>
       <Navbar />
@@ -465,16 +449,16 @@ const gridFeatures = [
                 🎓 Premier Coaching Institute
               </span>
               <h1 className="hero-title-large mb-4">
-                Achieve NEET Excellence with {" "}
+                Achieve Your NEET Goals with {" "}
                 <span className="gradient-text-yellow d-inline-block">
-                ASQUARE Academy – Pimple Gurav Center
+                  ASQUARE Academy – Kharadi
                 </span>
               </h1>
               <p className="fs-5 text-white mb-3 lh">
-                Searching for the <strong> best NEET coaching in Pimple Gurav, Pune? </strong> At
+                Are you searching for the <strong> best NEET coaching classes in Kharadi, Pune? </strong> Look no further.
                  <strong> ASQUARE Academy, </strong>
-                we offer structured NEET UG preparation that blends expert educators, strategic practice, and personalized mentoring.
-                 <strong> Best NEET Coaching Institutes in Pimple Gurav, </strong> our courses are designed to help students master NCERT concepts, practice systematically, and achieve top ranks in NEET-UG.
+                 we specialize in guiding students to medical success through expert faculty, structured programs, and personalized mentoring. Our approach blends NCERT fundamentals with exam-focused strategies to help students secure top scores.
+                <strong> Best NEET Coaching Institutes in Kharadi, </strong> our courses are designed to help students master NCERT concepts, practice systematically, and achieve top ranks in NEET-UG.
              </p>
               <div className="hero-location-info d-flex align-items-start gap-3">
                 <MapPin
@@ -486,9 +470,9 @@ const gridFeatures = [
                  Students from
                   <strong>
                     {" "}
-                    Pimple Gurav, Aundh, Baner, Balewadi, Wakad, Pimpri, and the PCMC region {" "}
+                    Kharadi, Viman Nagar, Wagholi, Mundhwa, Chandan Nagar, Magarpatta, Hadapsar, Kalyani Nagar, and Yerawada {" "}
                   </strong>
-                   trust us to transform their medical aspirations into reality.
+                   already trust ASQUARE Academy for their NEET preparation.
                 </span>
               </div>
             </div>
@@ -506,7 +490,7 @@ const gridFeatures = [
               </span>
               <h2 className="section-title-large mb-4">
                 <span className="text-primary">Why Choose</span> ASQUARE Academy
-                Best NEET Coaching in Pimple Gurav?
+                Best NEET Coaching in Kharadi?
               </h2>
 
               {isDesktop ? (
@@ -567,13 +551,13 @@ const gridFeatures = [
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
             Comprehensive NEET Course Overview{" "}
-            <span> ASQUARE Academy Pimple Gurav</span>
+            <span> ASQUARE Academy Kharadi</span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              The<strong> NEET course at ASQUARE Academy, Pimple Gurav, </strong>
+              The<strong> NEET course at ASQUARE Academy, Kharadi, </strong>
               offers complete preparation through concept-based teaching, regular testing, and doubt-clearing sessions.<br/>
               Our approach ensures every student strengthens their basics, practices consistently, and gains confidence for NEET.
             </p>
@@ -584,10 +568,10 @@ const gridFeatures = [
                 Students from
                 <strong>
                   {" "}
-                   Pimple Gurav, Aundh, Baner, Balewadi, Wakad, Pimpri, {" "}
+                    Kharadi, Viman Nagar, Wagholi, Mundhwa, Chandan Nagar, Magarpatta, Hadapsar, Kalyani Nagar, and Yerawada {" "}
                 </strong>
                 attend our classes for their proximity and the academy’s proven academic record in{" "}
-                <strong> NEET coaching across PCMC Pune. </strong>
+                <strong> NEET coaching across PCMC & Pune. </strong>
               </span>
             </p>
           </div>
@@ -600,23 +584,23 @@ const gridFeatures = [
           {/* Left Column - Yellow */}
           <div className="col-lg-6 p-5 p-lg-5 lg-b-bg">
             <h3 className="fw-bold mb-4 text-primary-emphasis fs-1">
-              Course Details (NEET UG) - Top NEET Coaching Classes in Pimple Gurav
+              Course Details (NEET UG) - Top NEET Coaching Classes in Kharadi
             </h3>
 
             <p className="fs-5">
               <strong>NEET UG</strong> is India’s national entrance test for{" "}
               <strong>
-                MBBS, BDS, BAMS, BHMS, and other allied medical courses.
+                MBBS, BDS, BAMS, BHMS, and allied medical courses.
               </strong>
-              At <strong> ASQUARE Academy Pimple Gurav,</strong>
-             we follow a result-oriented teaching plan focusing on concept mastery, speed, and precision through consistent assessments and expert mentorship.
+              At <strong> NEET coaching centre in Kharadi,</strong>
+            should align with both academic rigor and smart exam strategy. At ASQUARE Academy, our programs are designed to build clarity, confidence, and success through consistent testing and support.
             </p>
             <p className="fs-5">
               Our structured programs and experienced faculty make ASQUARE one of the{" "}
-              <strong> Top NEET Coaching Institutes in Pimple Gurav Pune. </strong>
+              <strong> NEET coaching institute in Kharadi </strong>
             </p>
             <h4 className="fw-bold text-primary-emphasis mt-5 fs-3">
-              Subjects Covered in NEET Classes at Pimple Gurav
+              Subjects Covered in NEET Classes at Kharadi
             </h4>
 
             <div className="mt-4">
@@ -633,7 +617,7 @@ const gridFeatures = [
           {/* Right Column - Blue */}
           <div className="col-lg-6 p-5 p-lg-5 text-white lg-b-bg-b">
             <h5 className="fw-bold text-warning mb-4 fs-1">
-              Program Duration and Batch Options — NEET Preparation in Pimple Gurav
+              Program Duration and Batch Options — NEET Preparation in Kharadi
             </h5>
 
             <div className="d-flex flex-column gap-4">
@@ -660,7 +644,7 @@ const gridFeatures = [
             </span>
             <h3 className="section-title-large">
               <span className="text-primary-orange">Key Highlights</span> of
-              Best NEET Coaching in Pimple Gurav,
+              Best NEET Coaching in Kharadi,
             </h3>
           </div>
 
@@ -687,25 +671,14 @@ const gridFeatures = [
           </div>
           <div className="results-box-gradient">
             <p className="fs-5 text-dark mb-3 text-center">
-              At <strong> ASQUARE Academy – Pimple Gurav  </strong>
-              has consistently produced NEET toppers who secured admission into leading institutions such as {" "}
+              At <strong> ASQUARE Academy – Kharadi  </strong>
+              has consistently delivered excellent NEET results, with students earning admission to {" "}
               <strong className="text-primary">
-                AIIMS, BJMC, AFMC, and DY Patil Medical College Pune.{" "}
+                AIIMS, prestigious government colleges, and renowned private institutions.{" "}
               </strong>
               Our structured test system, performance reviews, and goal-oriented mentoring make ASQUARE the
-              <strong> trusted NEET institutes in Pune’s western neighborhoods. </strong>
+              <strong> most trusted NEET coaching centers in Kharadi and Western Pune. </strong>
             </p>
-            {/* <div className="d-flex align-items-center justify-content-center gap-2 text-primary">
-              <CheckCircle size={24} />
-              <p className="fs-5 fw-semibold mb-0">
-                Our unique combination of mentorship, structured learning, and
-                regular testing makes us one of the
-                <strong>
-                  {" "}
-                  Top NEET Coaching Centre in Alandi Pune.
-                </strong>
-              </p>
-            </div> */}
           </div>
         </div>
       </section>
@@ -725,7 +698,7 @@ const gridFeatures = [
               <p className="fs-5 text-white mb-4 lh op">
                 This 4-step methodology ensures that ASQUARE remains the {" "}
                 <strong>
-                  Top NEET Coaching Institute in Pimple Gurav and PCMC Pune.
+                  Top NEET Coaching Institute in Kharadi and PCMC Pune.
                 </strong>
               </p>
               <a
@@ -758,7 +731,7 @@ const gridFeatures = [
               <BadgeQuestionMark /> Got Questions?
             </div>
             <h2 className="fw-bold text-dark">
-              Top NEET Coaching Institutes in Pimple Gurav.
+              Top NEET Coaching Institutes in Kharadi.
               <span className="text-gradient fw-bold">(FAQs)</span>
             </h2>
           </div>
@@ -788,23 +761,23 @@ const gridFeatures = [
 
           {/* Title */}
           <h2 className="fw-bold text-dark display-5 mb- enroll-now">
-            Enroll <span> ASQUARE Academy – Pimple Gurav Today </span>
+            Join <span> ASQUARE Academy – Kharadi Today </span>
           </h2>
 
           {/* Description */}
           <div className="mx-auto mb-5">
             <p className="lead text-secondary mb-3">
-              Take the first step toward your medical career with the{" "}
-              <strong> best NEET coaching in Pimple Gurav, Pune.  </strong>
-             With expert teaching, strategic planning, and a supportive environment, ASQUARE Academy stands by your side for NEET success.
+              Get started with the {" "}
+              <strong> best NEET coaching in Kharadi, Pune  </strong>
+             and take a step closer to your dream of becoming a doctor. With expert teachers, structured programs, and proven success, ASQUARE Academy is your partner in achieving NEET success.
              </p>
 
             <p className="d-flex flex-wrap justify-content-center align-items-center gap-2 text-dark">
               <MapPin className="text-primary" size={22} />
               <span>
-                 Easily accessible for students from {" "}
+                 Accessible from {" "}
                 <strong>
-                  {" "}Pimple Gurav, Aundh, Baner, Balewadi, Wakad, and PCMC locations.
+                  {" "} Kharadi, Viman Nagar, Wagholi, Mundhwa, Chandan Nagar, Magarpatta, Hadapsar, Kalyani Nagar, and Yerawada.
                 </strong>
               </span>
             </p>
@@ -812,7 +785,7 @@ const gridFeatures = [
 
           {/* Subheading */}
           <h4 className="fw-bold text-primary mb-4">
-            Secure Your Seat Now — Limited Availability!
+            Admissions Open – Book Your Seat Now!
           </h4>
 
           {/* CTA Button */}
@@ -830,4 +803,4 @@ const gridFeatures = [
   );
 }
 
-export default NEETPimpleGurav;
+export default NEETKharadi;

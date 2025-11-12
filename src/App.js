@@ -111,6 +111,15 @@ import MHTKalewadi from './Pages/LocationsPages/MHTKalewadi';
 import MHTHinjewadi from './Pages/LocationsPages/MHTHinjewadi';
 import MHTFatimaNagar from './Pages/LocationsPages/MHTFatimaNagar';
 import NEETPimpleGurav from './Pages/LocationsPages/neet-pages/NEETPimpleGurav';
+import NEETHinjewadi from './Pages/LocationsPages/neet-pages/NEETHinjewadi';
+import NEETUndri from './Pages/LocationsPages/neet-pages/NEETUndri';
+import NEETPimpleNilakh from './Pages/LocationsPages/neet-pages/NEETPimpleNilakh';
+import NEETBaner from './Pages/LocationsPages/neet-pages/NEETBaner';
+import NEETKharadi from './Pages/LocationsPages/neet-pages/NEETKharadi';
+import NEETCamp from './Pages/LocationsPages/neet-pages/NEETCamp';
+import NEETNibm from './Pages/LocationsPages/neet-pages/NEETNibm';
+import NEETKatraj from './Pages/LocationsPages/neet-pages/NEETKatraj';
+import NEETFatima from './Pages/LocationsPages/neet-pages/NEETFatima';
 
 function App() {
   return (
@@ -353,6 +362,15 @@ function App() {
           <Route path='/neet-coaching-classes-institute-kalewadi-pune' element={<NEETKalewadi />} />
           <Route path='/neet-coaching-classes-institute-wakad-pune' element={<NEETWakad />} />
           <Route path='/neet-coaching-classes-institute-pimple-gurav-pune' element={<NEETPimpleGurav />} />
+          <Route path='/neet-coaching-classes-institute-hinjewadi-pune' element={<NEETHinjewadi />} />
+          <Route path='/neet-coaching-classes-institute-undri-pune' element={<NEETUndri />} />
+          <Route path='/neet-coaching-classes-institute-pimple-nilakh-pune' element={<NEETPimpleNilakh />} />
+          <Route path='/neet-coaching-classes-institute-baner-pune' element={<NEETBaner />} />
+          <Route path='/neet-coaching-classes-institute-kharadi-pune' element={<NEETKharadi />} />
+          <Route path='/neet-coaching-classes-institute-camp-pune' element={<NEETCamp />} />
+          <Route path='/neet-coaching-classes-institute-nibm-pune' element={<NEETNibm />} />
+          <Route path='/neet-coaching-classes-institute-katraj-pune' element={<NEETKatraj />} />
+          <Route path='/neet-coaching-classes-institute-fatima-nagar-pune' element={<NEETFatima />} />
 
           <Route path='/mht-cet-coaching-classes-institute-in-alandi-pune' element={<MHTAlandi />} />
           <Route path='/mht-cet-coaching-classes-institute-in-wanowrie-pune' element={<MHTWanowrie />} />
