@@ -116,6 +116,11 @@ import MHTSadashiv from './Pages/LocationsPages/MHTSadashiv';
 import MHTKondhwa from './Pages/LocationsPages/MHTKondhwa';
 import MHTMGRoad from './Pages/LocationsPages/MHTMGRoad';
 import MHTGhorpadi from './Pages/LocationsPages/MHTGhorpadi';
+import MHTPuneStation from './Pages/LocationsPages/MHTPuneStation';
+import MHTMagarpatta from './Pages/LocationsPages/MHTMagarpatta';
+import MHTSalunkeVihar from './Pages/LocationsPages/MHTSalunkeVihar';
+import MHTSasaneNagar from './Pages/LocationsPages/MHTSasaneNagar';
+import MHTPuneMaharashtra from './Pages/LocationsPages/MHTPuneMaharashtra';
 
 function App() {
   return (
@@ -385,6 +390,11 @@ function App() {
           <Route path='/mht-cet-coaching-classes-institute-kondhwa-pune' element={<MHTKondhwa />} />
           <Route path='/mht-cet-coaching-classes-institute-in-mg-road-pune' element={<MHTMGRoad />} />
           <Route path='/mht-cet-coaching-classes-institute-ghorpadi-pune' element={<MHTGhorpadi />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-pune-railway-station-area' element={<MHTPuneStation />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-magarpatta-pune' element={<MHTMagarpatta />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-salunke-vihar-pune' element={<MHTSalunkeVihar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-sasane-nagar-pune' element={<MHTSasaneNagar />} />
+          <Route path='/mht-cet-coaching-classes-institute-in-pune-maharashtra' element={<MHTPuneMaharashtra />} />
         </Routes>
       </BrowserRouter>
     </div>
