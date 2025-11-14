@@ -29,7 +29,7 @@ import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import Form from '../../../Components/Form2/Form2.jsx';
 
 const Reviews = React.lazy(() => import("../../../Components/Reviews/Reviews.jsx"));

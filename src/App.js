@@ -82,7 +82,7 @@ import MHTCamp from './Pages/LocationsPages/MHTCamp';
 import MHTWakad from './Pages/LocationsPages/MHTWakad';
 
 // prismplus Start
-import Samplepage from "./Pages/courses/samplepage";
+import Samplepage from "./Pages/LocationsPages/IIT JEE Pages/samplepage";
 import IITJEEChinchwad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chinchwad-pune";
 import IITJEEPimpri from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pimpri-pune";
 import IITJEEHadapsar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-hadapsar-pune";
