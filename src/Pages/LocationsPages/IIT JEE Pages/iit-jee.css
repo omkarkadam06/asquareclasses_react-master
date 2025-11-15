@@ -1,0 +1,222 @@
+.jee-hero-section {
+background: linear-gradient(135deg, #023e8e, #6799f8);
+  min-height: 80vh;
+  background-size: cover;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height:  auto; /* desktop height */
+  object-fit: contain; /* ✅ prevents cropping or zoom */
+  background-color: #000; /* optional, adds contrast if image has transparent edges */
+}
+
+@media (max-width: 992px) {
+  .carousel-image {
+    height: 450px; /* laptop/tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 350px; /* tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 250px; /* mobile */
+  }
+}
+
+.highlight-text {
+  color: #ffcb03;
+}
+
+.jee-feature-card {
+  transition: all 0.3s ease;
+  border-top: 5px solid #ffcb03;
+}
+
+.jee-gradient-section {
+background: linear-gradient(135deg, #023e8e, #6799f8);
+}
+.faqbg{  background: linear-gradient(135deg, #004aad, #6799f8);}
+.method-card {
+  transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-8px);
+}
+
+.jee-enroll-section {
+background: linear-gradient(135deg, #023e8e, #6799f8);
+}
+
+.jee-why {
+  background-color: #f8f9fb;
+}
+
+
+
+
+/* Keep your existing CSS as it is and add this below */
+
+.jee-highlights {
+  background-color: #ffffff;
+}
+.jee-highlights ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.jee-results {
+background: linear-gradient(135deg, #023e8e, #6799f8);
+}
+
+.jee-gallery img {
+  transition: all 0.3s ease;
+}
+.jee-gallery img:hover {
+  transform: scale(1.05);
+}
+.gallery-img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+.jee-subject-box {
+  transition: all 0.3s ease-in-out;
+}
+.jee-subject-box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+.jee-highlights {
+background: linear-gradient(135deg, #023e8e, #6799f8);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* @keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+.highlight-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: -webkit-fill-available;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Full-width Slider Section */
+.jee-full-slider-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Dark overlay to improve form readability */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.45); */
+  z-index: 1;
+}
+
+/* Form box positioned on slider (desktop only) */
+.jee-slider-form-box {
+  position: absolute;
+    top: 42%;
+    right: 4%;
+  transform: translateY(-50%);
+  z-index: 2;
+  height: fit-content;
+  /* width: 380px; */
+}
+@media (max-width: 1024px) {
+    .mobile-form .headernewform {
+        display: block !important;
+        width: 85%!important;
+        margin: 0px auto!important;
+    }
+
+    .jee-slider-form-box {
+  position: absolute;
+          top: 46%;
+        right: 0%;
+    }
+}
+/* Form styling */
+.jee-enquiry-form {
+  /* backdrop-filter: blur(8px); */
+  transition: all 0.3s ease;
+}
+
+.jee-enquiry-form:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile view: move form below slider */
+@media (max-width: 991px) {
+  .jee-slider-form-box {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  .jee-enquiry-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.bld{    font-weight: 700 !important;}
+.imgsiz{
+  width: 100% !important;
+   /* height: 100% !important; */
+}
+
+/* 📱 For mobile view (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .imgsiz {
+    width: 80% !important;
+  }
+  .carousel-item{
+  background-size: contain !important;
+}
+}
+
+.vertical-line {
+  border: none;
+  border-left: 3px solid #ffcc00;
+  height: 100px;
+  width: 0;
+  margin: 0 15px;
+}
+
+.bg-dr{  background: linear-gradient(135deg, #023e8e, #6799f8)!important;}
