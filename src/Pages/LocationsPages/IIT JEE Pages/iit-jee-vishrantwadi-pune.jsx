@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (3).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (4).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -253,7 +256,7 @@ Top IIT JEE Classes in vishrantwadi,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -364,7 +367,7 @@ Top IIT JEE Classes in vishrantwadi,
                 </span>{" "}
                 Vishrantwadi
               </motion.h1>
-<p>Dedicated Coaching for Future Engineers in Vishrantwadi</p>
+ <motion.h2>Dedicated Coaching for Future Engineers in Vishrantwadi  </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
                Looking for <b className="bld">IIT-JEE coaching classes in Vishrantwadi, Pune?</b> At  <b className="bld">ASQUARE Academy, </b> we provide  <b className="bld">concept-focused teaching, systematic study plans, and exam-oriented practice sessions</b> to help students achieve their engineering dreams. Our Vishrantwadi branch is a trusted destination for aspirants targeting <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges. </b>With  <b className="bld">personalized mentoring, doubt-solving support, and advanced learning resources, </b>we ensure students are well-prepared for <b className="bld">JEE Main & Advanced.</b> 
@@ -410,13 +413,13 @@ Top IIT JEE Classes in vishrantwadi,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy in</span>  Vishrantwadi</motion.h1>
+          <span className="text-primary">ASQUARE Academy in</span>  Vishrantwadi</motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -432,12 +435,12 @@ Top IIT JEE Classes in vishrantwadi,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">JEE</span> Coaching Programs </motion.h1>
+              >Our  <span className="text-primary">JEE</span> Coaching Programs </motion.h4>
 
               <p className="lead text-secondary">
                 The <b className="bld">Joint Entrance Examination (JEE)</b> is a challenging exam that demands <b className="bld">clarity, speed, and consistent practice.</b> At ASQUARE Academy Vishrantwadi, our courses focus on  <b className="bld">strengthening basics, improving accuracy, and boosting exam confidence,</b> covering both <b className="bld">JEE Main & Advanced.</b>
@@ -460,7 +463,7 @@ Top IIT JEE Classes in vishrantwadi,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -471,7 +474,7 @@ Top IIT JEE Classes in vishrantwadi,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -513,12 +516,12 @@ Top IIT JEE Classes in vishrantwadi,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Our Teaching <span className="text-primary">Methodology</span> </motion.h1>
+              >Our Teaching <span className="text-primary">Methodology</span> </motion.h3>
 
 
 
@@ -556,7 +559,7 @@ Top IIT JEE Classes in vishrantwadi,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -567,7 +570,7 @@ Top IIT JEE Classes in vishrantwadi,
               &nbsp;Vishrantwadi&nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
@@ -624,7 +627,7 @@ Top IIT JEE Classes in vishrantwadi,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -635,7 +638,7 @@ Top IIT JEE Classes in vishrantwadi,
                   &nbsp;Prove Our Success &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
               ASQUARE Academy has a strong record of producing  <b className="bld">JEE toppers and high scorers.</b> The <b className="bld">Vishrantwadi branch</b> adds to this legacy with <b className="bld">result-oriented coaching, student-centric learning, and consistent success stories.</b>
               </p>
@@ -691,12 +694,12 @@ Top IIT JEE Classes in vishrantwadi,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -724,7 +727,7 @@ Top IIT JEE Classes in vishrantwadi,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -735,7 +738,7 @@ Top IIT JEE Classes in vishrantwadi,
               &nbsp;Vishrantwadi Today &nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
             Start your IIT-JEE preparation with <b className="bld">ASQUARE Academy’s expert coaching in Vishrantwadi, Pune.</b> With <b className="bld">experienced faculty, updated study material, and proven results</b>, we are your trusted partner for <b className="bld">JEE, CET & NEET coaching.</b>
           </p>

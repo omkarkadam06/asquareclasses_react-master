@@ -22,12 +22,19 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+// import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (1).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (2).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
+
+
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg'; //9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
-import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
+import sampleimg6 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (4).jpeg'; //4,8,13,16
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
 // import Swal from "sweetalert2";
 import Form from '../../../Components/Form2/Form2.jsx';
@@ -60,10 +67,10 @@ function IITJEEBhosari() {
   ];
 
   const batches = [
-    { title: "•	2-Year Foundation Program (10th → 12th Moving Students)", desc: "Board + JEE preparation" },
-    { title: "•	1-Year Intensive Program (11th → 12th Moving Students)", desc: "JEE crash-focused learning" },
-    { title: "•	Crash Course (2–3 Months)", desc: "Fast revision & exam readiness" },
-    { title: "•	Repeater/Dropper Batch (XII Pass-outs)", desc: "One-year program for XII pass-outs" },
+    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Board + JEE preparation" },
+    { title: "1-Year Intensive Program (11th → 12th Moving Students)", desc: "JEE crash-focused learning" },
+    { title: "Crash Course (2–3 Months)", desc: "Fast revision & exam readiness" },
+    { title: "Repeater/Dropper Batch (XII Pass-outs)", desc: "One-year program for XII pass-outs" },
   ];
 
   const faqs = [{ q: "Q1: Who can join ASQUARE Academy Bhosari?", a: "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can enroll. ASQUARE is recognized among the Best IIT JEE Coaching in Bhosari Pune, helping aspirants build strong fundamentals for top engineering exams." },
@@ -264,7 +271,7 @@ Top IIT JEE Classes in bhosari pune,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -375,7 +382,7 @@ Top IIT JEE Classes in bhosari pune,
                 </span>{" "}
                 Bhosari
               </motion.h1>
-<p>Trusted Coaching for Engineering Aspirants in Bhosari</p>
+   <motion.h2>Trusted Coaching for Engineering Aspirants in Bhosari   </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
             Looking for <b className="bld">IIT-JEE coaching classes in Bhosari, Pune? </b>At <b className="bld">ASQUARE Academy,</b> we focus on<b className="bld">conceptual learning, practice-based training, and result-driven strategies </b>to help students achieve their engineering goals. Our Bhosari branch prepares aspirants to secure admissions in  <b className="bld">IITs, NITs, IIITs, and other top engineering colleges in India. </b>With  <b className="bld">structured study modules, dedicated faculty, and advanced practice tests, </b>students are guided to perform confidently in <b className="bld">JEE Main & Advanced.</b>
@@ -421,13 +428,13 @@ Top IIT JEE Classes in bhosari pune,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> in Bhosari? </motion.h1>
+          <span className="text-primary">ASQUARE Academy</span> in Bhosari? </motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -443,12 +450,12 @@ Top IIT JEE Classes in bhosari pune,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our <span className="text-primary">IIT-JEE </span> Programs </motion.h1>
+              >Our <span className="text-primary">IIT-JEE </span> Programs </motion.h4>
 
               <p className="lead text-secondary">
 
@@ -473,7 +480,7 @@ Top IIT JEE Classes in bhosari pune,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -484,7 +491,7 @@ Top IIT JEE Classes in bhosari pune,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -526,12 +533,12 @@ Top IIT JEE Classes in bhosari pune,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Teaching <span className="text-primary">Methodology</span> </motion.h1>
+              >Teaching <span className="text-primary">Methodology</span> </motion.h3>
 
 
 
@@ -569,7 +576,7 @@ Top IIT JEE Classes in bhosari pune,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -580,7 +587,7 @@ Top IIT JEE Classes in bhosari pune,
               &nbsp;Bhosari &nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
@@ -637,7 +644,7 @@ Top IIT JEE Classes in bhosari pune,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -648,7 +655,7 @@ Top IIT JEE Classes in bhosari pune,
                   &nbsp;Record &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
          ASQUARE Academy has consistently delivered <b className="bld">IIT-JEE toppers and engineering achievers </b>across Pune. The <b className="bld">Bhosari branch </b>continues this success with <b className="bld">quality teaching, personalized guidance, and a results-driven approach.</b>
               </p>
@@ -704,12 +711,12 @@ Top IIT JEE Classes in bhosari pune,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -737,7 +744,7 @@ Top IIT JEE Classes in bhosari pune,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -748,7 +755,7 @@ Top IIT JEE Classes in bhosari pune,
               &nbsp;Bhosari Today &nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h3>
           <p className="lead mb-4">
        Build your path to success with <b className="bld">ASQUARE Academy’s IIT-JEE coaching in Bhosari, Pune. </b>With  <b className="bld">skilled faculty, updated study resources, and consistent results, </b>we are your trusted choice for  <b className="bld">JEE, CET & NEET coaching.</b> 
           </p>

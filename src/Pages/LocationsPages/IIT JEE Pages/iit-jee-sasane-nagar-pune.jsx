@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (1).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (2).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (15).jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -61,10 +64,10 @@ function IITJEESasaneNagar() {
   ];
 
   const batches = [
-    { title: "•	2-Year Integrated Program (Class 11 → 12)", desc: "Comprehensive XI + XII + JEE preparation." },
-    { title: "•	1-Year Target Program (Class 12)", desc: "XII + JEE fast-track training." },
-    { title: "•	Dropper/Repeater Batch", desc: "Quick revision & mock test practice." },
-    { title: "•	Crash Course (2–3 Months)", desc: "One-year specialized JEE coaching program." },
+    { title: "2-Year Integrated Program (Class 11 → 12)", desc: "Comprehensive XI + XII + JEE preparation." },
+    { title: "1-Year Target Program (Class 12)", desc: "XII + JEE fast-track training." },
+    { title: "Dropper/Repeater Batch", desc: "Quick revision & mock test practice." },
+    { title: "Crash Course (2–3 Months)", desc: "One-year specialized JEE coaching program." },
   ];
 
   const faqs = [{ q: " Q1: Do you provide coaching for both JEE Mains and JEE Advanced?", a: "Yes, ASQUARE Academy offers comprehensive IIT JEE coaching classes in Sasane Nagar Pune for both JEE Main and Advanced with complete coverage of Physics, Chemistry, and Mathematics. " },
@@ -270,7 +273,7 @@ Top IIT JEE Classes in sasane nagar pune,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -381,7 +384,7 @@ Top IIT JEE Classes in sasane nagar pune,
                 </span>{" "}
                 – Sasane Nagar 
               </motion.h1>
-<p>A Trusted Coaching Destination for Engineering Aspirants in Camp, Pune</p>
+ <motion.h2>A Trusted Coaching Destination for Engineering Aspirants in Camp, Pune </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
      Preparing for IIT JEE requires clarity, consistency, and expert guidance. At ASQUARE Academy, we provide the most trusted IIT JEE coaching classes in Sasane Nagar, Pune, designed to help students strengthen their concepts, master problem-solving, and perform with confidence in the toughest engineering entrance exams.
@@ -434,13 +437,13 @@ Top IIT JEE Classes in sasane nagar pune,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> for  IIT JEE in Sasane Nagar? </motion.h1>
+          <span className="text-primary">ASQUARE Academy</span> for  IIT JEE in Sasane Nagar? </motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -486,7 +489,7 @@ Top IIT JEE Classes in sasane nagar pune,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -497,7 +500,7 @@ Top IIT JEE Classes in sasane nagar pune,
               &nbsp;ASQUARE – Sasane Nagar&nbsp;
             </span>
             {/* Batch Options */}
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -539,12 +542,12 @@ Top IIT JEE Classes in sasane nagar pune,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Teaching Methodology at  <span className="text-primary">ASQUARE</span> </motion.h1>
+              >Teaching Methodology at  <span className="text-primary">ASQUARE</span> </motion.h3>
 
 
 
@@ -582,7 +585,7 @@ Top IIT JEE Classes in sasane nagar pune,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -593,15 +596,15 @@ Top IIT JEE Classes in sasane nagar pune,
               &nbsp;ASQUARE – Sasane Nagar &nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
-              "• Updated JEE study material (digital + print)",
-              "• Regular doubt-clearing sessions with faculty",
-              "• Performance analytics via online test series",
-              "• Workshops on accuracy, time management & exam strategy",
-                "• Consistently ranked among the Best IIT JEE Classes in Sasane Nagar and trusted by aspirants across Pune",
+              "Updated JEE study material (digital + print)",
+              "Regular doubt-clearing sessions with faculty",
+              "Performance analytics via online test series",
+              "Workshops on accuracy, time management & exam strategy",
+                "Consistently ranked among the Best IIT JEE Classes in Sasane Nagar and trusted by aspirants across Pune",
             ].map((text, i) => {
               const highlightedText = text.includes("Best IIT JEE Classes in Sasane Nagar and trusted by aspirants across Pune")
                 ? text.replace(
@@ -650,7 +653,7 @@ Top IIT JEE Classes in sasane nagar pune,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -661,7 +664,7 @@ Top IIT JEE Classes in sasane nagar pune,
                   &nbsp;Our Success &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
       ASQUARE Academy students from Sasane Nagar and nearby areas have consistently achieved high ranks in JEE Mains & Advanced, securing admissions to IITs, NITs, and top engineering institutes. This makes us one of the Top IIT JEE Classes in Sasane Nagar, Pune.
               </p>
@@ -717,12 +720,12 @@ Top IIT JEE Classes in sasane nagar pune,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -750,7 +753,7 @@ Top IIT JEE Classes in sasane nagar pune,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -761,7 +764,7 @@ Top IIT JEE Classes in sasane nagar pune,
               &nbsp;ASQUARE Academy Sasane Nagar&nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
      If you’re looking for the Best IIT JEE Coaching in Sasane Nagar, Pune, your search ends here. With expert guidance, structured programs, and a proven success record, ASQUARE Academy is the trusted name for JEE preparation.
           </p>

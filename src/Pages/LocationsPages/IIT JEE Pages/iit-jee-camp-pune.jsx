@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (3).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (4).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (15).jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -261,7 +264,7 @@ Top IIT JEE Classes in Camp,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11, sampleimg1, sampleimg11, sampleimg1].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -372,7 +375,7 @@ Top IIT JEE Classes in Camp,
                 </span>{" "}
                 Camp
               </motion.h1>
-<p>A Trusted Coaching Destination for Engineering Aspirants in Camp, Pune</p>
+   <motion.h2>A Trusted Coaching Destination for Engineering Aspirants in Camp, Pune     </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
        Preparing for <b className="bld">IIT JEE </b>demands the right direction, focused learning, and consistent support. At  <b className="bld">ASQUARE Academy, </b>we provide one of the most reliable  <b className="bld">IIT JEE coaching classes in Camp (Pune Cantonment)</b>to help students enhance their conceptual knowledge, strengthen problem-solving skills, and achieve top performance in both JEE Mains and Advanced exams. Recognized among the <b className="bld">Leading IIT JEE Coaching Institutes in Camp, </b>we focus on structured teaching, practical learning techniques, and individual mentorship. Many students from <b className="bld">Camp, MG Road, East Street, Bund Garden, Sadhu Vaswani Chowk, and Koregaon Park</b>have benefited from our expert guidance and achieved remarkable results.
@@ -400,7 +403,7 @@ Top IIT JEE Classes in Camp,
             {/* Right Side: Transparent Image */}
             <div className="col-12 col-lg-4 col-md-12 mt-5 mt-md-0 text-center">
               <img
-                src={sampleimg3} // replace with your transparent PNG
+            src={sampleimg3}// replace with your transparent PNG
                 alt="ASQUARE Academy"
                 className="img-fluid mx-auto fade-in imgsiz"
                 style={{
@@ -418,13 +421,13 @@ Top IIT JEE Classes in Camp,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> Camp? </motion.h1>
+          <span className="text-primary">ASQUARE Academy</span> Camp? </motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -440,12 +443,12 @@ Top IIT JEE Classes in Camp,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Programs <span className="text-primary">Tailored </span>for JEE Success </motion.h1>
+              >Programs <span className="text-primary">Tailored </span>for JEE Success </motion.h4>
 
               <p className="lead text-secondary">
 
@@ -470,7 +473,7 @@ Top IIT JEE Classes in Camp,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -481,7 +484,7 @@ Top IIT JEE Classes in Camp,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -523,12 +526,12 @@ Top IIT JEE Classes in Camp,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Teaching Methodology at  <span className="text-primary">Camp Branch</span> </motion.h1>
+              >Teaching Methodology at  <span className="text-primary">Camp Branch</span> </motion.h3>
 
 
 
@@ -566,7 +569,7 @@ Top IIT JEE Classes in Camp,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -577,15 +580,15 @@ Top IIT JEE Classes in Camp,
               &nbsp;ASQUARE Camp &nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
-              "•	Small batch strength for effective learning",
-              "•	Updated JEE notes, study material & practice tests",
-              "•	Workshops on exam techniques, time-saving strategies & smart problem-solving",
-              "•	Consistent student performance monitoring and parent updates",
-                "•	Recognized as a leading IIT-JEE coaching institute in Camp, Pune",
+              "Small batch strength for effective learning",
+              "Updated JEE notes, study material & practice tests",
+              "Workshops on exam techniques, time-saving strategies & smart problem-solving",
+              "Consistent student performance monitoring and parent updates",
+                "Recognized as a leading IIT-JEE coaching institute in Camp, Pune",
             ].map((text, i) => {
               const highlightedText = text.includes("leading IIT-JEE coaching institute in Camp, Pune")
                 ? text.replace(
@@ -634,7 +637,7 @@ Top IIT JEE Classes in Camp,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -645,7 +648,7 @@ Top IIT JEE Classes in Camp,
                   &nbsp;Success &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
         ASQUARE Academy has consistently produced <b className="bld">JEE Main & Advanced achievers and top scorers. </b>The <b className="bld">Camp branch </b>builds on this success by providing  <b className="bld">dedicated coaching, expert faculty, and a results-driven approach.</b>
               </p>
@@ -701,12 +704,12 @@ Top IIT JEE Classes in Camp,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -734,7 +737,7 @@ Top IIT JEE Classes in Camp,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -745,7 +748,7 @@ Top IIT JEE Classes in Camp,
               &nbsp;ASQUARE Academy Camp&nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
       Achieve your engineering goals with <b className="bld">ASQUARE Academy’s expert IIT-JEE coaching in Camp, Pune.  </b>With <b className="bld">experienced teachers, updated resources, and consistent results,  </b>we are your reliable choice for <b className="bld">JEE, CET & NEET preparation.</b>
           </p>

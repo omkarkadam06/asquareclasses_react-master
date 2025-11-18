@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (7).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (8).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -258,7 +261,7 @@ Top IIT JEE Classes in chinchwad,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -369,7 +372,7 @@ Top IIT JEE Classes in chinchwad,
                 </span>{" "}
                 Chinchwad
               </motion.h1>
-<p>Premier Coaching Institute for Engineering Aspirants in Chinchwad</p>
+ <motion.h2>Premier Coaching Institute for Engineering Aspirants in Chinchwad  </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
                 Looking for <b className="bld">IIT-JEE</b> classes <b className="bld">in Chinchwad, Pune</b>? At <b className="bld">ASQUARE Academy</b>, we specialize in <b className="bld">conceptual learning, exam-focused training, and personalized mentoring</b>. Our Chinchwad branch is a trusted hub for students aspiring for <b className="bld">IITs, NITs, IIITs, and India’s leading engineering colleges</b>. With <b className="bld">structured programs, expert guidance, and intensive practice sessions</b>, we help students achieve success in <b className="bld">JEE Main & Advanced</b>.
@@ -415,13 +418,13 @@ Top IIT JEE Classes in chinchwad,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> Chinchwad</motion.h1>
+          <span className="text-primary">ASQUARE Academy</span> Chinchwad</motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -437,12 +440,12 @@ Top IIT JEE Classes in chinchwad,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">IIT-JEE</span> Coaching Programs </motion.h1>
+              >Our  <span className="text-primary">IIT-JEE</span> Coaching Programs </motion.h4>
 
               <p className="lead text-secondary">
                 The <b className="bld">Joint Entrance Examination (JEE)</b> is one of the toughest engineering entrance exams. At ASQUARE Academy Chinchwad, our coaching programs are designed to <b className="bld">build strong subject foundations, improve problem-solving skills, and strengthen exam strategies</b> for both <b className="bld">JEE Main & Advanced</b>.
@@ -465,7 +468,7 @@ Top IIT JEE Classes in chinchwad,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -476,7 +479,7 @@ Top IIT JEE Classes in chinchwad,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -518,12 +521,12 @@ Top IIT JEE Classes in chinchwad,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Our Teaching <span className="text-primary">Methodology</span> </motion.h1>
+              >Our Teaching <span className="text-primary">Methodology</span> </motion.h3>
 
 
 
@@ -561,7 +564,7 @@ Top IIT JEE Classes in chinchwad,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -572,7 +575,7 @@ Top IIT JEE Classes in chinchwad,
               &nbsp;Chinchwad&nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
@@ -629,7 +632,7 @@ Top IIT JEE Classes in chinchwad,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -640,7 +643,7 @@ Top IIT JEE Classes in chinchwad,
                   &nbsp;Speak &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
                ASQUARE Academy has built a reputation for producing <b className="bld">IIT-JEE rankers and engineering toppers</b>. The <b className="bld">Chinchwad branch</b> adds to this legacy by offering <b className="bld">student-focused coaching, expert guidance, and a result-driven environment.</b>
               </p>
@@ -696,12 +699,12 @@ Top IIT JEE Classes in chinchwad,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -729,7 +732,7 @@ Top IIT JEE Classes in chinchwad,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -740,7 +743,7 @@ Top IIT JEE Classes in chinchwad,
               &nbsp;Chinchwad Today &nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
             Step closer to your IIT dream with <b className="bld">ASQUARE Academy’s IIT-JEE coaching in Chinchwad, Pune</b>. With <b className="bld">expert faculty, structured resources, and consistent results</b>, we’re your trusted partner for <b className="bld">IIT-JEE, CET & NEET coaching</b>.
           </p>

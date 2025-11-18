@@ -146,6 +146,8 @@ import IITJEEBhosari from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bhosari-
 import IITJEECharholi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-charholi-pune";
 import IITJEECamp from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-camp-pune";
 import IITJEESasaneNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-sasane-nagar-pune";
+import IITJEEWanwadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-wanwadi-pune";
+
 
 function App() {
   return (
@@ -445,6 +447,9 @@ function App() {
                    <Route path='/iit-jee-coaching-institute-charholi-pune' element={<IITJEECharholi />} />
                    <Route path='/iit-jee-coaching-classes-institute-camp-pune' element={<IITJEECamp />} />
                    <Route path='/iit-jee-coaching-classes-institute-sasane-nagar-pune' element={<IITJEESasaneNagar />} />
+                   {/* // */}
+                         <Route path='/iit-jee-coaching-classes-institute-wanwadi-pune' element={<IITJEEWanwadi />} />
+                   
 
 
         </Routes>

@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (5).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (6).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -269,7 +272,7 @@ Top IIT JEE Classes in charholi,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -380,7 +383,7 @@ Top IIT JEE Classes in charholi,
                 </span>{" "}
                 Charholi
               </motion.h1>
-<p>Empower Your IIT JEE Aspirations with Top Coaching in Charholi</p>
+<motion.h2>Empower Your IIT JEE Aspirations with Top Coaching in Charholi </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
         Looking for a premier IIT JEE institute in  <b className="bld">Charholi, Pune?</b>At <b className="bld">ASQUARE Academy,</b>we equip students with clear concepts, effective exam technique, and relentless practice to help them gain admission in  <b className="bld">IITs, NITs, IIITs,</b>and top engineering colleges across India. 
@@ -426,13 +429,13 @@ Top IIT JEE Classes in charholi,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy</span> as Your JEE Institute in Charholi? </motion.h1>
+          <span className="text-primary">ASQUARE Academy</span> as Your JEE Institute in Charholi? </motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -448,12 +451,12 @@ Top IIT JEE Classes in charholi,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our <span className="text-primary">JEE </span>Coaching  Programs </motion.h1>
+              >Our <span className="text-primary">JEE </span>Coaching  Programs </motion.h4>
 
               <p className="lead text-secondary">
 
@@ -478,7 +481,7 @@ Top IIT JEE Classes in charholi,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -489,7 +492,7 @@ Top IIT JEE Classes in charholi,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -531,12 +534,12 @@ Top IIT JEE Classes in charholi,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Teaching Style at <span className="text-primary">ASQUARE Charholi</span> </motion.h1>
+              >Teaching Style at <span className="text-primary">ASQUARE Charholi</span> </motion.h3>
 
 
 
@@ -574,7 +577,7 @@ Top IIT JEE Classes in charholi,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -585,7 +588,7 @@ Top IIT JEE Classes in charholi,
               &nbsp;Charholi &nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
@@ -642,7 +645,7 @@ Top IIT JEE Classes in charholi,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -653,7 +656,7 @@ Top IIT JEE Classes in charholi,
                   &nbsp;Results &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
         ASQUARE students consistently achieve strong results in <b className="bld">JEE Main & Advanced. </b>At Charholi, with disciplined coaching and continuous assessment, students graduate with improved ranks, higher scores, and admission to prestigious institutes.
               </p>
@@ -709,12 +712,12 @@ Top IIT JEE Classes in charholi,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -742,7 +745,7 @@ Top IIT JEE Classes in charholi,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -753,7 +756,7 @@ Top IIT JEE Classes in charholi,
               &nbsp;Charholi Today &nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
       Raise the bar with<b className="bld">ASQUARE Academy, Charholi, Pune. </b>With dedicated faculty, result-driven programs, and proven success, we’re here to help you crack   <b className="bld">JEE Main & Advanced, CET & NEET. </b>
           </p>

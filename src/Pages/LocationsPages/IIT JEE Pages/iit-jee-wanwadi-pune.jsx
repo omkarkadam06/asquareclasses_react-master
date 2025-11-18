@@ -22,22 +22,26 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (2).jpeg';
-import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (3).jpeg';
+// import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (1).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (2).jpeg';
 // import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
 // import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
-import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg';//9,15
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg'; //2,17
+
+
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg'; //9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
-import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
+import sampleimg6 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (4).jpeg'; //4,8,13,16
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
 // import Swal from "sweetalert2";
 import Form from '../../../Components/Form2/Form2.jsx';
 
 const Reviews = React.lazy(() => import("../../../Components/Reviews/Reviews.jsx"));
 
-function IITJEEHadapsar() {
+function IITJEEWanwadi() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -49,51 +53,57 @@ function IITJEEHadapsar() {
 
 
   const whyChoose = [
-    { Icon: Users, title: "Expert Faculty", desc: "Experienced mentors for Physics, Chemistry, and Mathematics" },
-    { Icon: BookOpen, title: "Concept-Oriented Learning", desc: "From NCERT basics to advanced problem-solving." },
-    { Icon: Target, title: "Small Batches", desc: "Personal attention and dedicated doubt-solving." },
-    { Icon: BarChart, title: "Regular Testing", desc: "Weekly tests, mock exams, and detailed performance analytics." },
-    { Icon: Lightbulb, title: "Flexible Learning", desc: "Classroom + online IIT JEE Classes in Hadapsar with weekday and weekend batches." },
-     { Icon: Lightbulb, title: "Advanced Focus", desc: "Special sessions for JEE Advanced coaching classes in Hadapsar." },
+    { Icon: Users, title: "Expert Faculty Members ", desc: "Specialists in IIT-JEE, CET & NEET coaching." },
+    { Icon: BookOpen, title: "Comprehensive PCM Coverage ", desc: "Physics, Chemistry & Mathematics taught as per latest exam updates." },
+    { Icon: Target, title: "Personalized Mentors", desc: "Small batches at Bhosari branch for individual guidance" },
+    { Icon: BarChart, title: "Exam-Oriented Practice ", desc: "Weekly unit tests, mock exams & performance reviews." },
+    { Icon: Lightbulb, title: "Career Support", desc: "Motivation sessions, counseling & study planning for long-term success." },
   ];
 
   const subjects = [
-    { title: "Physics", desc: "In-depth conceptual learning, numericals & applications." },
-    { title: "Chemistry", desc: "Thorough study of Physical, Organic & Inorganic Chemistry." },
-    { title: "Mathematics", desc: "Rigorous practice in Algebra, Geometry, Calculus, Trigonometry & Probability." },
+    { title: "Physics", desc: "Theory with real-life applications & numerical problem-solving" },
+    { title: "Chemistry", desc: "Strong focus on Physical, Organic & Inorganic Chemistry" },
+    { title: "Mathematics", desc: "Advanced practice in Algebra, Geometry, Calculus, Trigonometry & Probability" },
   ];
 
   const batches = [
-    { title: "2-Year Integrated Program (Class 11th)", desc: "•	Builds a strong foundation for JEE, •	Covers school syllabus along with JEE Main & Advanced, •	Concept lectures, DPPs, and regular weekly tests" },
-    { title: "1-Year Target Program (Class 12th)", desc: "•	Fast-track program with Class 11th revision, •	Intensive problem-solving and JEE-style mocks, •	High-weightage chapter coverage for JEE Main & Advanced." },
-    { title: "Dropper / Repeater Program", desc: "•	Dedicated IIT JEE coaching classes in Hadapsar for repeaters, •	Comprehensive test series with error analysis, •	Mentorship and exam strategy sessions." },
-    { title: "Crash Courses", desc: "•	Short-term exam-focused program, •	Formula sheets, revision notes, and PYQs, •	Time-management and strategy drills." },
+    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Board + JEE preparation" },
+    { title: "1-Year Intensive Program (11th → 12th Moving Students)", desc: "JEE crash-focused learning" },
+    { title: "Crash Course (2–3 Months)", desc: "Fast revision & exam readiness" },
+    { title: "Repeater/Dropper Batch (XII Pass-outs)", desc: "One-year program for XII pass-outs" },
   ];
 
-  const faqs = [{ q: "1) Which is the Best IIT JEE Coaching in Hadapsar?", a: "ASQUARE Academy is among the Best IIT JEE Classes in Hadapsar due to our expert faculty, structured study plans, and strong results." }, { q: "2) Do you offer Top JEE Mains Coaching Classes Hadapsar?", a: "Yes. Our programs are designed to cover NCERT fundamentals with advanced JEE Main problem practice." }, { q: "3) How do you support IIT JEE Advanced Preparation in Hadapsar?", a: "We conduct specialized JEE Advanced coaching classes in Hadapsar with advanced problem sets, AITS, and error-analysis workshops." }, { q: "4) Are weekend IIT JEE Classes in Hadapsar available?", a: "Yes. We offer both weekday and weekend batches in classroom & online mode." }, { q: "5) Do you provide scholarships?", a: "Yes. Students can apply through the ASQUARE Scholarship Test for merit-based financial aid." },];
+  const faqs = [{ q: "Q1: Who can join ASQUARE Academy Bhosari?", a: "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can enroll. ASQUARE is recognized among the Best IIT JEE Coaching in Bhosari Pune, helping aspirants build strong fundamentals for top engineering exams." },
+     { q: "Q2: What subjects are included in the IIT JEE course?", a: "The curriculum covers Physics, Chemistry, and Mathematics (PCM) in depth. Each subject is taught by experienced mentors to enhance conceptual clarity and analytical skills for IIT JEE Advanced Preparation in Bhosari Pune." },
+      { q: "Q3: Are mock exams conducted regularly?", a: "Yes, we conduct weekly chapter tests, full-length mock exams, and performance analyses to help students evaluate their progress. These features make ASQUARE one of the Top JEE Mains Coaching Classes in Bhosari Pune." },
+       { q: "Q4: What course options are available at ASQUARE Bhosari?", a: "We offer 2-Year, 1-Year, Crash Courses, and Dropper Batches, designed to match every student’s preparation stage. Each course provides comprehensive training for IIT JEE Classes in Bhosari Pune." },
+        { q: "Q5: What is the batch size at ASQUARE Bhosari?", a: "Our small batch sizes ensure personalized attention, one-on-one mentoring, and focused doubt-solving sessions. This approach makes ASQUARE the Best IIT JEE Classes in Bhosari Pune for serious aspirants." },
+         { q: "Q6: Do parents receive regular updates on student performance?", a: "Yes, parents receive progress reports, test scores, and updates through regular Parent-Teacher Meetings (PTMs), ensuring transparency at every stage of preparation for IIT JEE Coaching Classes in Bhosari Pune." },
+          { q: "Q7: What makes ASQUARE the Best IIT JEE Coaching in Bhosari Pune", a: "Our expert faculty, structured study materials, and result-oriented teaching methods make us the Best IIT JEE Coaching in Bhosari Pune. We focus on building confidence and consistency through regular practice and mentorship." },
+      { q: "Q8: Which areas does the Bhosari branch serve?", a: "ASQUARE Academy Bhosari is easily accessible from Moshi, Chakan, Talawade, Dighi, Alandi, and nearby PCMC localities. It’s a top choice for students seeking Top IIT JEE Classes in Bhosari Pune." },
+        ];
 
   return (
     <>
       <Helmet>
-        <title>Best IIT JEE Coaching Classes in Hadapsar Pune | ASQUARE Academy</title>
+        <title>Best IIT JEE Coaching Classes in Bhosari Pune | ASQUARE Academy</title>
              <meta
           name="title"
-          content="Best IIT JEE Coaching Classes in Hadapsar Pune | ASQUARE Academy"
+          content="Best IIT JEE Coaching Classes in Bhosari Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Join ASQUARE Academy – Best IIT JEE Coaching Classes in Hadapsar Pune offering expert faculty, JEE Mains & Advanced preparation, tests & scholarships."
+          content="Join ASQUARE Academy for the Best IIT JEE Coaching Classes in Bhosari Pune. Expert faculty, small batches, and mock tests for JEE Main & Advanced success."
         />
 
-        <meta name="keywords" content="IIT JEE coaching classes in hadapsar pune,
-Best IIT JEE Coaching in hadapsar pune,
-Top JEE Mains Coaching Classes hadapsar pune,
-IIT JEE Advanced Preparation hadapsar pune,
-JEE Advanced coaching classes in hadapsar pune,
-IIT JEE Classes in hadapsar pune,
-Best IIT JEE Classes in hadapsar pune,
-Top IIT JEE Classes in hadapsar pune,
-
+        <meta name="keywords" content="IIT JEE coaching classes in bhosari pune,
+Best IIT JEE Coaching in bhosari pune,
+Top JEE Mains Coaching Classes bhosari pune,
+IIT JEE Advanced Preparation bhosari pune,
+JEE Advanced coaching classes in bhosari pune,
+IIT JEE Classes in bhosari pune,
+Best IIT JEE Classes in bhosari pune,
+Top IIT JEE Classes in bhosari pune,
 
 
 " />
@@ -103,92 +113,73 @@ Top IIT JEE Classes in hadapsar pune,
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/#localbusiness",
-      "name": "ASQUARE Academy Hadapsar",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-bhosari-pune#localbusiness",
+      "name": "ASQUARE Academy Bhosari",
       "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "url": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/",
-      "telephone": "9766118877",
-      "priceRange": "₹₹",
+      "telephone": "+91-9766118877",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-bhosari-pune",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune"
+      ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Hadapsar",
-        "addressRegion": "Pune",
-        "addressCountry": "India"
+        "streetAddress": "Bhosari, Pune",
+        "addressLocality": "Bhosari",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411039",
+        "addressCountry": "IN"
       },
-      "sameAs": [
-        "https://www.instagram.com/asquarepune",
-        "https://www.facebook.com/asquarepune/"
-      ],
-      "description": "ASQUARE Academy Hadapsar offers the Best IIT JEE Coaching in Pune with expert faculty, JEE Mains & Advanced preparation, weekly tests, and scholarship programs."
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/#webpage",
-      "url": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/",
-      "name": "Best IIT JEE Coaching Classes in Hadapsar Pune | ASQUARE Academy",
-      "description": "Join ASQUARE Academy – the Best IIT JEE Coaching in Hadapsar Pune with structured study plans, expert mentors & scholarship opportunities."
-    },
-    {
-      "@type": "EducationalOrganization",
-      "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/",
-      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "9766118877",
-        "contactType": "Customer Support",
-        "areaServed": "IN"
+      "description": "ASQUARE Academy offers the Best IIT JEE Coaching Classes in Bhosari Pune with expert mentors, small batches, and focused JEE Main & Advanced preparation.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "275"
       },
-      "sameAs": [
-        "https://www.instagram.com/asquarepune",
-        "https://www.facebook.com/asquarepune/"
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/#faq",
-      "mainEntity": [
+      "review": [
         {
-          "@type": "Question",
-          "name": "Which is the Best IIT JEE Coaching in Hadapsar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ASQUARE Academy is among the Best IIT JEE Classes in Hadapsar due to our expert faculty, structured study plans, and strong results."
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Rohit Deshmukh"
+          },
+          "datePublished": "2025-09-10",
+          "reviewBody": "ASQUARE Academy Bhosari provides the best IIT JEE coaching in Pune. The faculty is highly knowledgeable and supportive.",
+          "name": "Highly Recommended for JEE Aspirants!",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           }
         },
         {
-          "@type": "Question",
-          "name": "Do you offer Top JEE Mains Coaching Classes Hadapsar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Our programs are designed to cover NCERT fundamentals with advanced JEE Main problem practice."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you support IIT JEE Advanced Preparation in Hadapsar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We conduct specialized JEE Advanced coaching classes in Hadapsar with advanced problem sets, AITS, and error-analysis workshops."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are weekend IIT JEE Classes in Hadapsar available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We offer both weekday and weekend batches in classroom & online mode."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide scholarships?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Students can apply through the ASQUARE Scholarship Test for merit-based financial aid."
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sneha Patil"
+          },
+          "datePublished": "2025-07-22",
+          "reviewBody": "Mock tests and doubt sessions really helped me improve my JEE score. Highly organized and professional coaching.",
+          "name": "Excellent JEE Coaching Classes!",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           }
         }
       ]
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "ASQUARE Academy Bhosari",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-bhosari-pune",
+      "description": "IIT JEE Coaching Classes in Bhosari Pune by ASQUARE Academy – focused on Physics, Chemistry & Mathematics with regular tests and mock exams."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-bhosari-pune#webpage",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-bhosari-pune",
+      "name": "Best IIT JEE Coaching Classes in Bhosari Pune | ASQUARE Academy",
+      "description": "Enroll in the Best IIT JEE Coaching Classes in Bhosari Pune. ASQUARE Academy provides structured programs for JEE Main & Advanced preparation."
     },
     {
       "@type": "BreadcrumbList",
@@ -202,14 +193,53 @@ Top IIT JEE Classes in hadapsar pune,
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "IIT JEE Coaching Classes",
-          "item": "https://www.asquareclasses.com/"
+          "name": "IIT JEE Coaching Bhosari",
+          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-bhosari-pune"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can join ASQUARE Academy Bhosari?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Students of Class XI, XII, and XII pass-outs preparing for JEE Main & Advanced can enroll at ASQUARE Academy Bhosari Pune."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Hadapsar Pune",
-          "item": "https://www.asquareclasses.com/IIT-JEE-coaching-classes-institute-hadapsar-pune/"
+          "@type": "Question",
+          "name": "What subjects are included in the IIT JEE course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The IIT JEE course includes Physics, Chemistry, and Mathematics (PCM) taught by expert mentors to enhance conceptual clarity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are mock exams conducted regularly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ASQUARE conducts weekly chapter tests and full-length mock exams for consistent assessment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What course options are available at ASQUARE Bhosari?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASQUARE offers 2-Year, 1-Year, Crash, and Dropper batches for IIT JEE preparation in Bhosari Pune."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes ASQUARE the Best IIT JEE Coaching in Bhosari Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expert faculty, structured study materials, and personalized mentoring make ASQUARE the top IIT JEE coaching in Bhosari Pune."
+          }
         }
       ]
     }
@@ -346,21 +376,21 @@ Top IIT JEE Classes in hadapsar pune,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                IIT JEE Preparation in Hadapsar Pune for {" "}
+               Get Ahead in JEE Main & Advanced with  {" "}
                 <span className="highlight-text text-warning">
-                  JEE Main and Advanced
+                 ASQUARE Academy
                 </span>{" "}
-                Exam
+                Bhosari
               </motion.h1>
-{/* <p>Premier Coaching Institute for Engineering Aspirants in Pimpri</p> */}
+   <motion.h2>Trusted Coaching for Engineering Aspirants in Bhosari   </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
-               ASQUARE Academy offers expert-led <b className="bld">IIT JEE coaching classes in Hadapsar</b> , providing structured programs, personalized mentoring, and advanced test preparation. Recognized as one of the   <b className="bld">Best IIT JEE Coaching in Hadapsar</b> , we focus on strong conceptual learning, small batches, and rigorous testing to help students excel in both JEE Main and Advanced. Whether you are beginning your preparation or need specialized   <b className="bld">IIT JEE Advanced Preparation in Hadapsar</b> , ASQUARE is your trusted institute.
+            Looking for <b className="bld">IIT-JEE coaching classes in Bhosari, Pune? </b>At <b className="bld">ASQUARE Academy,</b> we focus on<b className="bld">conceptual learning, practice-based training, and result-driven strategies </b>to help students achieve their engineering goals. Our Bhosari branch prepares aspirants to secure admissions in  <b className="bld">IITs, NITs, IIITs, and other top engineering colleges in India. </b>With  <b className="bld">structured study modules, dedicated faculty, and advanced practice tests, </b>students are guided to perform confidently in <b className="bld">JEE Main & Advanced.</b>
               </p>
 
               {/* Short text for mobile */}
               <p className="lead d-block d-md-none">
-                                   ASQUARE Academy offers expert-led <b className="bld">IIT JEE coaching classes in Hadapsar</b> , providing structured programs, personalized mentoring, and advanced test preparation. Recognized as one of the   <b className="bld">Best IIT JEE Coaching in Hadapsar</b> , we focus on strong conceptual learning, small batches, and rigorous testing to help students excel in both JEE Main and Advanced. Whether you are beginning your preparation or need specialized   <b className="bld">IIT JEE Advanced Preparation in Hadapsar</b> , ASQUARE is your trusted institute.
+                                       Looking for <b className="bld">IIT-JEE coaching classes in Bhosari, Pune? </b>At <b className="bld">ASQUARE Academy,</b> we focus on<b className="bld">conceptual learning, practice-based training, and result-driven strategies </b>to help students achieve their engineering goals. Our Bhosari branch prepares aspirants to secure admissions in  <b className="bld">IITs, NITs, IIITs, and other top engineering colleges in India. </b>With  <b className="bld">structured study modules, dedicated faculty, and advanced practice tests, </b>students are guided to perform confidently in <b className="bld">JEE Main & Advanced.</b>
               </p>
 
               <a
@@ -404,11 +434,11 @@ Top IIT JEE Classes in hadapsar pune,
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy for </span>  IIT JEE Coaching in Hadapsar?</motion.h3>
+          <span className="text-primary">ASQUARE Academy</span> in Bhosari? </motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
-            </motion.div> </div>))}<p className="">ASQUARE Academy is consistently rated among the <b className="bld text-warning">Top JEE Mains Coaching Classes Hadapsar</b> for quality teaching and results.</p>
+            </motion.div> </div>))}
           </div>
         </div>
       </section>
@@ -425,10 +455,12 @@ Top IIT JEE Classes in hadapsar pune,
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">JEE</span> Preparation Programs </motion.h4>
+              >Our <span className="text-primary">IIT-JEE </span> Programs </motion.h4>
 
               <p className="lead text-secondary">
-                The <b className="bld">Joint Entrance Examination (JEE)</b> is one of the toughest engineering entrance tests. At ASQUARE Academy Hadapsar, our coaching programs are designed to <b className="bld">strengthen fundamentals, improve speed & accuracy, and develop exam strategies</b> so students can succeed in both <b className="bld">JEE Main & Advanced</b>.
+
+           The <b className="bld">Joint Entrance Examination (JEE) </b> requires strong fundamentals and consistent practice. At ASQUARE Academy Bhosari, our programs are designed to  <b className="bld">strengthen concepts, improve problem-solving, and boost exam performance</b> for both <b className="bld">JEE Main & Advanced </b> aspirants. 
+              
               </p>
             </div>
             <div className="col-lg-4 text-center  order-1">
@@ -454,23 +486,23 @@ Top IIT JEE Classes in hadapsar pune,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3 text-center"
           >
-            Programs 
+            Subjects We Teach
             <span className="highlight-text text-warning">
-              &nbsp;We Offer&nbsp;
+              &nbsp;&&nbsp;
             </span>
-            
+            Batch Options
           </motion.h4>
           <br></br>
 
           <div className="row g-4">
-            {/* <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects Covered</h4>
+            <div className="col-lg-6">
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects We Teach</h4>
               {subjects.map((sub, i) => (<div key={i} className="jee-subject-box mb-4 p-3 pb-4 pt-4  rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{sub.title}</h5>
                 <p className="small mb-0">{sub.desc}</p> </div>))}
-            </div> */}
-            <div className="col-lg-12">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Options & Duration</h4>
+            </div>
+            <div className="col-lg-6">
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Course Duration & Batch Options</h4>
               {batches.map((b, i) => (<div key={i} className="jee-subject-box mb-3 p-3 rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                 <h5 className="fw-semibold">{b.title}</h5>
                 <p className="small mb-0">{b.desc}</p>
@@ -506,7 +538,7 @@ Top IIT JEE Classes in hadapsar pune,
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Our Teaching <span className="text-primary">Methodology</span> </motion.h3>
+              >Teaching <span className="text-primary">Methodology</span> </motion.h3>
 
 
 
@@ -518,15 +550,15 @@ Top IIT JEE Classes in hadapsar pune,
                       className="method-card p-4 bg-white rounded-4 shadow-sm h-100 text-center"
                     >
                       {/* <Lightbulb size={36} className="text-primary mb-3" /> */}
-                      <h6 className="fw-bold">{step}</h6>
+                      {/* <h6 className="fw-bold">{step}</h6> */}
                       <p className="text-muted small mb-0">
                         {step === "Learn"
-                          ? "Interactive lectures for strong fundamentals."
+                          ? "•	Daily topic-wise lectures with assignments"
                           : step === "Practice"
-                            ? "DPPs, assignments, and advanced problem sets."
+                            ? "•	One-to-one doubt-clearing sessions"
                             : step === "Assess"
-                              ? "Weekly tests and full-length mock exams."
-                              : "Regular crash revision before exams."}
+                              ? "•	Weekly chapter tests & full-length mock exams"
+                              : "•	Parent–teacher meetings for performance tracking"}
                       </p>
                     </motion.div>
                   </div>
@@ -550,25 +582,25 @@ Top IIT JEE Classes in hadapsar pune,
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3"
           >
-            Key Benefits of
+            Key Highlights of  
             <span className="highlight-text text-warning">
-              &nbsp;Hadapsar &nbsp;
+              &nbsp;Bhosari &nbsp;
             </span>
-            Branch 
+            Branch
           </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
-              "Printed & digital study material.",
-              "Dedicated doubt-clearing counters.",
-              "Regular PTMs & performance updates.",
-              "Online test series with All-India benchmarking.",
-               
+              "•	Small batch size for focused mentoring",
+              "•	Updated IIT-JEE notes, study material & question banks",
+              "•	Workshops on time management, exam hacks & problem-solving",
+              "•	Regular student progress reports & parent communication",
+                "•	Recognized as a leading IIT-JEE coaching institute in Bhosari, Pune",
             ].map((text, i) => {
-              const highlightedText = text.includes("trusted JEE coaching institute in Pimpri, Pune")
+              const highlightedText = text.includes("leading IIT-JEE coaching institute in Bhosari, Pune")
                 ? text.replace(
-                  "trusted JEE coaching institute in Pimpri, Pune",
-                  '<b className="bld">trusted JEE coaching institute in Pimpri, Pune</b>'
+                  "leading IIT-JEE coaching institute in Bhosari, Pune",
+                  '<b className="bld">leading IIT-JEE coaching institute in Bhosari, Pune</b>'
                 )
                 : text;
 
@@ -618,14 +650,14 @@ Top IIT JEE Classes in hadapsar pune,
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-               Student Success & 
+                Proven Track
                 <span className="highlight-text text-warning">
-                  &nbsp;Results &nbsp;
+                  &nbsp;Record &nbsp;
                 </span>
 
               </motion.h3>
               <p className="lead text-light">
-               ASQUARE Academy students consistently achieve top ranks in  <b className="bld">IITs, NITs, IIITs, and other premier engineering colleges</b>. Our proven methodology makes us one of the  <b className="bld">Best IIT JEE Classes in Hadapsar.</b> 
+         ASQUARE Academy has consistently delivered <b className="bld">IIT-JEE toppers and engineering achievers </b>across Pune. The <b className="bld">Bhosari branch </b>continues this success with <b className="bld">quality teaching, personalized guidance, and a results-driven approach.</b>
               </p>
             </div>
 
@@ -712,32 +744,32 @@ Top IIT JEE Classes in hadapsar pune,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h2
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3"
           >
-            Looking for the Best IIT JEE Classes in  
+           Join ASQUARE Academy 
             <span className="highlight-text text-warning">
-              &nbsp;Hadapsar? &nbsp;
+              &nbsp;Bhosari Today &nbsp;
             </span>
 
-          </motion.h2>
+          </motion.h3>
           <p className="lead mb-4">
-            Join  <b className="bld">ASQUARE Academy</b>. a trusted name in engineering coaching. Book a free counselling session or demo class today and prepare with one of the <b className="bld">Top IIT JEE Coaching Classes in Hadapsar.</b>
+       Build your path to success with <b className="bld">ASQUARE Academy’s IIT-JEE coaching in Bhosari, Pune. </b>With  <b className="bld">skilled faculty, updated study resources, and consistent results, </b>we are your trusted choice for  <b className="bld">JEE, CET & NEET coaching.</b> 
           </p>
-          {/* <p><MapPin className="text-warning" /> Best for students from <b className="bld">Pimpri, Chinchwad, Nigdi, Akurdi, Kasarwadi, and PCMC areas</b>.</p> */}
+          <p><MapPin className="text-warning" />Serving students from <b className="bld">Bhosari, Moshi, Chakan, Talawade, Dighi, Alandi, and nearby PCMC regions.</b></p>
           <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
             <Link
               to={'/'}
               className="nav-item nav-item-list text-white"
 
             >
-              ⚡ Admissions Open – Book your seat today! 
+              ⚡ Admissions Open – Enroll now!  
 
 
-              &nbsp;<p className="text-warning">Limited slots available.</p>
+              &nbsp;<p className="text-warning">Limited seats available.</p>
             </Link>
           </a>
         </div>
@@ -750,4 +782,4 @@ Top IIT JEE Classes in hadapsar pune,
   );
 }
 
-export default IITJEEHadapsar;
+export default IITJEEWanwadi;

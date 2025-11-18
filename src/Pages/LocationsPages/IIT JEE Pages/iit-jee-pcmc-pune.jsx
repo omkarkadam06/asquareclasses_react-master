@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (6).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (7).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -269,7 +272,7 @@ Top IIT JEE Classes in pimpri chinchwad,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -380,7 +383,7 @@ Top IIT JEE Classes in pimpri chinchwad,
                 </span>{" "}
                 Pimpri Chinchwad
               </motion.h1>
-<p>Best IIT JEE Coaching in Pimpri Chinchwad for Engineering Aspirants</p>
+ <motion.h2>Best IIT JEE Coaching in Pimpri Chinchwad for Engineering Aspirants  </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
                 Looking for <b className="bld">IIT JEE Coaching Classes in Pimpri Chinchwad</b>? ASQUARE Academy offers expert-led, result-oriented programs designed for <b className="bld">JEE Main and Advanced preparation.</b>Our  <b className="bld">Pimpri Chinchwad center</b>focuses on concept clarity, time management, and performance improvement—helping students secure top ranks in <b className="bld">IITs, NITs, IIITs, </b>and other leading engineering colleges across India. With small batches, personalized mentoring, and consistent assessments, ASQUARE is trusted as one of the <b className="bld">Top IIT JEE Classes in Pimpri Chinchwad.</b>
@@ -426,13 +429,13 @@ Top IIT JEE Classes in pimpri chinchwad,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy in</span>  Pimpri Chinchwad?</motion.h1>
+          <span className="text-primary">ASQUARE Academy in</span>  Pimpri Chinchwad?</motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-car2d shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -448,12 +451,12 @@ Top IIT JEE Classes in pimpri chinchwad,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">IIT JEE </span> Coaching Programs </motion.h1>
+              >Our  <span className="text-primary">IIT JEE </span> Coaching Programs </motion.h4>
 
               <p className="lead text-secondary">
                 At <b className="bld">ASQUARE Academy</b>, we offer structured programs for <b className="bld">JEE Main and Advanced preparation in Pimpri Chinchwad</b>, catering to students at different academic stages.
@@ -477,7 +480,7 @@ Top IIT JEE Classes in pimpri chinchwad,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -488,7 +491,7 @@ Top IIT JEE Classes in pimpri chinchwad,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -530,12 +533,12 @@ Top IIT JEE Classes in pimpri chinchwad,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Our Teaching <span className="text-primary">Methodology</span> </motion.h1>
+              >Our Teaching <span className="text-primary">Methodology</span> </motion.h3>
 
 
 
@@ -573,7 +576,7 @@ Top IIT JEE Classes in pimpri chinchwad,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -584,7 +587,7 @@ Top IIT JEE Classes in pimpri chinchwad,
               &nbsp;ASQUARE Pimpri Chinchwad &nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
@@ -641,7 +644,7 @@ Top IIT JEE Classes in pimpri chinchwad,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -652,7 +655,7 @@ Top IIT JEE Classes in pimpri chinchwad,
                   &nbsp;Speak &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
 ASQUARE Academy continues to deliver outstanding results in <b className="bld">JEE Main & Advanced</b> every year. Our students from the <b className="bld">Pimpri Chinchwad center</b> have secured top ranks, thanks to expert faculty, disciplined preparation, and personalized mentoring.
 
@@ -710,12 +713,12 @@ ASQUARE Academy continues to deliver outstanding results in <b className="bld">J
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -743,7 +746,7 @@ ASQUARE Academy continues to deliver outstanding results in <b className="bld">J
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -754,7 +757,7 @@ ASQUARE Academy continues to deliver outstanding results in <b className="bld">J
               &nbsp;Pimpri Chinchwad Today &nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
             Achieve your engineering dreams with the <b className="bld">Top JEE Mains Coaching Classes in Pimpri Chinchwad</b>. With dedicated mentors, updated material, and a student-first approach, ASQUARE Academy stands out as the  <b className="bld">Best IIT JEE Coaching in Pimpri Chinchwad.</b>.
           </p>

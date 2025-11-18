@@ -22,10 +22,13 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (4).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (5).jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
+// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (15).jpeg';//9,15
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/sampleimg6.jpeg';
 import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
@@ -274,7 +277,7 @@ Top IIT JEE Classes in moshi,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1,sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -385,7 +388,7 @@ Top IIT JEE Classes in moshi,
                 </span>{" "}
                 Moshi
               </motion.h1>
-<p>Specialized Coaching for Engineering Aspirants in Moshi</p>
+   <motion.h2>Specialized Coaching for Engineering Aspirants in Moshi </motion.h2>
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
               Looking for <b className="bld">IIT-JEE coaching classes in Moshi, Pune? </b>At  <b className="bld">ASQUARE Academy, </b>we provide <b className="bld">systematic teaching, personalized mentoring, and result-driven preparation techniques. </b>Our Moshi branch helps aspirants aiming for <b className="bld">IITs, NITs, IIITs, and other top engineering institutes in India. </b> With <b className="bld">concept-based learning, structured assignments, and intensive practice sessions, </b>we prepare students for success in JEE Main & Advanced.
@@ -431,13 +434,13 @@ Top IIT JEE Classes in moshi,
       <hr></hr>
 
       {/* Why Choose */} <section className="jee-why py-5 ">
-        <div className="container">           <motion.h1
+        <div className="container">           <motion.h3
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="fw-bold display-6 mb-3 text-center"
         >Why Choose{" "}
-          <span className="text-primary">ASQUARE Academy in</span>  Moshi</motion.h1>
+          <span className="text-primary">ASQUARE Academy in</span>  Moshi</motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}> {whyChoose.map((item, i) => (<div key={i} className="col-lg-4 col-md-6">
             <motion.div whileHover={{ scale: 1.05 }} className="jee-feature-card shadow-lg rounded-4 p-4 h-100" > <item.Icon size={40} className="mb-3 text-warning" /> <h5 className="fw-bold mb-2">{item.title}</h5> <p className="text-muted">{item.desc}</p>
@@ -453,12 +456,12 @@ Top IIT JEE Classes in moshi,
           <div className="row align-items-center g-5">
 
             <div className="col-lg-8 text-center text-lg-start order-2">
-              <motion.h1
+              <motion.h4
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
-              >Our  <span className="text-primary">JEE</span> Coaching Programs </motion.h1>
+              >Our  <span className="text-primary">JEE</span> Coaching Programs </motion.h4>
 
               <p className="lead text-secondary">
                 The <b className="bld">Joint Entrance Examination (JEE)</b> requires clear fundamentals, rigorous practice, and smart strategies. At ASQUARE Academy Moshi, our courses are designed to  <b className="bld">strengthen concepts, improve accuracy, and enhance exam performance</b> for both <b className="bld">JEE Main & Advanced.</b> 
@@ -481,7 +484,7 @@ Top IIT JEE Classes in moshi,
       {/* Subjects + Batches Section */}
       <section className="jee-gradient-section py-5 text-white">
         <div className="container">
-          <motion.h1
+          <motion.h4
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -492,7 +495,7 @@ Top IIT JEE Classes in moshi,
               &nbsp;&&nbsp;
             </span>
             Batch Options
-          </motion.h1>
+          </motion.h4>
           <br></br>
 
           <div className="row g-4">
@@ -534,12 +537,12 @@ Top IIT JEE Classes in moshi,
       </div> */}
             {/* Left Side - Text and Cards */}
             <div className="col-lg-12 text-center text-lg-start">
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-center"
-              >Our Teaching <span className="text-primary">Methodology</span> </motion.h1>
+              >Our Teaching <span className="text-primary">Methodology</span> </motion.h3>
 
 
 
@@ -577,7 +580,7 @@ Top IIT JEE Classes in moshi,
       {/* New Highlights Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
-          <motion.h1
+          <motion.h3
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -588,7 +591,7 @@ Top IIT JEE Classes in moshi,
               &nbsp;Moshi&nbsp;
             </span>
             Branch
-          </motion.h1>
+          </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
@@ -645,7 +648,7 @@ Top IIT JEE Classes in moshi,
             {/* Text Section */}
             <div className="col-lg-8 text-center text-lg-start">
 
-              <motion.h1
+              <motion.h3
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -656,7 +659,7 @@ Top IIT JEE Classes in moshi,
                   &nbsp;Success &nbsp;
                 </span>
 
-              </motion.h1>
+              </motion.h3>
               <p className="lead text-light">
               ASQUARE Academy has built a reputation for producing <b className="bld">JEE toppers and engineering high-rank achievers</b> The <b className="bld">Moshi branch</b> adds to this legacy with <b className="bld">focused training, expert guidance, and result-oriented coaching.</b>
               </p>
@@ -712,12 +715,12 @@ Top IIT JEE Classes in moshi,
               <BadgeQuestionMark /> FAQs
             </div>
 
-            <motion.h1
+            <motion.h3
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="fw-bold display-6 mb-3 text-center"
-            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h1>
+            >Frequently Asked Questions  <span className="text-primary">(FAQ)</span> </motion.h3>
           </div>
 
           <div className="row justify-content-center">
@@ -745,7 +748,7 @@ Top IIT JEE Classes in moshi,
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -756,7 +759,7 @@ Top IIT JEE Classes in moshi,
               &nbsp;Moshi Today &nbsp;
             </span>
 
-          </motion.h1>
+          </motion.h2>
           <p className="lead mb-4">
           Step into your IIT-JEE journey with <b className="bld">ASQUARE Academy’s expert coaching in Moshi, Pune.</b> With <b className="bld">dedicated faculty, updated resources, and consistent results,</b>we are your reliable choice for <b className="bld">JEE, CET & NEET coaching.</b>
           </p>
