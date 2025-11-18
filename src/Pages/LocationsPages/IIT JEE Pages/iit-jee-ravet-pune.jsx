@@ -23,18 +23,17 @@ import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
 import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
-import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (2).jpeg';
-import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (3).jpeg';
-import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg';
-import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (7).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (8).jpeg';
+import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (15).jpeg';
+import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg';
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
-import sampleimg6 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (8).jpeg';
-import sampleimg7 from '../../../Assets/SampleImages/sampleimg7.jpeg';
+import sampleimg6 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (16).jpeg';
 import Form from '../../../Components/Form2/Form2.jsx';
 
 const Reviews = React.lazy(() => import("../../../Components/Reviews/Reviews.jsx"));
 
-function IITJEEWanwadi() {
+function IITJEERavet() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -44,80 +43,154 @@ function IITJEEWanwadi() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Updated content arrays for Wanwadi
+  // Ravet content arrays
   const whyChoose = [
-    { Icon: Users, title: "Highly Qualified Teachers", desc: "Experts in IIT-JEE, CET & NEET coaching." },
-    { Icon: BookOpen, title: "Comprehensive PCM Coverage", desc: "Physics, Chemistry & Mathematics aligned with latest JEE syllabus." },
-    { Icon: Target, title: "Student-Centric Mentoring", desc: "Small batch size ensures personalized learning." },
-    { Icon: BarChart, title: "Performance Tracking", desc: "Weekly assignments, mock tests & progress reviews." },
-    { Icon: Lightbulb, title: "Motivation & Career Guidance", desc: "Regular counseling sessions and study planning tips." },
+    { Icon: Users, title: "Qualified Faculty", desc: "Experts in IIT-JEE, CET & NEET coaching." },
+    { Icon: BookOpen, title: "Complete PCM Syllabus", desc: "Physics, Chemistry & Mathematics aligned with latest exam updates." },
+    { Icon: Target, title: "Personal Attention", desc: "Small batches for doubt-solving and better interaction." },
+    { Icon: BarChart, title: "Assessment System", desc: "Weekly unit tests, assignments & mock exams." },
+    { Icon: Lightbulb, title: "Motivation & Guidance", desc: "Career counseling, time management & stress-relief sessions." },
   ];
 
   const subjects = [
-    { title: "Physics", desc: "In-depth understanding with application-based problem solving" },
-    { title: "Chemistry", desc: "Strong foundation in Physical, Organic & Inorganic Chemistry" },
-    { title: "Mathematics", desc: "Intensive practice in Algebra, Geometry, Calculus, Probability & Trigonometry" },
+    { title: "Physics", desc: "Concept clarity with numerical applications" },
+    { title: "Chemistry", desc: "Physical, Organic & Inorganic Chemistry explained thoroughly" },
+    { title: "Mathematics", desc: "Advanced practice in Algebra, Calculus, Trigonometry, Geometry & Probability" },
   ];
 
   const batches = [
-    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Board + JEE integrated coaching." },
-    { title: "1-Year Advanced Program (11th → 12th Moving Students)", desc: "XII + JEE intensive preparation." },
-    { title: "Crash Course (2–3 Months)", desc: "Quick revision & problem-solving drills." },
-    { title: "Dropper/Repeater Batch (XII Pass-outs)", desc: "One-year JEE-focused program for repeaters." },
+    { title: "2-Year Foundation Program (10th → 12th Moving Students)", desc: "Board + JEE integrated preparation." },
+    { title: "1-Year Intensive Course (11th → 12th Moving Students)", desc: "Fast-track XII + JEE program." },
+    { title: "Crash Course (2–3 Months)", desc: "Quick revision & test-focused learning." },
+    { title: "Dropper/Repeater Batch (XII Pass-outs)", desc: "One-year JEE coaching for repeaters." },
   ];
 
   const faqs = [
-    { q: "Q1: Who can join ASQUARE Academy Wanwadi?", a: "Students of Class XI, XII, and XII pass-outs who aim to crack JEE Main & Advanced can join our focused IIT JEE coaching program in Wanwadi Pune." },
-    { q: "Q2: Which subjects are taught at ASQUARE Academy?", a: "We cover Physics, Chemistry, and Mathematics (PCM) comprehensively, aligned with the latest JEE syllabus and exam trends." },
-    { q: "Q3: Does ASQUARE Academy provide mock exams?", a: "Yes, regular weekly tests and full-length mock exams are conducted to evaluate progress and strengthen exam strategies." },
-    { q: "Q4: What types of courses are available?", a: "We offer 2-Year, 1-Year, Crash, and Dropper/Repeater batches, catering to different preparation stages and timelines." },
-    { q: "Q5: How big are the batches at the Wanwadi branch?", a: "Our batches are kept small to ensure personalized mentoring, individual doubt-solving, and focused guidance for every student." },
-    { q: "Q6: How do parents stay updated on student performance?", a: "Parents receive detailed progress reports and are invited to regular Parent-Teacher Meetings (PTMs) for performance tracking." },
-    { q: "Q7: Which areas does the Wanwadi branch serve?", a: "The branch is easily accessible from Wanwadi, NIBM Road, Undri, Kondhwa, Camp, and nearby Pune localities, making it ideal for students across the region." },
-    { q: "Q8: Why choose ASQUARE Academy for IIT JEE in Wanwadi Pune?", a: "ASQUARE Academy is known for expert faculty, small batch sizes, mock exams, and structured JEE Advanced preparation to help students achieve top ranks." },
+    { q: "Q1: Who can join ASQUARE Academy Ravet?", a: "Class XI, XII students and XII pass-outs preparing for JEE Main & Advanced." },
+    { q: "Q2: What subjects are included?", a: "Physics, Chemistry, and Mathematics (PCM)." },
+    { q: "Q3: Do you conduct mock exams?", a: "Yes, weekly unit tests and full-length mock exams are conducted." },
+    { q: "Q4: What courses are available?", a: "We offer 2-Year, 1-Year, Crash Courses & Dropper Batches." },
+    { q: "Q5: How many students are there in a batch?", a: "We maintain small batch sizes for individual mentoring." },
+    { q: "Q6: Do parents get regular updates?", a: "Yes, through PTMs and progress reports." },
+    { q: "Q7: Which areas does the Ravet branch serve?", a: "Easily accessible from Ravet, Punawale, Tathawade, Nigdi, Akurdi, Hinjewadi, and nearby PCMC localities." },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Best IIT JEE Coaching Classes in Wanwadi Pune | ASQUARE Academy</title>
-        <meta name="title" content="Best IIT JEE Coaching Classes in Wanwadi Pune | ASQUARE Academy" />
-        <meta name="description" content="Join ASQUARE Academy for top IIT JEE coaching classes in Wanwadi Pune. Small batches, expert faculty & regular mock tests for JEE Main & Advanced preparation." />
-        <meta name="keywords" content="IIT JEE coaching classes in wanwadi pune, Best IIT JEE Coaching in wanwadi pune, Top JEE Mains Coaching Classes wanwadi pune, IIT JEE Advanced Preparation wanwadi pune, JEE Advanced coaching classes in wanwadi pune, IIT JEE Classes in wanwadi pune, Best IIT JEE Classes in wanwadi pune, Top IIT JEE Classes in wanwadi pune" />
+        <title>Best IIT JEE Coaching Classes in Ravet Pune | ASQUARE Academy</title>
+        <meta name="title" content="Best IIT JEE Coaching Classes in Ravet Pune | ASQUARE Academy" />
+        <meta name="description" content="Join ASQUARE Academy – Best IIT JEE Coaching Classes in Ravet Pune for JEE Main & Advanced with expert faculty, small batches, tests & personalized mentoring." />
+        <meta name="keywords" content="IIT JEE coaching classes in ravet pune, Best IIT JEE Coaching in ravet pune, Top JEE Mains Coaching Classes ravet pune, IIT JEE Advanced Preparation ravet pune, JEE Advanced coaching classes in ravet pune, IIT JEE Classes in ravet pune, Best IIT JEE Classes in ravet pune, Top IIT JEE Classes in ravet pune" />
 
         <script type="application/ld+json">{`
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "EducationalOrganization",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-wanwadi-pune#organization",
-      "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-wanwadi-pune",
-      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9766118877",
-        "contactType": "Customer Service",
-        "areaServed": "IN"
+      "@type": "LocalBusiness",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-ravet-pune/#localbusiness",
+      "name": "ASQUARE Academy Ravet",
+      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-ravet-pune",
+      "telephone": "9766118877",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ravet",
+        "addressRegion": "Pune",
+        "addressCountry": "India"
       },
       "sameAs": [
         "https://www.instagram.com/asquarepune",
         "https://www.facebook.com/asquarepune/"
       ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Wanwadi",
-        "addressRegion": "Pune",
-        "addressCountry": "IN"
-      }
+      "description": "ASQUARE Academy Ravet offers the Best IIT JEE Coaching Classes in Pune with expert faculty, mock exams, small batches & personalized learning support."
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-wanwadi-pune#webpage",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-wanwadi-pune",
-      "name": "Best IIT JEE Coaching Classes in Wanwadi Pune | ASQUARE Academy",
-      "description": "ASQUARE Academy offers the best IIT JEE coaching in Wanwadi Pune with expert mentors, small batches, and regular mock exams for JEE Main & Advanced preparation."
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-ravet-pune/#webpage",
+      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-ravet-pune",
+      "name": "Best IIT JEE Coaching Classes in Ravet Pune | ASQUARE Academy",
+      "description": "ASQUARE Academy Ravet provides top IIT JEE Coaching Classes in Ravet Pune with focused PCM subjects, JEE Mains & Advanced prep, tests & expert mentoring."
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "ASQUARE Academy",
+      "url": "https://www.asquareclasses.com/",
+      "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "9766118877",
+        "contactType": "Customer Support",
+        "areaServed": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/asquarepune",
+        "https://www.facebook.com/asquarepune/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-ravet-pune/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can join ASQUARE Academy Ravet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Class XI, XII students and XII pass-outs preparing for JEE Main & Advanced."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What subjects are included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Physics, Chemistry, and Mathematics (PCM) are taught by expert faculty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you conduct mock exams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, weekly unit tests and full-length mock exams are conducted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What courses are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer 2-Year, 1-Year, Crash Courses & Dropper Batches for IIT JEE preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many students are there in a batch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We maintain small batch sizes for individual mentoring and better focus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do parents get regular updates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, parents receive regular progress reports and PTM updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas does the Ravet branch serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Ravet branch serves students from Ravet, Punawale, Tathawade, Nigdi, Akurdi, Hinjewadi, and nearby PCMC localities."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -131,99 +204,16 @@ function IITJEEWanwadi() {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "IIT JEE Coaching Pune",
-          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-in-pune-maharashtra/"
+          "name": "IIT JEE Coaching Classes",
+          "item": "https://www.asquareclasses.com/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Wanwadi Pune",
-          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-wanwadi-pune"
+          "name": "Ravet Pune",
+          "item": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-ravet-pune"
         }
       ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Who can join ASQUARE Academy Wanwadi?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Students of Class XI, XII, and pass-outs targeting JEE Main & Advanced can join our focused IIT JEE coaching program in Wanwadi Pune."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which subjects are taught at ASQUARE Academy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Physics, Chemistry, and Mathematics (PCM) are taught thoroughly as per the latest JEE syllabus and exam trends."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does ASQUARE Academy provide mock exams?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we conduct weekly tests and full-length mock exams to assess progress and enhance exam readiness."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What types of courses are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer 2-Year, 1-Year, Crash, and Dropper batches designed for different JEE preparation stages."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How big are the batches at the Wanwadi branch?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Batch sizes are small to ensure personalized mentoring, individual doubt-solving, and focused attention."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do parents stay updated on student performance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parents receive detailed progress reports and are invited to regular Parent-Teacher Meetings (PTMs)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which areas does the Wanwadi branch serve?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Students from Wanwadi, NIBM Road, Undri, Kondhwa, Camp, and nearby Pune localities attend our IIT JEE coaching."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why choose ASQUARE Academy for IIT JEE in Wanwadi Pune?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "With expert faculty, structured mock exams, and personalized mentoring, ASQUARE Academy ranks among the top IIT JEE classes in Wanwadi Pune."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "name": "ASQUARE Academy - IIT JEE Coaching Wanwadi Pune",
-      "image": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
-      "telephone": "+91-9766118877",
-      "url": "https://www.asquareclasses.com/iit-jee-coaching-classes-institute-wanwadi-pune",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Wanwadi",
-        "addressRegion": "Pune",
-        "addressCountry": "IN"
-      }
     }
   ]
 }
@@ -346,19 +336,19 @@ function IITJEEWanwadi() {
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3"
               >
-                Master JEE Main & Advanced with <span className="highlight-text text-warning">ASQUARE Academy Wanwadi</span>
+                Achieve JEE Main & Advanced Success with <span className="highlight-text text-warning">ASQUARE Academy Ravet</span>
               </motion.h1>
 
-              <motion.h2>Your Trusted Coaching Partner in Wanwadi for Engineering Success</motion.h2>
+              <motion.h2>Reliable Coaching for Engineering Aspirants in Ravet</motion.h2>
 
               {/* Full text for desktop */}
               <p className="lead d-none d-md-block">
-                Looking for IIT-JEE coaching classes in Wanwadi, Pune? At <b className="bld">ASQUARE Academy,</b> we provide concept-driven teaching, structured programs, and personalized mentorship to help students prepare effectively for JEE Main & Advanced. Our Wanwadi branch focuses on building strong fundamentals, sharpening problem-solving skills, and boosting exam confidence for students aspiring to join IITs, NITs, IIITs, and India’s top engineering institutes.
+                Looking for IIT-JEE coaching classes in Ravet, Pune? At <b className="bld">ASQUARE Academy,</b> we provide systematic learning, practice-based preparation, and individual guidance to help students achieve their engineering dreams. Our Ravet branch prepares aspirants for admission into IITs, NITs, IIITs, and other top engineering colleges. With experienced teachers, structured study plans, and rigorous test practice, students are trained to excel in JEE Main & Advanced.
               </p>
 
               {/* Short text for mobile */}
               <p className="lead d-block d-md-none">
-                Looking for IIT-JEE coaching classes in Wanwadi, Pune? At <b className="bld">ASQUARE Academy,</b> we provide concept-driven teaching, structured programs, and personalized mentorship to help students prepare effectively for JEE Main & Advanced. Our Wanwadi branch focuses on building strong fundamentals, sharpening problem-solving skills, and boosting exam confidence for students aspiring to join IITs, NITs, IIITs, and India’s top engineering institutes.
+                Looking for IIT-JEE coaching classes in Ravet, Pune? At <b className="bld">ASQUARE Academy,</b> we provide systematic learning, practice-based preparation, and individual guidance to help students achieve their engineering dreams. Our Ravet branch prepares aspirants for admission into IITs, NITs, IIITs, and other top engineering colleges. With experienced teachers, structured study plans, and rigorous test practice, students are trained to excel in JEE Main & Advanced.
               </p>
 
               <a className="btn btn-warning btn-lg rounded-pill mt-3 shadow-lg">
@@ -396,7 +386,7 @@ function IITJEEWanwadi() {
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3 text-center"
           >
-            Why Students Choose <span className="text-primary">ASQUARE Academy Wanwadi</span>
+            Why <span className="text-primary">ASQUARE Academy in Ravet</span>?
           </motion.h3>
 
           <div className="row g-4 justify-center" style={{ justifyContent: "center" }}>
@@ -425,11 +415,11 @@ function IITJEEWanwadi() {
                 transition={{ duration: 0.6 }}
                 className="fw-bold display-6 mb-3 text-centerr"
               >
-                Courses Tailored for <span className="text-primary">IIT-JEE Success</span>
+                Our JEE Coaching <span className="text-primary">Programs</span>
               </motion.h4>
 
               <p className="lead text-secondary">
-                The Joint Entrance Examination (JEE) requires concept clarity, consistency, and intensive practice. At ASQUARE Academy Wanwadi, our courses are designed to strengthen subject knowledge, improve accuracy, and enhance exam performance for both JEE Main & Advanced.
+                The Joint Entrance Examination (JEE) is one of the most competitive entrance tests in India. At ASQUARE Academy Ravet, our programs are designed to strengthen concepts, sharpen problem-solving skills, and improve accuracy for both JEE Main & Advanced.
               </p>
             </div>
             <div className="col-lg-4 text-center  order-1">
@@ -455,15 +445,15 @@ function IITJEEWanwadi() {
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3 text-center"
           >
-            Subject-Wise Training
+            Subjects We Teach
             <span className="highlight-text text-warning">&nbsp;&&nbsp;</span>
-            Batch Options
+            Course Duration & Batch Options
           </motion.h4>
           <br />
 
           <div className="row g-4">
             <div className="col-lg-6">
-              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subject-Wise Training</h4>
+              <h4 className="highlight-text text-warning fw-bold mb-4 text-centerr">Subjects We Teach</h4>
               {subjects.map((sub, i) => (
                 <div key={i} className="jee-subject-box mb-4 p-3 pb-4 pt-4  rounded-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
                   <h5 className="fw-semibold">{sub.title}</h5>
@@ -501,10 +491,10 @@ function IITJEEWanwadi() {
 
               <div className="row g-4 justify-content-center">
                 {[
-                  "Daily interactive classes with topic-wise assignments",
-                  "Individualized doubt-solving sessions",
-                  "Weekly chapter-wise tests & mock exams",
-                  "Parent–teacher meetings for detailed performance reviews"
+                  "Daily lectures with structured assignments",
+                  "One-to-one doubt-clearing sessions",
+                  "Weekly practice tests & full-length mock exams",
+                  "Parent–teacher meetings for student progress updates"
                 ].map((text, i) => (
                   <div key={i} className="col-lg-3 col-6">
                     <motion.div whileHover={{ y: -5 }} className="method-card p-4 bg-white rounded-4 shadow-sm h-100 text-center">
@@ -520,7 +510,7 @@ function IITJEEWanwadi() {
 
       <hr />
 
-      {/* New Highlights Section */}
+      {/* Key Features Section */}
       <section className="jee-highlights py-5 text-white">
         <div className="container text-center">
           <motion.h3
@@ -529,21 +519,20 @@ function IITJEEWanwadi() {
             transition={{ duration: 0.6 }}
             className="fw-bold display-6 mb-3"
           >
-            Key Benefits of Joining  
-            <span className="highlight-text text-warning">&nbsp;ASQUARE Wanwadi&nbsp;</span>
+            Key Features of <span className="highlight-text text-warning">&nbsp;Ravet Branch&nbsp;</span>
           </motion.h3>
 
           <div className="row justify-content-center g-4">
             {[
-              "Limited batch strength for personalized guidance",
-              "Updated IIT-JEE study material, practice papers & test series",
-              "Workshops on exam strategies, time management & problem-solving hacks",
-              "Regular performance updates to parents",
-              "Recognized as a reliable IIT-JEE coaching institute in Wanwadi, Pune"
+              "Limited batch size for focused attention",
+              "Updated IIT-JEE study modules, notes & question banks",
+              "Workshops on exam hacks, problem-solving & time management",
+              "Continuous performance reviews with parent updates",
+              "Recognized as a leading JEE coaching institute in Ravet, Pune"
             ].map((text, i) => (
               <motion.div key={i} className="col-md-5 col-lg-4 col-6" whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
                 <div className="highlight-card shadow-lg rounded-4 p-4 bg-white bg-opacity-10 backdrop-blur-md border border-light border-opacity-25">
-                  <div className="icon-circle mx-auto mb-3"><h2>🎓</h2></div>
+                  <div className="icon-circle mx-auto mb-3"><h2>🏆</h2></div>
                   <p className="fw-semibold text-light ">{text}</p>
                 </div>
               </motion.div>
@@ -565,10 +554,10 @@ function IITJEEWanwadi() {
           <div className="row align-items-center g-5">
             <div className="col-lg-8 text-center text-lg-start">
               <motion.h3 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="fw-bold display-6 mb-3">
-                Strong Legacy of <span className="highlight-text text-warning">&nbsp;Results&nbsp;</span>
+                Results That <span className="highlight-text text-warning">&nbsp;Inspire&nbsp;</span>
               </motion.h3>
               <p className="lead text-light">
-                ASQUARE Academy has guided many JEE Main & Advanced toppers to success. The Wanwadi branch carries forward this legacy by providing student-focused learning, dedicated faculty, and consistent exam success.
+                ASQUARE Academy has a proven record of producing IIT-JEE toppers and engineering achievers. The Ravet branch adds to this success by offering dedicated coaching, expert mentoring, and result-oriented learning.
               </p>
             </div>
 
@@ -611,15 +600,15 @@ function IITJEEWanwadi() {
       <section id="enroll" className="jee-enroll-section py-5 text-center text-white">
         <div className="container">
           <motion.h3 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="fw-bold display-6 mb-3">
-            Enroll Now at <span className="highlight-text text-warning">&nbsp;ASQUARE Academy Wanwadi&nbsp;</span>
+            Join <span className="highlight-text text-warning">&nbsp;ASQUARE Academy Ravet&nbsp;</span>Today
           </motion.h3>
           <p className="lead mb-4">
-            Prepare for your engineering dream with ASQUARE Academy’s IIT-JEE coaching in Wanwadi, Pune. With experienced faculty, structured study plans, and proven success, we are your reliable choice for JEE, CET & NEET coaching.
+            Take your IIT-JEE preparation to the next level with ASQUARE Academy’s expert coaching in Ravet, Pune. With skilled faculty, structured programs, and a strong track record, we are your trusted choice for JEE, CET & NEET coaching.
           </p>
-          <p><MapPin className="text-warning" />Serving students from <b className="bld">Wanwadi, NIBM, Kondhwa, Undri, Camp, and surrounding Pune areas.</b></p>
+          <p><MapPin className="text-warning" /> Serving students from <b className="bld">Ravet, Punawale, Tathawade, Nigdi, Akurdi, Hinjewadi, and nearby PCMC areas.</b></p>
           <a className="btn btn-lg btn-warning fw-bold mt-3 px-5 py-3 rounded-pill shadow-lg">
             <Link to={'/'} className="nav-item nav-item-list text-white">
-              ⚡ Admissions Open – Limited seats available! Contact us today to reserve your seat.
+              ⚡ Admissions Open – Limited seats available! Contact us today to enroll.
             </Link>
           </a>
         </div>
@@ -630,4 +619,4 @@ function IITJEEWanwadi() {
   );
 }
 
-export default IITJEEWanwadi;
+export default IITJEERavet;

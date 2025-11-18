@@ -147,6 +147,13 @@ import IITJEECharholi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-charhol
 import IITJEECamp from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-camp-pune";
 import IITJEESasaneNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-sasane-nagar-pune";
 import IITJEEWanwadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-wanwadi-pune";
+import IITJEERavet from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-ravet-pune";
+import IITJEERahatni from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-rahatani-pune";
+import IITJEEHinjewadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-Hinjewadi-pune";
+import IITJEEWakad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-wakad-pune";
+import IITJEEChakan from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chakan-pune";
+import IITJEEChikhali from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chikhali-pune";
+import IITJEEKasarwadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-kasarwadi-pune";
 
 
 function App() {
@@ -449,7 +456,15 @@ function App() {
                    <Route path='/iit-jee-coaching-classes-institute-sasane-nagar-pune' element={<IITJEESasaneNagar />} />
                    {/* // */}
                          <Route path='/iit-jee-coaching-classes-institute-wanwadi-pune' element={<IITJEEWanwadi />} />
-                   
+                          <Route path='/iit-jee-coaching-classes-institute-ravet-pune' element={<IITJEERavet />} />
+                                      <Route path='/iit-jee-coaching-institute-rahatni-pune' element={<IITJEERahatni />} />
+                                          <Route path='/iit-jee-coaching-classes-institute-hinjewadi-pune' element={<IITJEEHinjewadi />} />
+                                           <Route path='/iit-jee-coaching-classes-institute-wakad-pune' element={<IITJEEWakad />} />
+
+   <Route path='/iit-jee-coaching-classes-institute-chakan-pune' element={<IITJEEChakan />} />
+      <Route path='/iit-jee-coaching-classes-institute-chikhali-pune' element={<IITJEEChikhali />} />
+        <Route path='/iit-jee-coaching-classes-institute-kasarwadi-pune' element={<IITJEEKasarwadi />} />
+                                           
 
 
         </Routes>
