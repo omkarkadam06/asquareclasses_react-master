@@ -154,6 +154,14 @@ import IITJEEWakad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-wakad-pune
 import IITJEEChakan from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chakan-pune";
 import IITJEEChikhali from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-chikhali-pune";
 import IITJEEKasarwadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-kasarwadi-pune";
+import IITJEENigdi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-nigdi-pune";
+import IITJEEKondhwa from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-kondhwa-pune";
+import IITJEEAkurdi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-akurdi-pune";
+import IITJEEKalewadi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-kalewadi-pune";
+import IITJEEKalas from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-kalas-pune";
+import IITJEEAlandiRoad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-alandiroad-pune";
+import IITJEEPune from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pune";
+import IITJEEPuneMaharashtra from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pune-maharashtra";
 
 
 function App() {
@@ -464,7 +472,14 @@ function App() {
    <Route path='/iit-jee-coaching-classes-institute-chakan-pune' element={<IITJEEChakan />} />
       <Route path='/iit-jee-coaching-classes-institute-chikhali-pune' element={<IITJEEChikhali />} />
         <Route path='/iit-jee-coaching-classes-institute-kasarwadi-pune' element={<IITJEEKasarwadi />} />
-                                           
+                <Route path='/iit-jee-coaching-classes-institute-nigdi-pune' element={<IITJEENigdi />} />
+                        <Route path='/iit-jee-coaching-classes-kondhwa-pune' element={<IITJEEKondhwa />} />
+                              <Route path='/iit-jee-coaching-classes-institute-akudi-pune' element={<IITJEEAkurdi />} />
+                                  <Route path='/iit-jee-coaching-institute-in-kalas-pune' element={<IITJEEKalas />} />
+                                      <Route path='/iit-jee-coaching-classes-institute-kalewadi-pune' element={<IITJEEKalewadi />} />
+                                          <Route path='/iit-jee-coaching-institute-alandi-road-pune' element={<IITJEEAlandiRoad />} />
+                                            <Route path='/iit-jee-coaching-classes-institute-pune' element={<IITJEEPune />} />
+                                             <Route path='/iit-jee-coaching-classes-institute-pune-maharashtra' element={<IITJEEPuneMaharashtra />} />
 
 
         </Routes>
