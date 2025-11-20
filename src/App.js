@@ -163,6 +163,13 @@ import IITJEEAlandiRoad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-aland
 import IITJEEPune from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pune";
 import IITJEEPuneMaharashtra from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pune-maharashtra";
 
+import IITJEEDapodi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-dapodi-pune";
+import IITJEETingreNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-tingre-nagar-pune";
+import IITJEEPimpleSaudagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pimple-saudagar-pune";
+import IITJEEVimanNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-viman-nagar-pune";
+import IITJEEDhanori from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-dhanori-pune";
+import IITJEEPratikNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pratik-nagar-pune";
+
 
 function App() {
   return (
@@ -480,7 +487,13 @@ function App() {
                                           <Route path='/iit-jee-coaching-institute-alandi-road-pune' element={<IITJEEAlandiRoad />} />
                                             <Route path='/iit-jee-coaching-classes-institute-pune' element={<IITJEEPune />} />
                                              <Route path='/iit-jee-coaching-classes-institute-pune-maharashtra' element={<IITJEEPuneMaharashtra />} />
-
+   
+<Route path='/iit-jee-coaching-classes-institute-dapodi-pune' element={<IITJEEDapodi />} />
+<Route path='/iit-jee-coaching-classes-institute-tingre-nagar-pune' element={<IITJEETingreNagar />} />
+<Route path='/iit-jee-coaching-classes-institute-pimple-saudagar-pune' element={<IITJEEPimpleSaudagar />} />
+<Route path='/iit-jee-coaching-classes-institute-viman-nagar-pune' element={<IITJEEVimanNagar />} />
+<Route path='/iit-jee-coaching-classes-institute-dhanori-pune' element={<IITJEEDhanori />} />
+<Route path='/iit-jee-coaching-classes-institute-pratik-nagar-pune' element={<IITJEEPratikNagar />} />
 
         </Routes>
       </BrowserRouter>
@@ -489,3 +502,4 @@ function App() {
 }
 
 export default App;
+
