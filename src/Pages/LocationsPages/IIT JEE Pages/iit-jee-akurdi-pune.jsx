@@ -23,12 +23,12 @@ import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
 // import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
-import sampleimg2 from "../../../Assets/SampleImages/sampleimg2.jpeg";
+// import sampleimg2 from "../../../Assets/SampleImages/sampleimg2.jpeg";
 
 import sampleimg1 from "../../../Assets/SampleImages/Banners/Banners (5).jpeg";
 import sampleimg11 from "../../../Assets/SampleImages/Banners/Banners (2).jpeg";
-// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
-// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner1.jpeg';
+import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner2.jpeg';
 
 import sampleimg3 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg"; //9,15
 import sampleimg4 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg"; //2,17
@@ -346,7 +346,7 @@ Top IIT JEE Classes in akudi,
           /* Mobile carousel */
           <div id="jeeFullCarouselMobile" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-              {[sampleimg2, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map((img, i) => (
+              {[sampleimg2, sampleimg22].map((img, i) => (
                 <div
                   key={i}
                   className={`carousel-item ${i === 0 ? "active" : ""}`}

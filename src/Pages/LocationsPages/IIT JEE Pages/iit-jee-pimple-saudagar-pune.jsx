@@ -19,8 +19,9 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-
-import sampleimg2 from "../../../Assets/SampleImages/sampleimg2.jpeg";
+import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner5.jpeg';
+import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner6.jpeg';
+// import sampleimg2 from "../../../Assets/SampleImages/sampleimg2.jpeg";
 import sampleimg1 from "../../../Assets/SampleImages/Banners/Banners (3).jpeg";
 import sampleimg11 from "../../../Assets/SampleImages/Banners/Banners (6).jpeg";
 

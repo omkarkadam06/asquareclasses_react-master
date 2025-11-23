@@ -24,9 +24,9 @@ import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
 import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (6).jpeg';
 import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (7).jpeg';
-// import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner (1).jpeg';
-// import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner (2).jpeg';
-import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner3.jpeg';
+import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner4.jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
 import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';//9,15
 import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (17).jpeg'; //2,17
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';

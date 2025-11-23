@@ -24,7 +24,9 @@ import Loading from "../../Loading.jsx";
 
 import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (5).jpeg';
 import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (6).jpeg';
-import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner6.jpeg';
+import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner7.jpeg';
 import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (9).jpeg';
 import sampleimg4 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (2).jpeg';
 import sampleimg6 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (13).jpeg';

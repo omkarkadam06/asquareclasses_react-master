@@ -28,7 +28,9 @@ import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
 // sample images - reusing same assets as other pages
-import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner4.jpeg';
+import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner5.jpeg';
+// import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
 import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (8).jpeg';
 import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (9).jpeg';
 import sampleimg3 from '../../../Assets/SampleImages/AsquarePics/AsquarePics (15).jpeg';
