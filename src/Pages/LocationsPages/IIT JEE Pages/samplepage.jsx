@@ -22,8 +22,10 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import "../../../App.css";
 import "./iit-jee.css";
 import Loading from "../../Loading.jsx";
-import sampleimg1 from '../../../Assets/SampleImages/sampleimg1.jpeg';
-import sampleimg2 from '../../../Assets/SampleImages/sampleimg2.jpeg';
+import sampleimg1 from '../../../Assets/SampleImages/Banners/Banners (3).jpeg';
+import sampleimg11 from '../../../Assets/SampleImages/Banners/Banners (4).jpeg';
+import sampleimg2 from '../../../Assets/SampleImages/MobBanners/MobBanner7.jpeg';
+import sampleimg22 from'../../../Assets/SampleImages/MobBanners/MobBanner8.jpeg';
 import sampleimg3 from '../../../Assets/SampleImages/sampleimg3.jpeg';
 import sampleimg4 from '../../../Assets/SampleImages/sampleimg4.jpeg';
 import sampleimg5 from '../../../Assets/SampleImages/sampleimg5.jpeg';
@@ -241,7 +243,7 @@ Top IIT JEE Classes in Pune,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg1, sampleimg1, sampleimg1, sampleimg1, sampleimg1].map(
+              {[sampleimg1, sampleimg11].map(
                 (img, i) => (
                   <div
                     key={i}
@@ -285,7 +287,7 @@ Top IIT JEE Classes in Pune,
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg2, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map(
+              {[sampleimg2, sampleimg22].map(
                 (img, i) => (
                   <div
                     key={i}

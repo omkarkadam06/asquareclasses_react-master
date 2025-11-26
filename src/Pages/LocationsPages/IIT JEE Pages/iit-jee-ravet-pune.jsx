@@ -279,7 +279,7 @@ function IITJEERavet() {
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              {[sampleimg2, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map(
+              {[sampleimg2, sampleimg22].map(
                 (img, i) => (
                   <div
                     key={i}

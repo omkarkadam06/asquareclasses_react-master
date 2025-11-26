@@ -256,7 +256,7 @@ Top IIT JEE Classes in chakan,
         ) : (
           <div id="jeeFullCarouselMobile" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-              {[sampleimg2, sampleimg2, sampleimg2, sampleimg2, sampleimg2].map((img, i) => (
+              {[sampleimg2, sampleimg22].map((img, i) => (
                 <div key={i} className={`carousel-item ${i === 0 ? "active" : ""}`} style={{ height: "400px", backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className="carousel-overlay" />
                 </div>
