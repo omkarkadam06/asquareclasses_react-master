@@ -179,8 +179,16 @@ import IITJEEThergaon from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-thergao
 import IITJEEKorogaonPark from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-koregaon-park-pune";
 import IITJEEAirportRoad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-airport-road-pune";
 import IITJEEShastriNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-shastri-nagar-pune";
+
 import IITJEESwargate from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-swargate-pune";
 import IITJEERastaPeth from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-rasta-peth-pune";
+
+
+
+
+
+
+
 
 
 function App() {
@@ -513,10 +521,11 @@ function App() {
 <Route path='/iit-jee-coaching-classes-institute-guruwar-peth-pune' element={<IITJEEGuruwarPeth />} />
 <Route path='/iit-jee-coaching-classes-institute-swargate-pune' element={<IITJEESwargate />} />
 <Route path='/iit-jee-coaching-classes-institute-rasta-peth-pune' element={<IITJEERastaPeth />} />
-{/* <Route path='/iit-jee-coaching-classes-institute-thergaon-pune' element={<IITJEEThergaon />} /> */}
-{/* <Route path='/iit-jee-coaching-classes-institute-koregaon-park-pune' element={<IITJEEKorogaonPark />} /> */}
-{/* <Route path='/iit-jee-coaching-classes-institute-airport-road-pune' element={<IITJEEAirportRoad />} /> */}
-{/* <Route path='/iit-jee-coaching-classes-institute-shastri-nagar-pune' element={<IITJEEShastriNagar />} /> */}
+
+<Route path='/iit-jee-coaching-classes-institute-thergaon-pune' element={<IITJEEThergaon />} />
+<Route path='/iit-jee-coaching-institute-in-koregaon-park-pune' element={<IITJEEKorogaonPark />} />
+<Route path='/iit-jee-coaching-institute-in-airport-road-pune' element={<IITJEEAirportRoad />} />
+<Route path='/iit-jee-coaching-classes-institute-shastri-nagar-pune' element={<IITJEEShastriNagar />} />
 
 
 
