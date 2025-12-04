@@ -159,11 +159,11 @@ background: linear-gradient(135deg, #023e8e, #6799f8);
   /* width: 380px; */
 }
 @media (max-width: 1024px) {
-    .mobile-form .headernewform {
+    /* .mobile-form .headernewform {
         display: block !important;
         width: 85%!important;
         margin: 0px auto!important;
-    }
+    } */
 
     .jee-slider-form-box {
   position: absolute;
@@ -187,7 +187,7 @@ background: linear-gradient(135deg, #023e8e, #6799f8);
     position: static;
     transform: none;
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     background: #f8f9fa;
   }
   .jee-enquiry-form {
