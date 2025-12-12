@@ -231,6 +231,7 @@ import IITJEEShahuNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-shahu
 import IITJEEPurnaNagarChinchwad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-purna-nagar-chinchwad";
 import IITJEESpineCity from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-spine-city-pune";
 import IITJEEBopkhel from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bopkhel-pune";
+import IITJEEIndia from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-india";
 
 
 
@@ -628,7 +629,7 @@ function App() {
 <Route path='/iit-jee-coaching-classes-institute-spine-city-pune' element={<IITJEESpineCity />}/>
 
 <Route path='/iit-jee-coaching-classes-institute-bopkhel-pune' element={<IITJEEBopkhel />} />
-
+<Route path='/iit-jee-coaching-classes-institute' element={<IITJEEIndia />} />
 
 
 
