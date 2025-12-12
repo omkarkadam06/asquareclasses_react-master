@@ -224,7 +224,13 @@ import IITJEELohegaon from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-lohegao
 import IITJEEPCMCPune from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-pcmc";
 import IITJEESomwarPeth from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-somwar-peth-pune";
 
+// 
 
+import IITJEEDighi from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-dighi-pune";
+import IITJEEShahuNagar from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-shahu-nagar-pune";
+import IITJEEPurnaNagarChinchwad from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-purna-nagar-chinchwad";
+import IITJEESpineCity from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-spine-city-pune";
+import IITJEEBopkhel from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bopkhel-pune";
 
 
 
@@ -542,7 +548,7 @@ function App() {
         <Route path='/iit-jee-coaching-classes-institute-kasarwadi-pune' element={<IITJEEKasarwadi />} />
                 <Route path='/iit-jee-coaching-classes-institute-nigdi-pune' element={<IITJEENigdi />} />
                         <Route path='/iit-jee-coaching-classes-kondhwa-pune' element={<IITJEEKondhwa />} />
-                              <Route path='/iit-jee-coaching-classes-institute-akudi-pune' element={<IITJEEAkurdi />} />
+                              <Route path='/iit-jee-coaching-classes-institute-akurdi-pune' element={<IITJEEAkurdi />} />
                                   <Route path='/iit-jee-coaching-institute-in-kalas-pune' element={<IITJEEKalas />} />
                                       <Route path='/iit-jee-coaching-classes-institute-kalewadi-pune' element={<IITJEEKalewadi />} />
                                           <Route path='/iit-jee-coaching-institute-alandi-road-pune' element={<IITJEEAlandiRoad />} />
@@ -614,6 +620,14 @@ function App() {
 <Route path='/iit-jee-coaching-classes-institute-lohegaon-pune' element={<IITJEELohegaon />} />
 <Route path='/iit-jee-coaching-classes-institute-pcmc-pune' element={<IITJEEPCMCPune />} />
 <Route path='/iit-jee-coaching-classes-Institute-somwar-peth-pune' element={<IITJEESomwarPeth />} />
+{/*  */}
+<Route path='/iit-jee-coaching-classes-institute-dighi-pune' element={<IITJEEDighi />}/>
+<Route path='/iit-jee-coaching-classes-institute-shahu-Nagar-pune'element={<IITJEEShahuNagar />}/>
+<Route path='/iit-jee-coaching-classes-institute-purna-nagar-chinchwad-pune' element={<IITJEEPurnaNagarChinchwad />}/>
+
+<Route path='/iit-jee-coaching-classes-institute-spine-city-pune' element={<IITJEESpineCity />}/>
+
+<Route path='/iit-jee-coaching-classes-institute-bopkhel-pune' element={<IITJEEBopkhel />} />
 
 
 
