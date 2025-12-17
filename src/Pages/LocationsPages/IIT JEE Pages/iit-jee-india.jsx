@@ -369,7 +369,7 @@ IIT JEE Institute classes,
 Students from major regions across Maharashtra—including Pune, Mumbai, Nagpur, Thane, Nashik, Aurangabad, Solapur, Kolhapur, and Satara—join ASQUARE Academy for structured IIT JEE coaching.
 
               </p>
-              <code >
+              <code className="lead text-secondary">
                 <b>Course Details – IIT JEE Mains and Advanced Coaching</b><br></br>
  <b>Targeted for aspirants aiming for:</b><br></br>
 •	IITs

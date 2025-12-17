@@ -234,7 +234,9 @@ import IITJEEBopkhel from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-bopkhel-
 import IITJEEIndia from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-india";
 
 
+// ICSE Pages start
 
+import ICSEHadapsar from "./Pages/LocationsPages/ICSE Pages/icse-hadapsar";
 
 
 
@@ -631,7 +633,12 @@ function App() {
 <Route path='/iit-jee-coaching-classes-institute-bopkhel-pune' element={<IITJEEBopkhel />} />
 <Route path='/iit-jee-coaching-classes-institute' element={<IITJEEIndia />} />
 
+{/* ICSE Pages stsrt */}
 
+<Route
+  path="/icse-tuition-classes-hadapsar-pune-8th-9th-10th"
+  element={<ICSEHadapsar />}
+/>
 
 
 
