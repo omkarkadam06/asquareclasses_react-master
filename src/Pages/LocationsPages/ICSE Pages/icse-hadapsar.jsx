@@ -23,7 +23,7 @@ import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordio
 import Loading from "../../Loading.jsx";
 import Form from "../../../Components/Form2/Form2.jsx";
 
-import sampleimg1 from "../../../Assets/SampleImages/Banners/Banners (5).jpeg";
+import sampleimg1 from "../../../Assets/SampleImages/Banners/Banners (7).jpeg";
 import sampleimg11 from "../../../Assets/SampleImages/Banners/Banners (8).jpeg";
 import sampleimg2 from "../../../Assets/SampleImages/MobBanners/MobBanner3.jpeg";
 import sampleimg22 from "../../../Assets/SampleImages/MobBanners/MobBanner9.jpeg";
@@ -31,6 +31,7 @@ import sampleimg22 from "../../../Assets/SampleImages/MobBanners/MobBanner9.jpeg
 import image1 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (5).jpeg";
 import image2 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (7).jpeg";
 import image3 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (8).jpeg";
+import image4 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (4).jpeg";
 
 const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
@@ -127,7 +128,7 @@ Highlights include:
 With this systematic approach, students enter the board exams fully prepared and confident.
 
 `,
-  img:image3,
+  img:image4,
     },
   ],
 
@@ -448,7 +449,7 @@ ICSE board preparation classes Hadapsar Pune"
 
 
       {/* ================= HERO ================= */}
-      <section className="py-5 bg-light">
+      {/* <section className="py-5 bg-light">
         <div className="container text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -464,10 +465,129 @@ ICSE board preparation classes Hadapsar Pune"
             {icseContent.hero.description}
           </p>
         </div>
-      </section>
+      </section> */}
+
+<hr></hr>
+      {/* ================= ENHANCED HERO WITH IMAGE ================= */}
+<section className="py-5 position-relative overflow-hidden bg-light">
+
+  {/* Decorative background shapes */}
+  <div className="position-absolute top-0 start-0 w-100 h-100">
+    <div
+      className="position-absolute rounded-circle bg-primary opacity-10"
+      style={{ width: 300, height: 300, top: -80, left: -80 }}
+    ></div>
+    <div
+      className="position-absolute rounded-circle bg-warning opacity-10"
+      style={{ width: 350, height: 350, bottom: -120, right: -120 }}
+    ></div>
+  </div>
+
+  <div className="container position-relative">
+    <div className="row align-items-center g-5">
+            {/* ================= RIGHT IMAGE ================= */}
+      <div className="col-lg-6 text-center">
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="position-relative"
+        >
+          <img
+            src={image1}
+            alt="ICSE Tuition Classes in Hadapsar Pune"
+            className="img-fluid rounded-4 shadow-lg"
+          />
+
+          {/* Floating highlight badge */}
+          <div className="position-absolute top-0 start-0 translate-middle bg-primary text-white px-3 py-2 rounded-pill shadow">
+            ICSE 8–10
+          </div>
+        </motion.div>
+
+      </div>
+
+      {/* ================= LEFT CONTENT ================= */}
+      <div className="col-lg-6 text-center text-lg-start">
+
+        <motion.span
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3 shadow-sm"
+        >
+          ⭐ Trusted ICSE Coaching in Hadapsar, Pune
+        </motion.span>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="fw-bold display-6 mb-3"
+        >
+          Best{" "}
+          <span className="text-primary position-relative">
+            ICSE Tuition Classes
+            <span
+              className="position-absolute start-0 bottom-0 w-100 bg-warning"
+              style={{ height: "6px", zIndex: -1 }}
+            ></span>
+          </span>{" "}
+          in Hadapsar, Pune
+          <br />
+          for <span className="text-primary">8th, 9th & 10th</span> Students
+        </motion.h1>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="h5 text-primary fw-semibold mb-4"
+        >
+          {icseContent.hero.subtitle}
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.35 }}
+          className="lead text-muted mb-4"
+          style={{ whiteSpace: "pre-line" }}
+        >
+          {icseContent.hero.description}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="d-flex flex-column flex-sm-row gap-3"
+        >
+          <Link
+            to="/"
+            className="btn btn-warning btn-lg rounded-pill px-5 shadow-sm"
+          >
+            🎓 Book Free Demo
+          </Link>
+
+          <a
+            href="tel:+919156004396"
+            className="btn btn-outline-primary btn-lg rounded-pill px-5"
+          >
+            📞 Call Now
+          </a>
+        </motion.div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
 
       {/* ================= WHY CHOOSE ================= */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             Why Choose ASQUARE Academy for ICSE Coaching in Hadapsar?
@@ -488,94 +608,383 @@ ICSE board preparation classes Hadapsar Pune"
             ))}
           </div>
         </div>
-      </section>
-{/* ================= CLASSES ================= */}
-<section className="py-16 bg-primary text-white">
-  <div className="container">
-    <br></br>
-    <h3 className="text-center fw-bold mb-1 text-3xl">
-      ICSE Tuition for Class 8 in Hadapsar – Building the Right Foundation
-    </h3>
-    <p className="lead mb-5 text-center">
-      Class 8 introduces students to advanced ICSE concepts. Our program focuses on:
-    </p>
+      </section> */}
 
-   <div className="row g-5">
-  {icseContent.classes.map((c, i) => (
-    <div key={i} className="col-12 d-flex justify-content-center">
-      <motion.div
-        whileHover={{ scale: 1.03 }}
-        className={`bg-white text-dark rounded-4 shadow d-flex align-items-center flex-column flex-md-row ${i % 2 === 0 ? 'flex-md-row' : 'flex-md-row-reverse'} w-100`}
-        style={{ overflow: 'hidden' }}
-      >
-        {/* Text Content */}
-        <div className="p-4 flex-1"   style={{ minWidth: 'fit-content' }}>
-          <GraduationCap className="text-primary mb-2" size={28} />
-          <h5 className="mb-2">{c.title}</h5>
-          <p className="small" style={{ whiteSpace: 'pre-line' }}>
-            {c.desc}
-          </p>
-          <div className="d-flex">
-            <div className="ms-auto">
-           <Link to="/" className="btn btn-warning btn-lg rounded-pill"> Learn More </Link>
-            </div>
-          </div>
-        </div>
 
-        {/* Image */}
-        <div className="">
-          <img
-            src={c.img} // common image or c.img
-            alt={c.title}
-            className="w-24 h-24 md:w-20 md:h-20 "
-          />
-        </div>
-      </motion.div>
-    </div>
-  ))}
-</div>
 
-     <br></br>
-  </div>
-</section>
 <hr></hr>
 
-   {/* ================= METHODOLOGY ================= */}
-<section className="py-16 bg-light">
-  <div className="container">
-    <br></br>
-    <h4 className="fw-bold text-center mb-5 mt-4 text-primary">
-      Our Teaching Methodology
-    </h4>
+{/* ================= ENHANCED WHY CHOOSE ================= */}
+<section className="py-5 position-relative overflow-hidden bg-light">
 
+  {/* Decorative background elements */}
+  <div className="position-absolute top-0 start-0 w-100 h-100">
+    <div
+      className="position-absolute bg-primary opacity-10 rounded-circle"
+      style={{ width: 260, height: 260, top: -100, left: -100 }}
+    ></div>
+    <div
+      className="position-absolute bg-warning opacity-10 rounded-circle"
+      style={{ width: 320, height: 320, bottom: -120, right: -120  }}
+    ></div>
+  </div>
+
+  <div className="container position-relative">
+
+    {/* Section Header */}
+    <div className="text-center mb-5">
+
+      <motion.span
+        initial={{ opacity: 0, scale: 0.85 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="badge bg-primary px-4 py-2 rounded-pill mb-3"
+      >
+        WHY ASQUARE ACADEMY
+      </motion.span>
+
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="fw-bold mb-3"
+      >
+        Why Choose{" "}
+        <span className="text-primary position-relative">
+          ASQUARE Academy
+          <span
+            className="position-absolute start-0 bottom-0 w-100 bg-warning"
+            style={{ height: "5px", zIndex: -1 }}
+          ></span>
+        </span>{" "}
+        for ICSE Coaching?
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
+        className="lead text-muted mx-auto"
+        style={{ maxWidth: "850px" }}
+      >
+        Our ICSE coaching programs are carefully designed to match the board
+        curriculum while addressing every student’s learning pace through
+        conceptual clarity, consistent practice, and personalised mentoring.
+      </motion.p>
+
+    </div>
+
+    {/* Feature Cards */}
+    <div className="row g-4 justify-content-center">
+      {icseContent.whyChoose.map((item, i) => (
+        <div key={i} className="col-md-6 col-lg-4 col-xl-3">
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.1 }}
+            viewport={{ once: true }}
+            whileHover={{ y: -10 }}
+            className="h-100 p-4 rounded-4 shadow-sm bg-white text-center position-relative overflow-hidden"
+          >
+            {/* Top accent line */}
+            <div
+              className="position-absolute top-0 start-0 w-100 bg-primary"
+              style={{ height: "4px" }}
+            ></div>
+
+            {/* Icon */}
+            <div className="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 mb-3"
+              style={{ width: 72, height: 72 }}
+            >
+              <item.icon size={36} className="text-primary" />
+            </div>
+
+            {/* Content */}
+            <h5 className="fw-semibold mb-2">{item.title}</h5>
+            <p className="text-muted small mb-0">
+              {item.desc}
+            </p>
+
+            {/* Hover glow */}
+            <div
+              className="position-absolute inset-0 rounded-4"
+              style={{
+                boxShadow: "0 0 0 rgba(0,0,0,0)",
+                transition: "box-shadow 0.3s ease"
+              }}
+            ></div>
+          </motion.div>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+
+
+<hr></hr>
+
+
+{/* ================= ENHANCED CLASSES SECTION ================= */}
+<section className="py-5 position-relative overflow-hidden bg-primary">
+
+  {/* Background accents */}
+  <div className="position-absolute top-0 start-0 w-100 h-100">
+    <div
+      className="position-absolute bg-warning opacity-10 rounded-circle"
+      style={{ width: 300, height: 300, top: -100, left: -100 }}
+    ></div>
+    <div
+      className="position-absolute bg-light opacity-10 rounded-circle"
+      style={{ width: 350, height: 350, bottom: -120, right: -120 }}
+    ></div>
+  </div>
+
+  <div className="container position-relative text-white">
+
+    {/* Section Header */}
+    <div className="text-center mb-5">
+
+      <motion.span
+        initial={{ opacity: 0, scale: 0.85 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3"
+      >
+        ICSE PROGRAM STRUCTURE
+      </motion.span>
+
+      <motion.h3
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="fw-bold mb-3"
+      >
+        Structured ICSE Tuition for{" "}
+        <span className="position-relative text-warning">
+          Classes 8, 9 & 10
+          <span
+            className="position-absolute start-0 bottom-0 w-100 bg-light"
+            style={{ height: "4px", zIndex: -1 }}
+          ></span>
+        </span>
+      </motion.h3>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
+        className="lead text-light opacity-90 mx-auto"
+        style={{ maxWidth: "850px" }}
+      >
+        Our ICSE tuition programs are carefully structured to match each class’s
+        academic needs — from strong foundation building to focused board exam
+        preparation.
+      </motion.p>
+
+    </div>
+
+    {/* Class Cards */}
+    <div className="row g-5">
+      {icseContent.classes.map((c, i) => (
+        <div key={i} className="col-12">
+
+          <motion.div
+            initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.02 }}
+            className={`bg-white text-dark rounded-4 shadow-lg d-flex flex-column flex-lg-row ${
+              i % 2 !== 0 ? "flex-lg-row-reverse" : ""
+            } overflow-hidden`}
+          >
+
+            {/* Image Section */}
+            <div className="position-relative col-lg-4 p-0">
+              <img
+                src={c.img}
+                alt={c.title}
+                className="img-fluid h-100 w-100 object-fit-cover"
+              />
+
+              {/* Overlay label */}
+              <div className="position-absolute top-0 start-0 bg-primary text-white px-4 py-2 rounded-bottom-end fw-semibold">
+                ICSE Class
+              </div>
+            </div>
+
+            {/* Content Section */}
+            <div className="p-4 p-lg-5 col-lg-8">
+
+              <div className="d-flex align-items-center mb-3">
+                <div
+                  className="d-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 me-3"
+                  style={{ width: 56, height: 56 }}
+                >
+                  <GraduationCap size={28} className="text-primary" />
+                </div>
+                <h5 className="fw-bold mb-0">{c.title}</h5>
+                
+              </div>
+
+              <p
+                className="text-muted mb-4"
+                style={{ whiteSpace: "pre-line" }}
+              >
+                {c.desc}
+              </p>
+
+              <div className="d-flex justify-content-end">
+                <Link
+                  to="/"
+                  className="btn btn-warning btn-md rounded-pill px-5 shadow-sm"
+                >
+                  Learn More
+                </Link>
+              </div>
+
+            </div>
+
+          </motion.div>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+
+<hr></hr>
+
+ {/* ================= ENHANCED METHODOLOGY ================= */}
+<section className="py-5 position-relative overflow-hidden bg-light">
+
+  {/* Decorative background */}
+  <div className="position-absolute top-0 start-0 w-100 h-100">
+    <div
+      className="position-absolute bg-primary opacity-10 rounded-circle"
+      style={{ width: 280, height: 280, top: -100, left: -100 }}
+    ></div>
+    <div
+      className="position-absolute bg-warning opacity-10 rounded-circle"
+      style={{ width: 320, height: 320, bottom: -120, right: -120 }}
+    ></div>
+  </div>
+
+  <div className="container position-relative">
+
+    {/* Section Header */}
+    <div className="text-center mb-5">
+
+      <motion.span
+        initial={{ opacity: 0, scale: 0.85 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="badge bg-primary px-4 py-2 rounded-pill mb-3"
+      >
+        OUR APPROACH
+      </motion.span>
+
+      <motion.h4
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="fw-bold mb-3"
+      >
+        Our{" "}
+        <span className="text-primary position-relative">
+          Teaching Methodology
+          <span
+            className="position-absolute start-0 bottom-0 w-100 bg-warning"
+            style={{ height: "4px", zIndex: -1 }}
+          ></span>
+        </span>
+      </motion.h4>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
+        className="lead text-muted mx-auto"
+        style={{ maxWidth: "850px" }}
+      >
+        Our structured ICSE teaching methodology ensures conceptual clarity,
+        continuous improvement, and confident exam performance at every stage
+        of learning.
+      </motion.p>
+
+    </div>
+
+    {/* Timeline */}
     <div className="position-relative">
-      {/* Vertical timeline line */}
-      <div className="position-absolute top-0 start-50 translate-middle-x bg-primary" style={{ width: '4px', height: '100%' }}></div>
+
+      {/* Vertical Line */}
+      <div
+        className="position-absolute top-0 start-50 translate-middle-x bg-primary opacity-25"
+        style={{ width: "4px", height: "100%" }}
+      ></div>
 
       <div className="row">
         {icseContent.methodology.map((m, i) => (
           <div
             key={i}
-            className={`col-12 d-flex mb-3 ${
-              i % 2 === 0 ? 'justify-content-end' : 'justify-content-start'
+            className={`col-12 d-flex mb-4 ${
+              i % 2 === 0 ? "justify-content-end" : "justify-content-start"
             }`}
           >
+
             <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="bg-white rounded-4 shadow p-4 position-relative"
-              style={{ maxWidth: '500px' }}
+              initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -6 }}
+              className="bg-white rounded-4 shadow-lg p-4 position-relative"
+              style={{ maxWidth: "520px" }}
             >
-              {/* Circle indicator */}
-              <div className="position-absolute top-50 translate-middle-y  bg-primary rounded-circle" style={{ width: '20px', height: '20px', left: i % 2 === 0 ? '-10px' : 'unset', right: i % 2 !== 0 ? '-10px' : 'unset' }}></div>
-              
-              <p className="mb-0 text-dark fw-semibold">{m}</p>
+
+              {/* Step Number */}
+              <div
+                className="position-absolute top-50 translate-middle-y d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-bold"
+                style={{
+                  width: 40,
+                  height: 40,
+                  left: i % 2 === 0 ? "-20px" : "unset",
+                  right: i % 2 !== 0 ? "-20px" : "unset",
+                }}
+              >
+                {i + 1}
+              </div>
+
+              {/* Content */}
+              <p className="mb-0 text-dark fw-semibold">
+                {m}
+              </p>
+
             </motion.div>
+
           </div>
         ))}
       </div>
     </div>
+
   </div>
 </section>
+
 
       {/* ================= REVIEWS (UNCHANGED) ================= */}
       <Suspense fallback={<Loading />}>
@@ -583,44 +992,243 @@ ICSE board preparation classes Hadapsar Pune"
       </Suspense>
 
    {/* ================= FAQ ================= */}
-<section className="py-5">
-  <div className="container">
-    <h4 className="fw-bold text-center mb-4">
-      <HelpCircle /> FAQs
-    </h4>
+{/* ================= ENHANCED FAQ ================= */}
+<section className="py-5 position-relative overflow-hidden">
 
-    <div className="row">
+  {/* Background gradient */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      background:
+        "linear-gradient(180deg, #f8f9fa 0%, #eef3ff 60%, #ffffff 100%)",
+      zIndex: -1,
+    }}
+  ></div>
+
+  {/* Decorative shapes */}
+  <div className="position-absolute top-0 start-0 w-100 h-100">
+    <div
+      className="position-absolute bg-primary opacity-10 rounded-circle"
+      style={{ width: 240, height: 240, top: -100, left: -100 }}
+    ></div>
+    <div
+      className="position-absolute bg-warning opacity-15 rounded-circle"
+      style={{ width: 200, height: 200, bottom: -80, right: -80 }}
+    ></div>
+  </div>
+
+  <div className="container position-relative">
+
+    {/* Section Header */}
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="text-center mb-5"
+    >
+      <span className="badge bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-pill mb-3 shadow-sm">
+        NEED HELP?
+      </span>
+
+      <h4 className="fw-bold mb-2">
+        <HelpCircle className="text-primary me-2" />
+        Frequently Asked Questions
+      </h4>
+
+      <p className="text-muted lead mx-auto" style={{ maxWidth: "800px" }}>
+        Here are answers to some of the most common questions parents and students
+        ask about our ICSE coaching, teaching approach, and admission process.
+      </p>
+    </motion.div>
+
+    {/* FAQ Content */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.2 }}
+      viewport={{ once: true }}
+      className="row g-4"
+    >
       <div className="col-md-6">
-        <FAQAccordion faqs={icseContent.faqs.slice(0, Math.ceil(icseContent.faqs.length / 2))} />
+        <div className="bg-white rounded-4 shadow-sm p-3 h-100">
+          <FAQAccordion
+            faqs={icseContent.faqs.slice(
+              0,
+              Math.ceil(icseContent.faqs.length / 2)
+            )}
+          />
+        </div>
       </div>
 
       <div className="col-md-6">
-        <FAQAccordion faqs={icseContent.faqs.slice(Math.ceil(icseContent.faqs.length / 2))} />
+        <div className="bg-white rounded-4 shadow-sm p-3 h-100">
+          <FAQAccordion
+            faqs={icseContent.faqs.slice(
+              Math.ceil(icseContent.faqs.length / 2)
+            )}
+          />
+        </div>
       </div>
-    </div>
+    </motion.div>
+
+    {/* Bottom CTA */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.4 }}
+      viewport={{ once: true }}
+      className="text-center mt-5"
+    >
+      <p className="mb-3 fw-semibold">
+        Still have questions? We’re happy to help!
+      </p>
+      <Link to="/contact" className="btn btn-warning btn-lg rounded-pill px-5 shadow">
+        📞 Talk to Our Counsellor
+      </Link>
+    </motion.div>
+
   </div>
 </section>
 
 
-      {/* ================= CTA ================= */}
-      <section className="py-5 text-center bg-primary text-white px-3">
-        <h3 className="fw-bold mb-3">
-          Enrol at ASQUARE Academy {icseContent.location} – Your Path to ICSE Success
-        </h3>
-        <p className="lead">
-         Choosing the right coaching makes all the difference in ICSE preparation. At ASQUARE Academy Hadapsar, we combine expert teaching, personalised mentoring, and proven strategies to help students of Class 8th, 9th & 10th achieve top results.
-        </p>
-        <p className="lead">
-            Whether your child needs to build a foundation in Class 8, strengthen knowledge in Class 9, or excel in Class 10 board exams, our tailored ICSE tuition programs ensure complete academic support.
-        </p>
-        <p>
-          <MapPin /> Located in Hadapsar, we also serve students from  {icseContent.location}
-        </p>
-        <Link to="/" className="btn btn-warning btn-lg rounded-pill">
-          Book Free Demo
-        </Link> <br></br>
-        🎯 Take the next step towards success – book a free demo class today and discover why ASQUARE is trusted by parents and students across Pune.
-      </section>
+{/* ================= ENHANCED CTA ================= */}
+<section className="py-5 position-relative overflow-hidden">
+
+  {/* Gradient background */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      background:
+        "linear-gradient(135deg, #0d6efd 0%, #084298 60%, #031633 100%)",
+      zIndex: -1,
+    }}
+  ></div>
+
+  {/* Decorative accents */}
+  <div className="position-absolute top-0 start-0 w-100 h-100">
+    <div
+      className="position-absolute bg-warning opacity-10 rounded-circle"
+      style={{ width: 260, height: 260, top: -90, left: -90 }}
+    ></div>
+    <div
+      className="position-absolute bg-light opacity-10 rounded-circle"
+      style={{ width: 320, height: 320, bottom: -120, right: -120 }}
+    ></div>
+  </div>
+
+  <div className="container position-relative text-center text-white">
+
+    {/* Badge */}
+    <motion.span
+      initial={{ opacity: 0, scale: 0.85 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3 shadow"
+    >
+      ADMISSIONS OPEN
+    </motion.span>
+
+    {/* Title */}
+    <motion.h3
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
+      className="fw-bold mb-3"
+    >
+      Enrol at{" "}
+      <span className="position-relative text-warning">
+        ASQUARE Academy {icseContent.location}
+        <span
+          className="position-absolute start-0 bottom-0 w-100 bg-white"
+          style={{ height: "4px", zIndex: -1 }}
+        ></span>
+      </span>
+      <br />
+      Your Path to ICSE Success
+    </motion.h3>
+
+    {/* Subtitle */}
+    <motion.p
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.2 }}
+      viewport={{ once: true }}
+      className="lead mx-auto mb-4"
+      style={{ maxWidth: "900px" }}
+    >
+      Choosing the right coaching makes all the difference in ICSE preparation.
+      At ASQUARE Academy Hadapsar, we combine expert teaching, personalised
+      mentoring, and proven strategies to help students of Classes{" "}
+      <strong>8th, 9th & 10th</strong> achieve outstanding academic results.
+    </motion.p>
+
+    {/* Supporting Text */}
+    <motion.p
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.35 }}
+      viewport={{ once: true }}
+      className="opacity-90 mb-4"
+    >
+      Whether your child needs to build a strong foundation in Class 8,
+      strengthen core concepts in Class 9, or excel in Class 10 board exams,
+      our structured ICSE tuition programs ensure complete academic support.
+    </motion.p>
+
+    {/* Location */}
+    <motion.p
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.5 }}
+      viewport={{ once: true }}
+      className="mb-4"
+    >
+      <MapPin size={18} className="me-1" />
+      Conveniently located in <strong>Hadapsar</strong>, serving students across
+      nearby areas in Pune.
+    </motion.p>
+
+    {/* CTAs */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.6 }}
+      viewport={{ once: true }}
+      className="d-flex flex-column flex-sm-row justify-content-center gap-3"
+    >
+      <Link
+        to="/"
+        className="btn btn-warning btn-lg rounded-pill px-5 shadow fw-semibold"
+      >
+        🎓 Book Free Demo
+      </Link>
+
+      <a
+        href="tel:+919156004396"
+        className="btn btn-outline-light btn-lg rounded-pill px-5"
+      >
+        📞 Call Now
+      </a>
+    </motion.div>
+
+    {/* Micro CTA */}
+    <motion.p
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.75 }}
+      viewport={{ once: true }}
+      className="mt-4 small opacity-90"
+    >
+      🎯 Take the next step towards success — book a free demo class today and
+      discover why ASQUARE is trusted by parents and students across Pune.
+    </motion.p>
+
+  </div>
+</section>
+
 
       <Footer />
     </>
