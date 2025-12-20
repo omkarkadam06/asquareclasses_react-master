@@ -22,16 +22,16 @@ import Footer from "../../../Components/Footer/Footer.jsx";
 import FAQAccordion from "../../LocationsPages/neet-pages/components/FAQAccordion.jsx";
 import Loading from "../../Loading.jsx";
 import Form from "../../../Components/Form2/Form2.jsx";
+import "./ICSE.css";
+import sampleimg1 from "../../../Assets/SampleImages/ICSE/DeskSlider/ICSE slider PC.jpeg";
+import sampleimg11 from "../../../Assets/SampleImages/ICSE/DeskSlider/ICSE slider PC 1.jpeg";
+import sampleimg2 from "../../../Assets/SampleImages/ICSE/MobSlider/ICSE slider mobile.jpeg";
+import sampleimg22 from "../../../Assets/SampleImages/ICSE/MobSlider/ICSE slider mobile 1.jpeg";
 
-import sampleimg1 from "../../../Assets/SampleImages/Banners/Banners (7).jpeg";
-import sampleimg11 from "../../../Assets/SampleImages/Banners/Banners (8).jpeg";
-import sampleimg2 from "../../../Assets/SampleImages/MobBanners/MobBanner3.jpeg";
-import sampleimg22 from "../../../Assets/SampleImages/MobBanners/MobBanner9.jpeg";
-
-import image1 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (5).jpeg";
-import image2 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (7).jpeg";
-import image3 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (8).jpeg";
-import image4 from "../../../Assets/SampleImages/AsquarePics/AsquarePics (4).jpeg";
+import image1 from "../../../Assets/SampleImages/ICSE/ICSE page 1.jpeg";
+import image2 from "../../../Assets/SampleImages/ICSE/ICSE page 2.jpeg";
+import image3 from "../../../Assets/SampleImages/ICSE/ICSE page 3.jpeg";
+import image4 from "../../../Assets/SampleImages/ICSE/ICSE page 4.jpeg";
 
 const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
@@ -378,6 +378,7 @@ ICSE board preparation classes Hadapsar Pune"
 
 
 `}</script>
+
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
@@ -472,16 +473,12 @@ ICSE board preparation classes Hadapsar Pune"
 <section className="py-5 position-relative overflow-hidden bg-light">
 
   {/* Decorative background shapes */}
-  <div className="position-absolute top-0 start-0 w-100 h-100">
-    <div
-      className="position-absolute rounded-circle bg-primary opacity-10"
-      style={{ width: 300, height: 300, top: -80, left: -80 }}
-    ></div>
-    <div
-      className="position-absolute rounded-circle bg-warning opacity-10"
-      style={{ width: 350, height: 350, bottom: -120, right: -120 }}
-    ></div>
-  </div>
+{/* Decorative background shapes */}
+<div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+  <div className="decor-circle decor-primary"></div>
+  <div className="decor-circle decor-warning"></div>
+</div>
+
 
   <div className="container position-relative">
     <div className="row align-items-center g-5">
@@ -495,7 +492,7 @@ ICSE board preparation classes Hadapsar Pune"
           className="position-relative"
         >
           <img
-            src={image1}
+            src={image3}
             alt="ICSE Tuition Classes in Hadapsar Pune"
             className="img-fluid rounded-4 shadow-lg"
           />
@@ -618,16 +615,10 @@ ICSE board preparation classes Hadapsar Pune"
 <section className="py-5 position-relative overflow-hidden bg-light">
 
   {/* Decorative background elements */}
-  <div className="position-absolute top-0 start-0 w-100 h-100">
-    <div
-      className="position-absolute bg-primary opacity-10 rounded-circle"
-      style={{ width: 260, height: 260, top: -100, left: -100 }}
-    ></div>
-    <div
-      className="position-absolute bg-warning opacity-10 rounded-circle"
-      style={{ width: 320, height: 320, bottom: -120, right: -120  }}
-    ></div>
-  </div>
+<div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+  <div className="decor-circle decor-primary"></div>
+  <div className="decor-circle decor-warning"></div>
+</div>
 
   <div className="container position-relative">
 
@@ -735,16 +726,10 @@ ICSE board preparation classes Hadapsar Pune"
 <section className="py-5 position-relative overflow-hidden bg-primary">
 
   {/* Background accents */}
-  <div className="position-absolute top-0 start-0 w-100 h-100">
-    <div
-      className="position-absolute bg-warning opacity-10 rounded-circle"
-      style={{ width: 300, height: 300, top: -100, left: -100 }}
-    ></div>
-    <div
-      className="position-absolute bg-light opacity-10 rounded-circle"
-      style={{ width: 350, height: 350, bottom: -120, right: -120 }}
-    ></div>
-  </div>
+<div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+  <div className="decor-circle  decor-primary2"></div>
+  <div className="decor-circle decor-warning"></div>
+</div>
 
   <div className="container position-relative text-white">
 
@@ -871,16 +856,10 @@ ICSE board preparation classes Hadapsar Pune"
 <section className="py-5 position-relative overflow-hidden bg-light">
 
   {/* Decorative background */}
-  <div className="position-absolute top-0 start-0 w-100 h-100">
-    <div
-      className="position-absolute bg-primary opacity-10 rounded-circle"
-      style={{ width: 280, height: 280, top: -100, left: -100 }}
-    ></div>
-    <div
-      className="position-absolute bg-warning opacity-10 rounded-circle"
-      style={{ width: 320, height: 320, bottom: -120, right: -120 }}
-    ></div>
-  </div>
+<div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+  <div className="decor-circle decor-primary"></div>
+  <div className="decor-circle decor-warning"></div>
+</div>
 
   <div className="container position-relative">
 
@@ -1006,16 +985,10 @@ ICSE board preparation classes Hadapsar Pune"
   ></div>
 
   {/* Decorative shapes */}
-  <div className="position-absolute top-0 start-0 w-100 h-100">
-    <div
-      className="position-absolute bg-primary opacity-10 rounded-circle"
-      style={{ width: 240, height: 240, top: -100, left: -100 }}
-    ></div>
-    <div
-      className="position-absolute bg-warning opacity-15 rounded-circle"
-      style={{ width: 200, height: 200, bottom: -80, right: -80 }}
-    ></div>
-  </div>
+<div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+  <div className="decor-circle decor-primary"></div>
+  <div className="decor-circle decor-warning"></div>
+</div>
 
   <div className="container position-relative">
 
@@ -1106,16 +1079,10 @@ ICSE board preparation classes Hadapsar Pune"
   ></div>
 
   {/* Decorative accents */}
-  <div className="position-absolute top-0 start-0 w-100 h-100">
-    <div
-      className="position-absolute bg-warning opacity-10 rounded-circle"
-      style={{ width: 260, height: 260, top: -90, left: -90 }}
-    ></div>
-    <div
-      className="position-absolute bg-light opacity-10 rounded-circle"
-      style={{ width: 320, height: 320, bottom: -120, right: -120 }}
-    ></div>
-  </div>
+<div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+  <div className="decor-circle decor-primary"></div>
+  <div className="decor-circle decor-warning"></div>
+</div>
 
   <div className="container position-relative text-center text-white">
 
