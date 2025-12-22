@@ -37,6 +37,32 @@ const Reviews = React.lazy(() =>
   import("../../../Components/Reviews/Reviews.jsx")
 );
 
+
+const highlightTitle = (text) => {
+  const keywords = [
+    "ICSE",
+    "Class 8",
+    "Class 9",
+    "Class 10",
+    "Hadapsar",
+    "Foundation",
+    "Board",
+    "Preparation"
+  ];
+
+  let updatedText = text;
+
+  keywords.forEach((word) => {
+    const regex = new RegExp(`(${word})`, "gi");
+    updatedText = updatedText.replace(
+      regex,
+      `<span class="highlight-word">$1</span>`
+    );
+  });
+
+  return updatedText;
+};
+
 /* =========================
    🔁 REUSABLE CONTENT BLOCK
    ========================= */
@@ -483,7 +509,7 @@ ICSE board preparation classes Hadapsar Pune"
   <div className="container position-relative">
     <div className="row align-items-center g-5">
             {/* ================= RIGHT IMAGE ================= */}
-      <div className="col-lg-6 text-center">
+      <div className="col-lg-6 text-center order-2 order-lg-1">
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 30 }}
@@ -498,15 +524,15 @@ ICSE board preparation classes Hadapsar Pune"
           />
 
           {/* Floating highlight badge */}
-          <div className="position-absolute top-0 start-0 translate-middle bg-primary text-white px-3 py-2 rounded-pill shadow">
+          {/* <div className="position-absolute top-0 start-0 translate-middle bg-primary text-white px-3 py-2 rounded-pill shadow">
             ICSE 8–10
-          </div>
+          </div> */}
         </motion.div>
 
       </div>
 
       {/* ================= LEFT CONTENT ================= */}
-      <div className="col-lg-6 text-center text-lg-start">
+      <div className="col-lg-6 text-center text-lg-start order-1 order-lg-2">
 
         <motion.span
           initial={{ opacity: 0, scale: 0.85 }}
@@ -779,72 +805,82 @@ ICSE board preparation classes Hadapsar Pune"
     </div>
 
     {/* Class Cards */}
-    <div className="row g-5">
-      {icseContent.classes.map((c, i) => (
-        <div key={i} className="col-12">
+  {/* Class Cards */}
+<div className="row g-5">
+  {icseContent.classes.map((c, i) => (
+    <div key={i} className="col-12">
 
-          <motion.div
-            initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.02 }}
-            className={`bg-white text-dark rounded-4 shadow-lg d-flex flex-column flex-lg-row ${
-              i % 2 !== 0 ? "flex-lg-row-reverse" : ""
-            } overflow-hidden`}
+      <motion.div
+        initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.02 }}
+        className={`bg-white text-dark rounded-4 shadow-lg d-flex flex-column flex-lg-row ${
+          i % 2 !== 0 ? "flex-lg-row-reverse" : ""
+        }`}
+      >
+
+        {/* Image Section */}
+        <div className="col-lg-4 d-flex align-items-center justify-content-center p-4 bg-light">
+          <img
+            src={c.img}
+            alt={c.title}
+            className="img-fluid"
+            style={{
+              maxHeight: "",
+              width: "auto",
+              objectFit: "contain",
+            }}
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="p-4 p-lg-5 col-lg-8">
+
+          <div className="d-flex align-items-center mb-3">
+            <div
+              className="d-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 me-3"
+              style={{ width: 56, height: 56 }}
+            >
+              <GraduationCap size={28} className="text-primary" />
+            </div>
+
+            {/* <h5 className="fw-bold mb-0">
+              {c.title}
+            </h5> */}
+
+            <h5
+  className="fw-bold mb-0"
+  dangerouslySetInnerHTML={{ __html: highlightTitle(c.title) }}
+></h5>
+
+          </div>
+
+          <p
+            className="text-muted mb-4"
+            style={{ whiteSpace: "pre-line" }}
           >
+            {c.desc}
+          </p>
 
-            {/* Image Section */}
-            <div className="position-relative col-lg-4 p-0">
-              <img
-                src={c.img}
-                alt={c.title}
-                className="img-fluid h-100 w-100 object-fit-cover"
-              />
-
-              {/* Overlay label */}
-              <div className="position-absolute top-0 start-0 bg-primary text-white px-4 py-2 rounded-bottom-end fw-semibold">
-                ICSE Class
-              </div>
-            </div>
-
-            {/* Content Section */}
-            <div className="p-4 p-lg-5 col-lg-8">
-
-              <div className="d-flex align-items-center mb-3">
-                <div
-                  className="d-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 me-3"
-                  style={{ width: 56, height: 56 }}
-                >
-                  <GraduationCap size={28} className="text-primary" />
-                </div>
-                <h5 className="fw-bold mb-0">{c.title}</h5>
-                
-              </div>
-
-              <p
-                className="text-muted mb-4"
-                style={{ whiteSpace: "pre-line" }}
-              >
-                {c.desc}
-              </p>
-
-              <div className="d-flex justify-content-end">
-                <Link
-                  to="/"
-                  className="btn btn-warning btn-md rounded-pill px-5 shadow-sm"
-                >
-                  Learn More
-                </Link>
-              </div>
-
-            </div>
-
-          </motion.div>
+          <div className="d-flex justify-content-end">
+            <Link
+              to="/"
+              className="btn btn-warning btn-md rounded-pill px-5 shadow-sm"
+            >
+              Learn More
+            </Link>
+          </div>
 
         </div>
-      ))}
+
+      </motion.div>
+
     </div>
+  ))}
+</div>
+
 
   </div>
 </section>
