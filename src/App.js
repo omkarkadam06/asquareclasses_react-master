@@ -237,8 +237,15 @@ import IITJEEIndia from "./Pages/LocationsPages/IIT JEE Pages/iit-jee-india";
 // ICSE Pages start
 
 import ICSEHadapsar from "./Pages/LocationsPages/ICSE Pages/icse-hadapsar";
-
-
+import ICSEVishrantwadi from "./Pages/LocationsPages/ICSE Pages/Icse-vishrantwadi";
+import ICSEPimpri from "./Pages/LocationsPages/ICSE Pages/ICSE-Pimpri";
+import ICSEWanwadi from "./Pages/LocationsPages/ICSE Pages/ICSE-Wanwadi";
+import ICSEBhosari from "./Pages/LocationsPages/ICSE Pages/ICSE-Bhosari";
+import ICSEPCMC from "./Pages/LocationsPages/ICSE Pages/ICSE-PCMC";
+import ICSEChakan from "./Pages/LocationsPages/ICSE Pages/ICSE-Chakan";
+// import ICSEPuneCamp from "./Pages/LocationsPages/ICSE Pages/ICSE-PuneCamp";
+import ICSEShahunagar from "./Pages/LocationsPages/ICSE Pages/ICSE-Shahunagar";
+// import ICSEPimpleSaudagar from "./Pages/LocationsPages/ICSE Pages/ICSE-PimpleSaudagar";
 
 
 function App() {
@@ -635,12 +642,44 @@ function App() {
 
 {/* ICSE Pages stsrt */}
 
+<Route path="/icse-tuition-classes-hadapsar-pune-8th-9th-10th" element={<ICSEHadapsar />}/>
 <Route
-  path="/icse-tuition-classes-hadapsar-pune-8th-9th-10th"
-  element={<ICSEHadapsar />}
+  path="/icse-tuition-classes-vishrantwadi-pune-8th-9th-10th"
+  element={<ICSEVishrantwadi />}
+/>
+<Route
+  path="/icse-tuition-classes-pimpri-pune-8th-9th-10th"
+  element={<ICSEPimpri />}
+/>
+<Route
+  path="/icse-tuition-classes-wanawadi-pune-8th-9th-10th"
+  element={<ICSEWanwadi />}
 />
 
-
+<Route
+  path="/icse-tuition-classes-bhosari-pune-8th-9th-10th"
+  element={<ICSEBhosari />}
+/>
+<Route
+  path="/icse-tuition-pcmc-pune-8th-9th-10th"
+  element={<ICSEPCMC />}
+/>
+<Route
+  path="/icse-tuition-chakan-pune-8th-9th-10th"
+  element={<ICSEChakan />}
+/>
+{/* <Route
+  path="/icse-tuition-pune-camp-8th-9th-10th"
+  element={<ICSEPuneCamp />}
+/> */}
+<Route
+  path="/icse-tuition-classes-shahunagar-pcmc-8th-9th-10th"
+  element={<ICSEShahunagar />}
+/>
+{/* <Route
+  path="/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th"
+  element={<ICSEPimpleSaudagar />}
+/> */}
 
 
         </Routes>
