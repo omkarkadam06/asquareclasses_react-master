@@ -1,5 +1,6 @@
 
 
+
 import React, { useEffect, useState, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
@@ -25,11 +26,11 @@ import Loading from "../../Loading.jsx";
 import Form from "../../../Components/Form2/Form2.jsx";
 import "./ICSE.css";
 
-import sampleimg1 from "../../../Assets/SampleImages/ICSE/DeskSlider/ICSE slider PC 2.jpeg";
-import sampleimg11 from "../../../Assets/SampleImages/ICSE/DeskSlider/ICSE slider PC 4.jpeg";
+import sampleimg1 from "../../../Assets/SampleImages/ICSE/DeskSlider/ICSE slider PC 3.jpeg";
+import sampleimg11 from "../../../Assets/SampleImages/ICSE/DeskSlider/ICSE slider PC 6.jpeg";
 
-import sampleimg2 from "../../../Assets/SampleImages/ICSE/MobSlider/ICSE slider mobile 2.jpeg";
-import sampleimg22 from "../../../Assets/SampleImages/ICSE/MobSlider/ICSE slider mobile 4.jpeg";
+import sampleimg2 from "../../../Assets/SampleImages/ICSE/MobSlider/ICSE slider mobile 3.jpeg";
+import sampleimg22 from "../../../Assets/SampleImages/ICSE/MobSlider/ICSE slider mobile 6.jpeg";
 
 import image1 from "../../../Assets/SampleImages/ICSE/ICSE page 1.jpeg";
 import image2 from "../../../Assets/SampleImages/ICSE/ICSE page 2.jpeg";
@@ -46,7 +47,7 @@ const highlightTitle = (text) => {
     "Class 8",
     "Class 9",
     "Class 10",
-    "Pune Camp",
+    "Pimple Saudagar",
     "Foundation",
     "Board",
     "Preparation"
@@ -69,14 +70,14 @@ const highlightTitle = (text) => {
    🔁 REUSABLE CONTENT BLOCK
    ========================= */
 const icseContent = {
-  location: "Pune Camp, Pune",
+  location: "Pimple Saudagar, Pune",
 
   hero: {
-    h1: "Best ICSE Tuition Classes in Pune Camp, Pune for 8th, 9th & 10th Students",
+    h1: "Best ICSE Tuition Classes in PimpleSaudagar, Pune for 8th, 9th & 10th Students",
     subtitle:
-      "Academic Success with Expert ICSE Coaching in Pune Camp",
+      "Academic Success with Expert ICSE Coaching in Pimple Saudagar",
     description:
-"The ICSE syllabus demands in-depth understanding and regular practice. For students in Classes 8th, 9th & 10th, managing schoolwork alongside board exam preparation can be challenging without proper guidance.\n At ASQUARE Academy Pune Camp, we provide specialised ICSE tuition classes designed to help students master concepts, develop exam confidence, and achieve excellent results. With expert ICSE teachers, small batch sizes, structured study material, and regular assessments, we ensure every student is prepared for both school exams and ICSE boards. \nOur Camp centre is also conveniently located for students from MG Road, Bund Garden, Koregaon Park, Swargate, Fatima Nagar & Camp Cantonment.",
+     "The ICSE syllabus is detailed, analytical, and requires deep subject clarity. For students in Classes 8th, 9th, and 10th, balancing multiple subjects often becomes challenging without the right academic support.\n At ASQUARE Academy Pimple Saudagar, we provide structured ICSE board tuition classes that help students strengthen their foundation, gain exam confidence, and perform excellently in school and board exams. With subject experts, small batch sizes, customised study resources, and regular assessments, we ensure every student receives the personal attention they need. \n Our Pimple Saudagar centre is also easily accessible from Wakad, Rahatani, Hinjewadi, Kalewadi, Sangvi, Aundh, Vishal Nagar, Thergaon, Jagtap Dairy, and Kokane Chowk, making it a trusted choice for ICSE families in the area.",
   
     },
 
@@ -84,112 +85,130 @@ const icseContent = {
     {
       icon: Users,
       title: "Experienced ICSE Faculty ",
-      desc: "Subject experts for Maths, Physics, Chemistry, Biology, English & HCG (History, Civics & Geography).",
+      desc: "Teachers for Maths, Physics, Chemistry, Biology, English & HCG (History, Civics & Geography).",
     },
     {
       icon: BookOpen,
-      title: "Small Batches",
-      desc: "Personalised attention with doubt-solving sessions.",
+      title: "Small Batch Sizes",
+      desc: "Limited students per batch for individual attention.",
     },
     {
       icon: ClipboardCheck,
       title: "Structured Study Material ",
-      desc: "Notes, worksheets & ICSE-style practice papers.",
+      desc: "Notes, worksheets, and ICSE-style practice papers.",
     },
     {
       icon: School,
       title: "Regular Assessments ",
-      desc: "Weekly topic tests & monthly reviews.",
+      desc: "Weekly & monthly tests with progress reports.",
     },
     {
   icon: HelpCircle,
-  title: "Board Exam Focus ",
-  desc: "Mock board exams, past-paper practice & answer-writing workshops.",
+  title: "Dedicated Doubt-Solving ",
+  desc: "Extra sessions to help students master difficult topics.",
 },
 {
   icon: GraduationCap,
-  title: "Excellent Track Record",
-  desc: "Students consistently achieve top ICSE results.",
+  title: "Proven Results ",
+  desc: "Students consistently score higher in school and ICSE board exams.",
 },
 {
   icon: MapPin,
-  title: "Convenient Location",
-  desc: "Easily accessible for Camp & nearby areas.",
+  title: "Prime Location Advantage ",
+  desc: "Ideal for students from Pimple Saudagar, Wakad, Rahatani, Hinjewadi, Kalewadi, Sangvi & Aundh.",
 },
 
   ],
 
   classes: [
 {
-  title: "ICSE Tuition for Class 8 in Pune Camp – Building the Right Foundation",
-  desc: `Class 8 introduces students to advanced ICSE concepts. Our ICSE Class 8 tuition in Pune Camp focuses on:
-   
-     • Strong fundamentals in Maths, Physics, Chemistry & Biology.
-     • Skill development in English language & literature.
-     • In-depth understanding of History, Civics & Geography with maps & exercises.
-     • Regular practice tests and feedback to improve confidence.
+  title: "ICSE Tuition for Class 8 in Pimple Saudagar – Building the Right Foundation",
+  desc: `Class 8 is the stepping stone for advanced ICSE learning. Our ICSE tuition for Class 8th in Pimple Saudagar focuses on building strong fundamentals.
+         Subject Covered:
+     • Mathematics
+     • Physics, Chemistry & Biology (taught separately)
+     • History, Civics & Geography (HCG)
+     • English Language & Literature
+     • Second Language (Hindi, Marathi, Sanskrit, etc.)
+     Parents recommend ASQUARE as the Best 8th ICSE classes in Pimple Saudagar, Wakad & Rahatani because of our clear teaching methods and consistent feedback.
  `,
   img: image1,
 },
 
     {
-      title: "ICSE Tuition for Class 9 in Pune Camp – Strengthening Core Knowledge",
+      title: "ICSE Tuition for Class 9 in Pimple Saudagar – Strengthening Core Knowledge",
       desc:
         `
-        Class 9 lays the groundwork for board exam preparation. At ASQUARE Academy Camp, we ensure:
-        •   Full syllabus coverage across Maths, Science & English.
-        •   Writing skills, grammar & comprehension practice.
-        •   HCG with source-based & map work for clarity.
-        •   Weekly topic tests with remedial sessions to strengthen weak areas.
-        
+        Class 9 sets the stage for ICSE board exams. Our ICSE tuition for Class 9th in Pimple Saudagar ensures syllabus mastery with in-depth practice.
+        Program Highlights: 
+        • Full coverage of Maths, Physics, Chemistry & Biology
+        • English writing, comprehension, and grammar
+        • History, Civics & Geography with map and source-based questions
+        • Computer Applications & Second Language
+        • Weekly assessments with detailed feedback
+        This makes us the first choice for the Best 9th ICSE classes in Pimple Saudagar, Sangvi & Aundh.
         `,
   img: image2,
     },
 
     {
-      title: "ICSE Tuition for Class 10 in Pune Camp – Focused Board Exam Preparation",
+      title: "ICSE Tuition for Class 10 in Pimple Saudagar – Focused Board Exam Preparation",
       desc:
         `
-Class 10 is the turning point of a student’s ICSE journey. Our ICSE Class 10 tuition in Camp Pune focuses on result-oriented strategies. 
-Highlights include:
-    •   Comprehensive revision for Maths, Science, English, HCG & Second Language.
-    •   Mock board exams & past-year paper practice.
-    •   Answer-writing training with emphasis on presentation & time management.
-    •   Subject-specific strategies for high-scoring chapters.
-    •   Regular revision cycles with personalised performance tracking.
-With our structured program, students gain the confidence and skills to excel in ICSE board exams.`,
+Class 10 is the defining year for ICSE students. Our ICSE tuition for Class 10th in Pimple Saudagar ensures thorough preparation for excellent board results.
+Board Exam-Focused Training Includes:
+    • Syllabus completion with revision cycles.
+    • Mock board exams & past year paper solving
+    • Answer-writing skills & time-management practice
+    • Special focus on scoring strategies per subject
+    • Doubt-solving sessions & individual mentoring
+That’s why we are regarded as the Best 10th ICSE classes in Pimple Saudagar, Hinjewadi & Kalewadi.
+`,
   img:image4,
     },
   ],
 
   methodology: [
-    "Learn: Interactive, concept-based teaching.",
-    "Practice: Worksheets, assignments & ICSE-style question banks.",
-    "Assess: Weekly & monthly tests with detailed analysis.",
-    "Improve: Doubt-solving sessions & remedial classes.",
-    "Revise: Mock exams & crash courses for final preparation."
+    "Interactive Classes – Concept-based teaching with examples.",
+    "Practice-Oriented Learning – Worksheets and ICSE-style test papers.",
+    "Regular Monitoring – Unit tests and performance reviews.",
+    "Parent Communication – Progress updates and counselling sessions.",
+    "Motivational Support – Guidance to help students overcome exam stress."
   ],
 
  faqs: [
   {
-    q: "Q1.  Do you offer ICSE tuition for Class 8, 9 & 10 in Pune Camp?",
-    a: "Yes, we provide coaching for all three classes with subject experts.",
+    q: "Q1. Do you provide ICSE tuition for Class 8 in Pimple Saudagar?",
+    a: "Yes. Our ICSE tuition for Class 8th in Pimple Saudagar covers all major ICSE subjects with assignments and regular tests.",
   },
   {
-    q: "Q2.Are Science subjects taught separately?",
-    a: "Yes, Physics, Chemistry & Biology are taught individually for clarity.",
+    q: "Q2.Which subjects are included in ICSE board coaching?",
+    a: "We cover Maths, Physics, Chemistry, Biology, English, HCG, Computer Applications & Second Languages.",
   },
   {
-    q: "Q3.Do you prepare students for ICSE board exams?",
-    a: "Absolutely. We conduct mock exams, past-paper drills & answer-writing workshops.",
+    q: "Q3.Do you provide ICSE tuition for Class 9 in Pimple Saudagar?",
+    a: "Yes. Our ICSE tuition for Class 9th in Pimple Saudagar includes complete syllabus coverage, worksheets, and weekly tests.",
   },
   {
-    q: "Q4. Do you offer online ICSE tuition for Camp students?",
-    a: "Yes, we provide both classroom and online ICSE coaching.",
+    q: "Q4.  How do you prepare Class 10 ICSE students for board exam",
+    a: "We conduct mock exams, answer-writing sessions, past-year paper solving & time management practice.",
   },
   {
-    q: "Q5.  Which nearby areas do you serve from Pune Camp centre?",
-    a: "Our Camp branch is easily accessible for students from MG Road, Bund Garden, Koregaon Park, Swargate, Fatima Nagar & Camp Cantonment.",
+    q: "Q5.  Which nearby areas does your centre serve??",
+    a: "Our centre serves students from Pimple Saudagar, Wakad, Rahatani, Hinjewadi, Kalewadi, Sangvi, Aundh, Vishal Nagar, Thergaon, Jagtap Dairy & Kokane Chowk.",
+  },
+  {
+    q: "Q6.  Do you provide online ICSE coaching?",
+    a: "Yes. Both online and offline ICSE tuition options are available.",
+  },
+  {
+    q: "Q7.  Do you provide study material?",
+    a: "Yes. We provide notes, worksheets, and ICSE-style test papers.",
+  },
+  
+  {
+    q: "Q8. Are demo classes available?",
+    a: "Yes. We offer free demo classes for students and parents.",
   },
   
   
@@ -198,7 +217,7 @@ With our structured program, students gain the confidence and skills to excel in
 
 };
 
-function ICSEPumeCamp() {
+function ICSEpimpleSaudagar() {
   const canonicalUrl = window.location.origin + window.location.pathname;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -218,23 +237,23 @@ function ICSEPumeCamp() {
         </title>
             <meta
           name="title"
-          content="ICSE Tuition Classes in Pune Camp for 8th, 9th & 10th | ASQUARE Academy"
+          content="Best ICSE Tuition Classes in Pimple Saudagar Pune | ASQUARE Academy"
         />
         <meta
           name="description"
-          content="Looking for ICSE tuition in Pune Camp? ASQUARE Academy provides expert coaching for Classes 8th, 9th & 10th with small batches, doubt-solving, structured study material & regular tests. Serving students from MG Road, Bund Garden, Koregaon Park, Swargate, Fatima Nagar & Camp Cantonment."
+          content="ICSE tuition for Class 8, 9 and 10 in Pimple Saudagar with expert teachers, small batches, and online & offline coaching at ASQUARE Academy."
         />
 
         <meta
           name="keywords"
-  content="Best 8th ICSE classes in Pune Camp
-Best 9th ICSE classes in Pune Camp
-Best 10th ICSE classes in Pune Camp
-ICSE tuition for Class 8th in Pune Camp
-ICSE tuition for Class 9th in Pune Camp
-ICSE tuition for Class 10th in Pune Camp
-ICSE coaching in Pune Camp
-ICSE board classes in Pune Camp"
+  content="Best 8th ICSE classes in Pimple Saudagar
+Best 9th ICSE classes in Pimple Saudagar
+Best 10th ICSE classes in Pimple Saudagar
+ICSE tuition for Class 8th in Pimple Saudagar
+ICSE tuition for Class 9th in Pimple Saudagar
+ICSE tuition for Class 10th in Pimple Saudagar
+ICSE coaching in Pimple Saudagar
+ICSE board classes in Pimple Saudagar"
         />
 
         <script type="application/ld+json">{`
@@ -245,23 +264,27 @@ ICSE board classes in Pune Camp"
       "@type": ["LocalBusiness","EducationalOrganization"],
       "@id": "https://www.asquareclasses.com/#asquareacademy",
       "name": "ASQUARE Academy",
-      "url": "https://www.asquareclasses.com/icse-tuition-classes-pune-camp-8th-9th-10th/",
+      "url": "https://www.asquareclasses.com/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th/",
       "logo": "https://www.asquareclasses.com/static/media/asquare-logo-new.a0947d5409b087e3562a.png",
       "telephone": "+91-9766118877",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Pune Camp",
+        "addressLocality": "Pimple Saudagar",
         "addressRegion": "Pune",
         "addressCountry": "IN"
       },
       "areaServed": [
-        "Pune Camp",
-        "MG Road",
-        "Bund Garden",
-        "Koregaon Park",
-        "Swargate",
-        "Fatima Nagar",
-        "Camp Cantonment"
+        "Pimple Saudagar",
+        "Wakad",
+        "Rahatani",
+        "Hinjewadi",
+        "Kalewadi",
+        "Sangvi",
+        "Aundh",
+        "Vishal Nagar",
+        "Thergaon",
+        "Jagtap Dairy",
+        "Kokane Chowk"
       ],
       "sameAs": [
         "https://www.instagram.com/asquarepune",
@@ -270,17 +293,17 @@ ICSE board classes in Pune Camp"
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-camp-8th-9th-10th/#webpage",
-      "url": "https://www.asquareclasses.com/icse-tuition-classes-pune-camp-8th-9th-10th/",
-      "name": "Best ICSE Tuition Classes in Pune Camp",
-      "description": "ICSE tuition for Class 8, 9 and 10 in Pune Camp with experienced teachers, small batches, and online & offline coaching.",
+      "@id": "https://www.asquareclasses.com/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th/#webpage",
+      "url": "https://www.asquareclasses.com/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th/",
+      "name": "Best ICSE Tuition Classes in Pimple Saudagar Pune",
+      "description": "ICSE tuition for Class 8, 9 and 10 in Pimple Saudagar with experienced teachers, small batches, and online & offline coaching.",
       "isPartOf": {
         "@id": "https://www.asquareclasses.com/#asquareacademy"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-camp-8th-9th-10th/#breadcrumb",
+      "@id": "https://www.asquareclasses.com/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -291,53 +314,69 @@ ICSE board classes in Pune Camp"
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "ICSE Tuition Classes Pune Camp",
-          "item": "https://www.asquareclasses.com/icse-tuition-classes-pune-camp-8th-9th-10th/"
+          "name": "ICSE Tuition Classes Pimple Saudagar",
+          "item": "https://www.asquareclasses.com/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th/"
         }
       ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.asquareclasses.com/icse-tuition-classes-pune-camp-8th-9th-10th/#faq",
+      "@id": "https://www.asquareclasses.com/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do you offer ICSE tuition for Class 8, 9 and 10 in Pune Camp?",
+          "name": "Do you provide ICSE tuition for Class 8 in Pimple Saudagar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide ICSE coaching for Classes 8, 9 and 10 in Pune Camp with subject experts."
+            "text": "Yes. Our ICSE tuition for Class 8 in Pimple Saudagar covers all major ICSE subjects with assignments and regular tests."
           }
         },
         {
           "@type": "Question",
-          "name": "Are Science subjects taught separately?",
+          "name": "Which subjects are included in ICSE board coaching?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Physics, Chemistry and Biology are taught individually for better clarity."
+            "text": "We cover Maths, Physics, Chemistry, Biology, English, HCG, Computer Applications and Second Languages."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you prepare students for ICSE board exams?",
+          "name": "Do you provide ICSE tuition for Class 9 in Pimple Saudagar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely. We conduct mock exams, past-paper drills and answer-writing workshops."
+            "text": "Yes. Our ICSE tuition for Class 9 in Pimple Saudagar includes complete syllabus coverage, worksheets, and weekly tests."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer online ICSE tuition for Camp students?",
+          "name": "How do you prepare Class 10 ICSE students for board exams?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide both classroom and online ICSE coaching options."
+            "text": "We conduct mock exams, answer-writing sessions, past-year paper solving and time management practice."
           }
         },
         {
           "@type": "Question",
-          "name": "Which nearby areas do you serve from Pune Camp centre?",
+          "name": "Which nearby areas does your centre serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our Pune Camp centre serves students from MG Road, Bund Garden, Koregaon Park, Swargate, Fatima Nagar and Camp Cantonment."
+            "text": "Our centre serves students from Pimple Saudagar, Wakad, Rahatani, Hinjewadi, Kalewadi, Sangvi, Aundh, Vishal Nagar, Thergaon, Jagtap Dairy and Kokane Chowk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide online ICSE coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Both online and offline ICSE tuition options are available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are demo classes available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer free demo classes for students and parents."
           }
         }
       ]
@@ -480,7 +519,7 @@ ICSE board classes in Pune Camp"
           transition={{ duration: 0.6 }}
           className="badge bg-warning text-dark px-4 py-2 rounded-pill mb-3 shadow-sm"
         >
-          ⭐ Trusted ICSE Coaching in Pune Camp, Pune
+          ⭐ Trusted ICSE Coaching in Pimple Saudagar, Pune
         </motion.span>
 
         <motion.h1
@@ -497,7 +536,7 @@ ICSE board classes in Pune Camp"
               style={{ height: "6px", zIndex: -1 }}
             ></span>
           </span>{" "}
-          in Pune Camp, Pune
+          in Pimple Saudagar, Pune
           <br />
           for <span className="text-primary">8th, 9th & 10th</span> Students
         </motion.h1>
@@ -613,7 +652,7 @@ ICSE board classes in Pune Camp"
             style={{ height: "5px", zIndex: -1 }}
           ></span>
         </span>{" "}
-        for ICSE Coaching in Pune Camp
+        for ICSE Coaching in Pimple Saudagar
       </motion.h2>
 
       <motion.p
@@ -624,7 +663,7 @@ ICSE board classes in Pune Camp"
         className="lead text-muted mx-auto"
         style={{ maxWidth: "850px" }}
       >
-       We blend teaching excellence, personal mentoring, and exam strategies to deliver results year after year.
+       We focus on concept clarity, consistent practice, and exam-oriented preparation tailored to the ICSE syllabus. Our proven methodology ensures academic growth and board exam readiness.
       </motion.p>
 
     </div>
@@ -867,7 +906,8 @@ ICSE board classes in Pune Camp"
         className="lead text-muted mx-auto"
         style={{ maxWidth: "850px" }}
       >
-      At ASQUARE Academy Shahunagar, our approach ensures concept clarity, regular practice, and stress-free exam preparation:      </motion.p>
+      At ASQUARE Academy Pimple Saudagar, we follow a student-friendly learning approach
+          </motion.p>
 
     </div>
 
@@ -1066,9 +1106,9 @@ ICSE board classes in Pune Camp"
       viewport={{ once: true }}
       className="fw-bold mb-3"
     >
-       Join {" "}
+      Enrol with  {" "}
       <span className="position-relative text-warning">
-        ASQUARE Academy Today {icseContent.location}
+      ASQUARE Academy  {icseContent.location} Today
         <span
           className="position-absolute start-0 bottom-0 w-100 bg-white"
           style={{ height: "4px", zIndex: -1 }}
@@ -1087,9 +1127,12 @@ ICSE board classes in Pune Camp"
       className="lead mx-auto mb-4"
       style={{ maxWidth: "900px" }}
     >
-      Choosing the right coaching can make all the difference in ICSE preparation. At <strong>ASQUARE Academy 
-      Pune Camp </strong>, we provide expert teaching, individual mentoring, and proven methods to help <strong> Class 8th,
-       9th & 10th </strong> students achieve academic excellence.
+      If you’re searching for: <br />
+      1. Best 8th ICSE classes in Pimple Saudagar, Wakad & Rahatani <br />
+      2. Best 9th ICSE classes in Pimple Saudagar, Sangvi & Aundh <br />
+      3. Best 10th ICSE classes in Pimple Saudagar, Hinjewadi & Kalewadi <br />
+      4. ICSE tuition for Class 8th, 9th & 10th in Pimple Saudagar <br />
+      Then ASQUARE Academy Pimple Saudagar is your reliable partner for ICSE success.
        
     </motion.p>
 
@@ -1101,8 +1144,7 @@ ICSE board classes in Pune Camp"
       viewport={{ once: true }}
       className="opacity-90 mb-4"
     >
-     Whether your child is in <strong>Class 8 building foundations, Class 9 strengthening knowledge, 
-     or Class 10 preparing for board exams </strong>, our ICSE tuition programs ensure complete academic support.
+     
     </motion.p>
 
     {/* Location */}
@@ -1114,7 +1156,7 @@ ICSE board classes in Pune Camp"
       className="mb-4"
     >
       <MapPin size={18} className="me-1" />
-      Located in Pune Camp, our centre also serves students from <strong> MG Road, Bund Garden, Koregaon Park, Swargate, Fatima Nagar & Camp Cantonment.</strong>
+      Visit our centre today, easily accessible from <strong>Wakad, Rahatani, Hinjewadi, Kalewadi, Sangvi, Aundh, Vishal Nagar, Thergaon, Jagtap Dairy & Kokane Chowk.</strong>
     </motion.p>
 
     {/* CTAs */}
@@ -1148,7 +1190,7 @@ ICSE board classes in Pune Camp"
       viewport={{ once: true }}
       className="mt-4 small opacity-90"
     >
-     🎯 Take the next step towards success – book a free demo class today and discover why ASQUARE is trusted by ICSE students and parents across Pune.
+     📞 Call now to book your free demo class and enquire about batch timings & fees.
     </motion.p>
 
   </div>
@@ -1159,6 +1201,6 @@ ICSE board classes in Pune Camp"
   );
 }
 
-export default ICSEPumeCamp;
+export default ICSEpimpleSaudagar;
 
 

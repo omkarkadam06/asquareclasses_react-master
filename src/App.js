@@ -243,9 +243,9 @@ import ICSEWanwadi from "./Pages/LocationsPages/ICSE Pages/ICSE-Wanwadi";
 import ICSEBhosari from "./Pages/LocationsPages/ICSE Pages/ICSE-Bhosari";
 import ICSEPCMC from "./Pages/LocationsPages/ICSE Pages/ICSE-PCMC";
 import ICSEChakan from "./Pages/LocationsPages/ICSE Pages/ICSE-Chakan";
-// import ICSEPuneCamp from "./Pages/LocationsPages/ICSE Pages/ICSE-PuneCamp";
+import ICSEPuneCamp from "./Pages/LocationsPages/ICSE Pages/ICSE-PuneCamp";
 import ICSEShahunagar from "./Pages/LocationsPages/ICSE Pages/ICSE-Shahunagar";
-// import ICSEPimpleSaudagar from "./Pages/LocationsPages/ICSE Pages/ICSE-PimpleSaudagar";
+import ICSEPimpleSaudagar from "./Pages/LocationsPages/ICSE Pages/ICSE-PimpleSaudagar";
 
 
 function App() {
@@ -668,18 +668,18 @@ function App() {
   path="/icse-tuition-chakan-pune-8th-9th-10th"
   element={<ICSEChakan />}
 />
-{/* <Route
-  path="/icse-tuition-pune-camp-8th-9th-10th"
+<Route
+  path="/icse-tuition-classes-pune-camp-8th-9th-10th"
   element={<ICSEPuneCamp />}
-/> */}
+/>
 <Route
   path="/icse-tuition-classes-shahunagar-pcmc-8th-9th-10th"
   element={<ICSEShahunagar />}
 />
-{/* <Route
+<Route
   path="/icse-tuition-classes-pimple-saudagar-pune-8th-9th-10th"
   element={<ICSEPimpleSaudagar />}
-/> */}
+/>
 
 
         </Routes>
